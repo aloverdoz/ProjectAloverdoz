@@ -1,0 +1,27 @@
+name: Check Calculator on Windows
+on: [push]
+permissions:
+  contents: read
+jobs:
+  launch:
+    runs-on: windows-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - shell: pwsh
+        run: |
+          $app = Start-Process -FilePath ".\calculator\Calculator.exe" -PassThru
+          try {
+            $deadline = (Get-Date).AddSeconds(30)
+            do {
+              Start-Sleep -Milliseconds 500
+              $window = Get-Process Calculator -ErrorAction SilentlyContinue |
+                Where-Object { $_.MainWindowTitle -eq ('Калькулятор') }
+              if ($window) { break }
+              if ($app.HasExited) { throw "Calculator exited before its window opened." }
+            } while ((Get-Date) -lt $deadline)
+            if (-not $window) { throw "Calculator window did not open." }
+            Write-Output "Calculator window opened successfully on Windows."
+          } finally {
+            Get-Process Calculator -ErrorAction SilentlyContinue | Stop-Process -ErrorAction SilentlyContinue
+          }
