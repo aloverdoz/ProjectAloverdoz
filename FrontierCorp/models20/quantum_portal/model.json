@@ -1,0 +1,770 @@
+{
+ "parts": [
+  {
+   "anim": "blink",
+   "color": "#ba8dff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_portal/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    5.878,
+    -0.1
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_portal/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.15,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_portal/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_portal/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.15,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_portal/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_portal/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.15,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_portal/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_portal/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.15,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_portal/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_portal/5.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.15,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_portal/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_portal/6.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.15,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_portal/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_portal/7.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.15,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_portal/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_portal/8.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.15,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_portal/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_portal/9.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.15,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_portal/tex0.png"
+  },
+  {
+   "color": "#946fcb",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_portal/10.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.15,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.08,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_portal/11.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.15,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#4b219a",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_portal/12.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.15,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#6a39ff",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_portal/13.res",
+   "metallic": 0,
+   "pos": [
+    -1.45,
+    0.95,
+    -1.56
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_001",
+   "color": "#6a39ff",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_portal/14.res",
+   "metallic": 0,
+   "pos": [
+    1.45,
+    0.95,
+    -1.56
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#ba8dff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_portal/15.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.95,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ba8dff",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_portal/16.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.7,
+    0.53
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#5f2bfd",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_portal/17.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.95,
+    0
+   ],
+   "rot": [
+    90,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ba8dff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_portal/18.res",
+   "metallic": 0,
+   "pos": [
+    -2.45,
+    3.12,
+    0.25
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink_001",
+   "color": "#ba8dff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_portal/19.res",
+   "metallic": 0,
+   "pos": [
+    2.45,
+    3.12,
+    0.25
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink_002",
+   "color": "#ff9a21",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_portal/20.res",
+   "metallic": 0,
+   "pos": [
+    1.4269,
+    0.6,
+    1.9788
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#4bff66",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_portal/21.res",
+   "metallic": 0,
+   "pos": [
+    1.3369,
+    0.6,
+    1.9488
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin",
+   "color": "#ba8dff",
+   "emission": 4.5,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_portal/22.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.95,
+    0.1
+   ],
+   "rot": [
+    90,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_portal/23.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.95,
+    0.1
+   ],
+   "rot": [
+    90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_portal/tex0.png"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#dac1ff",
+   "emission": 4.5,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_portal/24.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.95,
+    0.14
+   ],
+   "rot": [
+    90,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_portal/25.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.95,
+    0.14
+   ],
+   "rot": [
+    90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_portal/tex0.png"
+  },
+  {
+   "anim": "flicker_soft",
+   "color": "#ba8dff",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_portal/26.res",
+   "metallic": 0,
+   "pos": [
+    1.55,
+    0.985,
+    1.69
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#ba8dff",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_portal/27.res",
+   "metallic": 0,
+   "pos": [
+    -2.15,
+    1.6,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_001",
+   "color": "#ba8dff",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_portal/28.res",
+   "metallic": 0,
+   "pos": [
+    2.15,
+    1.6,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin",
+   "color": "#ba8dff",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_portal/29.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.95,
+    0
+   ],
+   "rot": [
+    90,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

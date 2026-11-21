@@ -1,0 +1,181 @@
+{
+ "parts": [
+  {
+   "color": "#1e1007",
+   "mat": "paint",
+   "mesh": "res://models20/dep_tin_ore/0.res",
+   "metallic": 0.4,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.12,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/dep_tin_ore/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.8,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/dep_tin_ore/tex0.png"
+  },
+  {
+   "color": "#cdd2da",
+   "mat": "paint",
+   "mesh": "res://models20/dep_tin_ore/2.res",
+   "metallic": 1,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.2,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#f3f8ff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_tin_ore/3.res",
+   "metallic": 0,
+   "pos": [
+    0.2501,
+    0.7128,
+    -0.0712
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#f3f8ff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_tin_ore/4.res",
+   "metallic": 0,
+   "pos": [
+    -0.0253,
+    0.7433,
+    -0.3118
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#f3f8ff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_tin_ore/5.res",
+   "metallic": 0,
+   "pos": [
+    0.1989,
+    0.3931,
+    0.1318
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#f3f8ff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_tin_ore/6.res",
+   "metallic": 0,
+   "pos": [
+    -0.4031,
+    0.1703,
+    0.6379
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

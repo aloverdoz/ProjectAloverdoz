@@ -1,0 +1,500 @@
+{
+ "extra": {
+  "rig": {
+   "arms": [
+    {
+     "amp": 12,
+     "bone": "b_claw",
+     "phase": 0.25
+    }
+   ],
+   "body": "b_body",
+   "bones": [
+    {
+     "name": "b_body",
+     "parent": "",
+     "pivot": [
+      0,
+      0.62,
+      0
+     ]
+    },
+    {
+     "name": "b_head",
+     "parent": "b_body",
+     "pivot": [
+      0.3,
+      0.62,
+      0
+     ]
+    },
+    {
+     "name": "b_claw",
+     "parent": "b_body",
+     "pivot": [
+      0.05,
+      0.74,
+      0
+     ]
+    },
+    {
+     "name": "b_hip0l",
+     "parent": "b_body",
+     "pivot": [
+      0.2,
+      0.58,
+      -0.18
+     ]
+    },
+    {
+     "name": "b_knee0l",
+     "parent": "b_hip0l",
+     "pivot": [
+      0.28,
+      0.7,
+      -0.42
+     ]
+    },
+    {
+     "name": "b_hip0r",
+     "parent": "b_body",
+     "pivot": [
+      0.2,
+      0.58,
+      0.18
+     ]
+    },
+    {
+     "name": "b_knee0r",
+     "parent": "b_hip0r",
+     "pivot": [
+      0.28,
+      0.7,
+      0.42
+     ]
+    },
+    {
+     "name": "b_hip1l",
+     "parent": "b_body",
+     "pivot": [
+      -0.2,
+      0.58,
+      -0.18
+     ]
+    },
+    {
+     "name": "b_knee1l",
+     "parent": "b_hip1l",
+     "pivot": [
+      -0.12,
+      0.7,
+      -0.42
+     ]
+    },
+    {
+     "name": "b_hip1r",
+     "parent": "b_body",
+     "pivot": [
+      -0.2,
+      0.58,
+      0.18
+     ]
+    },
+    {
+     "name": "b_knee1r",
+     "parent": "b_hip1r",
+     "pivot": [
+      -0.12,
+      0.7,
+      0.42
+     ]
+    }
+   ],
+   "breath": [],
+   "chains": [],
+   "gait": {
+    "bob": 0.04,
+    "duty": 0.45,
+    "knee": 22,
+    "lean": 6,
+    "lift": 30,
+    "roll": 3,
+    "stride": 1.1,
+    "swing": 26
+   },
+   "head": "b_head",
+   "jaws": [],
+   "legs": [
+    {
+     "hip": "b_hip0l",
+     "knee": "b_knee0l",
+     "phase": 0,
+     "side": -1,
+     "style": "y"
+    },
+    {
+     "hip": "b_hip0r",
+     "knee": "b_knee0r",
+     "phase": 0.5,
+     "side": 1,
+     "style": "y"
+    },
+    {
+     "hip": "b_hip1l",
+     "knee": "b_knee1l",
+     "phase": 0.5,
+     "side": -1,
+     "style": "y"
+    },
+    {
+     "hip": "b_hip1r",
+     "knee": "b_knee1r",
+     "phase": 0,
+     "side": 1,
+     "style": "y"
+    }
+   ]
+  }
+ },
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_thief/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.62,
+    0
+   ],
+   "role": "b_body",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_thief/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_thief/1.res",
+   "metallic": 0,
+   "pos": [
+    0.05,
+    0.74,
+    0
+   ],
+   "role": "b_claw",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_thief/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_thief/2.res",
+   "metallic": 0,
+   "pos": [
+    0.3,
+    0.62,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_thief/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_thief/3.res",
+   "metallic": 0,
+   "pos": [
+    0.2,
+    0.58,
+    -0.18
+   ],
+   "role": "b_hip0l",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_thief/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_thief/4.res",
+   "metallic": 0,
+   "pos": [
+    0.2,
+    0.58,
+    0.18
+   ],
+   "role": "b_hip0r",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_thief/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_thief/5.res",
+   "metallic": 0,
+   "pos": [
+    -0.2,
+    0.58,
+    -0.18
+   ],
+   "role": "b_hip1l",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_thief/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_thief/6.res",
+   "metallic": 0,
+   "pos": [
+    -0.2,
+    0.58,
+    0.18
+   ],
+   "role": "b_hip1r",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_thief/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_thief/7.res",
+   "metallic": 0,
+   "pos": [
+    0.28,
+    0.7,
+    -0.42
+   ],
+   "role": "b_knee0l",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_thief/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_thief/8.res",
+   "metallic": 0,
+   "pos": [
+    0.28,
+    0.7,
+    0.42
+   ],
+   "role": "b_knee0r",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_thief/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_thief/9.res",
+   "metallic": 0,
+   "pos": [
+    -0.12,
+    0.7,
+    -0.42
+   ],
+   "role": "b_knee1l",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_thief/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_thief/10.res",
+   "metallic": 0,
+   "pos": [
+    -0.12,
+    0.7,
+    0.42
+   ],
+   "role": "b_knee1r",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_thief/tex0.png"
+  },
+  {
+   "anim": "pulse",
+   "color": "#ff4be6",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/mech_thief/11.res",
+   "metallic": 0,
+   "pos": [
+    0.3,
+    0.62,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ff4be6",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/mech_thief/12.res",
+   "metallic": 0,
+   "pos": [
+    -0.12,
+    1.08,
+    -0.16
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

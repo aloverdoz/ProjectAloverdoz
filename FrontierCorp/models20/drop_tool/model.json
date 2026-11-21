@@ -1,0 +1,104 @@
+{
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/drop_tool/0.res",
+   "metallic": 0,
+   "pos": [
+    -0.065,
+    0.11,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "tint": false
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/drop_tool/1.res",
+   "metallic": 0,
+   "pos": [
+    -0.065,
+    0.11,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "tint": false
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/drop_tool/2.res",
+   "metallic": 0,
+   "pos": [
+    -0.065,
+    0.11,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "tint": false
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/drop_tool/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "tint": true
+  }
+ ]
+}

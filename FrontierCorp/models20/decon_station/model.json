@@ -1,0 +1,411 @@
+{
+ "extra": {
+  "emitters": [
+   {
+    "kind": "steam",
+    "pos": [
+     -0.85,
+     2.47,
+     -0.45
+    ],
+    "rate": 0.25,
+    "size": 0.6,
+    "when": "active"
+   },
+   {
+    "kind": "steam",
+    "pos": [
+     -0.05,
+     2.47,
+     -0.45
+    ],
+    "rate": 0.25,
+    "size": 0.6,
+    "when": "active"
+   }
+  ]
+ },
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/decon_station/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/decon_station/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/decon_station/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/decon_station/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/decon_station/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/decon_station/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/decon_station/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/decon_station/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/decon_station/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/decon_station/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/decon_station/5.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/decon_station/tex0.png"
+  },
+  {
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/decon_station/6.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/decon_station/7.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/decon_station/tex0.png"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffda30",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/decon_station/8.res",
+   "metallic": 0,
+   "pos": [
+    -0.45,
+    2.77,
+    -0.45
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#59c1ff",
+   "emission": 2.5,
+   "mat": "glow",
+   "mesh": "res://models20/decon_station/9.res",
+   "metallic": 0,
+   "pos": [
+    0.15,
+    0.64,
+    0.24
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_fan",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/decon_station/10.res",
+   "metallic": 0,
+   "pos": [
+    -0.55,
+    0.29,
+    0.52
+   ],
+   "rot": [
+    90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/decon_station/tex0.png"
+  },
+  {
+   "anim": "spin",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/decon_station/11.res",
+   "metallic": 0,
+   "pos": [
+    -0.45,
+    2.57,
+    -0.45
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/decon_station/tex0.png"
+  },
+  {
+   "anim": "spin",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/decon_station/12.res",
+   "metallic": 0,
+   "pos": [
+    -0.45,
+    2.57,
+    -0.45
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/decon_station/tex0.png"
+  },
+  {
+   "anim": "spin",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/decon_station/13.res",
+   "metallic": 0,
+   "pos": [
+    -0.45,
+    2.57,
+    -0.45
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/decon_station/tex0.png"
+  },
+  {
+   "anim": "spin",
+   "color": "#59c1ff",
+   "emission": 3,
+   "mat": "glow",
+   "mesh": "res://models20/decon_station/14.res",
+   "metallic": 0,
+   "pos": [
+    -0.45,
+    2.57,
+    -0.45
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

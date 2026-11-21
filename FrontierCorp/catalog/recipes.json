@@ -1,0 +1,7032 @@
+{
+"alloy_brass": {
+"in": {
+"copper_ingot": 2,
+"zinc_ingot": 1
+},
+"name": "Сплав: латуни",
+"out": {
+"brass_ingot": 2
+},
+"stations": [
+"smelter"
+],
+"time": 4.0
+},
+"alloy_bronze": {
+"in": {
+"copper_ingot": 3,
+"tin_ingot": 1
+},
+"name": "Сплав: бронзы",
+"out": {
+"bronze_ingot": 2
+},
+"stations": [
+"smelter"
+],
+"time": 4.0
+},
+"alloy_electrum": {
+"in": {
+"gold_ingot": 1,
+"silver_ingot": 1
+},
+"name": "Сплав: электрума",
+"out": {
+"electrum_ingot": 2
+},
+"stations": [
+"smelter"
+],
+"time": 4.0
+},
+"cook_apple_pie": {
+"in": {
+"apple_red": 3,
+"flour": 2,
+"sugar": 1
+},
+"name": "Яблочный пирог",
+"out": {
+"apple_pie": 1
+},
+"stations": [
+"furnace"
+],
+"time": 3.0
+},
+"cook_baked_potato": {
+"in": {
+"potato": 1
+},
+"name": "Печёная картошка",
+"out": {
+"baked_potato": 1
+},
+"stations": [
+"furnace",
+"hand"
+],
+"time": 3.0
+},
+"cook_berry_pie": {
+"in": {
+"berry": 6,
+"flour": 2,
+"sugar": 1
+},
+"name": "Ягодный пирог",
+"out": {
+"berry_pie": 1
+},
+"stations": [
+"furnace"
+],
+"time": 3.0
+},
+"cook_borscht": {
+"in": {
+"beet": 1,
+"cabbage": 1,
+"raw_meat": 1,
+"water_flask": 1
+},
+"name": "Борщ",
+"out": {
+"borscht": 1
+},
+"stations": [
+"furnace"
+],
+"time": 3.0
+},
+"cook_bread": {
+"in": {
+"flour": 2,
+"water_flask": 1
+},
+"name": "Хлеб",
+"out": {
+"bread": 1
+},
+"stations": [
+"furnace"
+],
+"time": 3.0
+},
+"cook_candy": {
+"in": {
+"honey": 1,
+"sugar": 2
+},
+"name": "Конфеты",
+"out": {
+"candy": 1
+},
+"stations": [
+"workshop"
+],
+"time": 2.0
+},
+"cook_canned_fish": {
+"in": {
+"cooked_fish": 2,
+"iron_plate": 1
+},
+"name": "Рыбные консервы",
+"out": {
+"canned_fish": 1
+},
+"stations": [
+"packager"
+],
+"time": 2.0
+},
+"cook_canned_meat": {
+"in": {
+"cooked_meat": 2,
+"iron_plate": 1
+},
+"name": "Мясные консервы",
+"out": {
+"canned_meat": 1
+},
+"stations": [
+"packager"
+],
+"time": 2.0
+},
+"cook_canned_vegetables": {
+"in": {
+"carrot": 1,
+"iron_plate": 1,
+"potato": 1,
+"tomato": 1
+},
+"name": "Овощные консервы",
+"out": {
+"canned_vegetables": 1
+},
+"stations": [
+"packager"
+],
+"time": 2.0
+},
+"cook_cheese": {
+"in": {
+"milk": 3,
+"salt": 1
+},
+"name": "Сыр",
+"out": {
+"cheese": 1
+},
+"stations": [
+"workshop"
+],
+"time": 2.0
+},
+"cook_coffee": {
+"in": {
+"coffee_beans": 2,
+"water_flask": 1
+},
+"name": "Кофе",
+"out": {
+"coffee": 1
+},
+"stations": [
+"furnace"
+],
+"time": 3.0
+},
+"cook_cooked_fish": {
+"in": {
+"raw_fish": 1
+},
+"name": "Жареная рыба",
+"out": {
+"cooked_fish": 1
+},
+"stations": [
+"furnace",
+"hand"
+],
+"time": 3.0
+},
+"cook_cooked_meat": {
+"in": {
+"raw_meat": 1
+},
+"name": "Жареное мясо",
+"out": {
+"cooked_meat": 1
+},
+"stations": [
+"furnace",
+"hand"
+],
+"time": 3.0
+},
+"cook_cookie": {
+"in": {
+"flour": 1,
+"sugar": 1
+},
+"name": "Печенье",
+"out": {
+"cookie": 1
+},
+"stations": [
+"furnace"
+],
+"time": 3.0
+},
+"cook_energy_drink": {
+"in": {
+"coffee_beans": 2,
+"sugar": 1,
+"water_flask": 1
+},
+"name": "Энергетик",
+"out": {
+"energy_drink": 1
+},
+"stations": [
+"refinery"
+],
+"time": 2.0
+},
+"cook_flour": {
+"in": {
+"wheat": 3
+},
+"name": "Мука",
+"out": {
+"flour": 2
+},
+"stations": [
+"workbench"
+],
+"time": 2.0
+},
+"cook_fruit_salad": {
+"in": {
+"apple_red": 1,
+"grapes": 1,
+"orange": 1
+},
+"name": "Фруктовый салат",
+"out": {
+"fruit_salad": 1
+},
+"stations": [
+"workbench",
+"hand"
+],
+"time": 2.0
+},
+"cook_juice": {
+"in": {
+"orange": 2
+},
+"name": "Сок",
+"out": {
+"juice": 1
+},
+"stations": [
+"workbench",
+"hand"
+],
+"time": 2.0
+},
+"cook_lemonade": {
+"in": {
+"lemon": 1,
+"sugar": 1,
+"water_flask": 1
+},
+"name": "Лимонад",
+"out": {
+"lemonade": 1
+},
+"stations": [
+"workbench"
+],
+"time": 2.0
+},
+"cook_meat_stew": {
+"in": {
+"potato": 1,
+"raw_meat": 2,
+"water_flask": 1
+},
+"name": "Мясное рагу",
+"out": {
+"meat_stew": 1
+},
+"stations": [
+"furnace"
+],
+"time": 3.0
+},
+"cook_mushroom_soup": {
+"in": {
+"mushroom": 3,
+"water_flask": 1
+},
+"name": "Грибной суп",
+"out": {
+"mushroom_soup": 1
+},
+"stations": [
+"furnace"
+],
+"time": 3.0
+},
+"cook_omelette": {
+"in": {
+"egg": 2
+},
+"name": "Омлет",
+"out": {
+"omelette": 1
+},
+"stations": [
+"furnace"
+],
+"time": 3.0
+},
+"cook_popcorn": {
+"in": {
+"corn": 1
+},
+"name": "Попкорн",
+"out": {
+"popcorn": 1
+},
+"stations": [
+"furnace"
+],
+"time": 3.0
+},
+"cook_pumpkin_pie": {
+"in": {
+"flour": 2,
+"pumpkin": 1,
+"sugar": 1
+},
+"name": "Тыквенный пирог",
+"out": {
+"pumpkin_pie": 1
+},
+"stations": [
+"furnace"
+],
+"time": 3.0
+},
+"cook_purified_water": {
+"in": {
+"water": 4
+},
+"name": "Очищенная вода",
+"out": {
+"purified_water": 1
+},
+"stations": [
+"refinery"
+],
+"time": 2.0
+},
+"cook_ration": {
+"in": {
+"bread": 1,
+"canned_meat": 1,
+"water_flask": 1
+},
+"name": "Сухой паёк",
+"out": {
+"ration": 1
+},
+"stations": [
+"packager"
+],
+"time": 2.0
+},
+"cook_salad": {
+"in": {
+"cucumber": 1,
+"lettuce": 1,
+"tomato": 1
+},
+"name": "Салат из овощей",
+"out": {
+"salad": 1
+},
+"stations": [
+"workbench",
+"hand"
+],
+"time": 2.0
+},
+"cook_salt": {
+"in": {
+"water": 10
+},
+"name": "Соль",
+"out": {
+"salt": 2
+},
+"stations": [
+"refinery",
+"furnace"
+],
+"time": 3.0
+},
+"cook_sausage": {
+"in": {
+"raw_meat": 2,
+"salt": 1
+},
+"name": "Колбаса",
+"out": {
+"sausage": 1
+},
+"stations": [
+"workshop"
+],
+"time": 2.0
+},
+"cook_smoothie": {
+"in": {
+"honey": 1,
+"milk": 1,
+"strawberries": 1
+},
+"name": "Смузи",
+"out": {
+"smoothie": 1
+},
+"stations": [
+"workbench"
+],
+"time": 2.0
+},
+"cook_steak": {
+"in": {
+"raw_meat": 2,
+"salt": 1
+},
+"name": "Стейк",
+"out": {
+"steak": 1
+},
+"stations": [
+"furnace"
+],
+"time": 3.0
+},
+"cook_sugar": {
+"in": {
+"beet": 2
+},
+"name": "Сахар",
+"out": {
+"sugar": 2
+},
+"stations": [
+"refinery"
+],
+"time": 2.0
+},
+"cook_tea": {
+"in": {
+"leaves": 3,
+"water_flask": 1
+},
+"name": "Чай",
+"out": {
+"tea": 1
+},
+"stations": [
+"furnace"
+],
+"time": 3.0
+},
+"cook_vegetable_soup": {
+"in": {
+"carrot": 1,
+"onion": 1,
+"potato": 1,
+"water_flask": 1
+},
+"name": "Овощной суп",
+"out": {
+"vegetable_soup": 1
+},
+"stations": [
+"furnace"
+],
+"time": 3.0
+},
+"cut_amethyst": {
+"in": {
+"amethyst_raw": 1
+},
+"name": "Огранить: Аметист",
+"out": {
+"amethyst": 1
+},
+"stations": [
+"workbench",
+"workshop"
+],
+"time": 4.0
+},
+"cut_aquamarine": {
+"in": {
+"aquamarine_raw": 1
+},
+"name": "Огранить: Аквамарин",
+"out": {
+"aquamarine": 1
+},
+"stations": [
+"workbench",
+"workshop"
+],
+"time": 4.0
+},
+"cut_citrine": {
+"in": {
+"citrine_raw": 1
+},
+"name": "Огранить: Цитрин",
+"out": {
+"citrine": 1
+},
+"stations": [
+"workbench",
+"workshop"
+],
+"time": 4.0
+},
+"cut_diamond": {
+"in": {
+"diamond_raw": 1
+},
+"name": "Огранить: Алмаз",
+"out": {
+"diamond": 1
+},
+"stations": [
+"workbench",
+"workshop"
+],
+"time": 4.0
+},
+"cut_emerald": {
+"in": {
+"emerald_raw": 1
+},
+"name": "Огранить: Изумруд",
+"out": {
+"emerald": 1
+},
+"stations": [
+"workbench",
+"workshop"
+],
+"time": 4.0
+},
+"cut_garnet": {
+"in": {
+"garnet_raw": 1
+},
+"name": "Огранить: Гранат",
+"out": {
+"garnet": 1
+},
+"stations": [
+"workbench",
+"workshop"
+],
+"time": 4.0
+},
+"cut_jade": {
+"in": {
+"jade_raw": 1
+},
+"name": "Огранить: Нефрит",
+"out": {
+"jade": 1
+},
+"stations": [
+"workbench",
+"workshop"
+],
+"time": 4.0
+},
+"cut_onyx": {
+"in": {
+"onyx_raw": 1
+},
+"name": "Огранить: Оникс",
+"out": {
+"onyx": 1
+},
+"stations": [
+"workbench",
+"workshop"
+],
+"time": 4.0
+},
+"cut_opal": {
+"in": {
+"opal_raw": 1
+},
+"name": "Огранить: Опал",
+"out": {
+"opal": 1
+},
+"stations": [
+"workbench",
+"workshop"
+],
+"time": 4.0
+},
+"cut_ruby": {
+"in": {
+"ruby_raw": 1
+},
+"name": "Огранить: Рубин",
+"out": {
+"ruby": 1
+},
+"stations": [
+"workbench",
+"workshop"
+],
+"time": 4.0
+},
+"cut_sapphire": {
+"in": {
+"sapphire_raw": 1
+},
+"name": "Огранить: Сапфир",
+"out": {
+"sapphire": 1
+},
+"stations": [
+"workbench",
+"workshop"
+],
+"time": 4.0
+},
+"cut_topaz": {
+"in": {
+"topaz_raw": 1
+},
+"name": "Огранить: Топаз",
+"out": {
+"topaz": 1
+},
+"stations": [
+"workbench",
+"workshop"
+],
+"time": 4.0
+},
+"make_adrenaline": {
+"in": {
+"ethanol": 1,
+"monster_gland": 1
+},
+"name": "Адреналин",
+"out": {
+"adrenaline": 1
+},
+"stations": [
+"refinery"
+],
+"time": 3.0
+},
+"make_ai_core": {
+"in": {
+"motherboard": 1,
+"quantum_chip": 2
+},
+"name": "Ядро ИИ",
+"out": {
+"ai_core": 1
+},
+"stations": [
+"assembler"
+],
+"time": 20.0
+},
+"make_alkali": {
+"in": {
+"lime": 1,
+"water_flask": 1
+},
+"name": "Щёлочь",
+"out": {
+"alkali": 1
+},
+"stations": [
+"refinery"
+],
+"time": 2.5
+},
+"make_aluminum_beam": {
+"in": {
+"aluminum_ingot": 4
+},
+"name": "Алюминиевая балка",
+"out": {
+"aluminum_beam": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_aluminum_bolt": {
+"in": {
+"aluminum_ingot": 1
+},
+"name": "Алюминиевые болты и гайки",
+"out": {
+"aluminum_bolt": 4
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_aluminum_dust": {
+"in": {
+"aluminum_ingot": 1
+},
+"name": "Порошок алюминия",
+"out": {
+"aluminum_dust": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_aluminum_foil": {
+"in": {
+"aluminum_ingot": 1
+},
+"name": "Алюминиевая фольга",
+"out": {
+"aluminum_foil": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_aluminum_gear": {
+"in": {
+"aluminum_ingot": 2
+},
+"name": "Алюминиевые шестерни",
+"out": {
+"aluminum_gear": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_aluminum_pipe_part": {
+"in": {
+"aluminum_ingot": 2
+},
+"name": "Алюминиевые трубки",
+"out": {
+"aluminum_pipe_part": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_aluminum_plate": {
+"in": {
+"aluminum_ingot": 2
+},
+"name": "Алюминиевые пластины",
+"out": {
+"aluminum_plate": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_aluminum_rod": {
+"in": {
+"aluminum_ingot": 1
+},
+"name": "Алюминиевые прутья",
+"out": {
+"aluminum_rod": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_aluminum_screw": {
+"in": {
+"aluminum_ingot": 1
+},
+"name": "Алюминиевые шурупы",
+"out": {
+"aluminum_screw": 6
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_aluminum_spring": {
+"in": {
+"aluminum_ingot": 1
+},
+"name": "Алюминиевая пружина",
+"out": {
+"aluminum_spring": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_aluminum_wire": {
+"in": {
+"aluminum_ingot": 1
+},
+"name": "Алюминиевая проволока",
+"out": {
+"aluminum_wire": 3
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_ammo_energy": {
+"in": {
+"battery_cell": 1,
+"copper_wire": 2
+},
+"name": "Энергобатарея к оружию",
+"out": {
+"ammo_energy": 20
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 3.0
+},
+"make_ammo_heavy": {
+"in": {
+"ammo": 10,
+"gunpowder": 1,
+"steel": 1
+},
+"name": "Тяжёлые патроны",
+"out": {
+"ammo_heavy": 20
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 3.0
+},
+"make_ammonia": {
+"in": {
+"hydrogen_tank": 1,
+"nitrogen_tank": 1
+},
+"name": "Аммиак",
+"out": {
+"ammonia": 1
+},
+"stations": [
+"refinery"
+],
+"time": 2.5
+},
+"make_antenna_part": {
+"in": {
+"aluminum_rod": 1,
+"copper_wire": 2
+},
+"name": "Антенна",
+"out": {
+"antenna_part": 2
+},
+"stations": [
+"assembler"
+],
+"time": 1.5
+},
+"make_antibiotics": {
+"in": {
+"ethanol": 1,
+"fly_agaric": 1
+},
+"name": "Антибиотики",
+"out": {
+"antibiotics": 1
+},
+"stations": [
+"refinery"
+],
+"time": 3.0
+},
+"make_antidote": {
+"in": {
+"honey": 1,
+"monster_gland": 1
+},
+"name": "Противоядие",
+"out": {
+"antidote": 1
+},
+"stations": [
+"refinery"
+],
+"time": 3.0
+},
+"make_armored_glass": {
+"in": {
+"kevlar": 1,
+"tempered_glass": 2
+},
+"name": "Бронестекло",
+"out": {
+"armored_glass": 1
+},
+"stations": [
+"assembler"
+],
+"time": 2.5
+},
+"make_arrows": {
+"in": {
+"iron_screw": 1,
+"plank": 1
+},
+"name": "Стрелы",
+"out": {
+"arrows": 20
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 3.0
+},
+"make_bandage": {
+"in": {
+"fiber": 3
+},
+"name": "Бинт",
+"out": {
+"bandage": 1
+},
+"stations": [
+"hand",
+"workbench"
+],
+"time": 3.0
+},
+"make_battery_cell": {
+"in": {
+"aluminum_foil": 1,
+"lithium_dust": 1
+},
+"name": "Аккумуляторная ячейка",
+"out": {
+"battery_cell": 1
+},
+"stations": [
+"assembler"
+],
+"time": 1.5
+},
+"make_battery_pack": {
+"in": {
+"battery_cell": 6,
+"steel_plate": 1
+},
+"name": "Батарейный блок",
+"out": {
+"battery_pack": 1
+},
+"stations": [
+"assembler"
+],
+"time": 6.0
+},
+"make_big_backpack": {
+"in": {
+"kevlar": 2,
+"leather": 4
+},
+"name": "Большой рюкзак",
+"out": {
+"big_backpack": 1
+},
+"stations": [
+"workshop"
+],
+"time": 5.0
+},
+"make_big_medkit": {
+"in": {
+"antibiotics": 1,
+"bandage": 3,
+"medkit": 1
+},
+"name": "Большая аптечка",
+"out": {
+"big_medkit": 1
+},
+"stations": [
+"workshop"
+],
+"time": 3.0
+},
+"make_birch_plank": {
+"in": {
+"log": 1
+},
+"name": "Берёзовые доски",
+"out": {
+"birch_plank": 4
+},
+"stations": [
+"workbench"
+],
+"time": 2.0
+},
+"make_book": {
+"in": {
+"leather": 1,
+"paper": 4
+},
+"name": "Книга",
+"out": {
+"book": 1
+},
+"stations": [
+"workshop"
+],
+"time": 2.0
+},
+"make_bow": {
+"in": {
+"plank": 3,
+"rope": 2
+},
+"name": "Лук",
+"out": {
+"bow": 1
+},
+"stations": [
+"workbench"
+],
+"time": 6.0
+},
+"make_brass_beam": {
+"in": {
+"brass_ingot": 4
+},
+"name": "Латунная балка",
+"out": {
+"brass_beam": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_brass_bolt": {
+"in": {
+"brass_ingot": 1
+},
+"name": "Латунные болты и гайки",
+"out": {
+"brass_bolt": 4
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_brass_dust": {
+"in": {
+"brass_ingot": 1
+},
+"name": "Порошок латуни",
+"out": {
+"brass_dust": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_brass_foil": {
+"in": {
+"brass_ingot": 1
+},
+"name": "Латунная фольга",
+"out": {
+"brass_foil": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_brass_gear": {
+"in": {
+"brass_ingot": 2
+},
+"name": "Латунные шестерни",
+"out": {
+"brass_gear": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_brass_pipe_part": {
+"in": {
+"brass_ingot": 2
+},
+"name": "Латунные трубки",
+"out": {
+"brass_pipe_part": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_brass_plate": {
+"in": {
+"brass_ingot": 2
+},
+"name": "Латунные пластины",
+"out": {
+"brass_plate": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_brass_rod": {
+"in": {
+"brass_ingot": 1
+},
+"name": "Латунные прутья",
+"out": {
+"brass_rod": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_brass_screw": {
+"in": {
+"brass_ingot": 1
+},
+"name": "Латунные шурупы",
+"out": {
+"brass_screw": 6
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_brass_spring": {
+"in": {
+"brass_ingot": 1
+},
+"name": "Латунная пружина",
+"out": {
+"brass_spring": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_brass_wire": {
+"in": {
+"brass_ingot": 1
+},
+"name": "Латунная проволока",
+"out": {
+"brass_wire": 3
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_brick": {
+"in": {
+"clay": 2
+},
+"name": "Кирпичи",
+"out": {
+"brick": 1
+},
+"stations": [
+"furnace"
+],
+"time": 2.5
+},
+"make_bronze_axe": {
+"in": {
+"bronze_ingot": 3,
+"plank": 1
+},
+"name": "Бронзовый топор",
+"out": {
+"bronze_axe": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_bronze_beam": {
+"in": {
+"bronze_ingot": 4
+},
+"name": "Бронзовая балка",
+"out": {
+"bronze_beam": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_bronze_bolt": {
+"in": {
+"bronze_ingot": 1
+},
+"name": "Бронзовые болты и гайки",
+"out": {
+"bronze_bolt": 4
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_bronze_dust": {
+"in": {
+"bronze_ingot": 1
+},
+"name": "Порошок бронзы",
+"out": {
+"bronze_dust": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_bronze_foil": {
+"in": {
+"bronze_ingot": 1
+},
+"name": "Бронзовая фольга",
+"out": {
+"bronze_foil": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_bronze_gear": {
+"in": {
+"bronze_ingot": 2
+},
+"name": "Бронзовые шестерни",
+"out": {
+"bronze_gear": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_bronze_mace": {
+"in": {
+"bronze_ingot": 5,
+"plank": 1
+},
+"name": "Бронзовая булава",
+"out": {
+"bronze_mace": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_bronze_pickaxe": {
+"in": {
+"bronze_ingot": 3,
+"plank": 1
+},
+"name": "Бронзовая кирка",
+"out": {
+"bronze_pickaxe": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_bronze_pipe_part": {
+"in": {
+"bronze_ingot": 2
+},
+"name": "Бронзовые трубки",
+"out": {
+"bronze_pipe_part": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_bronze_plate": {
+"in": {
+"bronze_ingot": 2
+},
+"name": "Бронзовые пластины",
+"out": {
+"bronze_plate": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_bronze_rod": {
+"in": {
+"bronze_ingot": 1
+},
+"name": "Бронзовые прутья",
+"out": {
+"bronze_rod": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_bronze_screw": {
+"in": {
+"bronze_ingot": 1
+},
+"name": "Бронзовые шурупы",
+"out": {
+"bronze_screw": 6
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_bronze_spear": {
+"in": {
+"bronze_ingot": 2,
+"log": 1
+},
+"name": "Бронзовая копьё",
+"out": {
+"bronze_spear": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_bronze_spring": {
+"in": {
+"bronze_ingot": 1
+},
+"name": "Бронзовая пружина",
+"out": {
+"bronze_spring": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_bronze_sword": {
+"in": {
+"bronze_ingot": 4,
+"plank": 1
+},
+"name": "Бронзовый меч",
+"out": {
+"bronze_sword": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_bronze_wire": {
+"in": {
+"bronze_ingot": 1
+},
+"name": "Бронзовая проволока",
+"out": {
+"bronze_wire": 3
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_camera_module": {
+"in": {
+"glass": 1,
+"microchip": 1,
+"plastic": 1
+},
+"name": "Камера",
+"out": {
+"camera_module": 1
+},
+"stations": [
+"assembler"
+],
+"time": 1.8
+},
+"make_candle": {
+"in": {
+"fiber": 1,
+"wax": 1
+},
+"name": "Свеча",
+"out": {
+"candle": 2
+},
+"stations": [
+"hand",
+"workbench"
+],
+"time": 1.0
+},
+"make_canvas": {
+"in": {
+"cloth": 2,
+"wax": 1
+},
+"name": "Брезент",
+"out": {
+"canvas": 1
+},
+"stations": [
+"workshop"
+],
+"time": 2.0
+},
+"make_capacitor": {
+"in": {
+"aluminum_foil": 1,
+"plastic": 1
+},
+"name": "Конденсатор",
+"out": {
+"capacitor": 2
+},
+"stations": [
+"assembler"
+],
+"time": 1.5
+},
+"make_carbon_fiber": {
+"in": {
+"coal": 4,
+"epoxy": 1
+},
+"name": "Углеволокно",
+"out": {
+"carbon_fiber": 1
+},
+"stations": [
+"assembler"
+],
+"time": 2.5
+},
+"make_cement": {
+"in": {
+"clay": 1,
+"lime": 1
+},
+"name": "Цемент",
+"out": {
+"cement": 1
+},
+"stations": [
+"furnace"
+],
+"time": 2.5
+},
+"make_ceramic": {
+"in": {
+"clay": 2
+},
+"name": "Керамика",
+"out": {
+"ceramic": 1
+},
+"stations": [
+"furnace"
+],
+"time": 2.5
+},
+"make_chainmail": {
+"in": {
+"iron_wire": 8,
+"leather": 1
+},
+"name": "Кольчуга",
+"out": {
+"chainmail": 1
+},
+"stations": [
+"workshop"
+],
+"time": 5.0
+},
+"make_chainsaw": {
+"in": {
+"fuel": 1,
+"motor": 1,
+"steel_plate": 2
+},
+"name": "Бензопила",
+"out": {
+"chainsaw": 1
+},
+"stations": [
+"assembler"
+],
+"time": 6.0
+},
+"make_charcoal": {
+"in": {
+"log": 2
+},
+"name": "Древесный уголь",
+"out": {
+"charcoal": 4
+},
+"stations": [
+"furnace"
+],
+"time": 2.0
+},
+"make_chromium_beam": {
+"in": {
+"chromium_ingot": 4
+},
+"name": "Хромовая балка",
+"out": {
+"chromium_beam": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_chromium_bolt": {
+"in": {
+"chromium_ingot": 1
+},
+"name": "Хромовые болты и гайки",
+"out": {
+"chromium_bolt": 4
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_chromium_dust": {
+"in": {
+"chromium_ingot": 1
+},
+"name": "Порошок хрома",
+"out": {
+"chromium_dust": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_chromium_foil": {
+"in": {
+"chromium_ingot": 1
+},
+"name": "Хромовая фольга",
+"out": {
+"chromium_foil": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_chromium_gear": {
+"in": {
+"chromium_ingot": 2
+},
+"name": "Хромовые шестерни",
+"out": {
+"chromium_gear": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_chromium_pipe_part": {
+"in": {
+"chromium_ingot": 2
+},
+"name": "Хромовые трубки",
+"out": {
+"chromium_pipe_part": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_chromium_plate": {
+"in": {
+"chromium_ingot": 2
+},
+"name": "Хромовые пластины",
+"out": {
+"chromium_plate": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_chromium_rod": {
+"in": {
+"chromium_ingot": 1
+},
+"name": "Хромовые прутья",
+"out": {
+"chromium_rod": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_chromium_screw": {
+"in": {
+"chromium_ingot": 1
+},
+"name": "Хромовые шурупы",
+"out": {
+"chromium_screw": 6
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_chromium_spring": {
+"in": {
+"chromium_ingot": 1
+},
+"name": "Хромовая пружина",
+"out": {
+"chromium_spring": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_chromium_wire": {
+"in": {
+"chromium_ingot": 1
+},
+"name": "Хромовая проволока",
+"out": {
+"chromium_wire": 3
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_circuit_mk2": {
+"in": {
+"circuit": 2,
+"transistor": 4
+},
+"name": "Плата Mk2",
+"out": {
+"circuit_mk2": 1
+},
+"stations": [
+"assembler"
+],
+"time": 2.0
+},
+"make_circuit_mk3": {
+"in": {
+"circuit_mk2": 2,
+"processor": 1
+},
+"name": "Плата Mk3",
+"out": {
+"circuit_mk3": 1
+},
+"stations": [
+"assembler"
+],
+"time": 5.0
+},
+"make_clay": {
+"in": {
+"stone": 1,
+"water_flask": 1
+},
+"name": "Глина",
+"out": {
+"clay": 1
+},
+"stations": [
+"workbench"
+],
+"time": 2.5
+},
+"make_cloth": {
+"in": {
+"cotton": 3
+},
+"name": "Ткань",
+"out": {
+"cloth": 1
+},
+"stations": [
+"workshop"
+],
+"time": 2.0
+},
+"make_club": {
+"in": {
+"iron_screw": 2,
+"log": 2
+},
+"name": "Дубина",
+"out": {
+"club": 1
+},
+"stations": [
+"hand"
+],
+"time": 6.0
+},
+"make_cobalt_beam": {
+"in": {
+"cobalt_ingot": 4
+},
+"name": "Кобальтовая балка",
+"out": {
+"cobalt_beam": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_cobalt_bolt": {
+"in": {
+"cobalt_ingot": 1
+},
+"name": "Кобальтовые болты и гайки",
+"out": {
+"cobalt_bolt": 4
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_cobalt_dust": {
+"in": {
+"cobalt_ingot": 1
+},
+"name": "Порошок кобальта",
+"out": {
+"cobalt_dust": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_cobalt_foil": {
+"in": {
+"cobalt_ingot": 1
+},
+"name": "Кобальтовая фольга",
+"out": {
+"cobalt_foil": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_cobalt_gear": {
+"in": {
+"cobalt_ingot": 2
+},
+"name": "Кобальтовые шестерни",
+"out": {
+"cobalt_gear": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_cobalt_pipe_part": {
+"in": {
+"cobalt_ingot": 2
+},
+"name": "Кобальтовые трубки",
+"out": {
+"cobalt_pipe_part": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_cobalt_plate": {
+"in": {
+"cobalt_ingot": 2
+},
+"name": "Кобальтовые пластины",
+"out": {
+"cobalt_plate": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_cobalt_rod": {
+"in": {
+"cobalt_ingot": 1
+},
+"name": "Кобальтовые прутья",
+"out": {
+"cobalt_rod": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_cobalt_screw": {
+"in": {
+"cobalt_ingot": 1
+},
+"name": "Кобальтовые шурупы",
+"out": {
+"cobalt_screw": 6
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_cobalt_spring": {
+"in": {
+"cobalt_ingot": 1
+},
+"name": "Кобальтовая пружина",
+"out": {
+"cobalt_spring": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_cobalt_wire": {
+"in": {
+"cobalt_ingot": 1
+},
+"name": "Кобальтовая проволока",
+"out": {
+"cobalt_wire": 3
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_combat_helmet": {
+"in": {
+"armored_glass": 1,
+"kevlar": 2
+},
+"name": "Каска с визором",
+"out": {
+"combat_helmet": 1
+},
+"stations": [
+"assembler"
+],
+"time": 5.0
+},
+"make_compass": {
+"in": {
+"brass_plate": 1,
+"glass": 1,
+"magnet": 1
+},
+"name": "Компас",
+"out": {
+"compass": 1
+},
+"stations": [
+"workshop"
+],
+"time": 3.0
+},
+"make_coolant": {
+"in": {
+"alkali": 1,
+"water_flask": 1
+},
+"name": "Хладагент",
+"out": {
+"coolant": 1
+},
+"stations": [
+"refinery"
+],
+"time": 2.5
+},
+"make_cooling_fan": {
+"in": {
+"motor": 1,
+"plastic": 1
+},
+"name": "Вентилятор охлаждения",
+"out": {
+"cooling_fan": 2
+},
+"stations": [
+"assembler"
+],
+"time": 1.5
+},
+"make_copper_axe": {
+"in": {
+"copper_ingot": 3,
+"plank": 1
+},
+"name": "Медный топор",
+"out": {
+"copper_axe": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_copper_beam": {
+"in": {
+"copper_ingot": 4
+},
+"name": "Медная балка",
+"out": {
+"copper_beam": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_copper_bolt": {
+"in": {
+"copper_ingot": 1
+},
+"name": "Медные болты и гайки",
+"out": {
+"copper_bolt": 4
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_copper_dust": {
+"in": {
+"copper_ingot": 1
+},
+"name": "Порошок меди",
+"out": {
+"copper_dust": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_copper_foil": {
+"in": {
+"copper_ingot": 1
+},
+"name": "Медная фольга",
+"out": {
+"copper_foil": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_copper_gear": {
+"in": {
+"copper_ingot": 2
+},
+"name": "Медные шестерни",
+"out": {
+"copper_gear": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_copper_mace": {
+"in": {
+"copper_ingot": 5,
+"plank": 1
+},
+"name": "Медная булава",
+"out": {
+"copper_mace": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_copper_pickaxe": {
+"in": {
+"copper_ingot": 3,
+"plank": 1
+},
+"name": "Медная кирка",
+"out": {
+"copper_pickaxe": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_copper_pipe_part": {
+"in": {
+"copper_ingot": 2
+},
+"name": "Медные трубки",
+"out": {
+"copper_pipe_part": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_copper_plate": {
+"in": {
+"copper_ingot": 2
+},
+"name": "Медные пластины",
+"out": {
+"copper_plate": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_copper_rod": {
+"in": {
+"copper_ingot": 1
+},
+"name": "Медные прутья",
+"out": {
+"copper_rod": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_copper_screw": {
+"in": {
+"copper_ingot": 1
+},
+"name": "Медные шурупы",
+"out": {
+"copper_screw": 6
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_copper_spear": {
+"in": {
+"copper_ingot": 2,
+"log": 1
+},
+"name": "Медная копьё",
+"out": {
+"copper_spear": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_copper_spring": {
+"in": {
+"copper_ingot": 1
+},
+"name": "Медная пружина",
+"out": {
+"copper_spring": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_copper_sword": {
+"in": {
+"copper_ingot": 4,
+"plank": 1
+},
+"name": "Медный меч",
+"out": {
+"copper_sword": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_copper_wire": {
+"in": {
+"copper_ingot": 1
+},
+"name": "Медная проволока",
+"out": {
+"copper_wire": 3
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_dagger": {
+"in": {
+"rubber": 1,
+"steel": 1
+},
+"name": "Кинжал",
+"out": {
+"dagger": 1
+},
+"stations": [
+"workshop"
+],
+"time": 6.0
+},
+"make_diode": {
+"in": {
+"silicon": 1
+},
+"name": "Диод",
+"out": {
+"diode": 2
+},
+"stations": [
+"assembler"
+],
+"time": 1.5
+},
+"make_display_panel": {
+"in": {
+"glass": 2,
+"led": 4,
+"microchip": 1
+},
+"name": "Дисплей",
+"out": {
+"display_panel": 1
+},
+"stations": [
+"assembler"
+],
+"time": 2.5
+},
+"make_double_axe": {
+"in": {
+"plank": 2,
+"steel": 6
+},
+"name": "Двуручная секира",
+"out": {
+"double_axe": 1
+},
+"stations": [
+"workshop"
+],
+"time": 6.0
+},
+"make_dynamite": {
+"in": {
+"explosive": 2,
+"paper": 1
+},
+"name": "Динамит",
+"out": {
+"dynamite": 2
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_electromagnet": {
+"in": {
+"induction_coil": 2,
+"iron_rod": 1
+},
+"name": "Электромагнит",
+"out": {
+"electromagnet": 1
+},
+"stations": [
+"assembler"
+],
+"time": 1.8
+},
+"make_electrum_beam": {
+"in": {
+"electrum_ingot": 4
+},
+"name": "Электрумовая балка",
+"out": {
+"electrum_beam": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_electrum_bolt": {
+"in": {
+"electrum_ingot": 1
+},
+"name": "Электрумовые болты и гайки",
+"out": {
+"electrum_bolt": 4
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_electrum_dust": {
+"in": {
+"electrum_ingot": 1
+},
+"name": "Порошок электрума",
+"out": {
+"electrum_dust": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_electrum_foil": {
+"in": {
+"electrum_ingot": 1
+},
+"name": "Электрумовая фольга",
+"out": {
+"electrum_foil": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_electrum_gear": {
+"in": {
+"electrum_ingot": 2
+},
+"name": "Электрумовые шестерни",
+"out": {
+"electrum_gear": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_electrum_pipe_part": {
+"in": {
+"electrum_ingot": 2
+},
+"name": "Электрумовые трубки",
+"out": {
+"electrum_pipe_part": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_electrum_plate": {
+"in": {
+"electrum_ingot": 2
+},
+"name": "Электрумовые пластины",
+"out": {
+"electrum_plate": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_electrum_rod": {
+"in": {
+"electrum_ingot": 1
+},
+"name": "Электрумовые прутья",
+"out": {
+"electrum_rod": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_electrum_screw": {
+"in": {
+"electrum_ingot": 1
+},
+"name": "Электрумовые шурупы",
+"out": {
+"electrum_screw": 6
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_electrum_spring": {
+"in": {
+"electrum_ingot": 1
+},
+"name": "Электрумовая пружина",
+"out": {
+"electrum_spring": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_electrum_wire": {
+"in": {
+"electrum_ingot": 1
+},
+"name": "Электрумовая проволока",
+"out": {
+"electrum_wire": 3
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_emp_grenade": {
+"in": {
+"battery_cell": 1,
+"electromagnet": 1
+},
+"name": "ЭМИ-граната",
+"out": {
+"emp_grenade": 2
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_epoxy": {
+"in": {
+"plastic": 1,
+"solvent": 1
+},
+"name": "Эпоксидная смола",
+"out": {
+"epoxy": 1
+},
+"stations": [
+"refinery"
+],
+"time": 2.5
+},
+"make_ethanol": {
+"in": {
+"water_flask": 1,
+"wheat": 3
+},
+"name": "Спирт",
+"out": {
+"ethanol": 1
+},
+"stations": [
+"refinery"
+],
+"time": 2.5
+},
+"make_exo_boots": {
+"in": {
+"servo_motor": 2,
+"titanium_plate": 2
+},
+"name": "Экзо-ботинки",
+"out": {
+"exo_boots": 1
+},
+"stations": [
+"assembler"
+],
+"time": 5.0
+},
+"make_explosive": {
+"in": {
+"gunpowder": 3,
+"plastic": 1
+},
+"name": "Взрывчатка",
+"out": {
+"explosive": 1
+},
+"stations": [
+"workshop"
+],
+"time": 2.5
+},
+"make_fertilizer": {
+"in": {
+"ammonia": 1,
+"biomass": 2
+},
+"name": "Удобрение",
+"out": {
+"fertilizer": 1
+},
+"stations": [
+"refinery"
+],
+"time": 2.5
+},
+"make_fiber_optic": {
+"in": {
+"glass": 2,
+"plastic": 1
+},
+"name": "Оптоволокно",
+"out": {
+"fiber_optic": 2
+},
+"stations": [
+"assembler"
+],
+"time": 1.5
+},
+"make_fire_grenade": {
+"in": {
+"iron_plate": 1,
+"thermite": 1
+},
+"name": "Зажигательная граната",
+"out": {
+"fire_grenade": 2
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_fishing_rod": {
+"in": {
+"iron_screw": 1,
+"plank": 2,
+"rope": 1
+},
+"name": "Удочка",
+"out": {
+"fishing_rod": 1
+},
+"stations": [
+"workbench"
+],
+"time": 2.0
+},
+"make_frag_grenade": {
+"in": {
+"explosive": 1,
+"iron_plate": 1
+},
+"name": "Осколочная граната",
+"out": {
+"frag_grenade": 2
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_fuel_cell": {
+"in": {
+"fuel": 2,
+"steel_plate": 1
+},
+"name": "Топливный элемент",
+"out": {
+"fuel_cell": 1
+},
+"stations": [
+"refinery"
+],
+"time": 3.0
+},
+"make_fuse": {
+"in": {
+"glass": 1,
+"tin_wire": 1
+},
+"name": "Предохранитель",
+"out": {
+"fuse": 2
+},
+"stations": [
+"assembler"
+],
+"time": 1.5
+},
+"make_gas_mask": {
+"in": {
+"coal": 2,
+"glass": 1,
+"rubber_sheet": 2
+},
+"name": "Противогаз",
+"out": {
+"gas_mask": 1
+},
+"stations": [
+"workshop"
+],
+"time": 5.0
+},
+"make_glue": {
+"in": {
+"resin": 1
+},
+"name": "Клей",
+"out": {
+"glue": 1
+},
+"stations": [
+"workbench"
+],
+"time": 2.5
+},
+"make_gold_beam": {
+"in": {
+"gold_ingot": 4
+},
+"name": "Золотая балка",
+"out": {
+"gold_beam": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_gold_bolt": {
+"in": {
+"gold_ingot": 1
+},
+"name": "Золотые болты и гайки",
+"out": {
+"gold_bolt": 4
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_gold_dust": {
+"in": {
+"gold_ingot": 1
+},
+"name": "Порошок золота",
+"out": {
+"gold_dust": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_gold_foil": {
+"in": {
+"gold_ingot": 1
+},
+"name": "Золотая фольга",
+"out": {
+"gold_foil": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_gold_gear": {
+"in": {
+"gold_ingot": 2
+},
+"name": "Золотые шестерни",
+"out": {
+"gold_gear": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_gold_pipe_part": {
+"in": {
+"gold_ingot": 2
+},
+"name": "Золотые трубки",
+"out": {
+"gold_pipe_part": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_gold_plate": {
+"in": {
+"gold_ingot": 2
+},
+"name": "Золотые пластины",
+"out": {
+"gold_plate": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_gold_rod": {
+"in": {
+"gold_ingot": 1
+},
+"name": "Золотые прутья",
+"out": {
+"gold_rod": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_gold_screw": {
+"in": {
+"gold_ingot": 1
+},
+"name": "Золотые шурупы",
+"out": {
+"gold_screw": 6
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_gold_spring": {
+"in": {
+"gold_ingot": 1
+},
+"name": "Золотая пружина",
+"out": {
+"gold_spring": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_gold_wire": {
+"in": {
+"gold_ingot": 1
+},
+"name": "Золотая проволока",
+"out": {
+"gold_wire": 3
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_graphene": {
+"in": {
+"carbon_fiber": 2,
+"coolant": 1
+},
+"name": "Графен",
+"out": {
+"graphene": 1
+},
+"stations": [
+"assembler"
+],
+"time": 2.5
+},
+"make_greatsword": {
+"in": {
+"rubber": 1,
+"steel": 8
+},
+"name": "Двуручный меч",
+"out": {
+"greatsword": 1
+},
+"stations": [
+"workshop"
+],
+"time": 6.0
+},
+"make_gunpowder": {
+"in": {
+"coal": 1,
+"nitric_acid": 1,
+"sulfur": 1
+},
+"name": "Порох",
+"out": {
+"gunpowder": 1
+},
+"stations": [
+"workshop"
+],
+"time": 2.5
+},
+"make_gyroscope": {
+"in": {
+"brass_gear": 2,
+"microchip": 1
+},
+"name": "Гироскоп",
+"out": {
+"gyroscope": 1
+},
+"stations": [
+"assembler"
+],
+"time": 3.0
+},
+"make_hammer": {
+"in": {
+"iron_ingot": 3,
+"plank": 1
+},
+"name": "Молот строителя",
+"out": {
+"hammer": 1
+},
+"stations": [
+"workbench"
+],
+"time": 6.0
+},
+"make_hardwood": {
+"in": {
+"oak_plank": 2,
+"resin": 1
+},
+"name": "Морёный дуб",
+"out": {
+"hardwood": 1
+},
+"stations": [
+"workshop"
+],
+"time": 2.0
+},
+"make_hazmat_mask": {
+"in": {
+"rubber_sheet": 3,
+"tempered_glass": 1
+},
+"name": "Маска химзащиты",
+"out": {
+"hazmat_mask": 1
+},
+"stations": [
+"assembler"
+],
+"time": 5.0
+},
+"make_helium_tank": {
+"in": {
+"canister": 1,
+"uranium_dust": 1
+},
+"name": "Баллон гелия",
+"out": {
+"helium_tank": 1
+},
+"stations": [
+"packager"
+],
+"time": 2.5
+},
+"make_herbal_poultice": {
+"in": {
+"fiber": 1,
+"leaves": 4
+},
+"name": "Травяная примочка",
+"out": {
+"herbal_poultice": 1
+},
+"stations": [
+"hand",
+"workbench"
+],
+"time": 3.0
+},
+"make_hydrogen_tank": {
+"in": {
+"canister": 1,
+"water": 6
+},
+"name": "Баллон водорода",
+"out": {
+"hydrogen_tank": 1
+},
+"stations": [
+"packager"
+],
+"time": 2.5
+},
+"make_induction_coil": {
+"in": {
+"copper_wire": 4,
+"iron_rod": 1
+},
+"name": "Катушка индуктивности",
+"out": {
+"induction_coil": 2
+},
+"stations": [
+"assembler"
+],
+"time": 1.5
+},
+"make_iron_beam": {
+"in": {
+"iron_ingot": 4
+},
+"name": "Железная балка",
+"out": {
+"iron_beam": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_iron_bolt": {
+"in": {
+"iron_ingot": 1
+},
+"name": "Железные болты и гайки",
+"out": {
+"iron_bolt": 4
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_iron_dust": {
+"in": {
+"iron_ingot": 1
+},
+"name": "Порошок железа",
+"out": {
+"iron_dust": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_iron_foil": {
+"in": {
+"iron_ingot": 1
+},
+"name": "Железная фольга",
+"out": {
+"iron_foil": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_iron_gear": {
+"in": {
+"iron_ingot": 2
+},
+"name": "Железные шестерни",
+"out": {
+"iron_gear": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_iron_helmet": {
+"in": {
+"iron_plate": 4
+},
+"name": "Железный шлем",
+"out": {
+"iron_helmet": 1
+},
+"stations": [
+"workshop"
+],
+"time": 5.0
+},
+"make_iron_pipe_part": {
+"in": {
+"iron_ingot": 2
+},
+"name": "Железные трубки",
+"out": {
+"iron_pipe_part": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_iron_rod": {
+"in": {
+"iron_ingot": 1
+},
+"name": "Железные прутья",
+"out": {
+"iron_rod": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_iron_screw": {
+"in": {
+"iron_ingot": 1
+},
+"name": "Железные шурупы",
+"out": {
+"iron_screw": 6
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_iron_spring": {
+"in": {
+"iron_ingot": 1
+},
+"name": "Железная пружина",
+"out": {
+"iron_spring": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_iron_wire": {
+"in": {
+"iron_ingot": 1
+},
+"name": "Железная проволока",
+"out": {
+"iron_wire": 3
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_katana": {
+"in": {
+"carbon_fiber": 1,
+"steel": 5
+},
+"name": "Катана",
+"out": {
+"katana": 1
+},
+"stations": [
+"workshop"
+],
+"time": 6.0
+},
+"make_kevlar": {
+"in": {
+"nitric_acid": 1,
+"plastic": 3
+},
+"name": "Кевлар",
+"out": {
+"kevlar": 1
+},
+"stations": [
+"assembler"
+],
+"time": 2.5
+},
+"make_kevlar_vest": {
+"in": {
+"kevlar": 4,
+"steel_plate": 2
+},
+"name": "Бронежилет",
+"out": {
+"kevlar_vest": 1
+},
+"stations": [
+"assembler"
+],
+"time": 5.0
+},
+"make_lantern": {
+"in": {
+"glass": 1,
+"iron_plate": 1,
+"wax": 1
+},
+"name": "Фонарь",
+"out": {
+"lantern": 1
+},
+"stations": [
+"workbench"
+],
+"time": 3.0
+},
+"make_laser_diode": {
+"in": {
+"microchip": 1,
+"ruby": 1
+},
+"name": "Лазерный диод",
+"out": {
+"laser_diode": 1
+},
+"stations": [
+"assembler"
+],
+"time": 2.5
+},
+"make_laser_rifle": {
+"in": {
+"laser_diode": 2,
+"power_cell": 1,
+"titanium_plate": 2
+},
+"name": "Лазерная винтовка",
+"out": {
+"laser_rifle": 1
+},
+"stations": [
+"assembler"
+],
+"time": 6.0
+},
+"make_lead_beam": {
+"in": {
+"lead_ingot": 4
+},
+"name": "Свинцовая балка",
+"out": {
+"lead_beam": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_lead_bolt": {
+"in": {
+"lead_ingot": 1
+},
+"name": "Свинцовые болты и гайки",
+"out": {
+"lead_bolt": 4
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_lead_dust": {
+"in": {
+"lead_ingot": 1
+},
+"name": "Порошок свинца",
+"out": {
+"lead_dust": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_lead_foil": {
+"in": {
+"lead_ingot": 1
+},
+"name": "Свинцовая фольга",
+"out": {
+"lead_foil": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_lead_gear": {
+"in": {
+"lead_ingot": 2
+},
+"name": "Свинцовые шестерни",
+"out": {
+"lead_gear": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_lead_pipe_part": {
+"in": {
+"lead_ingot": 2
+},
+"name": "Свинцовые трубки",
+"out": {
+"lead_pipe_part": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_lead_plate": {
+"in": {
+"lead_ingot": 2
+},
+"name": "Свинцовые пластины",
+"out": {
+"lead_plate": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_lead_rod": {
+"in": {
+"lead_ingot": 1
+},
+"name": "Свинцовые прутья",
+"out": {
+"lead_rod": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_lead_screw": {
+"in": {
+"lead_ingot": 1
+},
+"name": "Свинцовые шурупы",
+"out": {
+"lead_screw": 6
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_lead_spring": {
+"in": {
+"lead_ingot": 1
+},
+"name": "Свинцовая пружина",
+"out": {
+"lead_spring": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_lead_wire": {
+"in": {
+"lead_ingot": 1
+},
+"name": "Свинцовая проволока",
+"out": {
+"lead_wire": 3
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_leather": {
+"in": {
+"monster_hide": 1,
+"salt": 1
+},
+"name": "Кожа",
+"out": {
+"leather": 1
+},
+"stations": [
+"workshop"
+],
+"time": 2.0
+},
+"make_leather_boots": {
+"in": {
+"leather": 3
+},
+"name": "Кожаные сапоги",
+"out": {
+"leather_boots": 1
+},
+"stations": [
+"workbench"
+],
+"time": 5.0
+},
+"make_leather_helmet": {
+"in": {
+"leather": 3
+},
+"name": "Кожаный шлем",
+"out": {
+"leather_helmet": 1
+},
+"stations": [
+"workbench"
+],
+"time": 5.0
+},
+"make_leather_vest": {
+"in": {
+"leather": 6,
+"rope": 1
+},
+"name": "Кожаная куртка",
+"out": {
+"leather_vest": 1
+},
+"stations": [
+"workbench"
+],
+"time": 5.0
+},
+"make_led": {
+"in": {
+"glass": 1,
+"silicon": 1
+},
+"name": "Светодиод",
+"out": {
+"led": 2
+},
+"stations": [
+"assembler"
+],
+"time": 1.5
+},
+"make_lens": {
+"in": {
+"glass": 1,
+"quartz": 1
+},
+"name": "Линза",
+"out": {
+"lens": 1
+},
+"stations": [
+"workshop"
+],
+"time": 2.5
+},
+"make_lime": {
+"in": {
+"stone": 3
+},
+"name": "Известь",
+"out": {
+"lime": 1
+},
+"stations": [
+"furnace"
+],
+"time": 2.5
+},
+"make_linen": {
+"in": {
+"flax": 3
+},
+"name": "Льняная ткань",
+"out": {
+"linen": 1
+},
+"stations": [
+"workshop"
+],
+"time": 2.0
+},
+"make_lithium_beam": {
+"in": {
+"lithium_ingot": 4
+},
+"name": "Литиевая балка",
+"out": {
+"lithium_beam": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_lithium_bolt": {
+"in": {
+"lithium_ingot": 1
+},
+"name": "Литиевые болты и гайки",
+"out": {
+"lithium_bolt": 4
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_lithium_dust": {
+"in": {
+"lithium_ingot": 1
+},
+"name": "Порошок лития",
+"out": {
+"lithium_dust": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_lithium_foil": {
+"in": {
+"lithium_ingot": 1
+},
+"name": "Литиевая фольга",
+"out": {
+"lithium_foil": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_lithium_gear": {
+"in": {
+"lithium_ingot": 2
+},
+"name": "Литиевые шестерни",
+"out": {
+"lithium_gear": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_lithium_pipe_part": {
+"in": {
+"lithium_ingot": 2
+},
+"name": "Литиевые трубки",
+"out": {
+"lithium_pipe_part": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_lithium_plate": {
+"in": {
+"lithium_ingot": 2
+},
+"name": "Литиевые пластины",
+"out": {
+"lithium_plate": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_lithium_rod": {
+"in": {
+"lithium_ingot": 1
+},
+"name": "Литиевые прутья",
+"out": {
+"lithium_rod": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_lithium_screw": {
+"in": {
+"lithium_ingot": 1
+},
+"name": "Литиевые шурупы",
+"out": {
+"lithium_screw": 6
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_lithium_spring": {
+"in": {
+"lithium_ingot": 1
+},
+"name": "Литиевая пружина",
+"out": {
+"lithium_spring": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_lithium_wire": {
+"in": {
+"lithium_ingot": 1
+},
+"name": "Литиевая проволока",
+"out": {
+"lithium_wire": 3
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_lubricant": {
+"in": {
+"oil": 1
+},
+"name": "Смазка",
+"out": {
+"lubricant": 1
+},
+"stations": [
+"refinery"
+],
+"time": 2.5
+},
+"make_magnet": {
+"in": {
+"cobalt_dust": 1,
+"iron_ingot": 1
+},
+"name": "Магнит",
+"out": {
+"magnet": 2
+},
+"stations": [
+"assembler"
+],
+"time": 1.5
+},
+"make_microchip": {
+"in": {
+"gold_wire": 1,
+"silicon": 2
+},
+"name": "Микросхема-контроллер",
+"out": {
+"microchip": 1
+},
+"stations": [
+"assembler"
+],
+"time": 1.5
+},
+"make_morphine": {
+"in": {
+"ethanol": 1,
+"painkillers": 2
+},
+"name": "Морфин",
+"out": {
+"morphine": 1
+},
+"stations": [
+"refinery"
+],
+"time": 3.0
+},
+"make_motherboard": {
+"in": {
+"capacitor": 4,
+"circuit": 2,
+"processor": 1
+},
+"name": "Материнская плата",
+"out": {
+"motherboard": 1
+},
+"stations": [
+"assembler"
+],
+"time": 6.0
+},
+"make_motion_sensor": {
+"in": {
+"glass": 1,
+"microchip": 1
+},
+"name": "Датчик движения",
+"out": {
+"motion_sensor": 1
+},
+"stations": [
+"assembler"
+],
+"time": 1.5
+},
+"make_nano_medkit": {
+"in": {
+"big_medkit": 1,
+"nanobots": 1
+},
+"name": "Нано-аптечка",
+"out": {
+"nano_medkit": 1
+},
+"stations": [
+"assembler"
+],
+"time": 3.0
+},
+"make_nanobots": {
+"in": {
+"microchip": 6,
+"platinum_dust": 1
+},
+"name": "Наноботы",
+"out": {
+"nanobots": 1
+},
+"stations": [
+"assembler"
+],
+"time": 15.0
+},
+"make_nickel_beam": {
+"in": {
+"nickel_ingot": 4
+},
+"name": "Никелевая балка",
+"out": {
+"nickel_beam": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_nickel_bolt": {
+"in": {
+"nickel_ingot": 1
+},
+"name": "Никелевые болты и гайки",
+"out": {
+"nickel_bolt": 4
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_nickel_dust": {
+"in": {
+"nickel_ingot": 1
+},
+"name": "Порошок никеля",
+"out": {
+"nickel_dust": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_nickel_foil": {
+"in": {
+"nickel_ingot": 1
+},
+"name": "Никелевая фольга",
+"out": {
+"nickel_foil": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_nickel_gear": {
+"in": {
+"nickel_ingot": 2
+},
+"name": "Никелевые шестерни",
+"out": {
+"nickel_gear": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_nickel_pipe_part": {
+"in": {
+"nickel_ingot": 2
+},
+"name": "Никелевые трубки",
+"out": {
+"nickel_pipe_part": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_nickel_plate": {
+"in": {
+"nickel_ingot": 2
+},
+"name": "Никелевые пластины",
+"out": {
+"nickel_plate": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_nickel_rod": {
+"in": {
+"nickel_ingot": 1
+},
+"name": "Никелевые прутья",
+"out": {
+"nickel_rod": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_nickel_screw": {
+"in": {
+"nickel_ingot": 1
+},
+"name": "Никелевые шурупы",
+"out": {
+"nickel_screw": 6
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_nickel_spring": {
+"in": {
+"nickel_ingot": 1
+},
+"name": "Никелевая пружина",
+"out": {
+"nickel_spring": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_nickel_wire": {
+"in": {
+"nickel_ingot": 1
+},
+"name": "Никелевая проволока",
+"out": {
+"nickel_wire": 3
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_nitric_acid": {
+"in": {
+"ammonia": 1,
+"water_flask": 1
+},
+"name": "Азотная кислота",
+"out": {
+"nitric_acid": 1
+},
+"stations": [
+"refinery"
+],
+"time": 2.5
+},
+"make_nitrogen_tank": {
+"in": {
+"canister": 1
+},
+"name": "Баллон азота",
+"out": {
+"nitrogen_tank": 1
+},
+"stations": [
+"packager"
+],
+"time": 2.5
+},
+"make_oak_plank": {
+"in": {
+"log": 1
+},
+"name": "Дубовые доски",
+"out": {
+"oak_plank": 4
+},
+"stations": [
+"workbench"
+],
+"time": 2.0
+},
+"make_oxygen_tank": {
+"in": {
+"canister": 1,
+"water": 4
+},
+"name": "Баллон кислорода",
+"out": {
+"oxygen_tank": 1
+},
+"stations": [
+"packager"
+],
+"time": 2.5
+},
+"make_painkillers": {
+"in": {
+"ethanol": 1,
+"herbs": 2
+},
+"name": "Обезболивающее",
+"out": {
+"painkillers": 1
+},
+"stations": [
+"workshop"
+],
+"time": 3.0
+},
+"make_paint_black": {
+"in": {
+"coal": 1,
+"resin": 1
+},
+"name": "Чёрная краска",
+"out": {
+"paint_black": 1
+},
+"stations": [
+"workbench"
+],
+"time": 2.5
+},
+"make_paint_blue": {
+"in": {
+"cobalt_dust": 1,
+"resin": 1
+},
+"name": "Синяя краска",
+"out": {
+"paint_blue": 1
+},
+"stations": [
+"workbench"
+],
+"time": 2.5
+},
+"make_paint_green": {
+"in": {
+"leaves": 2,
+"resin": 1
+},
+"name": "Зелёная краска",
+"out": {
+"paint_green": 1
+},
+"stations": [
+"workbench"
+],
+"time": 2.5
+},
+"make_paint_red": {
+"in": {
+"iron_dust": 1,
+"resin": 1
+},
+"name": "Красная краска",
+"out": {
+"paint_red": 1
+},
+"stations": [
+"workbench"
+],
+"time": 2.5
+},
+"make_paint_white": {
+"in": {
+"lime": 1,
+"resin": 1
+},
+"name": "Белая краска",
+"out": {
+"paint_white": 1
+},
+"stations": [
+"workbench"
+],
+"time": 2.5
+},
+"make_paint_yellow": {
+"in": {
+"resin": 1,
+"sulfur": 1
+},
+"name": "Жёлтая краска",
+"out": {
+"paint_yellow": 1
+},
+"stations": [
+"workbench"
+],
+"time": 2.5
+},
+"make_paper": {
+"in": {
+"sawdust": 2,
+"water_flask": 1
+},
+"name": "Бумага",
+"out": {
+"paper": 1
+},
+"stations": [
+"workshop"
+],
+"time": 2.0
+},
+"make_pine_plank": {
+"in": {
+"log": 1
+},
+"name": "Сосновые доски",
+"out": {
+"pine_plank": 4
+},
+"stations": [
+"workbench"
+],
+"time": 2.0
+},
+"make_pistol": {
+"in": {
+"gunpowder": 1,
+"iron_spring": 1,
+"steel": 2
+},
+"name": "Пистолет",
+"out": {
+"pistol": 1
+},
+"stations": [
+"workshop"
+],
+"time": 6.0
+},
+"make_plasma_core": {
+"in": {
+"electromagnet": 4,
+"power_cell": 2
+},
+"name": "Плазменное ядро",
+"out": {
+"plasma_core": 1
+},
+"stations": [
+"assembler"
+],
+"time": 20.0
+},
+"make_plasma_gun": {
+"in": {
+"plasma_core": 1,
+"superconductor": 1,
+"tungsten_plate": 2
+},
+"name": "Плазменная пушка",
+"out": {
+"plasma_gun": 1
+},
+"stations": [
+"assembler"
+],
+"time": 6.0
+},
+"make_plastic_pellets": {
+"in": {
+"plastic": 1
+},
+"name": "Гранулы пластика",
+"out": {
+"plastic_pellets": 1
+},
+"stations": [
+"assembler"
+],
+"time": 2.5
+},
+"make_platinum_beam": {
+"in": {
+"platinum_ingot": 4
+},
+"name": "Платиновая балка",
+"out": {
+"platinum_beam": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_platinum_bolt": {
+"in": {
+"platinum_ingot": 1
+},
+"name": "Платиновые болты и гайки",
+"out": {
+"platinum_bolt": 4
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_platinum_dust": {
+"in": {
+"platinum_ingot": 1
+},
+"name": "Порошок платины",
+"out": {
+"platinum_dust": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_platinum_foil": {
+"in": {
+"platinum_ingot": 1
+},
+"name": "Платиновая фольга",
+"out": {
+"platinum_foil": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_platinum_gear": {
+"in": {
+"platinum_ingot": 2
+},
+"name": "Платиновые шестерни",
+"out": {
+"platinum_gear": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_platinum_pipe_part": {
+"in": {
+"platinum_ingot": 2
+},
+"name": "Платиновые трубки",
+"out": {
+"platinum_pipe_part": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_platinum_plate": {
+"in": {
+"platinum_ingot": 2
+},
+"name": "Платиновые пластины",
+"out": {
+"platinum_plate": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_platinum_rod": {
+"in": {
+"platinum_ingot": 1
+},
+"name": "Платиновые прутья",
+"out": {
+"platinum_rod": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_platinum_screw": {
+"in": {
+"platinum_ingot": 1
+},
+"name": "Платиновые шурупы",
+"out": {
+"platinum_screw": 6
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_platinum_spring": {
+"in": {
+"platinum_ingot": 1
+},
+"name": "Платиновая пружина",
+"out": {
+"platinum_spring": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_platinum_wire": {
+"in": {
+"platinum_ingot": 1
+},
+"name": "Платиновая проволока",
+"out": {
+"platinum_wire": 3
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_plywood": {
+"in": {
+"glue": 1,
+"plank": 2
+},
+"name": "Фанера",
+"out": {
+"plywood": 4
+},
+"stations": [
+"workshop"
+],
+"time": 2.0
+},
+"make_porcelain": {
+"in": {
+"clay": 2,
+"quartz": 1
+},
+"name": "Фарфор",
+"out": {
+"porcelain": 1
+},
+"stations": [
+"furnace"
+],
+"time": 2.5
+},
+"make_power_armor": {
+"in": {
+"power_cell": 2,
+"servo_motor": 4,
+"titanium_armor": 1
+},
+"name": "Силовая броня",
+"out": {
+"power_armor": 1
+},
+"stations": [
+"assembler"
+],
+"time": 5.0
+},
+"make_power_cell": {
+"in": {
+"battery_cell": 2,
+"uranium_dust": 1
+},
+"name": "Энергоячейка",
+"out": {
+"power_cell": 1
+},
+"stations": [
+"assembler"
+],
+"time": 4.0
+},
+"make_power_drill": {
+"in": {
+"battery_cell": 2,
+"motor": 1,
+"steel_rod": 1
+},
+"name": "Электробур",
+"out": {
+"power_drill": 1
+},
+"stations": [
+"assembler"
+],
+"time": 6.0
+},
+"make_processor": {
+"in": {
+"gold_foil": 1,
+"microchip": 4
+},
+"name": "Процессор",
+"out": {
+"processor": 1
+},
+"stations": [
+"assembler"
+],
+"time": 4.0
+},
+"make_quantum_chip": {
+"in": {
+"crystal": 2,
+"processor": 2
+},
+"name": "Квантовый чип",
+"out": {
+"quantum_chip": 1
+},
+"stations": [
+"assembler"
+],
+"time": 20.0
+},
+"make_radio_module": {
+"in": {
+"antenna_part": 1,
+"microchip": 1
+},
+"name": "Радиомодуль",
+"out": {
+"radio_module": 1
+},
+"stations": [
+"assembler"
+],
+"time": 2.0
+},
+"make_raincoat": {
+"in": {
+"rubber_sheet": 3
+},
+"name": "Плащ-дождевик",
+"out": {
+"raincoat": 1
+},
+"stations": [
+"workbench"
+],
+"time": 5.0
+},
+"make_ram_module": {
+"in": {
+"circuit": 1,
+"microchip": 2
+},
+"name": "Модуль памяти",
+"out": {
+"ram_module": 1
+},
+"stations": [
+"assembler"
+],
+"time": 3.0
+},
+"make_relay": {
+"in": {
+"induction_coil": 1,
+"plastic": 1
+},
+"name": "Реле",
+"out": {
+"relay": 2
+},
+"stations": [
+"assembler"
+],
+"time": 1.5
+},
+"make_repair_kit": {
+"in": {
+"iron_plate": 2,
+"iron_screw": 4
+},
+"name": "Ремкомплект",
+"out": {
+"repair_kit": 1
+},
+"stations": [
+"workbench"
+],
+"time": 2.0
+},
+"make_resin": {
+"in": {
+"log": 2
+},
+"name": "Смола",
+"out": {
+"resin": 1
+},
+"stations": [
+"furnace"
+],
+"time": 2.5
+},
+"make_resistor": {
+"in": {
+"coal": 1,
+"copper_wire": 1
+},
+"name": "Резистор",
+"out": {
+"resistor": 2
+},
+"stations": [
+"assembler"
+],
+"time": 1.5
+},
+"make_revolver": {
+"in": {
+"brass_gear": 1,
+"steel": 3
+},
+"name": "Револьвер",
+"out": {
+"revolver": 1
+},
+"stations": [
+"workshop"
+],
+"time": 6.0
+},
+"make_rifle": {
+"in": {
+"iron_spring": 2,
+"plank": 2,
+"steel": 4
+},
+"name": "Винтовка",
+"out": {
+"rifle": 1
+},
+"stations": [
+"workshop"
+],
+"time": 6.0
+},
+"make_rocket_launcher": {
+"in": {
+"explosive": 2,
+"microchip": 1,
+"steel_pipe_part": 2
+},
+"name": "Ракетница",
+"out": {
+"rocket_launcher": 1
+},
+"stations": [
+"assembler"
+],
+"time": 6.0
+},
+"make_rubber_sheet": {
+"in": {
+"rubber": 2
+},
+"name": "Листовая резина",
+"out": {
+"rubber_sheet": 1
+},
+"stations": [
+"assembler"
+],
+"time": 2.5
+},
+"make_sawdust": {
+"in": {
+"plank": 1
+},
+"name": "Опилки",
+"out": {
+"sawdust": 1
+},
+"stations": [
+"workbench"
+],
+"time": 2.0
+},
+"make_servo_motor": {
+"in": {
+"gear": 1,
+"microchip": 1,
+"motor": 1
+},
+"name": "Сервопривод",
+"out": {
+"servo_motor": 1
+},
+"stations": [
+"assembler"
+],
+"time": 2.0
+},
+"make_shotgun": {
+"in": {
+"plank": 2,
+"steel": 4
+},
+"name": "Дробовик",
+"out": {
+"shotgun": 1
+},
+"stations": [
+"workshop"
+],
+"time": 6.0
+},
+"make_shotgun_shells": {
+"in": {
+"gunpowder": 1,
+"lead_dust": 1,
+"plastic": 1
+},
+"name": "Патроны для дробовика",
+"out": {
+"shotgun_shells": 20
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 3.0
+},
+"make_shovel": {
+"in": {
+"iron_plate": 2,
+"plank": 1
+},
+"name": "Лопата",
+"out": {
+"shovel": 1
+},
+"stations": [
+"workbench"
+],
+"time": 6.0
+},
+"make_sickle": {
+"in": {
+"iron_ingot": 1,
+"plank": 1
+},
+"name": "Серп",
+"out": {
+"sickle": 1
+},
+"stations": [
+"workbench"
+],
+"time": 6.0
+},
+"make_silicon": {
+"in": {
+"coal": 1,
+"quartz": 2
+},
+"name": "Кремний",
+"out": {
+"silicon": 2
+},
+"stations": [
+"assembler"
+],
+"time": 1.5
+},
+"make_silver_beam": {
+"in": {
+"silver_ingot": 4
+},
+"name": "Серебряная балка",
+"out": {
+"silver_beam": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_silver_bolt": {
+"in": {
+"silver_ingot": 1
+},
+"name": "Серебряные болты и гайки",
+"out": {
+"silver_bolt": 4
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_silver_dust": {
+"in": {
+"silver_ingot": 1
+},
+"name": "Порошок серебра",
+"out": {
+"silver_dust": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_silver_foil": {
+"in": {
+"silver_ingot": 1
+},
+"name": "Серебряная фольга",
+"out": {
+"silver_foil": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_silver_gear": {
+"in": {
+"silver_ingot": 2
+},
+"name": "Серебряные шестерни",
+"out": {
+"silver_gear": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_silver_pipe_part": {
+"in": {
+"silver_ingot": 2
+},
+"name": "Серебряные трубки",
+"out": {
+"silver_pipe_part": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_silver_plate": {
+"in": {
+"silver_ingot": 2
+},
+"name": "Серебряные пластины",
+"out": {
+"silver_plate": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_silver_rod": {
+"in": {
+"silver_ingot": 1
+},
+"name": "Серебряные прутья",
+"out": {
+"silver_rod": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_silver_screw": {
+"in": {
+"silver_ingot": 1
+},
+"name": "Серебряные шурупы",
+"out": {
+"silver_screw": 6
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_silver_spring": {
+"in": {
+"silver_ingot": 1
+},
+"name": "Серебряная пружина",
+"out": {
+"silver_spring": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_silver_wire": {
+"in": {
+"silver_ingot": 1
+},
+"name": "Серебряная проволока",
+"out": {
+"silver_wire": 3
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_small_backpack": {
+"in": {
+"leather": 4,
+"rope": 2
+},
+"name": "Маленький рюкзак",
+"out": {
+"small_backpack": 1
+},
+"stations": [
+"workbench"
+],
+"time": 5.0
+},
+"make_smg": {
+"in": {
+"iron_spring": 3,
+"plastic": 2,
+"steel": 3
+},
+"name": "Пистолет-пулемёт",
+"out": {
+"smg": 1
+},
+"stations": [
+"assembler"
+],
+"time": 6.0
+},
+"make_sniper_rifle": {
+"in": {
+"lens": 2,
+"steel_spring": 1,
+"titanium_ingot": 4
+},
+"name": "Снайперская винтовка",
+"out": {
+"sniper_rifle": 1
+},
+"stations": [
+"assembler"
+],
+"time": 6.0
+},
+"make_solar_cell": {
+"in": {
+"glass": 1,
+"silicon": 2
+},
+"name": "Солнечный элемент",
+"out": {
+"solar_cell": 1
+},
+"stations": [
+"assembler"
+],
+"time": 1.5
+},
+"make_solvent": {
+"in": {
+"oil": 2
+},
+"name": "Растворитель",
+"out": {
+"solvent": 1
+},
+"stations": [
+"refinery"
+],
+"time": 2.5
+},
+"make_steel_armor": {
+"in": {
+"leather": 2,
+"steel_plate": 8
+},
+"name": "Стальной доспех",
+"out": {
+"steel_armor": 1
+},
+"stations": [
+"workshop"
+],
+"time": 5.0
+},
+"make_steel_axe": {
+"in": {
+"plank": 1,
+"steel": 3
+},
+"name": "Стальной топор",
+"out": {
+"steel_axe": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_steel_beam": {
+"in": {
+"steel": 4
+},
+"name": "Стальная балка",
+"out": {
+"steel_beam": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_steel_bolt": {
+"in": {
+"steel": 1
+},
+"name": "Стальные болты и гайки",
+"out": {
+"steel_bolt": 4
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_steel_boots": {
+"in": {
+"leather": 2,
+"steel_plate": 3
+},
+"name": "Стальные сапоги",
+"out": {
+"steel_boots": 1
+},
+"stations": [
+"workshop"
+],
+"time": 5.0
+},
+"make_steel_dust": {
+"in": {
+"steel": 1
+},
+"name": "Порошок стали",
+"out": {
+"steel_dust": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_steel_foil": {
+"in": {
+"steel": 1
+},
+"name": "Стальная фольга",
+"out": {
+"steel_foil": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_steel_gear": {
+"in": {
+"steel": 2
+},
+"name": "Стальные шестерни",
+"out": {
+"steel_gear": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_steel_helmet": {
+"in": {
+"leather": 1,
+"steel_plate": 4
+},
+"name": "Стальной шлем",
+"out": {
+"steel_helmet": 1
+},
+"stations": [
+"workshop"
+],
+"time": 5.0
+},
+"make_steel_mace": {
+"in": {
+"plank": 1,
+"steel": 5
+},
+"name": "Стальная булава",
+"out": {
+"steel_mace": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_steel_pickaxe": {
+"in": {
+"plank": 1,
+"steel": 3
+},
+"name": "Стальная кирка",
+"out": {
+"steel_pickaxe": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_steel_pipe_part": {
+"in": {
+"steel": 2
+},
+"name": "Стальные трубки",
+"out": {
+"steel_pipe_part": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_steel_plate": {
+"in": {
+"steel": 2
+},
+"name": "Стальные пластины",
+"out": {
+"steel_plate": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_steel_rod": {
+"in": {
+"steel": 1
+},
+"name": "Стальные прутья",
+"out": {
+"steel_rod": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_steel_screw": {
+"in": {
+"steel": 1
+},
+"name": "Стальные шурупы",
+"out": {
+"steel_screw": 6
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_steel_shield": {
+"in": {
+"leather": 1,
+"steel_plate": 4
+},
+"name": "Стальной щит",
+"out": {
+"steel_shield": 1
+},
+"stations": [
+"workshop"
+],
+"time": 5.0
+},
+"make_steel_spear": {
+"in": {
+"log": 1,
+"steel": 2
+},
+"name": "Стальная копьё",
+"out": {
+"steel_spear": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_steel_spring": {
+"in": {
+"steel": 1
+},
+"name": "Стальная пружина",
+"out": {
+"steel_spring": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_steel_sword": {
+"in": {
+"plank": 1,
+"steel": 4
+},
+"name": "Стальной меч",
+"out": {
+"steel_sword": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_steel_wire": {
+"in": {
+"steel": 1
+},
+"name": "Стальная проволока",
+"out": {
+"steel_wire": 3
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_stim_jump": {
+"in": {
+"glow_berry": 2,
+"sugar": 1
+},
+"name": "Стимулятор прыжка",
+"out": {
+"stim_jump": 1
+},
+"stations": [
+"refinery"
+],
+"time": 3.0
+},
+"make_stim_strength": {
+"in": {
+"monster_gland": 1,
+"sugar": 1
+},
+"name": "Стимулятор силы",
+"out": {
+"stim_strength": 1
+},
+"stations": [
+"refinery"
+],
+"time": 3.0
+},
+"make_stim_xp": {
+"in": {
+"alien_fruit": 1,
+"coffee": 1
+},
+"name": "Стимулятор ума",
+"out": {
+"stim_xp": 1
+},
+"stations": [
+"refinery"
+],
+"time": 3.0
+},
+"make_sulfuric_acid": {
+"in": {
+"sulfur": 2,
+"water_flask": 1
+},
+"name": "Серная кислота",
+"out": {
+"sulfuric_acid": 1
+},
+"stations": [
+"refinery"
+],
+"time": 2.5
+},
+"make_superconductor": {
+"in": {
+"coolant": 1,
+"titanium_wire": 2
+},
+"name": "Сверхпроводник",
+"out": {
+"superconductor": 1
+},
+"stations": [
+"assembler"
+],
+"time": 8.0
+},
+"make_temp_sensor": {
+"in": {
+"copper_wire": 1,
+"microchip": 1
+},
+"name": "Датчик температуры",
+"out": {
+"temp_sensor": 2
+},
+"stations": [
+"assembler"
+],
+"time": 1.5
+},
+"make_tempered_glass": {
+"in": {
+"glass": 2
+},
+"name": "Закалённое стекло",
+"out": {
+"tempered_glass": 1
+},
+"stations": [
+"furnace",
+"smelter"
+],
+"time": 2.5
+},
+"make_thermite": {
+"in": {
+"aluminum_dust": 1,
+"iron_dust": 1
+},
+"name": "Термит",
+"out": {
+"thermite": 1
+},
+"stations": [
+"workshop"
+],
+"time": 2.5
+},
+"make_tin_beam": {
+"in": {
+"tin_ingot": 4
+},
+"name": "Оловянная балка",
+"out": {
+"tin_beam": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_tin_bolt": {
+"in": {
+"tin_ingot": 1
+},
+"name": "Оловянные болты и гайки",
+"out": {
+"tin_bolt": 4
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_tin_dust": {
+"in": {
+"tin_ingot": 1
+},
+"name": "Порошок олова",
+"out": {
+"tin_dust": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_tin_foil": {
+"in": {
+"tin_ingot": 1
+},
+"name": "Оловянная фольга",
+"out": {
+"tin_foil": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_tin_gear": {
+"in": {
+"tin_ingot": 2
+},
+"name": "Оловянные шестерни",
+"out": {
+"tin_gear": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_tin_pipe_part": {
+"in": {
+"tin_ingot": 2
+},
+"name": "Оловянные трубки",
+"out": {
+"tin_pipe_part": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_tin_plate": {
+"in": {
+"tin_ingot": 2
+},
+"name": "Оловянные пластины",
+"out": {
+"tin_plate": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_tin_rod": {
+"in": {
+"tin_ingot": 1
+},
+"name": "Оловянные прутья",
+"out": {
+"tin_rod": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_tin_screw": {
+"in": {
+"tin_ingot": 1
+},
+"name": "Оловянные шурупы",
+"out": {
+"tin_screw": 6
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_tin_spring": {
+"in": {
+"tin_ingot": 1
+},
+"name": "Оловянная пружина",
+"out": {
+"tin_spring": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_tin_wire": {
+"in": {
+"tin_ingot": 1
+},
+"name": "Оловянная проволока",
+"out": {
+"tin_wire": 3
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_titanium_armor": {
+"in": {
+"kevlar": 2,
+"titanium_plate": 6
+},
+"name": "Титановый доспех",
+"out": {
+"titanium_armor": 1
+},
+"stations": [
+"assembler"
+],
+"time": 5.0
+},
+"make_titanium_axe": {
+"in": {
+"plank": 1,
+"titanium_ingot": 3
+},
+"name": "Титановый топор",
+"out": {
+"titanium_axe": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_titanium_beam": {
+"in": {
+"titanium_ingot": 4
+},
+"name": "Титановая балка",
+"out": {
+"titanium_beam": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_titanium_bolt": {
+"in": {
+"titanium_ingot": 1
+},
+"name": "Титановые болты и гайки",
+"out": {
+"titanium_bolt": 4
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_titanium_dust": {
+"in": {
+"titanium_ingot": 1
+},
+"name": "Порошок титана",
+"out": {
+"titanium_dust": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_titanium_foil": {
+"in": {
+"titanium_ingot": 1
+},
+"name": "Титановая фольга",
+"out": {
+"titanium_foil": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_titanium_gear": {
+"in": {
+"titanium_ingot": 2
+},
+"name": "Титановые шестерни",
+"out": {
+"titanium_gear": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_titanium_mace": {
+"in": {
+"plank": 1,
+"titanium_ingot": 5
+},
+"name": "Титановая булава",
+"out": {
+"titanium_mace": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_titanium_pickaxe": {
+"in": {
+"plank": 1,
+"titanium_ingot": 3
+},
+"name": "Титановая кирка",
+"out": {
+"titanium_pickaxe": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_titanium_pipe_part": {
+"in": {
+"titanium_ingot": 2
+},
+"name": "Титановые трубки",
+"out": {
+"titanium_pipe_part": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_titanium_plate": {
+"in": {
+"titanium_ingot": 2
+},
+"name": "Титановые пластины",
+"out": {
+"titanium_plate": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_titanium_rod": {
+"in": {
+"titanium_ingot": 1
+},
+"name": "Титановые прутья",
+"out": {
+"titanium_rod": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_titanium_screw": {
+"in": {
+"titanium_ingot": 1
+},
+"name": "Титановые шурупы",
+"out": {
+"titanium_screw": 6
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_titanium_spear": {
+"in": {
+"log": 1,
+"titanium_ingot": 2
+},
+"name": "Титановая копьё",
+"out": {
+"titanium_spear": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_titanium_spring": {
+"in": {
+"titanium_ingot": 1
+},
+"name": "Титановая пружина",
+"out": {
+"titanium_spring": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_titanium_sword": {
+"in": {
+"plank": 1,
+"titanium_ingot": 4
+},
+"name": "Титановый меч",
+"out": {
+"titanium_sword": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_titanium_wire": {
+"in": {
+"titanium_ingot": 1
+},
+"name": "Титановая проволока",
+"out": {
+"titanium_wire": 3
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_toolbox": {
+"in": {
+"iron_ingot": 6,
+"plank": 3
+},
+"name": "Ящик с инструментами",
+"out": {
+"toolbox": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_transformer_core": {
+"in": {
+"induction_coil": 2,
+"steel_plate": 1
+},
+"name": "Сердечник трансформатора",
+"out": {
+"transformer_core": 1
+},
+"stations": [
+"assembler"
+],
+"time": 1.5
+},
+"make_transistor": {
+"in": {
+"copper_wire": 1,
+"silicon": 1
+},
+"name": "Транзистор",
+"out": {
+"transistor": 2
+},
+"stations": [
+"assembler"
+],
+"time": 1.5
+},
+"make_tungsten_axe": {
+"in": {
+"plank": 1,
+"tungsten_ingot": 3
+},
+"name": "Вольфрамовый топор",
+"out": {
+"tungsten_axe": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_tungsten_beam": {
+"in": {
+"tungsten_ingot": 4
+},
+"name": "Вольфрамовая балка",
+"out": {
+"tungsten_beam": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_tungsten_bolt": {
+"in": {
+"tungsten_ingot": 1
+},
+"name": "Вольфрамовые болты и гайки",
+"out": {
+"tungsten_bolt": 4
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_tungsten_dust": {
+"in": {
+"tungsten_ingot": 1
+},
+"name": "Порошок вольфрама",
+"out": {
+"tungsten_dust": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_tungsten_foil": {
+"in": {
+"tungsten_ingot": 1
+},
+"name": "Вольфрамовая фольга",
+"out": {
+"tungsten_foil": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_tungsten_gear": {
+"in": {
+"tungsten_ingot": 2
+},
+"name": "Вольфрамовые шестерни",
+"out": {
+"tungsten_gear": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_tungsten_mace": {
+"in": {
+"plank": 1,
+"tungsten_ingot": 5
+},
+"name": "Вольфрамовая булава",
+"out": {
+"tungsten_mace": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_tungsten_pickaxe": {
+"in": {
+"plank": 1,
+"tungsten_ingot": 3
+},
+"name": "Вольфрамовая кирка",
+"out": {
+"tungsten_pickaxe": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_tungsten_pipe_part": {
+"in": {
+"tungsten_ingot": 2
+},
+"name": "Вольфрамовые трубки",
+"out": {
+"tungsten_pipe_part": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_tungsten_plate": {
+"in": {
+"tungsten_ingot": 2
+},
+"name": "Вольфрамовые пластины",
+"out": {
+"tungsten_plate": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_tungsten_rod": {
+"in": {
+"tungsten_ingot": 1
+},
+"name": "Вольфрамовые прутья",
+"out": {
+"tungsten_rod": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_tungsten_screw": {
+"in": {
+"tungsten_ingot": 1
+},
+"name": "Вольфрамовые шурупы",
+"out": {
+"tungsten_screw": 6
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_tungsten_spear": {
+"in": {
+"log": 1,
+"tungsten_ingot": 2
+},
+"name": "Вольфрамовая копьё",
+"out": {
+"tungsten_spear": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_tungsten_spring": {
+"in": {
+"tungsten_ingot": 1
+},
+"name": "Вольфрамовая пружина",
+"out": {
+"tungsten_spring": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_tungsten_sword": {
+"in": {
+"plank": 1,
+"tungsten_ingot": 4
+},
+"name": "Вольфрамовый меч",
+"out": {
+"tungsten_sword": 1
+},
+"stations": [
+"workshop"
+],
+"time": 4.0
+},
+"make_tungsten_wire": {
+"in": {
+"tungsten_ingot": 1
+},
+"name": "Вольфрамовая проволока",
+"out": {
+"tungsten_wire": 3
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_uranium_beam": {
+"in": {
+"uranium_ingot": 4
+},
+"name": "Урановая балка",
+"out": {
+"uranium_beam": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_uranium_bolt": {
+"in": {
+"uranium_ingot": 1
+},
+"name": "Урановые болты и гайки",
+"out": {
+"uranium_bolt": 4
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_uranium_dust": {
+"in": {
+"uranium_ingot": 1
+},
+"name": "Порошок урана",
+"out": {
+"uranium_dust": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_uranium_foil": {
+"in": {
+"uranium_ingot": 1
+},
+"name": "Урановая фольга",
+"out": {
+"uranium_foil": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_uranium_gear": {
+"in": {
+"uranium_ingot": 2
+},
+"name": "Урановые шестерни",
+"out": {
+"uranium_gear": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_uranium_pipe_part": {
+"in": {
+"uranium_ingot": 2
+},
+"name": "Урановые трубки",
+"out": {
+"uranium_pipe_part": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_uranium_plate": {
+"in": {
+"uranium_ingot": 2
+},
+"name": "Урановые пластины",
+"out": {
+"uranium_plate": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_uranium_rod": {
+"in": {
+"uranium_ingot": 1
+},
+"name": "Урановые прутья",
+"out": {
+"uranium_rod": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_uranium_screw": {
+"in": {
+"uranium_ingot": 1
+},
+"name": "Урановые шурупы",
+"out": {
+"uranium_screw": 6
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_uranium_spring": {
+"in": {
+"uranium_ingot": 1
+},
+"name": "Урановая пружина",
+"out": {
+"uranium_spring": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_uranium_wire": {
+"in": {
+"uranium_ingot": 1
+},
+"name": "Урановая проволока",
+"out": {
+"uranium_wire": 3
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_vitamins": {
+"in": {
+"lemon": 1,
+"orange": 2
+},
+"name": "Витамины",
+"out": {
+"vitamins": 1
+},
+"stations": [
+"workshop"
+],
+"time": 3.0
+},
+"make_wax": {
+"in": {
+"honey": 1
+},
+"name": "Воск",
+"out": {
+"wax": 1
+},
+"stations": [
+"workbench"
+],
+"time": 2.5
+},
+"make_winter_coat": {
+"in": {
+"leather": 2,
+"wool": 6
+},
+"name": "Тёплая куртка",
+"out": {
+"winter_coat": 1
+},
+"stations": [
+"workbench"
+],
+"time": 5.0
+},
+"make_wood_beam": {
+"in": {
+"log": 2
+},
+"name": "Деревянная балка",
+"out": {
+"wood_beam": 1
+},
+"stations": [
+"workbench"
+],
+"time": 2.0
+},
+"make_wooden_shield": {
+"in": {
+"iron_screw": 4,
+"plank": 6
+},
+"name": "Деревянный щит",
+"out": {
+"wooden_shield": 1
+},
+"stations": [
+"workbench"
+],
+"time": 4.0
+},
+"make_work_gloves": {
+"in": {
+"leather": 2
+},
+"name": "Рабочие перчатки",
+"out": {
+"work_gloves": 1
+},
+"stations": [
+"workbench"
+],
+"time": 5.0
+},
+"make_zinc_beam": {
+"in": {
+"zinc_ingot": 4
+},
+"name": "Цинковая балка",
+"out": {
+"zinc_beam": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_zinc_bolt": {
+"in": {
+"zinc_ingot": 1
+},
+"name": "Цинковые болты и гайки",
+"out": {
+"zinc_bolt": 4
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_zinc_dust": {
+"in": {
+"zinc_ingot": 1
+},
+"name": "Порошок цинка",
+"out": {
+"zinc_dust": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_zinc_foil": {
+"in": {
+"zinc_ingot": 1
+},
+"name": "Цинковая фольга",
+"out": {
+"zinc_foil": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_zinc_gear": {
+"in": {
+"zinc_ingot": 2
+},
+"name": "Цинковые шестерни",
+"out": {
+"zinc_gear": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_zinc_pipe_part": {
+"in": {
+"zinc_ingot": 2
+},
+"name": "Цинковые трубки",
+"out": {
+"zinc_pipe_part": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_zinc_plate": {
+"in": {
+"zinc_ingot": 2
+},
+"name": "Цинковые пластины",
+"out": {
+"zinc_plate": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_zinc_rod": {
+"in": {
+"zinc_ingot": 1
+},
+"name": "Цинковые прутья",
+"out": {
+"zinc_rod": 2
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_zinc_screw": {
+"in": {
+"zinc_ingot": 1
+},
+"name": "Цинковые шурупы",
+"out": {
+"zinc_screw": 6
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_zinc_spring": {
+"in": {
+"zinc_ingot": 1
+},
+"name": "Цинковая пружина",
+"out": {
+"zinc_spring": 1
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"make_zinc_wire": {
+"in": {
+"zinc_ingot": 1
+},
+"name": "Цинковая проволока",
+"out": {
+"zinc_wire": 3
+},
+"stations": [
+"workshop",
+"assembler"
+],
+"time": 2.0
+},
+"nuggets_aluminum": {
+"in": {
+"aluminum_nugget": 3
+},
+"name": "Слиток алюминия из самородков",
+"out": {
+"aluminum_ingot": 1
+},
+"stations": [
+"workbench"
+],
+"time": 1.0
+},
+"nuggets_chromium": {
+"in": {
+"chromium_nugget": 3
+},
+"name": "Слиток хрома из самородков",
+"out": {
+"chromium_ingot": 1
+},
+"stations": [
+"workbench"
+],
+"time": 1.0
+},
+"nuggets_cobalt": {
+"in": {
+"cobalt_nugget": 3
+},
+"name": "Слиток кобальта из самородков",
+"out": {
+"cobalt_ingot": 1
+},
+"stations": [
+"workbench"
+],
+"time": 1.0
+},
+"nuggets_gold": {
+"in": {
+"gold_nugget": 3
+},
+"name": "Слиток золота из самородков",
+"out": {
+"gold_ingot": 1
+},
+"stations": [
+"workbench"
+],
+"time": 1.0
+},
+"nuggets_lead": {
+"in": {
+"lead_nugget": 3
+},
+"name": "Слиток свинца из самородков",
+"out": {
+"lead_ingot": 1
+},
+"stations": [
+"workbench"
+],
+"time": 1.0
+},
+"nuggets_lithium": {
+"in": {
+"lithium_nugget": 3
+},
+"name": "Слиток лития из самородков",
+"out": {
+"lithium_ingot": 1
+},
+"stations": [
+"workbench"
+],
+"time": 1.0
+},
+"nuggets_nickel": {
+"in": {
+"nickel_nugget": 3
+},
+"name": "Слиток никеля из самородков",
+"out": {
+"nickel_ingot": 1
+},
+"stations": [
+"workbench"
+],
+"time": 1.0
+},
+"nuggets_platinum": {
+"in": {
+"platinum_nugget": 3
+},
+"name": "Слиток платины из самородков",
+"out": {
+"platinum_ingot": 1
+},
+"stations": [
+"workbench"
+],
+"time": 1.0
+},
+"nuggets_silver": {
+"in": {
+"silver_nugget": 3
+},
+"name": "Слиток серебра из самородков",
+"out": {
+"silver_ingot": 1
+},
+"stations": [
+"workbench"
+],
+"time": 1.0
+},
+"nuggets_tin": {
+"in": {
+"tin_nugget": 3
+},
+"name": "Слиток олова из самородков",
+"out": {
+"tin_ingot": 1
+},
+"stations": [
+"workbench"
+],
+"time": 1.0
+},
+"nuggets_titanium": {
+"in": {
+"titanium_nugget": 3
+},
+"name": "Слиток титана из самородков",
+"out": {
+"titanium_ingot": 1
+},
+"stations": [
+"workbench"
+],
+"time": 1.0
+},
+"nuggets_tungsten": {
+"in": {
+"tungsten_nugget": 3
+},
+"name": "Слиток вольфрама из самородков",
+"out": {
+"tungsten_ingot": 1
+},
+"stations": [
+"workbench"
+],
+"time": 1.0
+},
+"nuggets_uranium": {
+"in": {
+"uranium_nugget": 3
+},
+"name": "Слиток урана из самородков",
+"out": {
+"uranium_ingot": 1
+},
+"stations": [
+"workbench"
+],
+"time": 1.0
+},
+"nuggets_zinc": {
+"in": {
+"zinc_nugget": 3
+},
+"name": "Слиток цинка из самородков",
+"out": {
+"zinc_ingot": 1
+},
+"stations": [
+"workbench"
+],
+"time": 1.0
+},
+"seeds_beet": {
+"in": {
+"beet": 1
+},
+"name": "Семена: свёкла",
+"out": {
+"beet_seeds": 2
+},
+"stations": [
+"hand",
+"workbench"
+],
+"time": 1.0
+},
+"seeds_cabbage": {
+"in": {
+"cabbage": 1
+},
+"name": "Семена: капуста",
+"out": {
+"cabbage_seeds": 2
+},
+"stations": [
+"hand",
+"workbench"
+],
+"time": 1.0
+},
+"seeds_carrot": {
+"in": {
+"carrot": 1
+},
+"name": "Семена: морковь",
+"out": {
+"carrot_seeds": 2
+},
+"stations": [
+"hand",
+"workbench"
+],
+"time": 1.0
+},
+"seeds_coffee_beans": {
+"in": {
+"coffee_beans": 1
+},
+"name": "Семена: кофейные зёрна",
+"out": {
+"coffee_beans_seeds": 2
+},
+"stations": [
+"hand",
+"workbench"
+],
+"time": 1.0
+},
+"seeds_corn": {
+"in": {
+"corn": 1
+},
+"name": "Семена: кукуруза",
+"out": {
+"corn_seeds": 2
+},
+"stations": [
+"hand",
+"workbench"
+],
+"time": 1.0
+},
+"seeds_cucumber": {
+"in": {
+"cucumber": 1
+},
+"name": "Семена: огурец",
+"out": {
+"cucumber_seeds": 2
+},
+"stations": [
+"hand",
+"workbench"
+],
+"time": 1.0
+},
+"seeds_eggplant": {
+"in": {
+"eggplant": 1
+},
+"name": "Семена: баклажан",
+"out": {
+"eggplant_seeds": 2
+},
+"stations": [
+"hand",
+"workbench"
+],
+"time": 1.0
+},
+"seeds_herbs": {
+"in": {
+"herbs": 1
+},
+"name": "Семена: лечебные травы",
+"out": {
+"herbs_seeds": 2
+},
+"stations": [
+"hand",
+"workbench"
+],
+"time": 1.0
+},
+"seeds_lettuce": {
+"in": {
+"lettuce": 1
+},
+"name": "Семена: салат",
+"out": {
+"lettuce_seeds": 2
+},
+"stations": [
+"hand",
+"workbench"
+],
+"time": 1.0
+},
+"seeds_melon": {
+"in": {
+"melon": 1
+},
+"name": "Семена: дыня",
+"out": {
+"melon_seeds": 2
+},
+"stations": [
+"hand",
+"workbench"
+],
+"time": 1.0
+},
+"seeds_onion": {
+"in": {
+"onion": 1
+},
+"name": "Семена: лук",
+"out": {
+"onion_seeds": 2
+},
+"stations": [
+"hand",
+"workbench"
+],
+"time": 1.0
+},
+"seeds_pepper": {
+"in": {
+"pepper": 1
+},
+"name": "Семена: перец",
+"out": {
+"pepper_seeds": 2
+},
+"stations": [
+"hand",
+"workbench"
+],
+"time": 1.0
+},
+"seeds_potato": {
+"in": {
+"potato": 1
+},
+"name": "Семена: картофель",
+"out": {
+"potato_seeds": 2
+},
+"stations": [
+"hand",
+"workbench"
+],
+"time": 1.0
+},
+"seeds_pumpkin": {
+"in": {
+"pumpkin": 1
+},
+"name": "Семена: тыква",
+"out": {
+"pumpkin_seeds": 2
+},
+"stations": [
+"hand",
+"workbench"
+],
+"time": 1.0
+},
+"seeds_rice": {
+"in": {
+"rice": 1
+},
+"name": "Семена: рис",
+"out": {
+"rice_seeds": 2
+},
+"stations": [
+"hand",
+"workbench"
+],
+"time": 1.0
+},
+"seeds_strawberries": {
+"in": {
+"strawberries": 1
+},
+"name": "Семена: клубника",
+"out": {
+"strawberries_seeds": 2
+},
+"stations": [
+"hand",
+"workbench"
+],
+"time": 1.0
+},
+"seeds_tomato": {
+"in": {
+"tomato": 1
+},
+"name": "Семена: помидор",
+"out": {
+"tomato_seeds": 2
+},
+"stations": [
+"hand",
+"workbench"
+],
+"time": 1.0
+},
+"seeds_watermelon": {
+"in": {
+"watermelon": 1
+},
+"name": "Семена: арбуз",
+"out": {
+"watermelon_seeds": 2
+},
+"stations": [
+"hand",
+"workbench"
+],
+"time": 1.0
+},
+"seeds_wheat": {
+"in": {
+"wheat": 1
+},
+"name": "Семена: пшеница",
+"out": {
+"wheat_seeds": 2
+},
+"stations": [
+"hand",
+"workbench"
+],
+"time": 1.0
+},
+"smelt_aluminum": {
+"in": {
+"aluminum_ore": 2
+},
+"name": "Слиток алюминия",
+"out": {
+"aluminum_ingot": 1
+},
+"stations": [
+"furnace",
+"smelter"
+],
+"time": 3.0
+},
+"smelt_chromium": {
+"in": {
+"chromium_ore": 2
+},
+"name": "Слиток хрома",
+"out": {
+"chromium_ingot": 1
+},
+"stations": [
+"furnace",
+"smelter"
+],
+"time": 3.0
+},
+"smelt_cobalt": {
+"in": {
+"cobalt_ore": 2
+},
+"name": "Слиток кобальта",
+"out": {
+"cobalt_ingot": 1
+},
+"stations": [
+"furnace",
+"smelter"
+],
+"time": 3.0
+},
+"smelt_gold": {
+"in": {
+"gold_ore": 2
+},
+"name": "Слиток золота",
+"out": {
+"gold_ingot": 1
+},
+"stations": [
+"furnace",
+"smelter"
+],
+"time": 3.0
+},
+"smelt_lead": {
+"in": {
+"lead_ore": 2
+},
+"name": "Слиток свинца",
+"out": {
+"lead_ingot": 1
+},
+"stations": [
+"furnace",
+"smelter"
+],
+"time": 3.0
+},
+"smelt_lithium": {
+"in": {
+"lithium_ore": 2
+},
+"name": "Слиток лития",
+"out": {
+"lithium_ingot": 1
+},
+"stations": [
+"furnace",
+"smelter"
+],
+"time": 3.0
+},
+"smelt_nickel": {
+"in": {
+"nickel_ore": 2
+},
+"name": "Слиток никеля",
+"out": {
+"nickel_ingot": 1
+},
+"stations": [
+"furnace",
+"smelter"
+],
+"time": 3.0
+},
+"smelt_platinum": {
+"in": {
+"platinum_ore": 2
+},
+"name": "Слиток платины",
+"out": {
+"platinum_ingot": 1
+},
+"stations": [
+"furnace",
+"smelter"
+],
+"time": 3.0
+},
+"smelt_silver": {
+"in": {
+"silver_ore": 2
+},
+"name": "Слиток серебра",
+"out": {
+"silver_ingot": 1
+},
+"stations": [
+"furnace",
+"smelter"
+],
+"time": 3.0
+},
+"smelt_tin": {
+"in": {
+"tin_ore": 2
+},
+"name": "Слиток олова",
+"out": {
+"tin_ingot": 1
+},
+"stations": [
+"furnace",
+"smelter"
+],
+"time": 3.0
+},
+"smelt_titanium": {
+"in": {
+"titanium_ore": 2
+},
+"name": "Слиток титана",
+"out": {
+"titanium_ingot": 1
+},
+"stations": [
+"furnace",
+"smelter"
+],
+"time": 3.0
+},
+"smelt_tungsten": {
+"in": {
+"tungsten_ore": 2
+},
+"name": "Слиток вольфрама",
+"out": {
+"tungsten_ingot": 1
+},
+"stations": [
+"furnace",
+"smelter"
+],
+"time": 3.0
+},
+"smelt_uranium": {
+"in": {
+"uranium_ore": 2
+},
+"name": "Слиток урана",
+"out": {
+"uranium_ingot": 1
+},
+"stations": [
+"furnace",
+"smelter"
+],
+"time": 3.0
+},
+"smelt_zinc": {
+"in": {
+"zinc_ore": 2
+},
+"name": "Слиток цинка",
+"out": {
+"zinc_ingot": 1
+},
+"stations": [
+"furnace",
+"smelter"
+],
+"time": 3.0
+}
+}

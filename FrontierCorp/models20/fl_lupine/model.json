@@ -1,0 +1,29 @@
+{
+ "parts": [
+  {
+   "anim": "sway_grass",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/fl_lupine/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

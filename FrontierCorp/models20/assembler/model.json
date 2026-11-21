@@ -1,0 +1,683 @@
+{
+ "extra": {
+  "emitters": [
+   {
+    "kind": "spark",
+    "pos": [
+     0,
+     0.9,
+     0
+    ],
+    "rate": 0.6,
+    "size": 0.5,
+    "when": "active"
+   }
+  ]
+ },
+ "parts": [
+  {
+   "anim": "crank",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/assembler/0.res",
+   "metallic": 0,
+   "pos": [
+    -0.35,
+    1.84,
+    0.32
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/assembler/tex0.png"
+  },
+  {
+   "anim": "crank",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/assembler/1.res",
+   "metallic": 0,
+   "pos": [
+    -0.35,
+    1.84,
+    0.32
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/assembler/tex0.png"
+  },
+  {
+   "anim": "crank",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/assembler/2.res",
+   "metallic": 0,
+   "pos": [
+    -0.35,
+    1.84,
+    0.32
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/assembler/tex0.png"
+  },
+  {
+   "anim": "crank",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/assembler/3.res",
+   "metallic": 0,
+   "pos": [
+    -0.35,
+    1.84,
+    0.32
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/assembler/tex0.png"
+  },
+  {
+   "anim": "pump_nod",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/assembler/4.res",
+   "metallic": 0,
+   "pos": [
+    0.35,
+    1.84,
+    0.32
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/assembler/tex0.png"
+  },
+  {
+   "anim": "pump_nod",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/assembler/5.res",
+   "metallic": 0,
+   "pos": [
+    0.35,
+    1.84,
+    0.32
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/assembler/tex0.png"
+  },
+  {
+   "anim": "pump_nod",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/assembler/6.res",
+   "metallic": 0,
+   "pos": [
+    0.35,
+    1.84,
+    0.32
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/assembler/tex0.png"
+  },
+  {
+   "anim": "pump_nod",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/assembler/7.res",
+   "metallic": 0,
+   "pos": [
+    0.35,
+    1.84,
+    0.32
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/assembler/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/assembler/8.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/assembler/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/assembler/9.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/assembler/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/assembler/10.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/assembler/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/assembler/11.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/assembler/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/assembler/12.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/assembler/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/assembler/13.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/assembler/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/assembler/14.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/assembler/tex0.png"
+  },
+  {
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/assembler/15.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ff3021",
+   "emission": 2,
+   "mat": "glow",
+   "mesh": "res://models20/assembler/16.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#4bff66",
+   "emission": 2,
+   "mat": "glow",
+   "mesh": "res://models20/assembler/17.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffc130",
+   "emission": 2,
+   "mat": "glow",
+   "mesh": "res://models20/assembler/18.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "gear_fast",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/assembler/19.res",
+   "metallic": 0,
+   "pos": [
+    -0.3,
+    1.56,
+    -0.45
+   ],
+   "rot": [
+    90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/assembler/tex0.png"
+  },
+  {
+   "anim": "pulse",
+   "color": "#ff8d21",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/assembler/20.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.88,
+    0.43
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_fan",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/assembler/21.res",
+   "metallic": 0,
+   "pos": [
+    0.57,
+    1.52,
+    -0.62
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/assembler/tex0.png"
+  },
+  {
+   "anim": "flicker_soft",
+   "color": "#4bdaff",
+   "emission": 2.5,
+   "mat": "glow",
+   "mesh": "res://models20/assembler/22.res",
+   "metallic": 0,
+   "pos": [
+    0.88,
+    0.81,
+    0.2
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffb430",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/assembler/23.res",
+   "metallic": 0,
+   "pos": [
+    -0.85,
+    0.785,
+    0.82
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink_001",
+   "color": "#ff3d30",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/assembler/24.res",
+   "metallic": 0,
+   "pos": [
+    -0.85,
+    0.86,
+    0.82
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#4bff73",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/assembler/25.res",
+   "metallic": 0,
+   "pos": [
+    -0.85,
+    0.71,
+    0.82
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

@@ -1,0 +1,339 @@
+{
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/dep_uranium_ore/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.8,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/dep_uranium_ore/tex0.png"
+  },
+  {
+   "color": "#32ff41",
+   "emission": 1.4,
+   "mat": "glow",
+   "mesh": "res://models20/dep_uranium_ore/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.2,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#115011",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/dep_uranium_ore/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.9,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "hover",
+   "color": "#66ff73",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_uranium_ore/3.res",
+   "metallic": 0,
+   "pos": [
+    -0.4308,
+    0.2003,
+    -0.4007
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "hover",
+   "color": "#66ff73",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_uranium_ore/4.res",
+   "metallic": 0,
+   "pos": [
+    0.3432,
+    0.2588,
+    0.124
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "hover",
+   "color": "#66ff73",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_uranium_ore/5.res",
+   "metallic": 0,
+   "pos": [
+    0.1906,
+    0.3781,
+    0.079
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "hover",
+   "color": "#66ff73",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_uranium_ore/6.res",
+   "metallic": 0,
+   "pos": [
+    0.1067,
+    0.4609,
+    -0.0487
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "hover",
+   "color": "#66ff73",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_uranium_ore/7.res",
+   "metallic": 0,
+   "pos": [
+    0.0488,
+    0.5674,
+    0.3315
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "hover",
+   "color": "#66ff73",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_uranium_ore/8.res",
+   "metallic": 0,
+   "pos": [
+    -0.4615,
+    0.6672,
+    -0.3727
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "hover",
+   "color": "#66ff73",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_uranium_ore/9.res",
+   "metallic": 0,
+   "pos": [
+    0.1523,
+    0.7822,
+    0.6257
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "hover",
+   "color": "#66ff73",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_uranium_ore/10.res",
+   "metallic": 0,
+   "pos": [
+    -0.2238,
+    0.8577,
+    0.1583
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "hover",
+   "color": "#66ff73",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_uranium_ore/11.res",
+   "metallic": 0,
+   "pos": [
+    -0.2673,
+    0.93,
+    -0.183
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "hover",
+   "color": "#66ff73",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_uranium_ore/12.res",
+   "metallic": 0,
+   "pos": [
+    -0.1342,
+    1.0385,
+    -0.2753
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

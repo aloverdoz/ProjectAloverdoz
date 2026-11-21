@@ -1,0 +1,539 @@
+{
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/entangled_pole/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/entangled_pole/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/entangled_pole/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/entangled_pole/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/entangled_pole/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/entangled_pole/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/entangled_pole/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/entangled_pole/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/entangled_pole/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/entangled_pole/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/entangled_pole/5.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/entangled_pole/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/entangled_pole/6.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/entangled_pole/tex0.png"
+  },
+  {
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/entangled_pole/7.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/entangled_pole/8.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/entangled_pole/tex0.png"
+  },
+  {
+   "color": "#ba8dff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/entangled_pole/9.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#ba8dff",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/entangled_pole/10.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.49,
+    0.665
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_001",
+   "color": "#ba8dff",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/entangled_pole/11.res",
+   "metallic": 0,
+   "pos": [
+    0.574,
+    0.49,
+    -0.3357
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_002",
+   "color": "#ba8dff",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/entangled_pole/12.res",
+   "metallic": 0,
+   "pos": [
+    -0.574,
+    0.49,
+    -0.3357
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin",
+   "color": "#653acb",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/entangled_pole/13.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    3.62,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.08,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#9a66ff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/entangled_pole/14.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    3.62,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#4bff66",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/entangled_pole/15.res",
+   "metallic": 0,
+   "pos": [
+    0.3113,
+    0.49,
+    0.4465
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink_001",
+   "color": "#6a39ff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/entangled_pole/16.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    3.12,
+    -0.24
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink_002",
+   "color": "#6a39ff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/entangled_pole/17.res",
+   "metallic": 0,
+   "pos": [
+    -0.2078,
+    3.12,
+    0.12
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink_003",
+   "color": "#6a39ff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/entangled_pole/18.res",
+   "metallic": 0,
+   "pos": [
+    0.2078,
+    3.12,
+    0.12
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin",
+   "color": "#6a39ff",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/entangled_pole/19.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    3.62,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#ba8dff",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/entangled_pole/20.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    3.62,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

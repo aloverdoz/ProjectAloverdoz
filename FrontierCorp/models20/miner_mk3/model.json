@@ -1,0 +1,575 @@
+{
+ "extra": {
+  "emitters": [
+   {
+    "kind": "dust",
+    "pos": [
+     0,
+     0.3,
+     0
+    ],
+    "rate": 1,
+    "size": 0.8,
+    "when": "active"
+   },
+   {
+    "kind": "puff",
+    "pos": [
+     0.324,
+     2.974,
+     -0.302
+    ],
+    "rate": 0.5,
+    "size": 0.6,
+    "when": "active"
+   },
+   {
+    "kind": "puff",
+    "pos": [
+     0.432,
+     2.974,
+     -0.13
+    ],
+    "rate": 0.5,
+    "size": 0.6,
+    "when": "active"
+   }
+  ]
+ },
+ "parts": [
+  {
+   "anim": "spin_fast",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/miner_mk3/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.648,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/miner_mk3/tex0.png"
+  },
+  {
+   "anim": "spin_fast",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/miner_mk3/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.648,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/miner_mk3/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/miner_mk3/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/miner_mk3/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/miner_mk3/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/miner_mk3/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/miner_mk3/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/miner_mk3/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/miner_mk3/5.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/miner_mk3/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/miner_mk3/6.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/miner_mk3/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/miner_mk3/7.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/miner_mk3/tex0.png"
+  },
+  {
+   "color": "#2f7ac1",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/miner_mk3/8.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.08,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/miner_mk3/9.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/miner_mk3/tex0.png"
+  },
+  {
+   "color": "#59daff",
+   "emission": 4.2,
+   "mat": "glow",
+   "mesh": "res://models20/miner_mk3/10.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/miner_mk3/11.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffdca0",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/miner_mk3/12.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_fan",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/miner_mk3/13.res",
+   "metallic": 0,
+   "pos": [
+    -0.4464,
+    1.368,
+    -0.4464
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/miner_mk3/tex0.png"
+  },
+  {
+   "anim": "spin",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/miner_mk3/14.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.6352,
+    0.144
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/miner_mk3/tex0.png"
+  },
+  {
+   "anim": "spin",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/miner_mk3/15.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.6352,
+    0.144
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/miner_mk3/tex0.png"
+  },
+  {
+   "anim": "spin",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/miner_mk3/16.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.6352,
+    0.144
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/miner_mk3/tex0.png"
+  },
+  {
+   "anim": "gear_fast",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/miner_mk3/17.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.4696,
+    0.4176
+   ],
+   "rot": [
+    90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/miner_mk3/tex0.png"
+  },
+  {
+   "anim": "gear_fast",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/miner_mk3/18.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.4696,
+    0.4176
+   ],
+   "rot": [
+    90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/miner_mk3/tex0.png"
+  },
+  {
+   "anim": "pulse",
+   "color": "#6eff8b",
+   "emission": 1.9,
+   "mat": "glow",
+   "mesh": "res://models20/miner_mk3/19.res",
+   "metallic": 0,
+   "pos": [
+    -0.2304,
+    1.6488,
+    0.5976
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ff5440",
+   "emission": 2.7,
+   "mat": "glow",
+   "mesh": "res://models20/miner_mk3/20.res",
+   "metallic": 0,
+   "pos": [
+    0.2304,
+    1.6488,
+    0.6048
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

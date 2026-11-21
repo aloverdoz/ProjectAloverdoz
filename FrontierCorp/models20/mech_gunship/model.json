@@ -1,0 +1,476 @@
+{
+ "extra": {
+  "rig": {
+   "arms": [],
+   "body": "b_body",
+   "bones": [
+    {
+     "name": "b_body",
+     "parent": "",
+     "pivot": [
+      0,
+      2.3,
+      0
+     ]
+    },
+    {
+     "name": "b_head",
+     "parent": "b_body",
+     "pivot": [
+      0.9,
+      2.3,
+      0
+     ]
+    },
+    {
+     "name": "b_rot0",
+     "parent": "b_body",
+     "pivot": [
+      0.85,
+      2.42,
+      0.95
+     ]
+    },
+    {
+     "name": "b_rot1",
+     "parent": "b_body",
+     "pivot": [
+      0.85,
+      2.42,
+      -0.95
+     ]
+    },
+    {
+     "name": "b_rot2",
+     "parent": "b_body",
+     "pivot": [
+      -0.85,
+      2.42,
+      0.95
+     ]
+    },
+    {
+     "name": "b_rot3",
+     "parent": "b_body",
+     "pivot": [
+      -0.85,
+      2.42,
+      -0.95
+     ]
+    }
+   ],
+   "breath": [
+    "b_body"
+   ],
+   "chains": [],
+   "gait": {
+    "bank": 10,
+    "bob": 0,
+    "duty": 0.6,
+    "knee": 30,
+    "lean": 8,
+    "lift": 20,
+    "roll": 2,
+    "stride": 2.6,
+    "swing": 25
+   },
+   "head": "b_head",
+   "hover": {
+    "amp": 0.15,
+    "speed": 1.4
+   },
+   "jaws": [],
+   "legs": [],
+   "rotors": [
+    {
+     "axis": "y",
+     "bone": "b_rot0",
+     "speed": 22
+    },
+    {
+     "axis": "y",
+     "bone": "b_rot1",
+     "speed": -22
+    },
+    {
+     "axis": "y",
+     "bone": "b_rot2",
+     "speed": -22
+    },
+    {
+     "axis": "y",
+     "bone": "b_rot3",
+     "speed": 22
+    }
+   ]
+  }
+ },
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_gunship/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.3,
+    0
+   ],
+   "role": "b_body",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_gunship/tex0.png"
+  },
+  {
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/mech_gunship/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.3,
+    0
+   ],
+   "role": "b_body",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_gunship/2.res",
+   "metallic": 0,
+   "pos": [
+    0.9,
+    2.3,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_gunship/tex0.png"
+  },
+  {
+   "color": "#cb3a24",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/mech_gunship/3.res",
+   "metallic": 0,
+   "pos": [
+    0.9,
+    2.3,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.08,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_gunship/4.res",
+   "metallic": 0,
+   "pos": [
+    0.85,
+    2.42,
+    0.95
+   ],
+   "role": "b_rot0",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_gunship/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_gunship/5.res",
+   "metallic": 0,
+   "pos": [
+    0.85,
+    2.42,
+    -0.95
+   ],
+   "role": "b_rot1",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_gunship/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_gunship/6.res",
+   "metallic": 0,
+   "pos": [
+    -0.85,
+    2.42,
+    0.95
+   ],
+   "role": "b_rot2",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_gunship/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_gunship/7.res",
+   "metallic": 0,
+   "pos": [
+    -0.85,
+    2.42,
+    -0.95
+   ],
+   "role": "b_rot3",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_gunship/tex0.png"
+  },
+  {
+   "anim": "flicker",
+   "color": "#ff2a18",
+   "emission": 5,
+   "mat": "glow",
+   "mesh": "res://models20/mech_gunship/8.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.3,
+    0
+   ],
+   "role": "b_body",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#ff2a18",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/mech_gunship/9.res",
+   "metallic": 0,
+   "pos": [
+    0.9,
+    2.3,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ff8030",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/mech_gunship/10.res",
+   "metallic": 0,
+   "pos": [
+    0.9,
+    2.3,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ff2a18",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/mech_gunship/11.res",
+   "metallic": 0,
+   "pos": [
+    -0.6,
+    3.27,
+    -0.2
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink_001",
+   "color": "#30ff4b",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/mech_gunship/12.res",
+   "metallic": 0,
+   "pos": [
+    0.7,
+    2.3,
+    0.58
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink_002",
+   "color": "#ff3021",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/mech_gunship/13.res",
+   "metallic": 0,
+   "pos": [
+    0.7,
+    2.3,
+    -0.58
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

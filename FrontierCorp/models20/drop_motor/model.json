@@ -1,0 +1,79 @@
+{
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/drop_motor/0.res",
+   "metallic": 0,
+   "pos": [
+    -0.17,
+    0.17,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "tint": false
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/drop_motor/1.res",
+   "metallic": 0,
+   "pos": [
+    -0.17,
+    0.17,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "tint": false
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/drop_motor/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "tint": true
+  }
+ ]
+}

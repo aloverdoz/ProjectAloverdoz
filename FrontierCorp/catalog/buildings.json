@@ -1,0 +1,10111 @@
+{
+"armchair_blue": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"cloth": 2,
+"plank": 2
+},
+"desc": "Мягкое кресло.",
+"hp": 80,
+"model": "cb_armchair_blue",
+"name": "Кресло (синий)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"armchair_green": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"cloth": 2,
+"plank": 2
+},
+"desc": "Мягкое кресло.",
+"hp": 80,
+"model": "cb_armchair_green",
+"name": "Кресло (зелёный)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"armchair_grey": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"cloth": 2,
+"plank": 2
+},
+"desc": "Мягкое кресло.",
+"hp": 80,
+"model": "cb_armchair_grey",
+"name": "Кресло (серый)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"armchair_red": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"cloth": 2,
+"plank": 2
+},
+"desc": "Мягкое кресло.",
+"hp": 80,
+"model": "cb_armchair_red",
+"name": "Кресло (красный)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"armchair_yellow": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"cloth": 2,
+"plank": 2
+},
+"desc": "Мягкое кресло.",
+"hp": 80,
+"model": "cb_armchair_yellow",
+"name": "Кресло (жёлтый)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"banner_blue": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"cloth": 2,
+"plank": 1
+},
+"desc": "Знамя колонии.",
+"hp": 60,
+"model": "cb_banner_blue",
+"name": "Знамя (синий)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"banner_green": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"cloth": 2,
+"plank": 1
+},
+"desc": "Знамя колонии.",
+"hp": 60,
+"model": "cb_banner_green",
+"name": "Знамя (зелёный)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"banner_grey": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"cloth": 2,
+"plank": 1
+},
+"desc": "Знамя колонии.",
+"hp": 60,
+"model": "cb_banner_grey",
+"name": "Знамя (серый)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"banner_red": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"cloth": 2,
+"plank": 1
+},
+"desc": "Знамя колонии.",
+"hp": 60,
+"model": "cb_banner_red",
+"name": "Знамя (красный)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"banner_yellow": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"cloth": 2,
+"plank": 1
+},
+"desc": "Знамя колонии.",
+"hp": 60,
+"model": "cb_banner_yellow",
+"name": "Знамя (жёлтый)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"barrel_blue": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"iron_plate": 1
+},
+"desc": "Бочка для декора.",
+"hp": 80,
+"model": "cb_barrel_blue",
+"name": "Бочка (синяя)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"barrel_red": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"iron_plate": 1
+},
+"desc": "Бочка для декора.",
+"hp": 80,
+"model": "cb_barrel_red",
+"name": "Бочка (красная)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"barrel_tank": {
+"behavior": "tank",
+"catalog": "Жидкости",
+"category": "fluids",
+"cost": {
+"iron_plate": 4
+},
+"desc": "Запасает до 100 единиц жидкости из труб.",
+"hp": 310,
+"model": "cb_barrel_tank",
+"name": "Бочка-бак",
+"params": {
+"pipe_capacity": 100
+},
+"size": 1,
+"sounds": {}
+},
+"barrel_white": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"iron_plate": 1
+},
+"desc": "Бочка для декора.",
+"hp": 80,
+"model": "cb_barrel_white",
+"name": "Бочка (белая)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"barrel_wood": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"plank": 2
+},
+"desc": "Бочка для декора.",
+"hp": 80,
+"model": "cb_barrel_wood",
+"name": "Бочка (деревянная)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"battery_mk1": {
+"behavior": "battery",
+"catalog": "Энергетика",
+"category": "energy",
+"cost": {
+"battery": 4,
+"iron_plate": 4
+},
+"desc": "Запасает 1000 энергии на ночь.",
+"hp": 280,
+"model": "cb_battery_mk1",
+"name": "Аккумулятор Mk1",
+"params": {
+"capacity": 1000,
+"radius": 5
+},
+"size": 1,
+"sounds": {
+"work": "work_electric"
+}
+},
+"battery_mk2": {
+"behavior": "battery",
+"catalog": "Энергетика",
+"category": "energy",
+"cost": {
+"battery_cell": 6,
+"steel_plate": 4
+},
+"desc": "Запасает 3000 энергии на ночь.",
+"hp": 360,
+"model": "cb_battery_mk2",
+"name": "Аккумулятор Mk2",
+"params": {
+"capacity": 3000,
+"radius": 6
+},
+"size": 1,
+"sounds": {
+"work": "work_electric"
+}
+},
+"battery_mk3": {
+"behavior": "battery",
+"catalog": "Энергетика",
+"category": "energy",
+"cost": {
+"aluminum_plate": 6,
+"battery_pack": 4
+},
+"desc": "Запасает 8000 энергии на ночь.",
+"hp": 440,
+"model": "cb_battery_mk3",
+"name": "Аккумулятор Mk3",
+"params": {
+"capacity": 8000,
+"radius": 7
+},
+"size": 1,
+"sounds": {
+"work": "work_electric"
+}
+},
+"battery_mk4": {
+"behavior": "battery",
+"catalog": "Энергетика",
+"category": "energy",
+"cost": {
+"battery_pack": 8,
+"superconductor": 2
+},
+"desc": "Запасает 20000 энергии на ночь.",
+"hp": 520,
+"model": "cb_battery_mk4",
+"name": "Аккумулятор Mk4",
+"params": {
+"capacity": 20000,
+"radius": 8
+},
+"size": 1,
+"sounds": {
+"work": "work_electric"
+}
+},
+"battery_mk5": {
+"behavior": "battery",
+"catalog": "Энергетика",
+"category": "energy",
+"cost": {
+"graphene": 4,
+"power_cell": 6
+},
+"desc": "Запасает 60000 энергии на ночь.",
+"hp": 600,
+"model": "cb_battery_mk5",
+"name": "Аккумулятор Mk5",
+"params": {
+"capacity": 60000,
+"radius": 9
+},
+"size": 1,
+"sounds": {
+"work": "work_electric"
+}
+},
+"beacon_craft": {
+"behavior": "decor",
+"blocks": [
+{
+"needs_power": true,
+"radius": 10,
+"stat": "craft_speed",
+"type": "buff_area",
+"value": 0.4
+}
+],
+"catalog": "Особые",
+"category": "special",
+"cost": {
+"crystal": 1,
+"microchip": 1,
+"steel_rod": 2
+},
+"desc": "Рядом с ним: скорость крафта +40%. Нужна энергия.",
+"hp": 200,
+"model": "cb_beacon_craft",
+"name": "Маяк мастера",
+"params": {
+"power": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_electric"
+}
+},
+"beacon_damage": {
+"behavior": "decor",
+"blocks": [
+{
+"needs_power": true,
+"radius": 10,
+"stat": "damage",
+"type": "buff_area",
+"value": 0.3
+}
+],
+"catalog": "Особые",
+"category": "special",
+"cost": {
+"crystal": 1,
+"monster_gland": 1,
+"steel_rod": 2
+},
+"desc": "Рядом с ним: урон +30%. Нужна энергия.",
+"hp": 200,
+"model": "cb_beacon_damage",
+"name": "Маяк ярости",
+"params": {
+"power": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_electric"
+}
+},
+"beacon_gather": {
+"behavior": "decor",
+"blocks": [
+{
+"needs_power": true,
+"radius": 10,
+"stat": "gather",
+"type": "buff_area",
+"value": 0.4
+}
+],
+"catalog": "Особые",
+"category": "special",
+"cost": {
+"crystal": 1,
+"iron_gear": 2,
+"steel_rod": 2
+},
+"desc": "Рядом с ним: скорость добычи +40%. Нужна энергия.",
+"hp": 200,
+"model": "cb_beacon_gather",
+"name": "Маяк добычи",
+"params": {
+"power": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_electric"
+}
+},
+"beacon_machines": {
+"behavior": "decor",
+"blocks": [
+{
+"needs_power": true,
+"radius": 10,
+"stat": "machine_speed",
+"type": "buff_area",
+"value": 0.25
+}
+],
+"catalog": "Особые",
+"category": "special",
+"cost": {
+"quantum_chip": 1,
+"steel_rod": 4
+},
+"desc": "Рядом с ним: скорость машин +25%. Нужна энергия.",
+"hp": 200,
+"model": "cb_beacon_machines",
+"name": "Маяк разгона машин",
+"params": {
+"power": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_electric"
+}
+},
+"beacon_regen": {
+"behavior": "decor",
+"blocks": [
+{
+"needs_power": true,
+"radius": 10,
+"stat": "regen",
+"type": "buff_area",
+"value": 1.0
+}
+],
+"catalog": "Особые",
+"category": "special",
+"cost": {
+"crystal": 1,
+"herbs": 4,
+"steel_rod": 2
+},
+"desc": "Рядом с ним: восстановление +100%. Нужна энергия.",
+"hp": 200,
+"model": "cb_beacon_regen",
+"name": "Маяк здоровья",
+"params": {
+"power": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_electric"
+}
+},
+"beacon_speed": {
+"behavior": "decor",
+"blocks": [
+{
+"needs_power": true,
+"radius": 10,
+"stat": "move",
+"type": "buff_area",
+"value": 0.25
+}
+],
+"catalog": "Особые",
+"category": "special",
+"cost": {
+"crystal": 1,
+"led": 2,
+"steel_rod": 2
+},
+"desc": "Рядом с ним: скорость бега +25%. Нужна энергия.",
+"hp": 200,
+"model": "cb_beacon_speed",
+"name": "Маяк скорости",
+"params": {
+"power": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_electric"
+}
+},
+"bed_beet": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 30,
+"item": "beet",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма: грядки",
+"category": "special",
+"cost": {
+"beet_seeds": 2,
+"plank": 4
+},
+"desc": "Сама растит урожай (свёкла). Поставьте ленту — урожай поедет на склад.",
+"hp": 100,
+"model": "cb_bed_beet",
+"name": "Грядка: свёкла",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"bed_blue": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"cloth": 3,
+"plank": 4
+},
+"desc": "Односпальная кровать.",
+"hp": 120,
+"model": "cb_bed_blue",
+"name": "Кровать (синий)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"bed_cabbage": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 30,
+"item": "cabbage",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма: грядки",
+"category": "special",
+"cost": {
+"cabbage_seeds": 2,
+"plank": 4
+},
+"desc": "Сама растит урожай (капуста). Поставьте ленту — урожай поедет на склад.",
+"hp": 100,
+"model": "cb_bed_cabbage",
+"name": "Грядка: капуста",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"bed_carrot": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 30,
+"item": "carrot",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма: грядки",
+"category": "special",
+"cost": {
+"carrot_seeds": 2,
+"plank": 4
+},
+"desc": "Сама растит урожай (морковь). Поставьте ленту — урожай поедет на склад.",
+"hp": 100,
+"model": "cb_bed_carrot",
+"name": "Грядка: морковь",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"bed_coffee_beans": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 30,
+"item": "coffee_beans",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма: грядки",
+"category": "special",
+"cost": {
+"coffee_beans_seeds": 2,
+"plank": 4
+},
+"desc": "Сама растит урожай (кофе). Поставьте ленту — урожай поедет на склад.",
+"hp": 100,
+"model": "cb_bed_coffee_beans",
+"name": "Грядка: кофе",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"bed_corn": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 30,
+"item": "corn",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма: грядки",
+"category": "special",
+"cost": {
+"corn_seeds": 2,
+"plank": 4
+},
+"desc": "Сама растит урожай (кукуруза). Поставьте ленту — урожай поедет на склад.",
+"hp": 100,
+"model": "cb_bed_corn",
+"name": "Грядка: кукуруза",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"bed_cotton": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 30,
+"item": "cotton",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма: грядки",
+"category": "special",
+"cost": {
+"cotton_seeds": 2,
+"plank": 4
+},
+"desc": "Сама растит урожай (хлопок). Поставьте ленту — урожай поедет на склад.",
+"hp": 100,
+"model": "cb_bed_cotton",
+"name": "Грядка: хлопок",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"bed_cucumber": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 30,
+"item": "cucumber",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма: грядки",
+"category": "special",
+"cost": {
+"cucumber_seeds": 2,
+"plank": 4
+},
+"desc": "Сама растит урожай (огурцы). Поставьте ленту — урожай поедет на склад.",
+"hp": 100,
+"model": "cb_bed_cucumber",
+"name": "Грядка: огурцы",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"bed_double_blue": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"cloth": 5,
+"plank": 6
+},
+"desc": "Большая кровать.",
+"hp": 150,
+"model": "cb_bed_double_blue",
+"name": "Двуспальная кровать (синий)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"bed_double_green": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"cloth": 5,
+"plank": 6
+},
+"desc": "Большая кровать.",
+"hp": 150,
+"model": "cb_bed_double_green",
+"name": "Двуспальная кровать (зелёный)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"bed_double_grey": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"cloth": 5,
+"plank": 6
+},
+"desc": "Большая кровать.",
+"hp": 150,
+"model": "cb_bed_double_grey",
+"name": "Двуспальная кровать (серый)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"bed_double_red": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"cloth": 5,
+"plank": 6
+},
+"desc": "Большая кровать.",
+"hp": 150,
+"model": "cb_bed_double_red",
+"name": "Двуспальная кровать (красный)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"bed_double_yellow": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"cloth": 5,
+"plank": 6
+},
+"desc": "Большая кровать.",
+"hp": 150,
+"model": "cb_bed_double_yellow",
+"name": "Двуспальная кровать (жёлтый)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"bed_eggplant": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 30,
+"item": "eggplant",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма: грядки",
+"category": "special",
+"cost": {
+"eggplant_seeds": 2,
+"plank": 4
+},
+"desc": "Сама растит урожай (баклажаны). Поставьте ленту — урожай поедет на склад.",
+"hp": 100,
+"model": "cb_bed_eggplant",
+"name": "Грядка: баклажаны",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"bed_flax": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 30,
+"item": "flax",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма: грядки",
+"category": "special",
+"cost": {
+"flax_seeds": 2,
+"plank": 4
+},
+"desc": "Сама растит урожай (лён). Поставьте ленту — урожай поедет на склад.",
+"hp": 100,
+"model": "cb_bed_flax",
+"name": "Грядка: лён",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"bed_green": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"cloth": 3,
+"plank": 4
+},
+"desc": "Односпальная кровать.",
+"hp": 120,
+"model": "cb_bed_green",
+"name": "Кровать (зелёный)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"bed_grey": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"cloth": 3,
+"plank": 4
+},
+"desc": "Односпальная кровать.",
+"hp": 120,
+"model": "cb_bed_grey",
+"name": "Кровать (серый)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"bed_herbs": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 30,
+"item": "herbs",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма: грядки",
+"category": "special",
+"cost": {
+"herbs_seeds": 2,
+"plank": 4
+},
+"desc": "Сама растит урожай (травы). Поставьте ленту — урожай поедет на склад.",
+"hp": 100,
+"model": "cb_bed_herbs",
+"name": "Грядка: травы",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"bed_lettuce": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 30,
+"item": "lettuce",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма: грядки",
+"category": "special",
+"cost": {
+"lettuce_seeds": 2,
+"plank": 4
+},
+"desc": "Сама растит урожай (салат). Поставьте ленту — урожай поедет на склад.",
+"hp": 100,
+"model": "cb_bed_lettuce",
+"name": "Грядка: салат",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"bed_melon": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 30,
+"item": "melon",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма: грядки",
+"category": "special",
+"cost": {
+"melon_seeds": 2,
+"plank": 4
+},
+"desc": "Сама растит урожай (дыни). Поставьте ленту — урожай поедет на склад.",
+"hp": 100,
+"model": "cb_bed_melon",
+"name": "Грядка: дыни",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"bed_onion": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 30,
+"item": "onion",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма: грядки",
+"category": "special",
+"cost": {
+"onion_seeds": 2,
+"plank": 4
+},
+"desc": "Сама растит урожай (лук). Поставьте ленту — урожай поедет на склад.",
+"hp": 100,
+"model": "cb_bed_onion",
+"name": "Грядка: лук",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"bed_pepper": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 30,
+"item": "pepper",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма: грядки",
+"category": "special",
+"cost": {
+"pepper_seeds": 2,
+"plank": 4
+},
+"desc": "Сама растит урожай (перец). Поставьте ленту — урожай поедет на склад.",
+"hp": 100,
+"model": "cb_bed_pepper",
+"name": "Грядка: перец",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"bed_potato": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 30,
+"item": "potato",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма: грядки",
+"category": "special",
+"cost": {
+"plank": 4,
+"potato_seeds": 2
+},
+"desc": "Сама растит урожай (картофель). Поставьте ленту — урожай поедет на склад.",
+"hp": 100,
+"model": "cb_bed_potato",
+"name": "Грядка: картофель",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"bed_pumpkin": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 30,
+"item": "pumpkin",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма: грядки",
+"category": "special",
+"cost": {
+"plank": 4,
+"pumpkin_seeds": 2
+},
+"desc": "Сама растит урожай (тыквы). Поставьте ленту — урожай поедет на склад.",
+"hp": 100,
+"model": "cb_bed_pumpkin",
+"name": "Грядка: тыквы",
+"params": {},
+"size": 1,
+"sounds": {
+"work": "work_pump"
+}
+},
+"bed_red": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"cloth": 3,
+"plank": 4
+},
+"desc": "Односпальная кровать.",
+"hp": 120,
+"model": "cb_bed_red",
+"name": "Кровать (красный)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"bed_rice": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 30,
+"item": "rice",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма: грядки",
+"category": "special",
+"cost": {
+"plank": 4,
+"rice_seeds": 2
+},
+"desc": "Сама растит урожай (рис). Поставьте ленту — урожай поедет на склад.",
+"hp": 100,
+"model": "cb_bed_rice",
+"name": "Грядка: рис",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"bed_strawberries": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 30,
+"item": "strawberries",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма: грядки",
+"category": "special",
+"cost": {
+"plank": 4,
+"strawberries_seeds": 2
+},
+"desc": "Сама растит урожай (клубника). Поставьте ленту — урожай поедет на склад.",
+"hp": 100,
+"model": "cb_bed_strawberries",
+"name": "Грядка: клубника",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"bed_sunflower": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 30,
+"item": "sunflower",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма: грядки",
+"category": "special",
+"cost": {
+"plank": 4,
+"sunflower_seeds": 2
+},
+"desc": "Сама растит урожай (подсолнухи). Поставьте ленту — урожай поедет на склад.",
+"hp": 100,
+"model": "cb_bed_sunflower",
+"name": "Грядка: подсолнухи",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"bed_tomato": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 30,
+"item": "tomato",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма: грядки",
+"category": "special",
+"cost": {
+"plank": 4,
+"tomato_seeds": 2
+},
+"desc": "Сама растит урожай (помидоры). Поставьте ленту — урожай поедет на склад.",
+"hp": 100,
+"model": "cb_bed_tomato",
+"name": "Грядка: помидоры",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"bed_watermelon": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 30,
+"item": "watermelon",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма: грядки",
+"category": "special",
+"cost": {
+"plank": 4,
+"watermelon_seeds": 2
+},
+"desc": "Сама растит урожай (арбузы). Поставьте ленту — урожай поедет на склад.",
+"hp": 100,
+"model": "cb_bed_watermelon",
+"name": "Грядка: арбузы",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"bed_wheat": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 30,
+"item": "wheat",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма: грядки",
+"category": "special",
+"cost": {
+"plank": 4,
+"wheat_seeds": 2
+},
+"desc": "Сама растит урожай (пшеница). Поставьте ленту — урожай поедет на склад.",
+"hp": 100,
+"model": "cb_bed_wheat",
+"name": "Грядка: пшеница",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"bed_yellow": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"cloth": 3,
+"plank": 4
+},
+"desc": "Односпальная кровать.",
+"hp": 120,
+"model": "cb_bed_yellow",
+"name": "Кровать (жёлтый)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"bench_park": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"iron_rod": 1,
+"plank": 3
+},
+"desc": "Посидеть и отдохнуть.",
+"hp": 80,
+"model": "cb_bench_park",
+"name": "Парковая скамейка",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"bench_white": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"iron_rod": 1,
+"plank": 3
+},
+"desc": "Посидеть и отдохнуть.",
+"hp": 80,
+"model": "cb_bench_white",
+"name": "Белая скамейка",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"bench_wood": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"iron_rod": 1,
+"plank": 3
+},
+"desc": "Посидеть и отдохнуть.",
+"hp": 80,
+"model": "cb_bench_wood",
+"name": "Скамейка",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"biomass_stove": {
+"behavior": "generator",
+"catalog": "Энергетика",
+"category": "energy",
+"cost": {
+"log": 4,
+"stone": 10
+},
+"desc": "Жжёт ветки, листья и брёвна: 15 энергии.",
+"hp": 200,
+"model": "cb_biomass_stove",
+"name": "Печь-генератор",
+"params": {
+"burn_mult": 2.0,
+"fuels": [
+"leaves",
+"fiber",
+"branch",
+"log",
+"plank",
+"biomass"
+],
+"power": 15,
+"radius": 8
+},
+"size": 1,
+"sounds": {
+"work": "work_burner"
+}
+},
+"bioreactor": {
+"behavior": "crafter",
+"catalog": "Машины: Биореактор",
+"category": "production",
+"cost": {
+"gear": 4,
+"iron_plate": 8,
+"wire": 4
+},
+"desc": "Выращивает биомассу, лекарства и удобрения. Скорость ×1. Энергия: 4.",
+"hp": 420,
+"model": "cb_bioreactor",
+"name": "Биореактор",
+"params": {
+"power": 4,
+"speed": 1.0,
+"station": "refinery",
+"tier": 1
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"bioreactor_mk2": {
+"behavior": "crafter",
+"catalog": "Машины: Биореактор",
+"category": "production",
+"cost": {
+"circuit": 2,
+"copper_wire": 8,
+"steel_gear": 4,
+"steel_plate": 8
+},
+"desc": "Выращивает биомассу, лекарства и удобрения. Скорость ×1.6. Энергия: 10.",
+"hp": 540,
+"model": "cb_bioreactor_mk2",
+"name": "Биореактор Mk2",
+"params": {
+"power": 10,
+"speed": 1.6,
+"station": "refinery",
+"tier": 2
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"bioreactor_mk3": {
+"behavior": "crafter",
+"catalog": "Машины: Биореактор",
+"category": "production",
+"cost": {
+"aluminum_plate": 10,
+"circuit_mk2": 2,
+"motor": 2,
+"steel_beam": 2
+},
+"desc": "Выращивает биомассу, лекарства и удобрения. Скорость ×2.4. Энергия: 20.",
+"hp": 660,
+"model": "cb_bioreactor_mk3",
+"name": "Биореактор Mk3",
+"params": {
+"power": 20,
+"speed": 2.4,
+"station": "refinery",
+"tier": 3
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"bioreactor_mk4": {
+"behavior": "crafter",
+"catalog": "Машины: Биореактор",
+"category": "production",
+"cost": {
+"circuit_mk3": 2,
+"servo_motor": 2,
+"superconductor": 1,
+"titanium_plate": 10
+},
+"desc": "Выращивает биомассу, лекарства и удобрения. Скорость ×3.5. Энергия: 35.",
+"hp": 780,
+"model": "cb_bioreactor_mk4",
+"name": "Биореактор Mk4",
+"params": {
+"power": 35,
+"speed": 3.5,
+"station": "refinery",
+"tier": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"bioreactor_mk5": {
+"behavior": "crafter",
+"catalog": "Машины: Биореактор",
+"category": "production",
+"cost": {
+"ai_core": 1,
+"plasma_core": 1,
+"quantum_chip": 1,
+"tungsten_plate": 10
+},
+"desc": "Выращивает биомассу, лекарства и удобрения. Скорость ×5. Энергия: 60.",
+"hp": 900,
+"model": "cb_bioreactor_mk5",
+"name": "Биореактор Mk5",
+"params": {
+"power": 60,
+"speed": 5.0,
+"station": "refinery",
+"tier": 5
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"cargo_mk1": {
+"behavior": "storage",
+"catalog": "Хранение",
+"category": "storage",
+"cost": {
+"iron_plate": 10,
+"steel": 2
+},
+"desc": "Хранит 60 стаков.",
+"hp": 550,
+"model": "cb_cargo_mk1",
+"name": "Грузовой контейнер Mk1",
+"params": {
+"slots": 60
+},
+"size": 1,
+"sounds": {}
+},
+"cargo_mk2": {
+"behavior": "storage",
+"catalog": "Хранение",
+"category": "storage",
+"cost": {
+"steel_plate": 10
+},
+"desc": "Хранит 80 стаков.",
+"hp": 700,
+"model": "cb_cargo_mk2",
+"name": "Грузовой контейнер Mk2",
+"params": {
+"slots": 80
+},
+"size": 1,
+"sounds": {}
+},
+"cargo_mk3": {
+"behavior": "storage",
+"catalog": "Хранение",
+"category": "storage",
+"cost": {
+"aluminum_plate": 10
+},
+"desc": "Хранит 100 стаков.",
+"hp": 850,
+"model": "cb_cargo_mk3",
+"name": "Грузовой контейнер Mk3",
+"params": {
+"slots": 100
+},
+"size": 1,
+"sounds": {}
+},
+"cargo_mk4": {
+"behavior": "storage",
+"catalog": "Хранение",
+"category": "storage",
+"cost": {
+"titanium_plate": 10
+},
+"desc": "Хранит 120 стаков.",
+"hp": 1000,
+"model": "cb_cargo_mk4",
+"name": "Грузовой контейнер Mk4",
+"params": {
+"slots": 120
+},
+"size": 1,
+"sounds": {}
+},
+"cargo_mk5": {
+"behavior": "storage",
+"catalog": "Хранение",
+"category": "storage",
+"cost": {
+"tungsten_plate": 10
+},
+"desc": "Хранит 140 стаков.",
+"hp": 1150,
+"model": "cb_cargo_mk5",
+"name": "Грузовой контейнер Mk5",
+"params": {
+"slots": 140
+},
+"size": 1,
+"sounds": {}
+},
+"centrifuge_mk2": {
+"behavior": "crafter",
+"catalog": "Машины: Центрифуга",
+"category": "production",
+"cost": {
+"circuit": 2,
+"copper_wire": 8,
+"steel_gear": 4,
+"steel_plate": 8
+},
+"desc": "Обогащает руду и разделяет смеси. Скорость ×1.6. Энергия: 10.",
+"hp": 540,
+"model": "cb_centrifuge_mk2",
+"name": "Центрифуга Mk2",
+"params": {
+"power": 10,
+"speed": 1.6,
+"station": "refinery",
+"tier": 2
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"centrifuge_mk3": {
+"behavior": "crafter",
+"catalog": "Машины: Центрифуга",
+"category": "production",
+"cost": {
+"aluminum_plate": 10,
+"circuit_mk2": 2,
+"motor": 2,
+"steel_beam": 2
+},
+"desc": "Обогащает руду и разделяет смеси. Скорость ×2.4. Энергия: 20.",
+"hp": 660,
+"model": "cb_centrifuge_mk3",
+"name": "Центрифуга Mk3",
+"params": {
+"power": 20,
+"speed": 2.4,
+"station": "refinery",
+"tier": 3
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"centrifuge_mk4": {
+"behavior": "crafter",
+"catalog": "Машины: Центрифуга",
+"category": "production",
+"cost": {
+"circuit_mk3": 2,
+"servo_motor": 2,
+"superconductor": 1,
+"titanium_plate": 10
+},
+"desc": "Обогащает руду и разделяет смеси. Скорость ×3.5. Энергия: 35.",
+"hp": 780,
+"model": "cb_centrifuge_mk4",
+"name": "Центрифуга Mk4",
+"params": {
+"power": 35,
+"speed": 3.5,
+"station": "refinery",
+"tier": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"centrifuge_mk5": {
+"behavior": "crafter",
+"catalog": "Машины: Центрифуга",
+"category": "production",
+"cost": {
+"ai_core": 1,
+"plasma_core": 1,
+"quantum_chip": 1,
+"tungsten_plate": 10
+},
+"desc": "Обогащает руду и разделяет смеси. Скорость ×5. Энергия: 60.",
+"hp": 900,
+"model": "cb_centrifuge_mk5",
+"name": "Центрифуга Mk5",
+"params": {
+"power": 60,
+"speed": 5.0,
+"station": "refinery",
+"tier": 5
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"chair_birch": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"plank": 2
+},
+"desc": "Простой стул.",
+"hp": 60,
+"model": "cb_chair_birch",
+"name": "Стул (берёза)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"chair_black": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"plank": 2
+},
+"desc": "Простой стул.",
+"hp": 60,
+"model": "cb_chair_black",
+"name": "Стул (чёрный)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"chair_cherry": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"plank": 2
+},
+"desc": "Простой стул.",
+"hp": 60,
+"model": "cb_chair_cherry",
+"name": "Стул (вишня)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"chair_dark": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"plank": 2
+},
+"desc": "Простой стул.",
+"hp": 60,
+"model": "cb_chair_dark",
+"name": "Стул (тёмное дерево)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"chair_grey": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"plank": 2
+},
+"desc": "Простой стул.",
+"hp": 60,
+"model": "cb_chair_grey",
+"name": "Стул (серый)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"chair_oak": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"plank": 2
+},
+"desc": "Простой стул.",
+"hp": 60,
+"model": "cb_chair_oak",
+"name": "Стул (дуб)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"chair_white": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"plank": 2
+},
+"desc": "Простой стул.",
+"hp": 60,
+"model": "cb_chair_white",
+"name": "Стул (белый)",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"chem_plant_mk2": {
+"behavior": "crafter",
+"catalog": "Машины: Химический завод",
+"category": "production",
+"cost": {
+"circuit": 2,
+"copper_wire": 8,
+"steel_gear": 4,
+"steel_plate": 8
+},
+"desc": "Смешивает кислоты, газы и растворы. Скорость ×1.6. Энергия: 10.",
+"hp": 540,
+"model": "cb_chem_plant_mk2",
+"name": "Химический завод Mk2",
+"params": {
+"power": 10,
+"speed": 1.6,
+"station": "refinery",
+"tier": 2
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"chem_plant_mk3": {
+"behavior": "crafter",
+"catalog": "Машины: Химический завод",
+"category": "production",
+"cost": {
+"aluminum_plate": 10,
+"circuit_mk2": 2,
+"motor": 2,
+"steel_beam": 2
+},
+"desc": "Смешивает кислоты, газы и растворы. Скорость ×2.4. Энергия: 20.",
+"hp": 660,
+"model": "cb_chem_plant_mk3",
+"name": "Химический завод Mk3",
+"params": {
+"power": 20,
+"speed": 2.4,
+"station": "refinery",
+"tier": 3
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"chem_plant_mk4": {
+"behavior": "crafter",
+"catalog": "Машины: Химический завод",
+"category": "production",
+"cost": {
+"circuit_mk3": 2,
+"servo_motor": 2,
+"superconductor": 1,
+"titanium_plate": 10
+},
+"desc": "Смешивает кислоты, газы и растворы. Скорость ×3.5. Энергия: 35.",
+"hp": 780,
+"model": "cb_chem_plant_mk4",
+"name": "Химический завод Mk4",
+"params": {
+"power": 35,
+"speed": 3.5,
+"station": "refinery",
+"tier": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"chem_plant_mk5": {
+"behavior": "crafter",
+"catalog": "Машины: Химический завод",
+"category": "production",
+"cost": {
+"ai_core": 1,
+"plasma_core": 1,
+"quantum_chip": 1,
+"tungsten_plate": 10
+},
+"desc": "Смешивает кислоты, газы и растворы. Скорость ×5. Энергия: 60.",
+"hp": 900,
+"model": "cb_chem_plant_mk5",
+"name": "Химический завод Mk5",
+"params": {
+"power": 60,
+"speed": 5.0,
+"station": "refinery",
+"tier": 5
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"chest_oak": {
+"behavior": "storage",
+"catalog": "Хранение",
+"category": "storage",
+"cost": {
+"iron_bolt": 2,
+"oak_plank": 6
+},
+"desc": "Хранит 20 стаков. Принимает предметы с лент.",
+"hp": 270,
+"model": "cb_chest_oak",
+"name": "Дубовый сундук",
+"params": {
+"slots": 20
+},
+"size": 1,
+"sounds": {}
+},
+"chest_steel": {
+"behavior": "storage",
+"catalog": "Хранение",
+"category": "storage",
+"cost": {
+"steel_plate": 6
+},
+"desc": "Хранит 32 стаков. Принимает предметы с лент.",
+"hp": 342,
+"model": "cb_chest_steel",
+"name": "Стальной сундук",
+"params": {
+"slots": 32
+},
+"size": 1,
+"sounds": {}
+},
+"chest_titanium": {
+"behavior": "storage",
+"catalog": "Хранение",
+"category": "storage",
+"cost": {
+"titanium_plate": 6
+},
+"desc": "Хранит 48 стаков. Принимает предметы с лент.",
+"hp": 438,
+"model": "cb_chest_titanium",
+"name": "Титановый сундук",
+"params": {
+"slots": 48
+},
+"size": 1,
+"sounds": {}
+},
+"chest_tungsten": {
+"behavior": "storage",
+"catalog": "Хранение",
+"category": "storage",
+"cost": {
+"microchip": 1,
+"tungsten_plate": 6
+},
+"desc": "Хранит 64 стаков. Принимает предметы с лент.",
+"hp": 534,
+"model": "cb_chest_tungsten",
+"name": "Вольфрамовый сейф",
+"params": {
+"slots": 64
+},
+"size": 1,
+"sounds": {}
+},
+"chip_fab": {
+"behavior": "crafter",
+"catalog": "Машины: Фабрика микросхем",
+"category": "production",
+"cost": {
+"gear": 4,
+"iron_plate": 8,
+"wire": 4
+},
+"desc": "Чистая комната для плат и процессоров. Скорость ×1. Энергия: 4.",
+"hp": 420,
+"model": "cb_chip_fab",
+"name": "Фабрика микросхем",
+"params": {
+"power": 4,
+"speed": 1.0,
+"station": "assembler",
+"tier": 1
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"chip_fab_mk2": {
+"behavior": "crafter",
+"catalog": "Машины: Фабрика микросхем",
+"category": "production",
+"cost": {
+"circuit": 2,
+"copper_wire": 8,
+"steel_gear": 4,
+"steel_plate": 8
+},
+"desc": "Чистая комната для плат и процессоров. Скорость ×1.6. Энергия: 10.",
+"hp": 540,
+"model": "cb_chip_fab_mk2",
+"name": "Фабрика микросхем Mk2",
+"params": {
+"power": 10,
+"speed": 1.6,
+"station": "assembler",
+"tier": 2
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"chip_fab_mk3": {
+"behavior": "crafter",
+"catalog": "Машины: Фабрика микросхем",
+"category": "production",
+"cost": {
+"aluminum_plate": 10,
+"circuit_mk2": 2,
+"motor": 2,
+"steel_beam": 2
+},
+"desc": "Чистая комната для плат и процессоров. Скорость ×2.4. Энергия: 20.",
+"hp": 660,
+"model": "cb_chip_fab_mk3",
+"name": "Фабрика микросхем Mk3",
+"params": {
+"power": 20,
+"speed": 2.4,
+"station": "assembler",
+"tier": 3
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"chip_fab_mk4": {
+"behavior": "crafter",
+"catalog": "Машины: Фабрика микросхем",
+"category": "production",
+"cost": {
+"circuit_mk3": 2,
+"servo_motor": 2,
+"superconductor": 1,
+"titanium_plate": 10
+},
+"desc": "Чистая комната для плат и процессоров. Скорость ×3.5. Энергия: 35.",
+"hp": 780,
+"model": "cb_chip_fab_mk4",
+"name": "Фабрика микросхем Mk4",
+"params": {
+"power": 35,
+"speed": 3.5,
+"station": "assembler",
+"tier": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"chip_fab_mk5": {
+"behavior": "crafter",
+"catalog": "Машины: Фабрика микросхем",
+"category": "production",
+"cost": {
+"ai_core": 1,
+"plasma_core": 1,
+"quantum_chip": 1,
+"tungsten_plate": 10
+},
+"desc": "Чистая комната для плат и процессоров. Скорость ×5. Энергия: 60.",
+"hp": 900,
+"model": "cb_chip_fab_mk5",
+"name": "Фабрика микросхем Mk5",
+"params": {
+"power": 60,
+"speed": 5.0,
+"station": "assembler",
+"tier": 5
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"coal_plant": {
+"behavior": "generator",
+"catalog": "Энергетика",
+"category": "energy",
+"cost": {
+"brick": 20,
+"motor": 2,
+"steel_plate": 10
+},
+"desc": "Жжёт уголь и древесный уголь: 110 энергии.",
+"hp": 600,
+"model": "cb_coal_plant",
+"name": "Угольная станция",
+"params": {
+"burn_mult": 1.3,
+"fuel_slots": 2,
+"fuels": [
+"coal",
+"charcoal",
+"coal_hq"
+],
+"power": 110,
+"radius": 12
+},
+"size": 1,
+"sounds": {
+"work": "work_engine"
+}
+},
+"compactor": {
+"behavior": "crafter",
+"catalog": "Машины: Уплотнитель",
+"category": "production",
+"cost": {
+"gear": 4,
+"iron_plate": 8,
+"wire": 4
+},
+"desc": "Прессует мусор и биомассу в блоки. Скорость ×1. Энергия: 4.",
+"hp": 420,
+"model": "cb_compactor",
+"name": "Уплотнитель",
+"params": {
+"power": 4,
+"speed": 1.0,
+"station": "workshop",
+"tier": 1
+},
+"size": 1,
+"sounds": {
+"work": "work_press"
+}
+},
+"compactor_mk2": {
+"behavior": "crafter",
+"catalog": "Машины: Уплотнитель",
+"category": "production",
+"cost": {
+"circuit": 2,
+"copper_wire": 8,
+"steel_gear": 4,
+"steel_plate": 8
+},
+"desc": "Прессует мусор и биомассу в блоки. Скорость ×1.6. Энергия: 10.",
+"hp": 540,
+"model": "cb_compactor_mk2",
+"name": "Уплотнитель Mk2",
+"params": {
+"power": 10,
+"speed": 1.6,
+"station": "workshop",
+"tier": 2
+},
+"size": 1,
+"sounds": {
+"work": "work_press"
+}
+},
+"compactor_mk3": {
+"behavior": "crafter",
+"catalog": "Машины: Уплотнитель",
+"category": "production",
+"cost": {
+"aluminum_plate": 10,
+"circuit_mk2": 2,
+"motor": 2,
+"steel_beam": 2
+},
+"desc": "Прессует мусор и биомассу в блоки. Скорость ×2.4. Энергия: 20.",
+"hp": 660,
+"model": "cb_compactor_mk3",
+"name": "Уплотнитель Mk3",
+"params": {
+"power": 20,
+"speed": 2.4,
+"station": "workshop",
+"tier": 3
+},
+"size": 1,
+"sounds": {
+"work": "work_press"
+}
+},
+"compactor_mk4": {
+"behavior": "crafter",
+"catalog": "Машины: Уплотнитель",
+"category": "production",
+"cost": {
+"circuit_mk3": 2,
+"servo_motor": 2,
+"superconductor": 1,
+"titanium_plate": 10
+},
+"desc": "Прессует мусор и биомассу в блоки. Скорость ×3.5. Энергия: 35.",
+"hp": 780,
+"model": "cb_compactor_mk4",
+"name": "Уплотнитель Mk4",
+"params": {
+"power": 35,
+"speed": 3.5,
+"station": "workshop",
+"tier": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_press"
+}
+},
+"compactor_mk5": {
+"behavior": "crafter",
+"catalog": "Машины: Уплотнитель",
+"category": "production",
+"cost": {
+"ai_core": 1,
+"plasma_core": 1,
+"quantum_chip": 1,
+"tungsten_plate": 10
+},
+"desc": "Прессует мусор и биомассу в блоки. Скорость ×5. Энергия: 60.",
+"hp": 900,
+"model": "cb_compactor_mk5",
+"name": "Уплотнитель Mk5",
+"params": {
+"power": 60,
+"speed": 5.0,
+"station": "workshop",
+"tier": 5
+},
+"size": 1,
+"sounds": {
+"work": "work_press"
+}
+},
+"composter": {
+"behavior": "decor",
+"blocks": [
+{
+"in": {
+"rotten": 3
+},
+"needs_power": false,
+"out": {
+"fertilizer": 1
+},
+"time": 10,
+"type": "convert"
+}
+],
+"catalog": "Ферма",
+"category": "special",
+"cost": {
+"plank": 6
+},
+"desc": "Перерабатывает 3 гнилых продукта в удобрение.",
+"hp": 120,
+"model": "cb_composter",
+"name": "Компостер",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"crate_small": {
+"behavior": "storage",
+"catalog": "Хранение",
+"category": "storage",
+"cost": {
+"plank": 3
+},
+"desc": "Хранит 8 стаков. Принимает предметы с лент.",
+"hp": 198,
+"model": "cb_crate_small",
+"name": "Маленький ящик",
+"params": {
+"slots": 8
+},
+"size": 1,
+"sounds": {}
+},
+"crusher_mk2": {
+"behavior": "crafter",
+"catalog": "Машины: Дробилка",
+"category": "production",
+"cost": {
+"circuit": 2,
+"copper_wire": 8,
+"steel_gear": 4,
+"steel_plate": 8
+},
+"desc": "Мелет руду и камень в порошок и щебень. Скорость ×1.6. Энергия: 10.",
+"hp": 540,
+"model": "cb_crusher_mk2",
+"name": "Дробилка Mk2",
+"params": {
+"power": 10,
+"speed": 1.6,
+"station": "workshop",
+"tier": 2
+},
+"size": 1,
+"sounds": {
+"work": "work_crush"
+}
+},
+"crusher_mk3": {
+"behavior": "crafter",
+"catalog": "Машины: Дробилка",
+"category": "production",
+"cost": {
+"aluminum_plate": 10,
+"circuit_mk2": 2,
+"motor": 2,
+"steel_beam": 2
+},
+"desc": "Мелет руду и камень в порошок и щебень. Скорость ×2.4. Энергия: 20.",
+"hp": 660,
+"model": "cb_crusher_mk3",
+"name": "Дробилка Mk3",
+"params": {
+"power": 20,
+"speed": 2.4,
+"station": "workshop",
+"tier": 3
+},
+"size": 1,
+"sounds": {
+"work": "work_crush"
+}
+},
+"crusher_mk4": {
+"behavior": "crafter",
+"catalog": "Машины: Дробилка",
+"category": "production",
+"cost": {
+"circuit_mk3": 2,
+"servo_motor": 2,
+"superconductor": 1,
+"titanium_plate": 10
+},
+"desc": "Мелет руду и камень в порошок и щебень. Скорость ×3.5. Энергия: 35.",
+"hp": 780,
+"model": "cb_crusher_mk4",
+"name": "Дробилка Mk4",
+"params": {
+"power": 35,
+"speed": 3.5,
+"station": "workshop",
+"tier": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_crush"
+}
+},
+"crusher_mk5": {
+"behavior": "crafter",
+"catalog": "Машины: Дробилка",
+"category": "production",
+"cost": {
+"ai_core": 1,
+"plasma_core": 1,
+"quantum_chip": 1,
+"tungsten_plate": 10
+},
+"desc": "Мелет руду и камень в порошок и щебень. Скорость ×5. Энергия: 60.",
+"hp": 900,
+"model": "cb_crusher_mk5",
+"name": "Дробилка Mk5",
+"params": {
+"power": 60,
+"speed": 5.0,
+"station": "workshop",
+"tier": 5
+},
+"size": 1,
+"sounds": {
+"work": "work_crush"
+}
+},
+"crystal_grower": {
+"behavior": "crafter",
+"catalog": "Машины: Кристаллизатор",
+"category": "production",
+"cost": {
+"gear": 4,
+"iron_plate": 8,
+"wire": 4
+},
+"desc": "Выращивает кристаллы и линзы. Скорость ×1. Энергия: 4.",
+"hp": 420,
+"model": "cb_crystal_grower",
+"name": "Кристаллизатор",
+"params": {
+"power": 4,
+"speed": 1.0,
+"station": "assembler",
+"tier": 1
+},
+"size": 1,
+"sounds": {
+"work": "work_electric"
+}
+},
+"crystal_grower_mk2": {
+"behavior": "crafter",
+"catalog": "Машины: Кристаллизатор",
+"category": "production",
+"cost": {
+"circuit": 2,
+"copper_wire": 8,
+"steel_gear": 4,
+"steel_plate": 8
+},
+"desc": "Выращивает кристаллы и линзы. Скорость ×1.6. Энергия: 10.",
+"hp": 540,
+"model": "cb_crystal_grower_mk2",
+"name": "Кристаллизатор Mk2",
+"params": {
+"power": 10,
+"speed": 1.6,
+"station": "assembler",
+"tier": 2
+},
+"size": 1,
+"sounds": {
+"work": "work_electric"
+}
+},
+"crystal_grower_mk3": {
+"behavior": "crafter",
+"catalog": "Машины: Кристаллизатор",
+"category": "production",
+"cost": {
+"aluminum_plate": 10,
+"circuit_mk2": 2,
+"motor": 2,
+"steel_beam": 2
+},
+"desc": "Выращивает кристаллы и линзы. Скорость ×2.4. Энергия: 20.",
+"hp": 660,
+"model": "cb_crystal_grower_mk3",
+"name": "Кристаллизатор Mk3",
+"params": {
+"power": 20,
+"speed": 2.4,
+"station": "assembler",
+"tier": 3
+},
+"size": 1,
+"sounds": {
+"work": "work_electric"
+}
+},
+"crystal_grower_mk4": {
+"behavior": "crafter",
+"catalog": "Машины: Кристаллизатор",
+"category": "production",
+"cost": {
+"circuit_mk3": 2,
+"servo_motor": 2,
+"superconductor": 1,
+"titanium_plate": 10
+},
+"desc": "Выращивает кристаллы и линзы. Скорость ×3.5. Энергия: 35.",
+"hp": 780,
+"model": "cb_crystal_grower_mk4",
+"name": "Кристаллизатор Mk4",
+"params": {
+"power": 35,
+"speed": 3.5,
+"station": "assembler",
+"tier": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_electric"
+}
+},
+"crystal_grower_mk5": {
+"behavior": "crafter",
+"catalog": "Машины: Кристаллизатор",
+"category": "production",
+"cost": {
+"ai_core": 1,
+"plasma_core": 1,
+"quantum_chip": 1,
+"tungsten_plate": 10
+},
+"desc": "Выращивает кристаллы и линзы. Скорость ×5. Энергия: 60.",
+"hp": 900,
+"model": "cb_crystal_grower_mk5",
+"name": "Кристаллизатор Mk5",
+"params": {
+"power": 60,
+"speed": 5.0,
+"station": "assembler",
+"tier": 5
+},
+"size": 1,
+"sounds": {
+"work": "work_electric"
+}
+},
+"crystal_lamp_blue": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"crystal": 1,
+"iron_plate": 1
+},
+"desc": "Светящийся кристалл на подставке.",
+"hp": 80,
+"model": "cb_crystal_lamp_blue",
+"name": "Кристальная лампа, синяя",
+"params": {
+"light_color": "#40a0ff",
+"light_range": 8
+},
+"size": 1,
+"sounds": {}
+},
+"crystal_lamp_green": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"crystal": 1,
+"iron_plate": 1
+},
+"desc": "Светящийся кристалл на подставке.",
+"hp": 80,
+"model": "cb_crystal_lamp_green",
+"name": "Кристальная лампа, зелёная",
+"params": {
+"light_color": "#40ff6a",
+"light_range": 8
+},
+"size": 1,
+"sounds": {}
+},
+"crystal_lamp_pink": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"crystal": 1,
+"iron_plate": 1
+},
+"desc": "Светящийся кристалл на подставке.",
+"hp": 80,
+"model": "cb_crystal_lamp_pink",
+"name": "Кристальная лампа, розовая",
+"params": {
+"light_color": "#ff6ad8",
+"light_range": 8
+},
+"size": 1,
+"sounds": {}
+},
+"crystal_lamp_red": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"crystal": 1,
+"iron_plate": 1
+},
+"desc": "Светящийся кристалл на подставке.",
+"hp": 80,
+"model": "cb_crystal_lamp_red",
+"name": "Кристальная лампа, красная",
+"params": {
+"light_color": "#ff3a5a",
+"light_range": 8
+},
+"size": 1,
+"sounds": {}
+},
+"crystal_lamp_violet": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"crystal": 1,
+"iron_plate": 1
+},
+"desc": "Светящийся кристалл на подставке.",
+"hp": 80,
+"model": "cb_crystal_lamp_violet",
+"name": "Кристальная лампа, фиолетовая",
+"params": {
+"light_color": "#a66aff",
+"light_range": 8
+},
+"size": 1,
+"sounds": {}
+},
+"crystal_lamp_yellow": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"crystal": 1,
+"iron_plate": 1
+},
+"desc": "Светящийся кристалл на подставке.",
+"hp": 80,
+"model": "cb_crystal_lamp_yellow",
+"name": "Кристальная лампа, жёлтая",
+"params": {
+"light_color": "#ffd040",
+"light_range": 8
+},
+"size": 1,
+"sounds": {}
+},
+"decor_anvil": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"iron_ingot": 6
+},
+"desc": "Украшение для базы.",
+"hp": 120,
+"model": "cb_decor_anvil",
+"name": "Наковальня",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"decor_barrels": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"iron_plate": 1,
+"plank": 6
+},
+"desc": "Украшение для базы.",
+"hp": 120,
+"model": "cb_decor_barrels",
+"name": "Бочки штабелем",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"decor_cart": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"plank": 6
+},
+"desc": "Украшение для базы.",
+"hp": 120,
+"model": "cb_decor_cart",
+"name": "Тележка с фруктами",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"decor_clock": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"brass_gear": 2,
+"glass": 1,
+"hardwood": 4
+},
+"desc": "Украшение для базы.",
+"hp": 120,
+"model": "cb_decor_clock",
+"name": "Напольные часы",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"decor_crates": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"plank": 6
+},
+"desc": "Украшение для базы.",
+"hp": 120,
+"model": "cb_decor_crates",
+"name": "Ящики горой",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"decor_hydrant": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"iron_plate": 2
+},
+"desc": "Украшение для базы.",
+"hp": 120,
+"model": "cb_decor_hydrant",
+"name": "Пожарный гидрант",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"decor_lab": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"glass": 4,
+"steel_plate": 2
+},
+"desc": "Украшение для базы.",
+"hp": 120,
+"model": "cb_decor_lab",
+"name": "Лабораторный стол",
+"params": {},
+"size": 1,
+"sounds": {
+"work": "work_lab"
+}
+},
+"decor_mailbox": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"iron_plate": 1,
+"iron_rod": 1
+},
+"desc": "Украшение для базы.",
+"hp": 120,
+"model": "cb_decor_mailbox",
+"name": "Почтовый ящик",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"decor_pallet": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"cloth": 2,
+"plank": 3
+},
+"desc": "Украшение для базы.",
+"hp": 120,
+"model": "cb_decor_pallet",
+"name": "Поддон с мешками",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"decor_piano": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"hardwood": 8,
+"iron_wire": 4
+},
+"desc": "Украшение для базы.",
+"hp": 120,
+"model": "cb_decor_piano",
+"name": "Пианино",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"decor_pond": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"stone": 8
+},
+"desc": "Украшение для базы.",
+"hp": 120,
+"model": "cb_decor_pond",
+"name": "Пруд",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"decor_rover": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"rubber": 4,
+"steel_plate": 10
+},
+"desc": "Украшение для базы.",
+"hp": 120,
+"model": "cb_decor_rover",
+"name": "Вездеход (декор)",
+"params": {},
+"size": 1,
+"sounds": {
+"work": "work_engine"
+}
+},
+"decor_satellite": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"aluminum_plate": 4,
+"antenna_part": 1
+},
+"desc": "Украшение для базы.",
+"hp": 120,
+"model": "cb_decor_satellite",
+"name": "Спутниковая тарелка",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"decor_scarecrow": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"fiber": 4,
+"plank": 2
+},
+"desc": "Украшение для базы.",
+"hp": 120,
+"model": "cb_decor_scarecrow",
+"name": "Пугало",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"decor_stove": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"iron_plate": 4
+},
+"desc": "Украшение для базы.",
+"hp": 120,
+"model": "cb_decor_stove",
+"name": "Печка-буржуйка",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"decor_trash": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"iron_plate": 1
+},
+"desc": "Украшение для базы.",
+"hp": 120,
+"model": "cb_decor_trash",
+"name": "Урна",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"decor_well": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"plank": 4,
+"rope": 1,
+"stone": 12
+},
+"desc": "Украшение для базы.",
+"hp": 120,
+"model": "cb_decor_well",
+"name": "Колодец",
+"params": {},
+"size": 1,
+"sounds": {
+"work": "work_pump"
+}
+},
+"decor_wreck": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"iron_plate": 3
+},
+"desc": "Украшение для базы.",
+"hp": 120,
+"model": "cb_decor_wreck",
+"name": "Обломки машины",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"desk_pc_birch": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"display_panel": 1,
+"microchip": 1,
+"plank": 3
+},
+"desc": "Стол с компьютером.",
+"hp": 100,
+"model": "cb_desk_pc_birch",
+"name": "Рабочее место (берёза)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"desk_pc_black": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"display_panel": 1,
+"microchip": 1,
+"plank": 3
+},
+"desc": "Стол с компьютером.",
+"hp": 100,
+"model": "cb_desk_pc_black",
+"name": "Рабочее место (чёрный)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"desk_pc_cherry": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"display_panel": 1,
+"microchip": 1,
+"plank": 3
+},
+"desc": "Стол с компьютером.",
+"hp": 100,
+"model": "cb_desk_pc_cherry",
+"name": "Рабочее место (вишня)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"desk_pc_dark": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"display_panel": 1,
+"microchip": 1,
+"plank": 3
+},
+"desc": "Стол с компьютером.",
+"hp": 100,
+"model": "cb_desk_pc_dark",
+"name": "Рабочее место (тёмное дерево)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"desk_pc_grey": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"display_panel": 1,
+"microchip": 1,
+"plank": 3
+},
+"desc": "Стол с компьютером.",
+"hp": 100,
+"model": "cb_desk_pc_grey",
+"name": "Рабочее место (серый)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"desk_pc_oak": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"display_panel": 1,
+"microchip": 1,
+"plank": 3
+},
+"desc": "Стол с компьютером.",
+"hp": 100,
+"model": "cb_desk_pc_oak",
+"name": "Рабочее место (дуб)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"desk_pc_white": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"display_panel": 1,
+"microchip": 1,
+"plank": 3
+},
+"desc": "Стол с компьютером.",
+"hp": 100,
+"model": "cb_desk_pc_white",
+"name": "Рабочее место (белый)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"distillery": {
+"behavior": "crafter",
+"catalog": "Машины: Перегонная колонна",
+"category": "production",
+"cost": {
+"gear": 4,
+"iron_plate": 8,
+"wire": 4
+},
+"desc": "Перегоняет спирт, растворители и топливо. Скорость ×1. Энергия: 4.",
+"hp": 420,
+"model": "cb_distillery",
+"name": "Перегонная колонна",
+"params": {
+"power": 4,
+"speed": 1.0,
+"station": "refinery",
+"tier": 1
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"distillery_mk2": {
+"behavior": "crafter",
+"catalog": "Машины: Перегонная колонна",
+"category": "production",
+"cost": {
+"circuit": 2,
+"copper_wire": 8,
+"steel_gear": 4,
+"steel_plate": 8
+},
+"desc": "Перегоняет спирт, растворители и топливо. Скорость ×1.6. Энергия: 10.",
+"hp": 540,
+"model": "cb_distillery_mk2",
+"name": "Перегонная колонна Mk2",
+"params": {
+"power": 10,
+"speed": 1.6,
+"station": "refinery",
+"tier": 2
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"distillery_mk3": {
+"behavior": "crafter",
+"catalog": "Машины: Перегонная колонна",
+"category": "production",
+"cost": {
+"aluminum_plate": 10,
+"circuit_mk2": 2,
+"motor": 2,
+"steel_beam": 2
+},
+"desc": "Перегоняет спирт, растворители и топливо. Скорость ×2.4. Энергия: 20.",
+"hp": 660,
+"model": "cb_distillery_mk3",
+"name": "Перегонная колонна Mk3",
+"params": {
+"power": 20,
+"speed": 2.4,
+"station": "refinery",
+"tier": 3
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"distillery_mk4": {
+"behavior": "crafter",
+"catalog": "Машины: Перегонная колонна",
+"category": "production",
+"cost": {
+"circuit_mk3": 2,
+"servo_motor": 2,
+"superconductor": 1,
+"titanium_plate": 10
+},
+"desc": "Перегоняет спирт, растворители и топливо. Скорость ×3.5. Энергия: 35.",
+"hp": 780,
+"model": "cb_distillery_mk4",
+"name": "Перегонная колонна Mk4",
+"params": {
+"power": 35,
+"speed": 3.5,
+"station": "refinery",
+"tier": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"distillery_mk5": {
+"behavior": "crafter",
+"catalog": "Машины: Перегонная колонна",
+"category": "production",
+"cost": {
+"ai_core": 1,
+"plasma_core": 1,
+"quantum_chip": 1,
+"tungsten_plate": 10
+},
+"desc": "Перегоняет спирт, растворители и топливо. Скорость ×5. Энергия: 60.",
+"hp": 900,
+"model": "cb_distillery_mk5",
+"name": "Перегонная колонна Mk5",
+"params": {
+"power": 60,
+"speed": 5.0,
+"station": "refinery",
+"tier": 5
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"electrolyzer": {
+"behavior": "crafter",
+"catalog": "Машины: Электролизёр",
+"category": "production",
+"cost": {
+"gear": 4,
+"iron_plate": 8,
+"wire": 4
+},
+"desc": "Разделяет растворы током: литий, алюминий, водород. Скорость ×1. Энергия: 4.",
+"hp": 420,
+"model": "cb_electrolyzer",
+"name": "Электролизёр",
+"params": {
+"power": 4,
+"speed": 1.0,
+"station": "refinery",
+"tier": 1
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"electrolyzer_mk2": {
+"behavior": "crafter",
+"catalog": "Машины: Электролизёр",
+"category": "production",
+"cost": {
+"circuit": 2,
+"copper_wire": 8,
+"steel_gear": 4,
+"steel_plate": 8
+},
+"desc": "Разделяет растворы током: литий, алюминий, водород. Скорость ×1.6. Энергия: 10.",
+"hp": 540,
+"model": "cb_electrolyzer_mk2",
+"name": "Электролизёр Mk2",
+"params": {
+"power": 10,
+"speed": 1.6,
+"station": "refinery",
+"tier": 2
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"electrolyzer_mk3": {
+"behavior": "crafter",
+"catalog": "Машины: Электролизёр",
+"category": "production",
+"cost": {
+"aluminum_plate": 10,
+"circuit_mk2": 2,
+"motor": 2,
+"steel_beam": 2
+},
+"desc": "Разделяет растворы током: литий, алюминий, водород. Скорость ×2.4. Энергия: 20.",
+"hp": 660,
+"model": "cb_electrolyzer_mk3",
+"name": "Электролизёр Mk3",
+"params": {
+"power": 20,
+"speed": 2.4,
+"station": "refinery",
+"tier": 3
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"electrolyzer_mk4": {
+"behavior": "crafter",
+"catalog": "Машины: Электролизёр",
+"category": "production",
+"cost": {
+"circuit_mk3": 2,
+"servo_motor": 2,
+"superconductor": 1,
+"titanium_plate": 10
+},
+"desc": "Разделяет растворы током: литий, алюминий, водород. Скорость ×3.5. Энергия: 35.",
+"hp": 780,
+"model": "cb_electrolyzer_mk4",
+"name": "Электролизёр Mk4",
+"params": {
+"power": 35,
+"speed": 3.5,
+"station": "refinery",
+"tier": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"electrolyzer_mk5": {
+"behavior": "crafter",
+"catalog": "Машины: Электролизёр",
+"category": "production",
+"cost": {
+"ai_core": 1,
+"plasma_core": 1,
+"quantum_chip": 1,
+"tungsten_plate": 10
+},
+"desc": "Разделяет растворы током: литий, алюминий, водород. Скорость ×5. Энергия: 60.",
+"hp": 900,
+"model": "cb_electrolyzer_mk5",
+"name": "Электролизёр Mk5",
+"params": {
+"power": 60,
+"speed": 5.0,
+"station": "refinery",
+"tier": 5
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"fence_chain": {
+"behavior": "wall",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"iron_rod": 2
+},
+"desc": "Низкий забор: его можно перепрыгнуть.",
+"hp": 150,
+"model": "cb_fence_chain",
+"name": "Сетка-рабица",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"fence_hedge": {
+"behavior": "wall",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"leaves": 6
+},
+"desc": "Низкий забор: его можно перепрыгнуть.",
+"hp": 150,
+"model": "cb_fence_hedge",
+"name": "Живая изгородь",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"fence_iron": {
+"behavior": "wall",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"iron_rod": 2
+},
+"desc": "Низкий забор: его можно перепрыгнуть.",
+"hp": 150,
+"model": "cb_fence_iron",
+"name": "Кованый забор",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"fence_picket": {
+"behavior": "wall",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"plank": 2
+},
+"desc": "Низкий забор: его можно перепрыгнуть.",
+"hp": 150,
+"model": "cb_fence_picket",
+"name": "Штакетник",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"fence_rail": {
+"behavior": "wall",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"plank": 2
+},
+"desc": "Низкий забор: его можно перепрыгнуть.",
+"hp": 150,
+"model": "cb_fence_rail",
+"name": "Жердевой забор",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"fence_stone_low": {
+"behavior": "wall",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"stone": 4
+},
+"desc": "Низкий забор: его можно перепрыгнуть.",
+"hp": 150,
+"model": "cb_fence_stone_low",
+"name": "Каменная оградка",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"fish_trap": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 60,
+"item": "raw_fish",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма",
+"category": "special",
+"cost": {
+"plank": 4,
+"rope": 2
+},
+"desc": "Ставьте у воды: ловит рыбу каждые 60 с.",
+"hp": 100,
+"model": "cb_fish_trap",
+"name": "Садок для рыбы",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"flagpole_blue": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"cloth": 2,
+"steel_rod": 2
+},
+"desc": "Высокий флаг над базой.",
+"hp": 80,
+"model": "cb_flagpole_blue",
+"name": "Флагшток (синий)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"flagpole_green": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"cloth": 2,
+"steel_rod": 2
+},
+"desc": "Высокий флаг над базой.",
+"hp": 80,
+"model": "cb_flagpole_green",
+"name": "Флагшток (зелёный)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"flagpole_grey": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"cloth": 2,
+"steel_rod": 2
+},
+"desc": "Высокий флаг над базой.",
+"hp": 80,
+"model": "cb_flagpole_grey",
+"name": "Флагшток (серый)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"flagpole_red": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"cloth": 2,
+"steel_rod": 2
+},
+"desc": "Высокий флаг над базой.",
+"hp": 80,
+"model": "cb_flagpole_red",
+"name": "Флагшток (красный)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"flagpole_yellow": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"cloth": 2,
+"steel_rod": 2
+},
+"desc": "Высокий флаг над базой.",
+"hp": 80,
+"model": "cb_flagpole_yellow",
+"name": "Флагшток (жёлтый)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"floor_brick": {
+"behavior": "floor",
+"catalog": "Полы",
+"category": "decor",
+"cost": {
+"brick": 2
+},
+"desc": "Красивый пол. По нему можно ходить.",
+"hp": 100,
+"model": "cb_floor_brick",
+"name": "Кирпичная дорожка",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"floor_concrete": {
+"behavior": "floor",
+"catalog": "Полы",
+"category": "decor",
+"cost": {
+"concrete": 1
+},
+"desc": "Красивый пол. По нему можно ходить.",
+"hp": 100,
+"model": "cb_floor_concrete",
+"name": "Бетонный пол",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"floor_glow": {
+"behavior": "floor",
+"catalog": "Полы",
+"category": "decor",
+"cost": {
+"glass": 2,
+"led": 2
+},
+"desc": "Красивый пол. По нему можно ходить.",
+"hp": 100,
+"model": "cb_floor_glow",
+"name": "Светящийся пол",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"floor_grass": {
+"behavior": "floor",
+"catalog": "Полы",
+"category": "decor",
+"cost": {
+"leaves": 4
+},
+"desc": "Красивый пол. По нему можно ходить.",
+"hp": 100,
+"model": "cb_floor_grass",
+"name": "Газон",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"floor_gravel": {
+"behavior": "floor",
+"catalog": "Полы",
+"category": "decor",
+"cost": {
+"stone": 1
+},
+"desc": "Красивый пол. По нему можно ходить.",
+"hp": 100,
+"model": "cb_floor_gravel",
+"name": "Гравийная дорожка",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"floor_hazard": {
+"behavior": "floor",
+"catalog": "Полы",
+"category": "decor",
+"cost": {
+"concrete": 1,
+"paint_yellow": 1
+},
+"desc": "Красивый пол. По нему можно ходить.",
+"hp": 100,
+"model": "cb_floor_hazard",
+"name": "Пол с разметкой",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"floor_marble": {
+"behavior": "floor",
+"catalog": "Полы",
+"category": "decor",
+"cost": {
+"lime": 1,
+"stone": 3
+},
+"desc": "Красивый пол. По нему можно ходить.",
+"hp": 100,
+"model": "cb_floor_marble",
+"name": "Мраморный пол",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"floor_metal": {
+"behavior": "floor",
+"catalog": "Полы",
+"category": "decor",
+"cost": {
+"steel_plate": 1
+},
+"desc": "Красивый пол. По нему можно ходить.",
+"hp": 100,
+"model": "cb_floor_metal",
+"name": "Металлический настил",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"floor_parquet": {
+"behavior": "floor",
+"catalog": "Полы",
+"category": "decor",
+"cost": {
+"oak_plank": 2
+},
+"desc": "Красивый пол. По нему можно ходить.",
+"hp": 100,
+"model": "cb_floor_parquet",
+"name": "Паркет",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"floor_sand": {
+"behavior": "floor",
+"catalog": "Полы",
+"category": "decor",
+"cost": {
+"stone": 1
+},
+"desc": "Красивый пол. По нему можно ходить.",
+"hp": 100,
+"model": "cb_floor_sand",
+"name": "Песчаная дорожка",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"floor_stone": {
+"behavior": "floor",
+"catalog": "Полы",
+"category": "decor",
+"cost": {
+"stone": 2
+},
+"desc": "Красивый пол. По нему можно ходить.",
+"hp": 100,
+"model": "cb_floor_stone",
+"name": "Каменная плитка",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"floor_tile_blue": {
+"behavior": "floor",
+"catalog": "Полы",
+"category": "decor",
+"cost": {
+"ceramic": 2,
+"paint_blue": 1
+},
+"desc": "Красивый пол. По нему можно ходить.",
+"hp": 100,
+"model": "cb_floor_tile_blue",
+"name": "Синяя плитка",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"floor_tile_red": {
+"behavior": "floor",
+"catalog": "Полы",
+"category": "decor",
+"cost": {
+"ceramic": 2,
+"paint_red": 1
+},
+"desc": "Красивый пол. По нему можно ходить.",
+"hp": 100,
+"model": "cb_floor_tile_red",
+"name": "Красная плитка",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"floor_tile_white": {
+"behavior": "floor",
+"catalog": "Полы",
+"category": "decor",
+"cost": {
+"ceramic": 2
+},
+"desc": "Красивый пол. По нему можно ходить.",
+"hp": 100,
+"model": "cb_floor_tile_white",
+"name": "Белая плитка",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"floor_wood": {
+"behavior": "floor",
+"catalog": "Полы",
+"category": "decor",
+"cost": {
+"plank": 2
+},
+"desc": "Красивый пол. По нему можно ходить.",
+"hp": 100,
+"model": "cb_floor_wood",
+"name": "Дощатый пол",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"found_brick": {
+"behavior": "foundation",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"brick": 4
+},
+"desc": "Ровная площадка, на которой можно строить.",
+"hp": 1200,
+"model": "cb_found_brick",
+"name": "Кирпичный фундамент 1×1",
+"params": {
+"height": 1.0
+},
+"size": 1,
+"sounds": {}
+},
+"found_brick_2x2": {
+"behavior": "foundation",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"brick": 16
+},
+"desc": "Большая площадка 2×2 клетки.",
+"hp": 3000,
+"model": "cb_found_brick_2x2",
+"name": "Кирпичный фундамент 2×2",
+"params": {
+"height": 1.0
+},
+"size": 2,
+"sounds": {}
+},
+"found_brick_tall": {
+"behavior": "foundation",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"brick": 8
+},
+"desc": "Высокий ярус.",
+"hp": 1600,
+"model": "cb_found_brick_tall",
+"name": "Кирпичный фундамент 2 м",
+"params": {
+"height": 2.0
+},
+"size": 1,
+"sounds": {}
+},
+"found_concrete": {
+"behavior": "foundation",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"concrete": 2
+},
+"desc": "Ровная площадка, на которой можно строить.",
+"hp": 1200,
+"model": "cb_found_concrete",
+"name": "Бетонный фундамент 1×1",
+"params": {
+"height": 1.0
+},
+"size": 1,
+"sounds": {}
+},
+"found_concrete_2x2": {
+"behavior": "foundation",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"concrete": 8
+},
+"desc": "Большая площадка 2×2 клетки.",
+"hp": 3000,
+"model": "cb_found_concrete_2x2",
+"name": "Бетонный фундамент 2×2",
+"params": {
+"height": 1.0
+},
+"size": 2,
+"sounds": {}
+},
+"found_concrete_tall": {
+"behavior": "foundation",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"concrete": 4
+},
+"desc": "Высокий ярус.",
+"hp": 1600,
+"model": "cb_found_concrete_tall",
+"name": "Бетонный фундамент 2 м",
+"params": {
+"height": 2.0
+},
+"size": 1,
+"sounds": {}
+},
+"found_glass": {
+"behavior": "foundation",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"tempered_glass": 3
+},
+"desc": "Ровная площадка, на которой можно строить.",
+"hp": 1200,
+"model": "cb_found_glass",
+"name": "Стеклянный фундамент 1×1",
+"params": {
+"height": 1.0
+},
+"size": 1,
+"sounds": {}
+},
+"found_glass_2x2": {
+"behavior": "foundation",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"tempered_glass": 12
+},
+"desc": "Большая площадка 2×2 клетки.",
+"hp": 3000,
+"model": "cb_found_glass_2x2",
+"name": "Стеклянный фундамент 2×2",
+"params": {
+"height": 1.0
+},
+"size": 2,
+"sounds": {}
+},
+"found_glass_tall": {
+"behavior": "foundation",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"tempered_glass": 6
+},
+"desc": "Высокий ярус.",
+"hp": 1600,
+"model": "cb_found_glass_tall",
+"name": "Стеклянный фундамент 2 м",
+"params": {
+"height": 2.0
+},
+"size": 1,
+"sounds": {}
+},
+"found_steel": {
+"behavior": "foundation",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"steel_plate": 2
+},
+"desc": "Ровная площадка, на которой можно строить.",
+"hp": 1200,
+"model": "cb_found_steel",
+"name": "Стальной фундамент 1×1",
+"params": {
+"height": 1.0
+},
+"size": 1,
+"sounds": {}
+},
+"found_steel_2x2": {
+"behavior": "foundation",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"steel_plate": 8
+},
+"desc": "Большая площадка 2×2 клетки.",
+"hp": 3000,
+"model": "cb_found_steel_2x2",
+"name": "Стальной фундамент 2×2",
+"params": {
+"height": 1.0
+},
+"size": 2,
+"sounds": {}
+},
+"found_steel_tall": {
+"behavior": "foundation",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"steel_plate": 4
+},
+"desc": "Высокий ярус.",
+"hp": 1600,
+"model": "cb_found_steel_tall",
+"name": "Стальной фундамент 2 м",
+"params": {
+"height": 2.0
+},
+"size": 1,
+"sounds": {}
+},
+"found_stone": {
+"behavior": "foundation",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"stone": 4
+},
+"desc": "Ровная площадка, на которой можно строить.",
+"hp": 1200,
+"model": "cb_found_stone",
+"name": "Каменный фундамент 1×1",
+"params": {
+"height": 1.0
+},
+"size": 1,
+"sounds": {}
+},
+"found_stone_2x2": {
+"behavior": "foundation",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"stone": 16
+},
+"desc": "Большая площадка 2×2 клетки.",
+"hp": 3000,
+"model": "cb_found_stone_2x2",
+"name": "Каменный фундамент 2×2",
+"params": {
+"height": 1.0
+},
+"size": 2,
+"sounds": {}
+},
+"found_stone_tall": {
+"behavior": "foundation",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"stone": 8
+},
+"desc": "Высокий ярус.",
+"hp": 1600,
+"model": "cb_found_stone_tall",
+"name": "Каменный фундамент 2 м",
+"params": {
+"height": 2.0
+},
+"size": 1,
+"sounds": {}
+},
+"found_wood": {
+"behavior": "foundation",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"plank": 4
+},
+"desc": "Ровная площадка, на которой можно строить.",
+"hp": 1200,
+"model": "cb_found_wood",
+"name": "Деревянный фундамент 1×1",
+"params": {
+"height": 1.0
+},
+"size": 1,
+"sounds": {}
+},
+"found_wood_2x2": {
+"behavior": "foundation",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"plank": 16
+},
+"desc": "Большая площадка 2×2 клетки.",
+"hp": 3000,
+"model": "cb_found_wood_2x2",
+"name": "Деревянный фундамент 2×2",
+"params": {
+"height": 1.0
+},
+"size": 2,
+"sounds": {}
+},
+"found_wood_tall": {
+"behavior": "foundation",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"plank": 8
+},
+"desc": "Высокий ярус.",
+"hp": 1600,
+"model": "cb_found_wood_tall",
+"name": "Деревянный фундамент 2 м",
+"params": {
+"height": 2.0
+},
+"size": 1,
+"sounds": {}
+},
+"foundry_mk2": {
+"behavior": "crafter",
+"catalog": "Машины: Литейная",
+"category": "production",
+"cost": {
+"circuit": 2,
+"copper_wire": 8,
+"steel_gear": 4,
+"steel_plate": 8
+},
+"desc": "Льёт сплавы и тяжёлые слитки. Скорость ×1.6. Энергия: 10.",
+"hp": 540,
+"model": "cb_foundry_mk2",
+"name": "Литейная Mk2",
+"params": {
+"power": 10,
+"speed": 1.6,
+"station": "smelter",
+"tier": 2
+},
+"size": 1,
+"sounds": {
+"work": "work_smelt"
+}
+},
+"foundry_mk3": {
+"behavior": "crafter",
+"catalog": "Машины: Литейная",
+"category": "production",
+"cost": {
+"aluminum_plate": 10,
+"circuit_mk2": 2,
+"motor": 2,
+"steel_beam": 2
+},
+"desc": "Льёт сплавы и тяжёлые слитки. Скорость ×2.4. Энергия: 20.",
+"hp": 660,
+"model": "cb_foundry_mk3",
+"name": "Литейная Mk3",
+"params": {
+"power": 20,
+"speed": 2.4,
+"station": "smelter",
+"tier": 3
+},
+"size": 1,
+"sounds": {
+"work": "work_smelt"
+}
+},
+"foundry_mk4": {
+"behavior": "crafter",
+"catalog": "Машины: Литейная",
+"category": "production",
+"cost": {
+"circuit_mk3": 2,
+"servo_motor": 2,
+"superconductor": 1,
+"titanium_plate": 10
+},
+"desc": "Льёт сплавы и тяжёлые слитки. Скорость ×3.5. Энергия: 35.",
+"hp": 780,
+"model": "cb_foundry_mk4",
+"name": "Литейная Mk4",
+"params": {
+"power": 35,
+"speed": 3.5,
+"station": "smelter",
+"tier": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_smelt"
+}
+},
+"foundry_mk5": {
+"behavior": "crafter",
+"catalog": "Машины: Литейная",
+"category": "production",
+"cost": {
+"ai_core": 1,
+"plasma_core": 1,
+"quantum_chip": 1,
+"tungsten_plate": 10
+},
+"desc": "Льёт сплавы и тяжёлые слитки. Скорость ×5. Энергия: 60.",
+"hp": 900,
+"model": "cb_foundry_mk5",
+"name": "Литейная Mk5",
+"params": {
+"power": 60,
+"speed": 5.0,
+"station": "smelter",
+"tier": 5
+},
+"size": 1,
+"sounds": {
+"work": "work_smelt"
+}
+},
+"fountain_marble": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"steel_pipe_part": 2,
+"stone": 20
+},
+"desc": "Журчащий фонтан.",
+"hp": 800,
+"model": "cb_fountain_marble",
+"name": "Мраморный фонтан",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"fountain_stone": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"steel_pipe_part": 2,
+"stone": 20
+},
+"desc": "Журчащий фонтан.",
+"hp": 800,
+"model": "cb_fountain_stone",
+"name": "Фонтан",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"fwall_brick": {
+"behavior": "wall",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"brick": 4
+},
+"desc": "Стена здания с окошком.",
+"hp": 1400,
+"model": "cb_fwall_brick",
+"name": "Кирпичная стена с окном",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"fwall_concrete": {
+"behavior": "wall",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"concrete": 2
+},
+"desc": "Стена здания с окошком.",
+"hp": 1400,
+"model": "cb_fwall_concrete",
+"name": "Бетонная стена с окном",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"fwall_glass": {
+"behavior": "wall",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"tempered_glass": 3
+},
+"desc": "Стена здания с окошком.",
+"hp": 1400,
+"model": "cb_fwall_glass",
+"name": "Стеклянная стена с окном",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"fwall_steel": {
+"behavior": "wall",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"steel_plate": 2
+},
+"desc": "Стена здания с окошком.",
+"hp": 1400,
+"model": "cb_fwall_steel",
+"name": "Стальная стена с окном",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"fwall_stone": {
+"behavior": "wall",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"stone": 4
+},
+"desc": "Стена здания с окошком.",
+"hp": 1400,
+"model": "cb_fwall_stone",
+"name": "Каменная стена с окном",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"fwall_wood": {
+"behavior": "wall",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"plank": 4
+},
+"desc": "Стена здания с окошком.",
+"hp": 1400,
+"model": "cb_fwall_wood",
+"name": "Деревянная стена с окном",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"gas_turbine": {
+"behavior": "generator",
+"catalog": "Энергетика",
+"category": "energy",
+"cost": {
+"aluminum_plate": 10,
+"motor": 3,
+"steel_pipe_part": 4
+},
+"desc": "Жжёт топливо из труб: 220 энергии.",
+"hp": 700,
+"model": "cb_gas_turbine",
+"name": "Газовая турбина",
+"params": {
+"burn_mult": 0.8,
+"fuel_slots": 2,
+"fuels": [
+"fuel",
+"canister_fuel"
+],
+"pipes": true,
+"power": 220,
+"radius": 12
+},
+"size": 1,
+"sounds": {
+"work": "work_turbine"
+}
+},
+"gate_brick": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"brick": 8
+},
+"desc": "Герой проходит, монстры — ломают.",
+"hp": 1100,
+"model": "cb_gate_brick",
+"name": "Кирпичные ворота",
+"params": {
+"gate": true
+},
+"size": 1,
+"sounds": {}
+},
+"gate_concrete": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"concrete": 6
+},
+"desc": "Герой проходит, монстры — ломают.",
+"hp": 1600,
+"model": "cb_gate_concrete",
+"name": "Бетонные ворота",
+"params": {
+"gate": true
+},
+"size": 1,
+"sounds": {}
+},
+"gate_energy": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"power_cell": 3,
+"tungsten_plate": 4
+},
+"desc": "Герой проходит, монстры — ломают.",
+"hp": 8000,
+"model": "cb_gate_energy",
+"name": "Энергетические ворота",
+"params": {
+"gate": true
+},
+"size": 1,
+"sounds": {}
+},
+"gate_log": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"log": 5
+},
+"desc": "Герой проходит, монстры — ломают.",
+"hp": 450,
+"model": "cb_gate_log",
+"name": "Бревенчатые ворота",
+"params": {
+"gate": true
+},
+"size": 1,
+"sounds": {}
+},
+"gate_plank": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"plank": 6
+},
+"desc": "Герой проходит, монстры — ломают.",
+"hp": 380,
+"model": "cb_gate_plank",
+"name": "Дощатые ворота",
+"params": {
+"gate": true
+},
+"size": 1,
+"sounds": {}
+},
+"gate_reinforced": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"concrete": 6,
+"steel_rod": 4
+},
+"desc": "Герой проходит, монстры — ломают.",
+"hp": 2600,
+"model": "cb_gate_reinforced",
+"name": "Армированные ворота",
+"params": {
+"gate": true
+},
+"size": 1,
+"sounds": {}
+},
+"gate_steel": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"steel_plate": 6
+},
+"desc": "Герой проходит, монстры — ломают.",
+"hp": 3200,
+"model": "cb_gate_steel",
+"name": "Стальные ворота",
+"params": {
+"gate": true
+},
+"size": 1,
+"sounds": {}
+},
+"gate_stone": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"stone": 8
+},
+"desc": "Герой проходит, монстры — ломают.",
+"hp": 900,
+"model": "cb_gate_stone",
+"name": "Каменные ворота",
+"params": {
+"gate": true
+},
+"size": 1,
+"sounds": {}
+},
+"gate_titanium": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"titanium_plate": 5
+},
+"desc": "Герой проходит, монстры — ломают.",
+"hp": 5200,
+"model": "cb_gate_titanium",
+"name": "Титановые ворота",
+"params": {
+"gate": true
+},
+"size": 1,
+"sounds": {}
+},
+"greenhouse_mk1": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 20,
+"item": "tomato",
+"n": 2,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма",
+"category": "special",
+"cost": {
+"glass": 8,
+"steel_rod": 4,
+"tomato_seeds": 2
+},
+"desc": "Под стеклом растёт быстрее: помидоры.",
+"hp": 300,
+"model": "cb_greenhouse_mk1",
+"name": "Теплица",
+"params": {
+"power": 0
+},
+"size": 1,
+"sounds": {}
+},
+"greenhouse_mk2": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 12,
+"item": "strawberries",
+"n": 2,
+"needs_power": true,
+"type": "produce"
+}
+],
+"catalog": "Ферма",
+"category": "special",
+"cost": {
+"aluminum_rod": 4,
+"led": 6,
+"strawberries_seeds": 2,
+"tempered_glass": 8
+},
+"desc": "Под стеклом растёт быстрее: помидоры и клубника, с фитолампами.",
+"hp": 300,
+"model": "cb_greenhouse_mk2",
+"name": "Теплица Mk2",
+"params": {
+"power": 5
+},
+"size": 1,
+"sounds": {}
+},
+"hydrogen_cell_plant": {
+"behavior": "generator",
+"catalog": "Энергетика",
+"category": "energy",
+"cost": {
+"circuit_mk2": 2,
+"electromagnet": 2,
+"titanium_plate": 8
+},
+"desc": "Чистая энергия из водородных баллонов: 300.",
+"hp": 700,
+"model": "cb_hydrogen_cell_plant",
+"name": "Водородная станция",
+"params": {
+"burn_mult": 1.0,
+"fuel_slots": 2,
+"fuels": [
+"hydrogen_tank",
+"fuel_cell"
+],
+"power": 300,
+"radius": 12
+},
+"size": 1,
+"sounds": {
+"work": "work_turbine"
+}
+},
+"kiln": {
+"behavior": "crafter",
+"catalog": "Машины: Обжиговая печь",
+"category": "production",
+"cost": {
+"gear": 4,
+"iron_plate": 8,
+"wire": 4
+},
+"desc": "Обжигает глину, кирпич и керамику. Скорость ×1. Энергия: 0. Работает на топливе.",
+"hp": 420,
+"model": "cb_kiln",
+"name": "Обжиговая печь",
+"params": {
+"fuel": true,
+"power": 0,
+"speed": 1.0,
+"station": "furnace",
+"tier": 1
+},
+"size": 1,
+"sounds": {
+"work": "work_smelt"
+}
+},
+"kiln_mk2": {
+"behavior": "crafter",
+"catalog": "Машины: Обжиговая печь",
+"category": "production",
+"cost": {
+"circuit": 2,
+"copper_wire": 8,
+"steel_gear": 4,
+"steel_plate": 8
+},
+"desc": "Обжигает глину, кирпич и керамику. Скорость ×1.6. Энергия: 10.",
+"hp": 540,
+"model": "cb_kiln_mk2",
+"name": "Обжиговая печь Mk2",
+"params": {
+"power": 10,
+"speed": 1.6,
+"station": "furnace",
+"tier": 2
+},
+"size": 1,
+"sounds": {
+"work": "work_smelt"
+}
+},
+"kiln_mk3": {
+"behavior": "crafter",
+"catalog": "Машины: Обжиговая печь",
+"category": "production",
+"cost": {
+"aluminum_plate": 10,
+"circuit_mk2": 2,
+"motor": 2,
+"steel_beam": 2
+},
+"desc": "Обжигает глину, кирпич и керамику. Скорость ×2.4. Энергия: 20.",
+"hp": 660,
+"model": "cb_kiln_mk3",
+"name": "Обжиговая печь Mk3",
+"params": {
+"power": 20,
+"speed": 2.4,
+"station": "furnace",
+"tier": 3
+},
+"size": 1,
+"sounds": {
+"work": "work_smelt"
+}
+},
+"kiln_mk4": {
+"behavior": "crafter",
+"catalog": "Машины: Обжиговая печь",
+"category": "production",
+"cost": {
+"circuit_mk3": 2,
+"servo_motor": 2,
+"superconductor": 1,
+"titanium_plate": 10
+},
+"desc": "Обжигает глину, кирпич и керамику. Скорость ×3.5. Энергия: 35.",
+"hp": 780,
+"model": "cb_kiln_mk4",
+"name": "Обжиговая печь Mk4",
+"params": {
+"power": 35,
+"speed": 3.5,
+"station": "furnace",
+"tier": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_smelt"
+}
+},
+"kiln_mk5": {
+"behavior": "crafter",
+"catalog": "Машины: Обжиговая печь",
+"category": "production",
+"cost": {
+"ai_core": 1,
+"plasma_core": 1,
+"quantum_chip": 1,
+"tungsten_plate": 10
+},
+"desc": "Обжигает глину, кирпич и керамику. Скорость ×5. Энергия: 60.",
+"hp": 900,
+"model": "cb_kiln_mk5",
+"name": "Обжиговая печь Mk5",
+"params": {
+"power": 60,
+"speed": 5.0,
+"station": "furnace",
+"tier": 5
+},
+"size": 1,
+"sounds": {
+"work": "work_smelt"
+}
+},
+"kitchen_mk2": {
+"behavior": "crafter",
+"catalog": "Машины: Кухня",
+"category": "production",
+"cost": {
+"circuit": 2,
+"copper_wire": 8,
+"steel_gear": 4,
+"steel_plate": 8
+},
+"desc": "Готовит еду на всю колонию. Скорость ×1.6. Энергия: 10.",
+"hp": 540,
+"model": "cb_kitchen_mk2",
+"name": "Кухня Mk2",
+"params": {
+"power": 10,
+"speed": 1.6,
+"station": "furnace",
+"tier": 2
+},
+"size": 1,
+"sounds": {
+"work": "work_cook"
+}
+},
+"kitchen_mk3": {
+"behavior": "crafter",
+"catalog": "Машины: Кухня",
+"category": "production",
+"cost": {
+"aluminum_plate": 10,
+"circuit_mk2": 2,
+"motor": 2,
+"steel_beam": 2
+},
+"desc": "Готовит еду на всю колонию. Скорость ×2.4. Энергия: 20.",
+"hp": 660,
+"model": "cb_kitchen_mk3",
+"name": "Кухня Mk3",
+"params": {
+"power": 20,
+"speed": 2.4,
+"station": "furnace",
+"tier": 3
+},
+"size": 1,
+"sounds": {
+"work": "work_cook"
+}
+},
+"kitchen_mk4": {
+"behavior": "crafter",
+"catalog": "Машины: Кухня",
+"category": "production",
+"cost": {
+"circuit_mk3": 2,
+"servo_motor": 2,
+"superconductor": 1,
+"titanium_plate": 10
+},
+"desc": "Готовит еду на всю колонию. Скорость ×3.5. Энергия: 35.",
+"hp": 780,
+"model": "cb_kitchen_mk4",
+"name": "Кухня Mk4",
+"params": {
+"power": 35,
+"speed": 3.5,
+"station": "furnace",
+"tier": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_cook"
+}
+},
+"kitchen_mk5": {
+"behavior": "crafter",
+"catalog": "Машины: Кухня",
+"category": "production",
+"cost": {
+"ai_core": 1,
+"plasma_core": 1,
+"quantum_chip": 1,
+"tungsten_plate": 10
+},
+"desc": "Готовит еду на всю колонию. Скорость ×5. Энергия: 60.",
+"hp": 900,
+"model": "cb_kitchen_mk5",
+"name": "Кухня Mk5",
+"params": {
+"power": 60,
+"speed": 5.0,
+"station": "furnace",
+"tier": 5
+},
+"size": 1,
+"sounds": {
+"work": "work_cook"
+}
+},
+"lathe": {
+"behavior": "crafter",
+"catalog": "Машины: Токарный станок",
+"category": "production",
+"cost": {
+"gear": 4,
+"iron_plate": 8,
+"wire": 4
+},
+"desc": "Точит валы, болты и шестерни. Скорость ×1. Энергия: 4.",
+"hp": 420,
+"model": "cb_lathe",
+"name": "Токарный станок",
+"params": {
+"power": 4,
+"speed": 1.0,
+"station": "workshop",
+"tier": 1
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"lathe_mk2": {
+"behavior": "crafter",
+"catalog": "Машины: Токарный станок",
+"category": "production",
+"cost": {
+"circuit": 2,
+"copper_wire": 8,
+"steel_gear": 4,
+"steel_plate": 8
+},
+"desc": "Точит валы, болты и шестерни. Скорость ×1.6. Энергия: 10.",
+"hp": 540,
+"model": "cb_lathe_mk2",
+"name": "Токарный станок Mk2",
+"params": {
+"power": 10,
+"speed": 1.6,
+"station": "workshop",
+"tier": 2
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"lathe_mk3": {
+"behavior": "crafter",
+"catalog": "Машины: Токарный станок",
+"category": "production",
+"cost": {
+"aluminum_plate": 10,
+"circuit_mk2": 2,
+"motor": 2,
+"steel_beam": 2
+},
+"desc": "Точит валы, болты и шестерни. Скорость ×2.4. Энергия: 20.",
+"hp": 660,
+"model": "cb_lathe_mk3",
+"name": "Токарный станок Mk3",
+"params": {
+"power": 20,
+"speed": 2.4,
+"station": "workshop",
+"tier": 3
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"lathe_mk4": {
+"behavior": "crafter",
+"catalog": "Машины: Токарный станок",
+"category": "production",
+"cost": {
+"circuit_mk3": 2,
+"servo_motor": 2,
+"superconductor": 1,
+"titanium_plate": 10
+},
+"desc": "Точит валы, болты и шестерни. Скорость ×3.5. Энергия: 35.",
+"hp": 780,
+"model": "cb_lathe_mk4",
+"name": "Токарный станок Mk4",
+"params": {
+"power": 35,
+"speed": 3.5,
+"station": "workshop",
+"tier": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"lathe_mk5": {
+"behavior": "crafter",
+"catalog": "Машины: Токарный станок",
+"category": "production",
+"cost": {
+"ai_core": 1,
+"plasma_core": 1,
+"quantum_chip": 1,
+"tungsten_plate": 10
+},
+"desc": "Точит валы, болты и шестерни. Скорость ×5. Энергия: 60.",
+"hp": 900,
+"model": "cb_lathe_mk5",
+"name": "Токарный станок Mk5",
+"params": {
+"power": 60,
+"speed": 5.0,
+"station": "workshop",
+"tier": 5
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"light_brazier": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"iron_plate": 3,
+"log": 2
+},
+"desc": "Освещает базу ночью.",
+"hp": 80,
+"model": "cb_light_brazier",
+"name": "Жаровня",
+"params": {
+"light_color": "#ff8c1a",
+"light_range": 11
+},
+"size": 1,
+"sounds": {}
+},
+"light_flood": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"led": 4,
+"steel_plate": 1
+},
+"desc": "Освещает базу ночью.",
+"hp": 80,
+"model": "cb_light_flood",
+"name": "Напольный прожектор",
+"params": {
+"light_color": "#fff1c4",
+"light_range": 18,
+"power": 1
+},
+"size": 1,
+"sounds": {}
+},
+"light_flood_cold": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"led": 4,
+"steel_plate": 1
+},
+"desc": "Освещает базу ночью.",
+"hp": 80,
+"model": "cb_light_flood_cold",
+"name": "Напольный прожектор (холодный)",
+"params": {
+"light_color": "#c8e8ff",
+"light_range": 18,
+"power": 1
+},
+"size": 1,
+"sounds": {}
+},
+"light_flood_warm": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"led": 4,
+"steel_plate": 1
+},
+"desc": "Освещает базу ночью.",
+"hp": 80,
+"model": "cb_light_flood_warm",
+"name": "Напольный прожектор (тёплый)",
+"params": {
+"light_color": "#ffb060",
+"light_range": 18,
+"power": 1
+},
+"size": 1,
+"sounds": {}
+},
+"light_floor": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"cloth": 1,
+"glass": 1,
+"iron_rod": 1
+},
+"desc": "Освещает базу ночью.",
+"hp": 80,
+"model": "cb_light_floor",
+"name": "Торшер",
+"params": {
+"light_color": "#fff1c4",
+"light_range": 8
+},
+"size": 1,
+"sounds": {}
+},
+"light_floor_cold": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"cloth": 1,
+"glass": 1,
+"iron_rod": 1
+},
+"desc": "Освещает базу ночью.",
+"hp": 80,
+"model": "cb_light_floor_cold",
+"name": "Торшер (холодный)",
+"params": {
+"light_color": "#c8e8ff",
+"light_range": 8
+},
+"size": 1,
+"sounds": {}
+},
+"light_floor_warm": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"cloth": 1,
+"glass": 1,
+"iron_rod": 1
+},
+"desc": "Освещает базу ночью.",
+"hp": 80,
+"model": "cb_light_floor_warm",
+"name": "Торшер (тёплый)",
+"params": {
+"light_color": "#ffb060",
+"light_range": 8
+},
+"size": 1,
+"sounds": {}
+},
+"light_garland": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"copper_wire": 2,
+"led": 6,
+"plank": 2
+},
+"desc": "Освещает базу ночью.",
+"hp": 80,
+"model": "cb_light_garland",
+"name": "Гирлянда",
+"params": {
+"light_color": "#fff1c4",
+"light_range": 9,
+"power": 1
+},
+"size": 1,
+"sounds": {}
+},
+"light_lantern": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"glass": 1,
+"iron_rod": 1
+},
+"desc": "Освещает базу ночью.",
+"hp": 80,
+"model": "cb_light_lantern",
+"name": "Фонарь-столбик",
+"params": {
+"light_color": "#fff1c4",
+"light_range": 10
+},
+"size": 1,
+"sounds": {}
+},
+"light_lantern_cold": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"glass": 1,
+"iron_rod": 1
+},
+"desc": "Освещает базу ночью.",
+"hp": 80,
+"model": "cb_light_lantern_cold",
+"name": "Фонарь-столбик (холодный)",
+"params": {
+"light_color": "#c8e8ff",
+"light_range": 10
+},
+"size": 1,
+"sounds": {}
+},
+"light_lantern_warm": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"glass": 1,
+"iron_rod": 1
+},
+"desc": "Освещает базу ночью.",
+"hp": 80,
+"model": "cb_light_lantern_warm",
+"name": "Фонарь-столбик (тёплый)",
+"params": {
+"light_color": "#ffb060",
+"light_range": 10
+},
+"size": 1,
+"sounds": {}
+},
+"light_street": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"copper_wire": 1,
+"glass": 1,
+"steel_rod": 2
+},
+"desc": "Освещает базу ночью.",
+"hp": 80,
+"model": "cb_light_street",
+"name": "Уличный фонарь",
+"params": {
+"light_color": "#fff1c4",
+"light_range": 16,
+"power": 1
+},
+"size": 1,
+"sounds": {}
+},
+"light_street_cold": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"copper_wire": 1,
+"glass": 1,
+"steel_rod": 2
+},
+"desc": "Освещает базу ночью.",
+"hp": 80,
+"model": "cb_light_street_cold",
+"name": "Уличный фонарь (холодный)",
+"params": {
+"light_color": "#c8e8ff",
+"light_range": 16,
+"power": 1
+},
+"size": 1,
+"sounds": {}
+},
+"light_street_warm": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"copper_wire": 1,
+"glass": 1,
+"steel_rod": 2
+},
+"desc": "Освещает базу ночью.",
+"hp": 80,
+"model": "cb_light_street_warm",
+"name": "Уличный фонарь (тёплый)",
+"params": {
+"light_color": "#ffb060",
+"light_range": 16,
+"power": 1
+},
+"size": 1,
+"sounds": {}
+},
+"light_torch": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"fiber": 1,
+"plank": 1
+},
+"desc": "Освещает базу ночью.",
+"hp": 80,
+"model": "cb_light_torch",
+"name": "Факел",
+"params": {
+"light_color": "#ff8c1a",
+"light_range": 7
+},
+"size": 1,
+"sounds": {}
+},
+"loom": {
+"behavior": "crafter",
+"catalog": "Машины: Ткацкий станок",
+"category": "production",
+"cost": {
+"gear": 4,
+"iron_plate": 8,
+"wire": 4
+},
+"desc": "Ткёт ткань, брезент и кевлар. Скорость ×1. Энергия: 4.",
+"hp": 420,
+"model": "cb_loom",
+"name": "Ткацкий станок",
+"params": {
+"power": 4,
+"speed": 1.0,
+"station": "workshop",
+"tier": 1
+},
+"size": 1,
+"sounds": {
+"work": "work_loom"
+}
+},
+"loom_mk2": {
+"behavior": "crafter",
+"catalog": "Машины: Ткацкий станок",
+"category": "production",
+"cost": {
+"circuit": 2,
+"copper_wire": 8,
+"steel_gear": 4,
+"steel_plate": 8
+},
+"desc": "Ткёт ткань, брезент и кевлар. Скорость ×1.6. Энергия: 10.",
+"hp": 540,
+"model": "cb_loom_mk2",
+"name": "Ткацкий станок Mk2",
+"params": {
+"power": 10,
+"speed": 1.6,
+"station": "workshop",
+"tier": 2
+},
+"size": 1,
+"sounds": {
+"work": "work_loom"
+}
+},
+"loom_mk3": {
+"behavior": "crafter",
+"catalog": "Машины: Ткацкий станок",
+"category": "production",
+"cost": {
+"aluminum_plate": 10,
+"circuit_mk2": 2,
+"motor": 2,
+"steel_beam": 2
+},
+"desc": "Ткёт ткань, брезент и кевлар. Скорость ×2.4. Энергия: 20.",
+"hp": 660,
+"model": "cb_loom_mk3",
+"name": "Ткацкий станок Mk3",
+"params": {
+"power": 20,
+"speed": 2.4,
+"station": "workshop",
+"tier": 3
+},
+"size": 1,
+"sounds": {
+"work": "work_loom"
+}
+},
+"loom_mk4": {
+"behavior": "crafter",
+"catalog": "Машины: Ткацкий станок",
+"category": "production",
+"cost": {
+"circuit_mk3": 2,
+"servo_motor": 2,
+"superconductor": 1,
+"titanium_plate": 10
+},
+"desc": "Ткёт ткань, брезент и кевлар. Скорость ×3.5. Энергия: 35.",
+"hp": 780,
+"model": "cb_loom_mk4",
+"name": "Ткацкий станок Mk4",
+"params": {
+"power": 35,
+"speed": 3.5,
+"station": "workshop",
+"tier": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_loom"
+}
+},
+"loom_mk5": {
+"behavior": "crafter",
+"catalog": "Машины: Ткацкий станок",
+"category": "production",
+"cost": {
+"ai_core": 1,
+"plasma_core": 1,
+"quantum_chip": 1,
+"tungsten_plate": 10
+},
+"desc": "Ткёт ткань, брезент и кевлар. Скорость ×5. Энергия: 60.",
+"hp": 900,
+"model": "cb_loom_mk5",
+"name": "Ткацкий станок Mk5",
+"params": {
+"power": 60,
+"speed": 5.0,
+"station": "workshop",
+"tier": 5
+},
+"size": 1,
+"sounds": {
+"work": "work_loom"
+}
+},
+"medbay_mk1": {
+"behavior": "decor",
+"blocks": [
+{
+"heal": 10,
+"needs_power": true,
+"radius": 7,
+"repair": 14,
+"type": "heal_area"
+}
+],
+"catalog": "Особые",
+"category": "special",
+"cost": {
+"glass": 2,
+"iron_plate": 4,
+"medkit": 1
+},
+"desc": "Лечит героя на 10 в секунду и чинит здания рядом.",
+"hp": 400,
+"model": "cb_medbay_mk1",
+"name": "Медпункт Mk1",
+"params": {
+"power": 7
+},
+"size": 1,
+"sounds": {
+"work": "work_lab"
+}
+},
+"medbay_mk2": {
+"behavior": "decor",
+"blocks": [
+{
+"heal": 15,
+"needs_power": true,
+"radius": 9,
+"repair": 20,
+"type": "heal_area"
+}
+],
+"catalog": "Особые",
+"category": "special",
+"cost": {
+"big_medkit": 1,
+"circuit": 2,
+"steel_plate": 6
+},
+"desc": "Лечит героя на 15 в секунду и чинит здания рядом.",
+"hp": 500,
+"model": "cb_medbay_mk2",
+"name": "Медпункт Mk2",
+"params": {
+"power": 10
+},
+"size": 1,
+"sounds": {
+"work": "work_lab"
+}
+},
+"medbay_mk3": {
+"behavior": "decor",
+"blocks": [
+{
+"heal": 20,
+"needs_power": true,
+"radius": 11,
+"repair": 26,
+"type": "heal_area"
+}
+],
+"catalog": "Особые",
+"category": "special",
+"cost": {
+"circuit_mk2": 2,
+"nano_medkit": 1,
+"titanium_plate": 6
+},
+"desc": "Лечит героя на 20 в секунду и чинит здания рядом.",
+"hp": 600,
+"model": "cb_medbay_mk3",
+"name": "Медпункт Mk3",
+"params": {
+"power": 13
+},
+"size": 1,
+"sounds": {
+"work": "work_lab"
+}
+},
+"mixer_mk2": {
+"behavior": "crafter",
+"catalog": "Машины: Смеситель",
+"category": "production",
+"cost": {
+"circuit": 2,
+"copper_wire": 8,
+"steel_gear": 4,
+"steel_plate": 8
+},
+"desc": "Замешивает бетон, удобрения и краски. Скорость ×1.6. Энергия: 10.",
+"hp": 540,
+"model": "cb_mixer_mk2",
+"name": "Смеситель Mk2",
+"params": {
+"power": 10,
+"speed": 1.6,
+"station": "workshop",
+"tier": 2
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"mixer_mk3": {
+"behavior": "crafter",
+"catalog": "Машины: Смеситель",
+"category": "production",
+"cost": {
+"aluminum_plate": 10,
+"circuit_mk2": 2,
+"motor": 2,
+"steel_beam": 2
+},
+"desc": "Замешивает бетон, удобрения и краски. Скорость ×2.4. Энергия: 20.",
+"hp": 660,
+"model": "cb_mixer_mk3",
+"name": "Смеситель Mk3",
+"params": {
+"power": 20,
+"speed": 2.4,
+"station": "workshop",
+"tier": 3
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"mixer_mk4": {
+"behavior": "crafter",
+"catalog": "Машины: Смеситель",
+"category": "production",
+"cost": {
+"circuit_mk3": 2,
+"servo_motor": 2,
+"superconductor": 1,
+"titanium_plate": 10
+},
+"desc": "Замешивает бетон, удобрения и краски. Скорость ×3.5. Энергия: 35.",
+"hp": 780,
+"model": "cb_mixer_mk4",
+"name": "Смеситель Mk4",
+"params": {
+"power": 35,
+"speed": 3.5,
+"station": "workshop",
+"tier": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"mixer_mk5": {
+"behavior": "crafter",
+"catalog": "Машины: Смеситель",
+"category": "production",
+"cost": {
+"ai_core": 1,
+"plasma_core": 1,
+"quantum_chip": 1,
+"tungsten_plate": 10
+},
+"desc": "Замешивает бетон, удобрения и краски. Скорость ×5. Энергия: 60.",
+"hp": 900,
+"model": "cb_mixer_mk5",
+"name": "Смеситель Mk5",
+"params": {
+"power": 60,
+"speed": 5.0,
+"station": "workshop",
+"tier": 5
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"monument_victory": {
+"behavior": "decor",
+"blocks": [
+{
+"needs_power": false,
+"radius": 15,
+"stat": "xp",
+"type": "buff_area",
+"value": 0.1
+}
+],
+"catalog": "Особые",
+"category": "special",
+"cost": {
+"gold_ingot": 10,
+"stone": 30,
+"trophy": 1
+},
+"desc": "Символ процветания колонии. +10% опыта рядом.",
+"hp": 2000,
+"model": "cb_monument_victory",
+"name": "Монумент победы",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"neon_blue": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"glass": 2,
+"led": 2
+},
+"desc": "Яркий цветной свет.",
+"hp": 80,
+"model": "cb_neon_blue",
+"name": "Неоновая стойка, синяя",
+"params": {
+"light_color": "#40a0ff",
+"light_range": 9,
+"power": 1
+},
+"size": 1,
+"sounds": {}
+},
+"neon_green": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"glass": 2,
+"led": 2
+},
+"desc": "Яркий цветной свет.",
+"hp": 80,
+"model": "cb_neon_green",
+"name": "Неоновая стойка, зелёная",
+"params": {
+"light_color": "#40ff6a",
+"light_range": 9,
+"power": 1
+},
+"size": 1,
+"sounds": {}
+},
+"neon_pink": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"glass": 2,
+"led": 2
+},
+"desc": "Яркий цветной свет.",
+"hp": 80,
+"model": "cb_neon_pink",
+"name": "Неоновая стойка, розовая",
+"params": {
+"light_color": "#ff6ad8",
+"light_range": 9,
+"power": 1
+},
+"size": 1,
+"sounds": {}
+},
+"neon_red": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"glass": 2,
+"led": 2
+},
+"desc": "Яркий цветной свет.",
+"hp": 80,
+"model": "cb_neon_red",
+"name": "Неоновая стойка, красная",
+"params": {
+"light_color": "#ff3a5a",
+"light_range": 9,
+"power": 1
+},
+"size": 1,
+"sounds": {}
+},
+"neon_violet": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"glass": 2,
+"led": 2
+},
+"desc": "Яркий цветной свет.",
+"hp": 80,
+"model": "cb_neon_violet",
+"name": "Неоновая стойка, фиолетовая",
+"params": {
+"light_color": "#a66aff",
+"light_range": 9,
+"power": 1
+},
+"size": 1,
+"sounds": {}
+},
+"neon_yellow": {
+"behavior": "light",
+"catalog": "Свет",
+"category": "decor",
+"cost": {
+"glass": 2,
+"led": 2
+},
+"desc": "Яркий цветной свет.",
+"hp": 80,
+"model": "cb_neon_yellow",
+"name": "Неоновая стойка, жёлтая",
+"params": {
+"light_color": "#ffd040",
+"light_range": 9,
+"power": 1
+},
+"size": 1,
+"sounds": {}
+},
+"nuclear_plant": {
+"behavior": "generator",
+"catalog": "Энергетика",
+"category": "energy",
+"cost": {
+"circuit_mk3": 6,
+"concrete": 60,
+"lead_plate": 20,
+"steel_beam": 20
+},
+"desc": "Жжёт урановые слитки: 1200 энергии.",
+"hp": 3000,
+"model": "cb_nuclear_plant",
+"name": "Атомная станция",
+"params": {
+"burn_mult": 10.0,
+"fuel_slots": 2,
+"fuels": [
+"uranium_ingot",
+"power_cell"
+],
+"power": 1200,
+"radius": 20
+},
+"size": 2,
+"sounds": {
+"work": "work_reactor"
+}
+},
+"packer": {
+"behavior": "crafter",
+"catalog": "Машины: Упаковочная линия",
+"category": "production",
+"cost": {
+"gear": 4,
+"iron_plate": 8,
+"wire": 4
+},
+"desc": "Упаковывает еду, патроны и наборы. Скорость ×1. Энергия: 4.",
+"hp": 420,
+"model": "cb_packer",
+"name": "Упаковочная линия",
+"params": {
+"power": 4,
+"speed": 1.0,
+"station": "packager",
+"tier": 1
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"packer_mk2": {
+"behavior": "crafter",
+"catalog": "Машины: Упаковочная линия",
+"category": "production",
+"cost": {
+"circuit": 2,
+"copper_wire": 8,
+"steel_gear": 4,
+"steel_plate": 8
+},
+"desc": "Упаковывает еду, патроны и наборы. Скорость ×1.6. Энергия: 10.",
+"hp": 540,
+"model": "cb_packer_mk2",
+"name": "Упаковочная линия Mk2",
+"params": {
+"power": 10,
+"speed": 1.6,
+"station": "packager",
+"tier": 2
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"packer_mk3": {
+"behavior": "crafter",
+"catalog": "Машины: Упаковочная линия",
+"category": "production",
+"cost": {
+"aluminum_plate": 10,
+"circuit_mk2": 2,
+"motor": 2,
+"steel_beam": 2
+},
+"desc": "Упаковывает еду, патроны и наборы. Скорость ×2.4. Энергия: 20.",
+"hp": 660,
+"model": "cb_packer_mk3",
+"name": "Упаковочная линия Mk3",
+"params": {
+"power": 20,
+"speed": 2.4,
+"station": "packager",
+"tier": 3
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"packer_mk4": {
+"behavior": "crafter",
+"catalog": "Машины: Упаковочная линия",
+"category": "production",
+"cost": {
+"circuit_mk3": 2,
+"servo_motor": 2,
+"superconductor": 1,
+"titanium_plate": 10
+},
+"desc": "Упаковывает еду, патроны и наборы. Скорость ×3.5. Энергия: 35.",
+"hp": 780,
+"model": "cb_packer_mk4",
+"name": "Упаковочная линия Mk4",
+"params": {
+"power": 35,
+"speed": 3.5,
+"station": "packager",
+"tier": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"packer_mk5": {
+"behavior": "crafter",
+"catalog": "Машины: Упаковочная линия",
+"category": "production",
+"cost": {
+"ai_core": 1,
+"plasma_core": 1,
+"quantum_chip": 1,
+"tungsten_plate": 10
+},
+"desc": "Упаковывает еду, патроны и наборы. Скорость ×5. Энергия: 60.",
+"hp": 900,
+"model": "cb_packer_mk5",
+"name": "Упаковочная линия Mk5",
+"params": {
+"power": 60,
+"speed": 5.0,
+"station": "packager",
+"tier": 5
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"pen_bee": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 90,
+"item": "honey",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма",
+"category": "special",
+"cost": {
+"plank": 4,
+"wax": 1
+},
+"desc": "Даёт мёд каждые 90 с.",
+"hp": 200,
+"model": "cb_pen_bee",
+"name": "Улей",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"pen_chicken": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 40,
+"item": "egg",
+"n": 2,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма",
+"category": "special",
+"cost": {
+"plank": 8,
+"wheat": 4
+},
+"desc": "Даёт яйца каждые 40 с.",
+"hp": 200,
+"model": "cb_pen_chicken",
+"name": "Курятник",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"pen_cow": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 45,
+"item": "milk",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма",
+"category": "special",
+"cost": {
+"plank": 12,
+"wheat": 8
+},
+"desc": "Даёт молоко каждые 45 с.",
+"hp": 200,
+"model": "cb_pen_cow",
+"name": "Коровник",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"pen_sheep": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 60,
+"item": "wool",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма",
+"category": "special",
+"cost": {
+"plank": 10,
+"wheat": 6
+},
+"desc": "Даёт шерсть каждые 60 с.",
+"hp": 200,
+"model": "cb_pen_sheep",
+"name": "Овчарня",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"pillar_brick": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"brick": 6
+},
+"desc": "Угловая опора для стен.",
+"hp": 1320,
+"model": "cb_pillar_brick",
+"name": "Кирпичный столб",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"pillar_concrete": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"concrete": 4
+},
+"desc": "Угловая опора для стен.",
+"hp": 1920,
+"model": "cb_pillar_concrete",
+"name": "Бетонный столб",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"pillar_energy": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"power_cell": 1,
+"tungsten_plate": 2
+},
+"desc": "Угловая опора для стен.",
+"hp": 9600,
+"model": "cb_pillar_energy",
+"name": "Энергетический столб",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"pillar_log": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"log": 3
+},
+"desc": "Угловая опора для стен.",
+"hp": 540,
+"model": "cb_pillar_log",
+"name": "Бревенчатый столб",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"pillar_plank": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"plank": 4
+},
+"desc": "Угловая опора для стен.",
+"hp": 456,
+"model": "cb_pillar_plank",
+"name": "Дощатый столб",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"pillar_reinforced": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"concrete": 4,
+"steel_rod": 2
+},
+"desc": "Угловая опора для стен.",
+"hp": 3120,
+"model": "cb_pillar_reinforced",
+"name": "Армированный столб",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"pillar_steel": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"steel_plate": 4
+},
+"desc": "Угловая опора для стен.",
+"hp": 3840,
+"model": "cb_pillar_steel",
+"name": "Стальной столб",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"pillar_stone": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"stone": 6
+},
+"desc": "Угловая опора для стен.",
+"hp": 1080,
+"model": "cb_pillar_stone",
+"name": "Каменный столб",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"pillar_titanium": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"titanium_plate": 3
+},
+"desc": "Угловая опора для стен.",
+"hp": 6240,
+"model": "cb_pillar_titanium",
+"name": "Титановый столб",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"pole_steel": {
+"behavior": "pole",
+"catalog": "Энергетика",
+"category": "energy",
+"cost": {
+"copper_wire": 4,
+"steel_rod": 4
+},
+"desc": "Передаёт энергию на 14 клеток. Провода тянутся клавишей V.",
+"hp": 290,
+"model": "cb_pole_steel",
+"name": "Стальная опора",
+"params": {
+"any_ground": true,
+"radius": 14,
+"wire_height": 5.3
+},
+"size": 1,
+"sounds": {}
+},
+"pole_tower": {
+"behavior": "pole",
+"catalog": "Энергетика",
+"category": "energy",
+"cost": {
+"aluminum_wire": 6,
+"porcelain": 4,
+"steel_beam": 6
+},
+"desc": "Передаёт энергию на 30 клеток. Провода тянутся клавишей V.",
+"hp": 450,
+"model": "cb_pole_tower",
+"name": "Высоковольтная вышка",
+"params": {
+"any_ground": true,
+"radius": 30,
+"wire_height": 8.8
+},
+"size": 1,
+"sounds": {}
+},
+"pole_wood": {
+"behavior": "pole",
+"catalog": "Энергетика",
+"category": "energy",
+"cost": {
+"copper_wire": 2,
+"log": 1
+},
+"desc": "Передаёт энергию на 8 клеток. Провода тянутся клавишей V.",
+"hp": 230,
+"model": "cb_pole_wood",
+"name": "Деревянный столб",
+"params": {
+"any_ground": true,
+"radius": 8,
+"wire_height": 3.8
+},
+"size": 1,
+"sounds": {}
+},
+"pot_alien_pot": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"clay": 1,
+"leaves": 2
+},
+"desc": "Растение для уюта.",
+"hp": 40,
+"model": "cb_pot_alien_pot",
+"name": "Светящийся цветок",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"pot_bonsai": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"clay": 1,
+"leaves": 2
+},
+"desc": "Растение для уюта.",
+"hp": 40,
+"model": "cb_pot_bonsai",
+"name": "Бонсай",
+"params": {
+"low": false
+},
+"size": 1,
+"sounds": {}
+},
+"pot_fern": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"clay": 1,
+"leaves": 2
+},
+"desc": "Растение для уюта.",
+"hp": 40,
+"model": "cb_pot_fern",
+"name": "Папоротник в горшке",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"pot_ficus": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"clay": 1,
+"leaves": 2
+},
+"desc": "Растение для уюта.",
+"hp": 40,
+"model": "cb_pot_ficus",
+"name": "Фикус",
+"params": {
+"low": false
+},
+"size": 1,
+"sounds": {}
+},
+"pot_flower_pot_blue": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"clay": 1,
+"leaves": 2
+},
+"desc": "Растение для уюта.",
+"hp": 40,
+"model": "cb_pot_flower_pot_blue",
+"name": "Синие цветы в горшке",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"pot_flower_pot_red": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"clay": 1,
+"leaves": 2
+},
+"desc": "Растение для уюта.",
+"hp": 40,
+"model": "cb_pot_flower_pot_red",
+"name": "Красные цветы в горшке",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"pot_palm": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"clay": 1,
+"leaves": 2
+},
+"desc": "Растение для уюта.",
+"hp": 40,
+"model": "cb_pot_palm",
+"name": "Пальма в кадке",
+"params": {
+"low": false
+},
+"size": 1,
+"sounds": {}
+},
+"pot_succulent": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"clay": 1,
+"leaves": 2
+},
+"desc": "Растение для уюта.",
+"hp": 40,
+"model": "cb_pot_succulent",
+"name": "Суккулент",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"press": {
+"behavior": "crafter",
+"catalog": "Машины: Пресс",
+"category": "production",
+"cost": {
+"gear": 4,
+"iron_plate": 8,
+"wire": 4
+},
+"desc": "Штампует пластины и детали из слитков. Скорость ×1. Энергия: 4.",
+"hp": 420,
+"model": "cb_press",
+"name": "Пресс",
+"params": {
+"power": 4,
+"speed": 1.0,
+"station": "workshop",
+"tier": 1
+},
+"size": 1,
+"sounds": {
+"work": "work_press"
+}
+},
+"press_mk2": {
+"behavior": "crafter",
+"catalog": "Машины: Пресс",
+"category": "production",
+"cost": {
+"circuit": 2,
+"copper_wire": 8,
+"steel_gear": 4,
+"steel_plate": 8
+},
+"desc": "Штампует пластины и детали из слитков. Скорость ×1.6. Энергия: 10.",
+"hp": 540,
+"model": "cb_press_mk2",
+"name": "Пресс Mk2",
+"params": {
+"power": 10,
+"speed": 1.6,
+"station": "workshop",
+"tier": 2
+},
+"size": 1,
+"sounds": {
+"work": "work_press"
+}
+},
+"press_mk3": {
+"behavior": "crafter",
+"catalog": "Машины: Пресс",
+"category": "production",
+"cost": {
+"aluminum_plate": 10,
+"circuit_mk2": 2,
+"motor": 2,
+"steel_beam": 2
+},
+"desc": "Штампует пластины и детали из слитков. Скорость ×2.4. Энергия: 20.",
+"hp": 660,
+"model": "cb_press_mk3",
+"name": "Пресс Mk3",
+"params": {
+"power": 20,
+"speed": 2.4,
+"station": "workshop",
+"tier": 3
+},
+"size": 1,
+"sounds": {
+"work": "work_press"
+}
+},
+"press_mk4": {
+"behavior": "crafter",
+"catalog": "Машины: Пресс",
+"category": "production",
+"cost": {
+"circuit_mk3": 2,
+"servo_motor": 2,
+"superconductor": 1,
+"titanium_plate": 10
+},
+"desc": "Штампует пластины и детали из слитков. Скорость ×3.5. Энергия: 35.",
+"hp": 780,
+"model": "cb_press_mk4",
+"name": "Пресс Mk4",
+"params": {
+"power": 35,
+"speed": 3.5,
+"station": "workshop",
+"tier": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_press"
+}
+},
+"press_mk5": {
+"behavior": "crafter",
+"catalog": "Машины: Пресс",
+"category": "production",
+"cost": {
+"ai_core": 1,
+"plasma_core": 1,
+"quantum_chip": 1,
+"tungsten_plate": 10
+},
+"desc": "Штампует пластины и детали из слитков. Скорость ×5. Энергия: 60.",
+"hp": 900,
+"model": "cb_press_mk5",
+"name": "Пресс Mk5",
+"params": {
+"power": 60,
+"speed": 5.0,
+"station": "workshop",
+"tier": 5
+},
+"size": 1,
+"sounds": {
+"work": "work_press"
+}
+},
+"printer3d": {
+"behavior": "crafter",
+"catalog": "Машины: 3D-принтер",
+"category": "production",
+"cost": {
+"gear": 4,
+"iron_plate": 8,
+"wire": 4
+},
+"desc": "Печатает пластиковые и металлические детали. Скорость ×1. Энергия: 4.",
+"hp": 420,
+"model": "cb_printer3d",
+"name": "3D-принтер",
+"params": {
+"power": 4,
+"speed": 1.0,
+"station": "assembler",
+"tier": 1
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"printer3d_mk2": {
+"behavior": "crafter",
+"catalog": "Машины: 3D-принтер",
+"category": "production",
+"cost": {
+"circuit": 2,
+"copper_wire": 8,
+"steel_gear": 4,
+"steel_plate": 8
+},
+"desc": "Печатает пластиковые и металлические детали. Скорость ×1.6. Энергия: 10.",
+"hp": 540,
+"model": "cb_printer3d_mk2",
+"name": "3D-принтер Mk2",
+"params": {
+"power": 10,
+"speed": 1.6,
+"station": "assembler",
+"tier": 2
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"printer3d_mk3": {
+"behavior": "crafter",
+"catalog": "Машины: 3D-принтер",
+"category": "production",
+"cost": {
+"aluminum_plate": 10,
+"circuit_mk2": 2,
+"motor": 2,
+"steel_beam": 2
+},
+"desc": "Печатает пластиковые и металлические детали. Скорость ×2.4. Энергия: 20.",
+"hp": 660,
+"model": "cb_printer3d_mk3",
+"name": "3D-принтер Mk3",
+"params": {
+"power": 20,
+"speed": 2.4,
+"station": "assembler",
+"tier": 3
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"printer3d_mk4": {
+"behavior": "crafter",
+"catalog": "Машины: 3D-принтер",
+"category": "production",
+"cost": {
+"circuit_mk3": 2,
+"servo_motor": 2,
+"superconductor": 1,
+"titanium_plate": 10
+},
+"desc": "Печатает пластиковые и металлические детали. Скорость ×3.5. Энергия: 35.",
+"hp": 780,
+"model": "cb_printer3d_mk4",
+"name": "3D-принтер Mk4",
+"params": {
+"power": 35,
+"speed": 3.5,
+"station": "assembler",
+"tier": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"printer3d_mk5": {
+"behavior": "crafter",
+"catalog": "Машины: 3D-принтер",
+"category": "production",
+"cost": {
+"ai_core": 1,
+"plasma_core": 1,
+"quantum_chip": 1,
+"tungsten_plate": 10
+},
+"desc": "Печатает пластиковые и металлические детали. Скорость ×5. Энергия: 60.",
+"hp": 900,
+"model": "cb_printer3d_mk5",
+"name": "3D-принтер Mk5",
+"params": {
+"power": 60,
+"speed": 5.0,
+"station": "assembler",
+"tier": 5
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"quantum_storage": {
+"behavior": "storage",
+"catalog": "Хранение",
+"category": "storage",
+"cost": {
+"quantum_chip": 2,
+"titanium_plate": 10,
+"void_essence": 1
+},
+"desc": "Хранит 300 стаков в кармане пространства.",
+"hp": 1500,
+"model": "cb_quantum_storage",
+"name": "Квантовое хранилище",
+"params": {
+"slots": 300
+},
+"size": 1,
+"sounds": {}
+},
+"radar": {
+"behavior": "decor",
+"blocks": [
+{
+"actions": [
+{
+"do": "notify",
+"text": "Радар: монстры приближаются!"
+},
+{
+"do": "sound",
+"key": "alarm",
+"x": "$x",
+"z": "$z"
+}
+],
+"cooldown": 30,
+"event": "enemy_near",
+"radius": 40,
+"type": "trigger"
+}
+],
+"catalog": "Особые",
+"category": "special",
+"cost": {
+"antenna_part": 2,
+"microchip": 2,
+"steel_beam": 2
+},
+"desc": "Сирена при приближении монстров на 40 клеток.",
+"hp": 300,
+"model": "cb_radar",
+"name": "Радар",
+"params": {
+"power": 6
+},
+"size": 1,
+"sounds": {
+"work": "work_electric"
+}
+},
+"ramp_brick": {
+"behavior": "foundation",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"brick": 4
+},
+"desc": "Подъём на ярус выше.",
+"hp": 1000,
+"model": "cb_ramp_brick",
+"name": "Кирпичная рампа",
+"params": {
+"height": 1.0,
+"ramp": true
+},
+"size": 1,
+"sounds": {}
+},
+"ramp_concrete": {
+"behavior": "foundation",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"concrete": 2
+},
+"desc": "Подъём на ярус выше.",
+"hp": 1000,
+"model": "cb_ramp_concrete",
+"name": "Бетонная рампа",
+"params": {
+"height": 1.0,
+"ramp": true
+},
+"size": 1,
+"sounds": {}
+},
+"ramp_glass": {
+"behavior": "foundation",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"tempered_glass": 3
+},
+"desc": "Подъём на ярус выше.",
+"hp": 1000,
+"model": "cb_ramp_glass",
+"name": "Стеклянная рампа",
+"params": {
+"height": 1.0,
+"ramp": true
+},
+"size": 1,
+"sounds": {}
+},
+"ramp_steel": {
+"behavior": "foundation",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"steel_plate": 2
+},
+"desc": "Подъём на ярус выше.",
+"hp": 1000,
+"model": "cb_ramp_steel",
+"name": "Стальная рампа",
+"params": {
+"height": 1.0,
+"ramp": true
+},
+"size": 1,
+"sounds": {}
+},
+"ramp_stone": {
+"behavior": "foundation",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"stone": 4
+},
+"desc": "Подъём на ярус выше.",
+"hp": 1000,
+"model": "cb_ramp_stone",
+"name": "Каменная рампа",
+"params": {
+"height": 1.0,
+"ramp": true
+},
+"size": 1,
+"sounds": {}
+},
+"ramp_wood": {
+"behavior": "foundation",
+"catalog": "Фундаменты",
+"category": "structure",
+"cost": {
+"plank": 4
+},
+"desc": "Подъём на ярус выше.",
+"hp": 1000,
+"model": "cb_ramp_wood",
+"name": "Деревянная рампа",
+"params": {
+"height": 1.0,
+"ramp": true
+},
+"size": 1,
+"sounds": {}
+},
+"rug_blue": {
+"behavior": "floor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"cloth": 3
+},
+"desc": "Ковёр на пол.",
+"hp": 40,
+"model": "cb_rug_blue",
+"name": "Ковёр (синий)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"rug_green": {
+"behavior": "floor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"cloth": 3
+},
+"desc": "Ковёр на пол.",
+"hp": 40,
+"model": "cb_rug_green",
+"name": "Ковёр (зелёный)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"rug_grey": {
+"behavior": "floor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"cloth": 3
+},
+"desc": "Ковёр на пол.",
+"hp": 40,
+"model": "cb_rug_grey",
+"name": "Ковёр (серый)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"rug_red": {
+"behavior": "floor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"cloth": 3
+},
+"desc": "Ковёр на пол.",
+"hp": 40,
+"model": "cb_rug_red",
+"name": "Ковёр (красный)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"rug_yellow": {
+"behavior": "floor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"cloth": 3
+},
+"desc": "Ковёр на пол.",
+"hp": 40,
+"model": "cb_rug_yellow",
+"name": "Ковёр (жёлтый)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"sandbags": {
+"behavior": "wall",
+"catalog": "Оборона",
+"category": "defense",
+"cost": {
+"fiber": 4,
+"stone": 4
+},
+"desc": "Низкое укрытие: перепрыгнуть можно.",
+"hp": 600,
+"model": "cb_sandbags",
+"name": "Мешки с песком",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"sawmill_mk2": {
+"behavior": "crafter",
+"catalog": "Машины: Лесопилка",
+"category": "production",
+"cost": {
+"circuit": 2,
+"copper_wire": 8,
+"steel_gear": 4,
+"steel_plate": 8
+},
+"desc": "Пилит брёвна на доски и балки. Скорость ×1.6. Энергия: 10.",
+"hp": 540,
+"model": "cb_sawmill_mk2",
+"name": "Лесопилка Mk2",
+"params": {
+"power": 10,
+"speed": 1.6,
+"station": "workbench",
+"tier": 2
+},
+"size": 1,
+"sounds": {
+"work": "work_saw"
+}
+},
+"sawmill_mk3": {
+"behavior": "crafter",
+"catalog": "Машины: Лесопилка",
+"category": "production",
+"cost": {
+"aluminum_plate": 10,
+"circuit_mk2": 2,
+"motor": 2,
+"steel_beam": 2
+},
+"desc": "Пилит брёвна на доски и балки. Скорость ×2.4. Энергия: 20.",
+"hp": 660,
+"model": "cb_sawmill_mk3",
+"name": "Лесопилка Mk3",
+"params": {
+"power": 20,
+"speed": 2.4,
+"station": "workbench",
+"tier": 3
+},
+"size": 1,
+"sounds": {
+"work": "work_saw"
+}
+},
+"sawmill_mk4": {
+"behavior": "crafter",
+"catalog": "Машины: Лесопилка",
+"category": "production",
+"cost": {
+"circuit_mk3": 2,
+"servo_motor": 2,
+"superconductor": 1,
+"titanium_plate": 10
+},
+"desc": "Пилит брёвна на доски и балки. Скорость ×3.5. Энергия: 35.",
+"hp": 780,
+"model": "cb_sawmill_mk4",
+"name": "Лесопилка Mk4",
+"params": {
+"power": 35,
+"speed": 3.5,
+"station": "workbench",
+"tier": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_saw"
+}
+},
+"sawmill_mk5": {
+"behavior": "crafter",
+"catalog": "Машины: Лесопилка",
+"category": "production",
+"cost": {
+"ai_core": 1,
+"plasma_core": 1,
+"quantum_chip": 1,
+"tungsten_plate": 10
+},
+"desc": "Пилит брёвна на доски и балки. Скорость ×5. Энергия: 60.",
+"hp": 900,
+"model": "cb_sawmill_mk5",
+"name": "Лесопилка Mk5",
+"params": {
+"power": 60,
+"speed": 5.0,
+"station": "workbench",
+"tier": 5
+},
+"size": 1,
+"sounds": {
+"work": "work_saw"
+}
+},
+"scarecrow": {
+"behavior": "decor",
+"catalog": "Ферма",
+"category": "decor",
+"cost": {
+"fiber": 4,
+"plank": 2
+},
+"desc": "Украшение для огорода.",
+"hp": 60,
+"model": "cb_scarecrow",
+"name": "Пугало",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"shelf_birch": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"book": 1,
+"plank": 5
+},
+"desc": "Полки с книгами.",
+"hp": 120,
+"model": "cb_shelf_birch",
+"name": "Книжный шкаф (берёза)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"shelf_black": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"book": 1,
+"plank": 5
+},
+"desc": "Полки с книгами.",
+"hp": 120,
+"model": "cb_shelf_black",
+"name": "Книжный шкаф (чёрный)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"shelf_cherry": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"book": 1,
+"plank": 5
+},
+"desc": "Полки с книгами.",
+"hp": 120,
+"model": "cb_shelf_cherry",
+"name": "Книжный шкаф (вишня)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"shelf_dark": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"book": 1,
+"plank": 5
+},
+"desc": "Полки с книгами.",
+"hp": 120,
+"model": "cb_shelf_dark",
+"name": "Книжный шкаф (тёмное дерево)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"shelf_grey": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"book": 1,
+"plank": 5
+},
+"desc": "Полки с книгами.",
+"hp": 120,
+"model": "cb_shelf_grey",
+"name": "Книжный шкаф (серый)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"shelf_oak": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"book": 1,
+"plank": 5
+},
+"desc": "Полки с книгами.",
+"hp": 120,
+"model": "cb_shelf_oak",
+"name": "Книжный шкаф (дуб)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"shelf_rack": {
+"behavior": "storage",
+"catalog": "Хранение",
+"category": "storage",
+"cost": {
+"plank": 6,
+"steel_rod": 8
+},
+"desc": "Хранит 60 стаков.",
+"hp": 400,
+"model": "cb_shelf_rack",
+"name": "Стеллаж склада",
+"params": {
+"slots": 60
+},
+"size": 1,
+"sounds": {}
+},
+"shelf_rack_big": {
+"behavior": "storage",
+"catalog": "Хранение",
+"category": "storage",
+"cost": {
+"plank": 10,
+"steel_beam": 4
+},
+"desc": "Хранит 90 стаков.",
+"hp": 500,
+"model": "cb_shelf_rack_big",
+"name": "Высокий стеллаж",
+"params": {
+"slots": 90
+},
+"size": 1,
+"sounds": {}
+},
+"shelf_white": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"book": 1,
+"plank": 5
+},
+"desc": "Полки с книгами.",
+"hp": 120,
+"model": "cb_shelf_white",
+"name": "Книжный шкаф (белый)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"sign_arrow": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"iron_rod": 1,
+"plank": 1
+},
+"desc": "Табличка для базы.",
+"hp": 60,
+"model": "cb_sign_arrow",
+"name": "Указатель",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"sign_danger": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"iron_rod": 1,
+"plank": 1
+},
+"desc": "Табличка для базы.",
+"hp": 60,
+"model": "cb_sign_danger",
+"name": "Знак «Опасно»",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"sign_info": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"iron_rod": 1,
+"plank": 1
+},
+"desc": "Табличка для базы.",
+"hp": 60,
+"model": "cb_sign_info",
+"name": "Информационный щит",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"silo": {
+"behavior": "storage",
+"catalog": "Хранение",
+"category": "storage",
+"cost": {
+"steel_beam": 2,
+"steel_plate": 14
+},
+"desc": "Хранит 80 стаков сыпучих грузов.",
+"hp": 720,
+"model": "cb_silo",
+"name": "Силос",
+"params": {
+"slots": 80
+},
+"size": 1,
+"sounds": {}
+},
+"silo_block": {
+"behavior": "storage",
+"catalog": "Хранение",
+"category": "storage",
+"cost": {
+"steel_beam": 8,
+"steel_plate": 40
+},
+"desc": "Хранит 300 стаков сыпучих грузов.",
+"hp": 1600,
+"model": "cb_silo_block",
+"name": "Блок силосов",
+"params": {
+"slots": 300
+},
+"size": 2,
+"sounds": {}
+},
+"silo_small": {
+"behavior": "storage",
+"catalog": "Хранение",
+"category": "storage",
+"cost": {
+"iron_plate": 12
+},
+"desc": "Хранит 50 стаков сыпучих грузов.",
+"hp": 600,
+"model": "cb_silo_small",
+"name": "Малый силос",
+"params": {
+"slots": 50
+},
+"size": 1,
+"sounds": {}
+},
+"sofa_blue": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"cloth": 4,
+"plank": 3
+},
+"desc": "Мягкий диван для отдыха.",
+"hp": 120,
+"model": "cb_sofa_blue",
+"name": "Диван (синий)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"sofa_green": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"cloth": 4,
+"plank": 3
+},
+"desc": "Мягкий диван для отдыха.",
+"hp": 120,
+"model": "cb_sofa_green",
+"name": "Диван (зелёный)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"sofa_grey": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"cloth": 4,
+"plank": 3
+},
+"desc": "Мягкий диван для отдыха.",
+"hp": 120,
+"model": "cb_sofa_grey",
+"name": "Диван (серый)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"sofa_red": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"cloth": 4,
+"plank": 3
+},
+"desc": "Мягкий диван для отдыха.",
+"hp": 120,
+"model": "cb_sofa_red",
+"name": "Диван (красный)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"sofa_yellow": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"cloth": 4,
+"plank": 3
+},
+"desc": "Мягкий диван для отдыха.",
+"hp": 120,
+"model": "cb_sofa_yellow",
+"name": "Диван (жёлтый)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"solar_farm": {
+"behavior": "generator",
+"catalog": "Энергетика",
+"category": "energy",
+"cost": {
+"solar_cell": 12,
+"steel_beam": 2
+},
+"desc": "Даёт 70 энергии днём.",
+"hp": 290,
+"model": "cb_solar_farm",
+"name": "Солнечная ферма",
+"params": {
+"power": 70,
+"radius": 10,
+"solar": true
+},
+"size": 2,
+"sounds": {
+"work": "work_electric"
+}
+},
+"solar_farm_mk2": {
+"behavior": "generator",
+"catalog": "Энергетика",
+"category": "energy",
+"cost": {
+"servo_motor": 2,
+"solar_cell": 20,
+"titanium_beam": 2
+},
+"desc": "Даёт 140 энергии днём.",
+"hp": 430,
+"model": "cb_solar_farm_mk2",
+"name": "Солнечная ферма Mk2",
+"params": {
+"power": 140,
+"radius": 10,
+"solar": true
+},
+"size": 2,
+"sounds": {
+"work": "work_electric"
+}
+},
+"solar_mk2": {
+"behavior": "generator",
+"catalog": "Энергетика",
+"category": "energy",
+"cost": {
+"aluminum_rod": 2,
+"solar_cell": 4
+},
+"desc": "Даёт 18 энергии днём.",
+"hp": 186,
+"model": "cb_solar_mk2",
+"name": "Солнечная панель Mk2",
+"params": {
+"power": 18,
+"radius": 6,
+"solar": true
+},
+"size": 1,
+"sounds": {
+"work": "work_electric"
+}
+},
+"solar_small": {
+"behavior": "generator",
+"catalog": "Энергетика",
+"category": "energy",
+"cost": {
+"iron_rod": 2,
+"solar_cell": 2
+},
+"desc": "Даёт 8 энергии днём.",
+"hp": 166,
+"model": "cb_solar_small",
+"name": "Солнечная панель малая",
+"params": {
+"power": 8,
+"radius": 6,
+"solar": true
+},
+"size": 1,
+"sounds": {
+"work": "work_electric"
+}
+},
+"solar_tracker": {
+"behavior": "generator",
+"catalog": "Энергетика",
+"category": "energy",
+"cost": {
+"servo_motor": 1,
+"solar_cell": 4,
+"steel_rod": 2
+},
+"desc": "Даёт 26 энергии днём.",
+"hp": 202,
+"model": "cb_solar_tracker",
+"name": "Поворотная солнечная панель",
+"params": {
+"power": 26,
+"radius": 6,
+"solar": true
+},
+"size": 1,
+"sounds": {
+"work": "work_electric"
+}
+},
+"sorter": {
+"behavior": "crafter",
+"catalog": "Машины: Сортировщик",
+"category": "production",
+"cost": {
+"gear": 4,
+"iron_plate": 8,
+"wire": 4
+},
+"desc": "Разбирает смешанные грузы и собирает наборы. Скорость ×1. Энергия: 4.",
+"hp": 420,
+"model": "cb_sorter",
+"name": "Сортировщик",
+"params": {
+"power": 4,
+"speed": 1.0,
+"station": "assembler",
+"tier": 1
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"sorter_mk2": {
+"behavior": "crafter",
+"catalog": "Машины: Сортировщик",
+"category": "production",
+"cost": {
+"circuit": 2,
+"copper_wire": 8,
+"steel_gear": 4,
+"steel_plate": 8
+},
+"desc": "Разбирает смешанные грузы и собирает наборы. Скорость ×1.6. Энергия: 10.",
+"hp": 540,
+"model": "cb_sorter_mk2",
+"name": "Сортировщик Mk2",
+"params": {
+"power": 10,
+"speed": 1.6,
+"station": "assembler",
+"tier": 2
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"sorter_mk3": {
+"behavior": "crafter",
+"catalog": "Машины: Сортировщик",
+"category": "production",
+"cost": {
+"aluminum_plate": 10,
+"circuit_mk2": 2,
+"motor": 2,
+"steel_beam": 2
+},
+"desc": "Разбирает смешанные грузы и собирает наборы. Скорость ×2.4. Энергия: 20.",
+"hp": 660,
+"model": "cb_sorter_mk3",
+"name": "Сортировщик Mk3",
+"params": {
+"power": 20,
+"speed": 2.4,
+"station": "assembler",
+"tier": 3
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"sorter_mk4": {
+"behavior": "crafter",
+"catalog": "Машины: Сортировщик",
+"category": "production",
+"cost": {
+"circuit_mk3": 2,
+"servo_motor": 2,
+"superconductor": 1,
+"titanium_plate": 10
+},
+"desc": "Разбирает смешанные грузы и собирает наборы. Скорость ×3.5. Энергия: 35.",
+"hp": 780,
+"model": "cb_sorter_mk4",
+"name": "Сортировщик Mk4",
+"params": {
+"power": 35,
+"speed": 3.5,
+"station": "assembler",
+"tier": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"sorter_mk5": {
+"behavior": "crafter",
+"catalog": "Машины: Сортировщик",
+"category": "production",
+"cost": {
+"ai_core": 1,
+"plasma_core": 1,
+"quantum_chip": 1,
+"tungsten_plate": 10
+},
+"desc": "Разбирает смешанные грузы и собирает наборы. Скорость ×5. Энергия: 60.",
+"hp": 900,
+"model": "cb_sorter_mk5",
+"name": "Сортировщик Mk5",
+"params": {
+"power": 60,
+"speed": 5.0,
+"station": "assembler",
+"tier": 5
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"spikes_brick": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"brick": 3
+},
+"desc": "Низкая преграда с шипами: монстры застревают.",
+"hp": 550,
+"model": "cb_spikes_brick",
+"name": "Кирпичные шипы",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"spikes_concrete": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"concrete": 2
+},
+"desc": "Низкая преграда с шипами: монстры застревают.",
+"hp": 800,
+"model": "cb_spikes_concrete",
+"name": "Бетонные шипы",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"spikes_energy": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"power_cell": 1,
+"tungsten_plate": 1
+},
+"desc": "Низкая преграда с шипами: монстры застревают.",
+"hp": 4000,
+"model": "cb_spikes_energy",
+"name": "Энергетические шипы",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"spikes_log": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"log": 1
+},
+"desc": "Низкая преграда с шипами: монстры застревают.",
+"hp": 225,
+"model": "cb_spikes_log",
+"name": "Бревенчатые шипы",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"spikes_plank": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"plank": 2
+},
+"desc": "Низкая преграда с шипами: монстры застревают.",
+"hp": 190,
+"model": "cb_spikes_plank",
+"name": "Дощатые шипы",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"spikes_reinforced": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"concrete": 2,
+"steel_rod": 1
+},
+"desc": "Низкая преграда с шипами: монстры застревают.",
+"hp": 1300,
+"model": "cb_spikes_reinforced",
+"name": "Армированные шипы",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"spikes_steel": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"steel_plate": 2
+},
+"desc": "Низкая преграда с шипами: монстры застревают.",
+"hp": 1600,
+"model": "cb_spikes_steel",
+"name": "Стальные шипы",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"spikes_stone": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"stone": 3
+},
+"desc": "Низкая преграда с шипами: монстры застревают.",
+"hp": 450,
+"model": "cb_spikes_stone",
+"name": "Каменные шипы",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"spikes_titanium": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"titanium_plate": 1
+},
+"desc": "Низкая преграда с шипами: монстры застревают.",
+"hp": 2600,
+"model": "cb_spikes_titanium",
+"name": "Титановые шипы",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"statue_gear_monument": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"brass_gear": 4,
+"stone": 6
+},
+"desc": "Украшение для площади.",
+"hp": 600,
+"model": "cb_statue_gear_monument",
+"name": "Памятник шестерне",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"statue_globe": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"stone": 10
+},
+"desc": "Украшение для площади.",
+"hp": 600,
+"model": "cb_statue_globe",
+"name": "Каменный шар",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"statue_hero_bronze": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"stone": 10
+},
+"desc": "Украшение для площади.",
+"hp": 600,
+"model": "cb_statue_hero_bronze",
+"name": "Бронзовая статуя колониста",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"statue_hero_stone": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"stone": 10
+},
+"desc": "Украшение для площади.",
+"hp": 600,
+"model": "cb_statue_hero_stone",
+"name": "Статуя колониста",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"statue_monster_stone": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"stone": 10
+},
+"desc": "Украшение для площади.",
+"hp": 600,
+"model": "cb_statue_monster_stone",
+"name": "Статуя монстра",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"statue_obelisk": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"stone": 10
+},
+"desc": "Украшение для площади.",
+"hp": 600,
+"model": "cb_statue_obelisk",
+"name": "Обелиск",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"statue_obelisk_marble": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"stone": 10
+},
+"desc": "Украшение для площади.",
+"hp": 600,
+"model": "cb_statue_obelisk_marble",
+"name": "Мраморный обелиск",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"table_birch": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"plank": 4
+},
+"desc": "Обеденный стол.",
+"hp": 120,
+"model": "cb_table_birch",
+"name": "Стол (берёза)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"table_black": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"plank": 4
+},
+"desc": "Обеденный стол.",
+"hp": 120,
+"model": "cb_table_black",
+"name": "Стол (чёрный)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"table_cherry": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"plank": 4
+},
+"desc": "Обеденный стол.",
+"hp": 120,
+"model": "cb_table_cherry",
+"name": "Стол (вишня)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"table_dark": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"plank": 4
+},
+"desc": "Обеденный стол.",
+"hp": 120,
+"model": "cb_table_dark",
+"name": "Стол (тёмное дерево)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"table_grey": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"plank": 4
+},
+"desc": "Обеденный стол.",
+"hp": 120,
+"model": "cb_table_grey",
+"name": "Стол (серый)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"table_oak": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"plank": 4
+},
+"desc": "Обеденный стол.",
+"hp": 120,
+"model": "cb_table_oak",
+"name": "Стол (дуб)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"table_round_birch": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"plank": 3
+},
+"desc": "Столик для чая.",
+"hp": 100,
+"model": "cb_table_round_birch",
+"name": "Круглый стол (берёза)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"table_round_black": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"plank": 3
+},
+"desc": "Столик для чая.",
+"hp": 100,
+"model": "cb_table_round_black",
+"name": "Круглый стол (чёрный)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"table_round_cherry": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"plank": 3
+},
+"desc": "Столик для чая.",
+"hp": 100,
+"model": "cb_table_round_cherry",
+"name": "Круглый стол (вишня)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"table_round_dark": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"plank": 3
+},
+"desc": "Столик для чая.",
+"hp": 100,
+"model": "cb_table_round_dark",
+"name": "Круглый стол (тёмное дерево)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"table_round_grey": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"plank": 3
+},
+"desc": "Столик для чая.",
+"hp": 100,
+"model": "cb_table_round_grey",
+"name": "Круглый стол (серый)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"table_round_oak": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"plank": 3
+},
+"desc": "Столик для чая.",
+"hp": 100,
+"model": "cb_table_round_oak",
+"name": "Круглый стол (дуб)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"table_round_white": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"plank": 3
+},
+"desc": "Столик для чая.",
+"hp": 100,
+"model": "cb_table_round_white",
+"name": "Круглый стол (белый)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"table_white": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"plank": 4
+},
+"desc": "Обеденный стол.",
+"hp": 120,
+"model": "cb_table_white",
+"name": "Стол (белый)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"tank_large": {
+"behavior": "tank",
+"catalog": "Жидкости",
+"category": "fluids",
+"cost": {
+"steel_beam": 4,
+"steel_plate": 30
+},
+"desc": "Запасает до 2000 единиц жидкости из труб.",
+"hp": 500,
+"model": "cb_tank_large",
+"name": "Большой бак",
+"params": {
+"pipe_capacity": 2000
+},
+"size": 2,
+"sounds": {}
+},
+"tank_small": {
+"behavior": "tank",
+"catalog": "Жидкости",
+"category": "fluids",
+"cost": {
+"iron_plate": 8
+},
+"desc": "Запасает до 250 единиц жидкости из труб.",
+"hp": 325,
+"model": "cb_tank_small",
+"name": "Малый бак",
+"params": {
+"pipe_capacity": 250
+},
+"size": 1,
+"sounds": {}
+},
+"tank_sphere": {
+"behavior": "tank",
+"catalog": "Жидкости",
+"category": "fluids",
+"cost": {
+"aluminum_plate": 30,
+"steel_beam": 6
+},
+"desc": "Запасает до 4000 единиц жидкости из труб.",
+"hp": 700,
+"model": "cb_tank_sphere",
+"name": "Сферический резервуар",
+"params": {
+"pipe_capacity": 4000
+},
+"size": 2,
+"sounds": {}
+},
+"tank_tall": {
+"behavior": "tank",
+"catalog": "Жидкости",
+"category": "fluids",
+"cost": {
+"steel_plate": 10
+},
+"desc": "Запасает до 600 единиц жидкости из труб.",
+"hp": 360,
+"model": "cb_tank_tall",
+"name": "Высокий бак",
+"params": {
+"pipe_capacity": 600
+},
+"size": 1,
+"sounds": {}
+},
+"tent_blue": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"canvas": 3,
+"plank": 2
+},
+"desc": "Походная палатка.",
+"hp": 100,
+"model": "cb_tent_blue",
+"name": "Палатка (синий)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"tent_green": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"canvas": 3,
+"plank": 2
+},
+"desc": "Походная палатка.",
+"hp": 100,
+"model": "cb_tent_green",
+"name": "Палатка (зелёный)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"tent_grey": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"canvas": 3,
+"plank": 2
+},
+"desc": "Походная палатка.",
+"hp": 100,
+"model": "cb_tent_grey",
+"name": "Палатка (серый)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"tent_red": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"canvas": 3,
+"plank": 2
+},
+"desc": "Походная палатка.",
+"hp": 100,
+"model": "cb_tent_red",
+"name": "Палатка (красный)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"tent_yellow": {
+"behavior": "decor",
+"catalog": "Декор",
+"category": "decor",
+"cost": {
+"canvas": 3,
+"plank": 2
+},
+"desc": "Походная палатка.",
+"hp": 100,
+"model": "cb_tent_yellow",
+"name": "Палатка (жёлтый)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"tool_chest": {
+"behavior": "storage",
+"catalog": "Хранение",
+"category": "storage",
+"cost": {
+"iron_plate": 4
+},
+"desc": "Хранит 16 стаков. Принимает предметы с лент.",
+"hp": 246,
+"model": "cb_tool_chest",
+"name": "Ящик для инструментов",
+"params": {
+"slots": 16
+},
+"size": 1,
+"sounds": {}
+},
+"trade_post": {
+"behavior": "decor",
+"blocks": [
+{
+"items": [],
+"k": 1.0,
+"type": "sell"
+}
+],
+"catalog": "Особые",
+"category": "special",
+"cost": {
+"display_panel": 1,
+"gold_coin": 5,
+"steel_plate": 6
+},
+"desc": "Продаёт всё, что в неё положат, по полной цене.",
+"hp": 300,
+"model": "cb_trade_post",
+"name": "Торговая лавка",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"transformer": {
+"behavior": "pole",
+"catalog": "Энергетика",
+"category": "energy",
+"cost": {
+"steel_plate": 4,
+"transformer_core": 2
+},
+"desc": "Передаёт энергию далеко: радиус 20 клеток.",
+"hp": 400,
+"model": "cb_transformer",
+"name": "Трансформатор",
+"params": {
+"any_ground": true,
+"radius": 20
+},
+"size": 1,
+"sounds": {}
+},
+"trap_acid": {
+"behavior": "decor",
+"blocks": [
+{
+"actions": [
+{
+"dist": "3.0",
+"do": "explode",
+"v": "80",
+"x": "$x",
+"z": "$z"
+}
+],
+"cooldown": 15,
+"event": "enemy_near",
+"radius": 3.0,
+"type": "trigger"
+}
+],
+"catalog": "Оборона: ловушки",
+"category": "defense",
+"cost": {
+"acid_sac": 1,
+"iron_plate": 2
+},
+"desc": "Срабатывает, когда монстр рядом: 80 урона. Перезарядка 15 с.",
+"hp": 80,
+"model": "cb_trap_acid",
+"name": "Кислотная ловушка",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"trap_fire": {
+"behavior": "decor",
+"blocks": [
+{
+"actions": [
+{
+"dist": "2.5",
+"do": "explode",
+"v": "90",
+"x": "$x",
+"z": "$z"
+}
+],
+"cooldown": 20,
+"event": "enemy_near",
+"radius": 2.5,
+"type": "trigger"
+}
+],
+"catalog": "Оборона: ловушки",
+"category": "defense",
+"cost": {
+"fuel": 2,
+"steel_plate": 2
+},
+"desc": "Срабатывает, когда монстр рядом: 90 урона. Перезарядка 20 с.",
+"hp": 80,
+"model": "cb_trap_fire",
+"name": "Огненная ловушка",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"trap_mine_big": {
+"behavior": "decor",
+"blocks": [
+{
+"actions": [
+{
+"dist": "4.0",
+"do": "explode",
+"v": "250",
+"x": "$x",
+"z": "$z"
+}
+],
+"cooldown": 45,
+"event": "enemy_near",
+"radius": 4.0,
+"type": "trigger"
+}
+],
+"catalog": "Оборона: ловушки",
+"category": "defense",
+"cost": {
+"explosive": 2,
+"steel_plate": 1
+},
+"desc": "Срабатывает, когда монстр рядом: 250 урона. Перезарядка 45 с.",
+"hp": 80,
+"model": "cb_trap_mine_big",
+"name": "Тяжёлая мина",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"trap_shock": {
+"behavior": "decor",
+"blocks": [
+{
+"actions": [
+{
+"dist": "3.0",
+"do": "explode",
+"v": "70",
+"x": "$x",
+"z": "$z"
+}
+],
+"cooldown": 8,
+"event": "enemy_near",
+"radius": 3.0,
+"type": "trigger"
+}
+],
+"catalog": "Оборона: ловушки",
+"category": "defense",
+"cost": {
+"battery_cell": 1,
+"copper_wire": 4
+},
+"desc": "Срабатывает, когда монстр рядом: 70 урона. Перезарядка 8 с.",
+"hp": 80,
+"model": "cb_trap_shock",
+"name": "Электроловушка",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"trap_spike": {
+"behavior": "decor",
+"blocks": [
+{
+"actions": [
+{
+"dist": "1.5",
+"do": "explode",
+"v": "60",
+"x": "$x",
+"z": "$z"
+}
+],
+"cooldown": 10,
+"event": "enemy_near",
+"radius": 1.5,
+"type": "trigger"
+}
+],
+"catalog": "Оборона: ловушки",
+"category": "defense",
+"cost": {
+"iron_plate": 2,
+"iron_spring": 1
+},
+"desc": "Срабатывает, когда монстр рядом: 60 урона. Перезарядка 10 с.",
+"hp": 80,
+"model": "cb_trap_spike",
+"name": "Капкан с шипами",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"turret_cannon": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"gunpowder": 4,
+"steel_pipe_part": 2,
+"steel_plate": 12
+},
+"desc": "Стреляет по монстрам: урон 150, дальность 48. Берёт патроны со склада штаба.",
+"hp": 750,
+"model": "cb_turret_cannon",
+"name": "Пушка",
+"params": {
+"ammo": "ammo",
+"damage": 150,
+"power": 0,
+"range": 48,
+"rate": 3.0
+},
+"size": 1,
+"sounds": {}
+},
+"turret_cannon_mk2": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"gunpowder": 7,
+"steel_pipe_part": 3,
+"steel_plate": 21
+},
+"desc": "Стреляет по монстрам: урон 240, дальность 51. Берёт патроны со склада штаба.",
+"hp": 1000,
+"model": "cb_turret_cannon_mk2",
+"name": "Пушка Mk2",
+"params": {
+"ammo": "ammo",
+"damage": 240,
+"power": 0,
+"range": 51,
+"rate": 2.609
+},
+"size": 1,
+"sounds": {}
+},
+"turret_cannon_mk3": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"circuit_mk2": 2,
+"gunpowder": 10,
+"steel_pipe_part": 5,
+"steel_plate": 31
+},
+"desc": "Стреляет по монстрам: урон 330, дальность 54. Берёт патроны со склада штаба.",
+"hp": 1250,
+"model": "cb_turret_cannon_mk3",
+"name": "Пушка Mk3",
+"params": {
+"ammo": "ammo",
+"damage": 330,
+"power": 0,
+"range": 54,
+"rate": 2.308
+},
+"size": 1,
+"sounds": {}
+},
+"turret_cannon_mk4": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"circuit_mk2": 3,
+"gunpowder": 13,
+"steel_pipe_part": 6,
+"steel_plate": 40
+},
+"desc": "Стреляет по монстрам: урон 420, дальность 57. Берёт патроны со склада штаба.",
+"hp": 1500,
+"model": "cb_turret_cannon_mk4",
+"name": "Пушка Mk4",
+"params": {
+"ammo": "ammo",
+"damage": 420,
+"power": 0,
+"range": 57,
+"rate": 2.069
+},
+"size": 1,
+"sounds": {}
+},
+"turret_cannon_mk5": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"circuit_mk2": 4,
+"gunpowder": 16,
+"steel_pipe_part": 8,
+"steel_plate": 50
+},
+"desc": "Стреляет по монстрам: урон 510, дальность 60. Берёт патроны со склада штаба.",
+"hp": 1750,
+"model": "cb_turret_cannon_mk5",
+"name": "Пушка Mk5",
+"params": {
+"ammo": "ammo",
+"damage": 510,
+"power": 0,
+"range": 60,
+"rate": 1.875
+},
+"size": 1,
+"sounds": {}
+},
+"turret_flame": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"fuel": 4,
+"steel_pipe_part": 2,
+"steel_plate": 6
+},
+"desc": "Стреляет по монстрам: урон 18, дальность 15. Нужна энергия.",
+"hp": 750,
+"model": "cb_turret_flame",
+"name": "Огнемётная турель",
+"params": {
+"ammo": "",
+"damage": 18,
+"power": 8,
+"range": 15,
+"rate": 0.1
+},
+"size": 1,
+"sounds": {}
+},
+"turret_flame_mk2": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"fuel": 7,
+"steel_pipe_part": 3,
+"steel_plate": 10
+},
+"desc": "Стреляет по монстрам: урон 28, дальность 18. Нужна энергия.",
+"hp": 1000,
+"model": "cb_turret_flame_mk2",
+"name": "Огнемётная турель Mk2",
+"params": {
+"ammo": "",
+"damage": 28,
+"power": 12,
+"range": 18,
+"rate": 0.087
+},
+"size": 1,
+"sounds": {}
+},
+"turret_flame_mk3": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"circuit_mk2": 2,
+"fuel": 10,
+"steel_pipe_part": 5,
+"steel_plate": 15
+},
+"desc": "Стреляет по монстрам: урон 39, дальность 21. Нужна энергия.",
+"hp": 1250,
+"model": "cb_turret_flame_mk3",
+"name": "Огнемётная турель Mk3",
+"params": {
+"ammo": "",
+"damage": 39,
+"power": 17,
+"range": 21,
+"rate": 0.077
+},
+"size": 1,
+"sounds": {}
+},
+"turret_flame_mk4": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"circuit_mk2": 3,
+"fuel": 13,
+"steel_pipe_part": 6,
+"steel_plate": 20
+},
+"desc": "Стреляет по монстрам: урон 50, дальность 24. Нужна энергия.",
+"hp": 1500,
+"model": "cb_turret_flame_mk4",
+"name": "Огнемётная турель Mk4",
+"params": {
+"ammo": "",
+"damage": 50,
+"power": 22,
+"range": 24,
+"rate": 0.069
+},
+"size": 1,
+"sounds": {}
+},
+"turret_flame_mk5": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"circuit_mk2": 4,
+"fuel": 16,
+"steel_pipe_part": 8,
+"steel_plate": 25
+},
+"desc": "Стреляет по монстрам: урон 61, дальность 27. Нужна энергия.",
+"hp": 1750,
+"model": "cb_turret_flame_mk5",
+"name": "Огнемётная турель Mk5",
+"params": {
+"ammo": "",
+"damage": 61,
+"power": 27,
+"range": 27,
+"rate": 0.062
+},
+"size": 1,
+"sounds": {}
+},
+"turret_gun": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"iron_gear": 3,
+"iron_plate": 8
+},
+"desc": "Стреляет по монстрам: урон 12, дальность 31. Берёт патроны со склада штаба.",
+"hp": 750,
+"model": "cb_turret_gun",
+"name": "Пулемётная турель",
+"params": {
+"ammo": "ammo",
+"damage": 12,
+"power": 0,
+"range": 31,
+"rate": 0.2
+},
+"size": 1,
+"sounds": {}
+},
+"turret_gun_mk2": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"iron_gear": 5,
+"iron_plate": 14
+},
+"desc": "Стреляет по монстрам: урон 19, дальность 34. Берёт патроны со склада штаба.",
+"hp": 1000,
+"model": "cb_turret_gun_mk2",
+"name": "Пулемётная турель Mk2",
+"params": {
+"ammo": "ammo",
+"damage": 19,
+"power": 0,
+"range": 34,
+"rate": 0.174
+},
+"size": 1,
+"sounds": {}
+},
+"turret_gun_mk3": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"circuit_mk2": 2,
+"iron_gear": 7,
+"iron_plate": 20
+},
+"desc": "Стреляет по монстрам: урон 26, дальность 37. Берёт патроны со склада штаба.",
+"hp": 1250,
+"model": "cb_turret_gun_mk3",
+"name": "Пулемётная турель Mk3",
+"params": {
+"ammo": "ammo",
+"damage": 26,
+"power": 0,
+"range": 37,
+"rate": 0.154
+},
+"size": 1,
+"sounds": {}
+},
+"turret_gun_mk4": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"circuit_mk2": 3,
+"iron_gear": 10,
+"iron_plate": 27
+},
+"desc": "Стреляет по монстрам: урон 33, дальность 40. Берёт патроны со склада штаба.",
+"hp": 1500,
+"model": "cb_turret_gun_mk4",
+"name": "Пулемётная турель Mk4",
+"params": {
+"ammo": "ammo",
+"damage": 33,
+"power": 0,
+"range": 40,
+"rate": 0.138
+},
+"size": 1,
+"sounds": {}
+},
+"turret_gun_mk5": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"circuit_mk2": 4,
+"iron_gear": 12,
+"iron_plate": 33
+},
+"desc": "Стреляет по монстрам: урон 40, дальность 43. Берёт патроны со склада штаба.",
+"hp": 1750,
+"model": "cb_turret_gun_mk5",
+"name": "Пулемётная турель Mk5",
+"params": {
+"ammo": "ammo",
+"damage": 40,
+"power": 0,
+"range": 43,
+"rate": 0.125
+},
+"size": 1,
+"sounds": {}
+},
+"turret_laser": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"circuit": 2,
+"laser_diode": 1,
+"steel_plate": 6
+},
+"desc": "Стреляет по монстрам: урон 26, дальность 37. Нужна энергия.",
+"hp": 750,
+"model": "cb_turret_laser",
+"name": "Лазерная турель",
+"params": {
+"ammo": "",
+"damage": 26,
+"power": 12,
+"range": 37,
+"rate": 0.35
+},
+"size": 1,
+"sounds": {}
+},
+"turret_laser_mk2": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"circuit": 3,
+"laser_diode": 1,
+"steel_plate": 10
+},
+"desc": "Стреляет по монстрам: урон 41, дальность 40. Нужна энергия.",
+"hp": 1000,
+"model": "cb_turret_laser_mk2",
+"name": "Лазерная турель Mk2",
+"params": {
+"ammo": "",
+"damage": 41,
+"power": 19,
+"range": 40,
+"rate": 0.304
+},
+"size": 1,
+"sounds": {}
+},
+"turret_laser_mk3": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"circuit": 5,
+"circuit_mk2": 2,
+"laser_diode": 2,
+"steel_plate": 15
+},
+"desc": "Стреляет по монстрам: урон 57, дальность 43. Нужна энергия.",
+"hp": 1250,
+"model": "cb_turret_laser_mk3",
+"name": "Лазерная турель Mk3",
+"params": {
+"ammo": "",
+"damage": 57,
+"power": 26,
+"range": 43,
+"rate": 0.269
+},
+"size": 1,
+"sounds": {}
+},
+"turret_laser_mk4": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"circuit": 6,
+"circuit_mk2": 3,
+"laser_diode": 3,
+"steel_plate": 20
+},
+"desc": "Стреляет по монстрам: урон 72, дальность 46. Нужна энергия.",
+"hp": 1500,
+"model": "cb_turret_laser_mk4",
+"name": "Лазерная турель Mk4",
+"params": {
+"ammo": "",
+"damage": 72,
+"power": 33,
+"range": 46,
+"rate": 0.241
+},
+"size": 1,
+"sounds": {}
+},
+"turret_laser_mk5": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"circuit": 8,
+"circuit_mk2": 4,
+"laser_diode": 4,
+"steel_plate": 25
+},
+"desc": "Стреляет по монстрам: урон 88, дальность 49. Нужна энергия.",
+"hp": 1750,
+"model": "cb_turret_laser_mk5",
+"name": "Лазерная турель Mk5",
+"params": {
+"ammo": "",
+"damage": 88,
+"power": 40,
+"range": 49,
+"rate": 0.219
+},
+"size": 1,
+"sounds": {}
+},
+"turret_rocket": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"explosive": 4,
+"microchip": 2,
+"steel_plate": 8
+},
+"desc": "Стреляет по монстрам: урон 90, дальность 43. Берёт патроны со склада штаба.",
+"hp": 750,
+"model": "cb_turret_rocket",
+"name": "Ракетная турель",
+"params": {
+"ammo": "ammo",
+"damage": 90,
+"power": 6,
+"range": 43,
+"rate": 2.2
+},
+"size": 1,
+"sounds": {}
+},
+"turret_rocket_mk2": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"explosive": 7,
+"microchip": 3,
+"steel_plate": 14
+},
+"desc": "Стреляет по монстрам: урон 144, дальность 46. Берёт патроны со склада штаба.",
+"hp": 1000,
+"model": "cb_turret_rocket_mk2",
+"name": "Ракетная турель Mk2",
+"params": {
+"ammo": "ammo",
+"damage": 144,
+"power": 9,
+"range": 46,
+"rate": 1.913
+},
+"size": 1,
+"sounds": {}
+},
+"turret_rocket_mk3": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"circuit_mk2": 2,
+"explosive": 10,
+"microchip": 5,
+"steel_plate": 20
+},
+"desc": "Стреляет по монстрам: урон 198, дальность 49. Берёт патроны со склада штаба.",
+"hp": 1250,
+"model": "cb_turret_rocket_mk3",
+"name": "Ракетная турель Mk3",
+"params": {
+"ammo": "ammo",
+"damage": 198,
+"power": 13,
+"range": 49,
+"rate": 1.692
+},
+"size": 1,
+"sounds": {}
+},
+"turret_rocket_mk4": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"circuit_mk2": 3,
+"explosive": 13,
+"microchip": 6,
+"steel_plate": 27
+},
+"desc": "Стреляет по монстрам: урон 251, дальность 52. Берёт патроны со склада штаба.",
+"hp": 1500,
+"model": "cb_turret_rocket_mk4",
+"name": "Ракетная турель Mk4",
+"params": {
+"ammo": "ammo",
+"damage": 251,
+"power": 16,
+"range": 52,
+"rate": 1.517
+},
+"size": 1,
+"sounds": {}
+},
+"turret_rocket_mk5": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"circuit_mk2": 4,
+"explosive": 16,
+"microchip": 8,
+"steel_plate": 33
+},
+"desc": "Стреляет по монстрам: урон 306, дальность 55. Берёт патроны со склада штаба.",
+"hp": 1750,
+"model": "cb_turret_rocket_mk5",
+"name": "Ракетная турель Mk5",
+"params": {
+"ammo": "ammo",
+"damage": 306,
+"power": 20,
+"range": 55,
+"rate": 1.375
+},
+"size": 1,
+"sounds": {}
+},
+"turret_sniper": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"lens": 2,
+"microchip": 1,
+"steel_rod": 6
+},
+"desc": "Стреляет по монстрам: урон 120, дальность 63. Берёт патроны со склада штаба.",
+"hp": 750,
+"model": "cb_turret_sniper",
+"name": "Снайперская башня",
+"params": {
+"ammo": "ammo",
+"damage": 120,
+"power": 4,
+"range": 63,
+"rate": 2.5
+},
+"size": 1,
+"sounds": {}
+},
+"turret_sniper_mk2": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"lens": 3,
+"microchip": 1,
+"steel_rod": 10
+},
+"desc": "Стреляет по монстрам: урон 192, дальность 66. Берёт патроны со склада штаба.",
+"hp": 1000,
+"model": "cb_turret_sniper_mk2",
+"name": "Снайперская башня Mk2",
+"params": {
+"ammo": "ammo",
+"damage": 192,
+"power": 6,
+"range": 66,
+"rate": 2.174
+},
+"size": 1,
+"sounds": {}
+},
+"turret_sniper_mk3": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"circuit_mk2": 2,
+"lens": 5,
+"microchip": 2,
+"steel_rod": 15
+},
+"desc": "Стреляет по монстрам: урон 264, дальность 69. Берёт патроны со склада штаба.",
+"hp": 1250,
+"model": "cb_turret_sniper_mk3",
+"name": "Снайперская башня Mk3",
+"params": {
+"ammo": "ammo",
+"damage": 264,
+"power": 8,
+"range": 69,
+"rate": 1.923
+},
+"size": 1,
+"sounds": {}
+},
+"turret_sniper_mk4": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"circuit_mk2": 3,
+"lens": 6,
+"microchip": 3,
+"steel_rod": 20
+},
+"desc": "Стреляет по монстрам: урон 336, дальность 72. Берёт патроны со склада штаба.",
+"hp": 1500,
+"model": "cb_turret_sniper_mk4",
+"name": "Снайперская башня Mk4",
+"params": {
+"ammo": "ammo",
+"damage": 336,
+"power": 11,
+"range": 72,
+"rate": 1.724
+},
+"size": 1,
+"sounds": {}
+},
+"turret_sniper_mk5": {
+"behavior": "turret",
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"circuit_mk2": 4,
+"lens": 8,
+"microchip": 4,
+"steel_rod": 25
+},
+"desc": "Стреляет по монстрам: урон 408, дальность 75. Берёт патроны со склада штаба.",
+"hp": 1750,
+"model": "cb_turret_sniper_mk5",
+"name": "Снайперская башня Mk5",
+"params": {
+"ammo": "ammo",
+"damage": 408,
+"power": 13,
+"range": 75,
+"rate": 1.562
+},
+"size": 1,
+"sounds": {}
+},
+"turret_tesla": {
+"behavior": "decor",
+"blocks": [
+{
+"color": "#80c0ff",
+"damage": 30,
+"needs_power": true,
+"range": 18,
+"rate": 1.0,
+"type": "shoot"
+}
+],
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"copper_wire": 10,
+"induction_coil": 4,
+"steel_plate": 2
+},
+"desc": "Бьёт молнией ближайшего монстра: урон 30. Нужна энергия.",
+"hp": 700,
+"model": "cb_turret_tesla",
+"name": "Тесла-башня",
+"params": {
+"power": 15
+},
+"size": 1,
+"sounds": {
+"work": "work_electric"
+}
+},
+"turret_tesla_mk2": {
+"behavior": "decor",
+"blocks": [
+{
+"color": "#80c0ff",
+"damage": 48,
+"needs_power": true,
+"range": 20,
+"rate": 1.0,
+"type": "shoot"
+}
+],
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"copper_wire": 18,
+"induction_coil": 7,
+"steel_plate": 3
+},
+"desc": "Бьёт молнией ближайшего монстра: урон 48. Нужна энергия.",
+"hp": 900,
+"model": "cb_turret_tesla_mk2",
+"name": "Тесла-башня Mk2",
+"params": {
+"power": 24
+},
+"size": 1,
+"sounds": {
+"work": "work_electric"
+}
+},
+"turret_tesla_mk3": {
+"behavior": "decor",
+"blocks": [
+{
+"color": "#80c0ff",
+"damage": 66,
+"needs_power": true,
+"range": 22,
+"rate": 1.0,
+"type": "shoot"
+}
+],
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"circuit_mk2": 2,
+"copper_wire": 26,
+"induction_coil": 10,
+"steel_plate": 5
+},
+"desc": "Бьёт молнией ближайшего монстра: урон 66. Нужна энергия.",
+"hp": 1100,
+"model": "cb_turret_tesla_mk3",
+"name": "Тесла-башня Mk3",
+"params": {
+"power": 33
+},
+"size": 1,
+"sounds": {
+"work": "work_electric"
+}
+},
+"turret_tesla_mk4": {
+"behavior": "decor",
+"blocks": [
+{
+"color": "#80c0ff",
+"damage": 84,
+"needs_power": true,
+"range": 24,
+"rate": 1.0,
+"type": "shoot"
+}
+],
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"circuit_mk2": 3,
+"copper_wire": 34,
+"induction_coil": 13,
+"steel_plate": 6
+},
+"desc": "Бьёт молнией ближайшего монстра: урон 84. Нужна энергия.",
+"hp": 1300,
+"model": "cb_turret_tesla_mk4",
+"name": "Тесла-башня Mk4",
+"params": {
+"power": 42
+},
+"size": 1,
+"sounds": {
+"work": "work_electric"
+}
+},
+"turret_tesla_mk5": {
+"behavior": "decor",
+"blocks": [
+{
+"color": "#80c0ff",
+"damage": 102,
+"needs_power": true,
+"range": 26,
+"rate": 1.0,
+"type": "shoot"
+}
+],
+"catalog": "Оборона: турели",
+"category": "defense",
+"cost": {
+"circuit_mk2": 4,
+"copper_wire": 42,
+"induction_coil": 16,
+"steel_plate": 8
+},
+"desc": "Бьёт молнией ближайшего монстра: урон 102. Нужна энергия.",
+"hp": 1500,
+"model": "cb_turret_tesla_mk5",
+"name": "Тесла-башня Mk5",
+"params": {
+"power": 51
+},
+"size": 1,
+"sounds": {
+"work": "work_electric"
+}
+},
+"valve_station": {
+"behavior": "decor",
+"catalog": "Жидкости",
+"category": "fluids",
+"cost": {
+"steel_pipe_part": 6
+},
+"desc": "Декоративный узел труб с задвижками.",
+"hp": 300,
+"model": "cb_valve_station",
+"name": "Узел задвижек",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"vault": {
+"behavior": "storage",
+"catalog": "Хранение",
+"category": "storage",
+"cost": {
+"microchip": 2,
+"steel_plate": 20,
+"tungsten_plate": 4
+},
+"desc": "Хранит 120 стаков. Очень прочное.",
+"hp": 2500,
+"model": "cb_vault",
+"name": "Хранилище-сейф",
+"params": {
+"slots": 120
+},
+"size": 1,
+"sounds": {}
+},
+"wall_brick": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"brick": 6
+},
+"desc": "Преграда для монстров. Прочность 1100.",
+"hp": 1100,
+"model": "cb_wall_brick",
+"name": "Кирпичная стена",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"wall_brick_loop": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"brick": 6
+},
+"desc": "Стена с узкой щелью для стрельбы.",
+"hp": 990,
+"model": "cb_wall_brick_loop",
+"name": "Кирпичная стена с бойницей",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"wall_brick_low": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"brick": 3
+},
+"desc": "Полстены: герой перепрыгнет, монстры — нет.",
+"hp": 550,
+"model": "cb_wall_brick_low",
+"name": "Кирпичная низкая стена",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"wall_concrete": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"concrete": 4
+},
+"desc": "Преграда для монстров. Прочность 1600.",
+"hp": 1600,
+"model": "cb_wall_concrete",
+"name": "Бетонная стена",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"wall_concrete_loop": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"concrete": 4
+},
+"desc": "Стена с узкой щелью для стрельбы.",
+"hp": 1440,
+"model": "cb_wall_concrete_loop",
+"name": "Бетонная стена с бойницей",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"wall_concrete_low": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"concrete": 2
+},
+"desc": "Полстены: герой перепрыгнет, монстры — нет.",
+"hp": 800,
+"model": "cb_wall_concrete_low",
+"name": "Бетонная низкая стена",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"wall_energy": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"power_cell": 1,
+"tungsten_plate": 2
+},
+"desc": "Преграда для монстров. Прочность 8000.",
+"hp": 8000,
+"model": "cb_wall_energy",
+"name": "Энергетическая стена",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"wall_energy_loop": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"power_cell": 1,
+"tungsten_plate": 2
+},
+"desc": "Стена с узкой щелью для стрельбы.",
+"hp": 7200,
+"model": "cb_wall_energy_loop",
+"name": "Энергетическая стена с бойницей",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"wall_energy_low": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"power_cell": 1,
+"tungsten_plate": 1
+},
+"desc": "Полстены: герой перепрыгнет, монстры — нет.",
+"hp": 4000,
+"model": "cb_wall_energy_low",
+"name": "Энергетическая низкая стена",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"wall_log": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"log": 3
+},
+"desc": "Преграда для монстров. Прочность 450.",
+"hp": 450,
+"model": "cb_wall_log",
+"name": "Бревенчатая стена",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"wall_log_loop": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"log": 3
+},
+"desc": "Стена с узкой щелью для стрельбы.",
+"hp": 405,
+"model": "cb_wall_log_loop",
+"name": "Бревенчатая стена с бойницей",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"wall_log_low": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"log": 1
+},
+"desc": "Полстены: герой перепрыгнет, монстры — нет.",
+"hp": 225,
+"model": "cb_wall_log_low",
+"name": "Бревенчатая низкая стена",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"wall_plank": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"plank": 4
+},
+"desc": "Преграда для монстров. Прочность 380.",
+"hp": 380,
+"model": "cb_wall_plank",
+"name": "Дощатая стена",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"wall_plank_loop": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"plank": 4
+},
+"desc": "Стена с узкой щелью для стрельбы.",
+"hp": 342,
+"model": "cb_wall_plank_loop",
+"name": "Дощатая стена с бойницей",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"wall_plank_low": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"plank": 2
+},
+"desc": "Полстены: герой перепрыгнет, монстры — нет.",
+"hp": 190,
+"model": "cb_wall_plank_low",
+"name": "Дощатая низкая стена",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"wall_reinforced": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"concrete": 4,
+"steel_rod": 2
+},
+"desc": "Преграда для монстров. Прочность 2600.",
+"hp": 2600,
+"model": "cb_wall_reinforced",
+"name": "Армированная стена",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"wall_reinforced_loop": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"concrete": 4,
+"steel_rod": 2
+},
+"desc": "Стена с узкой щелью для стрельбы.",
+"hp": 2340,
+"model": "cb_wall_reinforced_loop",
+"name": "Армированная стена с бойницей",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"wall_reinforced_low": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"concrete": 2,
+"steel_rod": 1
+},
+"desc": "Полстены: герой перепрыгнет, монстры — нет.",
+"hp": 1300,
+"model": "cb_wall_reinforced_low",
+"name": "Армированная низкая стена",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"wall_steel": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"steel_plate": 4
+},
+"desc": "Преграда для монстров. Прочность 3200.",
+"hp": 3200,
+"model": "cb_wall_steel",
+"name": "Стальная стена",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"wall_steel_loop": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"steel_plate": 4
+},
+"desc": "Стена с узкой щелью для стрельбы.",
+"hp": 2880,
+"model": "cb_wall_steel_loop",
+"name": "Стальная стена с бойницей",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"wall_steel_low": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"steel_plate": 2
+},
+"desc": "Полстены: герой перепрыгнет, монстры — нет.",
+"hp": 1600,
+"model": "cb_wall_steel_low",
+"name": "Стальная низкая стена",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"wall_stone": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"stone": 6
+},
+"desc": "Преграда для монстров. Прочность 900.",
+"hp": 900,
+"model": "cb_wall_stone",
+"name": "Каменная стена",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"wall_stone_loop": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"stone": 6
+},
+"desc": "Стена с узкой щелью для стрельбы.",
+"hp": 810,
+"model": "cb_wall_stone_loop",
+"name": "Каменная стена с бойницей",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"wall_stone_low": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"stone": 3
+},
+"desc": "Полстены: герой перепрыгнет, монстры — нет.",
+"hp": 450,
+"model": "cb_wall_stone_low",
+"name": "Каменная низкая стена",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"wall_titanium": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"titanium_plate": 3
+},
+"desc": "Преграда для монстров. Прочность 5200.",
+"hp": 5200,
+"model": "cb_wall_titanium",
+"name": "Титановая стена",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"wall_titanium_loop": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"titanium_plate": 3
+},
+"desc": "Стена с узкой щелью для стрельбы.",
+"hp": 4680,
+"model": "cb_wall_titanium_loop",
+"name": "Титановая стена с бойницей",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"wall_titanium_low": {
+"behavior": "wall",
+"catalog": "Оборона: стены",
+"category": "defense",
+"cost": {
+"titanium_plate": 1
+},
+"desc": "Полстены: герой перепрыгнет, монстры — нет.",
+"hp": 2600,
+"model": "cb_wall_titanium_low",
+"name": "Титановая низкая стена",
+"params": {
+"low": true
+},
+"size": 1,
+"sounds": {}
+},
+"wardrobe_birch": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"iron_screw": 2,
+"plank": 6
+},
+"desc": "Шкаф для одежды.",
+"hp": 140,
+"model": "cb_wardrobe_birch",
+"name": "Гардероб (берёза)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"wardrobe_black": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"iron_screw": 2,
+"plank": 6
+},
+"desc": "Шкаф для одежды.",
+"hp": 140,
+"model": "cb_wardrobe_black",
+"name": "Гардероб (чёрный)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"wardrobe_cherry": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"iron_screw": 2,
+"plank": 6
+},
+"desc": "Шкаф для одежды.",
+"hp": 140,
+"model": "cb_wardrobe_cherry",
+"name": "Гардероб (вишня)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"wardrobe_dark": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"iron_screw": 2,
+"plank": 6
+},
+"desc": "Шкаф для одежды.",
+"hp": 140,
+"model": "cb_wardrobe_dark",
+"name": "Гардероб (тёмное дерево)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"wardrobe_grey": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"iron_screw": 2,
+"plank": 6
+},
+"desc": "Шкаф для одежды.",
+"hp": 140,
+"model": "cb_wardrobe_grey",
+"name": "Гардероб (серый)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"wardrobe_oak": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"iron_screw": 2,
+"plank": 6
+},
+"desc": "Шкаф для одежды.",
+"hp": 140,
+"model": "cb_wardrobe_oak",
+"name": "Гардероб (дуб)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"wardrobe_white": {
+"behavior": "decor",
+"catalog": "Мебель",
+"category": "decor",
+"cost": {
+"iron_screw": 2,
+"plank": 6
+},
+"desc": "Шкаф для одежды.",
+"hp": 140,
+"model": "cb_wardrobe_white",
+"name": "Гардероб (белый)",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"watchtower": {
+"behavior": "decor",
+"catalog": "Оборона",
+"category": "defense",
+"cost": {
+"log": 10,
+"plank": 10
+},
+"desc": "Высокая вышка: видно далеко, сверху удобно стрелять.",
+"hp": 600,
+"model": "cb_watchtower",
+"name": "Сторожевая вышка",
+"params": {},
+"size": 1,
+"sounds": {}
+},
+"water_purifier": {
+"behavior": "crafter",
+"catalog": "Жидкости",
+"category": "fluids",
+"cost": {
+"ceramic": 4,
+"motor": 1,
+"steel_plate": 6
+},
+"desc": "Делает из речной воды питьевую.",
+"hp": 350,
+"model": "cb_water_purifier",
+"name": "Очистка воды",
+"params": {
+"pipes": true,
+"power": 8,
+"speed": 1.0,
+"station": "refinery"
+},
+"size": 1,
+"sounds": {
+"work": "work_bubble"
+}
+},
+"water_tower": {
+"behavior": "tank",
+"catalog": "Жидкости",
+"category": "fluids",
+"cost": {
+"steel_beam": 6,
+"steel_plate": 6
+},
+"desc": "Запасает до 800 единиц жидкости из труб.",
+"hp": 380,
+"model": "cb_water_tower",
+"name": "Водонапорная башня",
+"params": {
+"pipe_capacity": 800
+},
+"size": 1,
+"sounds": {}
+},
+"water_well": {
+"behavior": "decor",
+"blocks": [
+{
+"every": 30,
+"item": "water_flask",
+"n": 1,
+"needs_power": false,
+"type": "produce"
+}
+],
+"catalog": "Ферма",
+"category": "special",
+"cost": {
+"plank": 4,
+"rope": 1,
+"stone": 12
+},
+"desc": "Даёт фляги воды каждые 30 с.",
+"hp": 400,
+"model": "cb_water_well",
+"name": "Колодец с водой",
+"params": {},
+"size": 1,
+"sounds": {
+"work": "work_pump"
+}
+},
+"water_wheel": {
+"behavior": "generator",
+"catalog": "Энергетика",
+"category": "energy",
+"cost": {
+"iron_gear": 4,
+"plank": 20
+},
+"desc": "Даёт 30 энергии без топлива и днём, и ночью.",
+"hp": 300,
+"model": "cb_water_wheel",
+"name": "Водяная мельница",
+"params": {
+"power": 30,
+"radius": 8
+},
+"size": 1,
+"sounds": {
+"work": "work_water"
+}
+},
+"weapon_rack": {
+"behavior": "storage",
+"catalog": "Хранение",
+"category": "storage",
+"cost": {
+"plank": 2,
+"steel_plate": 4
+},
+"desc": "Хранит 12 стаков. Принимает предметы с лент.",
+"hp": 222,
+"model": "cb_weapon_rack",
+"name": "Оружейный шкаф",
+"params": {
+"slots": 12
+},
+"size": 1,
+"sounds": {}
+},
+"welder": {
+"behavior": "crafter",
+"catalog": "Машины: Сварочный цех",
+"category": "production",
+"cost": {
+"gear": 4,
+"iron_plate": 8,
+"wire": 4
+},
+"desc": "Сваривает каркасы, балки и корпуса. Скорость ×1. Энергия: 4.",
+"hp": 420,
+"model": "cb_welder",
+"name": "Сварочный цех",
+"params": {
+"power": 4,
+"speed": 1.0,
+"station": "assembler",
+"tier": 1
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"welder_mk2": {
+"behavior": "crafter",
+"catalog": "Машины: Сварочный цех",
+"category": "production",
+"cost": {
+"circuit": 2,
+"copper_wire": 8,
+"steel_gear": 4,
+"steel_plate": 8
+},
+"desc": "Сваривает каркасы, балки и корпуса. Скорость ×1.6. Энергия: 10.",
+"hp": 540,
+"model": "cb_welder_mk2",
+"name": "Сварочный цех Mk2",
+"params": {
+"power": 10,
+"speed": 1.6,
+"station": "assembler",
+"tier": 2
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"welder_mk3": {
+"behavior": "crafter",
+"catalog": "Машины: Сварочный цех",
+"category": "production",
+"cost": {
+"aluminum_plate": 10,
+"circuit_mk2": 2,
+"motor": 2,
+"steel_beam": 2
+},
+"desc": "Сваривает каркасы, балки и корпуса. Скорость ×2.4. Энергия: 20.",
+"hp": 660,
+"model": "cb_welder_mk3",
+"name": "Сварочный цех Mk3",
+"params": {
+"power": 20,
+"speed": 2.4,
+"station": "assembler",
+"tier": 3
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"welder_mk4": {
+"behavior": "crafter",
+"catalog": "Машины: Сварочный цех",
+"category": "production",
+"cost": {
+"circuit_mk3": 2,
+"servo_motor": 2,
+"superconductor": 1,
+"titanium_plate": 10
+},
+"desc": "Сваривает каркасы, балки и корпуса. Скорость ×3.5. Энергия: 35.",
+"hp": 780,
+"model": "cb_welder_mk4",
+"name": "Сварочный цех Mk4",
+"params": {
+"power": 35,
+"speed": 3.5,
+"station": "assembler",
+"tier": 4
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"welder_mk5": {
+"behavior": "crafter",
+"catalog": "Машины: Сварочный цех",
+"category": "production",
+"cost": {
+"ai_core": 1,
+"plasma_core": 1,
+"quantum_chip": 1,
+"tungsten_plate": 10
+},
+"desc": "Сваривает каркасы, балки и корпуса. Скорость ×5. Энергия: 60.",
+"hp": 900,
+"model": "cb_welder_mk5",
+"name": "Сварочный цех Mk5",
+"params": {
+"power": 60,
+"speed": 5.0,
+"station": "assembler",
+"tier": 5
+},
+"size": 1,
+"sounds": {
+"work": "work_assembly"
+}
+},
+"well_pump": {
+"behavior": "miner",
+"catalog": "Жидкости",
+"category": "fluids",
+"cost": {
+"iron_plate": 4,
+"motor": 1,
+"steel_pipe_part": 4
+},
+"desc": "Качает 30 единиц воды в минуту из-под земли где угодно.",
+"hp": 300,
+"model": "cb_well_pump",
+"name": "Скважина",
+"params": {
+"any_ground": true,
+"extracts": "fluid",
+"period": 2.0,
+"pipes": true,
+"power": 6,
+"water_item": "water"
+},
+"size": 1,
+"sounds": {
+"work": "work_pump"
+}
+},
+"wind_giant": {
+"behavior": "generator",
+"catalog": "Энергетика",
+"category": "energy",
+"cost": {
+"carbon_fiber": 4,
+"servo_motor": 2,
+"titanium_beam": 6
+},
+"desc": "Даёт до 160 энергии от ветра.",
+"hp": 520,
+"model": "cb_wind_giant",
+"name": "Гигантский ветряк",
+"params": {
+"power": 160,
+"radius": 6,
+"wind": true,
+"wire_height": 10.3
+},
+"size": 1,
+"sounds": {
+"work": "work_wind"
+}
+},
+"wind_large": {
+"behavior": "generator",
+"catalog": "Энергетика",
+"category": "energy",
+"cost": {
+"motor": 2,
+"steel_beam": 4
+},
+"desc": "Даёт до 60 энергии от ветра.",
+"hp": 320,
+"model": "cb_wind_large",
+"name": "Большой ветряк",
+"params": {
+"power": 60,
+"radius": 6,
+"wind": true,
+"wire_height": 7.3
+},
+"size": 1,
+"sounds": {
+"work": "work_wind"
+}
+},
+"wind_small": {
+"behavior": "generator",
+"catalog": "Энергетика",
+"category": "energy",
+"cost": {
+"copper_wire": 4,
+"iron_gear": 2,
+"plank": 6
+},
+"desc": "Даёт до 12 энергии от ветра.",
+"hp": 224,
+"model": "cb_wind_small",
+"name": "Малый ветряк",
+"params": {
+"power": 12,
+"radius": 6,
+"wind": true,
+"wire_height": 3.3
+},
+"size": 1,
+"sounds": {
+"work": "work_wind"
+}
+},
+"xeno_lab": {
+"behavior": "decor",
+"blocks": [
+{
+"in": {
+"alien_tissue": 1
+},
+"needs_power": true,
+"points": 8,
+"time": 20,
+"type": "research"
+},
+{
+"in": {
+"alien_tissue": 3
+},
+"needs_power": true,
+"out": {
+"blueprint_basic": 1
+},
+"time": 30,
+"type": "convert"
+}
+],
+"catalog": "Особые",
+"category": "special",
+"cost": {
+"glass": 6,
+"microchip": 2,
+"steel_plate": 8
+},
+"desc": "Изучает ткани пришельцев: даёт очки исследований и чертежи.",
+"hp": 400,
+"model": "cb_xeno_lab",
+"name": "Ксенолаборатория",
+"params": {
+"power": 10
+},
+"size": 1,
+"sounds": {
+"work": "work_lab"
+}
+}
+}

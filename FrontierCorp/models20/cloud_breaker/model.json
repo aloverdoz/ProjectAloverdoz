@@ -1,0 +1,565 @@
+{
+ "parts": [
+  {
+   "anim": "blink",
+   "color": "#ff4b3d",
+   "emission": 5,
+   "mat": "glow",
+   "mesh": "res://models20/cloud_breaker/0.res",
+   "metallic": 0,
+   "pos": [
+    0.12,
+    4.12,
+    -0.2
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cloud_breaker/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cloud_breaker/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cloud_breaker/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cloud_breaker/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cloud_breaker/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cloud_breaker/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cloud_breaker/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cloud_breaker/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cloud_breaker/5.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cloud_breaker/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cloud_breaker/6.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cloud_breaker/tex0.png"
+  },
+  {
+   "color": "#010101",
+   "mat": "paint",
+   "mesh": "res://models20/cloud_breaker/7.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.9,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/cloud_breaker/8.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#8de6ff",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/cloud_breaker/9.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#9ae6ff",
+   "emission": 5,
+   "mat": "glow",
+   "mesh": "res://models20/cloud_breaker/10.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    4.15,
+    -0.15
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cloud_breaker/11.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    3.82,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cloud_breaker/tex0.png"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#8de6ff",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/cloud_breaker/12.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    3.82,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cloud_breaker/13.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    3.82,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cloud_breaker/tex0.png"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#cdf3ff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/cloud_breaker/14.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    3.82,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#4bff73",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/cloud_breaker/15.res",
+   "metallic": 0,
+   "pos": [
+    0.2,
+    0.55,
+    0.94
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#8de6ff",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/cloud_breaker/16.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.44,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_001",
+   "color": "#8de6ff",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/cloud_breaker/17.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.24,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_002",
+   "color": "#8de6ff",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/cloud_breaker/18.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    3.04,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffb430",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/cloud_breaker/19.res",
+   "metallic": 0,
+   "pos": [
+    -0.8,
+    0.655,
+    0.8
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink_001",
+   "color": "#ff3d30",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/cloud_breaker/20.res",
+   "metallic": 0,
+   "pos": [
+    -0.8,
+    0.73,
+    0.8
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#4bff73",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/cloud_breaker/21.res",
+   "metallic": 0,
+   "pos": [
+    -0.8,
+    0.58,
+    0.8
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

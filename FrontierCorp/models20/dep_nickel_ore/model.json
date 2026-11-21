@@ -1,0 +1,157 @@
+{
+ "parts": [
+  {
+   "color": "#b9beaa",
+   "mat": "paint",
+   "mesh": "res://models20/dep_nickel_ore/0.res",
+   "metallic": 1,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.18,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/dep_nickel_ore/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.8,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/dep_nickel_ore/tex0.png"
+  },
+  {
+   "anim": "blink",
+   "color": "#e6ffda",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_nickel_ore/2.res",
+   "metallic": 0,
+   "pos": [
+    -0.1132,
+    0.7455,
+    0.1329
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#e6ffda",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_nickel_ore/3.res",
+   "metallic": 0,
+   "pos": [
+    -0.12,
+    0.7296,
+    0.1947
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#e6ffda",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_nickel_ore/4.res",
+   "metallic": 0,
+   "pos": [
+    0.4056,
+    0.4949,
+    0.1343
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#e6ffda",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_nickel_ore/5.res",
+   "metallic": 0,
+   "pos": [
+    -0.5037,
+    0.3122,
+    0.4126
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

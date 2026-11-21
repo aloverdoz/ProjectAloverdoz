@@ -1,0 +1,2256 @@
+{
+ "fov_enabled": true,
+ "fov_angle": 120,
+ "view_range": 60,
+ "near_radius": 7,
+ "drops_on_ground": true,
+ "drop_glow_time": 60,
+ "drop_lifetime": 300,
+ "pickup_radius": 2.2,
+ "hotbar_slots": 9,
+ "hotbar_size": 56,
+ "autosave_min": 5,
+ "reach": 3.5,
+ "strategy": false,
+ "strategy_pan": 1.1,
+ "face_move": true,
+ "auto_aim": true,
+ "aim_snap": 2.5,
+ "aim_ring": true,
+ "dblclick_move": true,
+ "power_mode": "stations",
+ "auto_wire": false,
+ "wire_snap": 2.5,
+ "wire_machines": true,
+ "wire_show_targets": true,
+ "auto_wire_radius": 8,
+ "wire_length": 12,
+ "wire_item": "",
+ "wire_per_m": 10,
+ "wire_color": "#1c1d22",
+ "wire_width": 0.07,
+ "fuses": true,
+ "fuse_delay": 1.5,
+ "wind_min": 0.2,
+ "wind_max": 1.0,
+ "wind_change": 1.0,
+ "take_ready_button": true,
+ "need_flat": true,
+ "flat_tolerance": 0.6,
+ "found_step": 1.0,
+ "found_levels": 8,
+ "climb_height": 0.7,
+ "nodes_block_build": true,
+ "monster_chase_time": 0.0,
+ "monster_calm_time": 0.0,
+ "monster_escape_dist": 16.0,
+ "monster_escape_time": 10.0,
+ "monster_attack_buildings": true,
+ "monster_building_cells": 8,
+ "ui_close_dist": 10.0,
+ "wade": true,
+ "minimap": true,
+ "minimap_size": 200,
+ "minimap_range": 220,
+ "minimap_rotate": true,
+ "minimap_round": true,
+ "minimap_enemies": true,
+ "bigmap": true,
+ "bigmap_range": 900,
+ "swing_raise": 2.7,
+ "hero_gait": {
+  "stride": 1.0,
+  "max_freq": 2.3,
+  "swing": 24.0,
+  "run_swing": 40.0,
+  "knee": 12.0,
+  "run_knee": 34.0,
+  "swing_knee": 60.0,
+  "run_swing_knee": 100.0,
+  "duty": 0.62,
+  "run_duty": 0.36,
+  "sprint_duty": 0.25,
+  "pelvis": 5.0,
+  "run_pelvis": 8.0,
+  "roll": 4.0,
+  "twist": 0.6,
+  "lean": 3.0,
+  "run_lean": 9.0,
+  "turn_lean": 8.0,
+  "arms": 18.0,
+  "run_arms": 38.0,
+  "elbow": 14.0,
+  "run_elbow": 85.0
+ },
+ "swing_hit": 0.8,
+ "auto_inventory": true,
+ "split_stacks": true,
+ "trash": true,
+ "wade_speed": 0.5,
+ "wade_depth": 0.85,
+ "take_all_button": true,
+ "aim_color_res": "#ffe08a",
+ "aim_color_enemy": "#ff5a46",
+ "player_speed": 9.0,
+ "player_sprint": 15.0,
+ "player_hp": 200,
+ "belt_speed": 2.0,
+ "graphics": "high",
+ "modules": {
+  "survival": false,
+  "durability": true,
+  "finite_ammo": true,
+  "melee": true,
+  "boosters": true,
+  "professions": true,
+  "events": true,
+  "pollution": true,
+  "npcs": true,
+  "orders": true,
+  "fog": true,
+  "climate": true,
+  "zone": true,
+  "fusion": true,
+  "combo": true,
+  "hazards": true,
+  "tuning": true,
+  "ufo": true,
+  "waves": true,
+  "monsters": true
+ },
+ "hunger_rate": 0.25,
+ "thirst_rate": 0.35,
+ "starve_damage": 2.0,
+ "difficulty": 1.0,
+ "cheats": true,
+ "season_look": "autumn",
+ "death": {
+  "mode": "chest",
+  "respawn_time": 6,
+  "keep_hotbar": false,
+  "chest_lifetime": 0,
+  "lose_credits": 0.0
+ },
+ "belt_ports": true,
+ "port_in_color": "#3fa9ff",
+ "port_out_color": "#5cff8c",
+ "jump_height": 1.5,
+ "jump_time": 0.55,
+ "jump_gravity": 25.0,
+ "fall_gravity_k": 1.5,
+ "jump_crouch": 0.08,
+ "step_down": 0.75,
+ "hero_model": "hero_robot_colonist",
+ "surface_detail": 1.0,
+ "fluid_tick": 0.2,
+ "pipe_fill_buffer": 2.0,
+ "tech_tree": true,
+ "pollution_k": 0.004,
+ "pollution_cap": 300,
+ "photo_filters": [
+  {
+   "name": "Обычный"
+  },
+  {
+   "name": "Кино",
+   "saturation": 1.1,
+   "contrast": 1.18,
+   "brightness": 0.97,
+   "dark": "#0f1a24",
+   "light": "#fff1dc"
+  },
+  {
+   "name": "Чёрно-белый",
+   "saturation": 0.0,
+   "contrast": 1.25
+  },
+  {
+   "name": "Сепия",
+   "saturation": 0.0,
+   "contrast": 1.1,
+   "dark": "#2a1a0c",
+   "light": "#f5e2c0"
+  },
+  {
+   "name": "Тёплый",
+   "saturation": 1.1,
+   "dark": "#1a0e06",
+   "light": "#ffe8c8"
+  },
+  {
+   "name": "Холодный",
+   "saturation": 0.95,
+   "dark": "#06101e",
+   "light": "#dceeff"
+  },
+  {
+   "name": "Яркий",
+   "saturation": 1.5,
+   "contrast": 1.1
+  },
+  {
+   "name": "Ночное видение",
+   "saturation": 0.0,
+   "contrast": 1.3,
+   "brightness": 1.3,
+   "dark": "#001a04",
+   "light": "#a8ffb0"
+  }
+ ],
+ "video_fps": 30,
+ "video_quality": 0.85,
+ "video_max_width": 1920,
+ "anim_dist": 60,
+ "anim_max": 40,
+ "npc_max": 12,
+ "sleep_dist": 160,
+ "rep_trade": 1,
+ "rep_gift_per": 10,
+ "order_check": 20,
+ "order_spread": 0.12,
+ "order_max_ratio": 1.6,
+ "order_life": 600,
+ "market_recover": 0.08,
+ "market_sell_drop": 0.004,
+ "blueprint_max": 16,
+ "net_sync_every": 3.0,
+ "net_chat_time": 20.0,
+ "flow_range": 120.0,
+ "flow_ok": "#3ddc6a",
+ "flow_stuck": "#ff3b30",
+ "flow_starve": "#ffd23a",
+ "flow_nopower": "#b06bff",
+ "flow_fluid": "#46b8ff",
+ "flow_empty": "#80868f",
+ "flow_show_empty": false,
+ "econ_abundance": true,
+ "econ_abundance_top": 5,
+ "econ_abundance_drop": 0.3,
+ "econ_abundance_min": 50,
+ "seasons": [
+  {
+   "name": "Весна",
+   "days": 5,
+   "prices": [
+    {
+     "item": "",
+     "category": "Еда",
+     "mult": 0.85
+    },
+    {
+     "item": "",
+     "category": "Сырьё",
+     "mult": 1.15
+    }
+   ],
+   "temp_day": 16,
+   "temp_night": 4,
+   "snow": 0.0,
+   "tint": "#ffffff",
+   "tint_k": 0.0
+  },
+  {
+   "name": "Лето",
+   "days": 5,
+   "prices": [
+    {
+     "item": "water_flask",
+     "category": "",
+     "mult": 1.4
+    },
+    {
+     "item": "",
+     "category": "Жидкости в таре",
+     "mult": 1.25
+    },
+    {
+     "item": "",
+     "category": "Еда",
+     "mult": 0.9
+    }
+   ],
+   "temp_day": 37,
+   "temp_night": 20,
+   "snow": 0.0,
+   "tint": "#f2e08a",
+   "tint_k": 0.18
+  },
+  {
+   "name": "Осень",
+   "days": 5,
+   "prices": [
+    {
+     "item": "",
+     "category": "Еда",
+     "mult": 1.2
+    },
+    {
+     "item": "",
+     "category": "Материалы",
+     "mult": 1.1
+    }
+   ],
+   "temp_day": 9,
+   "temp_night": -1,
+   "snow": 0.0,
+   "tint": "#d08a3a",
+   "tint_k": 0.45
+  },
+  {
+   "name": "Зима",
+   "days": 5,
+   "prices": [
+    {
+     "item": "",
+     "category": "Еда",
+     "mult": 1.4
+    },
+    {
+     "item": "coal",
+     "category": "",
+     "mult": 1.5
+    },
+    {
+     "item": "fuel",
+     "category": "",
+     "mult": 1.3
+    },
+    {
+     "item": "",
+     "category": "Сырьё",
+     "mult": 1.2
+    }
+   ],
+   "temp_day": -10,
+   "temp_night": -24,
+   "snow": 0.85,
+   "tint": "#e0e8f0",
+   "tint_k": 0.3
+  }
+ ],
+ "fog_reveal_radius": 45.0,
+ "fog_start_radius": 70.0,
+ "scout_dist": 320.0,
+ "scout_radius": 40.0,
+ "scout_speed": 30.0,
+ "maze_radius": 70,
+ "dungeons": {
+  "enabled": false,
+  "count": 4,
+  "min_dist": 70,
+  "max_dist": 220,
+  "wake_dist": 70,
+  "guards": [
+   {
+    "enemy": "guard",
+    "n": 3,
+    "from_day": 0
+   },
+   {
+    "enemy": "sniper",
+    "n": 1,
+    "from_day": 0
+   },
+   {
+    "enemy": "bomber",
+    "n": 1,
+    "from_day": 3
+   }
+  ],
+  "boss": "guard_t4",
+  "loot": [
+   {
+    "item": "crystal",
+    "chance": 1.0,
+    "min": 4,
+    "max": 8
+   },
+   {
+    "item": "circuit",
+    "chance": 1.0,
+    "min": 5,
+    "max": 10
+   },
+   {
+    "item": "steel",
+    "chance": 0.8,
+    "min": 10,
+    "max": 20
+   },
+   {
+    "item": "medkit",
+    "chance": 0.6,
+    "min": 1,
+    "max": 3
+   }
+  ],
+  "blueprints": [
+   "bp_plasma_turret",
+   "bp_teleporter",
+   "bp_antimatter_gen"
+  ]
+ },
+ "npc_characters": [
+  {
+   "id": "kind",
+   "name": "Добряк",
+   "price": 0.92,
+   "gift_k": 1.5,
+   "touchy": 1.0,
+   "refuse_below": -60,
+   "flee": false,
+   "first": "Здравствуйте! Я {name}. Рад новым соседям.\nДобрый день! Меня зовут {name}, заглядывайте ко мне.",
+   "again": "О, снова вы! Это уже {visits}-я наша встреча.\nРад вас видеть! Давно не виделись: {days} дн.",
+   "friend": "Друг мой! Для вас — лучшие цены.\nКак хорошо, что вы здесь! Я отложил для вас кое-что.",
+   "hurt": "Вы меня ударили... Я не держу зла, но больше так не надо.\nПомню ваш удар. Надеюсь, это была случайность.",
+   "gift": "Ох, спасибо! Вы очень добры.\nКакой подарок! Я этого не забуду.",
+   "trade": "Отличная сделка! Вы у меня купили уже {bought} шт.\nПриятно иметь с вами дело.",
+   "refuse": "Простите, после всего, что было, я не могу с вами торговать. Может, подарок всё исправит?",
+   "talk": "Погода сегодня хорошая.\nГоворят, в руинах на востоке спрятаны чертежи.\nБерегите себя ночью."
+  },
+  {
+   "id": "greedy",
+   "name": "Жадина",
+   "price": 1.2,
+   "gift_k": 0.7,
+   "touchy": 1.2,
+   "refuse_below": -35,
+   "flee": false,
+   "first": "Я {name}. Цены у меня честные... почти.\nИмя моё {name}. Деньги есть? Тогда поговорим.",
+   "again": "А, покупатель! Кошелёк не забыли?\nСнова вы. Цены выросли, сразу говорю.",
+   "friend": "Для постоянного клиента — скидка. Маленькая.\nВы мой лучший покупатель, {bought} шт.! Почти не обманываю вас.",
+   "hurt": "Ударили меня — платите больше! Я всё записал.\nЗа синяк накину к цене. Ничего личного.",
+   "gift": "Подарок? Беру. А ещё есть?\nНу... спасибо. Пожалуй, сброшу кредит-другой.",
+   "trade": "Деньги любят счёт. Приходите ещё!\nВыгодная сделка. Для меня.",
+   "refuse": "Нет. Вы мне должны за обиды. Подарите что-нибудь ценное — тогда поговорим.",
+   "talk": "Всё продаётся, всё покупается.\nСлышал, у вас тут богатая база...\nВремя — деньги."
+  },
+  {
+   "id": "grumpy",
+   "name": "Ворчун",
+   "price": 1.05,
+   "gift_k": 1.0,
+   "touchy": 1.5,
+   "refuse_below": -30,
+   "flee": false,
+   "first": "Я {name}. Чего уставились?\n{name}. Покупать будете или как?",
+   "again": "Опять вы. Ну ладно.\nВстречались уже {visits} раз, а толку...",
+   "friend": "Ладно, признаю, вы ничего.\nХм. Для вас, так и быть, подешевле.",
+   "hurt": "Я помню, как вы меня ударили. Не забуду!\nДрачун! Цены для вас выше.",
+   "gift": "Ну... спасибо. Неожиданно.\nПодарок? Хм. Ладно, беру.",
+   "trade": "Берите и идите.\nСделка. Всё, не задерживайте.",
+   "refuse": "Не буду с вами торговать. Уходите.",
+   "talk": "Шумно у вас тут от заводов.\nРаньше было лучше.\nМонстры совсем распоясались."
+  },
+  {
+   "id": "coward",
+   "name": "Трус",
+   "price": 1.0,
+   "gift_k": 1.2,
+   "touchy": 2.0,
+   "refuse_below": -25,
+   "flee": true,
+   "first": "Я {name}... вы ведь не кусаетесь?\nЗдравствуйте... я {name}. Тут не опасно?",
+   "again": "Это снова вы... хорошо, вы не страшный.\nА, это вы. Я уже {visits}-й раз прихожу, и жив!",
+   "friend": "С вами мне не страшно!\nВы меня защищаете — вам скидка.",
+   "hurt": "Не бейте! Я всё помню... я лучше уйду.\nВы меня били! Мне страшно с вами торговать.",
+   "gift": "Это мне? Спасибо-спасибо!\nОй, какой подарок! Вы хороший.",
+   "trade": "Спасибо, только не обижайте меня.\nВот, берите, берите.",
+   "refuse": "Нет-нет, вы меня обижали. Я боюсь.",
+   "talk": "Ночью тут ужасно.\nА стены у вас крепкие?\nЯ слышал рёв из руин..."
+  },
+  {
+   "id": "proud",
+   "name": "Гордец",
+   "price": 1.1,
+   "gift_k": 0.8,
+   "touchy": 3.0,
+   "refuse_below": -20,
+   "flee": false,
+   "first": "Я {name}, лучший торговец этих земель.\n{name} — запомните это имя.",
+   "again": "Вы снова пришли к лучшему. Разумно.\nНаша {visits}-я встреча. Вы делаете успехи.",
+   "friend": "Вы достойны моих товаров.\nЛишь избранным — такие цены.",
+   "hurt": "Вы подняли на меня руку. Этого я не прощу.\nОскорбление помнят долго.",
+   "gift": "Подарок принят. Вы знаете, кому дарить.\nНеплохо. Но этого мало, чтобы купить моё уважение.",
+   "trade": "Достойный выбор.\nВы купили у меня уже {bought}. Знаток!",
+   "refuse": "После оскорбления я с вами дел не веду.",
+   "talk": "Мои товары с самого края мира.\nКачество — моё второе имя.\nНе каждому я продаю."
+  },
+  {
+   "id": "cruel",
+   "name": "Жестокий (налётчик)",
+   "price": 1.0,
+   "gift_k": 1.0,
+   "touchy": 1.0,
+   "refuse_below": -100,
+   "flee": false,
+   "arrive": "Налётчики «{faction}»: «Отдавайте склады по-хорошему!»\nНалётчики идут к базе: «Мы заберём всё!»",
+   "revenge": "Налётчики «{faction}»: «Вы убили наших: {kills}. Пришли за расплатой!»\nНалётчики: «За каждого из {kills} убитых — ответите!»",
+   "rich": "Налётчики: «Прошлый раз унесли {robbed} шт. Пришли за добавкой!»",
+   "first": "",
+   "again": "",
+   "friend": "",
+   "hurt": "",
+   "gift": "",
+   "trade": "",
+   "refuse": "",
+   "talk": ""
+  },
+  {
+   "id": "cunning",
+   "name": "Хитрый (налётчик)",
+   "price": 1.0,
+   "gift_k": 1.0,
+   "touchy": 1.0,
+   "refuse_below": -100,
+   "flee": true,
+   "arrive": "Налётчики «{faction}» крадутся к складам...\nКто-то шуршит у складов: налётчики!",
+   "revenge": "Налётчики «{faction}»: «Мы помним {kills} своих. Теперь будем умнее».",
+   "rich": "Налётчики вернулись: «У вас так легко брать! Уже {robbed} шт.»",
+   "first": "",
+   "again": "",
+   "friend": "",
+   "hurt": "",
+   "gift": "",
+   "trade": "",
+   "refuse": "",
+   "talk": ""
+  }
+ ],
+ "npc_names": "Аким\nБорис\nВера\nГлеб\nДарья\nЕфим\nЖанна\nЗиновий\nИнна\nКузьма\nЛада\nМирон\nНина\nОсип\nПолина\nРодион\nСава\nТаисия\nУстин\nФрол\nХаритон\nЮлия\nЯков\nАгата\nМстислав\nУльяна",
+ "npc_return_chance": 0.6,
+ "npc_rel_hurt": 12,
+ "npc_bandit_revenge_from": 3,
+ "climate": {
+  "comfort_min": 8,
+  "comfort_max": 30,
+  "chill_rate": 0.05,
+  "heat_rate": 0.05,
+  "recover": 4.0,
+  "cold_damage": 3.0,
+  "heat_damage": 2.0,
+  "heat_thirst": 1.5,
+  "slow_from": 60,
+  "slow": 0.3,
+  "hot_clothes": 0.5,
+  "temp_day": 18,
+  "temp_night": 8,
+  "show_temp": true,
+  "magma_heat": 55.0,
+  "magma_radius": 4.0
+ },
+ "detail_size": 0.2,
+ "mesh_lod": true,
+ "lod_min_tris": 300,
+ "flora_shadow_dist": 70.0,
+ "palette": {
+  "body_dark": "#262a31",
+  "body_mid": "#5d6672",
+  "metal_light": "#c9d0d8",
+  "accent": "#f2a12e",
+  "enemy_glow": "#ff4a1c",
+  "hero_glow": "#38d6ff"
+ },
+ "char_style": {
+  "toon": true,
+  "steps": 3,
+  "shade": 0.38,
+  "rim": 0.35,
+  "spec": 0.45,
+  "outline": true,
+  "outline_width": 2.0,
+  "outline_color": "#14161c"
+ },
+ "purity": [
+  {
+   "id": "poor",
+   "name": "Бедная",
+   "per_min": 30,
+   "chance": 20,
+   "color": "#9aa0a6"
+  },
+  {
+   "id": "normal",
+   "name": "Нормальная",
+   "per_min": 60,
+   "chance": 45,
+   "color": "#e8e8e8"
+  },
+  {
+   "id": "rich",
+   "name": "Богатая",
+   "per_min": 120,
+   "chance": 30,
+   "color": "#ffd24a"
+  },
+  {
+   "id": "legendary",
+   "name": "Легендарная",
+   "per_min": 240,
+   "chance": 5,
+   "color": "#c77dff"
+  }
+ ],
+ "purity_start": "normal,rich",
+ "zone": {
+  "enabled": true,
+  "block_m": 8.0,
+  "start_blocks": 15,
+  "max_blocks": 90,
+  "growth": 1.18,
+  "steps": [
+   {
+    "cost": {
+     "log": 10,
+     "stone": 10
+    }
+   },
+   {
+    "cost": {
+     "plank": 10,
+     "stone": 15
+    }
+   },
+   {
+    "cost": {
+     "plank": 15,
+     "stone": 20
+    }
+   },
+   {
+    "cost": {
+     "iron_ingot": 10,
+     "plank": 10
+    }
+   },
+   {
+    "cost": {
+     "iron_ingot": 15,
+     "copper_ingot": 10
+    }
+   },
+   {
+    "cost": {
+     "gear": 6,
+     "iron_ingot": 15
+    }
+   },
+   {
+    "cost": {
+     "wire": 15,
+     "iron_plate": 6
+    }
+   },
+   {
+    "cost": {
+     "iron_plate": 10,
+     "gear": 8,
+     "concrete": 5
+    }
+   },
+   {
+    "cost": {
+     "iron_plate": 12,
+     "wire": 20,
+     "bronze_ingot": 4
+    }
+   },
+   {
+    "cost": {
+     "concrete": 15,
+     "iron_plate": 15,
+     "reinforced_plate": 2
+    }
+   },
+   {
+    "cost": {
+     "steel": 10,
+     "gear": 15
+    }
+   },
+   {
+    "cost": {
+     "steel": 15,
+     "concrete": 20
+    }
+   },
+   {
+    "cost": {
+     "steel_beam": 4,
+     "wire": 30
+    }
+   },
+   {
+    "cost": {
+     "circuit": 4,
+     "steel": 20
+    }
+   },
+   {
+    "cost": {
+     "motor": 1,
+     "steel_beam": 6,
+     "glass": 10
+    }
+   },
+   {
+    "cost": {
+     "circuit": 8,
+     "glass": 15,
+     "concrete": 30
+    }
+   },
+   {
+    "cost": {
+     "motor": 2,
+     "circuit": 10
+    }
+   },
+   {
+    "cost": {
+     "plastic": 10,
+     "steel": 30
+    }
+   },
+   {
+    "cost": {
+     "motor": 3,
+     "plastic": 15
+    }
+   },
+   {
+    "cost": {
+     "circuit": 15,
+     "steel_beam": 10
+    }
+   },
+   {
+    "cost": {
+     "motor": 4,
+     "circuit": 20,
+     "plastic": 20
+    }
+   },
+   {
+    "cost": {
+     "pcb": 20,
+     "aluminum_ingot": 30,
+     "battery": 10
+    }
+   },
+   {
+    "cost": {
+     "computer": 6,
+     "stainless_steel": 30
+    }
+   },
+   {
+    "cost": {
+     "ai_module": 4,
+     "titanium_ingot": 40
+    }
+   },
+   {
+    "cost": {
+     "turbine": 4,
+     "tungsten_ingot": 30
+    }
+   },
+   {
+    "cost": {
+     "cloud_core": 1
+    }
+   }
+  ],
+  "corner": 0.35,
+  "wobble": 4.0,
+  "shape_seed": 7,
+  "soft": 5.0,
+  "cloud_height": 2.4,
+  "cloud_layers": 3,
+  "cloud_density": 0.9,
+  "cloud_far": 120.0,
+  "lightning_every": 4.0,
+  "flicker": 1.0,
+  "cloud_speed": 1.0,
+  "dark_color": "#0f0f17",
+  "cloud_color": "#5a5478",
+  "flash_color": "#a8c0ff",
+  "patches": false,
+  "patch_blocks": 3,
+  "patch_cost_k": 0.6,
+  "patch_per_step": 3,
+  "expand_cooldown": 60.0
+ },
+ "scan": {
+  "enabled": false,
+  "consume": true,
+  "start_known": [],
+  "start_researched": []
+ },
+ "bag": {
+  "enabled": true,
+  "start": 36,
+  "max": 81,
+  "steps": [
+   {
+    "add": 9,
+    "cost": {
+     "fiber": 20,
+     "log": 10
+    }
+   },
+   {
+    "add": 9,
+    "cost": {
+     "plank": 20,
+     "fiber": 30
+    }
+   },
+   {
+    "add": 9,
+    "cost": {
+     "iron_plate": 20,
+     "plank": 20
+    }
+   },
+   {
+    "add": 9,
+    "cost": {
+     "gear": 20,
+     "wire": 30
+    }
+   },
+   {
+    "add": 9,
+    "cost": {
+     "steel": 20,
+     "iron_plate": 40
+    }
+   }
+  ]
+ },
+ "tutorial": {
+  "enabled": true,
+  "steps": [
+   {
+    "title": "Высадка завершена!",
+    "text": "Корпорация [b]Aloverdoz[/b] выбрала вас из 4 812 кандидатов. Остальные 4 811, к сожалению, умели читать мелкий шрифт в контракте.\n\nПеред вами дикая планета: ни дорог, ни соседей, ни Wi-Fi. Зато руды хватит на тысячу лет и найдётся пара очень недружелюбных машин. Совет директоров ждёт от вас одного: превратить этот камень в легенду, о которой будут рассказывать на корпоративах.\n\nМы покажем первые шаги. Если вы и так всё знаете, смело жмите «Пропустить» сверху: корпорация ценит уверенность (и экономит на инструкторах).",
+    "goal": "next",
+    "hint": "",
+    "highlight": "",
+    "can_skip": false
+   },
+   {
+    "title": "Первые шаги",
+    "text": "Ходите клавишами {key:move_up} {key:move_left} {key:move_down} {key:move_right}. Зажмите {key:sprint}, чтобы бежать: бег по инопланетной траве входит в пакет льгот. Колесо мыши приближает и отдаляет камеру.",
+    "goal": "move",
+    "hint": "",
+    "highlight": "",
+    "can_skip": true,
+    "n": 20
+   },
+   {
+    "title": "Великая эпоха веток",
+    "text": "Каждая империя начиналась с малого. Ваша начнётся с веток. Бейте любое дерево [b]левой кнопкой мыши[/b], и с него посыплются ветки. Сухие деревья и пни щедрее: им терять нечего.",
+    "goal": "have",
+    "hint": "Ветки нужны для первых инструментов и как топливо. Отдел закупок гордится этим решением.",
+    "highlight": "",
+    "can_skip": true,
+    "item": "branch",
+    "n": 6
+   },
+   {
+    "title": "Волокно",
+    "text": "Рвите [b]высокую траву-волокно[/b] и цветы левой кнопкой мыши. Волокно нужно для кирки и топора. Цветы, кстати, тоже идут в дело: романтика на этой планете строго по смете.",
+    "goal": "have",
+    "hint": "Траву-волокно видно по светлым пучкам. Ягодные кусты и кактусы тоже дают волокно.",
+    "highlight": "",
+    "can_skip": true,
+    "item": "fiber",
+    "n": 4
+   },
+   {
+    "title": "Камень",
+    "text": "Камни лежат на земле. Бейте их левой кнопкой мыши, как деревья. Камень не обидится: мы спрашивали.",
+    "goal": "have",
+    "hint": "",
+    "highlight": "",
+    "can_skip": true,
+    "item": "stone",
+    "n": 8
+   },
+   {
+    "title": "Рюкзак",
+    "text": "Откройте рюкзак ({key:inventory}). Первые ячейки с цифрами — это панель быстрого доступа внизу экрана: цифрой выбираете, что держать в руках. Двойной клик по предмету переносит всю стопку в открытое здание.",
+    "goal": "open",
+    "hint": "Ненужное перетащите в красную ячейку «мусор». Корпорация утилизирует его с благодарностью и без вопросов.",
+    "highlight": "hotbar",
+    "can_skip": true,
+    "window": "inventory"
+   },
+   {
+    "title": "Кирка",
+    "text": "Откройте окно крафта ({key:craft}) и сделайте [b]каменную кирку[/b]: 3 ветки, 3 камня, 2 волокна. Киркой быстрее добывать камень, а руду голыми руками добывать очень долго.",
+    "goal": "have",
+    "hint": "Наведите на рецепт — подсказка покажет, чего не хватает.",
+    "highlight": "",
+    "can_skip": true,
+    "item": "stone_pickaxe",
+    "n": 1
+   },
+   {
+    "title": "Топор",
+    "text": "Там же, в крафте ({key:craft}), сделайте [b]каменный топор[/b]: 3 ветки, 2 камня, 2 волокна. Топор рубит деревья в разы быстрее. Ветки и волокно кончились? Наберите ещё — они растут повсюду.",
+    "goal": "have",
+    "hint": "Выберите топор цифрой на панели внизу, чтобы держать его в руках.",
+    "highlight": "",
+    "can_skip": true,
+    "item": "stone_axe",
+    "n": 1
+   },
+   {
+    "title": "Брёвна",
+    "text": "Рубите деревья топором, пока они не упадут: брёвна сами попадут в рюкзак. Кричать «Поберегись!» не обязательно, но корпорация одобряет.",
+    "goal": "have",
+    "hint": "Брёвна нужны для верстака и досок. Пни топор не трогает — из них снова вырастут деревья ({key:rotate} с топором в руках — корчевать пни).",
+    "highlight": "",
+    "can_skip": true,
+    "item": "log",
+    "n": 6
+   },
+   {
+    "title": "Верстак",
+    "text": "Откройте меню стройки ({key:build_menu}), раздел «Станции», и поставьте [b]верстак[/b]: 4 бревна и 4 камня. На верстаке делаются доски.",
+    "goal": "build",
+    "hint": "{key:rotate} — повернуть здание, ПКМ — отменить стройку.",
+    "highlight": "",
+    "can_skip": true,
+    "building": "workbench",
+    "n": 1
+   },
+   {
+    "title": "Доски",
+    "text": "Подойдите к верстаку и откройте окно крафта ({key:craft}) — рядом с верстаком появится вкладка [b]«Верстак»[/b] (или {key:interact} по верстаку → «Открыть крафт»). Сделайте [b]«Доски»[/b]: брёвна берутся прямо из рюкзака, из одного бревна выходит 3 доски. Наберите 25 досок: 15 уйдут на открытие, 10 — на мастерскую.",
+    "goal": "have",
+    "hint": "Верстак работает, пока вы стоите рядом. Нажмите на рецепт несколько раз — изделия встанут в очередь.",
+    "highlight": "",
+    "can_skip": true,
+    "item": "plank",
+    "n": 25
+   },
+   {
+    "title": "Руда",
+    "text": "Цветные пятна на земле — залежи руды. Возьмите кирку в руки и бейте [b]залежь железа[/b], пока не наберёте 10 руды. Где-то в главном офисе в этот момент открывают шампанское.",
+    "goal": "have",
+    "hint": "Наведите курсор на залежь — подпись покажет, какая это руда.",
+    "highlight": "",
+    "can_skip": true,
+    "item": "iron_ore",
+    "n": 10
+   },
+   {
+    "title": "Печь",
+    "text": "Откройте меню стройки ({key:build_menu}) и поставьте [b]каменную печь[/b]: 20 камня. Первая печь — первый шаг к индустриальному величию. И к счетам за отопление.",
+    "goal": "build",
+    "hint": "{key:rotate} — повернуть здание, ПКМ — отменить стройку. У печи два входа: в любой можно подавать и руду, и топливо.",
+    "highlight": "",
+    "can_skip": true,
+    "building": "furnace",
+    "n": 1
+   },
+   {
+    "title": "Железо",
+    "text": "Откройте печь ({key:interact}) и положите в неё руду и топливо (ветки, брёвна или древесный уголь). Печь сама выплавит слитки — заберите 10 [b]железных слитков[/b]. Пахнет прогрессом. И немного горелым.",
+    "goal": "have",
+    "hint": "Двойной клик по стопке в рюкзаке переносит её в печь целиком.",
+    "highlight": "",
+    "can_skip": true,
+    "item": "iron_ingot",
+    "n": 10
+   },
+   {
+    "title": "Штаб",
+    "text": "Штаб — сердце базы и ваш личный офис с видом на дикую природу. Всё, что сложено в штаб, можно тратить на стройку. Кнопка «Сложить в штаб» в рюкзаке переносит туда всё лишнее.",
+    "goal": "next",
+    "hint": "",
+    "highlight": "storage",
+    "can_skip": false
+   },
+   {
+    "title": "Открытие: Мастерская",
+    "text": "Новые здания открываются в [b]дереве открытий[/b] ({key:tech}). Откройте [b]«Мастерскую»[/b]: нажмите на неё и «Сдать» — уйдут 15 досок, 15 камня и 5 слитков. Открытия стоят ещё и [b]кредитов[/b] — Мастерская 100 кр. Стартовых кредитов хватит на первые открытия (в «Хардкоре» и «Безумии» их нет — кредиты дают продажа и задания).",
+    "goal": "tech",
+    "hint": "Кнопка «Сдать» берёт нужное из рюкзака и со склада штаба.",
+    "highlight": "",
+    "can_skip": true,
+    "tech": "t_workshop"
+   },
+   {
+    "title": "Мастерская",
+    "text": "Поставьте [b]мастерскую[/b] ({key:build_menu}, раздел «Станции»): 10 досок, 10 камня, 5 слитков. В мастерской делаются детали: шестерни, провода, пластины, патроны.",
+    "goal": "build",
+    "hint": "",
+    "highlight": "",
+    "can_skip": true,
+    "building": "workshop",
+    "n": 1
+   },
+   {
+    "title": "Шестерни",
+    "text": "Подойдите к мастерской и откройте окно крафта ({key:craft}), вкладка [b]«Мастерская»[/b]. Сделайте [b]«Шестерню»[/b] (2 слитка из рюкзака) — нужно 6 шестерней для генератора и бура.",
+    "goal": "have",
+    "hint": "Слитков не хватает? Печь продолжает плавить — просто подкиньте ей руды.",
+    "highlight": "",
+    "can_skip": true,
+    "item": "gear",
+    "n": 6
+   },
+   {
+    "title": "Открытие: Добыча",
+    "text": "Снова дерево открытий ({key:tech}): откройте [b]«Добычу»[/b] — 10 слитков и 10 досок. Появятся бур, генератор и станции энергии.",
+    "goal": "tech",
+    "hint": "Кнопка «Сдать» берёт нужное из рюкзака и со склада штаба.",
+    "highlight": "",
+    "can_skip": true,
+    "tech": "t_mining"
+   },
+   {
+    "title": "Генератор",
+    "text": "Поставьте [b]генератор[/b] рядом с залежью руды: 10 слитков, 10 камня, 2 шестерни. Откройте его ({key:interact}) и положите топливо: брёвна, ветки или древесный уголь. Счёт за электричество корпорация великодушно берёт на себя.",
+    "goal": "build",
+    "hint": "Угольному генератору позже понадобится вода по трубе.",
+    "highlight": "",
+    "can_skip": true,
+    "building": "generator",
+    "n": 1
+   },
+   {
+    "title": "Бур",
+    "text": "Поставьте [b]бур[/b] прямо на залежь руды: 8 слитков, 4 шестерни, 4 доски. Он сам добывает руду и выдаёт её через [b]зелёный разъём[/b]. Он не жалуется, не просит отпуск и не ходит на обед.",
+    "goal": "build",
+    "hint": "Бур Mk2 добывает в 2 раза больше, Mk3 — в 4 раза.",
+    "highlight": "",
+    "can_skip": true,
+    "building": "miner",
+    "n": 1
+   },
+   {
+    "title": "Станция энергии",
+    "text": "Генератор даёт энергию, а до зданий её доносят [b]станции энергии[/b]. Поставьте станцию ({key:build_menu}, раздел «Энергетика») рядом с буром: всё, что в её круге, получает энергию. Станции связываются с генератором и друг с другом на расстоянии до 8 клеток. Станция: 2 доски и 2 провода.",
+    "goal": "build",
+    "building": "pole",
+    "n": 1,
+    "can_skip": true,
+    "highlight": "",
+    "hint": "Провода делаются в мастерской из медных слитков: медную руду плавьте в печи, как железо."
+   },
+   {
+    "title": "Энергия",
+    "text": "Нажмите {key:wire} — откроется [b]карта энергии[/b]: круги станций и линии связи. Бур должен стоять внутри круга, а станция — рядом с генератором. Положите в генератор топливо, и бур заработает. Счёт за электричество корпорация великодушно берёт на себя.",
+    "goal": "powered",
+    "n": 1,
+    "can_skip": true,
+    "highlight": "",
+    "hint": "Не хватает мощности? Ещё один генератор рядом или станция выше уровнем. Снова {key:wire} — закрыть карту."
+   },
+   {
+    "title": "Конвейер",
+    "text": "Протяните [b]конвейер[/b] ({key:build_menu}) от зелёного разъёма бура к печи или в штаб: зажмите левую кнопку и ведите мышью, повороты соберутся сами. Смотреть, как едут ресурсы, — официально признанный вид отдыха. У зданий есть порты: [color=#5cff8c]зелёный[/color] — выход, [color=#3fa9ff]синий[/color] — вход. Лента подключается только к ним, в любой вход можно подавать что угодно; входов столько, сколько разных ресурсов нужно зданию.",
+    "goal": "build",
+    "hint": "Выход у здания один. Нужно поделить поток — поставьте разделитель.",
+    "highlight": "",
+    "can_skip": true,
+    "building": "belt",
+    "n": 5
+   },
+   {
+    "title": "Снос",
+    "text": "Поставили не туда? Нажмите {key:demolish} — включится [b]снос[/b]. Кликните по лишнему зданию или куску ленты: всё потраченное вернётся в рюкзак. Зажмите кнопку и ведите мышью — снесёте целую линию.",
+    "goal": "demolish",
+    "n": 1,
+    "can_skip": true,
+    "highlight": "",
+    "hint": "ПКМ или Esc — выйти из сноса. Штаб снести нельзя: он слишком важен для отчётности."
+   },
+   {
+    "title": "Чёрный рынок",
+    "text": "Кредиты на открытия зарабатывает [b]Чёрный рынок[/b]. Поставьте его ({key:build_menu}, раздел «Логистика») и подайте ленту или положите предметы руками — кредиты придут на счёт. Сырьё стоит гроши, а готовые детали — намного дороже. Корпорация о рынке ничего не знает. Официально.",
+    "goal": "build",
+    "building": "black_market",
+    "n": 1,
+    "can_skip": true,
+    "highlight": "",
+    "hint": "Каждый рынок принимает до 30 предметов в минуту — потом понадобится несколько."
+   },
+   {
+    "title": "Открытие: Оборона",
+    "text": "Местные машины-захватчики не оценили ваш бизнес-план. Пока завод маленький, они приходят редко (примерно раз в полчаса) и их мало, но лучше подготовиться. Откройте [b]«Оборону»[/b] в дереве открытий ({key:tech}): 20 слитков и 30 камня.",
+    "goal": "tech",
+    "hint": "Чем больше вы открываете, тем чаще и сильнее волны, а потом приходят и боссы. Таймер волны — сверху экрана.",
+    "highlight": "wave",
+    "can_skip": true,
+    "tech": "t_defense"
+   },
+   {
+    "title": "Турель",
+    "text": "Поставьте [b]турель[/b] рядом с базой. Ей нужна энергия, а патроны кладите в саму турель: откройте её (E) → «Положить» (стартовый запас лежит в штабе), позже — лентой или через канал штаба. Турель ведёт переговоры за вас.",
+    "goal": "build",
+    "hint": "Позже — мастерские роботов-строителей: они сами отстраивают сломанное.",
+    "highlight": "wave",
+    "can_skip": true,
+    "building": "turret",
+    "n": 1
+   },
+   {
+    "title": "Граница",
+    "text": "Вокруг базы стоит граница из грозовых туч. За ней ничего не видно и нельзя строить. Расширить зону можно за ресурсы в окне штаба. Корпорация называет это «инвестициями в недвижимость».",
+    "goal": "next",
+    "hint": "",
+    "highlight": "minimap",
+    "can_skip": false
+   },
+   {
+    "title": "Испытательный срок пройден!",
+    "text": "Поздравляем, теперь вы официально полезный сотрудник корпорации [b]Aloverdoz[/b]. Список задач справа подскажет, что дальше. Новые здания открываются в дереве открытий ({key:tech}). Все клавиши — в окне «Как играть» ({key:help}).\n\nПланета ваша. Сделайте так, чтобы совет директоров прослезился. Желательно от гордости.",
+    "goal": "next",
+    "hint": "",
+    "highlight": "quests",
+    "can_skip": false
+   }
+  ]
+ },
+ "fusion": {
+  "enabled": true,
+  "combo": true,
+  "ask": true,
+  "ask_time": 20.0,
+  "max_level": 5,
+  "level_mult": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "power_scale": true,
+  "max_parts": 5,
+  "furnace_power": 4.0,
+  "no_merge": [
+   "belt",
+   "splitter",
+   "merger",
+   "pipe",
+   "foundation",
+   "wall",
+   "floor",
+   "hq",
+   "pole",
+   "tank",
+   "decor",
+   "hq_link"
+  ],
+  "scale_step": 0.1,
+  "host_scale": 0.72,
+  "module_scale": 0.42,
+  "roof_scale": 0.55,
+  "roof_h": 2.0,
+  "corner_k": 0.62,
+  "platform_k": 1.25,
+  "color": "#ffb040",
+  "label_size": 1.0,
+  "label_dist": 35.0,
+  "furnace_fuel": "fuel",
+  "fuel_from_line": true,
+  "fuel_from_chest": true,
+  "chest_default": "auto",
+  "overflow_default": "wait",
+  "techs": [
+   "t_fuse1",
+   "t_fuse2",
+   "t_fuse3",
+   "t_fuse4"
+  ]
+ },
+ "drones": {
+  "per_level": [
+   1,
+   2,
+   4,
+   8,
+   15
+  ],
+  "capacity": 10,
+  "capacity_per_level": 0.0,
+  "speed": 12.0,
+  "speed_per_level": 0.0,
+  "battery_m": 400.0,
+  "charge_rate": 25.0,
+  "reserve": 0.15,
+  "range": 150.0,
+  "hp": 60.0,
+  "repair": 2.0,
+  "threat_r": 7.0,
+  "low_h": 3.0,
+  "dmg_k": 1.0,
+  "rebuild_s": 30.0,
+  "rebuild_cost": {
+   "iron_plate": 4,
+   "circuit": 2,
+   "motor": 1
+  },
+  "cruise_h": 7.0,
+  "retry_s": 4.0,
+  "model": "drone_carrier",
+  "scale": 0.8
+ },
+ "radiation": {
+  "enabled": true,
+  "dmg_k": 1.0,
+  "deposit_strength": 1.5,
+  "deposit_radius": 7.0,
+  "item_k": 1.0,
+  "item_cap": 6.0,
+  "building_radius": 8.0,
+  "zone_decay": 0.003,
+  "build_block": 3.0,
+  "show_meter": true,
+  "warn_at": 0.5,
+  "reactor_leak": 0.5,
+  "reactor_hot": 2.0,
+  "zone_color": "#7dff5a",
+  "zone_k": 0.05,
+  "zone_grid": 2,
+  "building_k": 0.3,
+  "dose_k": 1.0,
+  "recover": 0.5,
+  "sick_dps": 1.0,
+  "geiger": true
+ },
+ "acid": {
+  "enabled": true,
+  "pipe_dps": 1.5,
+  "spill_radius": 4.0,
+  "spill_dps": 10.0,
+  "spill_time": 45.0,
+  "carry_k": 1.0,
+  "carry_cap": 5.0,
+  "color": "#c8e04a"
+ },
+ "reactor": {
+  "heat_per_rod": 650.0,
+  "power_per_heat": 1.0,
+  "steam_t": 100.0,
+  "max_flow": 9.0,
+  "cool_per_water": 300.0,
+  "cool_full_at": 250.0,
+  "passive": 0.5,
+  "heat_cap": 40.0,
+  "warn_t": 500.0,
+  "crit_t": 800.0,
+  "melt_t": 1100.0,
+  "crit_time": 15.0,
+  "rod_life": 1200.0,
+  "rod_speed": 20.0,
+  "scram_speed": 60.0,
+  "water_buf": 60.0,
+  "boom_radius": 14.0,
+  "hurt_radius": 28.0,
+  "boom_damage": 400.0,
+  "zone_radius": 40.0,
+  "zone_strength": 60.0,
+  "slots": 4,
+  "coolant": "water",
+  "waste": "nuclear_waste",
+  "auto_scram_default": false,
+  "boom_hq": false
+ },
+ "tuning": {
+  "enabled": true,
+  "width": 12.0,
+  "danger": 92.0,
+  "low": 8.0,
+  "low_pen": 0.25,
+  "danger_pen": 0.3,
+  "wear_dps": 4.0,
+  "hint_tech": "t_tuning",
+  "golden_min": 12.0,
+  "golden_max": 88.0,
+  "neutral": 50.0,
+  "kinds": {
+   "heat": {
+    "name": "Температура печи",
+    "knob": "Жар",
+    "lo": "Холодно",
+    "hi": "Перегрев",
+    "effects": {
+     "speed": 0.35,
+     "output": 0.1
+    },
+    "desc": "В «золотой» температуре плавка быстрее и иногда даёт лишний слиток. Слишком холодно — медленно, перегрев — печь портится."
+   },
+   "rpm": {
+    "name": "Обороты бура",
+    "knob": "Обороты",
+    "lo": "Медленно",
+    "hi": "Разнос",
+    "effects": {
+     "speed": 0.3
+    },
+    "desc": "Правильные обороты под вашу залежь — больше руды в минуту. На разносе бур изнашивается."
+   },
+   "pressure": {
+    "name": "Давление насоса",
+    "knob": "Давление",
+    "lo": "Слабо",
+    "hi": "Гидроудар",
+    "effects": {
+     "speed": 0.3
+    },
+    "desc": "Подберите давление — насос качает больше. Слишком высокое ломает насос."
+   },
+   "calib": {
+    "name": "Калибровка сборщика",
+    "knob": "Точность",
+    "lo": "Грубо",
+    "hi": "Дрожь",
+    "effects": {
+     "output": 0.25,
+     "speed": 0.1
+    },
+    "desc": "Точная калибровка иногда даёт лишнюю деталь из тех же материалов."
+   },
+   "mix": {
+    "name": "Смесь топливо/воздух",
+    "knob": "Смесь",
+    "lo": "Бедная",
+    "hi": "Богатая",
+    "effects": {
+     "fuel": 0.45,
+     "supply": 0.18
+    },
+    "desc": "Точная смесь повышает отдачу генератора и продлевает работу на одной порции топлива."
+   },
+   "ph": {
+    "name": "Кислотность (pH)",
+    "knob": "pH",
+    "lo": "Щёлочь",
+    "hi": "Кислота",
+    "effects": {
+     "speed": 0.25,
+     "output": 0.15
+    },
+    "desc": "Каждая химия любит свой pH: найдёте — реакции идут быстрее и с прибытком."
+   },
+   "spin": {
+    "name": "Частота центрифуги",
+    "knob": "Частота",
+    "lo": "Вяло",
+    "hi": "Резонанс",
+    "effects": {
+     "output": 0.3
+    },
+    "desc": "На правильной частоте центрифуга иногда отделяет вдвое больше. Резонанс разрушает её."
+   },
+   "aim": {
+    "name": "Пристрелка турели",
+    "knob": "Поправка",
+    "lo": "Недолёт",
+    "hi": "Перелёт",
+    "effects": {
+     "damage": 0.3
+    },
+    "desc": "Пристрелянная турель бьёт сильнее."
+   },
+   "tilt": {
+    "name": "Наклон панели",
+    "knob": "Угол",
+    "lo": "Плоско",
+    "hi": "Отвесно",
+    "effects": {
+     "supply": 0.35
+    },
+    "desc": "Под правильным углом панель ловит больше солнца."
+   },
+   "pitch": {
+    "name": "Шаг лопастей",
+    "knob": "Шаг",
+    "lo": "Мелкий",
+    "hi": "Флюгер",
+    "effects": {
+     "supply": 0.35
+    },
+    "desc": "Правильный шаг лопастей — больше энергии. На крайнем шаге ветряк трясёт."
+   },
+   "plasma": {
+    "name": "Удержание плазмы",
+    "knob": "Поле",
+    "lo": "Слабое",
+    "hi": "Пережатие",
+    "effects": {
+     "supply": 0.4,
+     "fuel": 0.3
+    },
+    "desc": "Точное магнитное поле — больше энергии и дольше горит ячейка. Пережатие повреждает реактор."
+   }
+  },
+  "calibration_research": 18,
+  "calibration_credits": 600
+ },
+ "patterns": {
+  "enabled": true,
+  "list": [
+   {
+    "id": "p_steel",
+    "name": "Дуговая плавка",
+    "recipe": "steel_arc",
+    "hint": "Уголь сверху и снизу, железо в середине — как электроды.",
+    "grid": [
+     "....",
+     "CCCC",
+     "IIII",
+     "CCCC"
+    ],
+    "key": {
+     "C": "coal_hq",
+     "I": "iron_ingot"
+    }
+   },
+   {
+    "id": "p_circuit",
+    "name": "Плотная плата",
+    "recipe": "circuit_dense",
+    "hint": "Кварц по углам, провода крестом, пластик в центре.",
+    "grid": [
+     "QW.Q",
+     "WPPW",
+     "WPPW",
+     "Q.WQ"
+    ],
+    "key": {
+     "Q": "quartz",
+     "W": "wire",
+     "P": "plastic"
+    }
+   },
+   {
+    "id": "p_helium",
+    "name": "Отбор гелия",
+    "recipe": "helium_from_waste",
+    "hint": "Отходы — в кольцо вокруг сверхпроводника.",
+    "grid": [
+     ".NN.",
+     "NSSN",
+     "NSSN",
+     ".NN."
+    ],
+    "key": {
+     "N": "nuclear_waste",
+     "S": "superconductor"
+    }
+   },
+   {
+    "id": "p_void",
+    "name": "Решётка пустоты",
+    "recipe": "void_synth",
+    "hint": "Шахматная доска из кристаллов и ядер монстров.",
+    "grid": [
+     "CMCM",
+     "MCMC",
+     "CMCM",
+     "MCMC"
+    ],
+    "key": {
+     "C": "crystal",
+     "M": "monster_core"
+    }
+   },
+   {
+    "id": "p_alu",
+    "name": "Каталитическая сетка",
+    "recipe": "alu_catalyst",
+    "hint": "Биогель по диагонали, остальное — листы алюминия.",
+    "grid": [
+     "GAAA",
+     "AGAA",
+     "AAGA",
+     "AAAG"
+    ],
+    "key": {
+     "G": "bio_gel",
+     "A": "aluminum_sheet"
+    }
+   },
+   {
+    "id": "p_anti",
+    "name": "Холодная ловушка",
+    "recipe": "antimatter_cold",
+    "hint": "Рамка из сверхпроводников, внутри — ячейки.",
+    "grid": [
+     "SSSS",
+     "SFFS",
+     "SFFS",
+     "SSSS"
+    ],
+    "key": {
+     "S": "superconductor",
+     "F": "fusion_cell"
+    }
+   }
+  ]
+ },
+ "ufo": {
+  "enabled": true,
+  "interval": 420.0,
+  "first": 120.0,
+  "stay": 20.0,
+  "capacity": 1000,
+  "day_len": 1200.0,
+  "swing_min": 0.5,
+  "swing_max": 1.6,
+  "step": 0.35,
+  "sell_k": 0.6,
+  "height": 40.0,
+  "goods": {
+   "helium3": {
+    "value": 6000,
+    "quote": "circuit"
+   },
+   "antimatter": {
+    "value": 90000,
+    "quote": "circuit"
+   },
+   "void_crystal": {
+    "value": 24000,
+    "quote": "steel"
+   },
+   "neutronium": {
+    "value": 9000,
+    "quote": "steel"
+   },
+   "dark_matter": {
+    "value": 45000,
+    "quote": "battery"
+   },
+   "chronium": {
+    "value": 30000,
+    "quote": "motor"
+   }
+  },
+  "beam_color": "#8ff0ff",
+  "sound": "omen"
+ },
+ "megaproject": {
+  "victory": true,
+  "reward": 50000,
+  "stages": [
+   {
+    "name": "Фундамент врат",
+    "need": {
+     "concrete": 2000,
+     "steel": 1500,
+     "stellar_alloy": 100
+    }
+   },
+   {
+    "name": "Кольцо",
+    "need": {
+     "superconductor": 800,
+     "magnetic_trap": 60,
+     "aluminum_casing": 500
+    }
+   },
+   {
+    "name": "Ядро",
+    "need": {
+     "quantum_core": 100,
+     "chrono_gear": 200,
+     "fusion_cell": 300
+    }
+   },
+   {
+    "name": "Линза",
+    "need": {
+     "dark_lens": 40,
+     "antimatter_cell": 50,
+     "bio_gel": 400
+    }
+   },
+   {
+    "name": "Запуск",
+    "need": {
+     "antimatter_cell": 200,
+     "quantum_core": 200,
+     "void_crystal": 300
+    }
+   }
+  ]
+ },
+ "bosses": {
+  "player_aggro": 10.0,
+  "revenge_time": 6.0
+ },
+ "steam": {
+  "enabled": true,
+  "app_id": 0,
+  "restart_if_needed": false,
+  "pause_on_overlay": true,
+  "achievements": [
+   {
+    "api": "ACH_FIRST_TOOL",
+    "name": "Первый инструмент",
+    "name_en": "First Tool",
+    "desc": "Сделайте каменный топор",
+    "desc_en": "Craft a stone axe",
+    "goal": "have",
+    "n": 1,
+    "item": "stone_axe",
+    "buildings": []
+   },
+   {
+    "api": "ACH_WORKBENCH",
+    "name": "Мастерская открыта",
+    "name_en": "Open for Business",
+    "desc": "Поставьте верстак",
+    "desc_en": "Build a workbench",
+    "goal": "build",
+    "n": 1,
+    "item": "",
+    "buildings": [
+     "workbench"
+    ]
+   },
+   {
+    "api": "ACH_FIRST_INGOTS",
+    "name": "Горячий металл",
+    "name_en": "Hot Metal",
+    "desc": "Получите 10 железных слитков",
+    "desc_en": "Have 10 iron ingots",
+    "goal": "have",
+    "n": 10,
+    "item": "iron_ingot",
+    "buildings": []
+   },
+   {
+    "api": "ACH_AUTOMATION",
+    "name": "Автоматизация",
+    "name_en": "Automation",
+    "desc": "Постройте бур и генератор",
+    "desc_en": "Build a drill and a generator",
+    "goal": "build_each",
+    "n": 1,
+    "item": "",
+    "buildings": [
+     "miner",
+     "generator"
+    ]
+   },
+   {
+    "api": "ACH_BELTS_100",
+    "name": "Конвейерный магнат",
+    "name_en": "Conveyor Tycoon",
+    "desc": "Проложите 100 лент",
+    "desc_en": "Lay 100 conveyor belts",
+    "goal": "build",
+    "n": 100,
+    "item": "",
+    "buildings": [
+     "belt",
+     "belt_mk2",
+     "belt_mk3",
+     "belt_mk4",
+     "belt_mk5"
+    ]
+   },
+   {
+    "api": "ACH_DELIVER_500",
+    "name": "План выполнен",
+    "name_en": "Quota Met",
+    "desc": "Доставьте в штаб 500 предметов",
+    "desc_en": "Deliver 500 items to HQ",
+    "goal": "delivered",
+    "n": 500,
+    "item": "",
+    "buildings": []
+   },
+   {
+    "api": "ACH_FIRST_WAVE",
+    "name": "Первая кровь",
+    "name_en": "First Blood",
+    "desc": "Отбейте первую волну роботов",
+    "desc_en": "Survive the first robot wave",
+    "goal": "waves",
+    "n": 1,
+    "item": "",
+    "buildings": []
+   },
+   {
+    "api": "ACH_WAVES_10",
+    "name": "Крепость",
+    "name_en": "Fortress",
+    "desc": "Отбейте 10 волн",
+    "desc_en": "Survive 10 waves",
+    "goal": "waves",
+    "n": 10,
+    "item": "",
+    "buildings": []
+   },
+   {
+    "api": "ACH_VICTORY",
+    "name": "Рубеж удержан",
+    "name_en": "Frontier Held",
+    "desc": "Отбейте 20 волн",
+    "desc_en": "Survive 20 waves",
+    "goal": "waves",
+    "n": 20,
+    "item": "",
+    "buildings": []
+   },
+   {
+    "api": "ACH_TRADER",
+    "name": "Торговый партнёр",
+    "name_en": "Trade Partner",
+    "desc": "Заработайте 5000 кр на торговле со станцией",
+    "desc_en": "Earn 5,000 credits trading with the station",
+    "goal": "trade",
+    "n": 5000,
+    "item": "",
+    "buildings": []
+   },
+   {
+    "api": "ACH_RESEARCH_5",
+    "name": "Учёный",
+    "name_en": "Scientist",
+    "desc": "Откройте 5 узлов дерева открытий",
+    "desc_en": "Unlock 5 tech tree nodes",
+    "goal": "tech",
+    "n": 5,
+    "item": "",
+    "buildings": []
+   },
+   {
+    "api": "ACH_SCAN_20",
+    "name": "Исследователь",
+    "name_en": "Explorer",
+    "desc": "Изучите сканером 20 предметов",
+    "desc_en": "Research 20 items with the scanner",
+    "goal": "scan",
+    "n": 20,
+    "item": "",
+    "buildings": []
+   },
+   {
+    "api": "ACH_LEVEL_10",
+    "name": "Ветеран",
+    "name_en": "Veteran",
+    "desc": "Достигните 10-го уровня",
+    "desc_en": "Reach level 10",
+    "goal": "level",
+    "n": 10,
+    "item": "",
+    "buildings": []
+   },
+   {
+    "api": "ACH_RICH",
+    "name": "Корпорация",
+    "name_en": "Corporation",
+    "desc": "Накопите 20 000 кр",
+    "desc_en": "Hold 20,000 credits",
+    "goal": "credits",
+    "n": 20000,
+    "item": "",
+    "buildings": []
+   }
+  ]
+ },
+ "power_constant": true,
+ "power_clock": true,
+ "tech_ui": {
+  "free": false,
+  "tier_names": [
+   {
+    "name": "Начало"
+   },
+   {
+    "name": "Этап 1 · Освоение"
+   },
+   {
+    "name": "Этап 2 · Автоматизация"
+   },
+   {
+    "name": "Этап 3 · Промышленность"
+   },
+   {
+    "name": "Этап 4 · Энергетика"
+   },
+   {
+    "name": "Этап 5 · Химия и атом"
+   },
+   {
+    "name": "Этап 6 · Высокие технологии"
+   },
+   {
+    "name": "Этап 7 · Орбита"
+   },
+   {
+    "name": "Этап 8 · Экзотика"
+   },
+   {
+    "name": "Этап 9 · Звёзды"
+   }
+  ]
+ },
+ "coop": {
+  "max_players": 8,
+  "start": "together",
+  "access": "put",
+  "wallets": "own",
+  "trade": true,
+  "pranks": true,
+  "start_credits": 1200,
+  "near_dist": 34,
+  "far_dist": 120,
+  "join_timeout": 12,
+  "kit": {
+   "plank": 30,
+   "stone": 30,
+   "log": 10,
+   "iron_ingot": 10,
+   "berry": 10
+  },
+  "splat_time": 4.0,
+  "paint_color": "#ff5fc8",
+  "flag_radius": 14,
+  "vote_time": 30,
+  "upnp": true,
+  "lan_list": true,
+  "phrases": [
+   "Сюда!",
+   "Помогите!",
+   "Спасибо!",
+   "Осторожно, монстры!",
+   "Нужно железо",
+   "Продам дёшево",
+   "Меняю камень на железо",
+   "Ха-ха!"
+  ],
+  "emotes": {
+   "hi": "Привет!",
+   "lol": "Ха-ха-ха!",
+   "yay": "Ура!",
+   "grr": "Грр!",
+   "sad": "Эх...",
+   "dance": "Танцую!",
+   "wow": "Ого!",
+   "no": "Не-а"
+  },
+  "lobby": true,
+  "lobby_url": "https://ntfy.sh",
+  "lobby_topic": "frontiercorp_rooms_v2",
+  "lobby_every": 240,
+  "lobby_window": 300,
+  "ip_url": "https://api.ipify.org",
+  "autosave_min": 1.0,
+  "port": 443,
+  "punch": true,
+  "punch_poll": 2.0,
+  "punch_wait": 2.5,
+  "punch_time": 15.0,
+  "stun": [
+   "stun.l.google.com:19302",
+   "stun.cloudflare.com:3478",
+   "stun.nextcloud.com:443"
+  ]
+ },
+ "balance": {
+  "source": "Базовый баланс: ленты 60/120/270/480/780, буры ×1/×2/×4, рецепты и МВт по базовой таблице"
+ },
+ "mastery": {
+  "enabled": true,
+  "steps": [
+   200,
+   1000,
+   5000
+  ],
+  "bonus": 0.05,
+  "chain_bonus": 0.1,
+  "chain_max": 2
+ },
+ "milestones": {
+  "enabled": true,
+  "steps": [
+   100,
+   1000,
+   10000
+  ],
+  "credit_k": 0.15,
+  "coupon_k": 0.002
+ },
+ "daily": {
+  "enabled": true,
+  "speed_bonus": 0.25,
+  "value": 3000,
+  "credit_k": 0.5
+ },
+ "builders": {
+  "ruin_keep_min": 40.0,
+  "rebuild_bot_s": 45.0,
+  "rebuild_cost": {
+   "iron_plate": 5,
+   "circuit": 2
+  },
+  "threat_r": 4.0,
+  "show_ruins": true,
+  "ruins_when": "always"
+ },
+ "craft_queue_max": 50,
+ "mode_hud": {
+  "enabled": true,
+  "edge": true,
+  "edge_width": 0.11,
+  "title_size": 26,
+  "top": 92,
+  "colors": {
+   "wire": "#3fa4ff",
+   "demolish": "#ff5a45",
+   "build": "#ffc23f",
+   "zone": "#b38cff",
+   "route": "#3fe0c8"
+  },
+  "edge_wire": 0.55,
+  "edge_demolish": 0.55,
+  "edge_build": 0.3,
+  "edge_zone": 0.45,
+  "edge_route": 0.4
+ },
+ "hq_transfer": 40,
+ "hq_station_radius": 5,
+ "belt_spill_pct": 0.0,
+ "physics": {
+  "enabled": true,
+  "debris": true,
+  "blast": true,
+  "knock": true,
+  "ragdoll": true,
+  "roll": true,
+  "debris_per_cell": 9,
+  "debris_max": 500,
+  "debris_life": 7.0,
+  "debris_force": 1.0,
+  "blast_force": 14.0,
+  "blast_radius": 2.2,
+  "blast_hero": 0.6,
+  "hit_knock": 2.5,
+  "gravity": 18.0
+ },
+ "render_chunk": 64.0,
+ "climb_roofs": true,
+ "climb_roof_max": 4.0,
+ "quantum": {
+  "veins": 6,
+  "vein_min": 14,
+  "vein_max": 60,
+  "vein_color": "#b98cff",
+  "observe_dist": 16,
+  "outcomes": [
+   {
+    "item": "void_crystal",
+    "w": 3
+   },
+   {
+    "item": "superconductor",
+    "w": 3
+   },
+   {
+    "item": "helium3",
+    "w": 2
+   },
+   {
+    "item": "stellar_alloy",
+    "w": 1
+   },
+   {
+    "item": "crystal",
+    "w": 4
+   },
+   {
+    "item": "uranium_ore",
+    "w": 3
+   }
+  ],
+  "reset_cost": {
+   "quantum_shard": 1
+  },
+  "shade": "q_shade",
+  "shade_every": 45.0,
+  "shade_max": 4,
+  "shade_night_only": false,
+  "see_dist": 70.0,
+  "unseen_k": 1.0
+ },
+ "big_buildings": true,
+ "hero_glb_scale": 1.4,
+ "quips": {
+  "wave_done": [
+   "Волна отбита. Отдел кадров рад, что вы всё ещё в штате.",
+   "Отличная работа! Машины-захватчики оставили отзыв: одна звезда.",
+   "Победа! Премия — моральное удовлетворение. Выдаётся бессрочно.",
+   "Захватчики отступили. Мы отметили это в квартальном отчёте."
+  ],
+  "wave_start": [
+   "Волна на подходе. Напоминаем: героизм оплачивается по тарифу «спасибо».",
+   "Внимание! К вам гости без приглашения. Встречайте как положено.",
+   "Захватчики идут. Улыбайтесь: турели всё записывают."
+  ],
+  "death": [
+   "Это был тактический отдых. Мы так и запишем.",
+   "Клонирование оплачено. Не благодарите, просто не повторяйте.",
+   "Мы вас вернём. Страховка покрывает до 9 999 возрождений.",
+   "Отдел безопасности начал расследование. Подозреваемый: вы."
+  ],
+  "level_up": [
+   "Новый уровень! Корпорация гордится. Повышения зарплаты не будет.",
+   "Вы растёте над собой. Скоро перерастёте и кирку."
+  ],
+  "night": [
+   "Стемнело. Монстры становятся злее. Вы, надеемся, тоже.",
+   "Ночь. Самое время проверить фонари и убедиться, что вы не боитесь темноты."
+  ],
+  "meteor": [
+   "Метеоритный дождь! Каски выдаются в штабе. Шутка: касок нет.",
+   "Небо бесплатно доставляет руду. Ловите аккуратно."
+  ],
+  "first_build": [
+   "Первая постройка! Архитектурный отдел плачет от счастья. Или от ужаса."
+  ],
+  "quest_done": [
+   "Задача выполнена. Галочка поставлена, совет директоров кивнул.",
+   "Готово! Мы бы похлопали, но у нас бюджет на аплодисменты урезан."
+  ]
+ },
+ "quip_cooldown": 45.0,
+ "quip_chance": 0.7,
+ "quip_name": "Радио Aloverdoz",
+ "hq_canopy": true,
+ "hq_canopy_radius": 2.1,
+ "demo": {
+  "enabled": false,
+  "max_tier": 3,
+  "text": "Ожидайте релиз!"
+ },
+ "tree_regrow": 600.0,
+ "sapling_grow": 300.0,
+ "economy18": {
+  "on": true,
+  "bm_k": 0.25,
+  "bm_soft": 45.0,
+  "bm_per_min": 30,
+  "station_k": 0.5,
+  "orders_k": 0.75,
+  "npc_cash": 300
+ },
+ "ports18": {
+  "on": true
+ },
+ "port_fuel_color": "#ff9a2e",
+ "repair111": {
+  "cost_k": 0.5,
+  "time": 5.0
+ },
+ "auto_repair114": {
+  "pct_per_min": [
+   10,
+   20,
+   30,
+   40,
+   50
+  ]
+ },
+ "defense115": {
+  "local_ammo": true
+ },
+ "hq_link115": {
+  "power_per_cell": 0.0,
+  "power_min": 20.0,
+  "loss_every": 2,
+  "take_per_min": 60.0,
+  "max_items": 5
+ },
+ "meteor115": {
+  "enabled": true,
+  "every": 300.0,
+  "min": 1,
+  "max": 2,
+  "text": "С неба упал метеорит — в нём руда и кристаллы!"
+ },
+ "dep118": {},
+ "near118_old": {
+  "iron_ore": 3,
+  "copper_ore": 2,
+  "coal": 2,
+  "stone": 2,
+  "quartz": 1,
+  "sulfur": 1,
+  "oil": 0,
+  "saltpeter": 1,
+  "alunite": 0,
+  "uranium_ore": 0,
+  "clay": 2,
+  "sand": 2,
+  "tin_ore": 1,
+  "limestone": 1,
+  "bauxite": 0,
+  "nickel_ore": 0,
+  "lead_ore": 0,
+  "salt": 0,
+  "gold_ore": 0,
+  "natural_gas": 0,
+  "tungsten_ore": 0,
+  "titanium_ore": 0,
+  "obsidian": 0,
+  "resonite": 0,
+  "rare_earth_ore": 0,
+  "magma": 0,
+  "q_superposition": 0
+ },
+ "dep119_old": {
+  "t_chem": [
+   "sulfur",
+   "saltpeter"
+  ],
+  "t_oil": [
+   "oil"
+  ],
+  "t_aluminum": [
+   "alunite"
+  ],
+  "t_uranium": [
+   "uranium_ore"
+  ],
+  "t_geo2": [
+   "bauxite",
+   "nickel_ore",
+   "lead_ore",
+   "salt",
+   "gold_ore",
+   "natural_gas"
+  ],
+  "t_geo3": [
+   "tungsten_ore",
+   "titanium_ore",
+   "obsidian",
+   "magma"
+  ],
+  "t_geo4": [
+   "resonite",
+   "rare_earth_ore"
+  ]
+ },
+ "patches119_old": {
+  "iron_ore": 40,
+  "copper_ore": 30,
+  "coal": 25,
+  "stone": 25,
+  "quartz": 15,
+  "sulfur": 12,
+  "oil": 10,
+  "saltpeter": 14,
+  "alunite": 14,
+  "uranium_ore": 8,
+  "clay": 18,
+  "sand": 18,
+  "tin_ore": 22,
+  "limestone": 20,
+  "bauxite": 16,
+  "nickel_ore": 12,
+  "lead_ore": 12,
+  "salt": 12,
+  "gold_ore": 9,
+  "natural_gas": 8,
+  "tungsten_ore": 9,
+  "titanium_ore": 9,
+  "obsidian": 9,
+  "resonite": 6,
+  "rare_earth_ore": 6,
+  "magma": 10
+ },
+ "heart_limit": {
+  "enabled": true,
+  "hq": 50,
+  "heart": 25,
+  "gap": 2,
+  "chain_n": 10,
+  "chain_delay": 0.12
+ },
+ "automation_xp": {
+  "rated_units": 1200,
+  "extraction": 0.12,
+  "crafting": 0.35
+ },
+ "cargo_capacities": [
+  10,
+  20,
+  35,
+  60,
+  100
+ ],
+ "orbital_terminal": {
+  "repair": [
+   {
+    "name": "Восстановление опор",
+    "need": {
+     "iron_plate": 100,
+     "gear": 40
+    }
+   },
+   {
+    "name": "Привод подъёмника",
+    "need": {
+     "steel": 140,
+     "motor": 25,
+     "wire": 120
+    }
+   },
+   {
+    "name": "Орбитальный передатчик",
+    "need": {
+     "circuit": 60,
+     "glass": 80,
+     "motor": 40
+    }
+   }
+  ],
+  "missions": [
+   {
+    "name": "Сервис орбитальной фермы",
+    "need": {
+     "motor": 40,
+     "wire": 300,
+     "gear": 120
+    },
+    "credits": 22000,
+    "xp": 600
+   },
+   {
+    "name": "Теплозащита буксира",
+    "need": {
+     "steel": 320,
+     "glass": 190,
+     "iron_plate": 180
+    },
+    "credits": 48000,
+    "xp": 1000
+   },
+   {
+    "name": "Ретрансляторы дальнего пояса",
+    "need": {
+     "circuit": 280,
+     "motor": 90,
+     "wire": 600
+    },
+    "credits": 95000,
+    "xp": 1600
+   }
+  ]
+ }
+}

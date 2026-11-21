@@ -1,0 +1,720 @@
+{
+ "extra": {
+  "rig": {
+   "arms": [],
+   "body": "b_body",
+   "bones": [
+    {
+     "name": "b_body",
+     "parent": "",
+     "pivot": [
+      0,
+      0.55,
+      0
+     ]
+    },
+    {
+     "name": "b_head",
+     "parent": "b_body",
+     "pivot": [
+      0.38,
+      0.55,
+      0
+     ]
+    },
+    {
+     "name": "b_jawl",
+     "parent": "b_head",
+     "pivot": [
+      0.58,
+      0.47,
+      -0.08
+     ]
+    },
+    {
+     "name": "b_jawr",
+     "parent": "b_head",
+     "pivot": [
+      0.58,
+      0.47,
+      0.08
+     ]
+    },
+    {
+     "name": "b_hip0l",
+     "parent": "b_body",
+     "pivot": [
+      0.24,
+      0.55,
+      -0.24
+     ]
+    },
+    {
+     "name": "b_knee0l",
+     "parent": "b_hip0l",
+     "pivot": [
+      0.3,
+      0.77,
+      -0.58
+     ]
+    },
+    {
+     "name": "b_hip0r",
+     "parent": "b_body",
+     "pivot": [
+      0.24,
+      0.55,
+      0.24
+     ]
+    },
+    {
+     "name": "b_knee0r",
+     "parent": "b_hip0r",
+     "pivot": [
+      0.3,
+      0.77,
+      0.58
+     ]
+    },
+    {
+     "name": "b_hip1l",
+     "parent": "b_body",
+     "pivot": [
+      0,
+      0.55,
+      -0.24
+     ]
+    },
+    {
+     "name": "b_knee1l",
+     "parent": "b_hip1l",
+     "pivot": [
+      0,
+      0.77,
+      -0.58
+     ]
+    },
+    {
+     "name": "b_hip1r",
+     "parent": "b_body",
+     "pivot": [
+      0,
+      0.55,
+      0.24
+     ]
+    },
+    {
+     "name": "b_knee1r",
+     "parent": "b_hip1r",
+     "pivot": [
+      0,
+      0.77,
+      0.58
+     ]
+    },
+    {
+     "name": "b_hip2l",
+     "parent": "b_body",
+     "pivot": [
+      -0.24,
+      0.55,
+      -0.24
+     ]
+    },
+    {
+     "name": "b_knee2l",
+     "parent": "b_hip2l",
+     "pivot": [
+      -0.3,
+      0.77,
+      -0.58
+     ]
+    },
+    {
+     "name": "b_hip2r",
+     "parent": "b_body",
+     "pivot": [
+      -0.24,
+      0.55,
+      0.24
+     ]
+    },
+    {
+     "name": "b_knee2r",
+     "parent": "b_hip2r",
+     "pivot": [
+      -0.3,
+      0.77,
+      0.58
+     ]
+    }
+   ],
+   "breath": [],
+   "chains": [],
+   "gait": {
+    "bob": 0.03,
+    "duty": 0.55,
+    "knee": 20,
+    "lean": 4,
+    "lift": 26,
+    "roll": 3,
+    "stride": 0.9,
+    "swing": 22
+   },
+   "head": "b_head",
+   "jaws": [
+    {
+     "axis": "y",
+     "bone": "b_jawl",
+     "open": 18
+    },
+    {
+     "axis": "y",
+     "bone": "b_jawr",
+     "open": -18
+    }
+   ],
+   "legs": [
+    {
+     "hip": "b_hip0l",
+     "knee": "b_knee0l",
+     "phase": 0,
+     "side": -1,
+     "style": "y"
+    },
+    {
+     "hip": "b_hip0r",
+     "knee": "b_knee0r",
+     "phase": 0.5,
+     "side": 1,
+     "style": "y"
+    },
+    {
+     "hip": "b_hip1l",
+     "knee": "b_knee1l",
+     "phase": 0.5,
+     "side": -1,
+     "style": "y"
+    },
+    {
+     "hip": "b_hip1r",
+     "knee": "b_knee1r",
+     "phase": 0,
+     "side": 1,
+     "style": "y"
+    },
+    {
+     "hip": "b_hip2l",
+     "knee": "b_knee2l",
+     "phase": 0,
+     "side": -1,
+     "style": "y"
+    },
+    {
+     "hip": "b_hip2r",
+     "knee": "b_knee2r",
+     "phase": 0.5,
+     "side": 1,
+     "style": "y"
+    }
+   ]
+  }
+ },
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_spider/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.55,
+    0
+   ],
+   "role": "b_body",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_spider/tex0.png"
+  },
+  {
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/mech_spider/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.55,
+    0
+   ],
+   "role": "b_body",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_spider/2.res",
+   "metallic": 0,
+   "pos": [
+    0.38,
+    0.55,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_spider/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_spider/3.res",
+   "metallic": 0,
+   "pos": [
+    0.24,
+    0.55,
+    -0.24
+   ],
+   "role": "b_hip0l",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_spider/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_spider/4.res",
+   "metallic": 0,
+   "pos": [
+    0.24,
+    0.55,
+    0.24
+   ],
+   "role": "b_hip0r",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_spider/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_spider/5.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.55,
+    -0.24
+   ],
+   "role": "b_hip1l",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_spider/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_spider/6.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.55,
+    0.24
+   ],
+   "role": "b_hip1r",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_spider/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_spider/7.res",
+   "metallic": 0,
+   "pos": [
+    -0.24,
+    0.55,
+    -0.24
+   ],
+   "role": "b_hip2l",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_spider/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_spider/8.res",
+   "metallic": 0,
+   "pos": [
+    -0.24,
+    0.55,
+    0.24
+   ],
+   "role": "b_hip2r",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_spider/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_spider/9.res",
+   "metallic": 0,
+   "pos": [
+    0.58,
+    0.47,
+    -0.08
+   ],
+   "role": "b_jawl",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_spider/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_spider/10.res",
+   "metallic": 0,
+   "pos": [
+    0.58,
+    0.47,
+    0.08
+   ],
+   "role": "b_jawr",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_spider/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_spider/11.res",
+   "metallic": 0,
+   "pos": [
+    0.3,
+    0.77,
+    -0.58
+   ],
+   "role": "b_knee0l",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_spider/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_spider/12.res",
+   "metallic": 0,
+   "pos": [
+    0.3,
+    0.77,
+    0.58
+   ],
+   "role": "b_knee0r",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_spider/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_spider/13.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.77,
+    -0.58
+   ],
+   "role": "b_knee1l",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_spider/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_spider/14.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.77,
+    0.58
+   ],
+   "role": "b_knee1r",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_spider/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_spider/15.res",
+   "metallic": 0,
+   "pos": [
+    -0.3,
+    0.77,
+    -0.58
+   ],
+   "role": "b_knee2l",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_spider/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_spider/16.res",
+   "metallic": 0,
+   "pos": [
+    -0.3,
+    0.77,
+    0.58
+   ],
+   "role": "b_knee2r",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_spider/tex0.png"
+  },
+  {
+   "anim": "blink",
+   "color": "#ff2a13",
+   "emission": 5,
+   "mat": "glow",
+   "mesh": "res://models20/mech_spider/17.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.55,
+    0
+   ],
+   "role": "b_body",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#ff2a13",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/mech_spider/18.res",
+   "metallic": 0,
+   "pos": [
+    0.38,
+    0.55,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

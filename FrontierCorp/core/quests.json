@@ -1,0 +1,277 @@
+{
+ "q_logs": {
+  "text": "Срубите деревья топором: 6 брёвен",
+  "order": 5,
+  "reward": 20,
+  "goal": "have",
+  "n": 6,
+  "item": "log",
+  "buildings": [],
+  "hint": ""
+ },
+ "q_stone": {
+  "text": "Добудьте 8 камней из камней на земле",
+  "order": 2,
+  "reward": 20,
+  "goal": "have",
+  "n": 8,
+  "item": "stone",
+  "buildings": [],
+  "hint": ""
+ },
+ "q_axe": {
+  "text": "Сделайте каменный топор (C — крафт): 3 ветки, 2 камня, 2 волокна",
+  "order": 4,
+  "reward": 30,
+  "goal": "have",
+  "n": 1,
+  "item": "stone_axe",
+  "buildings": [],
+  "hint": ""
+ },
+ "q_bench": {
+  "text": "Постройте верстак (B, раздел «Станции»): 4 бревна и 4 камня",
+  "order": 6,
+  "reward": 40,
+  "goal": "build",
+  "n": 1,
+  "item": "",
+  "buildings": [
+   "workbench"
+  ],
+  "hint": ""
+ },
+ "q_furnace": {
+  "text": "Постройте каменную печь (B) и положите в неё руду и топливо: ветки, брёвна или древесный уголь",
+  "order": 9,
+  "reward": 60,
+  "goal": "build",
+  "n": 1,
+  "item": "",
+  "buildings": [
+   "furnace"
+  ],
+  "hint": ""
+ },
+ "q_ingots": {
+  "text": "Получите 10 железных слитков",
+  "order": 10,
+  "reward": 80,
+  "goal": "have",
+  "n": 10,
+  "item": "iron_ingot",
+  "buildings": [],
+  "hint": ""
+ },
+ "q_miner": {
+  "text": "Поставьте бур на залежь руды и станцию энергии рядом с ним и генератором (V — карта энергии)",
+  "order": 16,
+  "reward": 120,
+  "goal": "build",
+  "n": 1,
+  "item": "",
+  "buildings": [
+   "miner"
+  ],
+  "hint": ""
+ },
+ "q_deliver": {
+  "text": "Доставьте лентами в штаб 30 любых предметов",
+  "order": 18,
+  "reward": 150,
+  "goal": "delivered",
+  "n": 30,
+  "item": "",
+  "buildings": [],
+  "hint": ""
+ },
+ "q_turrets": {
+  "text": "Постройте 2 турели у базы, дайте им энергию и патроны",
+  "order": 20,
+  "reward": 150,
+  "goal": "build",
+  "n": 2,
+  "item": "",
+  "buildings": [
+   "turret",
+   "laser_turret"
+  ],
+  "hint": ""
+ },
+ "q_skill": {
+  "text": "Улучшите любой навык (K)",
+  "order": 21,
+  "reward": 60,
+  "goal": "skills",
+  "n": 1,
+  "item": "",
+  "buildings": [],
+  "hint": ""
+ },
+ "q_trade": {
+  "text": "Заработайте 5 кр на Чёрном рынке или в торговой станции (T)",
+  "order": 22,
+  "reward": 200,
+  "goal": "trade",
+  "n": 5,
+  "item": "",
+  "buildings": [],
+  "hint": ""
+ },
+ "q_waves": {
+  "text": "Отбейте 3 волны роботов",
+  "order": 23,
+  "reward": 300,
+  "goal": "waves",
+  "n": 3,
+  "item": "",
+  "buildings": [],
+  "hint": ""
+ },
+ "q_win": {
+  "text": "Рекорд: отбейте 20 волн роботов (волны бесконечные — держитесь дальше!)",
+  "order": 24,
+  "reward": 2000,
+  "goal": "waves",
+  "n": 20,
+  "item": "",
+  "buildings": [],
+  "hint": ""
+ },
+ "q_tech": {
+  "text": "Откройте «Добычу» в дереве открытий (J): 10 слитков и 10 досок",
+  "order": 14,
+  "reward": 80,
+  "goal": "tech",
+  "n": 1,
+  "item": "t_mining",
+  "buildings": [],
+  "hint": "J — дерево открытий. Кнопка «Сдать» берёт ресурсы со склада штаба и из рюкзака"
+ },
+ "q_waves50": {
+  "text": "Рекорд: отбейте 50 волн роботов",
+  "order": 25,
+  "reward": 6000,
+  "goal": "waves",
+  "n": 50,
+  "item": "",
+  "buildings": [],
+  "hint": ""
+ },
+ "q_branch": {
+  "text": "Наберите 6 веток: бейте деревья и кусты (ЛКМ)",
+  "reward": 20,
+  "goal": "have",
+  "n": 6,
+  "item": "branch",
+  "buildings": [],
+  "hint": "",
+  "order": 0
+ },
+ "q_fiber": {
+  "text": "Нарвите 4 волокна: высокая трава и цветы (ЛКМ)",
+  "reward": 20,
+  "goal": "have",
+  "n": 4,
+  "item": "fiber",
+  "buildings": [],
+  "hint": "Волокно нужно для кирки, топора и верёвки",
+  "order": 1
+ },
+ "q_pick": {
+  "text": "Сделайте каменную кирку (C — крафт): 3 ветки, 3 камня, 2 волокна",
+  "reward": 30,
+  "goal": "have",
+  "n": 1,
+  "item": "stone_pickaxe",
+  "buildings": [],
+  "hint": "",
+  "order": 3
+ },
+ "q_ore": {
+  "text": "Наберите киркой 10 железной руды с цветной залежи",
+  "reward": 30,
+  "goal": "have",
+  "n": 10,
+  "item": "iron_ore",
+  "buildings": [],
+  "hint": "",
+  "order": 8
+ },
+ "q_planks": {
+  "text": "Сделайте на верстаке 20 досок: откройте его (E), выберите «Доски» и положите брёвна",
+  "reward": 30,
+  "goal": "have",
+  "n": 20,
+  "item": "plank",
+  "buildings": [],
+  "hint": "Одно бревно = 3 доски",
+  "order": 7
+ },
+ "q_t_workshop": {
+  "text": "Откройте «Мастерскую» в дереве открытий (J): 15 досок, 15 камня, 5 слитков",
+  "reward": 60,
+  "goal": "tech",
+  "n": 1,
+  "item": "t_workshop",
+  "buildings": [],
+  "hint": "Кнопка «Сдать» берёт нужное из рюкзака и штаба",
+  "order": 11
+ },
+ "q_workshop": {
+  "text": "Постройте мастерскую (B): 10 досок, 10 камня, 5 слитков",
+  "reward": 60,
+  "goal": "build",
+  "n": 1,
+  "item": "",
+  "buildings": [
+   "workshop"
+  ],
+  "hint": "",
+  "order": 12
+ },
+ "q_gears": {
+  "text": "Сделайте в мастерской 6 шестерней: откройте её (E), выберите «Шестерня» и положите слитки",
+  "reward": 60,
+  "goal": "have",
+  "n": 6,
+  "item": "gear",
+  "buildings": [],
+  "hint": "Шестерня = 2 железных слитка",
+  "order": 13
+ },
+ "q_gen": {
+  "text": "Постройте генератор (B) и положите в него топливо",
+  "reward": 60,
+  "goal": "build",
+  "n": 1,
+  "item": "",
+  "buildings": [
+   "generator"
+  ],
+  "hint": "Генератор: 10 слитков, 10 камня, 2 шестерни",
+  "order": 15
+ },
+ "q_belts": {
+  "text": "Протяните 5 конвейеров от зелёного разъёма бура к печи или в штаб",
+  "reward": 60,
+  "goal": "build",
+  "n": 5,
+  "item": "",
+  "buildings": [
+   "belt"
+  ],
+  "hint": "",
+  "order": 17
+ },
+ "q_t_defense": {
+  "text": "Откройте «Оборону» в дереве открытий (J): 20 слитков и 30 камня",
+  "reward": 80,
+  "goal": "tech",
+  "n": 1,
+  "item": "t_defense",
+  "buildings": [],
+  "hint": "",
+  "order": 19
+ }
+}

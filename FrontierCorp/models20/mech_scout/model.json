@@ -1,0 +1,330 @@
+{
+ "extra": {
+  "rig": {
+   "arms": [],
+   "body": "b_body",
+   "bones": [
+    {
+     "name": "b_body",
+     "parent": "",
+     "pivot": [
+      0,
+      1.15,
+      0
+     ]
+    },
+    {
+     "name": "b_head",
+     "parent": "b_body",
+     "pivot": [
+      0.28,
+      1.2,
+      0
+     ]
+    },
+    {
+     "name": "b_hipl",
+     "parent": "b_body",
+     "pivot": [
+      0,
+      1.03,
+      -0.26
+     ]
+    },
+    {
+     "name": "b_kneel",
+     "parent": "b_hipl",
+     "pivot": [
+      -0.2,
+      0.58,
+      -0.3
+     ]
+    },
+    {
+     "name": "b_hipr",
+     "parent": "b_body",
+     "pivot": [
+      0,
+      1.03,
+      0.26
+     ]
+    },
+    {
+     "name": "b_kneer",
+     "parent": "b_hipr",
+     "pivot": [
+      -0.2,
+      0.58,
+      0.3
+     ]
+    }
+   ],
+   "breath": [],
+   "chains": [],
+   "gait": {
+    "bob": 0.06,
+    "duty": 0.5,
+    "knee": 45,
+    "lean": 10,
+    "lift": 20,
+    "roll": 3,
+    "stride": 1.6,
+    "swing": 30
+   },
+   "head": "b_head",
+   "jaws": [],
+   "legs": [
+    {
+     "hip": "b_hipl",
+     "knee": "b_kneel",
+     "phase": 0,
+     "side": -1,
+     "style": "z"
+    },
+    {
+     "hip": "b_hipr",
+     "knee": "b_kneer",
+     "phase": 0.5,
+     "side": 1,
+     "style": "z"
+    }
+   ]
+  }
+ },
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_scout/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.15,
+    0
+   ],
+   "role": "b_body",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_scout/tex0.png"
+  },
+  {
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/mech_scout/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.15,
+    0
+   ],
+   "role": "b_body",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_scout/2.res",
+   "metallic": 0,
+   "pos": [
+    0.28,
+    1.2,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_scout/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_scout/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.03,
+    -0.26
+   ],
+   "role": "b_hipl",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_scout/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_scout/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.03,
+    0.26
+   ],
+   "role": "b_hipr",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_scout/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_scout/5.res",
+   "metallic": 0,
+   "pos": [
+    -0.2,
+    0.58,
+    -0.3
+   ],
+   "role": "b_kneel",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_scout/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_scout/6.res",
+   "metallic": 0,
+   "pos": [
+    -0.2,
+    0.58,
+    0.3
+   ],
+   "role": "b_kneer",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_scout/tex0.png"
+  },
+  {
+   "anim": "pulse",
+   "color": "#4bf3ff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/mech_scout/7.res",
+   "metallic": 0,
+   "pos": [
+    0.28,
+    1.2,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#4bf3ff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/mech_scout/8.res",
+   "metallic": 0,
+   "pos": [
+    -0.2,
+    1.77,
+    -0.12
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

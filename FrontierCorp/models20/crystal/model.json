@@ -1,0 +1,105 @@
+{
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/crystal/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/crystal/tex0.png"
+  },
+  {
+   "color": "#da9aff",
+   "emission": 1.2,
+   "mat": "glow",
+   "mesh": "res://models20/crystal/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.06,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#b951ff",
+   "emission": 1.8,
+   "mat": "glow",
+   "mesh": "res://models20/crystal/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.06,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#b951ff",
+   "emission": 1.8,
+   "mat": "glow",
+   "mesh": "res://models20/crystal/3.res",
+   "metallic": 0,
+   "pos": [
+    -0.095,
+    0.8653,
+    -0.095
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.06,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

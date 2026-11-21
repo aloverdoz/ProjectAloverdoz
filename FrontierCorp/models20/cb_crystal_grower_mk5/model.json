@@ -1,0 +1,488 @@
+{
+ "parts": [
+  {
+   "anim": "pulse",
+   "color": "#cd73ff",
+   "emission": 2,
+   "mat": "glow",
+   "mesh": "res://models20/cb_crystal_grower_mk5/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.55,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_crystal_grower_mk5/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.09,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_crystal_grower_mk5/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_crystal_grower_mk5/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.09,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_crystal_grower_mk5/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_crystal_grower_mk5/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.09,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_crystal_grower_mk5/tex0.png"
+  },
+  {
+   "color": "#c159ff",
+   "emission": 5,
+   "mat": "glow",
+   "mesh": "res://models20/cb_crystal_grower_mk5/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.09,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#c35bff",
+   "emission": 3,
+   "mat": "glow",
+   "mesh": "res://models20/cb_crystal_grower_mk5/5.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.09,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.12,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_crystal_grower_mk5/6.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.09,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_crystal_grower_mk5/tex0.png"
+  },
+  {
+   "color": "#ff3021",
+   "emission": 2,
+   "mat": "glow",
+   "mesh": "res://models20/cb_crystal_grower_mk5/7.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.09,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#4bff66",
+   "emission": 2,
+   "mat": "glow",
+   "mesh": "res://models20/cb_crystal_grower_mk5/8.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.09,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffc130",
+   "emission": 2,
+   "mat": "glow",
+   "mesh": "res://models20/cb_crystal_grower_mk5/9.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.09,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_crystal_grower_mk5/10.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.09,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_crystal_grower_mk5/tex0.png"
+  },
+  {
+   "anim": "hover",
+   "color": "#c35bff",
+   "emission": 3,
+   "mat": "glow",
+   "mesh": "res://models20/cb_crystal_grower_mk5/11.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.55,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.12,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_crystal_grower_mk5/12.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.55,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_crystal_grower_mk5/tex0.png"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#c159ff",
+   "emission": 5,
+   "mat": "glow",
+   "mesh": "res://models20/cb_crystal_grower_mk5/13.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.55,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin",
+   "color": "#c159ff",
+   "emission": 5,
+   "mat": "glow",
+   "mesh": "res://models20/cb_crystal_grower_mk5/14.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.55,
+    0
+   ],
+   "rot": [
+    0,
+    -90,
+    180
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#c159ff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/cb_crystal_grower_mk5/15.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.5,
+    1.522
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_001",
+   "color": "#c159ff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/cb_crystal_grower_mk5/16.res",
+   "metallic": 0,
+   "pos": [
+    1.3181,
+    0.5,
+    -0.761
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_002",
+   "color": "#c159ff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/cb_crystal_grower_mk5/17.res",
+   "metallic": 0,
+   "pos": [
+    -1.3181,
+    0.5,
+    -0.761
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "flicker_soft",
+   "color": "#cd73ff",
+   "emission": 2.5,
+   "mat": "glow",
+   "mesh": "res://models20/cb_crystal_grower_mk5/18.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.97,
+    1.56
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

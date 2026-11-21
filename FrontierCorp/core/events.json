@@ -1,0 +1,681 @@
+{
+ "meteor_shower": {
+  "name": "Метеоритный дождь",
+  "kind": "meteor",
+  "text": "Метеоритный дождь! Рядом падают камни с рудой и кристаллами.",
+  "end_text": "",
+  "color": "#ff8c3a",
+  "chance": 0.075,
+  "min_day": 2,
+  "duration": 30,
+  "power": 6,
+  "actions": [],
+  "prices": [
+   {
+    "item": "crystal",
+    "category": "",
+    "mult": 0.75
+   },
+   {
+    "item": "",
+    "category": "Руда",
+    "mult": 0.85
+   }
+  ],
+  "omen": "Небо раскалывается огненными трещинами...",
+  "omen_color": "#ff8c3a",
+  "omen_lead": 6.0,
+  "omen_time": 5.0,
+  "omen_sound": "omen"
+ },
+ "storm": {
+  "name": "Буря",
+  "kind": "storm",
+  "text": "Надвигается буря: темно, идти тяжело, солнечные панели слабеют, а ветряки крутятся вовсю.",
+  "end_text": "Буря утихла.",
+  "color": "#9fb4c8",
+  "chance": 0.25,
+  "min_day": 2,
+  "duration": 150,
+  "power": 1.0,
+  "actions": [],
+  "prices": [
+   {
+    "item": "",
+    "category": "Материалы",
+    "mult": 1.25
+   },
+   {
+    "item": "",
+    "category": "Детали",
+    "mult": 1.15
+   }
+  ],
+  "omen": "Ветер воет всё громче. Надвигается буря...",
+  "omen_color": "#9fb4ff",
+  "omen_lead": 6.0,
+  "omen_time": 5.0,
+  "omen_sound": "omen"
+ },
+ "invasion": {
+  "name": "Нашествие",
+  "kind": "invasion",
+  "text": "Нашествие! Монстров в этой волне вдвое больше.",
+  "end_text": "",
+  "color": "#ff5a4a",
+  "chance": 0.12,
+  "min_day": 4,
+  "duration": 10,
+  "power": 2.0,
+  "actions": [],
+  "prices": [
+   {
+    "item": "ammo",
+    "category": "",
+    "mult": 1.6
+   },
+   {
+    "item": "",
+    "category": "Оружие",
+    "mult": 1.3
+   },
+   {
+    "item": "medkit",
+    "category": "",
+    "mult": 1.4
+   },
+   {
+    "item": "",
+    "category": "Добыча с монстров",
+    "mult": 0.7
+   }
+  ],
+  "omen": "Земля гудит от тысяч металлических шагов...",
+  "omen_color": "#ff4a3a",
+  "omen_lead": 6.0,
+  "omen_time": 5.0,
+  "omen_sound": "omen"
+ },
+ "supply_drop": {
+  "name": "Посылка со станции",
+  "kind": "custom",
+  "text": "Станция сбросила посылку рядом с вами.",
+  "end_text": "",
+  "color": "#7dff9a",
+  "chance": 0.2,
+  "min_day": 2,
+  "duration": 5,
+  "power": 1.0,
+  "actions": [
+   {
+    "do": "drop",
+    "item": "iron_plate",
+    "n": "15",
+    "x": "$x",
+    "z": "$z"
+   },
+   {
+    "do": "drop",
+    "item": "circuit",
+    "n": "4",
+    "x": "$x",
+    "z": "$z"
+   },
+   {
+    "do": "chance",
+    "v": "0.4"
+   },
+   {
+    "do": "drop",
+    "item": "medkit",
+    "n": "2",
+    "x": "$x",
+    "z": "$z"
+   }
+  ],
+  "prices": [],
+  "omen": "В небе мигает сигнальный огонь станции.",
+  "omen_color": "#8fe0ff",
+  "omen_lead": 6.0,
+  "omen_time": 5.0,
+  "omen_sound": "omen"
+ },
+ "trader_visit": {
+  "name": "Караван торговцев",
+  "kind": "visit",
+  "text": "К базе идут торговцы! Подойдите и нажмите E, чтобы торговать.",
+  "end_text": "",
+  "color": "#6bb8ff",
+  "chance": 0.35,
+  "min_day": 2,
+  "duration": 200,
+  "power": 2,
+  "actions": [],
+  "npc": "trader",
+  "omen": "Вдали скрипят колёса каравана.",
+  "omen_color": "#ffd77a",
+  "omen_lead": 6.0,
+  "omen_time": 5.0,
+  "omen_sound": "omen"
+ },
+ "travelers": {
+  "name": "Путники",
+  "kind": "visit",
+  "text": "Мимо базы идут путники.",
+  "end_text": "",
+  "color": "#9be07a",
+  "chance": 0.3,
+  "min_day": 1,
+  "duration": 60,
+  "power": 3,
+  "actions": [],
+  "npc": "traveler",
+  "omen": "На горизонте показались чьи-то силуэты...",
+  "omen_color": "#d8d8d8",
+  "omen_lead": 6.0,
+  "omen_time": 5.0,
+  "omen_sound": "omen"
+ },
+ "bandit_raid": {
+  "name": "Налёт бандитов",
+  "kind": "visit",
+  "text": "Налётчики идут грабить склады! Турели к бою.",
+  "end_text": "",
+  "color": "#ff5a4a",
+  "chance": 0.18,
+  "min_day": 3,
+  "duration": 30,
+  "power": 4,
+  "actions": [],
+  "npc": "bandit",
+  "omen": "Кто-то следит за вашей базой из темноты...",
+  "omen_color": "#ff6a4a",
+  "omen_lead": 6.0,
+  "omen_time": 5.0,
+  "omen_sound": "omen"
+ },
+ "stranger": {
+  "name": "Странник",
+  "kind": "visit",
+  "text": "К базе подошёл странник в капюшоне.",
+  "end_text": "",
+  "color": "#c08aff",
+  "chance": 0.15,
+  "min_day": 4,
+  "duration": 30,
+  "power": 1,
+  "actions": [],
+  "npc": "infiltrator",
+  "omen": "Чужие шаги звучат совсем рядом...",
+  "omen_color": "#c8b0ff",
+  "omen_lead": 6.0,
+  "omen_time": 5.0,
+  "omen_sound": "omen"
+ },
+ "solar_flare": {
+  "name": "Солнечный выброс",
+  "kind": "flare",
+  "color": "#ffb43a",
+  "chance": 0.08,
+  "min_day": 5,
+  "duration": 75,
+  "power": 1.0,
+  "text": "Солнечный выброс через 15 секунд! Бегите в бункер, под щит-купол или под навес штаба. Снаружи всё живое сгорит, машины встанут.",
+  "end_text": "Выброс закончился, можно выходить.",
+  "delay": 15,
+  "outdoor_dps": 12,
+  "building_dmg": 0.3,
+  "stop_machines": true,
+  "no_loot": true,
+  "sky_color": "#ffcf7a",
+  "sky_power": 0.75,
+  "prices": [
+   {
+    "item": "medkit",
+    "category": "",
+    "mult": 1.5
+   },
+   {
+    "item": "",
+    "category": "Оборона",
+    "mult": 1.3
+   }
+  ],
+  "actions": [],
+  "omen": "Солнце наливается кровавым светом...",
+  "omen_color": "#ff5a2a",
+  "omen_lead": 6.0,
+  "omen_time": 5.0,
+  "omen_sound": "omen"
+ },
+ "mother_roar": {
+  "name": "Сигнал роя",
+  "kind": "horde",
+  "color": "#ff4a3a",
+  "chance": 0.07,
+  "min_day": 6,
+  "duration": 90,
+  "power": 18,
+  "text": "Где-то далеко включился маяк роя… Толпы роботов идут прямо на вас!",
+  "end_text": "Маяк замолчал.",
+  "monsters": [
+   "crawler",
+   "runner",
+   "spitter",
+   "brute"
+  ],
+  "spawn_dist": 42,
+  "shake": 0.3,
+  "sky_color": "#b03030",
+  "sky_power": 0.25,
+  "prices": [
+   {
+    "item": "ammo",
+    "category": "",
+    "mult": 1.5
+   }
+  ],
+  "actions": [],
+  "omen": "Из глубины туч доносится гудящий сигнал роя...",
+  "omen_color": "#ff4a6a",
+  "omen_lead": 6.0,
+  "omen_time": 5.0,
+  "omen_sound": "omen"
+ },
+ "ground_tremor": {
+  "name": "Дрожь земли",
+  "kind": "worms",
+  "color": "#c89a5a",
+  "chance": 0.08,
+  "min_day": 4,
+  "duration": 80,
+  "power": 4,
+  "text": "Земля дрожит… Под базой роют бур-змеи! Они вылезают и ломают здания.",
+  "end_text": "Бур-змеи ушли глубоко под землю.",
+  "monsters": [
+   "worm"
+  ],
+  "spawn_dist": 18,
+  "shake": 0.5,
+  "prices": [
+   {
+    "item": "",
+    "category": "Материалы",
+    "mult": 1.15
+   }
+  ],
+  "actions": [],
+  "omen": "Под ногами что-то скребётся и сверлит камень...",
+  "omen_color": "#c89a6a",
+  "omen_lead": 6.0,
+  "omen_time": 5.0,
+  "omen_sound": "omen"
+ },
+ "earthquake": {
+  "name": "Землетрясение",
+  "kind": "quake",
+  "color": "#d08a4a",
+  "chance": 0.05,
+  "min_day": 6,
+  "duration": 8,
+  "power": 1.0,
+  "text": "Землетрясение! Здания теряют половину прочности (на фундаменте — четверть).",
+  "end_text": "Толчки прекратились. Чините базу.",
+  "quake_dmg": 0.5,
+  "quake_found_mult": 0.5,
+  "quake_kill": false,
+  "shake": 1.2,
+  "prices": [
+   {
+    "item": "concrete",
+    "category": "",
+    "mult": 1.4
+   },
+   {
+    "item": "",
+    "category": "Материалы",
+    "mult": 1.2
+   }
+  ],
+  "actions": [],
+  "omen": "Земля содрогается от чудовищной силы из глубины!",
+  "omen_color": "#ff7a3a",
+  "omen_lead": 6.0,
+  "omen_time": 5.0,
+  "omen_sound": "omen"
+ },
+ "acid_rain": {
+  "actions": [],
+  "prices": [
+   {
+    "item": "medkit",
+    "category": "",
+    "mult": 1.3
+   }
+  ],
+  "end_text": "Кислотный дождь кончился.",
+  "name": "Кислотный дождь",
+  "kind": "weather",
+  "color": "#9cff6a",
+  "chance": 0.07,
+  "min_day": 3,
+  "duration": 120,
+  "power": 1.0,
+  "text": "Кислотный дождь! Снаружи жжёт кожу, здания ржавеют. Укройтесь под навесом штаба, у бункера или под щитом.",
+  "rain": 1.0,
+  "rain_color": "#b8ff7a",
+  "outdoor_dps": 2.5,
+  "building_dmg": 0.1,
+  "sky_color": "#7aa040",
+  "sky_power": 0.35,
+  "omen": "Тучи желтеют. Воздух пахнет кислотой...",
+  "omen_color": "#c8ff4a",
+  "omen_lead": 6.0,
+  "omen_time": 5.0,
+  "omen_sound": "omen"
+ },
+ "frost": {
+  "actions": [],
+  "prices": [
+   {
+    "item": "coal",
+    "category": "",
+    "mult": 1.6
+   },
+   {
+    "item": "fur_coat",
+    "category": "",
+    "mult": 1.5
+   }
+  ],
+  "end_text": "Мороз отступил.",
+  "name": "Лютый мороз",
+  "kind": "weather",
+  "color": "#9fd0ff",
+  "chance": 0.06,
+  "min_day": 4,
+  "duration": 200,
+  "power": 1.0,
+  "text": "Ударил лютый мороз (−28°)! Тёплая одежда, костёр, обогреватель, горячая еда.",
+  "temp_add": -28,
+  "snow": 0.9,
+  "sky_color": "#bcd8ff",
+  "sky_power": 0.3,
+  "omen": "Дыхание стынет. Мороз сковывает всё живое...",
+  "omen_color": "#9fe0ff",
+  "omen_lead": 6.0,
+  "omen_time": 5.0,
+  "omen_sound": "omen"
+ },
+ "heatwave": {
+  "actions": [],
+  "prices": [
+   {
+    "item": "water_flask",
+    "category": "",
+    "mult": 1.8
+   },
+   {
+    "item": "",
+    "category": "Жидкости в таре",
+    "mult": 1.4
+   }
+  ],
+  "end_text": "Жара спала.",
+  "name": "Засуха и зной",
+  "kind": "weather",
+  "color": "#ffb060",
+  "chance": 0.06,
+  "min_day": 3,
+  "duration": 240,
+  "power": 1.0,
+  "text": "Засуха и зной (+16°)! Пить хочется вдвое чаще. Лёгкий костюм, охладитель, салат.",
+  "temp_add": 16,
+  "thirst_add": 1.0,
+  "sky_color": "#ffc070",
+  "sky_power": 0.25,
+  "omen": "Воздух дрожит от жара, земля трескается...",
+  "omen_color": "#ffb03a",
+  "omen_lead": 6.0,
+  "omen_time": 5.0,
+  "omen_sound": "omen"
+ },
+ "eclipse": {
+  "actions": [],
+  "prices": [],
+  "end_text": "Солнце вернулось.",
+  "name": "Затмение",
+  "kind": "weather",
+  "color": "#c07aff",
+  "chance": 0.05,
+  "min_day": 5,
+  "duration": 150,
+  "power": 1.0,
+  "text": "Затмение! Днём темно, как ночью: солнечные панели не работают, монстры злее.",
+  "dark": 0.9,
+  "sky_color": "#402060",
+  "sky_power": 0.3,
+  "omen": "Свет меркнет. Что-то закрывает солнце...",
+  "omen_color": "#b08aff",
+  "omen_lead": 6.0,
+  "omen_time": 5.0,
+  "omen_sound": "omen"
+ },
+ "dense_fog": {
+  "actions": [],
+  "prices": [],
+  "end_text": "Туман рассеялся.",
+  "name": "Густой туман",
+  "kind": "weather",
+  "color": "#d0d6dc",
+  "chance": 0.08,
+  "min_day": 2,
+  "duration": 180,
+  "power": 1.0,
+  "text": "Густой туман: видно вдвое ближе, монстры подкрадываются незаметно.",
+  "fog": 1.0,
+  "omen": "Белая мгла ползёт со всех сторон...",
+  "omen_color": "#e0e8f0",
+  "omen_lead": 6.0,
+  "omen_time": 5.0,
+  "omen_sound": "omen"
+ },
+ "locusts": {
+  "actions": [],
+  "prices": [
+   {
+    "item": "",
+    "category": "Еда",
+    "mult": 1.5
+   }
+  ],
+  "end_text": "Сборщики улетели.",
+  "name": "Налёт сборщиков",
+  "kind": "pests",
+  "color": "#d0c040",
+  "chance": 0.06,
+  "min_day": 4,
+  "duration": 120,
+  "power": 14,
+  "text": "Мини-дроны и роботы-сборщики летят к складам! Защитите запасы.",
+  "monsters": [
+   "drone",
+   "thief"
+  ],
+  "spawn_dist": 45,
+  "sky_color": "#a09030",
+  "sky_power": 0.15,
+  "omen": "Слышите жужжание? Сборщики идут за вашими запасами...",
+  "omen_color": "#ffd04a",
+  "omen_lead": 6.0,
+  "omen_time": 5.0,
+  "omen_sound": "omen"
+ },
+ "capsule_crash": {
+  "actions": [],
+  "prices": [],
+  "end_text": "",
+  "name": "Падение капсулы",
+  "kind": "capsule",
+  "color": "#ffb040",
+  "chance": 0.1,
+  "min_day": 2,
+  "duration": 10,
+  "power": 2,
+  "text": "С неба упала капсула со станции! Она отмечена на карте. Рядом может быть охрана.",
+  "capsule": "supply_capsule",
+  "spawn_dist": 40,
+  "monsters": [
+   "guard",
+   "drone"
+  ],
+  "loot": [
+   {
+    "item": "circuit",
+    "chance": 1.0,
+    "min": 4,
+    "max": 10
+   },
+   {
+    "item": "steel",
+    "chance": 0.8,
+    "min": 8,
+    "max": 16
+   },
+   {
+    "item": "crystal",
+    "chance": 0.5,
+    "min": 2,
+    "max": 5
+   },
+   {
+    "item": "medkit",
+    "chance": 0.6,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "ammo",
+    "chance": 0.7,
+    "min": 20,
+    "max": 60
+   }
+  ],
+  "omen": "Что-то огромное с рёвом падает с орбиты!",
+  "omen_color": "#ff8a4a",
+  "omen_lead": 6.0,
+  "omen_time": 5.0,
+  "omen_sound": "omen"
+ },
+ "rich_vein": {
+  "actions": [],
+  "prices": [],
+  "end_text": "",
+  "name": "Богатая жила",
+  "kind": "vein",
+  "color": "#40e0a0",
+  "chance": 0.08,
+  "min_day": 2,
+  "duration": 5,
+  "power": 14,
+  "text": "Разведка нашла богатую жилу рядом! Она отмечена на карте.",
+  "spawn_dist": 30,
+  "resources": [
+   "ore_iron",
+   "ore_copper",
+   "ore_quartz",
+   "ore_sulfur",
+   "ore_coal"
+  ],
+  "omen": "Земля трескается, обнажая блеск руды...",
+  "omen_color": "#ffe08a",
+  "omen_lead": 6.0,
+  "omen_time": 5.0,
+  "omen_sound": "omen"
+ },
+ "gnome_raid": {
+  "actions": [],
+  "prices": [],
+  "end_text": "",
+  "name": "Набег разведчиков",
+  "kind": "horde",
+  "color": "#e0a040",
+  "chance": 0.05,
+  "min_day": 5,
+  "duration": 120,
+  "power": 12,
+  "go_base": true,
+  "text": "Набег разведчиков! Камикадзе и сборщики идут к штабу.",
+  "monsters": [
+   "thief",
+   "bomber",
+   "runner"
+  ],
+  "spawn_dist": 55,
+  "omen": "Писк сканеров. Разведчики уже рядом...",
+  "omen_color": "#ff9a6a",
+  "omen_lead": 6.0,
+  "omen_time": 5.0,
+  "omen_sound": "omen"
+ },
+ "robot_invasion": {
+  "actions": [],
+  "prices": [
+   {
+    "item": "circuit",
+    "category": "",
+    "mult": 0.8
+   }
+  ],
+  "end_text": "",
+  "name": "Вторжение роботов",
+  "kind": "horde",
+  "color": "#70b0ff",
+  "chance": 0.04,
+  "min_day": 8,
+  "duration": 150,
+  "power": 14,
+  "go_base": true,
+  "text": "Вторжение роботов! Колонна машин идёт на базу.",
+  "monsters": [
+   "guard",
+   "drone",
+   "bomber",
+   "brute"
+  ],
+  "spawn_dist": 60,
+  "omen": "Красные огни загораются в тучах. Роботы идут...",
+  "omen_color": "#ff3a3a",
+  "omen_lead": 6.0,
+  "omen_time": 5.0,
+  "omen_sound": "omen"
+ },
+ "alien_landing": {
+  "actions": [],
+  "prices": [],
+  "end_text": "",
+  "name": "Десант с орбиты",
+  "kind": "horde",
+  "color": "#80ff80",
+  "chance": 0.04,
+  "min_day": 12,
+  "duration": 150,
+  "power": 16,
+  "go_base": true,
+  "text": "Десант с орбиты! Носитель сбросил отряд — он идёт к штабу.",
+  "monsters": [
+   "sniper",
+   "medic",
+   "guard",
+   "carrier"
+  ],
+  "spawn_dist": 60,
+  "sky_color": "#30a060",
+  "sky_power": 0.2,
+  "omen": "Небо прорезают огни посадочных двигателей...",
+  "omen_color": "#ff5ab0",
+  "omen_lead": 6.0,
+  "omen_time": 5.0,
+  "omen_sound": "omen"
+ }
+}

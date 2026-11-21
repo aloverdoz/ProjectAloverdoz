@@ -1,0 +1,18 @@
+{
+ "volume": -8.0,
+ "crossfade": 3.0,
+ "menu": [
+  "res://sounds/music_night.wav"
+ ],
+ "day": [
+  "res://sounds/music_day.wav"
+ ],
+ "night": [
+  "res://sounds/music_night.wav"
+ ],
+ "wave": [
+  "res://sounds/music_wave.wav"
+ ],
+ "ambient_day": "wind",
+ "ambient_night": "wind"
+}

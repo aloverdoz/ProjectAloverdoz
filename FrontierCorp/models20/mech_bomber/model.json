@@ -1,0 +1,219 @@
+{
+ "extra": {
+  "rig": {
+   "arms": [],
+   "body": "b_body",
+   "bones": [
+    {
+     "name": "b_body",
+     "parent": "",
+     "pivot": [
+      0,
+      0.5,
+      0
+     ]
+    },
+    {
+     "name": "b_head",
+     "parent": "b_body",
+     "pivot": [
+      0.2,
+      0.74,
+      0
+     ]
+    },
+    {
+     "name": "b_ball",
+     "parent": "b_body",
+     "pivot": [
+      0,
+      0.5,
+      0
+     ]
+    }
+   ],
+   "breath": [],
+   "chains": [],
+   "gait": {
+    "bank": 10,
+    "bob": 0.02,
+    "duty": 0.6,
+    "knee": 30,
+    "lean": 2,
+    "lift": 20,
+    "roll": 4,
+    "stride": 2,
+    "swing": 25
+   },
+   "head": "b_head",
+   "jaws": [],
+   "legs": [],
+   "wheels": [
+    {
+     "axis": "z",
+     "bone": "b_ball",
+     "radius": 0.43
+    }
+   ]
+  }
+ },
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_bomber/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.5,
+    0
+   ],
+   "role": "b_ball",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_bomber/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_bomber/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.5,
+    0
+   ],
+   "role": "b_body",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_bomber/tex0.png"
+  },
+  {
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/mech_bomber/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.5,
+    0
+   ],
+   "role": "b_body",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_bomber/3.res",
+   "metallic": 0,
+   "pos": [
+    0.2,
+    0.74,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_bomber/tex0.png"
+  },
+  {
+   "anim": "blink",
+   "color": "#ff2105",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/mech_bomber/4.res",
+   "metallic": 0,
+   "pos": [
+    0.2,
+    0.74,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "flicker",
+   "color": "#ff4b05",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/mech_bomber/5.res",
+   "metallic": 0,
+   "pos": [
+    0.2,
+    0.74,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

@@ -1,0 +1,796 @@
+{
+ "parts": [
+  {
+   "anim": "crank",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_assembler/0.res",
+   "metallic": 0,
+   "pos": [
+    0.5753,
+    0.6,
+    1.0531
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_assembler/tex0.png"
+  },
+  {
+   "anim": "crank",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_assembler/1.res",
+   "metallic": 0,
+   "pos": [
+    0.5753,
+    0.6,
+    1.0531
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_assembler/tex0.png"
+  },
+  {
+   "anim": "crank",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_assembler/2.res",
+   "metallic": 0,
+   "pos": [
+    0.5753,
+    0.6,
+    1.0531
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_assembler/tex0.png"
+  },
+  {
+   "anim": "crank",
+   "color": "#30ffda",
+   "emission": 4.6,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_assembler/3.res",
+   "metallic": 0,
+   "pos": [
+    0.5753,
+    0.6,
+    1.0531
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "crank_001",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_assembler/4.res",
+   "metallic": 0,
+   "pos": [
+    -1.1997,
+    0.6,
+    -0.0283
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_assembler/tex0.png"
+  },
+  {
+   "anim": "crank_001",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_assembler/5.res",
+   "metallic": 0,
+   "pos": [
+    -1.1997,
+    0.6,
+    -0.0283
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_assembler/tex0.png"
+  },
+  {
+   "anim": "crank_001",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_assembler/6.res",
+   "metallic": 0,
+   "pos": [
+    -1.1997,
+    0.6,
+    -0.0283
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_assembler/tex0.png"
+  },
+  {
+   "anim": "crank_001",
+   "color": "#30ffda",
+   "emission": 4.6,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_assembler/7.res",
+   "metallic": 0,
+   "pos": [
+    -1.1997,
+    0.6,
+    -0.0283
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pump_nod",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_assembler/8.res",
+   "metallic": 0,
+   "pos": [
+    0.6244,
+    0.6,
+    -1.0248
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_assembler/tex0.png"
+  },
+  {
+   "anim": "pump_nod",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_assembler/9.res",
+   "metallic": 0,
+   "pos": [
+    0.6244,
+    0.6,
+    -1.0248
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_assembler/tex0.png"
+  },
+  {
+   "anim": "pump_nod",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_assembler/10.res",
+   "metallic": 0,
+   "pos": [
+    0.6244,
+    0.6,
+    -1.0248
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_assembler/tex0.png"
+  },
+  {
+   "anim": "pump_nod",
+   "color": "#30ffda",
+   "emission": 4.6,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_assembler/11.res",
+   "metallic": 0,
+   "pos": [
+    0.6244,
+    0.6,
+    -1.0248
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_assembler/12.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_assembler/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_assembler/13.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_assembler/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_assembler/14.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_assembler/tex0.png"
+  },
+  {
+   "color": "#30ffda",
+   "emission": 4.6,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_assembler/15.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_assembler/16.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_assembler/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_assembler/17.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_assembler/tex0.png"
+  },
+  {
+   "color": "#010101",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_assembler/18.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.9,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_assembler/19.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_assembler/tex0.png"
+  },
+  {
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_assembler/20.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ff3021",
+   "emission": 2,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_assembler/21.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#4bff66",
+   "emission": 2,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_assembler/22.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffc130",
+   "emission": 2,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_assembler/23.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#66fff3",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_assembler/24.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.2,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_assembler/25.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.2,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_assembler/tex0.png"
+  },
+  {
+   "anim": "spin",
+   "color": "#30ffda",
+   "emission": 4.6,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_assembler/26.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.2,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_fast",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/quantum_assembler/27.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.2,
+    0
+   ],
+   "rot": [
+    0,
+    -90,
+    180
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/quantum_assembler/tex0.png"
+  },
+  {
+   "anim": "pulse",
+   "color": "#30ffda",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_assembler/28.res",
+   "metallic": 0,
+   "pos": [
+    -1.28,
+    0.7,
+    0.98
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_001",
+   "color": "#ffb430",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_assembler/29.res",
+   "metallic": 0,
+   "pos": [
+    1.28,
+    0.7,
+    0.98
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "flicker_soft",
+   "color": "#4bffda",
+   "emission": 2.5,
+   "mat": "glow",
+   "mesh": "res://models20/quantum_assembler/30.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.92,
+    1.46
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

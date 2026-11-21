@@ -1,0 +1,171 @@
+{
+ "title": "FRONTIER CORP",
+ "subtitle": "",
+ "logo": "",
+ "bg_image": "res://ui/menu_bg.png",
+ "window_title": "Frontier Corp",
+ "splash_on": true,
+ "splash_image": "res://ui/splash.png",
+ "splash_time": 2.5,
+ "bg_color_a": "#080d17",
+ "bg_color_b": "#29170a",
+ "bg_animated": true,
+ "buttons": [
+  {
+   "id": "continue",
+   "text": "@m_continue",
+   "show": true
+  },
+  {
+   "id": "new",
+   "text": "@m_new",
+   "show": true
+  },
+  {
+   "id": "hero",
+   "text": "",
+   "show": true
+  },
+  {
+   "id": "load",
+   "text": "@m_load",
+   "show": true
+  },
+  {
+   "id": "net",
+   "text": "@m_net",
+   "show": false
+  },
+  {
+   "id": "editor",
+   "text": "@m_editor",
+   "show": true
+  },
+  {
+   "id": "mods",
+   "text": "@m_mods",
+   "show": true
+  },
+  {
+   "id": "settings",
+   "text": "@m_settings",
+   "show": true
+  },
+  {
+   "id": "help",
+   "text": "@m_help",
+   "show": true
+  },
+  {
+   "id": "credits",
+   "text": "@m_credits",
+   "show": true
+  },
+  {
+   "id": "quit",
+   "text": "@m_quit",
+   "show": true
+  }
+ ],
+ "pause_buttons": [
+  {
+   "id": "resume",
+   "text": "@p_resume",
+   "show": true
+  },
+  {
+   "id": "save",
+   "text": "@p_save",
+   "show": true
+  },
+  {
+   "id": "load",
+   "text": "@p_load",
+   "show": true
+  },
+  {
+   "id": "settings",
+   "text": "@p_settings",
+   "show": true
+  },
+  {
+   "id": "help",
+   "text": "@p_help",
+   "show": true
+  },
+  {
+   "id": "menu",
+   "text": "@p_menu",
+   "show": true
+  },
+  {
+   "id": "quit",
+   "text": "@p_quit",
+   "show": true
+  }
+ ],
+ "save_slots": 8,
+ "tips": [
+  {
+   "text": "Ставьте ленты мышью с зажатой кнопкой — они сами поворачивают."
+  },
+  {
+   "text": "Ящик в конце ленты собирает всё, что приехало. Из ящика вещи забирает герой или следующая лента."
+  },
+  {
+   "text": "Буры и плавильни без электричества стоят. Генератору нужно топливо, солнечной панели — день."
+  },
+  {
+   "text": "Гнёзда монстров рождают волны. Уничтожьте гнёзда — и волны прекратятся."
+  },
+  {
+   "text": "Панель быстрого доступа: перетащите туда оружие, еду или здание из меню стройки."
+  },
+  {
+   "text": "Умный разделитель можно настроить: какие предметы куда идут."
+  },
+  {
+   "text": "Ночью монстры злее. Поставьте фонари и турели заранее."
+  },
+  {
+   "text": "Если герой погиб, его вещи остаются в сундуке на месте гибели."
+  },
+  {
+   "text": "Esc — пауза. Игра сохраняется сама, но лучше сохраняться и вручную."
+  },
+  {
+   "text": "Корпорация Aloverdoz напоминает: бур не устаёт, не болеет и не просит отпуск. Берите с него пример."
+  },
+  {
+   "text": "Если что-то горит, а это не печь, это повод насторожиться."
+  },
+  {
+   "text": "Зелёный разъём на стене здания — выход. Подключайте ленту туда, а не в воздух: воздух руду не принимает."
+  },
+  {
+   "text": "Камни после добычи не вырастают заново. Природа планеты ценит бережливость."
+  },
+  {
+   "text": "Турели не берут выходных. Патроны, к сожалению, берут, так что пополняйте склад штаба."
+  },
+  {
+   "text": "Две ленты на выходе здания 2×2 делят поток поровну. Справедливость — основа корпоративной культуры."
+  }
+ ],
+ "loading_text": "@loading",
+ "loading_min_time": 0.8,
+ "credits": "[b]Frontier Corp · Project Aloverdoz[/b]\n\n[b]Идея и дизайн[/b] — автор игры\n[b]Движок[/b] — Godot Engine 4 (godotengine.org)\n\nСпасибо, что играете!\n\n[color=#8a93a3]Этот текст меняется в редакторе: Данные → Главное меню и экраны → Авторы.[/color]",
+ "help_extra": "",
+ "death_title": "@death_title",
+ "death_text": "@death_text",
+ "victory": {
+  "mode": "none",
+  "value": 0
+ },
+ "victory_title": "@victory_title",
+ "victory_text": "@victory_text",
+ "defeat_title": "@defeat_title",
+ "defeat_text": "@defeat_text",
+ "show_stats": true,
+ "bg_live": true
+}

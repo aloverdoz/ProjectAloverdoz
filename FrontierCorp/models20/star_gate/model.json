@@ -1,0 +1,878 @@
+{
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/star_gate/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.15,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/star_gate/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/star_gate/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.15,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/star_gate/tex0.png"
+  },
+  {
+   "color": "#59b4ff",
+   "emission": 2.5,
+   "mat": "glow",
+   "mesh": "res://models20/star_gate/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.15,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/star_gate/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.15,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/star_gate/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/star_gate/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.15,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/star_gate/tex0.png"
+  },
+  {
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/star_gate/5.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.15,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/star_gate/6.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.15,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/star_gate/tex0.png"
+  },
+  {
+   "color": "#fff3cd",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/star_gate/7.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.15,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#59b4ff",
+   "emission": 1.6,
+   "mat": "glow",
+   "mesh": "res://models20/star_gate/8.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.15,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#ff9a30",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/star_gate/9.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    6.75,
+    0.49
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_001",
+   "color": "#ff9a30",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/star_gate/10.res",
+   "metallic": 0,
+   "pos": [
+    -1.9284,
+    6.0481,
+    0.49
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_002",
+   "color": "#ff9a30",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/star_gate/11.res",
+   "metallic": 0,
+   "pos": [
+    -2.9544,
+    4.2709,
+    0.49
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_003",
+   "color": "#ff9a30",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/star_gate/12.res",
+   "metallic": 0,
+   "pos": [
+    -2.5981,
+    2.25,
+    0.49
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_004",
+   "color": "#ff9a30",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/star_gate/13.res",
+   "metallic": 0,
+   "pos": [
+    -1.0261,
+    0.9309,
+    0.49
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_005",
+   "color": "#ff9a30",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/star_gate/14.res",
+   "metallic": 0,
+   "pos": [
+    1.0261,
+    0.9309,
+    0.49
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_006",
+   "color": "#ff9a30",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/star_gate/15.res",
+   "metallic": 0,
+   "pos": [
+    2.5981,
+    2.25,
+    0.49
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_007",
+   "color": "#ff9a30",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/star_gate/16.res",
+   "metallic": 0,
+   "pos": [
+    2.9544,
+    4.2709,
+    0.49
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_008",
+   "color": "#ff9a30",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/star_gate/17.res",
+   "metallic": 0,
+   "pos": [
+    1.9284,
+    6.0481,
+    0.49
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin",
+   "color": "#b466ff",
+   "emission": 5,
+   "mat": "glow",
+   "mesh": "res://models20/star_gate/18.res",
+   "metallic": 0,
+   "pos": [
+    -3.5,
+    3.43,
+    -1.2
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_001",
+   "color": "#b466ff",
+   "emission": 5,
+   "mat": "glow",
+   "mesh": "res://models20/star_gate/19.res",
+   "metallic": 0,
+   "pos": [
+    3.5,
+    3.43,
+    -1.2
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/star_gate/20.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    3.75,
+    0
+   ],
+   "rot": [
+    90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/star_gate/tex0.png"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#59b4ff",
+   "emission": 3,
+   "mat": "glow",
+   "mesh": "res://models20/star_gate/21.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    3.75,
+    0
+   ],
+   "rot": [
+    90,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/star_gate/22.res",
+   "metallic": 0,
+   "pos": [
+    -3.5,
+    3.5,
+    -1.2
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/star_gate/tex0.png"
+  },
+  {
+   "anim": "spin_slow_001",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/star_gate/23.res",
+   "metallic": 0,
+   "pos": [
+    3.5,
+    3.5,
+    -1.2
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/star_gate/tex0.png"
+  },
+  {
+   "anim": "pulse",
+   "color": "#3d8dff",
+   "emission": 2.5,
+   "mat": "glow",
+   "mesh": "res://models20/star_gate/24.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    3.75,
+    0
+   ],
+   "rot": [
+    90,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#59b4ff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/star_gate/25.res",
+   "metallic": 0,
+   "pos": [
+    3.8803,
+    0.62,
+    -1.6073
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_001",
+   "color": "#59b4ff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/star_gate/26.res",
+   "metallic": 0,
+   "pos": [
+    1.6073,
+    0.62,
+    -3.8803
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_002",
+   "color": "#59b4ff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/star_gate/27.res",
+   "metallic": 0,
+   "pos": [
+    -1.6073,
+    0.62,
+    -3.8803
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_003",
+   "color": "#59b4ff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/star_gate/28.res",
+   "metallic": 0,
+   "pos": [
+    -3.8803,
+    0.62,
+    -1.6073
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_004",
+   "color": "#59b4ff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/star_gate/29.res",
+   "metallic": 0,
+   "pos": [
+    -3.8803,
+    0.62,
+    1.6073
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_005",
+   "color": "#59b4ff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/star_gate/30.res",
+   "metallic": 0,
+   "pos": [
+    -1.6073,
+    0.62,
+    3.8803
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_006",
+   "color": "#59b4ff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/star_gate/31.res",
+   "metallic": 0,
+   "pos": [
+    1.6073,
+    0.62,
+    3.8803
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_007",
+   "color": "#59b4ff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/star_gate/32.res",
+   "metallic": 0,
+   "pos": [
+    3.8803,
+    0.62,
+    1.6073
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin",
+   "color": "#c1e6ff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/star_gate/33.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    3.75,
+    0
+   ],
+   "rot": [
+    90,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

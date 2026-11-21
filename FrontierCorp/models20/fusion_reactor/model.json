@@ -1,0 +1,742 @@
+{
+ "parts": [
+  {
+   "anim": "blink",
+   "color": "#ff4b30",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/fusion_reactor/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    4.138,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/fusion_reactor/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.11,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/fusion_reactor/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/fusion_reactor/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.11,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/fusion_reactor/tex0.png"
+  },
+  {
+   "color": "#3dffe6",
+   "emission": 3,
+   "mat": "glow",
+   "mesh": "res://models20/fusion_reactor/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.11,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/fusion_reactor/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.11,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/fusion_reactor/tex0.png"
+  },
+  {
+   "color": "#3dffe6",
+   "emission": 2.5,
+   "mat": "glow",
+   "mesh": "res://models20/fusion_reactor/5.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.11,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/fusion_reactor/6.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.11,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/fusion_reactor/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/fusion_reactor/7.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.11,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/fusion_reactor/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/fusion_reactor/8.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.11,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/fusion_reactor/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/fusion_reactor/9.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.11,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/fusion_reactor/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/fusion_reactor/10.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.11,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/fusion_reactor/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/fusion_reactor/11.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.11,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/fusion_reactor/tex0.png"
+  },
+  {
+   "color": "#131313",
+   "mat": "paint",
+   "mesh": "res://models20/fusion_reactor/12.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.11,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/fusion_reactor/13.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.11,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/fusion_reactor/tex0.png"
+  },
+  {
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/fusion_reactor/14.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.11,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#3dffe6",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/fusion_reactor/15.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    4.14,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/fusion_reactor/16.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    4.14,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/fusion_reactor/tex0.png"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/fusion_reactor/17.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    4.14,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/fusion_reactor/tex0.png"
+  },
+  {
+   "anim": "pulse",
+   "color": "#3dffe6",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/fusion_reactor/18.res",
+   "metallic": 0,
+   "pos": [
+    3.0123,
+    0.99,
+    -3.0123
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_001",
+   "color": "#3dffe6",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/fusion_reactor/19.res",
+   "metallic": 0,
+   "pos": [
+    -3.0123,
+    0.99,
+    -3.0123
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_002",
+   "color": "#3dffe6",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/fusion_reactor/20.res",
+   "metallic": 0,
+   "pos": [
+    -3.0123,
+    0.99,
+    3.0123
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_003",
+   "color": "#3dffe6",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/fusion_reactor/21.res",
+   "metallic": 0,
+   "pos": [
+    3.0123,
+    0.99,
+    3.0123
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffa721",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/fusion_reactor/22.res",
+   "metallic": 0,
+   "pos": [
+    2.7577,
+    1.86,
+    -2.7577
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink_001",
+   "color": "#ffa721",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/fusion_reactor/23.res",
+   "metallic": 0,
+   "pos": [
+    -2.7577,
+    1.86,
+    -2.7577
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink_002",
+   "color": "#ffa721",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/fusion_reactor/24.res",
+   "metallic": 0,
+   "pos": [
+    -2.7577,
+    1.86,
+    2.7577
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink_003",
+   "color": "#ffa721",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/fusion_reactor/25.res",
+   "metallic": 0,
+   "pos": [
+    2.7577,
+    1.86,
+    2.7577
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#da73ff",
+   "emission": 5,
+   "mat": "glow",
+   "mesh": "res://models20/fusion_reactor/26.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.87,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#3dffe6",
+   "emission": 3,
+   "mat": "glow",
+   "mesh": "res://models20/fusion_reactor/27.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.09,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#3dffe6",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/fusion_reactor/28.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.94,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

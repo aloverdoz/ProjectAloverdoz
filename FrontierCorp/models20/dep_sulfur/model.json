@@ -1,0 +1,112 @@
+{
+ "extra": {
+  "emitters": [
+   {
+    "kind": "puff",
+    "pos": [
+     0,
+     0.08,
+     -0
+    ],
+    "rate": 0.4,
+    "size": 0.5
+   },
+   {
+    "kind": "puff",
+    "pos": [
+     0.09,
+     0.479,
+     -0.059
+    ],
+    "rate": 0.4,
+    "size": 0.5
+   },
+   {
+    "kind": "puff",
+    "pos": [
+     0.131,
+     0.871,
+     -0.108
+    ],
+    "rate": 0.4,
+    "size": 0.5
+   }
+  ]
+ },
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/dep_sulfur/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.8,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/dep_sulfur/tex0.png"
+  },
+  {
+   "color": "#bca00a",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/dep_sulfur/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.25,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#050100",
+   "mat": "paint",
+   "mesh": "res://models20/dep_sulfur/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 1,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

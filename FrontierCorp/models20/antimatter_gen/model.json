@@ -1,0 +1,463 @@
+{
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/antimatter_gen/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.1,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/antimatter_gen/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/antimatter_gen/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.1,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/antimatter_gen/tex0.png"
+  },
+  {
+   "color": "#c159ff",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/antimatter_gen/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.1,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/antimatter_gen/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.1,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/antimatter_gen/tex0.png"
+  },
+  {
+   "color": "#c159ff",
+   "emission": 3,
+   "mat": "glow",
+   "mesh": "res://models20/antimatter_gen/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.1,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/antimatter_gen/5.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.1,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/antimatter_gen/tex0.png"
+  },
+  {
+   "color": "#c159ff",
+   "emission": 5,
+   "mat": "glow",
+   "mesh": "res://models20/antimatter_gen/6.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.1,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/antimatter_gen/7.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.1,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/antimatter_gen/8.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.55,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/antimatter_gen/tex0.png"
+  },
+  {
+   "anim": "pulse",
+   "color": "#c159ff",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/antimatter_gen/9.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.12,
+    3.18
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#c159ff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/antimatter_gen/10.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.55,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ff66ff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/antimatter_gen/11.res",
+   "metallic": 0,
+   "pos": [
+    -2.4682,
+    2.35,
+    -1.425
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink_001",
+   "color": "#ff66ff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/antimatter_gen/12.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.35,
+    2.85
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink_002",
+   "color": "#ff66ff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/antimatter_gen/13.res",
+   "metallic": 0,
+   "pos": [
+    2.4682,
+    2.35,
+    -1.425
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/antimatter_gen/14.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.55,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/antimatter_gen/tex0.png"
+  },
+  {
+   "anim": "spin",
+   "color": "#c159ff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/antimatter_gen/15.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.55,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/antimatter_gen/16.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.55,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/antimatter_gen/tex0.png"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/antimatter_gen/17.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.55,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/antimatter_gen/tex0.png"
+  }
+ ]
+}

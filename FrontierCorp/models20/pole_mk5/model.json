@@ -1,0 +1,353 @@
+{
+ "extra": {
+  "emitters": [
+   {
+    "kind": "spark",
+    "pos": [
+     0,
+     3.64,
+     0
+    ],
+    "rate": 0.4,
+    "size": 0.35,
+    "when": "active"
+   }
+  ]
+ },
+ "parts": [
+  {
+   "anim": "pulse",
+   "color": "#c159ff",
+   "emission": 4.5,
+   "mat": "glow",
+   "mesh": "res://models20/pole_mk5/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.19,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/pole_mk5/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.06,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/pole_mk5/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/pole_mk5/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.06,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/pole_mk5/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/pole_mk5/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.06,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/pole_mk5/tex0.png"
+  },
+  {
+   "color": "#c159ff",
+   "emission": 4.5,
+   "mat": "glow",
+   "mesh": "res://models20/pole_mk5/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.06,
+    0
+   ],
+   "rot": [
+    0,
+    22.5,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/pole_mk5/5.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    3.64,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/pole_mk5/tex0.png"
+  },
+  {
+   "anim": "hover",
+   "color": "#c159ff",
+   "emission": 3.2,
+   "mat": "glow",
+   "mesh": "res://models20/pole_mk5/6.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    3.64,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_fast",
+   "color": "#c159ff",
+   "emission": 4.5,
+   "mat": "glow",
+   "mesh": "res://models20/pole_mk5/7.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    3.64,
+    0
+   ],
+   "rot": [
+    0,
+    -90,
+    180
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/pole_mk5/8.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    3.64,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/pole_mk5/tex0.png"
+  },
+  {
+   "anim": "spin",
+   "color": "#c159ff",
+   "emission": 4.5,
+   "mat": "glow",
+   "mesh": "res://models20/pole_mk5/9.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    3.64,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#c159ff",
+   "emission": 4.5,
+   "mat": "glow",
+   "mesh": "res://models20/pole_mk5/10.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    3.11,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#c159ff",
+   "emission": 4.5,
+   "mat": "glow",
+   "mesh": "res://models20/pole_mk5/11.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.75,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/pole_mk5/12.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.75,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/pole_mk5/tex0.png"
+  }
+ ]
+}

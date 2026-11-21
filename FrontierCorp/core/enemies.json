@@ -1,0 +1,3422 @@
+{
+ "trader": {
+  "name": "Торговец",
+  "model": "npc_trader",
+  "hp": 120,
+  "speed": 4.0,
+  "damage": 0,
+  "rate": 0.9,
+  "reach": 1.2,
+  "reward": 0,
+  "xp": 3,
+  "behavior": "trader",
+  "radius": 0.5,
+  "drops": [],
+  "faction": "merchants",
+  "greeting": "Привет, колонист! Посмотри мой товар.",
+  "goods": [
+   {
+    "item": "iron_plate",
+    "n": 20,
+    "price": 6
+   },
+   {
+    "item": "circuit",
+    "n": 5,
+    "price": 30
+   },
+   {
+    "item": "medkit",
+    "n": 3,
+    "price": 25
+   },
+   {
+    "item": "berry",
+    "n": 10,
+    "price": 3
+   },
+   {
+    "item": "crystal",
+    "n": 1,
+    "price": 120
+   },
+   {
+    "item": "raw_meat",
+    "n": 10,
+    "price": 4
+   }
+  ],
+  "buys": [
+   "log",
+   "plank",
+   "chitin",
+   "goo"
+  ],
+  "stay": 150,
+  "rep_kill": -30,
+  "lines": "Дороги нынче опасные.\nСлышал, налётчики шастают у реки.\nХорошая у тебя база!",
+  "characters": [
+   "kind",
+   "greedy",
+   "grumpy",
+   "coward",
+   "proud"
+  ]
+ },
+ "traveler": {
+  "name": "Путник",
+  "model": "npc_traveler",
+  "hp": 80,
+  "speed": 3.0,
+  "damage": 0,
+  "rate": 0.9,
+  "reach": 1.2,
+  "reward": 0,
+  "xp": 3,
+  "behavior": "traveler",
+  "radius": 0.5,
+  "drops": [],
+  "faction": "settlers",
+  "greeting": "Доброго дня! Иду своей дорогой.",
+  "goods": [
+   {
+    "item": "berry",
+    "n": 6,
+    "price": 2
+   },
+   {
+    "item": "medkit",
+    "n": 2,
+    "price": 15
+   },
+   {
+    "item": "raw_meat",
+    "n": 10,
+    "price": 5
+   }
+  ],
+  "buys": [
+   "berry"
+  ],
+  "stay": 40,
+  "rep_kill": -20,
+  "lines": "Красиво тут у вас.\nМонстры ночью злые, береги себя.",
+  "characters": [
+   "kind",
+   "greedy",
+   "grumpy",
+   "coward",
+   "proud"
+  ]
+ },
+ "bandit": {
+  "name": "Налётчик разлома",
+  "model": "alien_demon_creature",
+  "hp": 90,
+  "speed": 6.5,
+  "damage": 9,
+  "rate": 0.9,
+  "reach": 1.2,
+  "reward": 0,
+  "xp": 3,
+  "behavior": "bandit",
+  "radius": 0.5,
+  "drops": [
+   {
+    "item": "iron_plate",
+    "chance": 0.5,
+    "min": 1,
+    "max": 4
+   },
+   {
+    "item": "ammo",
+    "chance": 0.4,
+    "min": 3,
+    "max": 8
+   }
+  ],
+  "faction": "raiders",
+  "greeting": "Отдавай добро!",
+  "goods": [],
+  "buys": [],
+  "stay": 120,
+  "rep_kill": 5,
+  "lines": "",
+  "characters": [
+   "cruel",
+   "cunning"
+  ],
+  "family": "Обитатели планеты"
+ },
+ "infiltrator": {
+  "name": "Странник в капюшоне",
+  "model": "npc_infiltrator",
+  "hp": 100,
+  "speed": 4.5,
+  "damage": 0,
+  "rate": 0.9,
+  "reach": 1.2,
+  "reward": 0,
+  "xp": 3,
+  "behavior": "infiltrator",
+  "radius": 0.5,
+  "drops": [],
+  "faction": "shadows",
+  "greeting": "Здравствуй... Не найдётся места переночевать?",
+  "goods": [
+   {
+    "item": "glass",
+    "n": 10,
+    "price": 5
+   },
+   {
+    "item": "wire",
+    "n": 20,
+    "price": 3
+   }
+  ],
+  "buys": [
+   "plank",
+   "stone"
+  ],
+  "stay": 300,
+  "rep_kill": -5,
+  "lines": "Хорошие у тебя ящики... крепкие?\nНочью тут тихо, правда?",
+  "characters": [
+   "kind",
+   "greedy",
+   "grumpy",
+   "coward",
+   "proud"
+  ]
+ },
+ "crawler": {
+  "name": "Паук-сборщик",
+  "model": "mech_spider",
+  "family": "Роботы",
+  "hp": 45,
+  "damage": 9.0,
+  "speed": 6.0,
+  "rate": 0.7,
+  "reach": 1.3,
+  "radius": 0.8,
+  "scale": 1.0,
+  "behavior": "nearest",
+  "reward": 4,
+  "xp": 2,
+  "spawn_weight": 0.0,
+  "from_day": 1,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 1
+   }
+  ]
+ },
+ "crawler_t2": {
+  "name": "Паук-сборщик Мк2",
+  "model": "mech_spider",
+  "family": "Роботы",
+  "hp": 81,
+  "damage": 12.2,
+  "speed": 6.3,
+  "rate": 0.7,
+  "reach": 1.3,
+  "radius": 0.86,
+  "scale": 1.08,
+  "behavior": "nearest",
+  "reward": 7,
+  "xp": 4,
+  "spawn_weight": 0.3,
+  "from_day": 4,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 1
+   }
+  ]
+ },
+ "crawler_t3": {
+  "name": "Паук-сборщик Мк3",
+  "model": "mech_spider",
+  "family": "Роботы",
+  "hp": 135,
+  "damage": 16.2,
+  "speed": 6.48,
+  "rate": 0.7,
+  "reach": 1.3,
+  "radius": 0.93,
+  "scale": 1.16,
+  "behavior": "nearest",
+  "reward": 12,
+  "xp": 8,
+  "spawn_weight": 0.15,
+  "from_day": 8,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 2
+   }
+  ]
+ },
+ "crawler_t4": {
+  "name": "Паук-сборщик Мк4",
+  "model": "mech_spider",
+  "family": "Роботы",
+  "hp": 225,
+  "damage": 21.6,
+  "speed": 6.6,
+  "rate": 0.7,
+  "reach": 1.3,
+  "radius": 1.01,
+  "scale": 1.26,
+  "behavior": "nearest",
+  "reward": 20,
+  "xp": 12,
+  "spawn_weight": 0.048,
+  "from_day": 13,
+  "spawn_leader": true,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 4
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 2
+   }
+  ]
+ },
+ "crawler_t5": {
+  "name": "Паук-сборщик Мк5",
+  "model": "mech_spider",
+  "family": "Роботы",
+  "hp": 405,
+  "damage": 28.8,
+  "speed": 6.72,
+  "rate": 0.7,
+  "reach": 1.3,
+  "radius": 1.12,
+  "scale": 1.4,
+  "behavior": "nearest",
+  "reward": 36,
+  "xp": 22,
+  "spawn_weight": 0.018,
+  "from_day": 19,
+  "spawn_leader": true,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 6
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 3
+   }
+  ]
+ },
+ "runner": {
+  "name": "Гоблин-разведчик",
+  "model": "alien_fantasy_goblin",
+  "family": "Обитатели планеты",
+  "hp": 25,
+  "damage": 6.0,
+  "speed": 10.0,
+  "rate": 0.5,
+  "reach": 1.1,
+  "radius": 0.6,
+  "scale": 1.0,
+  "behavior": "player",
+  "reward": 4,
+  "xp": 2,
+  "spawn_weight": 0.0,
+  "from_day": 1,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fang",
+    "chance": 0.3,
+    "min": 1,
+    "max": 2
+   }
+  ],
+  "rules": [
+   {
+    "if": "hp_below",
+    "then": "flee",
+    "stop": true,
+    "n": 0.3
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "runner_t2": {
+  "name": "Гоблин-разведчик · II",
+  "model": "alien_fantasy_goblin",
+  "family": "Обитатели планеты",
+  "hp": 45,
+  "damage": 8.1,
+  "speed": 10.5,
+  "rate": 0.5,
+  "reach": 1.1,
+  "radius": 0.65,
+  "scale": 1.08,
+  "behavior": "player",
+  "reward": 7,
+  "xp": 4,
+  "spawn_weight": 0.3,
+  "from_day": 4,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fang",
+    "chance": 0.3,
+    "min": 1,
+    "max": 2
+   }
+  ],
+  "rules": [
+   {
+    "if": "hp_below",
+    "then": "flee",
+    "stop": true,
+    "n": 0.3
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "runner_t3": {
+  "name": "Гоблин-разведчик · III",
+  "model": "alien_fantasy_goblin",
+  "family": "Обитатели планеты",
+  "hp": 75,
+  "damage": 10.8,
+  "speed": 10.8,
+  "rate": 0.5,
+  "reach": 1.1,
+  "radius": 0.7,
+  "scale": 1.16,
+  "behavior": "player",
+  "reward": 12,
+  "xp": 8,
+  "spawn_weight": 0.15,
+  "from_day": 8,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "fang",
+    "chance": 0.3,
+    "min": 1,
+    "max": 2
+   }
+  ],
+  "rules": [
+   {
+    "if": "hp_below",
+    "then": "flee",
+    "stop": true,
+    "n": 0.3
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "runner_t4": {
+  "name": "Гоблин-разведчик · IV",
+  "model": "alien_fantasy_goblin",
+  "family": "Обитатели планеты",
+  "hp": 125,
+  "damage": 14.4,
+  "speed": 11.0,
+  "rate": 0.5,
+  "reach": 1.1,
+  "radius": 0.76,
+  "scale": 1.26,
+  "behavior": "player",
+  "reward": 20,
+  "xp": 12,
+  "spawn_weight": 0.048,
+  "from_day": 13,
+  "spawn_leader": true,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 4
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "fang",
+    "chance": 0.3,
+    "min": 1,
+    "max": 2
+   }
+  ],
+  "rules": [
+   {
+    "if": "hp_below",
+    "then": "flee",
+    "stop": true,
+    "n": 0.3
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "runner_t5": {
+  "name": "Гоблин-разведчик · V",
+  "model": "alien_fantasy_goblin",
+  "family": "Обитатели планеты",
+  "hp": 225,
+  "damage": 19.2,
+  "speed": 11.2,
+  "rate": 0.5,
+  "reach": 1.1,
+  "radius": 0.84,
+  "scale": 1.4,
+  "behavior": "player",
+  "reward": 36,
+  "xp": 22,
+  "spawn_weight": 0.018,
+  "from_day": 19,
+  "spawn_leader": true,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 6
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "fang",
+    "chance": 0.3,
+    "min": 1,
+    "max": 2
+   }
+  ],
+  "rules": [
+   {
+    "if": "hp_below",
+    "then": "flee",
+    "stop": true,
+    "n": 0.3
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "spitter": {
+  "name": "Дрон-охотник",
+  "model": "mech_drone",
+  "family": "Роботы",
+  "hp": 80,
+  "damage": 12.0,
+  "speed": 4.0,
+  "rate": 1.5,
+  "reach": 10.0,
+  "radius": 1.0,
+  "scale": 1.0,
+  "behavior": "nearest",
+  "reward": 5,
+  "xp": 3,
+  "spawn_weight": 0.0,
+  "from_day": 2,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "ranged": true
+ },
+ "spitter_t2": {
+  "name": "Дрон-охотник Мк2",
+  "model": "mech_drone",
+  "family": "Роботы",
+  "hp": 144,
+  "damage": 16.2,
+  "speed": 4.2,
+  "rate": 1.5,
+  "reach": 10.0,
+  "radius": 1.08,
+  "scale": 1.08,
+  "behavior": "nearest",
+  "reward": 9,
+  "xp": 5,
+  "spawn_weight": 0.3,
+  "from_day": 5,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "ranged": true
+ },
+ "spitter_t3": {
+  "name": "Дрон-охотник Мк3",
+  "model": "mech_drone",
+  "family": "Роботы",
+  "hp": 240,
+  "damage": 21.6,
+  "speed": 4.32,
+  "rate": 1.5,
+  "reach": 10.0,
+  "radius": 1.16,
+  "scale": 1.16,
+  "behavior": "nearest",
+  "reward": 15,
+  "xp": 9,
+  "spawn_weight": 0.15,
+  "from_day": 9,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 2
+   }
+  ],
+  "ranged": true
+ },
+ "spitter_t4": {
+  "name": "Дрон-охотник Мк4",
+  "model": "mech_drone",
+  "family": "Роботы",
+  "hp": 400,
+  "damage": 28.8,
+  "speed": 4.4,
+  "rate": 1.5,
+  "reach": 10.0,
+  "radius": 1.26,
+  "scale": 1.26,
+  "behavior": "nearest",
+  "reward": 25,
+  "xp": 15,
+  "spawn_weight": 0.048,
+  "from_day": 14,
+  "spawn_leader": true,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 4
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 2
+   }
+  ],
+  "ranged": true
+ },
+ "spitter_t5": {
+  "name": "Дрон-охотник Мк5",
+  "model": "mech_drone",
+  "family": "Роботы",
+  "hp": 720,
+  "damage": 38.4,
+  "speed": 4.48,
+  "rate": 1.5,
+  "reach": 10.0,
+  "radius": 1.4,
+  "scale": 1.4,
+  "behavior": "nearest",
+  "reward": 45,
+  "xp": 27,
+  "spawn_weight": 0.018,
+  "from_day": 20,
+  "spawn_leader": true,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 6
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 3
+   }
+  ],
+  "ranged": true
+ },
+ "brute": {
+  "name": "Каменный голем",
+  "model": "alien_stone_golem",
+  "family": "Обитатели планеты",
+  "hp": 320,
+  "damage": 45.0,
+  "speed": 3.2,
+  "rate": 1.3,
+  "reach": 2.2,
+  "radius": 1.7,
+  "scale": 1.0,
+  "behavior": "base",
+  "reward": 6,
+  "xp": 4,
+  "spawn_weight": 0.0,
+  "from_day": 3,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 4
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "rules": [
+   {
+    "if": "hp_below",
+    "then": "speed",
+    "stop": true,
+    "n": 0.5,
+    "value": 1.6,
+    "cooldown": 8
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "brute_t2": {
+  "name": "Каменный голем · II",
+  "model": "alien_stone_golem",
+  "family": "Обитатели планеты",
+  "hp": 576,
+  "damage": 60.8,
+  "speed": 3.36,
+  "rate": 1.3,
+  "reach": 2.2,
+  "radius": 1.84,
+  "scale": 1.08,
+  "behavior": "base",
+  "reward": 11,
+  "xp": 6,
+  "spawn_weight": 0.3,
+  "from_day": 6,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 5
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 4
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "rules": [
+   {
+    "if": "hp_below",
+    "then": "speed",
+    "stop": true,
+    "n": 0.5,
+    "value": 1.6,
+    "cooldown": 8
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "brute_t3": {
+  "name": "Каменный голем · III",
+  "model": "alien_stone_golem",
+  "family": "Обитатели планеты",
+  "hp": 960,
+  "damage": 81.0,
+  "speed": 3.46,
+  "rate": 1.3,
+  "reach": 2.2,
+  "radius": 1.97,
+  "scale": 1.16,
+  "behavior": "base",
+  "reward": 18,
+  "xp": 10,
+  "spawn_weight": 0.15,
+  "from_day": 10,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 7
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 5
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "monster_core",
+    "chance": 0.05,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "rules": [
+   {
+    "if": "hp_below",
+    "then": "speed",
+    "stop": true,
+    "n": 0.5,
+    "value": 1.6,
+    "cooldown": 8
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "brute_t4": {
+  "name": "Каменный голем · IV",
+  "model": "alien_stone_golem",
+  "family": "Обитатели планеты",
+  "hp": 1600,
+  "damage": 108.0,
+  "speed": 3.52,
+  "rate": 1.3,
+  "reach": 2.2,
+  "radius": 2.14,
+  "scale": 1.26,
+  "behavior": "base",
+  "reward": 30,
+  "xp": 18,
+  "spawn_weight": 0.048,
+  "from_day": 15,
+  "spawn_leader": true,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 9
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 7
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "monster_core",
+    "chance": 0.12,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "rules": [
+   {
+    "if": "hp_below",
+    "then": "speed",
+    "stop": true,
+    "n": 0.5,
+    "value": 1.6,
+    "cooldown": 8
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "brute_t5": {
+  "name": "Каменный голем · V",
+  "model": "alien_stone_golem",
+  "family": "Обитатели планеты",
+  "hp": 2880,
+  "damage": 144.0,
+  "speed": 3.58,
+  "rate": 1.3,
+  "reach": 2.2,
+  "radius": 2.38,
+  "scale": 1.4,
+  "behavior": "base",
+  "reward": 54,
+  "xp": 32,
+  "spawn_weight": 0.018,
+  "from_day": 21,
+  "spawn_leader": true,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 12
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 9
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "monster_core",
+    "chance": 0.25,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "rules": [
+   {
+    "if": "hp_below",
+    "then": "speed",
+    "stop": true,
+    "n": 0.5,
+    "value": 1.6,
+    "cooldown": 8
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "bomber": {
+  "name": "Искровик",
+  "model": "alien_jack_o_lantern",
+  "family": "Обитатели планеты",
+  "hp": 60,
+  "damage": 5.0,
+  "speed": 7.0,
+  "rate": 1.0,
+  "reach": 1.4,
+  "radius": 0.7,
+  "scale": 1.0,
+  "behavior": "nearest",
+  "reward": 6,
+  "xp": 4,
+  "spawn_weight": 0.8,
+  "from_day": 3,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "explode_damage": 60,
+  "explode_radius": 4.0
+ },
+ "bomber_t2": {
+  "name": "Искровик · II",
+  "model": "alien_jack_o_lantern",
+  "family": "Обитатели планеты",
+  "hp": 108,
+  "damage": 6.8,
+  "speed": 7.35,
+  "rate": 1.0,
+  "reach": 1.4,
+  "radius": 0.76,
+  "scale": 1.08,
+  "behavior": "nearest",
+  "reward": 11,
+  "xp": 6,
+  "spawn_weight": 0.4,
+  "from_day": 6,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "explode_damage": 60,
+  "explode_radius": 4.0
+ },
+ "bomber_t3": {
+  "name": "Искровик · III",
+  "model": "alien_jack_o_lantern",
+  "family": "Обитатели планеты",
+  "hp": 180,
+  "damage": 9.0,
+  "speed": 7.56,
+  "rate": 1.0,
+  "reach": 1.4,
+  "radius": 0.81,
+  "scale": 1.16,
+  "behavior": "nearest",
+  "reward": 18,
+  "xp": 10,
+  "spawn_weight": 0.2,
+  "from_day": 10,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 2
+   }
+  ],
+  "explode_damage": 60,
+  "explode_radius": 4.0
+ },
+ "bomber_t4": {
+  "name": "Искровик · IV",
+  "model": "alien_jack_o_lantern",
+  "family": "Обитатели планеты",
+  "hp": 300,
+  "damage": 12.0,
+  "speed": 7.7,
+  "rate": 1.0,
+  "reach": 1.4,
+  "radius": 0.88,
+  "scale": 1.26,
+  "behavior": "nearest",
+  "reward": 30,
+  "xp": 18,
+  "spawn_weight": 0.064,
+  "from_day": 15,
+  "spawn_leader": true,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 4
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 2
+   }
+  ],
+  "explode_damage": 60,
+  "explode_radius": 4.0
+ },
+ "bomber_t5": {
+  "name": "Искровик · V",
+  "model": "alien_jack_o_lantern",
+  "family": "Обитатели планеты",
+  "hp": 540,
+  "damage": 16.0,
+  "speed": 7.84,
+  "rate": 1.0,
+  "reach": 1.4,
+  "radius": 0.98,
+  "scale": 1.4,
+  "behavior": "nearest",
+  "reward": 54,
+  "xp": 32,
+  "spawn_weight": 0.024,
+  "from_day": 21,
+  "spawn_leader": true,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 6
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 3
+   }
+  ],
+  "explode_damage": 60,
+  "explode_radius": 4.0
+ },
+ "thief": {
+  "name": "Робот-сборщик",
+  "model": "mech_thief",
+  "family": "Роботы",
+  "hp": 70,
+  "damage": 4.0,
+  "speed": 8.0,
+  "rate": 1.0,
+  "reach": 1.4,
+  "radius": 0.7,
+  "scale": 1.0,
+  "behavior": "nearest",
+  "reward": 7,
+  "xp": 4,
+  "spawn_weight": 0.6,
+  "from_day": 4,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "steal": 8,
+  "rules": [
+   {
+    "if": "hit",
+    "then": "flee",
+    "stop": true,
+    "cooldown": 6
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "thief_t2": {
+  "name": "Робот-сборщик Мк2",
+  "model": "mech_thief",
+  "family": "Роботы",
+  "hp": 126,
+  "damage": 5.4,
+  "speed": 8.4,
+  "rate": 1.0,
+  "reach": 1.4,
+  "radius": 0.76,
+  "scale": 1.08,
+  "behavior": "nearest",
+  "reward": 13,
+  "xp": 7,
+  "spawn_weight": 0.3,
+  "from_day": 7,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "steal": 8,
+  "rules": [
+   {
+    "if": "hit",
+    "then": "flee",
+    "stop": true,
+    "cooldown": 6
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "thief_t3": {
+  "name": "Робот-сборщик Мк3",
+  "model": "mech_thief",
+  "family": "Роботы",
+  "hp": 210,
+  "damage": 7.2,
+  "speed": 8.64,
+  "rate": 1.0,
+  "reach": 1.4,
+  "radius": 0.81,
+  "scale": 1.16,
+  "behavior": "nearest",
+  "reward": 21,
+  "xp": 12,
+  "spawn_weight": 0.15,
+  "from_day": 11,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 2
+   }
+  ],
+  "steal": 8,
+  "rules": [
+   {
+    "if": "hit",
+    "then": "flee",
+    "stop": true,
+    "cooldown": 6
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "thief_t4": {
+  "name": "Робот-сборщик Мк4",
+  "model": "mech_thief",
+  "family": "Роботы",
+  "hp": 350,
+  "damage": 9.6,
+  "speed": 8.8,
+  "rate": 1.0,
+  "reach": 1.4,
+  "radius": 0.88,
+  "scale": 1.26,
+  "behavior": "nearest",
+  "reward": 35,
+  "xp": 20,
+  "spawn_weight": 0.048,
+  "from_day": 16,
+  "spawn_leader": true,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 4
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 2
+   }
+  ],
+  "steal": 8,
+  "rules": [
+   {
+    "if": "hit",
+    "then": "flee",
+    "stop": true,
+    "cooldown": 6
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "thief_t5": {
+  "name": "Робот-сборщик Мк5",
+  "model": "mech_thief",
+  "family": "Роботы",
+  "hp": 630,
+  "damage": 12.8,
+  "speed": 8.96,
+  "rate": 1.0,
+  "reach": 1.4,
+  "radius": 0.98,
+  "scale": 1.4,
+  "behavior": "nearest",
+  "reward": 63,
+  "xp": 36,
+  "spawn_weight": 0.018,
+  "from_day": 22,
+  "spawn_leader": true,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 6
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 3
+   }
+  ],
+  "steal": 8,
+  "rules": [
+   {
+    "if": "hit",
+    "then": "flee",
+    "stop": true,
+    "cooldown": 6
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "drone": {
+  "name": "Мини-дрон",
+  "model": "mech_mini",
+  "family": "Роботы",
+  "hp": 50,
+  "damage": 8.0,
+  "speed": 8.0,
+  "rate": 1.6,
+  "reach": 10.0,
+  "radius": 0.6,
+  "scale": 1.0,
+  "behavior": "nearest",
+  "reward": 7,
+  "xp": 4,
+  "spawn_weight": 0.8,
+  "from_day": 4,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "fly": true,
+  "fly_height": 4.0,
+  "ranged": true
+ },
+ "drone_t2": {
+  "name": "Мини-дрон Мк2",
+  "model": "mech_mini",
+  "family": "Роботы",
+  "hp": 90,
+  "damage": 10.8,
+  "speed": 8.4,
+  "rate": 1.6,
+  "reach": 10.0,
+  "radius": 0.65,
+  "scale": 1.08,
+  "behavior": "nearest",
+  "reward": 13,
+  "xp": 7,
+  "spawn_weight": 0.4,
+  "from_day": 7,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "fly": true,
+  "fly_height": 4.0,
+  "ranged": true
+ },
+ "drone_t3": {
+  "name": "Мини-дрон Мк3",
+  "model": "mech_mini",
+  "family": "Роботы",
+  "hp": 150,
+  "damage": 14.4,
+  "speed": 8.64,
+  "rate": 1.6,
+  "reach": 10.0,
+  "radius": 0.7,
+  "scale": 1.16,
+  "behavior": "nearest",
+  "reward": 21,
+  "xp": 12,
+  "spawn_weight": 0.2,
+  "from_day": 11,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 2
+   }
+  ],
+  "fly": true,
+  "fly_height": 4.0,
+  "ranged": true
+ },
+ "drone_t4": {
+  "name": "Мини-дрон Мк4",
+  "model": "mech_mini",
+  "family": "Роботы",
+  "hp": 250,
+  "damage": 19.2,
+  "speed": 8.8,
+  "rate": 1.6,
+  "reach": 10.0,
+  "radius": 0.76,
+  "scale": 1.26,
+  "behavior": "nearest",
+  "reward": 35,
+  "xp": 20,
+  "spawn_weight": 0.064,
+  "from_day": 16,
+  "spawn_leader": true,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 4
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 2
+   }
+  ],
+  "fly": true,
+  "fly_height": 4.0,
+  "ranged": true
+ },
+ "drone_t5": {
+  "name": "Мини-дрон Мк5",
+  "model": "mech_mini",
+  "family": "Роботы",
+  "hp": 450,
+  "damage": 25.6,
+  "speed": 8.96,
+  "rate": 1.6,
+  "reach": 10.0,
+  "radius": 0.84,
+  "scale": 1.4,
+  "behavior": "nearest",
+  "reward": 63,
+  "xp": 36,
+  "spawn_weight": 0.024,
+  "from_day": 22,
+  "spawn_leader": true,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.5,
+    "min": 1,
+    "max": 6
+   },
+   {
+    "item": "goo",
+    "chance": 0.3,
+    "min": 1,
+    "max": 3
+   }
+  ],
+  "fly": true,
+  "fly_height": 4.0,
+  "ranged": true
+ },
+ "worm": {
+  "name": "Бур-змей",
+  "model": "mech_driller",
+  "family": "Роботы",
+  "hp": 260,
+  "damage": 30.0,
+  "speed": 5.0,
+  "rate": 1.4,
+  "reach": 2.2,
+  "radius": 1.3,
+  "scale": 1.0,
+  "behavior": "nearest",
+  "reward": 8,
+  "xp": 4,
+  "spawn_weight": 0.4,
+  "from_day": 5,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 4
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "burrow": true
+ },
+ "worm_t2": {
+  "name": "Бур-змей Мк2",
+  "model": "mech_driller",
+  "family": "Роботы",
+  "hp": 468,
+  "damage": 40.5,
+  "speed": 5.25,
+  "rate": 1.4,
+  "reach": 2.2,
+  "radius": 1.4,
+  "scale": 1.08,
+  "behavior": "nearest",
+  "reward": 14,
+  "xp": 8,
+  "spawn_weight": 0.3,
+  "from_day": 8,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 5
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 4
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "burrow": true
+ },
+ "worm_t3": {
+  "name": "Бур-змей Мк3",
+  "model": "mech_driller",
+  "family": "Роботы",
+  "hp": 780,
+  "damage": 54.0,
+  "speed": 5.4,
+  "rate": 1.4,
+  "reach": 2.2,
+  "radius": 1.51,
+  "scale": 1.16,
+  "behavior": "nearest",
+  "reward": 24,
+  "xp": 14,
+  "spawn_weight": 0.15,
+  "from_day": 12,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 7
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 5
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 2
+   }
+  ],
+  "burrow": true
+ },
+ "worm_t4": {
+  "name": "Бур-змей Мк4",
+  "model": "mech_driller",
+  "family": "Роботы",
+  "hp": 1300,
+  "damage": 72.0,
+  "speed": 5.5,
+  "rate": 1.4,
+  "reach": 2.2,
+  "radius": 1.64,
+  "scale": 1.26,
+  "behavior": "nearest",
+  "reward": 40,
+  "xp": 22,
+  "spawn_weight": 0.048,
+  "from_day": 17,
+  "spawn_leader": true,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 9
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 7
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 2
+   }
+  ],
+  "burrow": true
+ },
+ "worm_t5": {
+  "name": "Бур-змей Мк5",
+  "model": "mech_driller",
+  "family": "Роботы",
+  "hp": 2340,
+  "damage": 96.0,
+  "speed": 5.6,
+  "rate": 1.4,
+  "reach": 2.2,
+  "radius": 1.82,
+  "scale": 1.4,
+  "behavior": "nearest",
+  "reward": 72,
+  "xp": 40,
+  "spawn_weight": 0.018,
+  "from_day": 23,
+  "spawn_leader": true,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 12
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 9
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 3
+   }
+  ],
+  "burrow": true
+ },
+ "sniper": {
+  "name": "Робот-снайпер",
+  "model": "mech_sniper",
+  "family": "Роботы",
+  "hp": 90,
+  "damage": 24.0,
+  "speed": 3.5,
+  "rate": 1.6,
+  "reach": 18.0,
+  "radius": 1.0,
+  "scale": 1.0,
+  "behavior": "nearest",
+  "reward": 8,
+  "xp": 4,
+  "spawn_weight": 0.5,
+  "from_day": 5,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 4
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "ranged": true,
+  "teleport_every": 9,
+  "teleport_range": 25,
+  "rules": [
+   {
+    "if": "player_far",
+    "then": "attack_building",
+    "stop": true,
+    "n": 20
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "sniper_t2": {
+  "name": "Робот-снайпер Мк2",
+  "model": "mech_sniper",
+  "family": "Роботы",
+  "hp": 162,
+  "damage": 32.4,
+  "speed": 3.68,
+  "rate": 1.6,
+  "reach": 18.0,
+  "radius": 1.08,
+  "scale": 1.08,
+  "behavior": "nearest",
+  "reward": 14,
+  "xp": 8,
+  "spawn_weight": 0.3,
+  "from_day": 8,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 5
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 4
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "ranged": true,
+  "teleport_every": 9,
+  "teleport_range": 25,
+  "rules": [
+   {
+    "if": "player_far",
+    "then": "attack_building",
+    "stop": true,
+    "n": 20
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "sniper_t3": {
+  "name": "Робот-снайпер Мк3",
+  "model": "mech_sniper",
+  "family": "Роботы",
+  "hp": 270,
+  "damage": 43.2,
+  "speed": 3.78,
+  "rate": 1.6,
+  "reach": 18.0,
+  "radius": 1.16,
+  "scale": 1.16,
+  "behavior": "nearest",
+  "reward": 24,
+  "xp": 14,
+  "spawn_weight": 0.15,
+  "from_day": 12,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 7
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 5
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 2
+   }
+  ],
+  "ranged": true,
+  "teleport_every": 9,
+  "teleport_range": 25,
+  "rules": [
+   {
+    "if": "player_far",
+    "then": "attack_building",
+    "stop": true,
+    "n": 20
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "sniper_t4": {
+  "name": "Робот-снайпер Мк4",
+  "model": "mech_sniper",
+  "family": "Роботы",
+  "hp": 450,
+  "damage": 57.6,
+  "speed": 3.85,
+  "rate": 1.6,
+  "reach": 18.0,
+  "radius": 1.26,
+  "scale": 1.26,
+  "behavior": "nearest",
+  "reward": 40,
+  "xp": 22,
+  "spawn_weight": 0.048,
+  "from_day": 17,
+  "spawn_leader": true,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 9
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 7
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 2
+   }
+  ],
+  "ranged": true,
+  "teleport_every": 9,
+  "teleport_range": 25,
+  "rules": [
+   {
+    "if": "player_far",
+    "then": "attack_building",
+    "stop": true,
+    "n": 20
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "sniper_t5": {
+  "name": "Робот-снайпер Мк5",
+  "model": "mech_sniper",
+  "family": "Роботы",
+  "hp": 810,
+  "damage": 76.8,
+  "speed": 3.92,
+  "rate": 1.6,
+  "reach": 18.0,
+  "radius": 1.4,
+  "scale": 1.4,
+  "behavior": "nearest",
+  "reward": 72,
+  "xp": 40,
+  "spawn_weight": 0.018,
+  "from_day": 23,
+  "spawn_leader": true,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 12
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 9
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 3
+   }
+  ],
+  "ranged": true,
+  "teleport_every": 9,
+  "teleport_range": 25,
+  "rules": [
+   {
+    "if": "player_far",
+    "then": "attack_building",
+    "stop": true,
+    "n": 20
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "medic": {
+  "name": "Споровый целитель",
+  "model": "alien_mushroom_creature",
+  "family": "Обитатели планеты",
+  "hp": 110,
+  "damage": 6.0,
+  "speed": 4.0,
+  "rate": 1.0,
+  "reach": 1.4,
+  "radius": 0.9,
+  "scale": 1.0,
+  "behavior": "nearest",
+  "reward": 9,
+  "xp": 5,
+  "spawn_weight": 0.4,
+  "from_day": 6,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 4
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "heal_every": 4,
+  "heal_amount": 25,
+  "heal_radius": 10,
+  "rules": [
+   {
+    "if": "hp_below",
+    "then": "flee",
+    "stop": true,
+    "n": 0.3
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "medic_t2": {
+  "name": "Споровый целитель · II",
+  "model": "alien_mushroom_creature",
+  "family": "Обитатели планеты",
+  "hp": 198,
+  "damage": 8.1,
+  "speed": 4.2,
+  "rate": 1.0,
+  "reach": 1.4,
+  "radius": 0.97,
+  "scale": 1.08,
+  "behavior": "nearest",
+  "reward": 16,
+  "xp": 9,
+  "spawn_weight": 0.3,
+  "from_day": 9,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 5
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 4
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "heal_every": 4,
+  "heal_amount": 25,
+  "heal_radius": 10,
+  "rules": [
+   {
+    "if": "hp_below",
+    "then": "flee",
+    "stop": true,
+    "n": 0.3
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "medic_t3": {
+  "name": "Споровый целитель · III",
+  "model": "alien_mushroom_creature",
+  "family": "Обитатели планеты",
+  "hp": 330,
+  "damage": 10.8,
+  "speed": 4.32,
+  "rate": 1.0,
+  "reach": 1.4,
+  "radius": 1.04,
+  "scale": 1.16,
+  "behavior": "nearest",
+  "reward": 27,
+  "xp": 15,
+  "spawn_weight": 0.15,
+  "from_day": 13,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 7
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 5
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 2
+   }
+  ],
+  "heal_every": 4,
+  "heal_amount": 25,
+  "heal_radius": 10,
+  "rules": [
+   {
+    "if": "hp_below",
+    "then": "flee",
+    "stop": true,
+    "n": 0.3
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "medic_t4": {
+  "name": "Споровый целитель · IV",
+  "model": "alien_mushroom_creature",
+  "family": "Обитатели планеты",
+  "hp": 550,
+  "damage": 14.4,
+  "speed": 4.4,
+  "rate": 1.0,
+  "reach": 1.4,
+  "radius": 1.13,
+  "scale": 1.26,
+  "behavior": "nearest",
+  "reward": 45,
+  "xp": 25,
+  "spawn_weight": 0.048,
+  "from_day": 18,
+  "spawn_leader": true,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 9
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 7
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 2
+   }
+  ],
+  "heal_every": 4,
+  "heal_amount": 25,
+  "heal_radius": 10,
+  "rules": [
+   {
+    "if": "hp_below",
+    "then": "flee",
+    "stop": true,
+    "n": 0.3
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "medic_t5": {
+  "name": "Споровый целитель · V",
+  "model": "alien_mushroom_creature",
+  "family": "Обитатели планеты",
+  "hp": 990,
+  "damage": 19.2,
+  "speed": 4.48,
+  "rate": 1.0,
+  "reach": 1.4,
+  "radius": 1.26,
+  "scale": 1.4,
+  "behavior": "nearest",
+  "reward": 81,
+  "xp": 45,
+  "spawn_weight": 0.018,
+  "from_day": 24,
+  "spawn_leader": true,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 12
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 9
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 3
+   }
+  ],
+  "heal_every": 4,
+  "heal_amount": 25,
+  "heal_radius": 10,
+  "rules": [
+   {
+    "if": "hp_below",
+    "then": "flee",
+    "stop": true,
+    "n": 0.3
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "guard": {
+  "name": "Тыквенный страж",
+  "model": "alien_pumpkin_skull_knight",
+  "family": "Обитатели планеты",
+  "hp": 260,
+  "damage": 22.0,
+  "speed": 3.5,
+  "rate": 1.0,
+  "reach": 1.6,
+  "radius": 1.1,
+  "scale": 1.0,
+  "behavior": "nearest",
+  "reward": 9,
+  "xp": 5,
+  "spawn_weight": 0.6,
+  "from_day": 6,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 4
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "rules": [
+   {
+    "if": "sees_player",
+    "then": "attack_player",
+    "stop": true,
+    "n": 15
+   },
+   {
+    "if": "always",
+    "then": "go_home",
+    "stop": true
+   }
+  ]
+ },
+ "guard_t2": {
+  "name": "Тыквенный страж · II",
+  "model": "alien_pumpkin_skull_knight",
+  "family": "Обитатели планеты",
+  "hp": 468,
+  "damage": 29.7,
+  "speed": 3.68,
+  "rate": 1.0,
+  "reach": 1.6,
+  "radius": 1.19,
+  "scale": 1.08,
+  "behavior": "nearest",
+  "reward": 16,
+  "xp": 9,
+  "spawn_weight": 0.3,
+  "from_day": 9,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 5
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 4
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "rules": [
+   {
+    "if": "sees_player",
+    "then": "attack_player",
+    "stop": true,
+    "n": 15
+   },
+   {
+    "if": "always",
+    "then": "go_home",
+    "stop": true
+   }
+  ]
+ },
+ "guard_t3": {
+  "name": "Тыквенный страж · III",
+  "model": "alien_pumpkin_skull_knight",
+  "family": "Обитатели планеты",
+  "hp": 780,
+  "damage": 39.6,
+  "speed": 3.78,
+  "rate": 1.0,
+  "reach": 1.6,
+  "radius": 1.28,
+  "scale": 1.16,
+  "behavior": "nearest",
+  "reward": 27,
+  "xp": 15,
+  "spawn_weight": 0.15,
+  "from_day": 13,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 7
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 5
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "monster_core",
+    "chance": 0.05,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "rules": [
+   {
+    "if": "sees_player",
+    "then": "attack_player",
+    "stop": true,
+    "n": 15
+   },
+   {
+    "if": "always",
+    "then": "go_home",
+    "stop": true
+   }
+  ]
+ },
+ "guard_t4": {
+  "name": "Тыквенный страж · IV",
+  "model": "alien_pumpkin_skull_knight",
+  "family": "Обитатели планеты",
+  "hp": 1300,
+  "damage": 52.8,
+  "speed": 3.85,
+  "rate": 1.0,
+  "reach": 1.6,
+  "radius": 1.39,
+  "scale": 1.26,
+  "behavior": "nearest",
+  "reward": 45,
+  "xp": 25,
+  "spawn_weight": 0.048,
+  "from_day": 18,
+  "spawn_leader": true,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 9
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 7
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "monster_core",
+    "chance": 0.12,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "rules": [
+   {
+    "if": "sees_player",
+    "then": "attack_player",
+    "stop": true,
+    "n": 15
+   },
+   {
+    "if": "always",
+    "then": "go_home",
+    "stop": true
+   }
+  ]
+ },
+ "guard_t5": {
+  "name": "Тыквенный страж · V",
+  "model": "alien_pumpkin_skull_knight",
+  "family": "Обитатели планеты",
+  "hp": 2340,
+  "damage": 70.4,
+  "speed": 3.92,
+  "rate": 1.0,
+  "reach": 1.6,
+  "radius": 1.54,
+  "scale": 1.4,
+  "behavior": "nearest",
+  "reward": 81,
+  "xp": 45,
+  "spawn_weight": 0.018,
+  "from_day": 24,
+  "spawn_leader": true,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 12
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 9
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "monster_core",
+    "chance": 0.25,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "rules": [
+   {
+    "if": "sees_player",
+    "then": "attack_player",
+    "stop": true,
+    "n": 15
+   },
+   {
+    "if": "always",
+    "then": "go_home",
+    "stop": true
+   }
+  ]
+ },
+ "carrier": {
+  "name": "Робот-носитель",
+  "model": "mech_carrier",
+  "family": "Роботы",
+  "hp": 700,
+  "damage": 20.0,
+  "speed": 2.4,
+  "rate": 1.6,
+  "reach": 12.0,
+  "radius": 1.6,
+  "scale": 1.0,
+  "behavior": "nearest",
+  "reward": 12,
+  "xp": 6,
+  "spawn_weight": 0.15,
+  "from_day": 9,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 4
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "ranged": true,
+  "fly": true,
+  "fly_height": 1.0,
+  "summon": "drone",
+  "summon_every": 12,
+  "summon_n": 2,
+  "summon_max": 6,
+  "rules": [
+   {
+    "if": "hit",
+    "then": "summon",
+    "stop": true,
+    "value": 2,
+    "enemy": "drone",
+    "cooldown": 10
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "carrier_t2": {
+  "name": "Робот-носитель Мк2",
+  "model": "mech_carrier",
+  "family": "Роботы",
+  "hp": 1260,
+  "damage": 27.0,
+  "speed": 2.52,
+  "rate": 1.6,
+  "reach": 12.0,
+  "radius": 1.73,
+  "scale": 1.08,
+  "behavior": "nearest",
+  "reward": 22,
+  "xp": 12,
+  "spawn_weight": 0.3,
+  "from_day": 12,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 5
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 4
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "ranged": true,
+  "fly": true,
+  "fly_height": 1.0,
+  "summon": "drone",
+  "summon_every": 12,
+  "summon_n": 2,
+  "summon_max": 6,
+  "rules": [
+   {
+    "if": "hit",
+    "then": "summon",
+    "stop": true,
+    "value": 2,
+    "enemy": "drone",
+    "cooldown": 10
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "carrier_t3": {
+  "name": "Робот-носитель Мк3",
+  "model": "mech_carrier",
+  "family": "Роботы",
+  "hp": 2100,
+  "damage": 36.0,
+  "speed": 2.59,
+  "rate": 1.6,
+  "reach": 12.0,
+  "radius": 1.86,
+  "scale": 1.16,
+  "behavior": "nearest",
+  "reward": 36,
+  "xp": 20,
+  "spawn_weight": 0.15,
+  "from_day": 16,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 7
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 5
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 2
+   }
+  ],
+  "ranged": true,
+  "fly": true,
+  "fly_height": 1.0,
+  "summon": "drone",
+  "summon_every": 12,
+  "summon_n": 2,
+  "summon_max": 6,
+  "rules": [
+   {
+    "if": "hit",
+    "then": "summon",
+    "stop": true,
+    "value": 2,
+    "enemy": "drone",
+    "cooldown": 10
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "carrier_t4": {
+  "name": "Робот-носитель Мк4",
+  "model": "mech_carrier",
+  "family": "Роботы",
+  "hp": 3500,
+  "damage": 48.0,
+  "speed": 2.64,
+  "rate": 1.6,
+  "reach": 12.0,
+  "radius": 2.02,
+  "scale": 1.26,
+  "behavior": "nearest",
+  "reward": 60,
+  "xp": 32,
+  "spawn_weight": 0.048,
+  "from_day": 21,
+  "spawn_leader": true,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 9
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 7
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 2
+   }
+  ],
+  "ranged": true,
+  "fly": true,
+  "fly_height": 1.0,
+  "summon": "drone",
+  "summon_every": 12,
+  "summon_n": 2,
+  "summon_max": 6,
+  "rules": [
+   {
+    "if": "hit",
+    "then": "summon",
+    "stop": true,
+    "value": 2,
+    "enemy": "drone",
+    "cooldown": 10
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "carrier_t5": {
+  "name": "Робот-носитель Мк5",
+  "model": "mech_carrier",
+  "family": "Роботы",
+  "hp": 6300,
+  "damage": 64.0,
+  "speed": 2.69,
+  "rate": 1.6,
+  "reach": 12.0,
+  "radius": 2.24,
+  "scale": 1.4,
+  "behavior": "nearest",
+  "reward": 108,
+  "xp": 58,
+  "spawn_weight": 0.018,
+  "from_day": 27,
+  "spawn_leader": true,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "chitin",
+    "chance": 0.9,
+    "min": 2,
+    "max": 12
+   },
+   {
+    "item": "goo",
+    "chance": 0.6,
+    "min": 1,
+    "max": 9
+   },
+   {
+    "item": "circuit",
+    "chance": 0.15,
+    "min": 1,
+    "max": 3
+   }
+  ],
+  "ranged": true,
+  "fly": true,
+  "fly_height": 1.0,
+  "summon": "drone",
+  "summon_every": 12,
+  "summon_n": 2,
+  "summon_max": 6,
+  "rules": [
+   {
+    "if": "hit",
+    "then": "summon",
+    "stop": true,
+    "value": 2,
+    "enemy": "drone",
+    "cooldown": 10
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ]
+ },
+ "boss_titan": {
+  "name": "Титан",
+  "model": "mech_titan",
+  "family": "Роботы",
+  "hp": 6000,
+  "damage": 90,
+  "speed": 3.0,
+  "rate": 1.0,
+  "reach": 3.6,
+  "radius": 2.6,
+  "scale": 3.0,
+  "behavior": "base",
+  "reward": 900,
+  "xp": 90,
+  "spawn_weight": 0,
+  "from_day": 6,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "crystal",
+    "chance": 1.0,
+    "min": 6,
+    "max": 12,
+    "on": "break"
+   },
+   {
+    "item": "circuit",
+    "chance": 1.0,
+    "min": 8,
+    "max": 16,
+    "on": "break"
+   },
+   {
+    "item": "monster_core",
+    "chance": 1.0,
+    "min": 2,
+    "max": 4,
+    "on": "break"
+   },
+   {
+    "item": "anomaly_matter",
+    "chance": 1.0,
+    "min": 1,
+    "max": 2,
+    "on": "break"
+   }
+  ],
+  "rules": [
+   {
+    "if": "hp_below",
+    "then": "summon",
+    "stop": true,
+    "n": 0.5,
+    "value": 3,
+    "enemy": "guard",
+    "cooldown": 30
+   },
+   {
+    "if": "hp_below",
+    "then": "speed",
+    "stop": true,
+    "n": 0.25,
+    "value": 1.5,
+    "cooldown": 8
+   },
+   {
+    "if": "timer",
+    "then": "say",
+    "stop": true,
+    "n": 2,
+    "text": "ЦЕЛЬ: ШТАБ. УНИЧТОЖИТЬ.",
+    "cooldown": 9999
+   },
+   {
+    "if": "always",
+    "then": "attack_base",
+    "stop": true
+   }
+  ],
+  "boss": true
+ },
+ "boss_dragon": {
+  "name": "Древний небесный дракон",
+  "model": "alien_dragon",
+  "family": "Обитатели планеты",
+  "hp": 4500,
+  "damage": 60,
+  "speed": 4.5,
+  "rate": 1.6,
+  "reach": 14.0,
+  "radius": 2.2,
+  "scale": 2.2,
+  "behavior": "base",
+  "reward": 1000,
+  "xp": 100,
+  "spawn_weight": 0,
+  "from_day": 9,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "crystal",
+    "chance": 1.0,
+    "min": 6,
+    "max": 12,
+    "on": "break"
+   },
+   {
+    "item": "circuit",
+    "chance": 1.0,
+    "min": 8,
+    "max": 16,
+    "on": "break"
+   },
+   {
+    "item": "monster_core",
+    "chance": 1.0,
+    "min": 2,
+    "max": 4,
+    "on": "break"
+   },
+   {
+    "item": "anomaly_matter",
+    "chance": 1.0,
+    "min": 1,
+    "max": 2,
+    "on": "break"
+   }
+  ],
+  "ranged": true,
+  "fly": true,
+  "fly_height": 5.0,
+  "summon": "drone",
+  "summon_every": 15,
+  "summon_n": 2,
+  "summon_max": 6,
+  "rules": [
+   {
+    "if": "hp_below",
+    "then": "teleport",
+    "stop": true,
+    "n": 0.6,
+    "cooldown": 20
+   },
+   {
+    "if": "sees_player",
+    "then": "attack_player",
+    "stop": true,
+    "n": 25
+   },
+   {
+    "if": "always",
+    "then": "attack_base",
+    "stop": true
+   }
+  ],
+  "boss": true,
+  "perch_cycle": 18.0
+ },
+ "boss_worm": {
+  "name": "Бур-пожиратель",
+  "model": "mech_driller",
+  "family": "Роботы",
+  "hp": 5500,
+  "damage": 80,
+  "speed": 3.6,
+  "rate": 1.4,
+  "reach": 3.2,
+  "radius": 2.4,
+  "scale": 2.8,
+  "behavior": "base",
+  "reward": 950,
+  "xp": 95,
+  "spawn_weight": 0,
+  "from_day": 5,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "crystal",
+    "chance": 1.0,
+    "min": 6,
+    "max": 12,
+    "on": "break"
+   },
+   {
+    "item": "circuit",
+    "chance": 1.0,
+    "min": 8,
+    "max": 16,
+    "on": "break"
+   },
+   {
+    "item": "monster_core",
+    "chance": 1.0,
+    "min": 2,
+    "max": 4,
+    "on": "break"
+   },
+   {
+    "item": "anomaly_matter",
+    "chance": 1.0,
+    "min": 1,
+    "max": 2,
+    "on": "break"
+   }
+  ],
+  "burrow": true,
+  "boss": true,
+  "rules": [
+   {
+    "if": "hit",
+    "then": "call_allies",
+    "stop": true,
+    "value": 30,
+    "cooldown": 15
+   },
+   {
+    "if": "always",
+    "then": "attack_base",
+    "stop": true
+   }
+  ]
+ },
+ "boss_hive": {
+  "name": "Древний страж рощи",
+  "model": "alien_wooden_forest_golem",
+  "family": "Обитатели планеты",
+  "hp": 4000,
+  "damage": 50,
+  "speed": 3.0,
+  "rate": 1.6,
+  "reach": 12.0,
+  "radius": 2.4,
+  "scale": 2.6,
+  "behavior": "base",
+  "reward": 850,
+  "xp": 85,
+  "spawn_weight": 0,
+  "from_day": 9,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "crystal",
+    "chance": 1.0,
+    "min": 6,
+    "max": 12,
+    "on": "break"
+   },
+   {
+    "item": "circuit",
+    "chance": 1.0,
+    "min": 8,
+    "max": 16,
+    "on": "break"
+   },
+   {
+    "item": "monster_core",
+    "chance": 1.0,
+    "min": 2,
+    "max": 4,
+    "on": "break"
+   },
+   {
+    "item": "anomaly_matter",
+    "chance": 1.0,
+    "min": 1,
+    "max": 2,
+    "on": "break"
+   }
+  ],
+  "ranged": true,
+  "fly": false,
+  "fly_height": 1.0,
+  "summon": "drone",
+  "summon_every": 12,
+  "summon_n": 2,
+  "summon_max": 6,
+  "rules": [
+   {
+    "if": "hit",
+    "then": "summon",
+    "stop": true,
+    "value": 4,
+    "enemy": "drone",
+    "cooldown": 12
+   },
+   {
+    "if": "hp_below",
+    "then": "heal_self",
+    "stop": true,
+    "n": 0.3,
+    "value": 800,
+    "cooldown": 40
+   },
+   {
+    "if": "always",
+    "then": "attack_base",
+    "stop": true
+   }
+  ],
+  "boss": true
+ },
+ "boss_lich": {
+  "name": "Хранитель сумерек",
+  "model": "alien_grim",
+  "family": "Обитатели планеты",
+  "hp": 4200,
+  "damage": 70,
+  "speed": 3.4,
+  "rate": 1.6,
+  "reach": 20.0,
+  "radius": 1.8,
+  "scale": 2.4,
+  "behavior": "base",
+  "reward": 1100,
+  "xp": 110,
+  "spawn_weight": 0,
+  "from_day": 5,
+  "spawn_leader": false,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "crystal",
+    "chance": 1.0,
+    "min": 6,
+    "max": 12,
+    "on": "break"
+   },
+   {
+    "item": "circuit",
+    "chance": 1.0,
+    "min": 8,
+    "max": 16,
+    "on": "break"
+   },
+   {
+    "item": "monster_core",
+    "chance": 1.0,
+    "min": 2,
+    "max": 4,
+    "on": "break"
+   },
+   {
+    "item": "anomaly_matter",
+    "chance": 1.0,
+    "min": 1,
+    "max": 2,
+    "on": "break"
+   }
+  ],
+  "ranged": true,
+  "teleport_every": 9,
+  "teleport_range": 25,
+  "rules": [
+   {
+    "if": "hit",
+    "then": "teleport",
+    "stop": true,
+    "cooldown": 10
+   },
+   {
+    "if": "hp_below",
+    "then": "summon",
+    "stop": true,
+    "n": 0.7,
+    "value": 3,
+    "enemy": "bomber",
+    "cooldown": 20
+   },
+   {
+    "if": "always",
+    "then": "attack_base",
+    "stop": true
+   }
+  ],
+  "boss": true
+ },
+ "q_shade": {
+  "name": "Квантовая тень",
+  "model": "mech_scout",
+  "family": "Роботы",
+  "hp": 260,
+  "damage": 28.0,
+  "speed": 11.0,
+  "rate": 0.5,
+  "reach": 1.1,
+  "radius": 0.76,
+  "scale": 1.26,
+  "behavior": "player",
+  "reward": 60,
+  "xp": 20,
+  "spawn_weight": 0.0,
+  "from_day": 13,
+  "spawn_leader": true,
+  "spawn_where": "both",
+  "drops": [
+   {
+    "item": "quantum_shard",
+    "chance": 1.0,
+    "min": 1,
+    "max": 2
+   }
+  ],
+  "rules": [
+   {
+    "if": "hp_below",
+    "then": "flee",
+    "stop": true,
+    "n": 0.3
+   },
+   {
+    "if": "always",
+    "then": "normal",
+    "stop": true
+   }
+  ],
+  "quantum": true,
+  "tint": "#a070ff",
+  "tint_k": 0.85
+ }
+}

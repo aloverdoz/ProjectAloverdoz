@@ -1,0 +1,629 @@
+{
+ "shot": {
+  "name": "Выстрел героя",
+  "files": [
+   "res://sounds/shot.wav"
+  ],
+  "volume": -10,
+  "pitch": 0.08,
+  "positional": true,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "turret": {
+  "name": "Выстрел турели",
+  "files": [
+   "res://sounds/turret.wav"
+  ],
+  "volume": -13,
+  "pitch": 0.08,
+  "positional": true,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "boom": {
+  "name": "Взрыв, разрушение",
+  "files": [
+   "res://sounds/boom.wav"
+  ],
+  "volume": -3,
+  "pitch": 0.1,
+  "positional": true,
+  "max_dist": 160,
+  "cooldown": 40
+ },
+ "thunder": {
+  "name": "Гром бури за краем зоны",
+  "files": [
+   "res://sounds/thunder.wav"
+  ],
+  "volume": -6,
+  "pitch": 0.15,
+  "positional": true,
+  "max_dist": 400,
+  "cooldown": 40
+ },
+ "omen": {
+  "name": "Зловещее предупреждение перед событием",
+  "files": [
+   "res://sounds/omen.wav"
+  ],
+  "volume": -4,
+  "pitch": 0.0,
+  "positional": false,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "splat": {
+  "name": "Гибель монстра",
+  "files": [
+   "res://sounds/splat.wav"
+  ],
+  "volume": -9,
+  "pitch": 0.08,
+  "positional": true,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "place": {
+  "name": "Постройка здания",
+  "files": [
+   "res://sounds/place.wav"
+  ],
+  "volume": -8,
+  "pitch": 0.08,
+  "positional": true,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "coin": {
+  "name": "Монеты, награда",
+  "files": [
+   "res://sounds/coin.wav"
+  ],
+  "volume": -8,
+  "pitch": 0.0,
+  "positional": false,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "repair": {
+  "name": "Ремонт",
+  "files": [
+   "res://sounds/repair.wav"
+  ],
+  "volume": -14,
+  "pitch": 0.08,
+  "positional": true,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "alarm": {
+  "name": "Тревога: волна",
+  "files": [
+   "res://sounds/alarm.wav"
+  ],
+  "volume": -6,
+  "pitch": 0.0,
+  "positional": false,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "shuttle": {
+  "name": "Челнок станции",
+  "files": [
+   "res://sounds/shuttle.wav"
+  ],
+  "volume": -4,
+  "pitch": 0.0,
+  "positional": true,
+  "max_dist": 300,
+  "cooldown": 40
+ },
+ "chop": {
+  "name": "Удар по дереву",
+  "files": [
+   "res://sounds/chop.wav"
+  ],
+  "volume": -6,
+  "pitch": 0.12,
+  "positional": true,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "hit": {
+  "name": "Удар по камню",
+  "files": [
+   "res://sounds/hit.wav"
+  ],
+  "volume": -8,
+  "pitch": 0.12,
+  "positional": true,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "pickup": {
+  "name": "Подбор предмета",
+  "files": [
+   "res://sounds/pickup.wav"
+  ],
+  "volume": -12,
+  "pitch": 0.1,
+  "positional": false,
+  "max_dist": 100,
+  "cooldown": 60
+ },
+ "step": {
+  "name": "Шаг",
+  "files": [
+   "res://sounds/step.wav"
+  ],
+  "volume": -20,
+  "pitch": 0.2,
+  "positional": true,
+  "max_dist": 100,
+  "cooldown": 120
+ },
+ "click": {
+  "name": "Клик в интерфейсе",
+  "files": [
+   "res://sounds/click.wav"
+  ],
+  "volume": -14,
+  "pitch": 0.05,
+  "positional": false,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "craft": {
+  "name": "Крафт готов",
+  "files": [
+   "res://sounds/craft.wav"
+  ],
+  "volume": -10,
+  "pitch": 0.0,
+  "positional": false,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "hurt": {
+  "name": "Герою больно",
+  "files": [
+   "res://sounds/hurt.wav"
+  ],
+  "volume": -8,
+  "pitch": 0.1,
+  "positional": false,
+  "max_dist": 100,
+  "cooldown": 200
+ },
+ "bite": {
+  "name": "Укус монстра",
+  "files": [
+   "res://sounds/bite.wav"
+  ],
+  "volume": -10,
+  "pitch": 0.15,
+  "positional": true,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "spit": {
+  "name": "Плевок монстра",
+  "files": [
+   "res://sounds/spit.wav"
+  ],
+  "volume": -10,
+  "pitch": 0.15,
+  "positional": true,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "machine": {
+  "name": "Гул работающих машин (петля)",
+  "files": [
+   "res://sounds/machine.wav"
+  ],
+  "volume": -16,
+  "pitch": 0.0,
+  "positional": false,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "fall": {
+  "name": "Падение дерева",
+  "files": [
+   "res://sounds/fall.wav"
+  ],
+  "volume": -6,
+  "pitch": 0.1,
+  "positional": true,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "wind": {
+  "name": "Ветер (фон)",
+  "files": [
+   "res://sounds/wind.wav"
+  ],
+  "volume": -20,
+  "pitch": 0.0,
+  "positional": false,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "eat": {
+  "name": "Еда",
+  "files": [
+   "res://sounds/pickup.wav"
+  ],
+  "volume": -10,
+  "pitch": 0.2,
+  "positional": false,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "work_smelt": {
+  "name": "Работа: плавка в печи",
+  "files": [
+   "res://sounds/work_smelt.wav"
+  ],
+  "volume": -12,
+  "pitch": 0.04,
+  "positional": true,
+  "max_dist": 40,
+  "cooldown": 40
+ },
+ "work_drill": {
+  "name": "Работа: бур",
+  "files": [
+   "res://sounds/work_drill.wav"
+  ],
+  "volume": -12,
+  "pitch": 0.04,
+  "positional": true,
+  "max_dist": 40,
+  "cooldown": 40
+ },
+ "work_saw": {
+  "name": "Работа: пила",
+  "files": [
+   "res://sounds/work_saw.wav"
+  ],
+  "volume": -12,
+  "pitch": 0.04,
+  "positional": true,
+  "max_dist": 40,
+  "cooldown": 40
+ },
+ "work_press": {
+  "name": "Работа: пресс",
+  "files": [
+   "res://sounds/work_press.wav"
+  ],
+  "volume": -12,
+  "pitch": 0.04,
+  "positional": true,
+  "max_dist": 40,
+  "cooldown": 40
+ },
+ "work_crush": {
+  "name": "Работа: дробилка",
+  "files": [
+   "res://sounds/work_crush.wav"
+  ],
+  "volume": -12,
+  "pitch": 0.04,
+  "positional": true,
+  "max_dist": 40,
+  "cooldown": 40
+ },
+ "work_assembly": {
+  "name": "Работа: сборка, станки",
+  "files": [
+   "res://sounds/work_assembly.wav"
+  ],
+  "volume": -12,
+  "pitch": 0.04,
+  "positional": true,
+  "max_dist": 40,
+  "cooldown": 40
+ },
+ "work_electric": {
+  "name": "Работа: электричество, гул",
+  "files": [
+   "res://sounds/work_electric.wav"
+  ],
+  "volume": -12,
+  "pitch": 0.04,
+  "positional": true,
+  "max_dist": 40,
+  "cooldown": 40
+ },
+ "work_bubble": {
+  "name": "Работа: химия, бульканье",
+  "files": [
+   "res://sounds/work_bubble.wav"
+  ],
+  "volume": -12,
+  "pitch": 0.04,
+  "positional": true,
+  "max_dist": 40,
+  "cooldown": 40
+ },
+ "work_cook": {
+  "name": "Работа: кухня",
+  "files": [
+   "res://sounds/work_cook.wav"
+  ],
+  "volume": -12,
+  "pitch": 0.04,
+  "positional": true,
+  "max_dist": 40,
+  "cooldown": 40
+ },
+ "work_loom": {
+  "name": "Работа: ткацкий станок",
+  "files": [
+   "res://sounds/work_loom.wav"
+  ],
+  "volume": -12,
+  "pitch": 0.04,
+  "positional": true,
+  "max_dist": 40,
+  "cooldown": 40
+ },
+ "work_engine": {
+  "name": "Работа: двигатель на топливе",
+  "files": [
+   "res://sounds/work_engine.wav"
+  ],
+  "volume": -12,
+  "pitch": 0.04,
+  "positional": true,
+  "max_dist": 40,
+  "cooldown": 40
+ },
+ "work_turbine": {
+  "name": "Работа: турбина",
+  "files": [
+   "res://sounds/work_turbine.wav"
+  ],
+  "volume": -12,
+  "pitch": 0.04,
+  "positional": true,
+  "max_dist": 40,
+  "cooldown": 40
+ },
+ "work_wind": {
+  "name": "Работа: ветряк",
+  "files": [
+   "res://sounds/work_wind.wav"
+  ],
+  "volume": -12,
+  "pitch": 0.04,
+  "positional": true,
+  "max_dist": 40,
+  "cooldown": 40
+ },
+ "work_water": {
+  "name": "Работа: вода, мельница",
+  "files": [
+   "res://sounds/work_water.wav"
+  ],
+  "volume": -12,
+  "pitch": 0.04,
+  "positional": true,
+  "max_dist": 40,
+  "cooldown": 40
+ },
+ "work_reactor": {
+  "name": "Работа: реактор",
+  "files": [
+   "res://sounds/work_reactor.wav"
+  ],
+  "volume": -12,
+  "pitch": 0.04,
+  "positional": true,
+  "max_dist": 40,
+  "cooldown": 40
+ },
+ "work_pump": {
+  "name": "Работа: насос",
+  "files": [
+   "res://sounds/work_pump.wav"
+  ],
+  "volume": -12,
+  "pitch": 0.04,
+  "positional": true,
+  "max_dist": 40,
+  "cooldown": 40
+ },
+ "work_burner": {
+  "name": "Работа: огонь, дрова",
+  "files": [
+   "res://sounds/work_burner.wav"
+  ],
+  "volume": -12,
+  "pitch": 0.04,
+  "positional": true,
+  "max_dist": 40,
+  "cooldown": 40
+ },
+ "work_lab": {
+  "name": "Работа: лаборатория, приборы",
+  "files": [
+   "res://sounds/work_lab.wav"
+  ],
+  "volume": -12,
+  "pitch": 0.04,
+  "positional": true,
+  "max_dist": 40,
+  "cooldown": 40
+ },
+ "fart": {
+  "name": "Подушка-пердушка",
+  "files": [
+   "res://sounds/fart.wav"
+  ],
+  "volume": -4,
+  "pitch": 0.15,
+  "positional": true,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "horn": {
+  "name": "Гудок игрока",
+  "files": [
+   "res://sounds/horn.wav"
+  ],
+  "volume": -3,
+  "pitch": 0.05,
+  "positional": true,
+  "max_dist": 220,
+  "cooldown": 40
+ },
+ "pop": {
+  "name": "Хлопушка, сюрприз",
+  "files": [
+   "res://sounds/pop.wav"
+  ],
+  "volume": -6,
+  "pitch": 0.15,
+  "positional": true,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "firework": {
+  "name": "Салют",
+  "files": [
+   "res://sounds/firework.wav"
+  ],
+  "volume": -4,
+  "pitch": 0.1,
+  "positional": true,
+  "max_dist": 300,
+  "cooldown": 40
+ },
+ "bonk": {
+  "name": "Кирпич, снежок",
+  "files": [
+   "res://sounds/bonk.wav"
+  ],
+  "volume": -5,
+  "pitch": 0.1,
+  "positional": true,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "levelup": {
+  "name": "Новый уровень",
+  "files": [
+   "res://sounds/levelup.wav"
+  ],
+  "volume": -4,
+  "pitch": 0.0,
+  "positional": false,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "victory": {
+  "name": "Задание выполнено",
+  "files": [
+   "res://sounds/victory.wav"
+  ],
+  "volume": -5,
+  "pitch": 0.0,
+  "positional": false,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "whoosh": {
+  "name": "Взмах (промах)",
+  "files": [
+   "res://sounds/whoosh.wav"
+  ],
+  "volume": -9,
+  "pitch": 0.12,
+  "positional": true,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "jump": {
+  "name": "Прыжок",
+  "files": [
+   "res://sounds/jump.wav"
+  ],
+  "volume": -12,
+  "pitch": 0.1,
+  "positional": true,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "land": {
+  "name": "Приземление",
+  "files": [
+   "res://sounds/land.wav"
+  ],
+  "volume": -9,
+  "pitch": 0.1,
+  "positional": true,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "demolish": {
+  "name": "Снос здания",
+  "files": [
+   "res://sounds/demolish.wav"
+  ],
+  "volume": -7,
+  "pitch": 0.08,
+  "positional": true,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "crack": {
+  "name": "Камень раскололся",
+  "files": [
+   "res://sounds/crack.wav"
+  ],
+  "volume": -7,
+  "pitch": 0.1,
+  "positional": true,
+  "max_dist": 100,
+  "cooldown": 40
+ },
+ "tick": {
+  "name": "Щелчок сетки стройки",
+  "files": [
+   "res://sounds/tick.wav"
+  ],
+  "volume": -16,
+  "pitch": 0.05,
+  "positional": false,
+  "max_dist": 100,
+  "cooldown": 30
+ },
+ "buzz": {
+  "name": "Нельзя",
+  "files": [
+   "res://sounds/buzz.wav"
+  ],
+  "volume": -12,
+  "pitch": 0.0,
+  "positional": false,
+  "max_dist": 100,
+  "cooldown": 150
+ },
+ "blip": {
+  "name": "Подбор (серия)",
+  "files": [
+   "res://sounds/blip.wav"
+  ],
+  "volume": -10,
+  "pitch": 0.0,
+  "positional": false,
+  "max_dist": 100,
+  "cooldown": 25
+ }
+}

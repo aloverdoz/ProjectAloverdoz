@@ -1,0 +1,409 @@
+{
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/boost_beacon/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/boost_beacon/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/boost_beacon/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/boost_beacon/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/boost_beacon/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/boost_beacon/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/boost_beacon/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/boost_beacon/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/boost_beacon/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/boost_beacon/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/boost_beacon/5.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/boost_beacon/tex0.png"
+  },
+  {
+   "color": "#ffcd30",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/boost_beacon/6.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/boost_beacon/7.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/boost_beacon/tex0.png"
+  },
+  {
+   "color": "#3dffda",
+   "emission": 3,
+   "mat": "glow",
+   "mesh": "res://models20/boost_beacon/8.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/boost_beacon/9.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.07,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin",
+   "color": "#3dffda",
+   "emission": 5,
+   "mat": "glow",
+   "mesh": "res://models20/boost_beacon/10.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffda4b",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/boost_beacon/11.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.6,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#4bff80",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/boost_beacon/12.res",
+   "metallic": 0,
+   "pos": [
+    0.62,
+    0.66,
+    0.47
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_fast",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/boost_beacon/13.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/boost_beacon/tex0.png"
+  },
+  {
+   "anim": "spin_fast",
+   "color": "#ffcd30",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/boost_beacon/14.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/boost_beacon/15.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/boost_beacon/tex0.png"
+  }
+ ]
+}

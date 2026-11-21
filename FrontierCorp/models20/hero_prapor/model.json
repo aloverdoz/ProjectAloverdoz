@@ -1,0 +1,152 @@
+{
+ "extra": {
+  "bones": {
+   "arm_l": [
+    -0.0052,
+    0.3368,
+    0.2181
+   ],
+   "arm_r": [
+    -0.0052,
+    0.3368,
+    -0.2181
+   ],
+   "fore_l": [
+    0,
+    -0.245,
+    0.0597
+   ],
+   "fore_r": [
+    0,
+    -0.245,
+    -0.0597
+   ],
+   "gun": [
+    0,
+    -0.07,
+    0
+   ],
+   "hand_r": [
+    0,
+    -0.2173,
+    -0.053
+   ],
+   "head": [
+    0,
+    0.383,
+    0
+   ],
+   "hips": [
+    0,
+    1.0176,
+    0
+   ],
+   "leg_l": [
+    0.0278,
+    -0.05,
+    0.14
+   ],
+   "leg_r": [
+    0.0278,
+    -0.05,
+    -0.14
+   ],
+   "muzzle": [
+    0.058,
+    -0.125,
+    0
+   ],
+   "shin_l": [
+    -0.0061,
+    -0.4126,
+    0.0266
+   ],
+   "shin_r": [
+    -0.0061,
+    -0.4126,
+    -0.0266
+   ],
+   "torso": [
+    0,
+    0.07,
+    0
+   ]
+  },
+  "category": "Герои",
+  "gun_pitch": 0,
+  "look_order": 8,
+  "name": "Прапор",
+  "prof_tint": 0,
+  "scale": 1.25,
+  "skin": {
+   "bones": [
+    "hips",
+    "leg_l",
+    "leg_r",
+    "shin_l",
+    "shin_r",
+    "torso",
+    "head",
+    "arm_l",
+    "arm_r",
+    "fore_l",
+    "fore_r",
+    "hand_r"
+   ],
+   "mat": {
+    "color": "#ffffff",
+    "mat": "paint",
+    "mesh": "res://models20/hero_prapor/skin.res",
+    "metallic": 0,
+    "pos": [
+     0,
+     0,
+     0
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ],
+    "roughness": 0.55,
+    "shape": "mesh",
+    "size": [
+     1,
+     1,
+     1
+    ],
+    "surface": "none",
+    "texture": "res://models20/hero_prapor/tex0.png"
+   },
+   "mesh": "res://models20/hero_prapor/skin.res"
+  }
+ },
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/hero_lady/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "role": "gun",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/hero_lady/tex0.png"
+  }
+ ]
+}

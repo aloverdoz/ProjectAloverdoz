@@ -1,0 +1,1392 @@
+{
+ "t_start": {
+  "name": "Высадка",
+  "tier": 0,
+  "order": 0,
+  "icon": "workbench",
+  "desc": "То, что есть с самого начала: верстак, печь, ленты, ящики, деревянные стены и терминал открытий.",
+  "cost": {},
+  "unlocks": {
+   "buildings": [
+    "workbench",
+    "furnace",
+    "belt",
+    "chest",
+    "wall_wood",
+    "campfire",
+    "tech_terminal",
+    "floor",
+    "fence",
+    "crates",
+    "sign",
+    "flag",
+    "player_market",
+    "outpost",
+    "gnome",
+    "black_market",
+    "hq_link",
+    "research_lab"
+   ]
+  },
+  "requires": [],
+  "start": true
+ },
+ "t_mining": {
+  "name": "Добыча",
+  "tier": 1,
+  "order": 0,
+  "icon": "miner",
+  "desc": "Бур на месторождении, генератор и опоры ЛЭП — первый автоматический завод.",
+  "cost": {
+   "iron_ingot": 10,
+   "plank": 10
+  },
+  "unlocks": {
+   "buildings": [
+    "miner",
+    "generator",
+    "pole",
+    "radar_tower",
+    "power_sell",
+    "power_buy",
+    "chest_iron"
+   ]
+  },
+  "requires": [],
+  "credits": 120
+ },
+ "t_workshop": {
+  "name": "Мастерская",
+  "tier": 1,
+  "order": 1,
+  "icon": "workshop",
+  "desc": "Ручной крафт деталей: шестерни, провода, пластины, патроны.",
+  "cost": {
+   "plank": 15,
+   "stone": 15,
+   "iron_ingot": 5
+  },
+  "unlocks": {
+   "buildings": [
+    "workshop"
+   ],
+   "recipes": [
+    "blaster",
+    "recall"
+   ]
+  },
+  "requires": [],
+  "credits": 100
+ },
+ "t_logistics": {
+  "name": "Логистика",
+  "tier": 1,
+  "order": 2,
+  "icon": "splitter",
+  "desc": "Разделители, соединители и большой контейнер.",
+  "cost": {
+   "iron_ingot": 15,
+   "gear": 4
+  },
+  "unlocks": {
+   "buildings": [
+    "splitter",
+    "merger",
+    "container",
+    "mole_junction",
+    "drone_workshop",
+    "drone_port",
+    "drone_dock"
+   ]
+  },
+  "requires": [
+   "t_workshop"
+  ],
+  "credits": 150
+ },
+ "t_defense": {
+  "name": "Оборона",
+  "tier": 1,
+  "order": 3,
+  "icon": "turret",
+  "desc": "Турели, бетонные стены и ворота.",
+  "cost": {
+   "iron_ingot": 20,
+   "stone": 30
+  },
+  "unlocks": {
+   "buildings": [
+    "turret",
+    "wall",
+    "gate",
+    "lamp"
+   ]
+  },
+  "requires": [],
+  "credits": 150
+ },
+ "t_found": {
+  "name": "Фундаменты",
+  "tier": 1,
+  "order": 4,
+  "icon": "found_2",
+  "desc": "Площадки, ярусы и рампы для стройки на холмах и на воде.",
+  "cost": {
+   "stone": 40
+  },
+  "unlocks": {
+   "buildings": [
+    "found_1",
+    "found_2",
+    "found_tall",
+    "found_ramp",
+    "found_ramp2",
+    "found_wall",
+    "lift_mk1"
+   ]
+  },
+  "requires": [],
+  "credits": 80
+ },
+ "t_power": {
+  "name": "Электричество",
+  "tier": 2,
+  "order": 0,
+  "icon": "smelter",
+  "desc": "Плавильня, сборщик, солнечные панели и аккумуляторы.",
+  "cost": {
+   "iron_ingot": 40,
+   "wire": 20,
+   "gear": 10
+  },
+  "unlocks": {
+   "buildings": [
+    "smelter",
+    "assembler",
+    "solar",
+    "battery_block"
+   ]
+  },
+  "requires": [
+   "t_mining",
+   "t_workshop"
+  ],
+  "credits": 300
+ },
+ "t_coal": {
+  "name": "Уголь и сталь",
+  "tier": 2,
+  "order": 1,
+  "icon": "coal_generator",
+  "desc": "Угольный генератор и сталь. Сталь варится в Плавильне (нужна энергия) из железных слитков и угля.",
+  "cost": {
+   "charcoal": 20,
+   "iron_ingot": 40
+  },
+  "unlocks": {
+   "buildings": [
+    "coal_generator",
+    "water_pump",
+    "pipe"
+   ],
+   "recipes": [
+    "steel"
+   ]
+  },
+  "requires": [
+   "t_power"
+  ],
+  "credits": 350
+ },
+ "t_wind": {
+  "name": "Энергия ветра",
+  "tier": 2,
+  "order": 2,
+  "icon": "wind_turbine",
+  "desc": "Ветряк: энергия без топлива, но ветер то стихает, то крепчает.",
+  "cost": {
+   "iron_plate": 20,
+   "gear": 15,
+   "wire": 15
+  },
+  "unlocks": {
+   "buildings": [
+    "wind_turbine"
+   ]
+  },
+  "requires": [
+   "t_power"
+  ],
+  "credits": 300
+ },
+ "t_chem": {
+  "name": "Химия",
+  "tier": 2,
+  "order": 3,
+  "icon": "sulfur",
+  "desc": "На карте появляются залежи серы и селитры. Пороховой цех: порох; сборщик: патроны. Батареи и гранаты.",
+  "cost": {
+   "quartz": 15,
+   "coal": 20
+  },
+  "unlocks": {
+   "recipes": [
+    "battery",
+    "grenade",
+    "gunpowder",
+    "ammo"
+   ],
+   "buildings": [
+    "powder_mill"
+   ]
+  },
+  "requires": [
+   "t_power",
+   "t_coal"
+  ],
+  "credits": 450
+ },
+ "t_mk2": {
+  "name": "Улучшенные машины",
+  "tier": 3,
+  "order": 0,
+  "icon": "miner_mk2",
+  "desc": "Бур, плавильня и сборщик Mk2, лента Mk2. Ставятся прямо поверх старых.",
+  "cost": {
+   "steel": 30,
+   "circuit": 10,
+   "motor": 4
+  },
+  "unlocks": {
+   "buildings": [
+    "miner_mk2",
+    "smelter_mk2",
+    "assembler_mk2",
+    "belt_mk2",
+    "pole_mk2",
+    "lift_mk2"
+   ]
+  },
+  "requires": [
+   "t_coal"
+  ],
+  "research": 10,
+  "credits": 1200
+ },
+ "t_smart": {
+  "name": "Умная логистика",
+  "tier": 3,
+  "order": 1,
+  "icon": "smart_splitter",
+  "desc": "Разделители с фильтрами и соединители с главным входом.",
+  "cost": {
+   "circuit": 10,
+   "iron_plate": 20
+  },
+  "unlocks": {
+   "buildings": [
+    "smart_splitter",
+    "smart_merger"
+   ]
+  },
+  "requires": [
+   "t_logistics",
+   "t_power"
+  ],
+  "credits": 700
+ },
+ "t_oil": {
+  "name": "Нефть",
+  "tier": 3,
+  "order": 2,
+  "icon": "oil_pump",
+  "desc": "На карте появляются нефтяные пятна. Качалки, трубы, баки, нефтезавод, упаковщик и топливный генератор.",
+  "cost": {
+   "steel": 40,
+   "motor": 8,
+   "circuit": 10
+  },
+  "unlocks": {
+   "buildings": [
+    "oil_pump",
+    "tank",
+    "refinery",
+    "packager",
+    "fuel_generator"
+   ]
+  },
+  "requires": [
+   "t_mk2"
+  ],
+  "research": 20,
+  "contract": "c_steel",
+  "credits": 1200
+ },
+ "t_laser": {
+  "name": "Лазеры",
+  "tier": 3,
+  "order": 3,
+  "icon": "laser_turret",
+  "desc": "Лазерная турель: бьёт сильнее и не тратит патроны.",
+  "cost": {
+   "crystal": 3,
+   "circuit": 15,
+   "glass": 10
+  },
+  "unlocks": {
+   "buildings": [
+    "laser_turret",
+    "tesla_coil",
+    "steel_wall"
+   ]
+  },
+  "requires": [
+   "t_defense",
+   "t_power"
+  ],
+  "research": 10,
+  "day": 3,
+  "credits": 1000
+ },
+ "t_mk3": {
+  "name": "Скоростные ленты и трубы",
+  "tier": 4,
+  "order": 0,
+  "icon": "belt_mk3",
+  "desc": "Бур Mk3, лента Mk3 (270 в минуту), трубы Mk2 и Mk3 (600 и 900 в минуту).",
+  "cost": {
+   "steel": 40,
+   "motor": 10,
+   "plastic": 20
+  },
+  "unlocks": {
+   "buildings": [
+    "belt_mk3",
+    "pipe_mk2",
+    "miner_mk3",
+    "pipe_mk3",
+    "pole_mk3",
+    "lift_mk3"
+   ]
+  },
+  "requires": [
+   "t_oil"
+  ],
+  "research": 30,
+  "credits": 3500
+ },
+ "t_special": {
+  "name": "Особые здания",
+  "tier": 4,
+  "order": 1,
+  "icon": "medbay",
+  "desc": "Медпункт, маяк ускорения, торговый терминал и другие здания из блоков поведения.",
+  "cost": {
+   "circuit": 10,
+   "steel": 10,
+   "glass": 10
+  },
+  "unlocks": {
+   "buildings": [
+    "medbay",
+    "boost_beacon",
+    "monster_portal",
+    "siren",
+    "wood_boiler",
+    "garden_bed",
+    "tesla",
+    "trap_mine",
+    "recycler"
+   ]
+  },
+  "requires": [
+   "t_power"
+  ],
+  "credits": 3500
+ },
+ "t_mk4": {
+  "name": "Тяжёлая техника",
+  "tier": 5,
+  "order": 0,
+  "icon": "miner_mk4",
+  "desc": "Плазменный бур Mk4, лента Mk4 (480 в минуту) и труба Mk4 (1200 в минуту).",
+  "cost": {
+   "steel": 80,
+   "circuit": 30,
+   "battery": 10,
+   "plastic": 40
+  },
+  "unlocks": {
+   "buildings": [
+    "miner_mk4",
+    "belt_mk4",
+    "pipe_mk4",
+    "builder_bay_mk2",
+    "pole_mk4",
+    "lift_mk4"
+   ]
+  },
+  "requires": [
+   "t_mk3",
+   "t_chem"
+  ],
+  "credits": 10000,
+  "research": 60
+ },
+ "t_mk5": {
+  "name": "Квантовые технологии",
+  "tier": 6,
+  "order": 0,
+  "icon": "miner_mk5",
+  "desc": "Квантовый бур Mk5, лента Mk5 (780 в минуту) и труба Mk5 (1800 в минуту).",
+  "cost": {
+   "steel": 150,
+   "circuit": 60,
+   "crystal": 40,
+   "monster_core": 10
+  },
+  "unlocks": {
+   "buildings": [
+    "miner_mk5",
+    "belt_mk5",
+    "pipe_mk5",
+    "pole_mk5",
+    "lift_mk5"
+   ]
+  },
+  "requires": [
+   "t_mk4"
+  ],
+  "credits": 30000,
+  "research": 150
+ },
+ "t_plasma": {
+  "name": "Плазма",
+  "tier": 4,
+  "order": 3,
+  "icon": "plasma_turret",
+  "desc": "Плазменная турель: очень сильная, на энергии, молния бьёт ещё двоих.",
+  "cost": {
+   "steel": 60,
+   "circuit": 30,
+   "crystal": 15
+  },
+  "unlocks": {
+   "buildings": [
+    "plasma_turret"
+   ]
+  },
+  "requires": [
+   "t_laser",
+   "t_mk2"
+  ],
+  "research": 40,
+  "credits": 3000
+ },
+ "t_teleport": {
+  "name": "Телепортация",
+  "tier": 5,
+  "order": 1,
+  "icon": "teleporter",
+  "desc": "Телепорт: поставьте два и больше — в окне «Перенестись».",
+  "cost": {
+   "steel": 50,
+   "circuit": 30,
+   "crystal": 15
+  },
+  "unlocks": {
+   "buildings": [
+    "teleporter"
+   ]
+  },
+  "requires": [
+   "t_transport"
+  ],
+  "research": 60,
+  "credits": 8000
+ },
+ "t_antimatter": {
+  "name": "Антиматерия",
+  "tier": 6,
+  "order": 1,
+  "icon": "antimatter_gen",
+  "desc": "Генератор антиматерии: 400 энергии без топлива.",
+  "cost": {
+   "steel": 120,
+   "circuit": 50,
+   "crystal": 40,
+   "battery": 20
+  },
+  "unlocks": {
+   "buildings": [
+    "antimatter_gen"
+   ]
+  },
+  "requires": [
+   "t_mk4"
+  ],
+  "research": 120,
+  "credits": 25000
+ },
+ "t_transport": {
+  "name": "Транспорт",
+  "tier": 4,
+  "order": 2,
+  "icon": "rover",
+  "desc": "Вездеход, дроны и грузовики: перевозка предметов между частями базы без лент.",
+  "cost": {
+   "iron_plate": 40,
+   "motor": 10,
+   "circuit": 10
+  },
+  "unlocks": {
+   "buildings": [
+    "drone_station",
+    "rover",
+    "drone_port",
+    "drone_dock",
+    "truck_station",
+    "truck_depot",
+    "drone_hub",
+    "builder_bay"
+   ]
+  },
+  "requires": [
+   "t_power"
+  ],
+  "research": 15,
+  "credits": 3500
+ },
+ "t_def2": {
+  "name": "Тяжёлая оборона",
+  "tier": 2,
+  "order": 5,
+  "icon": "gatling_turret",
+  "desc": "Пулемёт, пушка, электропол и ремонтная башня.",
+  "cost": {
+   "iron_plate": 30,
+   "gear": 20,
+   "steel": 10
+  },
+  "unlocks": {
+   "buildings": [
+    "gatling_turret",
+    "cannon_turret",
+    "shock_floor",
+    "repair_tower"
+   ]
+  },
+  "requires": [
+   "t_defense",
+   "t_coal",
+   "t_workshop"
+  ],
+  "credits": 500
+ },
+ "t_def3": {
+  "name": "Энергощиты",
+  "tier": 3,
+  "order": 5,
+  "icon": "barrier_small",
+  "desc": "Энергощит, стазис-поле и снайперская башня.",
+  "cost": {
+   "steel": 30,
+   "circuit": 20,
+   "wire": 30
+  },
+  "unlocks": {
+   "buildings": [
+    "barrier_small",
+    "stasis_field",
+    "sniper_tower"
+   ]
+  },
+  "requires": [
+   "t_def2",
+   "t_power"
+  ],
+  "research": 10,
+  "credits": 1000
+ },
+ "t_def4": {
+  "name": "Ракеты и плазма",
+  "tier": 4,
+  "order": 5,
+  "icon": "missile_turret",
+  "desc": "Ракетная установка, плазменный огнемёт и большой энергощит.",
+  "cost": {
+   "steel": 60,
+   "circuit": 40,
+   "crystal": 10,
+   "battery": 6
+  },
+  "unlocks": {
+   "buildings": [
+    "missile_turret",
+    "flame_turret",
+    "barrier_large"
+   ]
+  },
+  "requires": [
+   "t_def3",
+   "t_laser",
+   "t_chem"
+  ],
+  "research": 20,
+  "credits": 3000
+ },
+ "t_acid": {
+  "name": "Кислоты",
+  "tier": 3,
+  "order": 4,
+  "icon": "chem_plant",
+  "desc": "Химзавод, серная кислота, кислотостойкие трубы и баки. Осторожно: кислота разъедает обычные трубы.",
+  "cost": {
+   "steel": 30,
+   "glass": 20,
+   "sulfur": 30
+  },
+  "unlocks": {
+   "buildings": [
+    "chem_plant",
+    "pipe_acid",
+    "acid_tank"
+   ],
+   "recipes": [
+    "sulfuric_acid",
+    "pack_sulfuric_acid",
+    "unpack_sulfuric_acid"
+   ]
+  },
+  "requires": [
+   "t_oil",
+   "t_chem"
+  ],
+  "research": 25,
+  "credits": 1000
+ },
+ "t_aluminum": {
+  "name": "Алюминий",
+  "tier": 4,
+  "order": 3,
+  "icon": "alunite",
+  "desc": "Залежи алунита. Раствор глинозёма → алюминиевый лом → слитки, листы и корпуса. Защитный костюм.",
+  "cost": {
+   "steel": 50,
+   "plastic": 20,
+   "circuit": 20
+  },
+  "unlocks": {
+   "recipes": [
+    "alumina",
+    "aluminum_scrap",
+    "aluminum_ingot",
+    "aluminum_sheet",
+    "aluminum_casing",
+    "hazmat_suit"
+   ]
+  },
+  "requires": [
+   "t_acid"
+  ],
+  "research": 35,
+  "credits": 3000
+ },
+ "t_uranium": {
+  "name": "Уран",
+  "tier": 5,
+  "order": 2,
+  "icon": "uranium_ore",
+  "desc": "Урановые залежи (радиоактивны!), жёлтый кек, центрифуга, хранилище отходов, дезактивация.",
+  "cost": {
+   "aluminum_sheet": 40,
+   "circuit": 30,
+   "steel": 60
+  },
+  "unlocks": {
+   "buildings": [
+    "centrifuge",
+    "waste_storage",
+    "decon_station"
+   ],
+   "recipes": [
+    "yellowcake",
+    "enriched_uranium",
+    "decon_solution",
+    "decon_spray"
+   ]
+  },
+  "requires": [
+   "t_aluminum"
+  ],
+  "research": 45,
+  "credits": 8000
+ },
+ "t_nuclear": {
+  "name": "Атомная энергия",
+  "tier": 6,
+  "order": 1,
+  "icon": "nuclear_reactor",
+  "desc": "АЭС: огромная энергия, если правильно настроить охлаждение, загрузку и стержни. Переработка отходов.",
+  "cost": {
+   "aluminum_casing": 30,
+   "enriched_uranium": 10,
+   "circuit": 50
+  },
+  "unlocks": {
+   "buildings": [
+    "nuclear_reactor"
+   ],
+   "recipes": [
+    "fuel_rod",
+    "recycle_waste"
+   ]
+  },
+  "requires": [
+   "t_uranium"
+  ],
+  "research": 60,
+  "credits": 25000
+ },
+ "t_tuning": {
+  "name": "Тонкая настройка",
+  "tier": 2,
+  "order": 6,
+  "icon": "furnace",
+  "desc": "В окнах машин видна «золотая зона» настройки (без открытия её приходится искать по индикатору эффективности).",
+  "cost": {
+   "gear": 30,
+   "circuit": 5
+  },
+  "unlocks": {},
+  "requires": [
+   "t_power"
+  ],
+  "research": 15,
+  "credits": 400
+ },
+ "t_patterns": {
+  "name": "Инженерия",
+  "tier": 3,
+  "order": 6,
+  "icon": "eng_table",
+  "desc": "Инженерный стол: собирайте узоры 4×4 и открывайте улучшенные рецепты.",
+  "cost": {
+   "circuit": 20,
+   "steel": 20,
+   "glass": 10
+  },
+  "unlocks": {
+   "buildings": [
+    "eng_table"
+   ]
+  },
+  "requires": [
+   "t_tuning",
+   "t_mk2"
+  ],
+  "research": 25,
+  "credits": 1000
+ },
+ "t_ufo": {
+  "name": "Контакт",
+  "tier": 5,
+  "order": 3,
+  "icon": "ufo_pad",
+  "desc": "Посадочная площадка НЛО: обмен товаров на экзотику по плавающим ценам.",
+  "cost": {
+   "aluminum_sheet": 40,
+   "circuit": 60,
+   "steel": 60
+  },
+  "unlocks": {
+   "buildings": [
+    "ufo_pad"
+   ]
+  },
+  "requires": [
+   "t_transport",
+   "t_aluminum"
+  ],
+  "research": 40,
+  "credits": 8000
+ },
+ "t_exotic": {
+  "name": "Экзотическая материя",
+  "tier": 6,
+  "order": 2,
+  "icon": "exotic_forge",
+  "desc": "Сверхпроводники, звёздный сплав, биогель, экзотическая кузня.",
+  "cost": {
+   "helium3": 10,
+   "neutronium": 5,
+   "aluminum_casing": 40
+  },
+  "unlocks": {
+   "buildings": [
+    "exotic_forge"
+   ],
+   "recipes": [
+    "superconductor",
+    "stellar_alloy",
+    "bio_gel"
+   ]
+  },
+  "requires": [
+   "t_ufo"
+  ],
+  "research": 60,
+  "credits": 25000
+ },
+ "t_fusion": {
+  "name": "Термоядерный синтез",
+  "tier": 7,
+  "order": 1,
+  "icon": "fusion_reactor",
+  "desc": "Термоядерные ячейки и реактор на 5000 энергии.",
+  "cost": {
+   "superconductor": 60,
+   "stellar_alloy": 30,
+   "helium3": 30
+  },
+  "unlocks": {
+   "buildings": [
+    "fusion_reactor"
+   ],
+   "recipes": [
+    "fusion_cell",
+    "magnetic_trap"
+   ]
+  },
+  "requires": [
+   "t_exotic",
+   "t_nuclear"
+  ],
+  "research": 80,
+  "credits": 60000
+ },
+ "t_quantum2": {
+  "name": "Квантовая инженерия",
+  "tier": 7,
+  "order": 2,
+  "icon": "quantum_assembler",
+  "desc": "Квантовые ядра, хроношестерни, квантовый сборщик.",
+  "cost": {
+   "void_crystal": 20,
+   "superconductor": 40,
+   "circuit": 200
+  },
+  "unlocks": {
+   "buildings": [
+    "quantum_assembler"
+   ],
+   "recipes": [
+    "quantum_core",
+    "chrono_gear"
+   ]
+  },
+  "requires": [
+   "t_exotic",
+   "t_mk5"
+  ],
+  "research": 90,
+  "credits": 60000
+ },
+ "t_antimatter2": {
+  "name": "Ловушки антиматерии",
+  "tier": 8,
+  "order": 1,
+  "icon": "antimatter",
+  "desc": "Ячейки антиматерии и линзы тёмной материи.",
+  "cost": {
+   "magnetic_trap": 10,
+   "quantum_core": 10,
+   "antimatter": 5
+  },
+  "unlocks": {
+   "recipes": [
+    "antimatter_cell",
+    "dark_lens"
+   ]
+  },
+  "requires": [
+   "t_fusion",
+   "t_quantum2"
+  ],
+  "research": 120,
+  "credits": 150000
+ },
+ "t_stargate": {
+  "name": "Звёздные врата",
+  "tier": 9,
+  "order": 1,
+  "icon": "star_gate",
+  "desc": "Мегапроект в 5 этапов — вершина завода.",
+  "cost": {
+   "antimatter_cell": 10,
+   "dark_lens": 2,
+   "quantum_core": 30
+  },
+  "unlocks": {
+   "buildings": [
+    "star_gate"
+   ]
+  },
+  "requires": [
+   "t_antimatter2"
+  ],
+  "research": 200,
+  "credits": 400000
+ },
+ "t_fuse1": {
+  "name": "Первичное объединение",
+  "tier": 1,
+  "order": 5,
+  "icon": "assembler",
+  "desc": "Объединение 1: два одинаковых здания рядом → одно, вдвое сильнее (уровень 2). Можно встроить одно здание в другое (составное из 2).",
+  "cost": {
+   "iron_ingot": 25,
+   "gear": 8
+  },
+  "unlocks": {},
+  "requires": [
+   "t_workshop"
+  ],
+  "research": 0,
+  "credits": 200
+ },
+ "t_fuse2": {
+  "name": "Вторичное объединение",
+  "tier": 2,
+  "order": 7,
+  "icon": "assembler",
+  "desc": "Объединение 2: уровень 3 и составные здания из 3 частей.",
+  "cost": {
+   "iron_plate": 30,
+   "gear": 20,
+   "wire": 20
+  },
+  "unlocks": {},
+  "requires": [
+   "t_fuse1",
+   "t_power"
+  ],
+  "research": 5,
+  "credits": 500
+ },
+ "t_fuse3": {
+  "name": "Третичное объединение",
+  "tier": 3,
+  "order": 7,
+  "icon": "assembler",
+  "desc": "Объединение 3: уровень 4 и составные здания из 4 частей.",
+  "cost": {
+   "steel": 30,
+   "circuit": 15,
+   "motor": 4
+  },
+  "unlocks": {},
+  "requires": [
+   "t_fuse2",
+   "t_mk2"
+  ],
+  "research": 15,
+  "credits": 1000
+ },
+ "t_fuse4": {
+  "name": "Высшее объединение",
+  "tier": 5,
+  "order": 4,
+  "icon": "assembler",
+  "desc": "Объединение 4: уровень 5 и составные здания из 5 частей.",
+  "cost": {
+   "steel": 60,
+   "circuit": 30,
+   "battery": 6
+  },
+  "unlocks": {},
+  "requires": [
+   "t_fuse3",
+   "t_chem"
+  ],
+  "research": 40,
+  "credits": 8000
+ },
+ "t_metal": {
+  "name": "Бронза и детали",
+  "tier": 1,
+  "order": 6,
+  "icon": "bronze_ingot",
+  "desc": "Литейный цех и конструктор. Олово → бронза; прутья, винты, жесть, укреплённые пластины, рамы, кабель. Медная и бронзовая кирки, бронзовый меч.",
+  "cost": {
+   "iron_ingot": 20,
+   "copper_ingot": 25
+  },
+  "unlocks": {
+   "buildings": [
+    "foundry",
+    "constructor",
+    "sawmill",
+    "stone_cutter"
+   ],
+   "recipes": [
+    "bronze_ingot",
+    "cable",
+    "iron_rod",
+    "screw",
+    "bronze_gear",
+    "tinplate",
+    "quicklime",
+    "reinforced_plate",
+    "simple_frame",
+    "copper_pickaxe",
+    "bronze_pickaxe",
+    "bronze_sword"
+   ]
+  },
+  "requires": [
+   "t_workshop"
+  ],
+  "research": 5,
+  "credits": 200
+ },
+ "t_sink": {
+  "name": "Утилизация",
+  "tier": 1,
+  "order": 7,
+  "icon": "sink",
+  "desc": "Утилизатор очков (сжигает любые предметы и выдаёт купоны), магазин утилизации, разгонитель облаков.",
+  "cost": {
+   "iron_plate": 15,
+   "wire": 15
+  },
+  "unlocks": {
+   "buildings": [
+    "sink",
+    "sink_shop",
+    "cloud_breaker"
+   ]
+  },
+  "requires": [
+   "t_mining",
+   "t_workshop"
+  ],
+  "research": 5,
+  "credits": 250
+ },
+ "t_steel2": {
+  "name": "Сталь и механика",
+  "tier": 2,
+  "order": 8,
+  "icon": "bearing",
+  "desc": "Коксовая печь, дробилка (+50% металла), смеситель, производитель. Балки, трубы, листы, подшипники, роторы и статоры, рамы, клапаны, поршни. Стальная кирка и тесак.",
+  "cost": {
+   "steel": 30,
+   "bronze_ingot": 20,
+   "gear": 20
+  },
+  "unlocks": {
+   "buildings": [
+    "coke_oven",
+    "crusher",
+    "mixer",
+    "manufacturer",
+    "searchlight",
+    "fridge",
+    "medicine_cabinet",
+    "warehouse"
+   ],
+   "recipes": [
+    "coke",
+    "steel_beam",
+    "steel_pipe",
+    "steel_sheet",
+    "steel_rod",
+    "bearing",
+    "spring",
+    "rotor",
+    "stator",
+    "modular_frame",
+    "heavy_frame",
+    "valve",
+    "piston",
+    "chain",
+    "lamp_bulb",
+    "crushed_iron",
+    "crushed_copper",
+    "crushed_tin",
+    "d17_steel_coke",
+    "d17_motor",
+    "d17_iron_crushed",
+    "d17_copper_crushed",
+    "d17_tin_crushed",
+    "d17_concrete_mix",
+    "steel_pickaxe",
+    "steel_cleaver"
+   ]
+  },
+  "requires": [
+   "t_coal",
+   "t_metal"
+  ],
+  "research": 15,
+  "credits": 600
+ },
+ "t_geo2": {
+  "name": "Геология II",
+  "tier": 3,
+  "order": 8,
+  "icon": "bauxite",
+  "desc": "Открывает орбитальный заказ новых типов месторождений. Выберите сырьё в меню строительства и укажите ровную площадку.",
+  "cost": {
+   "steel_beam": 10,
+   "motor": 4,
+   "bearing": 10
+  },
+  "unlocks": {
+   "buildings": [
+    "gas_extractor"
+   ],
+   "recipes": [
+    "salted_meat"
+   ]
+  },
+  "requires": [
+   "t_steel2",
+   "t_mk2"
+  ],
+  "research": 25,
+  "credits": 1000
+ },
+ "t_electro": {
+  "name": "Электроника",
+  "tier": 4,
+  "order": 8,
+  "icon": "pcb",
+  "desc": "Дуговая печь и чистый цех: кремний, золотая проволока, печатные платы, микросхемы вдвое выгоднее. Нержавейка, свинец, аккумуляторы, насосный узел, гидравлика, компьютеры, консервы, взрывчатка, противогаз.",
+  "cost": {
+   "steel_sheet": 20,
+   "copper_ingot": 40,
+   "gold_ore": 10
+  },
+  "unlocks": {
+   "buildings": [
+    "arc_furnace",
+    "clean_room"
+   ],
+   "recipes": [
+    "lubricant",
+    "nickel_ingot",
+    "lead_ingot",
+    "stainless_steel",
+    "silicon",
+    "gold_wire",
+    "pcb",
+    "pump_unit",
+    "hydraulics",
+    "computer",
+    "canned_food",
+    "explosive",
+    "d17_circuit",
+    "d17_battery",
+    "d17_alumina",
+    "d17_aluminum",
+    "gas_mask",
+    "ration",
+    "antirad",
+    "d17_gas_canister"
+   ]
+  },
+  "requires": [
+   "t_geo2",
+   "t_oil",
+   "t_acid"
+  ],
+  "research": 40,
+  "credits": 3000
+ },
+ "t_geo3": {
+  "name": "Геология III",
+  "tier": 5,
+  "order": 8,
+  "icon": "tungsten_ore",
+  "desc": "Открывает орбитальный заказ новых типов месторождений. Выберите сырьё в меню строительства и укажите ровную площадку.",
+  "cost": {
+   "computer": 4,
+   "stainless_steel": 30,
+   "hydraulics": 6
+  },
+  "unlocks": {
+   "buildings": [
+    "blast_furnace",
+    "geothermal",
+    "magma_tap"
+   ],
+   "recipes": [
+    "tungsten_ingot",
+    "tungsten_carbide",
+    "drill_head",
+    "titanium_ingot",
+    "titanium_frame",
+    "obsidian_plate",
+    "heatproof_block",
+    "turbine",
+    "heat_exchanger",
+    "coolant",
+    "cooling_module",
+    "lead_shield",
+    "ai_module",
+    "d17_fuel_rod",
+    "titanium_pickaxe",
+    "tungsten_pickaxe",
+    "obsidian_blade",
+    "m17_tungsten_magma",
+    "m17_obsidian_magma",
+    "heat_suit"
+   ]
+  },
+  "requires": [
+   "t_electro"
+  ],
+  "research": 60,
+  "credits": 8000
+ },
+ "t_geo4": {
+  "name": "Аномальная геология",
+  "tier": 7,
+  "order": 8,
+  "icon": "resonite",
+  "desc": "Бездна: резонит и редкоземельная руда (вольфрамовой киркой или буром Mk3+). Кристаллорез, синтезатор, резонансный реактор, ядро разгона облаков. Аномальная материя — с боссов осад.",
+  "cost": {
+   "ai_module": 4,
+   "turbine": 4,
+   "anomaly_matter": 2
+  },
+  "unlocks": {
+   "buildings": [
+    "crystal_cutter",
+    "synthesizer",
+    "resonance_reactor"
+   ],
+   "recipes": [
+    "cut_resonite",
+    "resonant_capacitor",
+    "rare_earth_magnet",
+    "quantum_processor",
+    "anomaly_stabilizer",
+    "cloud_core",
+    "terraform_module",
+    "d17_superconductor",
+    "resonant_blade"
+   ]
+  },
+  "requires": [
+   "t_geo3"
+  ],
+  "research": 120,
+  "credits": 60000
+ },
+ "t_quantum": {
+  "name": "Квантовое измерение",
+  "tier": 7,
+  "order": 3,
+  "icon": "quantum_portal",
+  "desc": "Квантовый портал: жилы в суперпозиции (схлопываются, когда на них смотрят), запутанные ящики и станции, квантовые тени.",
+  "cost": {
+   "enriched_uranium": 20,
+   "superconductor": 30,
+   "circuit": 150
+  },
+  "unlocks": {
+   "buildings": [
+    "quantum_portal",
+    "entangled_chest",
+    "entangled_pole"
+   ]
+  },
+  "requires": [
+   "t_nuclear",
+   "t_mk5"
+  ],
+  "credits": 80000,
+  "research": 180
+ },
+ "t_cargo_2": {
+  "name": "Грузовые дроны L2",
+  "desc": "Транспорт на 20 единиц груза за рейс.",
+  "tier": 2,
+  "requires": [
+   "t_logistics"
+  ],
+  "research": 10,
+  "credits": 160,
+  "cost": {
+   "motor": 2,
+   "circuit": 3
+  },
+  "unlocks": {
+   "recipes": [
+    "freighter_2"
+   ]
+  }
+ },
+ "t_cargo_3": {
+  "name": "Грузовые дроны L3",
+  "desc": "Транспорт на 35 единиц груза за рейс.",
+  "tier": 3,
+  "requires": [
+   "t_steel2"
+  ],
+  "research": 15,
+  "credits": 240,
+  "cost": {
+   "motor": 4,
+   "circuit": 5,
+   "steel": 4
+  },
+  "unlocks": {
+   "recipes": [
+    "freighter_3"
+   ]
+  }
+ },
+ "t_cargo_4": {
+  "name": "Грузовые дроны L4",
+  "desc": "Транспорт на 60 единиц груза за рейс.",
+  "tier": 4,
+  "requires": [
+   "t_geo2"
+  ],
+  "research": 20,
+  "credits": 320,
+  "cost": {
+   "computer": 2,
+   "hydraulics": 3
+  },
+  "unlocks": {
+   "recipes": [
+    "freighter_4"
+   ]
+  }
+ },
+ "t_cargo_5": {
+  "name": "Грузовые дроны L5",
+  "desc": "Транспорт на 100 единиц груза за рейс.",
+  "tier": 5,
+  "requires": [
+   "t_geo3"
+  ],
+  "research": 25,
+  "credits": 400,
+  "cost": {
+   "ai_module": 2,
+   "titanium_frame": 4,
+   "motor": 6
+  },
+  "unlocks": {
+   "recipes": [
+    "freighter_5"
+   ]
+  }
+ }
+}

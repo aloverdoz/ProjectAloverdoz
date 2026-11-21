@@ -1,0 +1,209 @@
+{
+ "parts": [
+  {
+   "color": "#ffb92a",
+   "mat": "paint",
+   "mesh": "res://models20/dep_gold_ore/0.res",
+   "metallic": 1,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.18,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/dep_gold_ore/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.8,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/dep_gold_ore/tex0.png"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffda66",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_gold_ore/2.res",
+   "metallic": 0,
+   "pos": [
+    0.2043,
+    0.661,
+    0.2716
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffda66",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_gold_ore/3.res",
+   "metallic": 0,
+   "pos": [
+    -0.4134,
+    0.5435,
+    -0.353
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffda66",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_gold_ore/4.res",
+   "metallic": 0,
+   "pos": [
+    0.2059,
+    0.3406,
+    0.4979
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffda66",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_gold_ore/5.res",
+   "metallic": 0,
+   "pos": [
+    0.5469,
+    0.436,
+    0.0192
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffda66",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_gold_ore/6.res",
+   "metallic": 0,
+   "pos": [
+    -0.5929,
+    0.3006,
+    0.4344
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffda66",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_gold_ore/7.res",
+   "metallic": 0,
+   "pos": [
+    -0.5266,
+    0.2989,
+    0.5065
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

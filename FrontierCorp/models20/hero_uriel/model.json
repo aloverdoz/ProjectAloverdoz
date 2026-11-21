@@ -1,0 +1,152 @@
+{
+ "extra": {
+  "bones": {
+   "arm_l": [
+    0.1624,
+    0.3326,
+    0.1302
+   ],
+   "arm_r": [
+    0.1624,
+    0.3326,
+    -0.1302
+   ],
+   "fore_l": [
+    0,
+    -0.1915,
+    0.0739
+   ],
+   "fore_r": [
+    0,
+    -0.1915,
+    -0.0739
+   ],
+   "gun": [
+    0,
+    -0.07,
+    0
+   ],
+   "hand_r": [
+    0,
+    -0.1698,
+    -0.0655
+   ],
+   "head": [
+    0,
+    0.3761,
+    0
+   ],
+   "hips": [
+    0,
+    0.96,
+    0
+   ],
+   "leg_l": [
+    0.1616,
+    -0.05,
+    0.0762
+   ],
+   "leg_r": [
+    0.1616,
+    -0.05,
+    -0.0762
+   ],
+   "muzzle": [
+    0.058,
+    -0.125,
+    0
+   ],
+   "shin_l": [
+    0.0168,
+    -0.388,
+    -0.0052
+   ],
+   "shin_r": [
+    0.0168,
+    -0.388,
+    0.0052
+   ],
+   "torso": [
+    0,
+    0.07,
+    0
+   ]
+  },
+  "category": "Герои",
+  "gun_pitch": 0,
+  "look_order": 10,
+  "name": "Уриил",
+  "prof_tint": 0,
+  "scale": 1.25,
+  "skin": {
+   "bones": [
+    "hips",
+    "leg_l",
+    "leg_r",
+    "shin_l",
+    "shin_r",
+    "torso",
+    "head",
+    "arm_l",
+    "arm_r",
+    "fore_l",
+    "fore_r",
+    "hand_r"
+   ],
+   "mat": {
+    "color": "#ffffff",
+    "mat": "paint",
+    "mesh": "res://models20/hero_uriel/skin.res",
+    "metallic": 0,
+    "pos": [
+     0,
+     0,
+     0
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ],
+    "roughness": 0.55,
+    "shape": "mesh",
+    "size": [
+     1,
+     1,
+     1
+    ],
+    "surface": "none",
+    "texture": "res://models20/hero_uriel/tex0.png"
+   },
+   "mesh": "res://models20/hero_uriel/skin.res"
+  }
+ },
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/hero_lady/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "role": "gun",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/hero_lady/tex0.png"
+  }
+ ]
+}

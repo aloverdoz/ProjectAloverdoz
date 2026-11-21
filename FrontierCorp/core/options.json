@@ -1,0 +1,818 @@
+{
+ "sections": [
+  {
+   "id": "controls",
+   "name": "Управление",
+   "items": [
+    {
+     "key": "key_move_up",
+     "name": "Вперёд",
+     "type": "key",
+     "default": "W"
+    },
+    {
+     "key": "key_move_down",
+     "name": "Назад",
+     "type": "key",
+     "default": "S"
+    },
+    {
+     "key": "key_move_left",
+     "name": "Влево",
+     "type": "key",
+     "default": "A"
+    },
+    {
+     "key": "key_move_right",
+     "name": "Вправо",
+     "type": "key",
+     "default": "D"
+    },
+    {
+     "key": "key_sprint",
+     "name": "Бег",
+     "type": "key",
+     "default": "Shift"
+    },
+    {
+     "key": "key_jump",
+     "name": "Прыжок",
+     "type": "key",
+     "default": "Space"
+    },
+    {
+     "key": "key_interact",
+     "name": "Взаимодействие",
+     "type": "key",
+     "default": "E"
+    },
+    {
+     "key": "key_cam_left",
+     "name": "Повернуть камеру влево",
+     "type": "key",
+     "default": "Q"
+    },
+    {
+     "key": "key_cam_right",
+     "name": "Повернуть камеру вправо",
+     "type": "key",
+     "default": "Z"
+    },
+    {
+     "key": "key_rotate",
+     "name": "Повернуть здание",
+     "type": "key",
+     "default": "R"
+    },
+    {
+     "key": "key_demolish",
+     "name": "Разобрать",
+     "type": "key",
+     "default": "X"
+    },
+    {
+     "key": "key_wire",
+     "name": "Карта энергии (провода в режиме проводов)",
+     "type": "key",
+     "default": "V"
+    },
+    {
+     "key": "key_map",
+     "name": "Карта",
+     "type": "key",
+     "default": "M"
+    },
+    {
+     "key": "key_build_menu",
+     "name": "Меню строительства",
+     "type": "key",
+     "default": "B"
+    },
+    {
+     "key": "key_inventory",
+     "name": "Инвентарь",
+     "type": "key",
+     "default": "Tab"
+    },
+    {
+     "key": "key_craft",
+     "name": "Крафт",
+     "type": "key",
+     "default": "C"
+    },
+    {
+     "key": "key_skills",
+     "name": "Навыки",
+     "type": "key",
+     "default": "K"
+    },
+    {
+     "key": "key_trade",
+     "name": "Торговля",
+     "type": "key",
+     "default": "T"
+    },
+    {
+     "key": "key_help",
+     "name": "Помощь",
+     "type": "key",
+     "default": "H"
+    },
+    {
+     "key": "key_pause",
+     "name": "Пауза",
+     "type": "key",
+     "default": "P"
+    },
+    {
+     "key": "key_editor",
+     "name": "Редактор",
+     "type": "key",
+     "default": "F10"
+    },
+    {
+     "key": "key_console",
+     "name": "Консоль",
+     "type": "key",
+     "default": "QuoteLeft"
+    },
+    {
+     "key": "cam_speed",
+     "name": "Скорость поворота камеры",
+     "type": "slider",
+     "default": 1.0,
+     "min": 0.3,
+     "max": 3.0,
+     "step": 0.1
+    },
+    {
+     "key": "cam_shake",
+     "name": "Тряска камеры (удары, взрывы, землетрясения)",
+     "type": "slider",
+     "default": 1.0,
+     "min": 0.0,
+     "max": 1.5,
+     "step": 0.1
+    },
+    {
+     "key": "hitstop",
+     "name": "Замирание кадра при сильном ударе",
+     "type": "check",
+     "default": true
+    },
+    {
+     "key": "float_numbers",
+     "name": "Цифры урона и добычи над целью",
+     "type": "check",
+     "default": true
+    },
+    {
+     "key": "zoom_speed",
+     "name": "Скорость приближения",
+     "type": "slider",
+     "default": 1.0,
+     "min": 0.3,
+     "max": 3.0,
+     "step": 0.1
+    },
+    {
+     "key": "strat_pan",
+     "name": "Стратегия: скорость камеры",
+     "type": "slider",
+     "default": 1.0,
+     "min": 0.2,
+     "max": 4.0,
+     "step": 0.1
+    },
+    {
+     "key": "strat_pan_fast",
+     "name": "Стратегия: скорость камеры с Shift",
+     "type": "slider",
+     "default": 2.0,
+     "min": 0.5,
+     "max": 8.0,
+     "step": 0.1
+    },
+    {
+     "key": "edge_scroll",
+     "name": "Камера следует за мышью у края",
+     "type": "check",
+     "default": false
+    },
+    {
+     "key": "key_tech",
+     "name": "Дерево открытий",
+     "type": "key",
+     "default": "J"
+    },
+    {
+     "key": "key_records",
+     "name": "Рекорды и мастерство",
+     "type": "key",
+     "default": "F"
+    },
+    {
+     "key": "key_blueprint",
+     "name": "Чертёж (копировать здания)",
+     "type": "key",
+     "default": "G"
+    },
+    {
+     "key": "key_photo",
+     "name": "Фоторежим (F12 — снимок)",
+     "type": "key",
+     "default": "F9"
+    },
+    {
+     "key": "key_top_view",
+     "name": "Камера сверху",
+     "type": "key",
+     "default": "Y"
+    },
+    {
+     "key": "key_flow_map",
+     "name": "Карта потоков (где стоит производство)",
+     "type": "key",
+     "default": "L"
+    },
+    {
+     "key": "key_constructor",
+     "name": "Конструктор модов (свои здания и предметы)",
+     "type": "key",
+     "default": "N"
+    },
+    {
+     "key": "key_fun",
+     "name": "Фишки и подколы",
+     "type": "key",
+     "default": "U"
+    },
+    {
+     "key": "key_ping",
+     "name": "Метка на земле (для всех)",
+     "type": "key",
+     "default": "O"
+    }
+   ]
+  },
+  {
+   "id": "audio",
+   "name": "Звук",
+   "items": [
+    {
+     "key": "vol_master",
+     "name": "Общая громкость",
+     "type": "slider",
+     "default": 0.9,
+     "min": 0,
+     "max": 1,
+     "step": 0.05
+    },
+    {
+     "key": "vol_music",
+     "name": "Музыка",
+     "type": "slider",
+     "default": 0.6,
+     "min": 0,
+     "max": 1,
+     "step": 0.05
+    },
+    {
+     "key": "vol_effects",
+     "name": "Эффекты",
+     "type": "slider",
+     "default": 0.9,
+     "min": 0,
+     "max": 1,
+     "step": 0.05
+    },
+    {
+     "key": "vol_ambient",
+     "name": "Фон (ветер, природа)",
+     "type": "slider",
+     "default": 0.7,
+     "min": 0,
+     "max": 1,
+     "step": 0.05
+    },
+    {
+     "key": "vol_ui",
+     "name": "Интерфейс",
+     "type": "slider",
+     "default": 0.8,
+     "min": 0,
+     "max": 1,
+     "step": 0.05
+    }
+   ]
+  },
+  {
+   "id": "graphics",
+   "name": "Графика",
+   "items": [
+    {
+     "key": "quality",
+     "name": "Пресет качества",
+     "type": "choice",
+     "default": "high",
+     "choices": [
+      [
+       "low",
+       "Низкое"
+      ],
+      [
+       "medium",
+       "Среднее"
+      ],
+      [
+       "high",
+       "Высокое"
+      ],
+      [
+       "ultra",
+       "Ультра"
+      ],
+      [
+       "cinema",
+       "Кино (качество 4K)"
+      ]
+     ]
+    },
+    {
+     "key": "window_mode",
+     "name": "Режим окна",
+     "type": "choice",
+     "default": "fullscreen",
+     "choices": [
+      [
+       "windowed",
+       "Окно"
+      ],
+      [
+       "borderless",
+       "Без рамки"
+      ],
+      [
+       "fullscreen",
+       "Полный экран"
+      ]
+     ]
+    },
+    {
+     "key": "resolution",
+     "name": "Разрешение окна",
+     "type": "choice",
+     "default": "auto",
+     "choices": [
+      [
+       "auto",
+       "Авто"
+      ],
+      [
+       "1280x720",
+       "1280×720"
+      ],
+      [
+       "1600x900",
+       "1600×900"
+      ],
+      [
+       "1920x1080",
+       "1920×1080"
+      ],
+      [
+       "2560x1440",
+       "2560×1440"
+      ],
+      [
+       "3840x2160",
+       "3840×2160 (4K)"
+      ]
+     ]
+    },
+    {
+     "key": "vsync",
+     "name": "Вертикальная синхронизация",
+     "type": "check",
+     "default": true
+    },
+    {
+     "key": "fps_limit",
+     "name": "Ограничение FPS",
+     "type": "choice",
+     "default": 0,
+     "choices": [
+      [
+       0,
+       "Нет"
+      ],
+      [
+       30,
+       "30"
+      ],
+      [
+       60,
+       "60"
+      ],
+      [
+       120,
+       "120"
+      ],
+      [
+       144,
+       "144"
+      ]
+     ]
+    },
+    {
+     "key": "shadows",
+     "name": "Тени",
+     "type": "choice",
+     "default": "high",
+     "choices": [
+      [
+       "off",
+       "Выкл"
+      ],
+      [
+       "low",
+       "Низкие"
+      ],
+      [
+       "high",
+       "Высокие"
+      ],
+      [
+       "ultra",
+       "Ультра"
+      ]
+     ]
+    },
+    {
+     "key": "msaa",
+     "name": "Сглаживание MSAA",
+     "type": "choice",
+     "default": "4x",
+     "choices": [
+      [
+       "off",
+       "Выкл"
+      ],
+      [
+       "2x",
+       "2x"
+      ],
+      [
+       "4x",
+       "4x"
+      ],
+      [
+       "8x",
+       "8x"
+      ]
+     ]
+    },
+    {
+     "key": "fxaa",
+     "name": "Сглаживание FXAA",
+     "type": "check",
+     "default": false
+    },
+    {
+     "key": "ssao",
+     "name": "Затенение углов (SSAO)",
+     "type": "check",
+     "default": true
+    },
+    {
+     "key": "glow",
+     "name": "Свечение (bloom)",
+     "type": "check",
+     "default": true
+    },
+    {
+     "key": "ssil",
+     "name": "Отражённый свет (SSIL): цветные отсветы от земли и зданий",
+     "type": "check",
+     "default": true
+    },
+    {
+     "key": "dof",
+     "name": "Глубина резкости («миниатюра»: размытие дальнего плана)",
+     "type": "check",
+     "default": true
+    },
+    {
+     "key": "vignette",
+     "name": "Виньетка и цветокоррекция",
+     "type": "check",
+     "default": true
+    },
+    {
+     "key": "grass_dense",
+     "name": "Густая трава (пучки, дальше от героя)",
+     "type": "check",
+     "default": true
+    },
+    {
+     "key": "decor",
+     "name": "Цветы и украшения земли",
+     "type": "check",
+     "default": true
+    },
+    {
+     "key": "flora_less",
+     "name": "Меньше растительности (если игра лагает)",
+     "type": "check",
+     "default": false
+    },
+    {
+     "key": "render_scale",
+     "name": "Масштаб рендеринга (больше 1 — чётче, как 4K на обычном мониторе)",
+     "type": "slider",
+     "default": 1.0,
+     "min": 0.5,
+     "max": 2.0,
+     "step": 0.05
+    },
+    {
+     "key": "detail_dist",
+     "name": "Дальность мелких деталей (болты, решётки), м",
+     "type": "slider",
+     "default": 90,
+     "min": 30,
+     "max": 300,
+     "step": 10
+    },
+    {
+     "key": "aniso",
+     "name": "Чёткость текстур под углом",
+     "type": "choice",
+     "default": "4x",
+     "choices": [
+      [
+       "off",
+       "Выкл"
+      ],
+      [
+       "2x",
+       "2x"
+      ],
+      [
+       "4x",
+       "4x"
+      ],
+      [
+       "8x",
+       "8x"
+      ],
+      [
+       "16x",
+       "16x"
+      ]
+     ]
+    },
+    {
+     "key": "soft_shadows",
+     "name": "Мягкие края теней",
+     "type": "choice",
+     "default": "medium",
+     "choices": [
+      [
+       "off",
+       "Выкл"
+      ],
+      [
+       "low",
+       "Низкие"
+      ],
+      [
+       "medium",
+       "Средние"
+      ],
+      [
+       "high",
+       "Высокие"
+      ],
+      [
+       "ultra",
+       "Ультра"
+      ]
+     ]
+    },
+    {
+     "key": "lod_px",
+     "name": "Упрощение дальних моделей (больше — быстрее, вдали проще)",
+     "type": "choice",
+     "default": 2,
+     "choices": [
+      [
+       0.5,
+       "Почти нет"
+      ],
+      [
+       1,
+       "Слабое"
+      ],
+      [
+       2,
+       "Среднее"
+      ],
+      [
+       4,
+       "Сильное"
+      ],
+      [
+       8,
+       "Очень сильное"
+      ]
+     ]
+    },
+    {
+     "key": "draw_distance",
+     "name": "Дальность прорисовки",
+     "type": "slider",
+     "default": 230,
+     "min": 100,
+     "max": 400,
+     "step": 10
+    },
+    {
+     "key": "live_anim_max",
+     "name": "Живая анимация: сколько монстров рядом (меньше — быстрее)",
+     "type": "slider",
+     "default": 14,
+     "min": 0,
+     "max": 40,
+     "step": 1
+    },
+    {
+     "key": "live_anim_dist",
+     "name": "Живая анимация: дальность, м",
+     "type": "slider",
+     "default": 45,
+     "min": 15,
+     "max": 80,
+     "step": 5
+    },
+    {
+     "key": "auto_quality",
+     "name": "Автонастройка: снижать качество, если FPS падает",
+     "type": "check",
+     "default": true
+    },
+    {
+     "key": "auto_fps",
+     "name": "Автонастройка: держать FPS не ниже",
+     "type": "choice",
+     "default": 45,
+     "choices": [
+      [
+       30,
+       "30"
+      ],
+      [
+       45,
+       "45"
+      ],
+      [
+       60,
+       "60"
+      ]
+     ]
+    },
+    {
+     "key": "show_fps",
+     "name": "Показывать FPS (F3)",
+     "type": "check",
+     "default": false
+    },
+    {
+     "key": "char_outline",
+     "name": "Обводка героя и монстров (после перезапуска)",
+     "type": "check",
+     "default": true
+    },
+    {
+     "key": "menu_live",
+     "name": "Живой фон главного меню (3D-база вместо картинки)",
+     "type": "check",
+     "default": true
+    }
+   ]
+  },
+  {
+   "id": "game",
+   "name": "Игра",
+   "items": [
+    {
+     "key": "language",
+     "name": "Язык",
+     "type": "choice",
+     "default": "ru",
+     "choices": [
+      [
+       "ru",
+       "Русский"
+      ],
+      [
+       "en",
+       "English"
+      ]
+     ]
+    },
+    {
+     "key": "ui_scale",
+     "name": "Размер интерфейса",
+     "type": "slider",
+     "default": 1.0,
+     "min": 0.7,
+     "max": 1.6,
+     "step": 0.05
+    },
+    {
+     "key": "fov_enabled",
+     "name": "Поле зрения героя",
+     "type": "check",
+     "default": true
+    },
+    {
+     "key": "fov_angle",
+     "name": "Угол обзора",
+     "type": "slider",
+     "default": 120,
+     "min": 60,
+     "max": 360,
+     "step": 10
+    },
+    {
+     "key": "drops_on_ground",
+     "name": "Предметы падают на землю (иначе сразу в инвентарь)",
+     "type": "check",
+     "default": true
+    },
+    {
+     "key": "show_hints",
+     "name": "Подсказки",
+     "type": "check",
+     "default": true
+    },
+    {
+     "key": "autosave_min",
+     "name": "Автосохранение, минут (0 — выкл)",
+     "type": "slider",
+     "default": 5,
+     "min": 0,
+     "max": 30,
+     "step": 1
+    },
+    {
+     "key": "hotbar_slots",
+     "name": "Ячеек в панели быстрого доступа",
+     "type": "slider",
+     "default": 9,
+     "min": 4,
+     "max": 12,
+     "step": 1
+    },
+    {
+     "key": "hotbar_size",
+     "name": "Размер ячеек панели",
+     "type": "slider",
+     "default": 56,
+     "min": 40,
+     "max": 90,
+     "step": 2
+    },
+    {
+     "key": "wheel_mode",
+     "name": "Колесо мыши",
+     "type": "choice",
+     "default": "hotbar",
+     "choices": [
+      [
+       "hotbar",
+       "Листает панель (с Ctrl — камера)"
+      ],
+      [
+       "zoom",
+       "Приближает камеру (с Ctrl — панель)"
+      ]
+     ]
+    },
+    {
+     "key": "show_modes",
+     "name": "Подсветка режимов (провода, разбор, стройка): надпись и края экрана",
+     "type": "check",
+     "default": true
+    },
+    {
+     "key": "quips_on",
+     "name": "Шутки «Радио Aloverdoz» в сообщениях",
+     "type": "check",
+     "default": true
+    }
+   ]
+  }
+ ]
+}

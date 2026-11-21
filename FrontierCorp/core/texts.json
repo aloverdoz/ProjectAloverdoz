@@ -1,0 +1,382 @@
+{
+ "m_continue": {
+  "ru": "Продолжить",
+  "en": "Continue"
+ },
+ "m_new": {
+  "ru": "Новая игра",
+  "en": "New game"
+ },
+ "m_load": {
+  "ru": "Загрузить",
+  "en": "Load game"
+ },
+ "m_net": {
+  "ru": "Сетевая игра",
+  "en": "Multiplayer"
+ },
+ "m_editor": {
+  "ru": "Редактор",
+  "en": "Editor"
+ },
+ "m_mods": {
+  "ru": "Моды и дополнения",
+  "en": "Mods and DLC"
+ },
+ "m_settings": {
+  "ru": "Настройки",
+  "en": "Settings"
+ },
+ "m_help": {
+  "ru": "Как играть",
+  "en": "How to play"
+ },
+ "m_credits": {
+  "ru": "Авторы",
+  "en": "Credits"
+ },
+ "m_quit": {
+  "ru": "Выход",
+  "en": "Quit"
+ },
+ "p_resume": {
+  "ru": "Продолжить",
+  "en": "Resume"
+ },
+ "p_save": {
+  "ru": "Сохранить",
+  "en": "Save"
+ },
+ "p_load": {
+  "ru": "Загрузить",
+  "en": "Load"
+ },
+ "p_settings": {
+  "ru": "Настройки",
+  "en": "Settings"
+ },
+ "p_help": {
+  "ru": "Как играть",
+  "en": "How to play"
+ },
+ "p_menu": {
+  "ru": "Выйти в главное меню",
+  "en": "Main menu"
+ },
+ "p_quit": {
+  "ru": "Выйти из игры",
+  "en": "Quit game"
+ },
+ "loading": {
+  "ru": "Загрузка... (корпорация греет реактор)",
+  "en": "Loading... (warming up the reactor)"
+ },
+ "death_title": {
+  "ru": "ГЕРОЙ ПОГИБ",
+  "en": "YOU DIED"
+ },
+ "death_text": {
+  "ru": "Корпорация собирает вас заново: {t} с",
+  "en": "Aloverdoz is reassembling you: {t} s"
+ },
+ "victory_title": {
+  "ru": "ПОБЕДА!",
+  "en": "VICTORY!"
+ },
+ "victory_text": {
+  "ru": "Совет директоров Aloverdoz аплодирует стоя. Впервые за 40 лет.",
+  "en": "The Aloverdoz board gives a standing ovation. First time in 40 years."
+ },
+ "defeat_title": {
+  "ru": "ПОРАЖЕНИЕ",
+  "en": "DEFEAT"
+ },
+ "defeat_text": {
+  "ru": "Штаб уничтожен. Корпорация уже ищет виноватого, и он подозрительно похож на вас.",
+  "en": "HQ destroyed. Aloverdoz is looking for someone to blame, and they look suspiciously like you."
+ },
+ "new_game": {
+  "ru": "НОВАЯ ИГРА",
+  "en": "NEW GAME"
+ },
+ "start": {
+  "ru": "Начать",
+  "en": "Start"
+ },
+ "back": {
+  "ru": "Назад",
+  "en": "Back"
+ },
+ "load_title": {
+  "ru": "ЗАГРУЗИТЬ ИГРУ",
+  "en": "LOAD GAME"
+ },
+ "save_title": {
+  "ru": "СОХРАНИТЬ ИГРУ",
+  "en": "SAVE GAME"
+ },
+ "slot_empty": {
+  "ru": "Пустая ячейка",
+  "en": "Empty slot"
+ },
+ "autosave": {
+  "ru": "Автосохранение",
+  "en": "Autosave"
+ },
+ "btn_load": {
+  "ru": "Загрузить",
+  "en": "Load"
+ },
+ "btn_save": {
+  "ru": "Сохранить сюда",
+  "en": "Save here"
+ },
+ "btn_delete": {
+  "ru": "Удалить",
+  "en": "Delete"
+ },
+ "no_saves": {
+  "ru": "Сохранений пока нет.",
+  "en": "No saved games yet."
+ },
+ "credits_title": {
+  "ru": "АВТОРЫ",
+  "en": "CREDITS"
+ },
+ "help_title": {
+  "ru": "КАК ИГРАТЬ",
+  "en": "HOW TO PLAY"
+ },
+ "settings_title": {
+  "ru": "НАСТРОЙКИ",
+  "en": "SETTINGS"
+ },
+ "mods_title": {
+  "ru": "МОДЫ И ДОПОЛНЕНИЯ",
+  "en": "MODS AND DLC"
+ },
+ "pause_title": {
+  "ru": "ПАУЗА",
+  "en": "PAUSED"
+ },
+ "continue_build": {
+  "ru": "Продолжить строить",
+  "en": "Keep building"
+ },
+ "to_menu": {
+  "ru": "В главное меню",
+  "en": "Main menu"
+ },
+ "load_last": {
+  "ru": "Загрузить последнее сохранение",
+  "en": "Load last save"
+ },
+ "st_time": {
+  "ru": "Время в игре",
+  "en": "Play time"
+ },
+ "st_day": {
+  "ru": "Дней прожито",
+  "en": "Days survived"
+ },
+ "st_waves": {
+  "ru": "Волн отбито",
+  "en": "Waves survived"
+ },
+ "st_kills": {
+  "ru": "Монстров убито",
+  "en": "Monsters killed"
+ },
+ "st_earned": {
+  "ru": "Заработано",
+  "en": "Earned"
+ },
+ "st_buildings": {
+  "ru": "Построено зданий",
+  "en": "Buildings"
+ },
+ "st_level": {
+  "ru": "Уровень героя",
+  "en": "Hero level"
+ },
+ "version": {
+  "ru": "версия",
+  "en": "version"
+ },
+ "tip": {
+  "ru": "Совет",
+  "en": "Tip"
+ },
+ "map_size": {
+  "ru": "Размер карты",
+  "en": "Map size"
+ },
+ "modules": {
+  "ru": "Модули",
+  "en": "Modules"
+ },
+ "difficulty": {
+  "ru": "Сложность",
+  "en": "Difficulty"
+ },
+ "profession": {
+  "ru": "Профессия",
+  "en": "Profession"
+ },
+ "map": {
+  "ru": "Карта",
+  "en": "Map"
+ },
+ "seed": {
+  "ru": "Зерно",
+  "en": "Seed"
+ },
+ "overwrite_q": {
+  "ru": "Перезаписать это сохранение?",
+  "en": "Overwrite this save?"
+ },
+ "delete_q": {
+  "ru": "Удалить это сохранение?",
+  "en": "Delete this save?"
+ },
+ "yes": {
+  "ru": "Да",
+  "en": "Yes"
+ },
+ "slot": {
+  "ru": "Ячейка",
+  "en": "Slot"
+ },
+ "map_small": {
+  "ru": "Маленькая",
+  "en": "Small"
+ },
+ "map_medium": {
+  "ru": "Средняя",
+  "en": "Medium"
+ },
+ "map_large": {
+  "ru": "Большая",
+  "en": "Large"
+ },
+ "map_huge": {
+  "ru": "Огромная",
+  "en": "Huge"
+ },
+ "random_seed": {
+  "ru": "случайное",
+  "en": "random"
+ },
+ "map_random": {
+  "ru": "Случайная (процедурная)",
+  "en": "Random (procedural)"
+ },
+ "map_fixed": {
+  "ru": "Готовая карта игры",
+  "en": "Hand-made map"
+ },
+ "respawn_now": {
+  "ru": "Возродиться",
+  "en": "Respawn"
+ },
+ "no": {
+  "ru": "Нет",
+  "en": "No"
+ },
+ "day": {
+  "ru": "день",
+  "en": "day"
+ },
+ "trade_title": {
+  "ru": "ТОРГОВАЯ СТАНЦИЯ «ОРБИТА-7»",
+  "en": "TRADE STATION «ORBIT-7»"
+ },
+ "trade_head": {
+  "ru": "Кредиты: [color=#ffd36b]{credits}[/color]. Станция забирает товар сначала со склада штаба, потом из рюкзака, и присылает челнок.",
+  "en": "Credits: [color=#ffd36b]{credits}[/color]. The station takes goods from HQ storage first, then from your backpack, and sends a shuttle."
+ },
+ "tr_item": {
+  "ru": "Товар",
+  "en": "Item"
+ },
+ "tr_have": {
+  "ru": "Есть",
+  "en": "Have"
+ },
+ "tr_price": {
+  "ru": "Цена за шт.",
+  "en": "Price each"
+ },
+ "tr_sell": {
+  "ru": "Продать",
+  "en": "Sell"
+ },
+ "tr_buy": {
+  "ru": "Купить",
+  "en": "Buy"
+ },
+ "tr_all": {
+  "ru": "всё",
+  "en": "all"
+ },
+ "tr_sell1_tip": {
+  "ru": "Продать 1 шт. за {p} кр",
+  "en": "Sell 1 for {p} cr"
+ },
+ "tr_sell_all_tip": {
+  "ru": "Продать все {n} шт. за {p} кр",
+  "en": "Sell all {n} for {p} cr"
+ },
+ "tr_buy10": {
+  "ru": "10 за {p}",
+  "en": "10 for {p}"
+ },
+ "tr_buy_tip": {
+  "ru": "Купить 10 шт. Челнок привезёт их в штаб.",
+  "en": "Buy 10. The shuttle delivers them to HQ."
+ },
+ "tr_no_money": {
+  "ru": "Не хватает {n} кр",
+  "en": "Need {n} more cr"
+ },
+ "in_hq": {
+  "ru": "В штабе",
+  "en": "In HQ"
+ },
+ "in_bag": {
+  "ru": "В рюкзаке",
+  "en": "In backpack"
+ },
+ "quest_done": {
+  "ru": "Задача выполнена!",
+  "en": "Task complete!"
+ },
+ "quests_all_done": {
+  "ru": "Все задачи выполнены!",
+  "en": "All tasks complete!"
+ },
+ "need": {
+  "ru": "Нужно",
+  "en": "Need"
+ },
+ "load_build": {
+  "ru": "Строим мир...",
+  "en": "Building the world..."
+ },
+ "load_shaders": {
+  "ru": "Готовим материалы...",
+  "en": "Preparing materials..."
+ },
+ "load_world": {
+  "ru": "Почти готово...",
+  "en": "Almost ready..."
+ },
+ "hot_build": {
+  "ru": "здание",
+  "en": "building"
+ },
+ "durability": {
+  "ru": "прочность",
+  "en": "durability"
+ }
+}

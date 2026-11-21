@@ -1,0 +1,3204 @@
+{
+ "stone_axe": {
+  "name": "Каменный топор",
+  "in": {
+   "branch": 3,
+   "stone": 2,
+   "fiber": 2
+  },
+  "out": {
+   "stone_axe": 1
+  },
+  "time": 2.0,
+  "stations": [
+   "hand",
+   "workbench"
+  ]
+ },
+ "stone_pickaxe": {
+  "name": "Каменная кирка",
+  "in": {
+   "branch": 3,
+   "stone": 3,
+   "fiber": 2
+  },
+  "out": {
+   "stone_pickaxe": 1
+  },
+  "time": 2.0,
+  "stations": [
+   "hand",
+   "workbench"
+  ]
+ },
+ "rope": {
+  "name": "Верёвка",
+  "in": {
+   "fiber": 3
+  },
+  "out": {
+   "rope": 1
+  },
+  "time": 1.0,
+  "stations": [
+   "hand",
+   "workbench"
+  ]
+ },
+ "plank": {
+  "name": "Доски",
+  "in": {
+   "log": 1
+  },
+  "out": {
+   "plank": 3
+  },
+  "time": 1.5,
+  "stations": [
+   "workbench",
+   "workshop"
+  ]
+ },
+ "iron_axe": {
+  "name": "Железный топор",
+  "in": {
+   "plank": 2,
+   "iron_ingot": 3,
+   "rope": 1
+  },
+  "out": {
+   "iron_axe": 1
+  },
+  "time": 3.0,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "iron_pickaxe": {
+  "name": "Железная кирка",
+  "in": {
+   "plank": 2,
+   "iron_ingot": 4,
+   "rope": 1
+  },
+  "out": {
+   "iron_pickaxe": 1
+  },
+  "time": 3.0,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "medkit": {
+  "name": "Аптечка",
+  "in": {
+   "berry": 5,
+   "fiber": 3,
+   "glass": 1
+  },
+  "out": {
+   "medkit": 1
+  },
+  "time": 3.0,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "knife": {
+  "name": "Нож",
+  "in": {
+   "stone": 2,
+   "branch": 1,
+   "fiber": 1
+  },
+  "out": {
+   "knife": 1
+  },
+  "time": 2.0,
+  "stations": [
+   "hand",
+   "workbench"
+  ]
+ },
+ "sword": {
+  "name": "Меч",
+  "in": {
+   "iron_ingot": 4,
+   "plank": 1,
+   "rope": 1
+  },
+  "out": {
+   "sword": 1
+  },
+  "time": 4.0,
+  "stations": [
+   "workbench",
+   "workshop"
+  ]
+ },
+ "blaster": {
+  "name": "Бластер",
+  "in": {
+   "iron_plate": 3,
+   "gear": 2,
+   "copper_ingot": 2
+  },
+  "out": {
+   "blaster": 1
+  },
+  "time": 6.0,
+  "stations": [
+   "workshop"
+  ]
+ },
+ "water_flask": {
+  "name": "Фляга воды",
+  "in": {
+   "plank": 1,
+   "fiber": 2
+  },
+  "out": {
+   "water_flask": 1
+  },
+  "time": 1.5,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "jerky": {
+  "name": "Сушёное мясо",
+  "in": {
+   "berry": 3,
+   "mushroom": 2
+  },
+  "out": {
+   "jerky": 1
+  },
+  "time": 4.0,
+  "stations": [
+   "furnace"
+  ]
+ },
+ "stim_speed": {
+  "name": "Стимулятор бега",
+  "in": {
+   "berry": 4,
+   "glass": 1
+  },
+  "out": {
+   "stim_speed": 1
+  },
+  "time": 3.0,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "stim_gather": {
+  "name": "Бодрящий настой",
+  "in": {
+   "mushroom": 3,
+   "glass": 1
+  },
+  "out": {
+   "stim_gather": 1
+  },
+  "time": 3.0,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "stim_power": {
+  "name": "Боевой стимулятор",
+  "in": {
+   "crystal": 2,
+   "glass": 2
+  },
+  "out": {
+   "stim_power": 1
+  },
+  "time": 5.0,
+  "stations": [
+   "workshop"
+  ]
+ },
+ "smelt_iron": {
+  "name": "Железный слиток",
+  "in": {
+   "iron_ore": 1
+  },
+  "out": {
+   "iron_ingot": 1
+  },
+  "time": 2.0,
+  "stations": [
+   "furnace",
+   "smelter"
+  ]
+ },
+ "smelt_copper": {
+  "name": "Медный слиток",
+  "in": {
+   "copper_ore": 1
+  },
+  "out": {
+   "copper_ingot": 1
+  },
+  "time": 2.0,
+  "stations": [
+   "furnace",
+   "smelter"
+  ]
+ },
+ "smelt_glass": {
+  "name": "Стекло",
+  "in": {
+   "quartz": 5
+  },
+  "out": {
+   "glass": 3
+  },
+  "time": 8.0,
+  "stations": [
+   "furnace",
+   "smelter"
+  ]
+ },
+ "concrete": {
+  "name": "Бетон",
+  "in": {
+   "stone": 3
+  },
+  "out": {
+   "concrete": 1
+  },
+  "time": 4.0,
+  "stations": [
+   "furnace",
+   "smelter"
+  ]
+ },
+ "steel": {
+  "name": "Сталь",
+  "in": {
+   "iron_ingot": 2,
+   "coal": 2
+  },
+  "out": {
+   "steel": 1
+  },
+  "time": 4.0,
+  "stations": [
+   "smelter"
+  ]
+ },
+ "gear": {
+  "name": "Шестерня",
+  "in": {
+   "iron_ingot": 2
+  },
+  "out": {
+   "gear": 1
+  },
+  "time": 4.0,
+  "stations": [
+   "workshop",
+   "assembler"
+  ]
+ },
+ "iron_plate": {
+  "name": "Железная пластина",
+  "in": {
+   "iron_ingot": 3
+  },
+  "out": {
+   "iron_plate": 2
+  },
+  "time": 6.0,
+  "stations": [
+   "workshop",
+   "assembler"
+  ]
+ },
+ "wire": {
+  "name": "Провод",
+  "in": {
+   "copper_ingot": 1
+  },
+  "out": {
+   "wire": 2
+  },
+  "time": 4.0,
+  "stations": [
+   "workshop",
+   "assembler"
+  ]
+ },
+ "circuit": {
+  "name": "Микросхема",
+  "in": {
+   "wire": 6,
+   "iron_plate": 2,
+   "glass": 1
+  },
+  "out": {
+   "circuit": 1
+  },
+  "time": 8.0,
+  "stations": [
+   "workshop",
+   "assembler"
+  ]
+ },
+ "motor": {
+  "name": "Мотор",
+  "in": {
+   "gear": 10,
+   "wire": 16,
+   "steel": 8
+  },
+  "out": {
+   "motor": 1
+  },
+  "time": 15.0,
+  "stations": [
+   "workshop",
+   "assembler"
+  ]
+ },
+ "battery": {
+  "name": "Батарея",
+  "in": {
+   "sulfur": 3,
+   "copper_ingot": 3,
+   "iron_plate": 2
+  },
+  "out": {
+   "battery": 1
+  },
+  "time": 8.0,
+  "stations": [
+   "workshop",
+   "assembler"
+  ]
+ },
+ "ammo": {
+  "name": "Патроны",
+  "in": {
+   "iron_plate": 6,
+   "gunpowder": 6
+  },
+  "out": {
+   "ammo": 8
+  },
+  "time": 8.0,
+  "stations": [
+   "workshop",
+   "assembler"
+  ]
+ },
+ "grenade": {
+  "name": "Граната",
+  "in": {
+   "iron_plate": 6,
+   "sulfur": 12
+  },
+  "out": {
+   "grenade": 2
+  },
+  "time": 8.0,
+  "stations": [
+   "workshop",
+   "assembler"
+  ]
+ },
+ "recall": {
+  "name": "Маяк возврата",
+  "in": {
+   "crystal": 2,
+   "circuit": 2
+  },
+  "out": {
+   "recall": 1
+  },
+  "time": 5.0,
+  "stations": [
+   "workshop"
+  ]
+ },
+ "lucky_box": {
+  "name": "Ящик удачи",
+  "in": {
+   "plank": 2,
+   "goo": 1
+  },
+  "out": {
+   "lucky_box": 1
+  },
+  "time": 2.0,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "smelt_iron_hq": {
+  "name": "Слитки из богатой руды",
+  "in": {
+   "iron_ore_hq": 1
+  },
+  "out": {
+   "iron_ingot": 3
+  },
+  "time": 3.0,
+  "stations": [
+   "furnace",
+   "smelter"
+  ]
+ },
+ "smelt_copper_hq": {
+  "name": "Медь из богатой руды",
+  "in": {
+   "copper_ore_hq": 1
+  },
+  "out": {
+   "copper_ingot": 3
+  },
+  "time": 3.0,
+  "stations": [
+   "furnace",
+   "smelter"
+  ]
+ },
+ "crack_geode": {
+  "name": "Расколоть жеоду",
+  "in": {
+   "geode": 1
+  },
+  "out": {
+   "quartz": 2,
+   "crystal": 1
+  },
+  "time": 3.0,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "smoke_meat": {
+  "name": "Копчёное мясо",
+  "in": {
+   "raw_meat": 2
+  },
+  "out": {
+   "jerky": 1
+  },
+  "time": 4.0,
+  "stations": [
+   "furnace"
+  ]
+ },
+ "bandage_goo": {
+  "name": "Аптечка из слизи",
+  "in": {
+   "goo": 4,
+   "fiber": 2
+  },
+  "out": {
+   "medkit": 1
+  },
+  "time": 3.0,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "fang_spear": {
+  "name": "Меч с клыками",
+  "in": {
+   "fang": 4,
+   "iron_ingot": 2,
+   "rope": 1
+  },
+  "out": {
+   "sword": 1
+  },
+  "time": 4.0,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "stim_core": {
+  "name": "Боевой стимулятор из ядра",
+  "in": {
+   "monster_core": 5,
+   "goo": 10
+  },
+  "out": {
+   "stim_power": 3
+  },
+  "time": 5.0,
+  "stations": [
+   "workshop"
+  ]
+ },
+ "biomass_leaves": {
+  "name": "Биомасса из листьев",
+  "in": {
+   "leaves": 4
+  },
+  "out": {
+   "biomass": 2
+  },
+  "time": 2.0,
+  "stations": [
+   "hand",
+   "workbench"
+  ]
+ },
+ "biomass_fiber": {
+  "name": "Биомасса из травы",
+  "in": {
+   "fiber": 4
+  },
+  "out": {
+   "biomass": 2
+  },
+  "time": 2.0,
+  "stations": [
+   "hand",
+   "workbench"
+  ]
+ },
+ "biomass_wood": {
+  "name": "Биомасса из веток",
+  "in": {
+   "branch": 3
+  },
+  "out": {
+   "biomass": 2
+  },
+  "time": 2.0,
+  "stations": [
+   "hand",
+   "workbench"
+  ]
+ },
+ "canister": {
+  "name": "Пустая канистра",
+  "in": {
+   "iron_plate": 12
+  },
+  "out": {
+   "canister": 2
+  },
+  "time": 4.0,
+  "stations": [
+   "workshop",
+   "assembler"
+  ]
+ },
+ "refine_fuel": {
+  "name": "Топливо",
+  "in": {
+   "oil": 6
+  },
+  "out": {
+   "fuel": 4
+  },
+  "time": 6.0,
+  "stations": [
+   "refinery"
+  ]
+ },
+ "refine_plastic": {
+  "name": "Пластик",
+  "in": {
+   "oil": 3
+  },
+  "out": {
+   "plastic": 2
+  },
+  "time": 6.0,
+  "stations": [
+   "refinery"
+  ]
+ },
+ "refine_rubber": {
+  "name": "Резина",
+  "in": {
+   "oil": 3
+  },
+  "out": {
+   "rubber": 2
+  },
+  "time": 6.0,
+  "stations": [
+   "refinery"
+  ]
+ },
+ "circuit_plastic": {
+  "name": "Микросхема из пластика",
+  "in": {
+   "wire": 4,
+   "plastic": 2
+  },
+  "out": {
+   "circuit": 1
+  },
+  "time": 8.0,
+  "stations": [
+   "workshop",
+   "assembler"
+  ]
+ },
+ "pack_oil": {
+  "name": "Налить канистру нефти",
+  "in": {
+   "oil": 4,
+   "canister": 1
+  },
+  "out": {
+   "canister_oil": 1
+  },
+  "time": 1.5,
+  "stations": [
+   "packager"
+  ]
+ },
+ "unpack_oil": {
+  "name": "Вылить канистру нефти",
+  "in": {
+   "canister_oil": 1
+  },
+  "out": {
+   "oil": 4,
+   "canister": 1
+  },
+  "time": 1.5,
+  "stations": [
+   "packager"
+  ]
+ },
+ "pack_fuel": {
+  "name": "Налить канистру топлива",
+  "in": {
+   "fuel": 4,
+   "canister": 1
+  },
+  "out": {
+   "canister_fuel": 1
+  },
+  "time": 1.5,
+  "stations": [
+   "packager"
+  ]
+ },
+ "unpack_fuel": {
+  "name": "Вылить канистру топлива",
+  "in": {
+   "canister_fuel": 1
+  },
+  "out": {
+   "fuel": 4,
+   "canister": 1
+  },
+  "time": 1.5,
+  "stations": [
+   "packager"
+  ]
+ },
+ "pack_water": {
+  "name": "Налить канистру воды",
+  "in": {
+   "water": 4,
+   "canister": 1
+  },
+  "out": {
+   "canister_water": 1
+  },
+  "time": 1.5,
+  "stations": [
+   "packager"
+  ]
+ },
+ "unpack_water": {
+  "name": "Вылить канистру воды",
+  "in": {
+   "canister_water": 1
+  },
+  "out": {
+   "water": 4,
+   "canister": 1
+  },
+  "time": 1.5,
+  "stations": [
+   "packager"
+  ]
+ },
+ "scout_drone": {
+  "name": "Дрон-разведчик",
+  "in": {
+   "iron_plate": 4,
+   "circuit": 2,
+   "motor": 1
+  },
+  "out": {
+   "scout_drone": 1
+  },
+  "time": 4.0,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "warm_jacket": {
+  "name": "Тёплая куртка",
+  "in": {
+   "fiber": 8,
+   "plank": 1
+  },
+  "out": {
+   "warm_jacket": 1
+  },
+  "time": 3.0,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "fur_coat": {
+  "name": "Шуба",
+  "in": {
+   "fiber": 10,
+   "raw_meat": 4
+  },
+  "out": {
+   "fur_coat": 1
+  },
+  "time": 3.0,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "light_suit": {
+  "name": "Лёгкий костюм",
+  "in": {
+   "fiber": 6
+  },
+  "out": {
+   "light_suit": 1
+  },
+  "time": 3.0,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "climate_suit": {
+  "name": "Климат-костюм",
+  "in": {
+   "fiber": 6,
+   "circuit": 2,
+   "wire": 6
+  },
+  "out": {
+   "climate_suit": 1
+  },
+  "time": 4.0,
+  "stations": [
+   "assembler"
+  ]
+ },
+ "fried_meat": {
+  "name": "Жареное мясо",
+  "in": {
+   "raw_meat": 1
+  },
+  "out": {
+   "fried_meat": 1
+  },
+  "time": 2.0,
+  "stations": [
+   "kitchen"
+  ]
+ },
+ "hot_stew": {
+  "name": "Жаркое",
+  "in": {
+   "raw_meat": 2,
+   "mushroom": 2,
+   "water_flask": 1
+  },
+  "out": {
+   "hot_stew": 1
+  },
+  "time": 5.0,
+  "stations": [
+   "kitchen"
+  ]
+ },
+ "herbal_tea": {
+  "name": "Ягодный чай",
+  "in": {
+   "berry": 2,
+   "water_flask": 1
+  },
+  "out": {
+   "herbal_tea": 1
+  },
+  "time": 2.5,
+  "stations": [
+   "kitchen"
+  ]
+ },
+ "fruit_salad": {
+  "name": "Фруктовый салат",
+  "in": {
+   "berry": 3,
+   "apple": 2
+  },
+  "out": {
+   "fruit_salad": 1
+  },
+  "time": 2.5,
+  "stations": [
+   "kitchen"
+  ]
+ },
+ "acid_umbrella": {
+  "name": "Кислотный зонтик",
+  "in": {
+   "fiber": 5,
+   "branch": 2
+  },
+  "out": {
+   "acid_umbrella": 1
+  },
+  "time": 2.0,
+  "stations": [
+   "hand",
+   "workbench"
+  ]
+ },
+ "gunpowder": {
+  "name": "Порох",
+  "in": {
+   "sulfur": 1,
+   "saltpeter": 2,
+   "coal": 1
+  },
+  "out": {
+   "gunpowder": 2
+  },
+  "time": 4.0,
+  "stations": [
+   "powder_mill",
+   "workshop",
+   "chem_plant"
+  ]
+ },
+ "ammo_crude": {
+  "name": "Патроны (кустарные)",
+  "in": {
+   "iron_ingot": 5,
+   "charcoal": 2
+  },
+  "out": {
+   "ammo": 2
+  },
+  "time": 4.0,
+  "stations": [
+   "workbench",
+   "workshop",
+   "assembler"
+  ]
+ },
+ "sulfuric_acid": {
+  "name": "Серная кислота",
+  "in": {
+   "sulfur": 5,
+   "water": 5
+  },
+  "out": {
+   "sulfuric_acid": 5
+  },
+  "time": 6.0,
+  "stations": [
+   "chem_plant"
+  ]
+ },
+ "pack_sulfuric_acid": {
+  "name": "Налить канистру кислоты",
+  "in": {
+   "sulfuric_acid": 4,
+   "canister": 1
+  },
+  "out": {
+   "canister_acid": 1
+  },
+  "time": 1.5,
+  "stations": [
+   "packager"
+  ]
+ },
+ "unpack_sulfuric_acid": {
+  "name": "Вылить канистру кислоты",
+  "in": {
+   "canister_acid": 1
+  },
+  "out": {
+   "sulfuric_acid": 4,
+   "canister": 1
+  },
+  "time": 1.5,
+  "stations": [
+   "packager"
+  ]
+ },
+ "alumina": {
+  "name": "Раствор глинозёма",
+  "in": {
+   "alunite": 4,
+   "water": 4
+  },
+  "out": {
+   "alumina": 4
+  },
+  "time": 4.0,
+  "stations": [
+   "chem_plant"
+  ]
+ },
+ "aluminum_scrap": {
+  "name": "Алюминиевый лом",
+  "in": {
+   "alumina": 4,
+   "coal": 2
+  },
+  "out": {
+   "aluminum_scrap": 6,
+   "water": 2
+  },
+  "time": 3.0,
+  "stations": [
+   "chem_plant"
+  ]
+ },
+ "aluminum_ingot": {
+  "name": "Алюминиевый слиток",
+  "in": {
+   "aluminum_scrap": 24,
+   "quartz": 6
+  },
+  "out": {
+   "aluminum_ingot": 3
+  },
+  "time": 18.0,
+  "stations": [
+   "smelter"
+  ]
+ },
+ "aluminum_sheet": {
+  "name": "Алюминиевый лист",
+  "in": {
+   "aluminum_ingot": 3
+  },
+  "out": {
+   "aluminum_sheet": 3
+  },
+  "time": 4.0,
+  "stations": [
+   "workshop",
+   "assembler"
+  ]
+ },
+ "aluminum_casing": {
+  "name": "Алюминиевый корпус",
+  "in": {
+   "aluminum_ingot": 18,
+   "steel": 6
+  },
+  "out": {
+   "aluminum_casing": 2
+  },
+  "time": 18.0,
+  "stations": [
+   "assembler"
+  ]
+ },
+ "yellowcake": {
+  "name": "Жёлтый кек",
+  "in": {
+   "uranium_ore": 10,
+   "sulfuric_acid": 8
+  },
+  "out": {
+   "yellowcake": 5
+  },
+  "time": 12.0,
+  "stations": [
+   "chem_plant"
+  ]
+ },
+ "enriched_uranium": {
+  "name": "Обогащённый уран",
+  "in": {
+   "yellowcake": 12,
+   "concrete": 6
+  },
+  "out": {
+   "enriched_uranium": 2
+  },
+  "time": 26.0,
+  "stations": [
+   "centrifuge"
+  ]
+ },
+ "fuel_rod": {
+  "name": "Урановый ТВЭЛ",
+  "in": {
+   "enriched_uranium": 50,
+   "steel_beam": 3,
+   "circuit": 5
+  },
+  "out": {
+   "fuel_rod": 1
+  },
+  "time": 150.0,
+  "stations": [
+   "assembler"
+  ]
+ },
+ "recycle_waste": {
+  "name": "Переработка отходов",
+  "in": {
+   "nuclear_waste": 1,
+   "sulfuric_acid": 10
+  },
+  "out": {
+   "enriched_uranium": 3
+  },
+  "time": 30.0,
+  "stations": [
+   "centrifuge"
+  ]
+ },
+ "hazmat_suit": {
+  "name": "Защитный костюм",
+  "in": {
+   "rubber": 4,
+   "aluminum_sheet": 4,
+   "plastic": 2
+  },
+  "out": {
+   "hazmat_suit": 1
+  },
+  "time": 9.0,
+  "stations": [
+   "workshop"
+  ]
+ },
+ "decon_solution": {
+  "name": "Дезактивирующий раствор",
+  "in": {
+   "water": 4,
+   "saltpeter": 1
+  },
+  "out": {
+   "decon_solution": 4
+  },
+  "time": 9.1,
+  "stations": [
+   "chem_plant"
+  ]
+ },
+ "decon_spray": {
+  "name": "Дезактивационный баллон",
+  "in": {
+   "decon_solution": 30,
+   "aluminum_sheet": 6
+  },
+  "out": {
+   "decon_spray": 1
+  },
+  "time": 13.0,
+  "stations": [
+   "workshop"
+  ]
+ },
+ "bio_gel": {
+  "name": "Биогель",
+  "in": {
+   "biomass": 60,
+   "chitin": 12,
+   "goo": 12
+  },
+  "out": {
+   "bio_gel": 2
+  },
+  "time": 36.0,
+  "stations": [
+   "chem_plant"
+  ]
+ },
+ "superconductor": {
+  "name": "Сверхпроводник",
+  "in": {
+   "aluminum_sheet": 12,
+   "wire": 24,
+   "helium3": 6
+  },
+  "out": {
+   "superconductor": 4
+  },
+  "time": 36.0,
+  "stations": [
+   "assembler",
+   "quantum_assembler"
+  ]
+ },
+ "stellar_alloy": {
+  "name": "Звёздный сплав",
+  "in": {
+   "steel": 24,
+   "aluminum_ingot": 12,
+   "neutronium": 6
+  },
+  "out": {
+   "stellar_alloy": 2
+  },
+  "time": 36.0,
+  "stations": [
+   "exotic_forge"
+  ]
+ },
+ "fusion_cell": {
+  "name": "Термоядерная ячейка",
+  "in": {
+   "helium3": 12,
+   "superconductor": 6,
+   "aluminum_casing": 6
+  },
+  "out": {
+   "fusion_cell": 1
+  },
+  "time": 48.0,
+  "stations": [
+   "assembler",
+   "quantum_assembler"
+  ]
+ },
+ "magnetic_trap": {
+  "name": "Магнитная ловушка",
+  "in": {
+   "superconductor": 24,
+   "circuit": 24,
+   "stellar_alloy": 6
+  },
+  "out": {
+   "magnetic_trap": 1
+  },
+  "time": 48.0,
+  "stations": [
+   "exotic_forge"
+  ]
+ },
+ "antimatter_cell": {
+  "name": "Ячейка антиматерии",
+  "in": {
+   "antimatter": 2,
+   "magnetic_trap": 2
+  },
+  "out": {
+   "antimatter_cell": 1
+  },
+  "time": 60.0,
+  "stations": [
+   "exotic_forge"
+  ]
+ },
+ "quantum_core": {
+  "name": "Квантовое ядро",
+  "in": {
+   "void_crystal": 12,
+   "circuit": 60,
+   "crystal": 12,
+   "superconductor": 12,
+   "bio_gel": 12
+  },
+  "out": {
+   "quantum_core": 1
+  },
+  "time": 48.0,
+  "stations": [
+   "exotic_forge"
+  ]
+ },
+ "chrono_gear": {
+  "name": "Хроношестерня",
+  "in": {
+   "chronium": 6,
+   "gear": 60,
+   "stellar_alloy": 6
+  },
+  "out": {
+   "chrono_gear": 2
+  },
+  "time": 48.0,
+  "stations": [
+   "exotic_forge"
+  ]
+ },
+ "dark_lens": {
+  "name": "Линза тёмной материи",
+  "in": {
+   "dark_matter": 2,
+   "glass": 24,
+   "quantum_core": 2
+  },
+  "out": {
+   "dark_lens": 1
+  },
+  "time": 60.0,
+  "stations": [
+   "exotic_forge"
+  ]
+ },
+ "steel_arc": {
+  "name": "Сталь (дуговая плавка)",
+  "in": {
+   "iron_ingot": 7,
+   "coal_hq": 4
+  },
+  "out": {
+   "steel": 3
+  },
+  "time": 3.0,
+  "stations": [
+   "smelter",
+   "smelter_mk2"
+  ],
+  "pattern": "p_steel"
+ },
+ "circuit_dense": {
+  "name": "Плотная микросхема",
+  "in": {
+   "wire": 2,
+   "plastic": 1,
+   "quartz": 1
+  },
+  "out": {
+   "circuit": 2
+  },
+  "time": 3.0,
+  "stations": [
+   "assembler",
+   "assembler_mk2",
+   "quantum_assembler"
+  ],
+  "pattern": "p_circuit"
+ },
+ "helium_from_waste": {
+  "name": "Гелий-3 из отходов",
+  "in": {
+   "nuclear_waste": 4,
+   "superconductor": 1
+  },
+  "out": {
+   "helium3": 1
+  },
+  "time": 20.0,
+  "stations": [
+   "centrifuge"
+  ],
+  "pattern": "p_helium"
+ },
+ "void_synth": {
+  "name": "Синтез кристалла пустоты",
+  "in": {
+   "crystal": 4,
+   "dark_matter": 1,
+   "monster_core": 1
+  },
+  "out": {
+   "void_crystal": 3
+  },
+  "time": 25.0,
+  "stations": [
+   "exotic_forge"
+  ],
+  "pattern": "p_void"
+ },
+ "alu_catalyst": {
+  "name": "Алюминий с катализатором",
+  "in": {
+   "bio_gel": 6,
+   "alumina": 24
+  },
+  "out": {
+   "aluminum_scrap": 10
+  },
+  "time": 12.0,
+  "stations": [
+   "chem_plant"
+  ],
+  "pattern": "p_alu"
+ },
+ "antimatter_cold": {
+  "name": "Холодный синтез антиматерии",
+  "in": {
+   "fusion_cell": 2,
+   "dark_matter": 1
+  },
+  "out": {
+   "antimatter": 1
+  },
+  "time": 30.0,
+  "stations": [
+   "exotic_forge"
+  ],
+  "pattern": "p_anti"
+ },
+ "snowball": {
+  "name": "Снежок",
+  "in": {
+   "stone": 1
+  },
+  "out": {
+   "snowball": 4
+  },
+  "time": 0.7,
+  "stations": [
+   "hand",
+   "workbench"
+  ]
+ },
+ "tomato": {
+  "name": "Тухлый помидор",
+  "in": {
+   "berry": 4
+  },
+  "out": {
+   "tomato": 2
+  },
+  "time": 2.0,
+  "stations": [
+   "hand",
+   "workbench"
+  ]
+ },
+ "paint_can": {
+  "name": "Розовая краска",
+  "in": {
+   "iron_ingot": 1,
+   "berry": 3
+  },
+  "out": {
+   "paint_can": 2
+  },
+  "time": 2.0,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "cushion": {
+  "name": "Подушка-пердушка",
+  "in": {
+   "fiber": 4,
+   "berry": 1
+  },
+  "out": {
+   "cushion": 1
+  },
+  "time": 2.0,
+  "stations": [
+   "hand",
+   "workbench"
+  ]
+ },
+ "firework": {
+  "name": "Салют",
+  "in": {
+   "plank": 5,
+   "charcoal": 5
+  },
+  "out": {
+   "firework": 3
+  },
+  "time": 2.0,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "confetti": {
+  "name": "Хлопушка",
+  "in": {
+   "fiber": 5,
+   "plank": 3
+  },
+  "out": {
+   "confetti": 3
+  },
+  "time": 2.0,
+  "stations": [
+   "hand",
+   "workbench"
+  ]
+ },
+ "surprise": {
+  "name": "Сюрприз",
+  "in": {
+   "plank": 2,
+   "fiber": 2
+  },
+  "out": {
+   "surprise": 1
+  },
+  "time": 2.0,
+  "stations": [
+   "hand",
+   "workbench"
+  ]
+ },
+ "cloth": {
+  "name": "Ткань",
+  "in": {
+   "fiber": 3
+  },
+  "out": {
+   "cloth": 1
+  },
+  "time": 2.0,
+  "stations": [
+   "hand",
+   "workbench"
+  ]
+ },
+ "brick": {
+  "name": "Кирпич",
+  "in": {
+   "clay": 2
+  },
+  "out": {
+   "brick": 1
+  },
+  "time": 3.0,
+  "stations": [
+   "furnace",
+   "smelter"
+  ]
+ },
+ "stone_block": {
+  "name": "Каменный блок",
+  "in": {
+   "stone": 3
+  },
+  "out": {
+   "stone_block": 1
+  },
+  "time": 2.0,
+  "stations": [
+   "hand",
+   "workbench",
+   "stone_cutter"
+  ]
+ },
+ "charcoal": {
+  "name": "Древесный уголь",
+  "in": {
+   "log": 2
+  },
+  "out": {
+   "charcoal": 1
+  },
+  "time": 4.0,
+  "stations": [
+   "furnace",
+   "coke_oven"
+  ]
+ },
+ "rough_glass": {
+  "name": "Грубое стекло",
+  "in": {
+   "sand": 3
+  },
+  "out": {
+   "rough_glass": 1
+  },
+  "time": 3.0,
+  "stations": [
+   "furnace",
+   "smelter"
+  ]
+ },
+ "tin_ingot": {
+  "name": "Оловянный слиток",
+  "in": {
+   "tin_ore": 1
+  },
+  "out": {
+   "tin_ingot": 1
+  },
+  "time": 2.0,
+  "stations": [
+   "furnace",
+   "smelter"
+  ]
+ },
+ "bronze_ingot": {
+  "name": "Бронзовый слиток",
+  "in": {
+   "copper_ingot": 18,
+   "tin_ingot": 6
+  },
+  "out": {
+   "bronze_ingot": 4
+  },
+  "time": 4.0,
+  "stations": [
+   "foundry"
+  ]
+ },
+ "cable": {
+  "name": "Кабель",
+  "in": {
+   "wire": 2
+  },
+  "out": {
+   "cable": 1
+  },
+  "time": 2.0,
+  "stations": [
+   "constructor",
+   "workshop"
+  ]
+ },
+ "iron_rod": {
+  "name": "Железный прут",
+  "in": {
+   "iron_ingot": 1
+  },
+  "out": {
+   "iron_rod": 1
+  },
+  "time": 4.0,
+  "stations": [
+   "constructor",
+   "workshop"
+  ]
+ },
+ "screw": {
+  "name": "Винты",
+  "in": {
+   "iron_rod": 1
+  },
+  "out": {
+   "screw": 4
+  },
+  "time": 6.0,
+  "stations": [
+   "constructor",
+   "workshop"
+  ]
+ },
+ "bronze_gear": {
+  "name": "Бронзовая шестерня",
+  "in": {
+   "bronze_ingot": 2
+  },
+  "out": {
+   "bronze_gear": 1
+  },
+  "time": 4.0,
+  "stations": [
+   "constructor",
+   "workshop"
+  ]
+ },
+ "tinplate": {
+  "name": "Жесть",
+  "in": {
+   "iron_plate": 6,
+   "tin_ingot": 6
+  },
+  "out": {
+   "tinplate": 2
+  },
+  "time": 4.0,
+  "stations": [
+   "assembler",
+   "workshop"
+  ]
+ },
+ "quicklime": {
+  "name": "Негашёная известь",
+  "in": {
+   "limestone": 3
+  },
+  "out": {
+   "quicklime": 1
+  },
+  "time": 4.0,
+  "stations": [
+   "furnace",
+   "smelter"
+  ]
+ },
+ "reinforced_plate": {
+  "name": "Укреплённая пластина",
+  "in": {
+   "iron_plate": 6,
+   "screw": 12
+  },
+  "out": {
+   "reinforced_plate": 1
+  },
+  "time": 12.0,
+  "stations": [
+   "assembler",
+   "workshop"
+  ]
+ },
+ "simple_frame": {
+  "name": "Простая рама",
+  "in": {
+   "iron_rod": 9,
+   "iron_plate": 4
+  },
+  "out": {
+   "simple_frame": 1
+  },
+  "time": 5.0,
+  "stations": [
+   "assembler",
+   "workshop"
+  ]
+ },
+ "coke": {
+  "name": "Кокс",
+  "in": {
+   "coal": 2
+  },
+  "out": {
+   "coke": 1
+  },
+  "time": 4.0,
+  "stations": [
+   "coke_oven"
+  ]
+ },
+ "steel_beam": {
+  "name": "Стальная балка",
+  "in": {
+   "steel": 4
+  },
+  "out": {
+   "steel_beam": 1
+  },
+  "time": 4.0,
+  "stations": [
+   "constructor"
+  ]
+ },
+ "steel_pipe": {
+  "name": "Стальная труба",
+  "in": {
+   "steel": 3
+  },
+  "out": {
+   "steel_pipe": 2
+  },
+  "time": 6.0,
+  "stations": [
+   "constructor"
+  ]
+ },
+ "steel_sheet": {
+  "name": "Стальной лист",
+  "in": {
+   "steel": 7
+  },
+  "out": {
+   "steel_sheet": 1
+  },
+  "time": 8.0,
+  "stations": [
+   "constructor"
+  ]
+ },
+ "steel_rod": {
+  "name": "Стальной прут",
+  "in": {
+   "steel": 6
+  },
+  "out": {
+   "steel_rod": 1
+  },
+  "time": 8.0,
+  "stations": [
+   "constructor"
+  ]
+ },
+ "bearing": {
+  "name": "Подшипник",
+  "in": {
+   "steel": 6,
+   "bronze_ingot": 6
+  },
+  "out": {
+   "bearing": 2
+  },
+  "time": 8.0,
+  "stations": [
+   "assembler"
+  ]
+ },
+ "spring": {
+  "name": "Пружина",
+  "in": {
+   "steel_rod": 2
+  },
+  "out": {
+   "spring": 2
+  },
+  "time": 8.0,
+  "stations": [
+   "constructor"
+  ]
+ },
+ "rotor": {
+  "name": "Ротор",
+  "in": {
+   "iron_rod": 5,
+   "screw": 25
+  },
+  "out": {
+   "rotor": 1
+  },
+  "time": 15.0,
+  "stations": [
+   "assembler"
+  ]
+ },
+ "stator": {
+  "name": "Статор",
+  "in": {
+   "steel_pipe": 3,
+   "wire": 8
+  },
+  "out": {
+   "stator": 1
+  },
+  "time": 12.0,
+  "stations": [
+   "assembler"
+  ]
+ },
+ "modular_frame": {
+  "name": "Модульная рама",
+  "in": {
+   "reinforced_plate": 3,
+   "iron_rod": 12
+  },
+  "out": {
+   "modular_frame": 2
+  },
+  "time": 60.0,
+  "stations": [
+   "assembler"
+  ]
+ },
+ "heavy_frame": {
+  "name": "Тяжёлая рама",
+  "in": {
+   "modular_frame": 5,
+   "steel_pipe": 15,
+   "steel_beam": 5,
+   "screw": 100
+  },
+  "out": {
+   "heavy_frame": 1
+  },
+  "time": 30.0,
+  "stations": [
+   "manufacturer"
+  ]
+ },
+ "valve": {
+  "name": "Клапан",
+  "in": {
+   "bronze_ingot": 2,
+   "steel_pipe": 1
+  },
+  "out": {
+   "valve": 1
+  },
+  "time": 8.0,
+  "stations": [
+   "assembler"
+  ]
+ },
+ "piston": {
+  "name": "Поршень",
+  "in": {
+   "steel": 2,
+   "spring": 2
+  },
+  "out": {
+   "piston": 1
+  },
+  "time": 8.0,
+  "stations": [
+   "assembler"
+  ]
+ },
+ "chain": {
+  "name": "Цепь",
+  "in": {
+   "steel_rod": 2
+  },
+  "out": {
+   "chain": 1
+  },
+  "time": 8.0,
+  "stations": [
+   "constructor"
+  ]
+ },
+ "lamp_bulb": {
+  "name": "Лампа",
+  "in": {
+   "glass": 6,
+   "wire": 12
+  },
+  "out": {
+   "lamp_bulb": 1
+  },
+  "time": 8.0,
+  "stations": [
+   "assembler",
+   "workshop"
+  ]
+ },
+ "crushed_iron": {
+  "name": "Дроблёная железная руда",
+  "in": {
+   "iron_ore": 1
+  },
+  "out": {
+   "crushed_iron": 2
+  },
+  "time": 2.0,
+  "stations": [
+   "crusher"
+  ]
+ },
+ "crushed_copper": {
+  "name": "Дроблёная медная руда",
+  "in": {
+   "copper_ore": 1
+  },
+  "out": {
+   "crushed_copper": 2
+  },
+  "time": 2.0,
+  "stations": [
+   "crusher"
+  ]
+ },
+ "crushed_tin": {
+  "name": "Дроблёная оловянная руда",
+  "in": {
+   "tin_ore": 1
+  },
+  "out": {
+   "crushed_tin": 2
+  },
+  "time": 2.0,
+  "stations": [
+   "crusher"
+  ]
+ },
+ "lubricant": {
+  "name": "Смазка",
+  "in": {
+   "oil": 3
+  },
+  "out": {
+   "lubricant": 2
+  },
+  "time": 6.3,
+  "stations": [
+   "refinery"
+  ]
+ },
+ "nickel_ingot": {
+  "name": "Никелевый слиток",
+  "in": {
+   "nickel_ore": 1
+  },
+  "out": {
+   "nickel_ingot": 1
+  },
+  "time": 6.3,
+  "stations": [
+   "smelter"
+  ]
+ },
+ "lead_ingot": {
+  "name": "Свинцовый слиток",
+  "in": {
+   "lead_ore": 1
+  },
+  "out": {
+   "lead_ingot": 1
+  },
+  "time": 6.3,
+  "stations": [
+   "smelter"
+  ]
+ },
+ "stainless_steel": {
+  "name": "Нержавеющая сталь",
+  "in": {
+   "steel": 12,
+   "nickel_ingot": 6
+  },
+  "out": {
+   "stainless_steel": 2
+  },
+  "time": 18.0,
+  "stations": [
+   "foundry"
+  ]
+ },
+ "silicon": {
+  "name": "Кремний",
+  "in": {
+   "quartz": 3,
+   "coal": 2
+  },
+  "out": {
+   "silicon": 2
+  },
+  "time": 8.0,
+  "stations": [
+   "arc_furnace"
+  ]
+ },
+ "gold_wire": {
+  "name": "Золотая проволока",
+  "in": {
+   "gold_ore": 1
+  },
+  "out": {
+   "gold_wire": 2
+  },
+  "time": 6.3,
+  "stations": [
+   "smelter",
+   "constructor"
+  ]
+ },
+ "pcb": {
+  "name": "Печатная плата",
+  "in": {
+   "copper_ingot": 4,
+   "plastic": 4,
+   "silicon": 1
+  },
+  "out": {
+   "pcb": 1
+  },
+  "time": 8.0,
+  "stations": [
+   "assembler"
+  ]
+ },
+ "pump_unit": {
+  "name": "Насосный узел",
+  "in": {
+   "motor": 1,
+   "valve": 2,
+   "stainless_steel": 2
+  },
+  "out": {
+   "pump_unit": 1
+  },
+  "time": 18.0,
+  "stations": [
+   "manufacturer"
+  ]
+ },
+ "hydraulics": {
+  "name": "Гидравлика",
+  "in": {
+   "piston": 2,
+   "lubricant": 2,
+   "steel_pipe": 1
+  },
+  "out": {
+   "hydraulics": 1
+  },
+  "time": 18.0,
+  "stations": [
+   "assembler"
+  ]
+ },
+ "computer": {
+  "name": "Компьютер",
+  "in": {
+   "pcb": 10,
+   "cable": 9,
+   "plastic": 18
+  },
+  "out": {
+   "computer": 1
+  },
+  "time": 24.0,
+  "stations": [
+   "manufacturer"
+  ]
+ },
+ "canned_food": {
+  "name": "Консервы",
+  "in": {
+   "tinplate": 6,
+   "berry": 18,
+   "salt": 6
+  },
+  "out": {
+   "canned_food": 2
+  },
+  "time": 9.0,
+  "stations": [
+   "kitchen",
+   "assembler"
+  ]
+ },
+ "explosive": {
+  "name": "Взрывчатка",
+  "in": {
+   "gunpowder": 12,
+   "sulfuric_acid": 6
+  },
+  "out": {
+   "explosive": 1
+  },
+  "time": 18.0,
+  "stations": [
+   "chem_plant"
+  ]
+ },
+ "tungsten_ingot": {
+  "name": "Вольфрамовый слиток",
+  "in": {
+   "tungsten_ore": 12,
+   "coke": 6
+  },
+  "out": {
+   "tungsten_ingot": 1
+  },
+  "time": 26.0,
+  "stations": [
+   "blast_furnace"
+  ]
+ },
+ "tungsten_carbide": {
+  "name": "Карбид вольфрама",
+  "in": {
+   "tungsten_ingot": 6,
+   "coke": 12
+  },
+  "out": {
+   "tungsten_carbide": 1
+  },
+  "time": 26.0,
+  "stations": [
+   "foundry"
+  ]
+ },
+ "drill_head": {
+  "name": "Буровая головка",
+  "in": {
+   "tungsten_carbide": 4,
+   "steel": 8
+  },
+  "out": {
+   "drill_head": 1
+  },
+  "time": 26.0,
+  "stations": [
+   "manufacturer"
+  ]
+ },
+ "titanium_ingot": {
+  "name": "Титановый слиток",
+  "in": {
+   "titanium_ore": 2,
+   "salt": 1
+  },
+  "out": {
+   "titanium_ingot": 1
+  },
+  "time": 9.1,
+  "stations": [
+   "chem_plant",
+   "foundry"
+  ]
+ },
+ "titanium_frame": {
+  "name": "Титановая рама",
+  "in": {
+   "titanium_ingot": 4,
+   "heavy_frame": 1
+  },
+  "out": {
+   "titanium_frame": 1
+  },
+  "time": 26.0,
+  "stations": [
+   "manufacturer"
+  ]
+ },
+ "obsidian_plate": {
+  "name": "Обсидиановая плита",
+  "in": {
+   "obsidian": 2
+  },
+  "out": {
+   "obsidian_plate": 1
+  },
+  "time": 9.1,
+  "stations": [
+   "stone_cutter"
+  ]
+ },
+ "heatproof_block": {
+  "name": "Жаропрочный блок",
+  "in": {
+   "obsidian_plate": 12,
+   "tungsten_ingot": 6
+  },
+  "out": {
+   "heatproof_block": 1
+  },
+  "time": 26.0,
+  "stations": [
+   "assembler"
+  ]
+ },
+ "turbine": {
+  "name": "Турбина",
+  "in": {
+   "titanium_ingot": 4,
+   "bearing": 4,
+   "rotor": 2
+  },
+  "out": {
+   "turbine": 1
+  },
+  "time": 32.0,
+  "stations": [
+   "manufacturer"
+  ]
+ },
+ "heat_exchanger": {
+  "name": "Теплообменник",
+  "in": {
+   "stainless_steel": 3,
+   "copper_ingot": 5,
+   "steel_pipe": 4
+  },
+  "out": {
+   "heat_exchanger": 1
+  },
+  "time": 16.0,
+  "stations": [
+   "assembler"
+  ]
+ },
+ "coolant": {
+  "name": "Хладагент",
+  "in": {
+   "water": 4,
+   "salt": 1,
+   "sulfuric_acid": 1
+  },
+  "out": {
+   "coolant": 2
+  },
+  "time": 9.1,
+  "stations": [
+   "chem_plant"
+  ]
+ },
+ "cooling_module": {
+  "name": "Охлаждающий модуль",
+  "in": {
+   "aluminum_sheet": 12,
+   "coolant": 24
+  },
+  "out": {
+   "cooling_module": 1
+  },
+  "time": 26.0,
+  "stations": [
+   "assembler"
+  ]
+ },
+ "lead_shield": {
+  "name": "Свинцовый экран",
+  "in": {
+   "lead_ingot": 24,
+   "concrete": 24
+  },
+  "out": {
+   "lead_shield": 1
+  },
+  "time": 26.0,
+  "stations": [
+   "assembler"
+  ]
+ },
+ "ai_module": {
+  "name": "ИИ-модуль",
+  "in": {
+   "computer": 1,
+   "circuit": 4
+  },
+  "out": {
+   "ai_module": 1
+  },
+  "time": 24.0,
+  "stations": [
+   "manufacturer"
+  ]
+ },
+ "cut_resonite": {
+  "name": "Огранённый резонит",
+  "in": {
+   "resonite": 2
+  },
+  "out": {
+   "cut_resonite": 1
+  },
+  "time": 16.8,
+  "stations": [
+   "crystal_cutter"
+  ]
+ },
+ "resonant_capacitor": {
+  "name": "Резонансный конденсатор",
+  "in": {
+   "cut_resonite": 6,
+   "battery": 6
+  },
+  "out": {
+   "resonant_capacitor": 1
+  },
+  "time": 48.0,
+  "stations": [
+   "assembler"
+  ]
+ },
+ "rare_earth_magnet": {
+  "name": "Редкоземельный магнит",
+  "in": {
+   "rare_earth_ore": 2
+  },
+  "out": {
+   "rare_earth_magnet": 1
+  },
+  "time": 16.8,
+  "stations": [
+   "foundry"
+  ]
+ },
+ "quantum_processor": {
+  "name": "Квантовый процессор",
+  "in": {
+   "ai_module": 6,
+   "cut_resonite": 12,
+   "superconductor": 12
+  },
+  "out": {
+   "quantum_processor": 1
+  },
+  "time": 48.0,
+  "stations": [
+   "manufacturer"
+  ]
+ },
+ "anomaly_stabilizer": {
+  "name": "Стабилизатор аномалии",
+  "in": {
+   "anomaly_matter": 6,
+   "resonite": 24
+  },
+  "out": {
+   "anomaly_stabilizer": 1
+  },
+  "time": 48.0,
+  "stations": [
+   "synthesizer"
+  ]
+ },
+ "cloud_core": {
+  "name": "Ядро разгона облаков",
+  "in": {
+   "anomaly_stabilizer": 1,
+   "turbine": 1,
+   "quantum_processor": 1
+  },
+  "out": {
+   "cloud_core": 1
+  },
+  "time": 48.0,
+  "stations": [
+   "synthesizer"
+  ]
+ },
+ "terraform_module": {
+  "name": "Модуль терраформинга",
+  "in": {
+   "cloud_core": 1,
+   "titanium_frame": 2
+  },
+  "out": {
+   "terraform_module": 1
+  },
+  "time": 60.0,
+  "stations": [
+   "synthesizer"
+  ]
+ },
+ "d17_glass_sand": {
+  "name": "Стекло из песка",
+  "in": {
+   "sand": 3,
+   "limestone": 1
+  },
+  "out": {
+   "glass": 2
+  },
+  "time": 6.0,
+  "stations": [
+   "smelter"
+  ]
+ },
+ "d17_concrete_mix": {
+  "name": "Бетон (смеситель)",
+  "in": {
+   "limestone": 3
+  },
+  "out": {
+   "concrete": 1
+  },
+  "time": 4.0,
+  "stations": [
+   "mixer"
+  ]
+ },
+ "d17_steel_coke": {
+  "name": "Сталь из руды и кокса",
+  "in": {
+   "iron_ore": 3,
+   "coal": 3
+  },
+  "out": {
+   "steel": 3
+  },
+  "time": 4.0,
+  "stations": [
+   "foundry"
+  ]
+ },
+ "d17_motor": {
+  "name": "Электромотор (ротор + статор)",
+  "in": {
+   "rotor": 2,
+   "stator": 2
+  },
+  "out": {
+   "motor": 1
+  },
+  "time": 12.0,
+  "stations": [
+   "assembler"
+  ]
+ },
+ "d17_circuit": {
+  "name": "Микросхема (чистый цех)",
+  "in": {
+   "silicon": 6,
+   "gold_wire": 12
+  },
+  "out": {
+   "circuit": 2
+  },
+  "time": 18.0,
+  "stations": [
+   "clean_room"
+  ]
+ },
+ "d17_battery": {
+  "name": "Аккумулятор (свинцовый)",
+  "in": {
+   "lead_ingot": 2,
+   "sulfuric_acid": 3,
+   "plastic": 1
+  },
+  "out": {
+   "battery": 1
+  },
+  "time": 6.0,
+  "stations": [
+   "assembler"
+  ]
+ },
+ "d17_alumina": {
+  "name": "Глинозём из боксита",
+  "in": {
+   "bauxite": 12,
+   "water": 18
+  },
+  "out": {
+   "alumina": 12
+  },
+  "time": 6.0,
+  "stations": [
+   "chem_plant"
+  ]
+ },
+ "d17_aluminum": {
+  "name": "Алюминий из глинозёма",
+  "in": {
+   "alumina": 4,
+   "coal": 1
+  },
+  "out": {
+   "aluminum_ingot": 2
+  },
+  "time": 4.0,
+  "stations": [
+   "foundry"
+  ]
+ },
+ "d17_superconductor": {
+  "name": "Сверхпроводник (редкоземы)",
+  "in": {
+   "rare_earth_magnet": 6,
+   "coolant": 12,
+   "copper_ingot": 24
+  },
+  "out": {
+   "superconductor": 4
+  },
+  "time": 48.0,
+  "stations": [
+   "manufacturer"
+  ]
+ },
+ "d17_fuel_rod": {
+  "name": "ТВЭЛ из нержавейки",
+  "in": {
+   "enriched_uranium": 50,
+   "stainless_steel": 6
+  },
+  "out": {
+   "fuel_rod": 1
+  },
+  "time": 150.0,
+  "stations": [
+   "manufacturer"
+  ]
+ },
+ "d17_iron_crushed": {
+  "name": "Железо из дроблёной руды",
+  "in": {
+   "crushed_iron": 4
+  },
+  "out": {
+   "iron_ingot": 3
+  },
+  "time": 4.0,
+  "stations": [
+   "furnace",
+   "smelter"
+  ]
+ },
+ "d17_copper_crushed": {
+  "name": "Медь из дроблёной руды",
+  "in": {
+   "crushed_copper": 4
+  },
+  "out": {
+   "copper_ingot": 3
+  },
+  "time": 4.0,
+  "stations": [
+   "furnace",
+   "smelter"
+  ]
+ },
+ "d17_tin_crushed": {
+  "name": "Олово из дроблёной руды",
+  "in": {
+   "crushed_tin": 4
+  },
+  "out": {
+   "tin_ingot": 3
+  },
+  "time": 4.0,
+  "stations": [
+   "furnace",
+   "smelter"
+  ]
+ },
+ "d17_planks_saw": {
+  "name": "Доски (лесопилка)",
+  "in": {
+   "log": 1
+  },
+  "out": {
+   "plank": 5
+  },
+  "time": 1.5,
+  "stations": [
+   "sawmill"
+  ]
+ },
+ "d17_quicklime_concrete": {
+  "name": "Бетон на извести",
+  "in": {
+   "quicklime": 1,
+   "stone": 2
+  },
+  "out": {
+   "concrete": 3
+  },
+  "time": 2.5,
+  "stations": [
+   "furnace",
+   "smelter",
+   "mixer"
+  ]
+ },
+ "d17_gas_canister": {
+  "name": "Канистра газа",
+  "in": {
+   "natural_gas": 20,
+   "canister": 5
+  },
+  "out": {
+   "canister_gas": 1
+  },
+  "time": 12.0,
+  "stations": [
+   "packager"
+  ]
+ },
+ "copper_pickaxe": {
+  "name": "Медная кирка",
+  "in": {
+   "plank": 2,
+   "copper_ingot": 4,
+   "rope": 1
+  },
+  "out": {
+   "copper_pickaxe": 1
+  },
+  "time": 3.0,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "bronze_pickaxe": {
+  "name": "Бронзовая кирка",
+  "in": {
+   "plank": 2,
+   "bronze_ingot": 4,
+   "rope": 1
+  },
+  "out": {
+   "bronze_pickaxe": 1
+  },
+  "time": 3.0,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "steel_pickaxe": {
+  "name": "Стальная кирка",
+  "in": {
+   "plank": 2,
+   "steel": 4,
+   "cloth": 1
+  },
+  "out": {
+   "steel_pickaxe": 1
+  },
+  "time": 4.0,
+  "stations": [
+   "workbench",
+   "workshop"
+  ]
+ },
+ "titanium_pickaxe": {
+  "name": "Титановая кирка",
+  "in": {
+   "titanium_ingot": 8,
+   "steel_rod": 4,
+   "cloth": 2
+  },
+  "out": {
+   "titanium_pickaxe": 1
+  },
+  "time": 13.0,
+  "stations": [
+   "workshop"
+  ]
+ },
+ "tungsten_pickaxe": {
+  "name": "Вольфрамовая кирка",
+  "in": {
+   "tungsten_carbide": 3,
+   "titanium_ingot": 2,
+   "cloth": 1
+  },
+  "out": {
+   "tungsten_pickaxe": 1
+  },
+  "time": 13.0,
+  "stations": [
+   "workshop"
+  ]
+ },
+ "bronze_sword": {
+  "name": "Бронзовый меч",
+  "in": {
+   "bronze_ingot": 4,
+   "plank": 1,
+   "cloth": 1
+  },
+  "out": {
+   "bronze_sword": 1
+  },
+  "time": 3.0,
+  "stations": [
+   "workbench",
+   "workshop"
+  ]
+ },
+ "steel_cleaver": {
+  "name": "Стальной тесак",
+  "in": {
+   "steel": 5,
+   "plank": 1,
+   "cloth": 1
+  },
+  "out": {
+   "steel_cleaver": 1
+  },
+  "time": 4.0,
+  "stations": [
+   "workshop"
+  ]
+ },
+ "obsidian_blade": {
+  "name": "Обсидиановый клинок",
+  "in": {
+   "obsidian_plate": 18,
+   "titanium_ingot": 6,
+   "cloth": 6
+  },
+  "out": {
+   "obsidian_blade": 1
+  },
+  "time": 13.0,
+  "stations": [
+   "workshop"
+  ]
+ },
+ "resonant_blade": {
+  "name": "Резонансный клинок",
+  "in": {
+   "cut_resonite": 12,
+   "titanium_ingot": 12,
+   "superconductor": 6
+  },
+  "out": {
+   "resonant_blade": 1
+  },
+  "time": 24.0,
+  "stations": [
+   "workshop"
+  ]
+ },
+ "bandage": {
+  "name": "Бинт",
+  "in": {
+   "cloth": 2
+  },
+  "out": {
+   "bandage": 1
+  },
+  "time": 3.0,
+  "stations": [
+   "hand",
+   "workbench"
+  ]
+ },
+ "gas_mask": {
+  "name": "Противогаз",
+  "in": {
+   "rubber": 5,
+   "rough_glass": 2,
+   "cloth": 5
+  },
+  "out": {
+   "gas_mask": 1
+  },
+  "time": 9.0,
+  "stations": [
+   "workshop"
+  ]
+ },
+ "ration": {
+  "name": "Сухпаёк",
+  "in": {
+   "canned_food": 1,
+   "berry": 2
+  },
+  "out": {
+   "ration": 1
+  },
+  "time": 9.0,
+  "stations": [
+   "kitchen",
+   "workbench"
+  ]
+ },
+ "shop_berry": {
+  "name": "Купить: Ягоды ×10",
+  "in": {
+   "sink_coupon": 1
+  },
+  "out": {
+   "berry": 10
+  },
+  "time": 0.5,
+  "stations": [
+   "sink_shop"
+  ]
+ },
+ "shop_medkit": {
+  "name": "Купить: Аптечка ×2",
+  "in": {
+   "sink_coupon": 2
+  },
+  "out": {
+   "medkit": 2
+  },
+  "time": 0.5,
+  "stations": [
+   "sink_shop"
+  ]
+ },
+ "shop_canned_food": {
+  "name": "Купить: Консервы ×4",
+  "in": {
+   "sink_coupon": 2
+  },
+  "out": {
+   "canned_food": 4
+  },
+  "time": 0.5,
+  "stations": [
+   "sink_shop"
+  ]
+ },
+ "shop_ammo": {
+  "name": "Купить: Патроны ×50",
+  "in": {
+   "sink_coupon": 2
+  },
+  "out": {
+   "ammo": 50
+  },
+  "time": 0.5,
+  "stations": [
+   "sink_shop"
+  ]
+ },
+ "shop_fuel_rod": {
+  "name": "Купить: Урановый ТВЭЛ ×1",
+  "in": {
+   "sink_coupon": 15
+  },
+  "out": {
+   "fuel_rod": 1
+  },
+  "time": 0.5,
+  "stations": [
+   "sink_shop"
+  ]
+ },
+ "shop_crystal": {
+  "name": "Купить: Энергокристалл ×2",
+  "in": {
+   "sink_coupon": 6
+  },
+  "out": {
+   "crystal": 2
+  },
+  "time": 0.5,
+  "stations": [
+   "sink_shop"
+  ]
+ },
+ "shop_monster_core": {
+  "name": "Купить: Ядро монстра ×1",
+  "in": {
+   "sink_coupon": 10
+  },
+  "out": {
+   "monster_core": 1
+  },
+  "time": 0.5,
+  "stations": [
+   "sink_shop"
+  ]
+ },
+ "shop_resonite": {
+  "name": "Купить: Резонит ×2",
+  "in": {
+   "sink_coupon": 8
+  },
+  "out": {
+   "resonite": 2
+  },
+  "time": 0.5,
+  "stations": [
+   "sink_shop"
+  ]
+ },
+ "shop_rare_earth_ore": {
+  "name": "Купить: Редкоземельная руда ×2",
+  "in": {
+   "sink_coupon": 8
+  },
+  "out": {
+   "rare_earth_ore": 2
+  },
+  "time": 0.5,
+  "stations": [
+   "sink_shop"
+  ]
+ },
+ "shop_anomaly_matter": {
+  "name": "Купить: Аномальная материя ×1",
+  "in": {
+   "sink_coupon": 60
+  },
+  "out": {
+   "anomaly_matter": 1
+  },
+  "time": 0.5,
+  "stations": [
+   "sink_shop"
+  ]
+ },
+ "shop_bp_plasma_turret": {
+  "name": "Купить: Чертёж: Плазменная турель ×1",
+  "in": {
+   "sink_coupon": 40
+  },
+  "out": {
+   "bp_plasma_turret": 1
+  },
+  "time": 0.5,
+  "stations": [
+   "sink_shop"
+  ]
+ },
+ "shop_bp_teleporter": {
+  "name": "Купить: Чертёж: Телепорт ×1",
+  "in": {
+   "sink_coupon": 60
+  },
+  "out": {
+   "bp_teleporter": 1
+  },
+  "time": 0.5,
+  "stations": [
+   "sink_shop"
+  ]
+ },
+ "shop_lucky_box": {
+  "name": "Купить: Ящик удачи ×1",
+  "in": {
+   "sink_coupon": 3
+  },
+  "out": {
+   "lucky_box": 1
+  },
+  "time": 0.5,
+  "stations": [
+   "sink_shop"
+  ]
+ },
+ "m17_tungsten_magma": {
+  "name": "Вольфрам на магме",
+  "in": {
+   "tungsten_ore": 2,
+   "magma": 6
+  },
+  "out": {
+   "tungsten_ingot": 2
+  },
+  "time": 9.1,
+  "stations": [
+   "blast_furnace"
+  ]
+ },
+ "m17_obsidian_magma": {
+  "name": "Обсидиан из магмы",
+  "in": {
+   "magma": 10,
+   "water": 10
+  },
+  "out": {
+   "obsidian": 2
+  },
+  "time": 8.0,
+  "stations": [
+   "blast_furnace"
+  ]
+ },
+ "heat_suit": {
+  "name": "Жаростойкий костюм",
+  "in": {
+   "obsidian_plate": 9,
+   "cloth": 14,
+   "coolant": 5
+  },
+  "out": {
+   "heat_suit": 1
+  },
+  "time": 13.0,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "boiled_water": {
+  "name": "Кипячёная вода",
+  "in": {
+   "water_flask": 1,
+   "branch": 1
+  },
+  "out": {
+   "boiled_water": 1
+  },
+  "time": 3.0,
+  "stations": [
+   "kitchen",
+   "furnace",
+   "workbench"
+  ]
+ },
+ "filtered_water": {
+  "name": "Фильтрованная вода",
+  "in": {
+   "water_flask": 2,
+   "charcoal": 1
+  },
+  "out": {
+   "filtered_water": 2
+  },
+  "time": 4.0,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "stimulant": {
+  "name": "Стимулятор",
+  "in": {
+   "berry": 4,
+   "mushroom": 1
+  },
+  "out": {
+   "stimulant": 1
+  },
+  "time": 4.0,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "painkiller": {
+  "name": "Обезболивающее",
+  "in": {
+   "mushroom": 2,
+   "bandage": 1
+  },
+  "out": {
+   "painkiller": 1
+  },
+  "time": 4.0,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "antirad": {
+  "name": "Антирад",
+  "in": {
+   "lead_ingot": 6,
+   "salt": 12,
+   "glass": 6
+  },
+  "out": {
+   "antirad": 1
+  },
+  "time": 9.0,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "splint": {
+  "name": "Шина",
+  "in": {
+   "plank": 2,
+   "cloth": 2
+  },
+  "out": {
+   "splint": 1
+  },
+  "time": 3.0,
+  "stations": [
+   "hand",
+   "workbench"
+  ]
+ },
+ "repair_patch": {
+  "name": "Заплатка",
+  "in": {
+   "iron_plate": 2,
+   "screw": 4
+  },
+  "out": {
+   "repair_patch": 2
+  },
+  "time": 3.0,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "fuel_briquette": {
+  "name": "Топливный брикет",
+  "in": {
+   "log": 2,
+   "coal": 1
+  },
+  "out": {
+   "fuel_briquette": 2
+  },
+  "time": 4.0,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "grilled_mushrooms": {
+  "name": "Жареные грибы",
+  "in": {
+   "mushroom": 3
+  },
+  "out": {
+   "grilled_mushrooms": 1
+  },
+  "time": 3.0,
+  "stations": [
+   "kitchen",
+   "furnace"
+  ]
+ },
+ "salted_meat": {
+  "name": "Солонина",
+  "in": {
+   "raw_meat": 12,
+   "salt": 6
+  },
+  "out": {
+   "salted_meat": 2
+  },
+  "time": 6.0,
+  "stations": [
+   "workbench"
+  ]
+ },
+ "freighter_1": {
+  "name": "Грузовой дрон L1",
+  "stations": [
+   "drone_workshop"
+  ],
+  "in": {
+   "iron_plate": 3,
+   "wire": 5
+  },
+  "out": {
+   "freighter_1": 1
+  },
+  "time": 6
+ },
+ "freighter_2": {
+  "name": "Грузовой дрон L2",
+  "stations": [
+   "drone_workshop"
+  ],
+  "in": {
+   "motor": 2,
+   "circuit": 3
+  },
+  "out": {
+   "freighter_2": 1
+  },
+  "time": 12
+ },
+ "freighter_3": {
+  "name": "Грузовой дрон L3",
+  "stations": [
+   "drone_workshop"
+  ],
+  "in": {
+   "motor": 4,
+   "circuit": 5,
+   "steel": 4
+  },
+  "out": {
+   "freighter_3": 1
+  },
+  "time": 18
+ },
+ "freighter_4": {
+  "name": "Грузовой дрон L4",
+  "stations": [
+   "drone_workshop"
+  ],
+  "in": {
+   "computer": 2,
+   "hydraulics": 3
+  },
+  "out": {
+   "freighter_4": 1
+  },
+  "time": 24
+ },
+ "freighter_5": {
+  "name": "Грузовой дрон L5",
+  "stations": [
+   "drone_workshop"
+  ],
+  "in": {
+   "ai_module": 2,
+   "titanium_frame": 4,
+   "motor": 6
+  },
+  "out": {
+   "freighter_5": 1
+  },
+  "time": 30
+ }
+}

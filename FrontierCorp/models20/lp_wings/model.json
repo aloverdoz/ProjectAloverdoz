@@ -1,0 +1,108 @@
+{
+ "parts": [
+  {
+   "anim": "wave",
+   "color": "#6283a0",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/lp_wings/0.res",
+   "metallic": 0,
+   "pos": [
+    -0.5,
+    0.3,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.1,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "wave",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_wings/1.res",
+   "metallic": 0,
+   "pos": [
+    -0.5,
+    0.3,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_wings/tex0.png"
+  },
+  {
+   "anim": "wave_001",
+   "color": "#6283a0",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/lp_wings/2.res",
+   "metallic": 0,
+   "pos": [
+    0.5,
+    0.3,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.1,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "wave_001",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_wings/3.res",
+   "metallic": 0,
+   "pos": [
+    0.5,
+    0.3,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_wings/tex0.png"
+  }
+ ]
+}

@@ -1,0 +1,79 @@
+{
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_eyes_pair/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.1,
+    -0.06
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_eyes_pair/tex0.png"
+  },
+  {
+   "color": "#050101",
+   "mat": "paint",
+   "mesh": "res://models20/lp_eyes_pair/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.1,
+    -0.06
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffd23d",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/lp_eyes_pair/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.1,
+    0.01
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

@@ -1,0 +1,182 @@
+{
+ "parts": [
+  {
+   "color": "#052090",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/dep_copper_ore/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.12,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#f36b2a",
+   "mat": "paint",
+   "mesh": "res://models20/dep_copper_ore/1.res",
+   "metallic": 1,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.22,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/dep_copper_ore/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.8,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/dep_copper_ore/tex0.png"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffc180",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_copper_ore/3.res",
+   "metallic": 0,
+   "pos": [
+    -0.2715,
+    0.7693,
+    -0.3335
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffc180",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_copper_ore/4.res",
+   "metallic": 0,
+   "pos": [
+    0.1708,
+    0.6857,
+    -0.4835
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffc180",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_copper_ore/5.res",
+   "metallic": 0,
+   "pos": [
+    0.6669,
+    0.4151,
+    0.1669
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffc180",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_copper_ore/6.res",
+   "metallic": 0,
+   "pos": [
+    -0.5988,
+    0.3326,
+    0.4402
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

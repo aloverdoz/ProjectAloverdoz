@@ -1,0 +1,152 @@
+{
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/dep_clay/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.8,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/dep_clay/tex0.png"
+  },
+  {
+   "color": "#351809",
+   "mat": "paint",
+   "mesh": "res://models20/dep_clay/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.05,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#4b2713",
+   "mat": "paint",
+   "mesh": "res://models20/dep_clay/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.1,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "bob",
+   "color": "#3d1e0d",
+   "mat": "paint",
+   "mesh": "res://models20/dep_clay/3.res",
+   "metallic": 0,
+   "pos": [
+    0.266,
+    0.024,
+    0.2666
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.05,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "bob",
+   "color": "#3d1e0d",
+   "mat": "paint",
+   "mesh": "res://models20/dep_clay/4.res",
+   "metallic": 0,
+   "pos": [
+    0.2451,
+    0.024,
+    0.3485
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.05,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "bob",
+   "color": "#3d1e0d",
+   "mat": "paint",
+   "mesh": "res://models20/dep_clay/5.res",
+   "metallic": 0,
+   "pos": [
+    0.2304,
+    0.024,
+    0.0965
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.05,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

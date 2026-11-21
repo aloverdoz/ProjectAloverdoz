@@ -1,0 +1,152 @@
+{
+ "extra": {
+  "bones": {
+   "arm_l": [
+    -0.1133,
+    0.3204,
+    0.2414
+   ],
+   "arm_r": [
+    -0.1133,
+    0.3204,
+    -0.2414
+   ],
+   "fore_l": [
+    0,
+    -0.1823,
+    0.1354
+   ],
+   "fore_r": [
+    0,
+    -0.1823,
+    -0.1354
+   ],
+   "gun": [
+    0,
+    -0.07,
+    0
+   ],
+   "hand_r": [
+    0,
+    -0.1617,
+    -0.1201
+   ],
+   "head": [
+    0,
+    0.3629,
+    0
+   ],
+   "hips": [
+    0,
+    0.9391,
+    0
+   ],
+   "leg_l": [
+    0.0353,
+    -0.05,
+    0.14
+   ],
+   "leg_r": [
+    0.0353,
+    -0.05,
+    -0.14
+   ],
+   "muzzle": [
+    0.058,
+    -0.125,
+    0
+   ],
+   "shin_l": [
+    -0.0381,
+    -0.3791,
+    0.1551
+   ],
+   "shin_r": [
+    -0.0381,
+    -0.3791,
+    -0.1551
+   ],
+   "torso": [
+    0,
+    0.07,
+    0
+   ]
+  },
+  "category": "Герои",
+  "gun_pitch": 0,
+  "look_order": 12,
+  "name": "Гарри",
+  "prof_tint": 0,
+  "scale": 1.25,
+  "skin": {
+   "bones": [
+    "hips",
+    "leg_l",
+    "leg_r",
+    "shin_l",
+    "shin_r",
+    "torso",
+    "head",
+    "arm_l",
+    "arm_r",
+    "fore_l",
+    "fore_r",
+    "hand_r"
+   ],
+   "mat": {
+    "color": "#ffffff",
+    "mat": "paint",
+    "mesh": "res://models20/hero_harry/skin.res",
+    "metallic": 0,
+    "pos": [
+     0,
+     0,
+     0
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ],
+    "roughness": 0.55,
+    "shape": "mesh",
+    "size": [
+     1,
+     1,
+     1
+    ],
+    "surface": "none",
+    "texture": "res://models20/hero_harry/tex0.png"
+   },
+   "mesh": "res://models20/hero_harry/skin.res"
+  }
+ },
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/hero_lady/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "role": "gun",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/hero_lady/tex0.png"
+  }
+ ]
+}

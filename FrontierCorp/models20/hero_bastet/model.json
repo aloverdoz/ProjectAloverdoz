@@ -1,0 +1,152 @@
+{
+ "extra": {
+  "bones": {
+   "arm_l": [
+    -0.0114,
+    0.3402,
+    0.1376
+   ],
+   "arm_r": [
+    -0.0114,
+    0.3402,
+    -0.1376
+   ],
+   "fore_l": [
+    0,
+    -0.1863,
+    0.0719
+   ],
+   "fore_r": [
+    0,
+    -0.1863,
+    -0.0719
+   ],
+   "gun": [
+    0,
+    -0.07,
+    0
+   ],
+   "hand_r": [
+    0,
+    -0.1651,
+    -0.0637
+   ],
+   "head": [
+    0,
+    0.3832,
+    0
+   ],
+   "hips": [
+    0,
+    0.9496,
+    0
+   ],
+   "leg_l": [
+    0.0192,
+    -0.05,
+    0.1219
+   ],
+   "leg_r": [
+    0.0192,
+    -0.05,
+    -0.1219
+   ],
+   "muzzle": [
+    0.058,
+    -0.125,
+    0
+   ],
+   "shin_l": [
+    0.0052,
+    -0.3836,
+    -0.0131
+   ],
+   "shin_r": [
+    0.0052,
+    -0.3836,
+    0.0131
+   ],
+   "torso": [
+    0,
+    0.07,
+    0
+   ]
+  },
+  "category": "Герои",
+  "gun_pitch": 0,
+  "look_order": 17,
+  "name": "Бастет",
+  "prof_tint": 0,
+  "scale": 1.25,
+  "skin": {
+   "bones": [
+    "hips",
+    "leg_l",
+    "leg_r",
+    "shin_l",
+    "shin_r",
+    "torso",
+    "head",
+    "arm_l",
+    "arm_r",
+    "fore_l",
+    "fore_r",
+    "hand_r"
+   ],
+   "mat": {
+    "color": "#ffffff",
+    "mat": "paint",
+    "mesh": "res://models20/hero_bastet/skin.res",
+    "metallic": 0,
+    "pos": [
+     0,
+     0,
+     0
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ],
+    "roughness": 0.55,
+    "shape": "mesh",
+    "size": [
+     1,
+     1,
+     1
+    ],
+    "surface": "none",
+    "texture": "res://models20/hero_bastet/tex0.png"
+   },
+   "mesh": "res://models20/hero_bastet/skin.res"
+  }
+ },
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/hero_lady/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "role": "gun",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/hero_lady/tex0.png"
+  }
+ ]
+}

@@ -1,0 +1,317 @@
+{
+ "extra": {
+  "rig": {
+   "arms": [],
+   "body": "b_body",
+   "bones": [
+    {
+     "name": "b_body",
+     "parent": "",
+     "pivot": [
+      0,
+      1.015,
+      0
+     ]
+    },
+    {
+     "name": "b_eye",
+     "parent": "b_body",
+     "pivot": [
+      0.21,
+      1.015,
+      0
+     ]
+    },
+    {
+     "name": "b_rot0",
+     "parent": "b_body",
+     "pivot": [
+      0.336,
+      1.141,
+      0.336
+     ]
+    },
+    {
+     "name": "b_rot1",
+     "parent": "b_body",
+     "pivot": [
+      0.336,
+      1.141,
+      -0.336
+     ]
+    },
+    {
+     "name": "b_rot2",
+     "parent": "b_body",
+     "pivot": [
+      -0.336,
+      1.141,
+      0.336
+     ]
+    },
+    {
+     "name": "b_rot3",
+     "parent": "b_body",
+     "pivot": [
+      -0.336,
+      1.141,
+      -0.336
+     ]
+    }
+   ],
+   "breath": [],
+   "chains": [],
+   "gait": {
+    "bank": 16,
+    "bob": 0,
+    "duty": 0.6,
+    "knee": 30,
+    "lean": 18,
+    "lift": 20,
+    "roll": 3,
+    "stride": 2.4,
+    "swing": 25
+   },
+   "head": "b_eye",
+   "hover": {
+    "amp": 0.1,
+    "speed": 2.3
+   },
+   "jaws": [],
+   "legs": [],
+   "rotors": [
+    {
+     "axis": "y",
+     "bone": "b_rot0",
+     "speed": 26
+    },
+    {
+     "axis": "y",
+     "bone": "b_rot1",
+     "speed": -26
+    },
+    {
+     "axis": "y",
+     "bone": "b_rot2",
+     "speed": -26
+    },
+    {
+     "axis": "y",
+     "bone": "b_rot3",
+     "speed": 26
+    }
+   ]
+  }
+ },
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_mini/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.015,
+    0
+   ],
+   "role": "b_body",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_mini/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_mini/1.res",
+   "metallic": 0,
+   "pos": [
+    0.21,
+    1.015,
+    0
+   ],
+   "role": "b_eye",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_mini/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_mini/2.res",
+   "metallic": 0,
+   "pos": [
+    0.336,
+    1.141,
+    0.336
+   ],
+   "role": "b_rot0",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_mini/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_mini/3.res",
+   "metallic": 0,
+   "pos": [
+    0.336,
+    1.141,
+    -0.336
+   ],
+   "role": "b_rot1",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_mini/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_mini/4.res",
+   "metallic": 0,
+   "pos": [
+    -0.336,
+    1.141,
+    0.336
+   ],
+   "role": "b_rot2",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_mini/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_mini/5.res",
+   "metallic": 0,
+   "pos": [
+    -0.336,
+    1.141,
+    -0.336
+   ],
+   "role": "b_rot3",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_mini/tex0.png"
+  },
+  {
+   "anim": "pulse",
+   "color": "#ff3d13",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/mech_mini/6.res",
+   "metallic": 0,
+   "pos": [
+    0.21,
+    1.015,
+    0
+   ],
+   "role": "b_eye",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ff3d13",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/mech_mini/7.res",
+   "metallic": 0,
+   "pos": [
+    -0.319,
+    1.035,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

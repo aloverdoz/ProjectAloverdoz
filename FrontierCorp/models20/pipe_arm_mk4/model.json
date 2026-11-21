@@ -1,0 +1,108 @@
+{
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/pipe_arm_mk4/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.45,
+    0
+   ],
+   "role": "stretch",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    2,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/pipe_arm_mk4/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/pipe_arm_mk4/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.45,
+    0
+   ],
+   "role": "stretch",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    2,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/pipe_arm_mk4/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/pipe_arm_mk4/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.45,
+    0
+   ],
+   "role": "stretch",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    2,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/pipe_arm_mk4/tex0.png"
+  },
+  {
+   "color": "#30ffda",
+   "emission": 4.6,
+   "mat": "glow",
+   "mesh": "res://models20/pipe_arm_mk4/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.45,
+    0
+   ],
+   "role": "stretch",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    2,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

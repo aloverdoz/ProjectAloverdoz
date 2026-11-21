@@ -1,0 +1,547 @@
+{
+ "extra": {
+  "rig": {
+   "arms": [
+    {
+     "amp": 26,
+     "bone": "b_arml",
+     "fore": "b_forel",
+     "phase": 0.5
+    },
+    {
+     "amp": 26,
+     "bone": "b_armr",
+     "fore": "b_forer",
+     "phase": 0
+    }
+   ],
+   "body": "b_hips",
+   "bones": [
+    {
+     "name": "b_hips",
+     "parent": "",
+     "pivot": [
+      0,
+      0.9,
+      0
+     ]
+    },
+    {
+     "name": "b_torso",
+     "parent": "b_hips",
+     "pivot": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "b_head",
+     "parent": "b_torso",
+     "pivot": [
+      0,
+      1.62,
+      0
+     ]
+    },
+    {
+     "name": "b_legl",
+     "parent": "b_hips",
+     "pivot": [
+      0,
+      0.88,
+      -0.14
+     ]
+    },
+    {
+     "name": "b_shinl",
+     "parent": "b_legl",
+     "pivot": [
+      0,
+      0.48,
+      -0.14
+     ]
+    },
+    {
+     "name": "b_arml",
+     "parent": "b_torso",
+     "pivot": [
+      0,
+      1.5,
+      -0.34
+     ]
+    },
+    {
+     "name": "b_forel",
+     "parent": "b_arml",
+     "pivot": [
+      0,
+      1.2,
+      -0.36
+     ]
+    },
+    {
+     "name": "b_legr",
+     "parent": "b_hips",
+     "pivot": [
+      0,
+      0.88,
+      0.14
+     ]
+    },
+    {
+     "name": "b_shinr",
+     "parent": "b_legr",
+     "pivot": [
+      0,
+      0.48,
+      0.14
+     ]
+    },
+    {
+     "name": "b_armr",
+     "parent": "b_torso",
+     "pivot": [
+      0,
+      1.5,
+      0.34
+     ]
+    },
+    {
+     "name": "b_forer",
+     "parent": "b_armr",
+     "pivot": [
+      0,
+      1.2,
+      0.36
+     ]
+    }
+   ],
+   "breath": [
+    "b_torso"
+   ],
+   "chains": [],
+   "gait": {
+    "bob": 0.04,
+    "duty": 0.58,
+    "knee": 45,
+    "lean": 5,
+    "lift": 0,
+    "roll": 2,
+    "stride": 1.3,
+    "swing": 28
+   },
+   "head": "b_head",
+   "jaws": [],
+   "legs": [
+    {
+     "hip": "b_legl",
+     "knee": "b_shinl",
+     "phase": 0,
+     "side": -1,
+     "style": "z"
+    },
+    {
+     "hip": "b_legr",
+     "knee": "b_shinr",
+     "phase": 0.5,
+     "side": 1,
+     "style": "z"
+    }
+   ]
+  }
+ },
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/npc_traveler/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.5,
+    -0.34
+   ],
+   "role": "b_arml",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/npc_traveler/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/npc_traveler/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.5,
+    0.34
+   ],
+   "role": "b_armr",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/npc_traveler/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/npc_traveler/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.2,
+    -0.36
+   ],
+   "role": "b_forel",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/npc_traveler/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/npc_traveler/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.2,
+    0.36
+   ],
+   "role": "b_forer",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/npc_traveler/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/npc_traveler/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.62,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/npc_traveler/tex0.png"
+  },
+  {
+   "color": "#3a8fb7",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/npc_traveler/5.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.62,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.08,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/npc_traveler/6.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.9,
+    0
+   ],
+   "role": "b_hips",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/npc_traveler/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/npc_traveler/7.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.88,
+    -0.14
+   ],
+   "role": "b_legl",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/npc_traveler/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/npc_traveler/8.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.88,
+    0.14
+   ],
+   "role": "b_legr",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/npc_traveler/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/npc_traveler/9.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.48,
+    -0.14
+   ],
+   "role": "b_shinl",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/npc_traveler/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/npc_traveler/10.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.48,
+    0.14
+   ],
+   "role": "b_shinr",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/npc_traveler/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/npc_traveler/11.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1,
+    0
+   ],
+   "role": "b_torso",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/npc_traveler/tex0.png"
+  },
+  {
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/npc_traveler/12.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1,
+    0
+   ],
+   "role": "b_torso",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#66daff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/npc_traveler/13.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.62,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#ff4b30",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/npc_traveler/14.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.62,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

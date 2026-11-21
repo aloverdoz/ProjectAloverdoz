@@ -1,0 +1,525 @@
+{
+ "extra": {
+  "emitters": [
+   {
+    "kind": "steam",
+    "pos": [
+     -0.45,
+     -0.2,
+     0.45
+    ],
+    "rate": 0.5,
+    "size": 0.6,
+    "when": "active"
+   }
+  ]
+ },
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/water_pump/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.12,
+    0.6
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/water_pump/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/water_pump/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.12,
+    0.6
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/water_pump/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/water_pump/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.12,
+    0.6
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/water_pump/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/water_pump/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.12,
+    0.6
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/water_pump/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/water_pump/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.12,
+    0.6
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/water_pump/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/water_pump/5.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.12,
+    0.6
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/water_pump/tex0.png"
+  },
+  {
+   "color": "#ebe6d2",
+   "mat": "paint",
+   "mesh": "res://models20/water_pump/6.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.12,
+    0.6
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#f3f3f3",
+   "mat": "paint",
+   "mesh": "res://models20/water_pump/7.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.12,
+    0.6
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/water_pump/8.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.12,
+    0.6
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/water_pump/9.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.12,
+    0.6
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/water_pump/tex0.png"
+  },
+  {
+   "anim": "spin_fan",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/water_pump/10.res",
+   "metallic": 0,
+   "pos": [
+    0.58,
+    0.85,
+    -0.2
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/water_pump/tex0.png"
+  },
+  {
+   "anim": "spin_fast",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/water_pump/11.res",
+   "metallic": 0,
+   "pos": [
+    -0.45,
+    -0.05,
+    -0.2
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/water_pump/tex0.png"
+  },
+  {
+   "anim": "spin_fast",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/water_pump/12.res",
+   "metallic": 0,
+   "pos": [
+    -0.45,
+    -0.05,
+    -0.2
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/water_pump/tex0.png"
+  },
+  {
+   "anim": "blink",
+   "color": "#4bc1ff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/water_pump/13.res",
+   "metallic": 0,
+   "pos": [
+    0.65,
+    0.83,
+    0.675
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink_001",
+   "color": "#ffb421",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/water_pump/14.res",
+   "metallic": 0,
+   "pos": [
+    0.73,
+    0.83,
+    0.675
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink_002",
+   "color": "#ffb430",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/water_pump/15.res",
+   "metallic": 0,
+   "pos": [
+    0.88,
+    1,
+    -0.72
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#4bff66",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/water_pump/16.res",
+   "metallic": 0,
+   "pos": [
+    0.57,
+    0.83,
+    0.675
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "jitter",
+   "color": "#da1807",
+   "mat": "paint",
+   "mesh": "res://models20/water_pump/17.res",
+   "metallic": 0,
+   "pos": [
+    -0.2,
+    1.4,
+    0.024
+   ],
+   "rot": [
+    90,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "gear_slow",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/water_pump/18.res",
+   "metallic": 0,
+   "pos": [
+    -0.45,
+    1.58,
+    -0.45
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/water_pump/tex0.png"
+  },
+  {
+   "anim": "gear_slow",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/water_pump/19.res",
+   "metallic": 0,
+   "pos": [
+    -0.45,
+    1.58,
+    -0.45
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/water_pump/tex0.png"
+  }
+ ]
+}

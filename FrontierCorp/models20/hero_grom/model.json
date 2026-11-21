@@ -1,0 +1,152 @@
+{
+ "extra": {
+  "bones": {
+   "arm_l": [
+    -0.0379,
+    0.3748,
+    0.1663
+   ],
+   "arm_r": [
+    -0.0379,
+    0.3748,
+    -0.1663
+   ],
+   "fore_l": [
+    0,
+    -0.2809,
+    0.0597
+   ],
+   "fore_r": [
+    0,
+    -0.2809,
+    -0.0597
+   ],
+   "gun": [
+    0,
+    -0.07,
+    0
+   ],
+   "hand_r": [
+    0,
+    -0.2491,
+    -0.053
+   ],
+   "head": [
+    0,
+    0.4211,
+    0
+   ],
+   "hips": [
+    0,
+    1.0176,
+    0
+   ],
+   "leg_l": [
+    -0.0138,
+    -0.05,
+    0.1182
+   ],
+   "leg_r": [
+    -0.0138,
+    -0.05,
+    -0.1182
+   ],
+   "muzzle": [
+    0.058,
+    -0.125,
+    0
+   ],
+   "shin_l": [
+    0.034,
+    -0.4126,
+    0
+   ],
+   "shin_r": [
+    0.034,
+    -0.4126,
+    -0
+   ],
+   "torso": [
+    0,
+    0.07,
+    0
+   ]
+  },
+  "category": "Герои",
+  "gun_pitch": 0,
+  "look_order": 5,
+  "name": "Гром",
+  "prof_tint": 0,
+  "scale": 1.25,
+  "skin": {
+   "bones": [
+    "hips",
+    "leg_l",
+    "leg_r",
+    "shin_l",
+    "shin_r",
+    "torso",
+    "head",
+    "arm_l",
+    "arm_r",
+    "fore_l",
+    "fore_r",
+    "hand_r"
+   ],
+   "mat": {
+    "color": "#ffffff",
+    "mat": "paint",
+    "mesh": "res://models20/hero_grom/skin.res",
+    "metallic": 0,
+    "pos": [
+     0,
+     0,
+     0
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ],
+    "roughness": 0.55,
+    "shape": "mesh",
+    "size": [
+     1,
+     1,
+     1
+    ],
+    "surface": "none",
+    "texture": "res://models20/hero_grom/tex0.png"
+   },
+   "mesh": "res://models20/hero_grom/skin.res"
+  }
+ },
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/hero_lady/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "role": "gun",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/hero_lady/tex0.png"
+  }
+ ]
+}

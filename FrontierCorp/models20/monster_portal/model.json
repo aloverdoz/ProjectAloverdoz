@@ -1,0 +1,454 @@
+{
+ "extra": {
+  "emitters": [
+   {
+    "kind": "smoke",
+    "pos": [
+     0,
+     0.4,
+     0
+    ],
+    "rate": 0.6,
+    "size": 0.7,
+    "when": "active"
+   }
+  ]
+ },
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/monster_portal/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.04,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/monster_portal/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/monster_portal/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.04,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/monster_portal/tex0.png"
+  },
+  {
+   "color": "#010005",
+   "mat": "paint",
+   "mesh": "res://models20/monster_portal/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.04,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.9,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/monster_portal/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.04,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/monster_portal/tex0.png"
+  },
+  {
+   "color": "#c13dff",
+   "emission": 2.5,
+   "mat": "glow",
+   "mesh": "res://models20/monster_portal/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.04,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/monster_portal/5.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.04,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/monster_portal/tex0.png"
+  },
+  {
+   "anim": "pulse",
+   "color": "#f39aff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/monster_portal/6.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.18,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#c13dff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/monster_portal/7.res",
+   "metallic": 0,
+   "pos": [
+    0.8789,
+    0.55,
+    -0.2719
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_001",
+   "color": "#c13dff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/monster_portal/8.res",
+   "metallic": 0,
+   "pos": [
+    0.013,
+    0.55,
+    -0.9199
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_002",
+   "color": "#c13dff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/monster_portal/9.res",
+   "metallic": 0,
+   "pos": [
+    -0.8709,
+    0.55,
+    -0.2967
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_003",
+   "color": "#c13dff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/monster_portal/10.res",
+   "metallic": 0,
+   "pos": [
+    -0.5512,
+    0.55,
+    0.7366
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_004",
+   "color": "#c13dff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/monster_portal/11.res",
+   "metallic": 0,
+   "pos": [
+    0.5302,
+    0.55,
+    0.7519
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "hover",
+   "color": "#c13dff",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/monster_portal/12.res",
+   "metallic": 0,
+   "pos": [
+    0.1891,
+    0.75,
+    -0.2945
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "hover_001",
+   "color": "#c13dff",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/monster_portal/13.res",
+   "metallic": 0,
+   "pos": [
+    -0.3496,
+    0.85,
+    -0.0165
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "hover_002",
+   "color": "#c13dff",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/monster_portal/14.res",
+   "metallic": 0,
+   "pos": [
+    0.1605,
+    0.95,
+    0.311
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#9f1df5",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/monster_portal/15.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.13,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#c13dff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/monster_portal/16.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.13,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

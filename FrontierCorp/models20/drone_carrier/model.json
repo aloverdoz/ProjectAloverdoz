@@ -1,0 +1,465 @@
+{
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/drone_carrier/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/drone_carrier/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/drone_carrier/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/drone_carrier/tex0.png"
+  },
+  {
+   "color": "#2f65ad",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/drone_carrier/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.08,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/drone_carrier/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/drone_carrier/tex0.png"
+  },
+  {
+   "color": "#243a50",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/drone_carrier/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.08,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/drone_carrier/5.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/drone_carrier/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/drone_carrier/6.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/drone_carrier/tex0.png"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffffe6",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/drone_carrier/7.res",
+   "metallic": 0,
+   "pos": [
+    -0.15,
+    0.83,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#4bff66",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/drone_carrier/8.res",
+   "metallic": 0,
+   "pos": [
+    0.3,
+    0.62,
+    0.3
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse_001",
+   "color": "#ff3d30",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/drone_carrier/9.res",
+   "metallic": 0,
+   "pos": [
+    0.3,
+    0.62,
+    -0.3
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_fast",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/drone_carrier/10.res",
+   "metallic": 0,
+   "pos": [
+    -0.56,
+    0.8,
+    0.56
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/drone_carrier/tex0.png"
+  },
+  {
+   "anim": "spin_fast",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/drone_carrier/11.res",
+   "metallic": 0,
+   "pos": [
+    -0.56,
+    0.8,
+    0.56
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/drone_carrier/tex0.png"
+  },
+  {
+   "anim": "spin_fast_001",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/drone_carrier/12.res",
+   "metallic": 0,
+   "pos": [
+    -0.56,
+    0.8,
+    -0.56
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/drone_carrier/tex0.png"
+  },
+  {
+   "anim": "spin_fast_001",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/drone_carrier/13.res",
+   "metallic": 0,
+   "pos": [
+    -0.56,
+    0.8,
+    -0.56
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/drone_carrier/tex0.png"
+  },
+  {
+   "anim": "spin_fast_002",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/drone_carrier/14.res",
+   "metallic": 0,
+   "pos": [
+    0.56,
+    0.8,
+    0.56
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/drone_carrier/tex0.png"
+  },
+  {
+   "anim": "spin_fast_002",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/drone_carrier/15.res",
+   "metallic": 0,
+   "pos": [
+    0.56,
+    0.8,
+    0.56
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/drone_carrier/tex0.png"
+  },
+  {
+   "anim": "spin_fast_003",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/drone_carrier/16.res",
+   "metallic": 0,
+   "pos": [
+    0.56,
+    0.8,
+    -0.56
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/drone_carrier/tex0.png"
+  },
+  {
+   "anim": "spin_fast_003",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/drone_carrier/17.res",
+   "metallic": 0,
+   "pos": [
+    0.56,
+    0.8,
+    -0.56
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/drone_carrier/tex0.png"
+  }
+ ]
+}

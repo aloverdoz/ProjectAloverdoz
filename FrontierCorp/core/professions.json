@@ -1,0 +1,89 @@
+{
+ "engineer": {
+  "name": "Инженер",
+  "order": 0,
+  "color": "#ffa040",
+  "desc": "Сбалансированный выбор: без бонусов и штрафов.",
+  "bonus": {},
+  "start_items": {},
+  "icon_model": "prof_engineer",
+  "icon": ""
+ },
+ "gatherer": {
+  "name": "Собиратель",
+  "order": 1,
+  "color": "#7dd65a",
+  "desc": "Быстрее добывает руками и инструментами, но ленты у него едут медленнее.",
+  "bonus": {
+   "gather": 0.25,
+   "belt_speed": -0.1
+  },
+  "start_items": {
+   "stone_axe": 1
+  },
+  "icon_model": "prof_gatherer",
+  "icon": ""
+ },
+ "mechanic": {
+  "name": "Механик",
+  "order": 2,
+  "color": "#4d8cff",
+  "desc": "Здания дешевле и прочнее, но бегает медленнее.",
+  "bonus": {
+   "build_cost": -0.1,
+   "build_hp": 0.15,
+   "move": -0.2
+  },
+  "start_items": {
+   "plank": 10
+  },
+  "icon_model": "prof_mechanic",
+  "icon": ""
+ },
+ "soldier": {
+  "name": "Солдат",
+  "order": 3,
+  "color": "#ff4d33",
+  "desc": "Больше урона и здоровья, но крафт медленнее.",
+  "bonus": {
+   "damage": 0.3,
+   "max_hp": 60,
+   "craft_speed": -0.2
+  },
+  "start_items": {
+   "ammo": 40
+  },
+  "icon_model": "prof_soldier",
+  "icon": ""
+ },
+ "trader": {
+  "name": "Торговец",
+  "order": 4,
+  "color": "#ffd36b",
+  "desc": "Продаёт дороже и начинает с деньгами, но слабее в бою.",
+  "bonus": {
+   "sell": 0.25,
+   "damage": -0.15
+  },
+  "start_credits": 300,
+  "start_items": {},
+  "icon_model": "prof_trader",
+  "icon": ""
+ },
+ "survivor": {
+  "name": "Выживальщик",
+  "order": 5,
+  "color": "#c49a6c",
+  "desc": "Медленнее голодает и быстрее лечится, но машины у него работают медленнее.",
+  "bonus": {
+   "hunger": -0.35,
+   "regen": 0.5,
+   "machine_speed": -0.1
+  },
+  "start_items": {
+   "berry": 10
+  },
+  "icon_model": "prof_survivor",
+  "icon": ""
+ }
+}

@@ -1,0 +1,438 @@
+{
+ "extra": {
+  "rig": {
+   "arms": [
+    {
+     "amp": 10,
+     "bone": "b_arml",
+     "phase": 0
+    },
+    {
+     "amp": 14,
+     "bone": "b_armr",
+     "phase": 0.5
+    }
+   ],
+   "body": "b_body",
+   "bones": [
+    {
+     "name": "b_body",
+     "parent": "",
+     "pivot": [
+      0,
+      1.5,
+      0
+     ]
+    },
+    {
+     "name": "b_head",
+     "parent": "b_body",
+     "pivot": [
+      0.1,
+      2.2,
+      0
+     ]
+    },
+    {
+     "name": "b_arml",
+     "parent": "b_body",
+     "pivot": [
+      0.05,
+      2.02,
+      -0.56
+     ]
+    },
+    {
+     "name": "b_armr",
+     "parent": "b_body",
+     "pivot": [
+      0.05,
+      2.02,
+      0.56
+     ]
+    },
+    {
+     "name": "b_hipl",
+     "parent": "b_body",
+     "pivot": [
+      0,
+      1.3,
+      -0.28
+     ]
+    },
+    {
+     "name": "b_kneel",
+     "parent": "b_hipl",
+     "pivot": [
+      0.16,
+      0.78,
+      -0.32
+     ]
+    },
+    {
+     "name": "b_hipr",
+     "parent": "b_body",
+     "pivot": [
+      0,
+      1.3,
+      0.28
+     ]
+    },
+    {
+     "name": "b_kneer",
+     "parent": "b_hipr",
+     "pivot": [
+      0.16,
+      0.78,
+      0.32
+     ]
+    }
+   ],
+   "breath": [],
+   "chains": [],
+   "gait": {
+    "bob": 0.07,
+    "duty": 0.6,
+    "knee": 36,
+    "lean": 5,
+    "lift": 20,
+    "roll": 3,
+    "stride": 1.5,
+    "swing": 24
+   },
+   "head": "b_head",
+   "jaws": [],
+   "legs": [
+    {
+     "hip": "b_hipl",
+     "knee": "b_kneel",
+     "phase": 0,
+     "side": -1,
+     "style": "z"
+    },
+    {
+     "hip": "b_hipr",
+     "knee": "b_kneer",
+     "phase": 0.5,
+     "side": 1,
+     "style": "z"
+    }
+   ]
+  }
+ },
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_guard/0.res",
+   "metallic": 0,
+   "pos": [
+    0.05,
+    2.02,
+    -0.56
+   ],
+   "role": "b_arml",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_guard/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_guard/1.res",
+   "metallic": 0,
+   "pos": [
+    0.05,
+    2.02,
+    0.56
+   ],
+   "role": "b_armr",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_guard/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_guard/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.5,
+    0
+   ],
+   "role": "b_body",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_guard/tex0.png"
+  },
+  {
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/mech_guard/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.5,
+    0
+   ],
+   "role": "b_body",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_guard/4.res",
+   "metallic": 0,
+   "pos": [
+    0.1,
+    2.2,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_guard/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_guard/5.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.3,
+    -0.28
+   ],
+   "role": "b_hipl",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_guard/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_guard/6.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.3,
+    0.28
+   ],
+   "role": "b_hipr",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_guard/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_guard/7.res",
+   "metallic": 0,
+   "pos": [
+    0.16,
+    0.78,
+    -0.32
+   ],
+   "role": "b_kneel",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_guard/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_guard/8.res",
+   "metallic": 0,
+   "pos": [
+    0.16,
+    0.78,
+    0.32
+   ],
+   "role": "b_kneer",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_guard/tex0.png"
+  },
+  {
+   "anim": "pulse",
+   "color": "#ff2113",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/mech_guard/9.res",
+   "metallic": 0,
+   "pos": [
+    0.1,
+    2.2,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#ff8d21",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/mech_guard/10.res",
+   "metallic": 0,
+   "pos": [
+    0.05,
+    2.02,
+    0.56
+   ],
+   "role": "b_armr",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ff4b13",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/mech_guard/11.res",
+   "metallic": 0,
+   "pos": [
+    -0.4,
+    2.28,
+    -0.22
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

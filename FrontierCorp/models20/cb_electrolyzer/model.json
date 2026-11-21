@@ -1,0 +1,837 @@
+{
+ "extra": {
+  "emitters": [
+   {
+    "kind": "steam",
+    "pos": [
+     0,
+     1.5,
+     0
+    ],
+    "rate": 0.3,
+    "size": 0.5,
+    "when": "active"
+   }
+  ]
+ },
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_electrolyzer/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_electrolyzer/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_electrolyzer/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_electrolyzer/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_electrolyzer/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_electrolyzer/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_electrolyzer/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_electrolyzer/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_electrolyzer/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_electrolyzer/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_electrolyzer/5.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_electrolyzer/tex0.png"
+  },
+  {
+   "color": "#ff3021",
+   "emission": 2,
+   "mat": "glow",
+   "mesh": "res://models20/cb_electrolyzer/6.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#4bff66",
+   "emission": 2,
+   "mat": "glow",
+   "mesh": "res://models20/cb_electrolyzer/7.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffc130",
+   "emission": 2,
+   "mat": "glow",
+   "mesh": "res://models20/cb_electrolyzer/8.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_electrolyzer/9.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_electrolyzer/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_electrolyzer/10.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_electrolyzer/tex0.png"
+  },
+  {
+   "color": "#ebe6d2",
+   "mat": "paint",
+   "mesh": "res://models20/cb_electrolyzer/11.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#4bffe6",
+   "emission": 3,
+   "mat": "glow",
+   "mesh": "res://models20/cb_electrolyzer/12.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.24,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "flicker",
+   "color": "#80cdff",
+   "emission": 5,
+   "mat": "glow",
+   "mesh": "res://models20/cb_electrolyzer/13.res",
+   "metallic": 0,
+   "pos": [
+    -1.45,
+    1.95,
+    1.3
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_electrolyzer/14.res",
+   "metallic": 0,
+   "pos": [
+    1.45,
+    0.6,
+    0.6
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_electrolyzer/tex0.png"
+  },
+  {
+   "anim": "spin",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_electrolyzer/15.res",
+   "metallic": 0,
+   "pos": [
+    1.45,
+    0.6,
+    0.6
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_electrolyzer/tex0.png"
+  },
+  {
+   "anim": "spin",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_electrolyzer/16.res",
+   "metallic": 0,
+   "pos": [
+    1.45,
+    0.6,
+    0.6
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_electrolyzer/tex0.png"
+  },
+  {
+   "anim": "jitter",
+   "color": "#cd1305",
+   "mat": "paint",
+   "mesh": "res://models20/cb_electrolyzer/17.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.05,
+    0.228
+   ],
+   "rot": [
+    90,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "piston_small",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_electrolyzer/18.res",
+   "metallic": 0,
+   "pos": [
+    0.85,
+    1.3,
+    0.75
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_electrolyzer/tex0.png"
+  },
+  {
+   "anim": "piston_small",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_electrolyzer/19.res",
+   "metallic": 0,
+   "pos": [
+    0.85,
+    1.3,
+    0.75
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_electrolyzer/tex0.png"
+  },
+  {
+   "anim": "piston_small_001",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_electrolyzer/20.res",
+   "metallic": 0,
+   "pos": [
+    1.15,
+    1.3,
+    0.45
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_electrolyzer/tex0.png"
+  },
+  {
+   "anim": "piston_small_001",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_electrolyzer/21.res",
+   "metallic": 0,
+   "pos": [
+    1.15,
+    1.3,
+    0.45
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_electrolyzer/tex0.png"
+  },
+  {
+   "anim": "flicker_soft",
+   "color": "#4bdaff",
+   "emission": 2.5,
+   "mat": "glow",
+   "mesh": "res://models20/cb_electrolyzer/22.res",
+   "metallic": 0,
+   "pos": [
+    -0.7,
+    0.81,
+    1.46
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffb430",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/cb_electrolyzer/23.res",
+   "metallic": 0,
+   "pos": [
+    1.6,
+    0.855,
+    -1
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink_001",
+   "color": "#ff3d30",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/cb_electrolyzer/24.res",
+   "metallic": 0,
+   "pos": [
+    1.6,
+    0.93,
+    -1
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#4bff73",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/cb_electrolyzer/25.res",
+   "metallic": 0,
+   "pos": [
+    1.6,
+    0.78,
+    -1
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_electrolyzer/26.res",
+   "metallic": 0,
+   "pos": [
+    -0.44,
+    0.62,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_electrolyzer/tex0.png"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_electrolyzer/27.res",
+   "metallic": 0,
+   "pos": [
+    -0.44,
+    0.62,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_electrolyzer/tex0.png"
+  },
+  {
+   "anim": "spin_slow_001",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_electrolyzer/28.res",
+   "metallic": 0,
+   "pos": [
+    0.44,
+    0.62,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_electrolyzer/tex0.png"
+  },
+  {
+   "anim": "spin_slow_001",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_electrolyzer/29.res",
+   "metallic": 0,
+   "pos": [
+    0.44,
+    0.62,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    -90
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_electrolyzer/tex0.png"
+  },
+  {
+   "anim": "spin_slow_002",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_electrolyzer/30.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.35,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_electrolyzer/tex0.png"
+  },
+  {
+   "anim": "spin_slow_002",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/cb_electrolyzer/31.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.35,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/cb_electrolyzer/tex0.png"
+  }
+ ]
+}

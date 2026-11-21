@@ -1,0 +1,152 @@
+{
+ "extra": {
+  "bones": {
+   "arm_l": [
+    -0.0258,
+    0.4166,
+    0.1278
+   ],
+   "arm_r": [
+    -0.0258,
+    0.4166,
+    -0.1278
+   ],
+   "fore_l": [
+    0,
+    -0.2251,
+    0.0478
+   ],
+   "fore_r": [
+    0,
+    -0.2251,
+    -0.0478
+   ],
+   "gun": [
+    0,
+    -0.07,
+    0
+   ],
+   "hand_r": [
+    0,
+    -0.1996,
+    -0.0424
+   ],
+   "head": [
+    0,
+    0.4596,
+    0
+   ],
+   "hips": [
+    0,
+    0.9496,
+    0
+   ],
+   "leg_l": [
+    -0.0274,
+    -0.05,
+    0.098
+   ],
+   "leg_r": [
+    -0.0274,
+    -0.05,
+    -0.098
+   ],
+   "muzzle": [
+    0.058,
+    -0.125,
+    0
+   ],
+   "shin_l": [
+    -0.0218,
+    -0.3836,
+    -0.0334
+   ],
+   "shin_r": [
+    -0.0218,
+    -0.3836,
+    0.0334
+   ],
+   "torso": [
+    0,
+    0.07,
+    0
+   ]
+  },
+  "category": "Герои",
+  "gun_pitch": 0,
+  "look_order": 15,
+  "name": "Нейро",
+  "prof_tint": 0,
+  "scale": 1.25,
+  "skin": {
+   "bones": [
+    "hips",
+    "leg_l",
+    "leg_r",
+    "shin_l",
+    "shin_r",
+    "torso",
+    "head",
+    "arm_l",
+    "arm_r",
+    "fore_l",
+    "fore_r",
+    "hand_r"
+   ],
+   "mat": {
+    "color": "#ffffff",
+    "mat": "paint",
+    "mesh": "res://models20/hero_neuro/skin.res",
+    "metallic": 0,
+    "pos": [
+     0,
+     0,
+     0
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ],
+    "roughness": 0.55,
+    "shape": "mesh",
+    "size": [
+     1,
+     1,
+     1
+    ],
+    "surface": "none",
+    "texture": "res://models20/hero_neuro/tex0.png"
+   },
+   "mesh": "res://models20/hero_neuro/skin.res"
+  }
+ },
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/hero_lady/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "role": "gun",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/hero_lady/tex0.png"
+  }
+ ]
+}

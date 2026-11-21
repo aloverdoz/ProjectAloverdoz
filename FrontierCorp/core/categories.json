@@ -1,0 +1,57 @@
+{
+ "stations": {
+  "name": "Станции",
+  "order": 0,
+  "color": "#c49a6c"
+ },
+ "extraction": {
+  "name": "Добыча",
+  "order": 1,
+  "color": "#f2a81f"
+ },
+ "production": {
+  "name": "Производство",
+  "order": 2,
+  "color": "#4d8cff"
+ },
+ "energy": {
+  "name": "Энергетика",
+  "order": 3,
+  "color": "#ffd11a"
+ },
+ "logistics": {
+  "name": "Логистика",
+  "order": 4,
+  "color": "#a6adb8"
+ },
+ "special": {
+  "name": "Особые",
+  "order": 8,
+  "color": "#c070ff"
+ },
+ "storage": {
+  "name": "Хранение",
+  "order": 5,
+  "color": "#5cff8c"
+ },
+ "defense": {
+  "name": "Оборона",
+  "order": 6,
+  "color": "#ff4d33"
+ },
+ "decor": {
+  "name": "Декор",
+  "order": 7,
+  "color": "#d94db3"
+ },
+ "structure": {
+  "name": "Фундаменты",
+  "order": 9,
+  "color": "#b9b4a4"
+ },
+ "fluids": {
+  "name": "Жидкости",
+  "order": 10,
+  "color": "#3a8fe0"
+ }
+}

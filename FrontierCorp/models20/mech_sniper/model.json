@@ -1,0 +1,511 @@
+{
+ "extra": {
+  "rig": {
+   "arms": [],
+   "body": "b_body",
+   "bones": [
+    {
+     "name": "b_body",
+     "parent": "",
+     "pivot": [
+      0,
+      1.5,
+      0
+     ]
+    },
+    {
+     "name": "b_head",
+     "parent": "b_body",
+     "pivot": [
+      0.18,
+      1.7,
+      0
+     ]
+    },
+    {
+     "name": "b_hip0l",
+     "parent": "b_body",
+     "pivot": [
+      0.3,
+      1.4,
+      -0.26
+     ]
+    },
+    {
+     "name": "b_knee0l",
+     "parent": "b_hip0l",
+     "pivot": [
+      0.48,
+      1.65,
+      -0.7
+     ]
+    },
+    {
+     "name": "b_hip0r",
+     "parent": "b_body",
+     "pivot": [
+      0.3,
+      1.4,
+      0.26
+     ]
+    },
+    {
+     "name": "b_knee0r",
+     "parent": "b_hip0r",
+     "pivot": [
+      0.48,
+      1.65,
+      0.7
+     ]
+    },
+    {
+     "name": "b_hip1l",
+     "parent": "b_body",
+     "pivot": [
+      -0.3,
+      1.4,
+      -0.26
+     ]
+    },
+    {
+     "name": "b_knee1l",
+     "parent": "b_hip1l",
+     "pivot": [
+      -0.48,
+      1.65,
+      -0.7
+     ]
+    },
+    {
+     "name": "b_hip1r",
+     "parent": "b_body",
+     "pivot": [
+      -0.3,
+      1.4,
+      0.26
+     ]
+    },
+    {
+     "name": "b_knee1r",
+     "parent": "b_hip1r",
+     "pivot": [
+      -0.48,
+      1.65,
+      0.7
+     ]
+    }
+   ],
+   "breath": [],
+   "chains": [],
+   "gait": {
+    "bob": 0.03,
+    "duty": 0.6,
+    "knee": 18,
+    "lean": 3,
+    "lift": 22,
+    "roll": 2,
+    "stride": 1.3,
+    "swing": 18
+   },
+   "head": "b_head",
+   "jaws": [],
+   "legs": [
+    {
+     "hip": "b_hip0l",
+     "knee": "b_knee0l",
+     "phase": 0,
+     "side": -1,
+     "style": "y"
+    },
+    {
+     "hip": "b_hip0r",
+     "knee": "b_knee0r",
+     "phase": 0.5,
+     "side": 1,
+     "style": "y"
+    },
+    {
+     "hip": "b_hip1l",
+     "knee": "b_knee1l",
+     "phase": 0.5,
+     "side": -1,
+     "style": "y"
+    },
+    {
+     "hip": "b_hip1r",
+     "knee": "b_knee1r",
+     "phase": 0,
+     "side": 1,
+     "style": "y"
+    }
+   ]
+  }
+ },
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_sniper/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.5,
+    0
+   ],
+   "role": "b_body",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_sniper/tex0.png"
+  },
+  {
+   "color": "#3aa3cb",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/mech_sniper/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.5,
+    0
+   ],
+   "role": "b_body",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.08,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/mech_sniper/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.5,
+    0
+   ],
+   "role": "b_body",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_sniper/3.res",
+   "metallic": 0,
+   "pos": [
+    0.18,
+    1.7,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_sniper/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_sniper/4.res",
+   "metallic": 0,
+   "pos": [
+    0.3,
+    1.4,
+    -0.26
+   ],
+   "role": "b_hip0l",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_sniper/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_sniper/5.res",
+   "metallic": 0,
+   "pos": [
+    0.3,
+    1.4,
+    0.26
+   ],
+   "role": "b_hip0r",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_sniper/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_sniper/6.res",
+   "metallic": 0,
+   "pos": [
+    -0.3,
+    1.4,
+    -0.26
+   ],
+   "role": "b_hip1l",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_sniper/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_sniper/7.res",
+   "metallic": 0,
+   "pos": [
+    -0.3,
+    1.4,
+    0.26
+   ],
+   "role": "b_hip1r",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_sniper/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_sniper/8.res",
+   "metallic": 0,
+   "pos": [
+    0.48,
+    1.65,
+    -0.7
+   ],
+   "role": "b_knee0l",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_sniper/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_sniper/9.res",
+   "metallic": 0,
+   "pos": [
+    0.48,
+    1.65,
+    0.7
+   ],
+   "role": "b_knee0r",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_sniper/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_sniper/10.res",
+   "metallic": 0,
+   "pos": [
+    -0.48,
+    1.65,
+    -0.7
+   ],
+   "role": "b_knee1l",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_sniper/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_sniper/11.res",
+   "metallic": 0,
+   "pos": [
+    -0.48,
+    1.65,
+    0.7
+   ],
+   "role": "b_knee1r",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_sniper/tex0.png"
+  },
+  {
+   "anim": "pulse",
+   "color": "#59ff4b",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/mech_sniper/12.res",
+   "metallic": 0,
+   "pos": [
+    0.18,
+    1.7,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#59ff4b",
+   "emission": 3,
+   "mat": "glow",
+   "mesh": "res://models20/mech_sniper/13.res",
+   "metallic": 0,
+   "pos": [
+    0.18,
+    1.7,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

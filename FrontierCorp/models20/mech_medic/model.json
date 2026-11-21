@@ -1,0 +1,398 @@
+{
+ "extra": {
+  "rig": {
+   "arms": [
+    {
+     "amp": 18,
+     "bone": "b_arml",
+     "phase": 0
+    },
+    {
+     "amp": 18,
+     "bone": "b_armr",
+     "phase": 0.5
+    }
+   ],
+   "body": "b_body",
+   "bones": [
+    {
+     "name": "b_body",
+     "parent": "",
+     "pivot": [
+      0,
+      1.6,
+      0
+     ]
+    },
+    {
+     "name": "b_head",
+     "parent": "b_body",
+     "pivot": [
+      0.3,
+      1.6,
+      0
+     ]
+    },
+    {
+     "name": "b_rot0",
+     "parent": "b_body",
+     "pivot": [
+      0,
+      1.76,
+      -0.62
+     ]
+    },
+    {
+     "name": "b_rot1",
+     "parent": "b_body",
+     "pivot": [
+      0,
+      1.76,
+      0.62
+     ]
+    },
+    {
+     "name": "b_arml",
+     "parent": "b_body",
+     "pivot": [
+      0.2,
+      1.45,
+      -0.2
+     ]
+    },
+    {
+     "name": "b_armr",
+     "parent": "b_body",
+     "pivot": [
+      0.2,
+      1.45,
+      0.2
+     ]
+    }
+   ],
+   "breath": [],
+   "chains": [],
+   "gait": {
+    "bank": 14,
+    "bob": 0,
+    "duty": 0.6,
+    "knee": 30,
+    "lean": 12,
+    "lift": 20,
+    "roll": 2,
+    "stride": 2.2,
+    "swing": 25
+   },
+   "head": "b_head",
+   "hover": {
+    "amp": 0.12,
+    "speed": 2
+   },
+   "jaws": [],
+   "legs": [],
+   "rotors": [
+    {
+     "axis": "y",
+     "bone": "b_rot0",
+     "speed": -30
+    },
+    {
+     "axis": "y",
+     "bone": "b_rot1",
+     "speed": 30
+    }
+   ]
+  }
+ },
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_medic/0.res",
+   "metallic": 0,
+   "pos": [
+    0.2,
+    1.45,
+    -0.2
+   ],
+   "role": "b_arml",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_medic/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_medic/1.res",
+   "metallic": 0,
+   "pos": [
+    0.2,
+    1.45,
+    0.2
+   ],
+   "role": "b_armr",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_medic/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_medic/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.6,
+    0
+   ],
+   "role": "b_body",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_medic/tex0.png"
+  },
+  {
+   "color": "#3aa3cb",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/mech_medic/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.6,
+    0
+   ],
+   "role": "b_body",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.08,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_medic/4.res",
+   "metallic": 0,
+   "pos": [
+    0.3,
+    1.6,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_medic/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_medic/5.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.76,
+    -0.62
+   ],
+   "role": "b_rot0",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_medic/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_medic/6.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.76,
+    0.62
+   ],
+   "role": "b_rot1",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_medic/tex0.png"
+  },
+  {
+   "anim": "pulse",
+   "color": "#59ff8d",
+   "emission": 5,
+   "mat": "glow",
+   "mesh": "res://models20/mech_medic/7.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.6,
+    0
+   ],
+   "role": "b_body",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#59ff8d",
+   "emission": 5,
+   "mat": "glow",
+   "mesh": "res://models20/mech_medic/8.res",
+   "metallic": 0,
+   "pos": [
+    0.3,
+    1.6,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "flicker",
+   "color": "#80cdff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/mech_medic/9.res",
+   "metallic": 0,
+   "pos": [
+    0.2,
+    1.45,
+    -0.2
+   ],
+   "role": "b_arml",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ff4b30",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/mech_medic/10.res",
+   "metallic": 0,
+   "pos": [
+    -0.25,
+    2.18,
+    0.1
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

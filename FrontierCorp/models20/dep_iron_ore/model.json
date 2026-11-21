@@ -1,0 +1,181 @@
+{
+ "parts": [
+  {
+   "color": "#8d2413",
+   "mat": "paint",
+   "mesh": "res://models20/dep_iron_ore/0.res",
+   "metallic": 0.75,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#c85b1e",
+   "mat": "paint",
+   "mesh": "res://models20/dep_iron_ore/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.7,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/dep_iron_ore/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.8,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/dep_iron_ore/tex0.png"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffcdb4",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_iron_ore/3.res",
+   "metallic": 0,
+   "pos": [
+    -0.1905,
+    0.799,
+    -0.3835
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffcdb4",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_iron_ore/4.res",
+   "metallic": 0,
+   "pos": [
+    0.3063,
+    0.3523,
+    -0.5998
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffcdb4",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_iron_ore/5.res",
+   "metallic": 0,
+   "pos": [
+    0.5706,
+    0.5335,
+    0.4285
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffcdb4",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_iron_ore/6.res",
+   "metallic": 0,
+   "pos": [
+    -0.5861,
+    0.3051,
+    0.1582
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

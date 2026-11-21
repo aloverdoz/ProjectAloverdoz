@@ -1,0 +1,208 @@
+{
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/dep_rare_earth_ore/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.8,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/dep_rare_earth_ore/tex0.png"
+  },
+  {
+   "color": "#f3c42d",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/dep_rare_earth_ore/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.12,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#273b7c",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/dep_rare_earth_ore/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.12,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#3ad0b0",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/dep_rare_earth_ore/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.12,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#cdfff3",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_rare_earth_ore/4.res",
+   "metallic": 0,
+   "pos": [
+    -0.1971,
+    0.624,
+    -0.066
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#cdfff3",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_rare_earth_ore/5.res",
+   "metallic": 0,
+   "pos": [
+    -0.0255,
+    0.6859,
+    0.1234
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#cdfff3",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_rare_earth_ore/6.res",
+   "metallic": 0,
+   "pos": [
+    0.3813,
+    0.6822,
+    0.0465
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#cdfff3",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_rare_earth_ore/7.res",
+   "metallic": 0,
+   "pos": [
+    -0.1525,
+    0.3718,
+    0.2777
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

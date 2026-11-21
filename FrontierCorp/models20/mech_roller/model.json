@@ -1,0 +1,518 @@
+{
+ "extra": {
+  "rig": {
+   "arms": [
+    {
+     "amp": 8,
+     "bone": "b_arml",
+     "phase": 0
+    },
+    {
+     "amp": 8,
+     "bone": "b_armr",
+     "phase": 0.5
+    }
+   ],
+   "body": "b_body",
+   "bones": [
+    {
+     "name": "b_body",
+     "parent": "",
+     "pivot": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "b_head",
+     "parent": "b_body",
+     "pivot": [
+      0,
+      1.32,
+      0
+     ]
+    },
+    {
+     "name": "b_wheel0",
+     "parent": "b_body",
+     "pivot": [
+      0.44,
+      0.42,
+      -0.58
+     ]
+    },
+    {
+     "name": "b_wheel1",
+     "parent": "b_body",
+     "pivot": [
+      0.44,
+      0.42,
+      0.58
+     ]
+    },
+    {
+     "name": "b_wheel2",
+     "parent": "b_body",
+     "pivot": [
+      -0.44,
+      0.42,
+      -0.58
+     ]
+    },
+    {
+     "name": "b_wheel3",
+     "parent": "b_body",
+     "pivot": [
+      -0.44,
+      0.42,
+      0.58
+     ]
+    },
+    {
+     "name": "b_arml",
+     "parent": "b_body",
+     "pivot": [
+      0.3,
+      1.2,
+      -0.52
+     ]
+    },
+    {
+     "name": "b_armr",
+     "parent": "b_body",
+     "pivot": [
+      0.3,
+      1.2,
+      0.52
+     ]
+    }
+   ],
+   "breath": [],
+   "chains": [],
+   "gait": {
+    "bob": 0.015,
+    "duty": 0.6,
+    "knee": 30,
+    "lean": 3,
+    "lift": 20,
+    "roll": 1.5,
+    "stride": 2,
+    "swing": 25
+   },
+   "head": "b_head",
+   "jaws": [],
+   "legs": [],
+   "wheels": [
+    {
+     "axis": "z",
+     "bone": "b_wheel0",
+     "radius": 0.42
+    },
+    {
+     "axis": "z",
+     "bone": "b_wheel1",
+     "radius": 0.42
+    },
+    {
+     "axis": "z",
+     "bone": "b_wheel2",
+     "radius": 0.42
+    },
+    {
+     "axis": "z",
+     "bone": "b_wheel3",
+     "radius": 0.42
+    }
+   ]
+  }
+ },
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_roller/0.res",
+   "metallic": 0,
+   "pos": [
+    0.3,
+    1.2,
+    -0.52
+   ],
+   "role": "b_arml",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_roller/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_roller/1.res",
+   "metallic": 0,
+   "pos": [
+    0.3,
+    1.2,
+    0.52
+   ],
+   "role": "b_armr",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_roller/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_roller/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1,
+    0
+   ],
+   "role": "b_body",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_roller/tex0.png"
+  },
+  {
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/mech_roller/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1,
+    0
+   ],
+   "role": "b_body",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_roller/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.32,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_roller/tex0.png"
+  },
+  {
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/mech_roller/5.res",
+   "metallic": 0,
+   "pos": [
+    0.44,
+    0.42,
+    -0.58
+   ],
+   "role": "b_wheel0",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_roller/6.res",
+   "metallic": 0,
+   "pos": [
+    0.44,
+    0.42,
+    -0.58
+   ],
+   "role": "b_wheel0",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_roller/tex0.png"
+  },
+  {
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/mech_roller/7.res",
+   "metallic": 0,
+   "pos": [
+    0.44,
+    0.42,
+    0.58
+   ],
+   "role": "b_wheel1",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_roller/8.res",
+   "metallic": 0,
+   "pos": [
+    0.44,
+    0.42,
+    0.58
+   ],
+   "role": "b_wheel1",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_roller/tex0.png"
+  },
+  {
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/mech_roller/9.res",
+   "metallic": 0,
+   "pos": [
+    -0.44,
+    0.42,
+    -0.58
+   ],
+   "role": "b_wheel2",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_roller/10.res",
+   "metallic": 0,
+   "pos": [
+    -0.44,
+    0.42,
+    -0.58
+   ],
+   "role": "b_wheel2",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_roller/tex0.png"
+  },
+  {
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/mech_roller/11.res",
+   "metallic": 0,
+   "pos": [
+    -0.44,
+    0.42,
+    0.58
+   ],
+   "role": "b_wheel3",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_roller/12.res",
+   "metallic": 0,
+   "pos": [
+    -0.44,
+    0.42,
+    0.58
+   ],
+   "role": "b_wheel3",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_roller/tex0.png"
+  },
+  {
+   "anim": "pulse",
+   "color": "#ff3018",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/mech_roller/13.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.32,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ff9a13",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/mech_roller/14.res",
+   "metallic": 0,
+   "pos": [
+    -0.15,
+    1.9,
+    -0.18
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

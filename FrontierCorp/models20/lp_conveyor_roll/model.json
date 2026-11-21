@@ -1,0 +1,619 @@
+{
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_conveyor_roll/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_conveyor_roll/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_conveyor_roll/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_conveyor_roll/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_conveyor_roll/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_conveyor_roll/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_conveyor_roll/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_conveyor_roll/tex0.png"
+  },
+  {
+   "anim": "spin",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_conveyor_roll/4.res",
+   "metallic": 0,
+   "pos": [
+    -0.5,
+    0.2,
+    0
+   ],
+   "rot": [
+    -90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_conveyor_roll/tex0.png"
+  },
+  {
+   "anim": "spin",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_conveyor_roll/5.res",
+   "metallic": 0,
+   "pos": [
+    -0.5,
+    0.2,
+    0
+   ],
+   "rot": [
+    -90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_conveyor_roll/tex0.png"
+  },
+  {
+   "anim": "spin",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_conveyor_roll/6.res",
+   "metallic": 0,
+   "pos": [
+    -0.5,
+    0.2,
+    0
+   ],
+   "rot": [
+    -90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_conveyor_roll/tex0.png"
+  },
+  {
+   "anim": "spin",
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/lp_conveyor_roll/7.res",
+   "metallic": 0,
+   "pos": [
+    -0.5,
+    0.2,
+    0
+   ],
+   "rot": [
+    -90,
+    0,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_001",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_conveyor_roll/8.res",
+   "metallic": 0,
+   "pos": [
+    -0.25,
+    0.2,
+    0
+   ],
+   "rot": [
+    -90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_conveyor_roll/tex0.png"
+  },
+  {
+   "anim": "spin_001",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_conveyor_roll/9.res",
+   "metallic": 0,
+   "pos": [
+    -0.25,
+    0.2,
+    0
+   ],
+   "rot": [
+    -90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_conveyor_roll/tex0.png"
+  },
+  {
+   "anim": "spin_001",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_conveyor_roll/10.res",
+   "metallic": 0,
+   "pos": [
+    -0.25,
+    0.2,
+    0
+   ],
+   "rot": [
+    -90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_conveyor_roll/tex0.png"
+  },
+  {
+   "anim": "spin_001",
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/lp_conveyor_roll/11.res",
+   "metallic": 0,
+   "pos": [
+    -0.25,
+    0.2,
+    0
+   ],
+   "rot": [
+    -90,
+    0,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_002",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_conveyor_roll/12.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.2,
+    0
+   ],
+   "rot": [
+    -90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_conveyor_roll/tex0.png"
+  },
+  {
+   "anim": "spin_002",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_conveyor_roll/13.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.2,
+    0
+   ],
+   "rot": [
+    -90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_conveyor_roll/tex0.png"
+  },
+  {
+   "anim": "spin_002",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_conveyor_roll/14.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.2,
+    0
+   ],
+   "rot": [
+    -90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_conveyor_roll/tex0.png"
+  },
+  {
+   "anim": "spin_002",
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/lp_conveyor_roll/15.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.2,
+    0
+   ],
+   "rot": [
+    -90,
+    0,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_003",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_conveyor_roll/16.res",
+   "metallic": 0,
+   "pos": [
+    0.25,
+    0.2,
+    0
+   ],
+   "rot": [
+    -90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_conveyor_roll/tex0.png"
+  },
+  {
+   "anim": "spin_003",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_conveyor_roll/17.res",
+   "metallic": 0,
+   "pos": [
+    0.25,
+    0.2,
+    0
+   ],
+   "rot": [
+    -90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_conveyor_roll/tex0.png"
+  },
+  {
+   "anim": "spin_003",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_conveyor_roll/18.res",
+   "metallic": 0,
+   "pos": [
+    0.25,
+    0.2,
+    0
+   ],
+   "rot": [
+    -90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_conveyor_roll/tex0.png"
+  },
+  {
+   "anim": "spin_003",
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/lp_conveyor_roll/19.res",
+   "metallic": 0,
+   "pos": [
+    0.25,
+    0.2,
+    0
+   ],
+   "rot": [
+    -90,
+    0,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_004",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_conveyor_roll/20.res",
+   "metallic": 0,
+   "pos": [
+    0.5,
+    0.2,
+    0
+   ],
+   "rot": [
+    -90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_conveyor_roll/tex0.png"
+  },
+  {
+   "anim": "spin_004",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_conveyor_roll/21.res",
+   "metallic": 0,
+   "pos": [
+    0.5,
+    0.2,
+    0
+   ],
+   "rot": [
+    -90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_conveyor_roll/tex0.png"
+  },
+  {
+   "anim": "spin_004",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_conveyor_roll/22.res",
+   "metallic": 0,
+   "pos": [
+    0.5,
+    0.2,
+    0
+   ],
+   "rot": [
+    -90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_conveyor_roll/tex0.png"
+  },
+  {
+   "anim": "spin_004",
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/lp_conveyor_roll/23.res",
+   "metallic": 0,
+   "pos": [
+    0.5,
+    0.2,
+    0
+   ],
+   "rot": [
+    -90,
+    0,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

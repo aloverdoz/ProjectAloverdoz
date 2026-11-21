@@ -1,0 +1,31 @@
+﻿Исходный файл,Игровой файл,Треугольники исходника,Треугольники LOD0,Кости исходника,Клипы исходника,Кости в игре,Клипы в игре,Карты побайтно совпадают
+1.glb,wreck.glb,1868243,229999,0,0,0,0,да
+10.glb,assembler.glb,1856985,229999,0,0,0,0,да
+11.glb,relay.glb,1919289,229999,0,0,0,0,да
+12.glb,blueprint_lab.glb,1868608,229997,0,0,0,0,да
+13.glb,tech_lab.glb,1870417,229999,0,0,0,0,да
+15.glb,canopy.glb,1858706,229998,0,0,0,0,да
+16.glb,mushrooms.glb,1989704,229998,0,0,0,0,да
+17.glb,monolith.glb,1956356,229998,0,0,0,0,да
+2.glb,elevator.glb,1900988,230000,0,0,0,0,да
+3.glb,drone_works.glb,1901866,229998,0,0,0,0,да
+4 но не очень вроде.glb,loader_alt.glb,1864037,230000,0,0,0,0,да
+4.glb,loader.glb,1805670,229998,0,0,0,0,да
+5.glb,unloader.glb,1818670,229998,0,0,0,0,да
+6.glb,cargo_drone.glb,1906216,229999,0,0,0,0,да
+8 бур вариант 2.glb,miner_alt2.glb,1872716,229998,0,0,0,0,да
+8 бур вариант 3.glb,miner_alt3.glb,1950368,230000,0,0,0,0,да
+8.glb,miner.glb,1832073,230000,0,0,0,0,да
+9.glb,smelter.glb,1958332,229998,0,0,0,0,да
+модель для персонажа игрока nurse.glb,nurse.glb,1990448,203026,0,0,15,8,да
+модель для персонажа игрока post-apocalyptic robot.glb,robot.glb,1888588,229998,0,0,15,8,да
+модель для персонажа игрока Роберта.glb,robert.glb,1844936,231601,0,0,15,8,да
+монстер Grim.glb,grim.glb,2000384,233332,0,0,15,8,да
+монстер demon creature.glb,demon_creature.glb,19540,19540,53,0,53,8,да
+монстер fantasy goblin.glb,fantasy_goblin.glb,62033,62033,65,0,65,8,да
+монстер jack-o-lantern.glb,jack_o_lantern.glb,2000510,229992,0,0,15,8,да
+монстер mushroom creature.glb,mushroom_creature.glb,1870919,229999,0,0,15,8,да
+монстер pumpkin skull knight.glb,pumpkin_skull_knight.glb,1877564,229998,0,0,15,8,да
+монстер stone golem.glb,stone_golem.glb,50906,50906,0,0,15,8,да
+монстер wooden forest golem.glb,wooden_forest_golem.glb,1913744,229996,0,0,15,8,да
+монстр босс dragon .glb,dragon.glb,1917077,229999,0,0,17,12,да

@@ -1,0 +1,182 @@
+{
+ "parts": [
+  {
+   "color": "#241e1b",
+   "mat": "paint",
+   "mesh": "res://models20/dep_tungsten_ore/0.res",
+   "metallic": 0.9,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.15,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/dep_tungsten_ore/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.8,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/dep_tungsten_ore/tex0.png"
+  },
+  {
+   "color": "#cb7e24",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/dep_tungsten_ore/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.12,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffe6cd",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_tungsten_ore/3.res",
+   "metallic": 0,
+   "pos": [
+    -0.0132,
+    0.9051,
+    -0.0525
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffe6cd",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_tungsten_ore/4.res",
+   "metallic": 0,
+   "pos": [
+    -0.0944,
+    0.9051,
+    -0.016
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffe6cd",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_tungsten_ore/5.res",
+   "metallic": 0,
+   "pos": [
+    0.5084,
+    0.6375,
+    0.2299
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ffe6cd",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_tungsten_ore/6.res",
+   "metallic": 0,
+   "pos": [
+    0.414,
+    0.6375,
+    0.2586
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

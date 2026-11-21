@@ -1,0 +1,151 @@
+{
+ "accent": "#ffa040",
+ "theme": {
+  "font_scale": 1.15,
+  "window_scale": 1.1,
+  "corners": "cut",
+  "radius": 10,
+  "panel_color": "#121822",
+  "panel_opacity": 0.95,
+  "button_color": "#232b38",
+  "frame": 1,
+  "frame_alpha": 0.45,
+  "header": "fill",
+  "header_text": "#1a1206",
+  "stripes": true,
+  "bold_titles": true,
+  "rich_tips": true
+ },
+ "panels": {
+  "corp": {
+   "name": "Корпорация",
+   "anchor": "tl",
+   "pos": [
+    16,
+    16
+   ],
+   "opacity": 0.82,
+   "visible": true,
+   "scale": 1.0
+  },
+  "storage": {
+   "name": "Склад штаба",
+   "anchor": "tl",
+   "pos": [
+    16,
+    210
+   ],
+   "opacity": 0.82,
+   "visible": true,
+   "scale": 1.0
+  },
+  "minimap": {
+   "name": "Миникарта",
+   "anchor": "tr",
+   "pos": [
+    16,
+    16
+   ],
+   "opacity": 0.82,
+   "visible": true,
+   "scale": 1.0
+  },
+  "quests": {
+   "name": "Задачи",
+   "anchor": "tr",
+   "pos": [
+    16,
+    232
+   ],
+   "opacity": 0.82,
+   "visible": true,
+   "scale": 1.0
+  },
+  "hotbar": {
+   "name": "Быстрые слоты",
+   "anchor": "bottom",
+   "pos": [
+    0,
+    14
+   ],
+   "opacity": 0.9,
+   "visible": true,
+   "scale": 1.0
+  },
+  "info": {
+   "name": "Подсказка о здании",
+   "anchor": "br",
+   "pos": [
+    16,
+    120
+   ],
+   "opacity": 0.85,
+   "visible": true,
+   "scale": 1.0
+  },
+  "wave": {
+   "name": "Таймер волны",
+   "anchor": "top",
+   "pos": [
+    0,
+    14
+   ],
+   "opacity": 1.0,
+   "visible": true,
+   "scale": 1.0
+  }
+ },
+ "windows": {
+  "stats": {
+   "title": "Статистика",
+   "key": "F6",
+   "anchor": "center",
+   "pos": [
+    0,
+    0
+   ],
+   "size": [
+    340,
+    0
+   ],
+   "opacity": 0.9,
+   "visible": false,
+   "elements": [
+    {
+     "type": "label",
+     "text": "Уровень: {level}   Очков навыков: {skill_points}"
+    },
+    {
+     "type": "bar",
+     "bind": "xp_frac",
+     "color": "#7fdcff",
+     "text": "Опыт"
+    },
+    {
+     "type": "label",
+     "text": "Кредиты: {credits}"
+    },
+    {
+     "type": "label",
+     "text": "Убито монстров: {kills}"
+    },
+    {
+     "type": "label",
+     "text": "Волн отбито: {waves}"
+    },
+    {
+     "type": "label",
+     "text": "Зданий: {buildings}"
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "button",
+     "text": "Открыть навыки",
+     "action": "skills"
+    }
+   ]
+  }
+ }
+}

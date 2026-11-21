@@ -1,0 +1,227 @@
+{
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/dep_oil/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.8,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/dep_oil/tex0.png"
+  },
+  {
+   "color": "#010101",
+   "mat": "paint",
+   "mesh": "res://models20/dep_oil/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.04,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#010103",
+   "mat": "paint",
+   "mesh": "res://models20/dep_oil/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.1,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "bob",
+   "color": "#000001",
+   "mat": "paint",
+   "mesh": "res://models20/dep_oil/3.res",
+   "metallic": 0,
+   "pos": [
+    -0.1224,
+    0.024,
+    -0.2378
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.05,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "bob",
+   "color": "#000001",
+   "mat": "paint",
+   "mesh": "res://models20/dep_oil/4.res",
+   "metallic": 0,
+   "pos": [
+    0.1284,
+    0.024,
+    -0.0185
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.05,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "bob",
+   "color": "#000001",
+   "mat": "paint",
+   "mesh": "res://models20/dep_oil/5.res",
+   "metallic": 0,
+   "pos": [
+    0.0014,
+    0.024,
+    0.0559
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.05,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "bob",
+   "color": "#000001",
+   "mat": "paint",
+   "mesh": "res://models20/dep_oil/6.res",
+   "metallic": 0,
+   "pos": [
+    -0.0382,
+    0.024,
+    -0.029
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.05,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "bob",
+   "color": "#000001",
+   "mat": "paint",
+   "mesh": "res://models20/dep_oil/7.res",
+   "metallic": 0,
+   "pos": [
+    0.0446,
+    0.024,
+    0.2582
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.05,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "bob",
+   "color": "#000001",
+   "mat": "paint",
+   "mesh": "res://models20/dep_oil/8.res",
+   "metallic": 0,
+   "pos": [
+    -0.1146,
+    0.024,
+    -0.1111
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.05,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

@@ -1,0 +1,383 @@
+{
+ "extra": {
+  "rig": {
+   "arms": [],
+   "body": "b_body",
+   "bones": [
+    {
+     "name": "b_body",
+     "parent": "",
+     "pivot": [
+      0,
+      0.6,
+      0
+     ]
+    },
+    {
+     "name": "b_head",
+     "parent": "b_body",
+     "pivot": [
+      0.3,
+      0.6,
+      0
+     ]
+    },
+    {
+     "name": "b_drill",
+     "parent": "b_head",
+     "pivot": [
+      0.7,
+      0.6,
+      0
+     ]
+    },
+    {
+     "name": "b_seg0",
+     "parent": "b_body",
+     "pivot": [
+      -0.26,
+      0.6,
+      0
+     ]
+    },
+    {
+     "name": "b_seg1",
+     "parent": "b_seg0",
+     "pivot": [
+      -0.74,
+      0.6,
+      0
+     ]
+    },
+    {
+     "name": "b_seg2",
+     "parent": "b_seg1",
+     "pivot": [
+      -1.22,
+      0.6,
+      0
+     ]
+    },
+    {
+     "name": "b_seg3",
+     "parent": "b_seg2",
+     "pivot": [
+      -1.7,
+      0.6,
+      0
+     ]
+    },
+    {
+     "name": "b_seg4",
+     "parent": "b_seg3",
+     "pivot": [
+      -2.18,
+      0.6,
+      0
+     ]
+    }
+   ],
+   "breath": [],
+   "chains": [
+    {
+     "amp": 14,
+     "axis": "y",
+     "bones": [
+      "b_seg0",
+      "b_seg1",
+      "b_seg2",
+      "b_seg3",
+      "b_seg4"
+     ],
+     "follow": true,
+     "lag": 0.7,
+     "speed": 4
+    }
+   ],
+   "gait": {
+    "bank": 6,
+    "bob": 0.03,
+    "duty": 0.6,
+    "knee": 30,
+    "lean": 2,
+    "lift": 20,
+    "roll": 3,
+    "stride": 2,
+    "swing": 25
+   },
+   "head": "b_head",
+   "jaws": [],
+   "legs": [],
+   "rotors": [
+    {
+     "axis": "x",
+     "bone": "b_drill",
+     "speed": 24
+    }
+   ]
+  }
+ },
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_driller/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.6,
+    0
+   ],
+   "role": "b_body",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_driller/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_driller/1.res",
+   "metallic": 0,
+   "pos": [
+    0.7,
+    0.6,
+    0
+   ],
+   "role": "b_drill",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_driller/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_driller/2.res",
+   "metallic": 0,
+   "pos": [
+    0.3,
+    0.6,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_driller/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_driller/3.res",
+   "metallic": 0,
+   "pos": [
+    -0.26,
+    0.6,
+    0
+   ],
+   "role": "b_seg0",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_driller/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_driller/4.res",
+   "metallic": 0,
+   "pos": [
+    -0.74,
+    0.6,
+    0
+   ],
+   "role": "b_seg1",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_driller/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_driller/5.res",
+   "metallic": 0,
+   "pos": [
+    -1.22,
+    0.6,
+    0
+   ],
+   "role": "b_seg2",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_driller/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_driller/6.res",
+   "metallic": 0,
+   "pos": [
+    -1.7,
+    0.6,
+    0
+   ],
+   "role": "b_seg3",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_driller/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/mech_driller/7.res",
+   "metallic": 0,
+   "pos": [
+    -2.18,
+    0.6,
+    0
+   ],
+   "role": "b_seg4",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/mech_driller/tex0.png"
+  },
+  {
+   "anim": "pulse",
+   "color": "#ff8013",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/mech_driller/8.res",
+   "metallic": 0,
+   "pos": [
+    0.3,
+    0.6,
+    0
+   ],
+   "role": "b_head",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#ff8013",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/mech_driller/9.res",
+   "metallic": 0,
+   "pos": [
+    -0.05,
+    1.3,
+    -0.15
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

@@ -1,0 +1,665 @@
+{
+ "extra": {
+  "emitters": [
+   {
+    "kind": "spark",
+    "pos": [
+     -0.72,
+     0.8,
+     0.75
+    ],
+    "rate": 0.8,
+    "size": 0.6,
+    "when": "active"
+   },
+   {
+    "kind": "puff",
+    "pos": [
+     0,
+     1.7,
+     -0.2
+    ],
+    "rate": 0.25,
+    "size": 0.8,
+    "when": "active"
+   }
+  ]
+ },
+ "parts": [
+  {
+   "anim": "flicker",
+   "color": "#e68dff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/exotic_forge/0.res",
+   "metallic": 0,
+   "pos": [
+    -0.72,
+    0.745,
+    0.75
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/exotic_forge/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.09,
+    0
+   ],
+   "rot": [
+    0,
+    30,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/exotic_forge/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/exotic_forge/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.09,
+    0
+   ],
+   "rot": [
+    0,
+    30,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/exotic_forge/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/exotic_forge/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.09,
+    0
+   ],
+   "rot": [
+    0,
+    30,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/exotic_forge/tex0.png"
+  },
+  {
+   "color": "#cd59ff",
+   "emission": 5,
+   "mat": "glow",
+   "mesh": "res://models20/exotic_forge/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.09,
+    0
+   ],
+   "rot": [
+    0,
+    30,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#010101",
+   "mat": "paint",
+   "mesh": "res://models20/exotic_forge/5.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.09,
+    0
+   ],
+   "rot": [
+    0,
+    30,
+    0
+   ],
+   "roughness": 0.9,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#a74bff",
+   "emission": 2.5,
+   "mat": "glow",
+   "mesh": "res://models20/exotic_forge/6.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.09,
+    0
+   ],
+   "rot": [
+    0,
+    30,
+    0
+   ],
+   "roughness": 0.12,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#09090d",
+   "mat": "paint",
+   "mesh": "res://models20/exotic_forge/7.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.09,
+    0
+   ],
+   "rot": [
+    0,
+    30,
+    0
+   ],
+   "roughness": 0.85,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/exotic_forge/8.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.09,
+    0
+   ],
+   "rot": [
+    0,
+    30,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/exotic_forge/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/exotic_forge/9.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.09,
+    0
+   ],
+   "rot": [
+    0,
+    30,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/exotic_forge/tex0.png"
+  },
+  {
+   "color": "#ff3021",
+   "emission": 2,
+   "mat": "glow",
+   "mesh": "res://models20/exotic_forge/10.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.09,
+    0
+   ],
+   "rot": [
+    0,
+    30,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#4bff66",
+   "emission": 2,
+   "mat": "glow",
+   "mesh": "res://models20/exotic_forge/11.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.09,
+    0
+   ],
+   "rot": [
+    0,
+    30,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffc130",
+   "emission": 2,
+   "mat": "glow",
+   "mesh": "res://models20/exotic_forge/12.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.09,
+    0
+   ],
+   "rot": [
+    0,
+    30,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/exotic_forge/13.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.09,
+    0
+   ],
+   "rot": [
+    0,
+    30,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/exotic_forge/tex0.png"
+  },
+  {
+   "anim": "flicker",
+   "color": "#cd59ff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/exotic_forge/14.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.75,
+    0.59
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "flicker_001",
+   "color": "#cd59ff",
+   "emission": 5,
+   "mat": "glow",
+   "mesh": "res://models20/exotic_forge/15.res",
+   "metallic": 0,
+   "pos": [
+    0.79,
+    0.75,
+    -0.2
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "piston_small",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/exotic_forge/16.res",
+   "metallic": 0,
+   "pos": [
+    -0.72,
+    1.6,
+    0.75
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/exotic_forge/tex0.png"
+  },
+  {
+   "anim": "piston_small",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/exotic_forge/17.res",
+   "metallic": 0,
+   "pos": [
+    -0.72,
+    1.6,
+    0.75
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/exotic_forge/tex0.png"
+  },
+  {
+   "anim": "blink",
+   "color": "#cd59ff",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/exotic_forge/18.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.15,
+    0.67
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "pulse",
+   "color": "#cd66ff",
+   "emission": 3.5,
+   "mat": "glow",
+   "mesh": "res://models20/exotic_forge/19.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.15,
+    -0.2
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "flicker",
+   "color": "#da73ff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/exotic_forge/20.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    1.55,
+    -0.2
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin",
+   "color": "#cd59ff",
+   "emission": 5,
+   "mat": "glow",
+   "mesh": "res://models20/exotic_forge/21.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.15,
+    -0.2
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/exotic_forge/22.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.15,
+    -0.2
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/exotic_forge/tex0.png"
+  },
+  {
+   "anim": "spin_slow",
+   "color": "#cd59ff",
+   "emission": 5,
+   "mat": "glow",
+   "mesh": "res://models20/exotic_forge/23.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    2.15,
+    -0.2
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "flicker_soft",
+   "color": "#cd73ff",
+   "emission": 2.5,
+   "mat": "glow",
+   "mesh": "res://models20/exotic_forge/24.res",
+   "metallic": 0,
+   "pos": [
+    1.1186,
+    1.01,
+    0.8012
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

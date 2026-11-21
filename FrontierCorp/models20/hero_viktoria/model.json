@@ -1,0 +1,152 @@
+{
+ "extra": {
+  "bones": {
+   "arm_l": [
+    -0.0112,
+    0.2423,
+    0.1281
+   ],
+   "arm_r": [
+    -0.0112,
+    0.2423,
+    -0.1281
+   ],
+   "fore_l": [
+    0,
+    -0.2029,
+    0.0609
+   ],
+   "fore_r": [
+    0,
+    -0.2029,
+    -0.0609
+   ],
+   "gun": [
+    0,
+    -0.07,
+    0
+   ],
+   "hand_r": [
+    0,
+    -0.1798,
+    -0.0539
+   ],
+   "head": [
+    0,
+    0.2853,
+    0
+   ],
+   "hips": [
+    0,
+    0.9496,
+    0
+   ],
+   "leg_l": [
+    0.0064,
+    -0.05,
+    0.0772
+   ],
+   "leg_r": [
+    0.0064,
+    -0.05,
+    -0.0772
+   ],
+   "muzzle": [
+    0.058,
+    -0.125,
+    0
+   ],
+   "shin_l": [
+    0.0249,
+    -0.3836,
+    -0.0105
+   ],
+   "shin_r": [
+    0.0249,
+    -0.3836,
+    0.0105
+   ],
+   "torso": [
+    0,
+    0.07,
+    0
+   ]
+  },
+  "category": "Герои",
+  "gun_pitch": 0,
+  "look_order": 6,
+  "name": "Виктория",
+  "prof_tint": 0,
+  "scale": 1.25,
+  "skin": {
+   "bones": [
+    "hips",
+    "leg_l",
+    "leg_r",
+    "shin_l",
+    "shin_r",
+    "torso",
+    "head",
+    "arm_l",
+    "arm_r",
+    "fore_l",
+    "fore_r",
+    "hand_r"
+   ],
+   "mat": {
+    "color": "#ffffff",
+    "mat": "paint",
+    "mesh": "res://models20/hero_viktoria/skin.res",
+    "metallic": 0,
+    "pos": [
+     0,
+     0,
+     0
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ],
+    "roughness": 0.55,
+    "shape": "mesh",
+    "size": [
+     1,
+     1,
+     1
+    ],
+    "surface": "none",
+    "texture": "res://models20/hero_viktoria/tex0.png"
+   },
+   "mesh": "res://models20/hero_viktoria/skin.res"
+  }
+ },
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/hero_lady/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "role": "gun",
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/hero_lady/tex0.png"
+  }
+ ]
+}

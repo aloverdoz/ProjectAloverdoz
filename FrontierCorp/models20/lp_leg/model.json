@@ -1,0 +1,134 @@
+{
+ "parts": [
+  {
+   "anim": "legs",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_leg/0.res",
+   "metallic": 0,
+   "pos": [
+    0.055,
+    0.69,
+    -0.3
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_leg/tex0.png"
+  },
+  {
+   "anim": "legs",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_leg/1.res",
+   "metallic": 0,
+   "pos": [
+    0.055,
+    0.69,
+    -0.3
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_leg/tex0.png"
+  },
+  {
+   "anim": "legs",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_leg/2.res",
+   "metallic": 0,
+   "pos": [
+    0.185,
+    0.28,
+    -0.3
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_leg/tex0.png"
+  },
+  {
+   "anim": "legs",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_leg/3.res",
+   "metallic": 0,
+   "pos": [
+    0.185,
+    0.28,
+    -0.3
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_leg/tex0.png"
+  },
+  {
+   "anim": "legs",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_leg/4.res",
+   "metallic": 0,
+   "pos": [
+    0.185,
+    0.28,
+    -0.3
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_leg/tex0.png"
+  }
+ ]
+}

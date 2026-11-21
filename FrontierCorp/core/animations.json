@@ -1,0 +1,220 @@
+{
+ "spin": {
+  "name": "Вращение",
+  "type": "spin",
+  "speed": 5.0,
+  "amount": 1.0,
+  "always": false
+ },
+ "spin_fast": {
+  "name": "Быстрое вращение",
+  "type": "spin",
+  "speed": 10.0,
+  "amount": 1.0,
+  "always": false
+ },
+ "spin_slow": {
+  "name": "Медленное вращение",
+  "type": "spin",
+  "speed": 1.2,
+  "amount": 1.0,
+  "always": true
+ },
+ "pulse": {
+  "name": "Пульсация свечения",
+  "type": "pulse",
+  "speed": 3.0,
+  "amount": 1.0,
+  "always": true
+ },
+ "blink": {
+  "name": "Мигание",
+  "type": "pulse",
+  "speed": 9.0,
+  "amount": 1.0,
+  "always": true
+ },
+ "flicker": {
+  "name": "Огонь",
+  "type": "flicker",
+  "speed": 12.0,
+  "amount": 1.0,
+  "always": true
+ },
+ "flicker_soft": {
+  "name": "Мерцание лампы",
+  "type": "flicker",
+  "speed": 4.0,
+  "amount": 0.35,
+  "always": true
+ },
+ "sway": {
+  "name": "Ветер",
+  "type": "sway",
+  "speed": 1.2,
+  "amount": 0.05,
+  "always": true
+ },
+ "wave": {
+  "name": "Флаг на ветру",
+  "type": "wave",
+  "speed": 4.0,
+  "amount": 0.12,
+  "always": true
+ },
+ "bob": {
+  "name": "Покачивание",
+  "type": "bob",
+  "speed": 7.0,
+  "amount": 0.08,
+  "always": false
+ },
+ "legs": {
+  "name": "Ноги жука",
+  "type": "legs",
+  "speed": 16.0,
+  "amount": 0.18,
+  "always": false
+ },
+ "breathe": {
+  "name": "Дыхание",
+  "type": "breathe",
+  "speed": 2.0,
+  "amount": 0.05,
+  "always": true
+ },
+ "swing": {
+  "name": "Маятник",
+  "type": "swing",
+  "speed": 2.0,
+  "amount": 0.4,
+  "always": true
+ },
+ "hover": {
+  "name": "Парение",
+  "type": "bob",
+  "speed": 2.0,
+  "amount": 0.15,
+  "always": true
+ },
+ "spin_drop": {
+  "name": "Вращение предмета",
+  "type": "spin",
+  "speed": 2.5,
+  "amount": 1.0,
+  "always": true
+ },
+ "jitter": {
+  "name": "Тряска",
+  "type": "jitter",
+  "speed": 30.0,
+  "amount": 0.03,
+  "always": false
+ },
+ "spin_wind": {
+  "name": "Лопасти ветряка",
+  "type": "spin",
+  "speed": 2.2,
+  "amount": 1.0,
+  "always": false
+ },
+ "gear_slow": {
+  "name": "Шестерня (большая)",
+  "type": "spin",
+  "speed": 2.0,
+  "amount": 1.0,
+  "always": false
+ },
+ "gear_fast": {
+  "name": "Шестерня (малая)",
+  "type": "spin",
+  "speed": 4.0,
+  "amount": 1.0,
+  "always": false
+ },
+ "spin_fan": {
+  "name": "Вентилятор",
+  "type": "spin",
+  "speed": 14.0,
+  "amount": 1.0,
+  "always": false
+ },
+ "piston_small": {
+  "name": "Поршень гидроцилиндра",
+  "type": "bob",
+  "speed": 3.0,
+  "amount": 0.18,
+  "always": false
+ },
+ "piston": {
+  "name": "Поршень",
+  "type": "bob",
+  "speed": 4.0,
+  "amount": 1.6
+ },
+ "sway_grass": {
+  "name": "Трава на ветру",
+  "type": "sway",
+  "speed": 2.2,
+  "amount": 0.3,
+  "always": true
+ },
+ "sway_bush": {
+  "name": "Куст на ветру",
+  "type": "sway",
+  "speed": 1.6,
+  "amount": 0.12,
+  "always": true
+ },
+ "pump_nod": {
+  "name": "Балансир качалки",
+  "type": "swing",
+  "speed": 2.2,
+  "amount": 0.28,
+  "always": false
+ },
+ "pump_rod": {
+  "name": "Шток качалки",
+  "type": "bob",
+  "speed": 2.2,
+  "amount": 0.32,
+  "always": false
+ },
+ "crank": {
+  "name": "Кривошип",
+  "type": "spin",
+  "speed": 2.2,
+  "amount": 1.0,
+  "always": false
+ },
+ "step_a": {
+  "name": "Шаг (первая нога)",
+  "type": "step",
+  "speed": 11.0,
+  "amount": 0.45,
+  "always": false,
+  "phase": 0.0
+ },
+ "step_b": {
+  "name": "Шаг (вторая нога)",
+  "type": "step",
+  "speed": 11.0,
+  "amount": 0.45,
+  "always": false,
+  "phase": 0.5
+ },
+ "jaw": {
+  "name": "Челюсть",
+  "type": "swing",
+  "speed": 6.0,
+  "amount": 0.25,
+  "always": true
+ },
+ "tail": {
+  "name": "Хвост",
+  "type": "sway",
+  "speed": 3.0,
+  "amount": 0.25,
+  "always": true
+ }
+}

@@ -1,0 +1,207 @@
+{
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_body_bug/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.55,
+    0.68
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_body_bug/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_body_bug/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.55,
+    0.68
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_body_bug/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_body_bug/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.55,
+    0.68
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_body_bug/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_body_bug/3.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.55,
+    0.68
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_body_bug/tex0.png"
+  },
+  {
+   "color": "#ff3813",
+   "emission": 4,
+   "mat": "glow",
+   "mesh": "res://models20/lp_body_bug/4.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.55,
+    0.68
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "breathe",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_body_bug/5.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.5,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_body_bug/tex0.png"
+  },
+  {
+   "anim": "breathe",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/lp_body_bug/6.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.5,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/lp_body_bug/tex0.png"
+  },
+  {
+   "anim": "breathe",
+   "color": "#da59ff",
+   "emission": 2.5,
+   "mat": "glow",
+   "mesh": "res://models20/lp_body_bug/7.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.5,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

@@ -1,0 +1,180 @@
+; Engine configuration file.
+config_version=5
+
+[application]
+
+config/name="Frontier Corp"
+config/description="Демо: строй завод, отбивайся от монстров, торгуй со станцией."
+run/main_scene="res://scenes/menu.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
+config/icon="res://icon.svg"
+config/windows_native_icon="res://game.ico"
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/show_image=true
+boot_splash/image="res://ui/splash.png"
+boot_splash/fullsize=true
+boot_splash/use_filter=true
+config/use_custom_user_dir.steam=true
+config/custom_user_dir_name.steam="FrontierCorp"
+run/flush_stdout_on_print.server=true
+
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=900
+window/vsync/vsync_mode=1
+
+[physics]
+
+common/physics_ticks_per_second=60
+
+[rendering]
+
+anti_aliasing/quality/msaa_3d=2
+anti_aliasing/quality/screen_space_aa=1
+lights_and_shadows/directional_shadow/size=4096
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=3
+environment/defaults/default_clear_color=Color(0.55, 0.7, 0.85, 1)
+
+[debug]
+
+gdscript/warnings/inference_on_variant=0
+gdscript/warnings/integer_division=0
+gdscript/warnings/narrowing_conversion=0
+gdscript/warnings/shadowed_variable=0
+gdscript/warnings/shadowed_global_identifier=0
+gdscript/warnings/unused_parameter=0
+
+[shader_globals]
+
+zone_sdf={
+"type": "sampler2D",
+"value": ""
+}
+zone_sdf_box={
+"type": "vec4",
+"value": Vector4(0, 0, 0, 0)
+}
+zone_lq={
+"type": "float",
+"value": 0.0
+}
+zone_rects={
+"type": "sampler2D",
+"value": ""
+}
+zone_nrect={
+"type": "float",
+"value": 0.0
+}
+zone_on={
+"type": "float",
+"value": 0.0
+}
+zone_center={
+"type": "vec2",
+"value": Vector2(0, 0)
+}
+zone_half={
+"type": "float",
+"value": 40.0
+}
+zone_corner={
+"type": "float",
+"value": 0.35
+}
+zone_wobble={
+"type": "float",
+"value": 4.0
+}
+zone_seed={
+"type": "vec3",
+"value": Vector3(0, 0, 0)
+}
+zone_world={
+"type": "float",
+"value": 0.0
+}
+zone_cam={
+"type": "vec3",
+"value": Vector3(0, 0, 0)
+}
+zone_soft={
+"type": "float",
+"value": 5.0
+}
+zone_flash={
+"type": "float",
+"value": 0.0
+}
+zone_flash_pos={
+"type": "vec3",
+"value": Vector3(0, 0, 0)
+}
+zone_speed={
+"type": "float",
+"value": 1.0
+}
+zone_flicker={
+"type": "float",
+"value": 1.0
+}
+zone_dark={
+"type": "color",
+"value": Color(0.06, 0.06, 0.09, 1)
+}
+zone_cloud={
+"type": "color",
+"value": Color(0.35, 0.33, 0.47, 1)
+}
+zone_flash_col={
+"type": "color",
+"value": Color(0.66, 0.75, 1, 1)
+}
+
+detail_dist={
+"type": "float",
+"value": 90.0
+}
+autumn={
+"type": "float",
+"value": 0.0
+}
+
+view_pos={
+"type": "vec3",
+"value": Vector3(0, 0, 0)
+}
+view_dir={
+"type": "vec3",
+"value": Vector3(1, 0, 0)
+}
+view_cos={
+"type": "float",
+"value": 0.5
+}
+view_range={
+"type": "float",
+"value": 60.0
+}
+view_near={
+"type": "float",
+"value": 7.0
+}
+view_on={
+"type": "float",
+"value": 0.0
+}
+
+[autoload]
+
+DB="*res://scripts/db.gd"
+Prefs="*res://scripts/prefs.gd"
+Lang="*res://scripts/lang.gd"
+Icons="*res://scripts/ui/icons.gd"
+Net="*res://scripts/net.gd"
+SteamBridge="*res://scripts/steam.gd"
+Pad="*res://scripts/pad.gd"
+
+[editor_plugins]
+enabled=PackedStringArray("res://addons/colony_art/plugin.cfg")

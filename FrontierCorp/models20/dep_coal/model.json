@@ -1,0 +1,181 @@
+{
+ "extra": {
+  "emitters": [
+   {
+    "kind": "puff",
+    "pos": [
+     0.08,
+     0.24,
+     0.24
+    ],
+    "rate": 0.4,
+    "size": 0.5
+   },
+   {
+    "kind": "puff",
+    "pos": [
+     0.196,
+     0.664,
+     0.143
+    ],
+    "rate": 0.4,
+    "size": 0.5
+   }
+  ]
+ },
+ "parts": [
+  {
+   "color": "#0d0d10",
+   "mat": "paint",
+   "mesh": "res://models20/dep_coal/0.res",
+   "metallic": 0.3,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.15,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/dep_coal/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.8,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/dep_coal/tex0.png"
+  },
+  {
+   "anim": "blink",
+   "color": "#e6f3ff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_coal/2.res",
+   "metallic": 0,
+   "pos": [
+    0.1944,
+    0.206,
+    0.0695
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#e6f3ff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_coal/3.res",
+   "metallic": 0,
+   "pos": [
+    0.1408,
+    0.2097,
+    0.549
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#e6f3ff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_coal/4.res",
+   "metallic": 0,
+   "pos": [
+    0.4207,
+    0.2279,
+    0.5733
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#e6f3ff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_coal/5.res",
+   "metallic": 0,
+   "pos": [
+    0.3007,
+    0.2385,
+    0.169
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

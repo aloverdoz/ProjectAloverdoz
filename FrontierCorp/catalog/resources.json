@@ -1,0 +1,9120 @@
+{
+"alien_bubble_tree": {
+"blocks": true,
+"catalog": "Инопланетные деревья",
+"category": "Инопланетные деревья",
+"drops": [
+{
+"chance": 1.0,
+"item": "alien_fruit",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.2,
+"item": "alien_fruit",
+"max": 1,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 120,
+"low": false,
+"model": "cn_alien_bubble_tree",
+"name": "Пузырчатое дерево",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "axe",
+"xp": 3
+},
+"alien_bulb_cyan": {
+"blocks": false,
+"catalog": "Инопланетная флора",
+"category": "Инопланетная флора",
+"drops": [
+{
+"chance": 0.6,
+"item": "alien_fruit",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 8,
+"low": false,
+"model": "cn_alien_bulb_cyan",
+"name": "Светолуковица (голубой)",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"alien_bulb_lime": {
+"blocks": false,
+"catalog": "Инопланетная флора",
+"category": "Инопланетная флора",
+"drops": [
+{
+"chance": 0.6,
+"item": "alien_fruit",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 8,
+"low": false,
+"model": "cn_alien_bulb_lime",
+"name": "Светолуковица (лаймовый)",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"alien_bulb_violet": {
+"blocks": false,
+"catalog": "Инопланетная флора",
+"category": "Инопланетная флора",
+"drops": [
+{
+"chance": 0.6,
+"item": "alien_fruit",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 8,
+"low": false,
+"model": "cn_alien_bulb_violet",
+"name": "Светолуковица (фиолетовый)",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"alien_crystal_flower_cyan": {
+"blocks": false,
+"catalog": "Инопланетная флора",
+"category": "Инопланетная флора",
+"drops": [
+{
+"chance": 0.6,
+"item": "crystal",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 8,
+"low": false,
+"model": "cn_alien_crystal_flower_cyan",
+"name": "Кристальный цветок (голубой)",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"alien_crystal_flower_lime": {
+"blocks": false,
+"catalog": "Инопланетная флора",
+"category": "Инопланетная флора",
+"drops": [
+{
+"chance": 0.6,
+"item": "crystal",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 8,
+"low": false,
+"model": "cn_alien_crystal_flower_lime",
+"name": "Кристальный цветок (лаймовый)",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"alien_crystal_flower_violet": {
+"blocks": false,
+"catalog": "Инопланетная флора",
+"category": "Инопланетная флора",
+"drops": [
+{
+"chance": 0.6,
+"item": "crystal",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 8,
+"low": false,
+"model": "cn_alien_crystal_flower_violet",
+"name": "Кристальный цветок (фиолетовый)",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"alien_crystal_tree_blue": {
+"blocks": true,
+"catalog": "Инопланетные деревья",
+"category": "Инопланетные деревья",
+"drops": [
+{
+"chance": 1.0,
+"item": "crystal",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "quartz",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.2,
+"item": "crystal",
+"max": 1,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 120,
+"low": false,
+"model": "cn_alien_crystal_tree_blue",
+"name": "Кристаллическое дерево (синее)",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 3
+},
+"alien_crystal_tree_pink": {
+"blocks": true,
+"catalog": "Инопланетные деревья",
+"category": "Инопланетные деревья",
+"drops": [
+{
+"chance": 1.0,
+"item": "crystal",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "quartz",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.2,
+"item": "crystal",
+"max": 1,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 120,
+"low": false,
+"model": "cn_alien_crystal_tree_pink",
+"name": "Кристаллическое дерево (розовое)",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 3
+},
+"alien_eye_cyan": {
+"blocks": false,
+"catalog": "Инопланетная флора",
+"category": "Инопланетная флора",
+"drops": [
+{
+"chance": 0.6,
+"item": "monster_eye",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 8,
+"low": false,
+"model": "cn_alien_eye_cyan",
+"name": "Глаз-цветок (голубой)",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"alien_eye_lime": {
+"blocks": false,
+"catalog": "Инопланетная флора",
+"category": "Инопланетная флора",
+"drops": [
+{
+"chance": 0.6,
+"item": "monster_eye",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 8,
+"low": false,
+"model": "cn_alien_eye_lime",
+"name": "Глаз-цветок (лаймовый)",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"alien_eye_violet": {
+"blocks": false,
+"catalog": "Инопланетная флора",
+"category": "Инопланетная флора",
+"drops": [
+{
+"chance": 0.6,
+"item": "monster_eye",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 8,
+"low": false,
+"model": "cn_alien_eye_violet",
+"name": "Глаз-цветок (фиолетовый)",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"alien_fan_cyan": {
+"blocks": false,
+"catalog": "Инопланетная флора",
+"category": "Инопланетная флора",
+"drops": [
+{
+"chance": 0.6,
+"item": "fiber",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 8,
+"low": false,
+"model": "cn_alien_fan_cyan",
+"name": "Веер-растение (голубой)",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"alien_fan_lime": {
+"blocks": false,
+"catalog": "Инопланетная флора",
+"category": "Инопланетная флора",
+"drops": [
+{
+"chance": 0.6,
+"item": "fiber",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 8,
+"low": false,
+"model": "cn_alien_fan_lime",
+"name": "Веер-растение (лаймовый)",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"alien_fan_violet": {
+"blocks": false,
+"catalog": "Инопланетная флора",
+"category": "Инопланетная флора",
+"drops": [
+{
+"chance": 0.6,
+"item": "fiber",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 8,
+"low": false,
+"model": "cn_alien_fan_violet",
+"name": "Веер-растение (фиолетовый)",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"alien_pitcher_cyan": {
+"blocks": false,
+"catalog": "Инопланетная флора",
+"category": "Инопланетная флора",
+"drops": [
+{
+"chance": 0.6,
+"item": "acid_sac",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 8,
+"low": false,
+"model": "cn_alien_pitcher_cyan",
+"name": "Кувшинник-хищник (голубой)",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"alien_pitcher_lime": {
+"blocks": false,
+"catalog": "Инопланетная флора",
+"category": "Инопланетная флора",
+"drops": [
+{
+"chance": 0.6,
+"item": "acid_sac",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 8,
+"low": false,
+"model": "cn_alien_pitcher_lime",
+"name": "Кувшинник-хищник (лаймовый)",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"alien_pitcher_violet": {
+"blocks": false,
+"catalog": "Инопланетная флора",
+"category": "Инопланетная флора",
+"drops": [
+{
+"chance": 0.6,
+"item": "acid_sac",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 8,
+"low": false,
+"model": "cn_alien_pitcher_violet",
+"name": "Кувшинник-хищник (фиолетовый)",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"alien_pod_cyan": {
+"blocks": false,
+"catalog": "Инопланетная флора",
+"category": "Инопланетная флора",
+"drops": [
+{
+"chance": 0.6,
+"item": "biomass",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 8,
+"low": false,
+"model": "cn_alien_pod_cyan",
+"name": "Споровик (голубой)",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"alien_pod_lime": {
+"blocks": false,
+"catalog": "Инопланетная флора",
+"category": "Инопланетная флора",
+"drops": [
+{
+"chance": 0.6,
+"item": "biomass",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 8,
+"low": false,
+"model": "cn_alien_pod_lime",
+"name": "Споровик (лаймовый)",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"alien_pod_violet": {
+"blocks": false,
+"catalog": "Инопланетная флора",
+"category": "Инопланетная флора",
+"drops": [
+{
+"chance": 0.6,
+"item": "biomass",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 8,
+"low": false,
+"model": "cn_alien_pod_violet",
+"name": "Споровик (фиолетовый)",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"alien_shroom_brown": {
+"blocks": true,
+"catalog": "Инопланетные деревья",
+"category": "Инопланетные деревья",
+"drops": [
+{
+"chance": 1.0,
+"item": "porcini",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.2,
+"item": "porcini",
+"max": 1,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 120,
+"low": false,
+"model": "cn_alien_shroom_brown",
+"name": "Гриб-великан (бурый)",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "axe",
+"xp": 3
+},
+"alien_shroom_glow": {
+"blocks": true,
+"catalog": "Инопланетные деревья",
+"category": "Инопланетные деревья",
+"drops": [
+{
+"chance": 1.0,
+"item": "glow_berry",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.2,
+"item": "glow_berry",
+"max": 1,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 120,
+"low": false,
+"model": "cn_alien_shroom_glow",
+"name": "Светящийся гриб-дерево",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "axe",
+"xp": 3
+},
+"alien_shroom_red": {
+"blocks": true,
+"catalog": "Инопланетные деревья",
+"category": "Инопланетные деревья",
+"drops": [
+{
+"chance": 1.0,
+"item": "mushroom",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.2,
+"item": "mushroom",
+"max": 1,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 120,
+"low": false,
+"model": "cn_alien_shroom_red",
+"name": "Гриб-великан (красный)",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "axe",
+"xp": 3
+},
+"alien_shroom_violet": {
+"blocks": true,
+"catalog": "Инопланетные деревья",
+"category": "Инопланетные деревья",
+"drops": [
+{
+"chance": 1.0,
+"item": "alien_fruit",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.2,
+"item": "alien_fruit",
+"max": 1,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 120,
+"low": false,
+"model": "cn_alien_shroom_violet",
+"name": "Фиолетовый гриб-дерево",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "axe",
+"xp": 3
+},
+"alien_spiral_tree": {
+"blocks": true,
+"catalog": "Инопланетные деревья",
+"category": "Инопланетные деревья",
+"drops": [
+{
+"chance": 1.0,
+"item": "alien_tissue",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.2,
+"item": "alien_tissue",
+"max": 1,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 120,
+"low": false,
+"model": "cn_alien_spiral_tree",
+"name": "Спиральное дерево",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "axe",
+"xp": 3
+},
+"alien_spiral_tree_gold": {
+"blocks": true,
+"catalog": "Инопланетные деревья",
+"category": "Инопланетные деревья",
+"drops": [
+{
+"chance": 1.0,
+"item": "alien_fruit",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.2,
+"item": "alien_fruit",
+"max": 1,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 120,
+"low": false,
+"model": "cn_alien_spiral_tree_gold",
+"name": "Золотое спиральное дерево",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "axe",
+"xp": 3
+},
+"alien_spore_cyan": {
+"blocks": false,
+"catalog": "Инопланетная флора",
+"category": "Инопланетная флора",
+"drops": [
+{
+"chance": 0.6,
+"item": "alien_tissue",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 8,
+"low": false,
+"model": "cn_alien_spore_cyan",
+"name": "Шар спор (голубой)",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"alien_spore_lime": {
+"blocks": false,
+"catalog": "Инопланетная флора",
+"category": "Инопланетная флора",
+"drops": [
+{
+"chance": 0.6,
+"item": "alien_tissue",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 8,
+"low": false,
+"model": "cn_alien_spore_lime",
+"name": "Шар спор (лаймовый)",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"alien_spore_violet": {
+"blocks": false,
+"catalog": "Инопланетная флора",
+"category": "Инопланетная флора",
+"drops": [
+{
+"chance": 0.6,
+"item": "alien_tissue",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 8,
+"low": false,
+"model": "cn_alien_spore_violet",
+"name": "Шар спор (фиолетовый)",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"alien_tendril_cyan": {
+"blocks": false,
+"catalog": "Инопланетная флора",
+"category": "Инопланетная флора",
+"drops": [
+{
+"chance": 0.6,
+"item": "alien_tissue",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 8,
+"low": false,
+"model": "cn_alien_tendril_cyan",
+"name": "Усики (голубой)",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"alien_tendril_lime": {
+"blocks": false,
+"catalog": "Инопланетная флора",
+"category": "Инопланетная флора",
+"drops": [
+{
+"chance": 0.6,
+"item": "alien_tissue",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 8,
+"low": false,
+"model": "cn_alien_tendril_lime",
+"name": "Усики (лаймовый)",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"alien_tendril_violet": {
+"blocks": false,
+"catalog": "Инопланетная флора",
+"category": "Инопланетная флора",
+"drops": [
+{
+"chance": 0.6,
+"item": "alien_tissue",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 8,
+"low": false,
+"model": "cn_alien_tendril_violet",
+"name": "Усики (фиолетовый)",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"alien_tentacle_tree": {
+"blocks": true,
+"catalog": "Инопланетные деревья",
+"category": "Инопланетные деревья",
+"drops": [
+{
+"chance": 1.0,
+"item": "alien_tissue",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.2,
+"item": "alien_tissue",
+"max": 1,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 120,
+"low": false,
+"model": "cn_alien_tentacle_tree",
+"name": "Щупальцевое дерево",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "axe",
+"xp": 3
+},
+"boulder_basalt": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 10,
+"min": 6,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "geode",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 120,
+"low": false,
+"model": "cn_boulder_basalt",
+"name": "Валун: базальт",
+"respawn": 0,
+"scale": [
+0.9,
+1.3
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"boulder_chalk": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "lime",
+"max": 10,
+"min": 6,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "geode",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 120,
+"low": false,
+"model": "cn_boulder_chalk",
+"name": "Валун: мел",
+"respawn": 0,
+"scale": [
+0.9,
+1.3
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"boulder_clay_rock": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "clay",
+"max": 10,
+"min": 6,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "geode",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 120,
+"low": false,
+"model": "cn_boulder_clay_rock",
+"name": "Валун: глиняный холм",
+"respawn": 0,
+"scale": [
+0.9,
+1.3
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"boulder_granite": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 10,
+"min": 6,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "geode",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 120,
+"low": false,
+"model": "cn_boulder_granite",
+"name": "Валун: гранит",
+"respawn": 0,
+"scale": [
+0.9,
+1.3
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"boulder_limestone": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "lime",
+"max": 10,
+"min": 6,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "geode",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 120,
+"low": false,
+"model": "cn_boulder_limestone",
+"name": "Валун: известняк",
+"respawn": 0,
+"scale": [
+0.9,
+1.3
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"boulder_marble": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 10,
+"min": 6,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "geode",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 120,
+"low": false,
+"model": "cn_boulder_marble",
+"name": "Валун: мрамор",
+"respawn": 0,
+"scale": [
+0.9,
+1.3
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"boulder_mossy": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 10,
+"min": 6,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "geode",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 120,
+"low": false,
+"model": "cn_boulder_mossy",
+"name": "Валун: камень во мху",
+"respawn": 0,
+"scale": [
+0.9,
+1.3
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"boulder_obsidian": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 10,
+"min": 6,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "geode",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 120,
+"low": false,
+"model": "cn_boulder_obsidian",
+"name": "Валун: обсидиан",
+"respawn": 0,
+"scale": [
+0.9,
+1.3
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"boulder_red_rock": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 10,
+"min": 6,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "geode",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 120,
+"low": false,
+"model": "cn_boulder_red_rock",
+"name": "Валун: красная скала",
+"respawn": 0,
+"scale": [
+0.9,
+1.3
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"boulder_sandstone": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 10,
+"min": 6,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "geode",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 120,
+"low": false,
+"model": "cn_boulder_sandstone",
+"name": "Валун: песчаник",
+"respawn": 0,
+"scale": [
+0.9,
+1.3
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"boulder_slate": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 10,
+"min": 6,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "geode",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 120,
+"low": false,
+"model": "cn_boulder_slate",
+"name": "Валун: сланец",
+"respawn": 0,
+"scale": [
+0.9,
+1.3
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"boulder_snowy": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 10,
+"min": 6,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "geode",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 120,
+"low": false,
+"model": "cn_boulder_snowy",
+"name": "Валун: камень в снегу",
+"respawn": 0,
+"scale": [
+0.9,
+1.3
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"bush_autumn_bush": {
+"blocks": false,
+"catalog": "Кусты",
+"category": "Кусты",
+"drops": [
+{
+"chance": 1.0,
+"item": "leaves",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 2,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "branch",
+"max": 2,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 12,
+"low": false,
+"model": "cn_bush_autumn_bush",
+"name": "Осенний куст",
+"respawn": 240,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"bush_azalea": {
+"blocks": false,
+"catalog": "Кусты",
+"category": "Кусты",
+"drops": [
+{
+"chance": 1.0,
+"item": "leaves",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 2,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "branch",
+"max": 2,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 12,
+"low": false,
+"model": "cn_bush_azalea",
+"name": "Азалия",
+"respawn": 240,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"bush_blueberry": {
+"blocks": false,
+"catalog": "Кусты",
+"category": "Кусты",
+"drops": [
+{
+"chance": 1.0,
+"item": "blueberries",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "leaves",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 10,
+"low": false,
+"model": "cn_bush_blueberry",
+"name": "Черничник",
+"respawn": 180,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"bush_boxwood": {
+"blocks": false,
+"catalog": "Кусты",
+"category": "Кусты",
+"drops": [
+{
+"chance": 1.0,
+"item": "leaves",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 2,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "branch",
+"max": 2,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 12,
+"low": false,
+"model": "cn_bush_boxwood",
+"name": "Самшит",
+"respawn": 240,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"bush_currant_black": {
+"blocks": false,
+"catalog": "Кусты",
+"category": "Кусты",
+"drops": [
+{
+"chance": 1.0,
+"item": "berry",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "leaves",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 10,
+"low": false,
+"model": "cn_bush_currant_black",
+"name": "Чёрная смородина",
+"respawn": 180,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"bush_currant_red": {
+"blocks": false,
+"catalog": "Кусты",
+"category": "Кусты",
+"drops": [
+{
+"chance": 1.0,
+"item": "berry",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "leaves",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 10,
+"low": false,
+"model": "cn_bush_currant_red",
+"name": "Красная смородина",
+"respawn": 180,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"bush_dry_bush": {
+"blocks": false,
+"catalog": "Кусты",
+"category": "Кусты",
+"drops": [
+{
+"chance": 1.0,
+"item": "leaves",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 2,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "branch",
+"max": 2,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 12,
+"low": false,
+"model": "cn_bush_dry_bush",
+"name": "Сухой куст",
+"respawn": 240,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"bush_forsythia": {
+"blocks": false,
+"catalog": "Кусты",
+"category": "Кусты",
+"drops": [
+{
+"chance": 1.0,
+"item": "leaves",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 2,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "branch",
+"max": 2,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 12,
+"low": false,
+"model": "cn_bush_forsythia",
+"name": "Форзиция",
+"respawn": 240,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"bush_glowberry": {
+"blocks": false,
+"catalog": "Кусты",
+"category": "Кусты",
+"drops": [
+{
+"chance": 1.0,
+"item": "glow_berry",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "leaves",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 10,
+"low": false,
+"model": "cn_bush_glowberry",
+"name": "Светоягодник",
+"respawn": 180,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"bush_gooseberry": {
+"blocks": false,
+"catalog": "Кусты",
+"category": "Кусты",
+"drops": [
+{
+"chance": 1.0,
+"item": "berry",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "leaves",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 10,
+"low": false,
+"model": "cn_bush_gooseberry",
+"name": "Крыжовник",
+"respawn": 180,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"bush_grape_vine": {
+"blocks": false,
+"catalog": "Кусты",
+"category": "Кусты",
+"drops": [
+{
+"chance": 1.0,
+"item": "grapes",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "leaves",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 10,
+"low": false,
+"model": "cn_bush_grape_vine",
+"name": "Дикий виноград",
+"respawn": 180,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"bush_hydrangea": {
+"blocks": false,
+"catalog": "Кусты",
+"category": "Кусты",
+"drops": [
+{
+"chance": 1.0,
+"item": "leaves",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 2,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "branch",
+"max": 2,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 12,
+"low": false,
+"model": "cn_bush_hydrangea",
+"name": "Гортензия",
+"respawn": 240,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"bush_jasmine": {
+"blocks": false,
+"catalog": "Кусты",
+"category": "Кусты",
+"drops": [
+{
+"chance": 1.0,
+"item": "leaves",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 2,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "branch",
+"max": 2,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 12,
+"low": false,
+"model": "cn_bush_jasmine",
+"name": "Жасмин",
+"respawn": 240,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"bush_juniper": {
+"blocks": false,
+"catalog": "Кусты",
+"category": "Кусты",
+"drops": [
+{
+"chance": 1.0,
+"item": "leaves",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 2,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "branch",
+"max": 2,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 12,
+"low": false,
+"model": "cn_bush_juniper",
+"name": "Можжевельник",
+"respawn": 240,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"bush_lilac": {
+"blocks": false,
+"catalog": "Кусты",
+"category": "Кусты",
+"drops": [
+{
+"chance": 1.0,
+"item": "leaves",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 2,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "branch",
+"max": 2,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 12,
+"low": false,
+"model": "cn_bush_lilac",
+"name": "Сирень",
+"respawn": 240,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"bush_raspberry": {
+"blocks": false,
+"catalog": "Кусты",
+"category": "Кусты",
+"drops": [
+{
+"chance": 1.0,
+"item": "berry",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "leaves",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 10,
+"low": false,
+"model": "cn_bush_raspberry",
+"name": "Малина",
+"respawn": 180,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"bush_rose_bush": {
+"blocks": false,
+"catalog": "Кусты",
+"category": "Кусты",
+"drops": [
+{
+"chance": 1.0,
+"item": "leaves",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 2,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "branch",
+"max": 2,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 12,
+"low": false,
+"model": "cn_bush_rose_bush",
+"name": "Шиповник",
+"respawn": 240,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"bush_round": {
+"blocks": false,
+"catalog": "Кусты",
+"category": "Кусты",
+"drops": [
+{
+"chance": 1.0,
+"item": "leaves",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 2,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "branch",
+"max": 2,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 12,
+"low": false,
+"model": "cn_bush_round",
+"name": "Круглый куст",
+"respawn": 240,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"bush_strawberry": {
+"blocks": false,
+"catalog": "Кусты",
+"category": "Кусты",
+"drops": [
+{
+"chance": 1.0,
+"item": "strawberries",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "leaves",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 10,
+"low": false,
+"model": "cn_bush_strawberry",
+"name": "Земляника",
+"respawn": 180,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"cactus_barrel": {
+"blocks": true,
+"catalog": "Пустыня",
+"category": "Пустыня",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 15,
+"low": true,
+"model": "cn_cactus_barrel",
+"name": "Кактус-бочка",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "axe",
+"xp": 1
+},
+"cactus_blue": {
+"blocks": true,
+"catalog": "Пустыня",
+"category": "Пустыня",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 4,
+"min": 2,
+"on": "break"
+}
+],
+"hp": 30,
+"low": false,
+"model": "cn_cactus_blue",
+"name": "Голубой кактус",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "axe",
+"xp": 1
+},
+"cactus_flowering": {
+"blocks": true,
+"catalog": "Пустыня",
+"category": "Пустыня",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 15,
+"low": true,
+"model": "cn_cactus_flowering",
+"name": "Цветущий кактус",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "axe",
+"xp": 1
+},
+"cactus_prickly": {
+"blocks": true,
+"catalog": "Пустыня",
+"category": "Пустыня",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "berry",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 15,
+"low": true,
+"model": "cn_cactus_prickly",
+"name": "Опунция",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "axe",
+"xp": 1
+},
+"cactus_saguaro": {
+"blocks": true,
+"catalog": "Пустыня",
+"category": "Пустыня",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "water_flask",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 30,
+"low": false,
+"model": "cn_cactus_saguaro",
+"name": "Кактус-сагуаро",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "axe",
+"xp": 1
+},
+"coral_blue": {
+"blocks": false,
+"catalog": "Водные растения",
+"category": "Водные растения",
+"drops": [
+{
+"chance": 1.0,
+"item": "lime",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "stone",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 15,
+"low": true,
+"model": "cn_coral_blue",
+"name": "Синий коралл",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"coral_pink": {
+"blocks": false,
+"catalog": "Водные растения",
+"category": "Водные растения",
+"drops": [
+{
+"chance": 1.0,
+"item": "lime",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "stone",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 15,
+"low": true,
+"model": "cn_coral_pink",
+"name": "Розовый коралл",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"coral_red": {
+"blocks": false,
+"catalog": "Водные растения",
+"category": "Водные растения",
+"drops": [
+{
+"chance": 1.0,
+"item": "lime",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "stone",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 15,
+"low": true,
+"model": "cn_coral_red",
+"name": "Красный коралл",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"coral_yellow": {
+"blocks": false,
+"catalog": "Водные растения",
+"category": "Водные растения",
+"drops": [
+{
+"chance": 1.0,
+"item": "lime",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "stone",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 15,
+"low": true,
+"model": "cn_coral_yellow",
+"name": "Жёлтый коралл",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"flower_alien_bellglow": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.25,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_alien_bellglow",
+"name": "Светоколокол",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_alien_starflower": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.25,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_alien_starflower",
+"name": "Звёздоцвет",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_aster": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.25,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_aster",
+"name": "Астра",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_bluebell": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.25,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_bluebell",
+"name": "Колокольчик",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_chamomile": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "herbs",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_chamomile",
+"name": "Аптечная ромашка",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_cornflower": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.25,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_cornflower",
+"name": "Василёк",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_daisy": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.25,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_daisy",
+"name": "Ромашка",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_dandelion": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.25,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_dandelion",
+"name": "Одуванчик",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_foxglove": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.25,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_foxglove",
+"name": "Наперстянка",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_iris": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.25,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_iris",
+"name": "Ирис",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_lavender": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "herbs",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_lavender",
+"name": "Лаванда",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_lily_valley": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.25,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_lily_valley",
+"name": "Ландыш",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_lupine": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.25,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_lupine",
+"name": "Люпин",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_marigold": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.25,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_marigold",
+"name": "Бархатцы",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_orchid": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.25,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_orchid",
+"name": "Орхидея",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_poppy": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.25,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_poppy",
+"name": "Мак",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_rose_pink": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.25,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_rose_pink",
+"name": "Розовая роза",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_rose_red": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.25,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_rose_red",
+"name": "Красная роза",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_rose_white": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.25,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_rose_white",
+"name": "Белая роза",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_rose_yellow": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.25,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_rose_yellow",
+"name": "Жёлтая роза",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_salvia": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "herbs",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_salvia",
+"name": "Шалфей",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_sunflower_wild": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "sunflower",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "sunflower_seeds",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_sunflower_wild",
+"name": "Дикий подсолнух",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_tulip_pink": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.25,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_tulip_pink",
+"name": "Розовый тюльпан",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_tulip_purple": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.25,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_tulip_purple",
+"name": "Фиолетовый тюльпан",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_tulip_red": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.25,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_tulip_red",
+"name": "Красный тюльпан",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_tulip_white": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.25,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_tulip_white",
+"name": "Белый тюльпан",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_tulip_yellow": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.25,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_tulip_yellow",
+"name": "Жёлтый тюльпан",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"flower_violet": {
+"blocks": false,
+"catalog": "Цветы",
+"category": "Цветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.25,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_flower_violet",
+"name": "Фиалка",
+"respawn": 120,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"gem_amethyst": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "amethyst_raw",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "stone",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 70,
+"low": true,
+"model": "cn_gem_amethyst",
+"name": "Жила: аметист",
+"respawn": 600,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 3
+},
+"gem_aquamarine": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "aquamarine_raw",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "stone",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 70,
+"low": true,
+"model": "cn_gem_aquamarine",
+"name": "Жила: аквамарин",
+"respawn": 600,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 3
+},
+"gem_citrine": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "citrine_raw",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "stone",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 70,
+"low": true,
+"model": "cn_gem_citrine",
+"name": "Жила: цитрин",
+"respawn": 600,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 3
+},
+"gem_diamond": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "diamond_raw",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "stone",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 70,
+"low": true,
+"model": "cn_gem_diamond",
+"name": "Жила: алмаз",
+"respawn": 600,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 3
+},
+"gem_emerald": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "emerald_raw",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "stone",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 70,
+"low": true,
+"model": "cn_gem_emerald",
+"name": "Жила: изумруд",
+"respawn": 600,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 3
+},
+"gem_garnet": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "garnet_raw",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "stone",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 70,
+"low": true,
+"model": "cn_gem_garnet",
+"name": "Жила: гранат",
+"respawn": 600,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 3
+},
+"gem_jade": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "jade_raw",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "stone",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 70,
+"low": true,
+"model": "cn_gem_jade",
+"name": "Жила: нефрит",
+"respawn": 600,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 3
+},
+"gem_onyx": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "onyx_raw",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "stone",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 70,
+"low": true,
+"model": "cn_gem_onyx",
+"name": "Жила: оникс",
+"respawn": 600,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 3
+},
+"gem_opal": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "opal_raw",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "stone",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 70,
+"low": true,
+"model": "cn_gem_opal",
+"name": "Жила: опал",
+"respawn": 600,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 3
+},
+"gem_ruby": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "ruby_raw",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "stone",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 70,
+"low": true,
+"model": "cn_gem_ruby",
+"name": "Жила: рубин",
+"respawn": 600,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 3
+},
+"gem_sapphire": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "sapphire_raw",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "stone",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 70,
+"low": true,
+"model": "cn_gem_sapphire",
+"name": "Жила: сапфир",
+"respawn": 600,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 3
+},
+"gem_topaz": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "topaz_raw",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "stone",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 70,
+"low": true,
+"model": "cn_gem_topaz",
+"name": "Жила: топаз",
+"respawn": 600,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 3
+},
+"grass_blue": {
+"blocks": false,
+"catalog": "Травы",
+"category": "Травы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 2,
+"low": false,
+"model": "cn_grass_blue",
+"name": "Сизая трава",
+"respawn": 90,
+"scale": [
+0.8,
+1.4
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"grass_cattail": {
+"blocks": false,
+"catalog": "Травы",
+"category": "Травы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 3,
+"min": 2,
+"on": "break"
+}
+],
+"hp": 2,
+"low": false,
+"model": "cn_grass_cattail",
+"name": "Рогоз",
+"respawn": 90,
+"scale": [
+0.8,
+1.4
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"grass_clover": {
+"blocks": false,
+"catalog": "Травы",
+"category": "Травы",
+"drops": [
+{
+"chance": 0.4,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 2,
+"low": false,
+"model": "cn_grass_clover",
+"name": "Клевер",
+"respawn": 90,
+"scale": [
+0.8,
+1.4
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"grass_cotton_wild": {
+"blocks": false,
+"catalog": "Травы",
+"category": "Травы",
+"drops": [
+{
+"chance": 1.0,
+"item": "cotton",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 2,
+"low": false,
+"model": "cn_grass_cotton_wild",
+"name": "Дикий хлопок",
+"respawn": 90,
+"scale": [
+0.8,
+1.4
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"grass_dry": {
+"blocks": false,
+"catalog": "Травы",
+"category": "Травы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 2,
+"low": false,
+"model": "cn_grass_dry",
+"name": "Сухая трава",
+"respawn": 90,
+"scale": [
+0.8,
+1.4
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"grass_flax_wild": {
+"blocks": false,
+"catalog": "Травы",
+"category": "Травы",
+"drops": [
+{
+"chance": 1.0,
+"item": "flax",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 2,
+"low": false,
+"model": "cn_grass_flax_wild",
+"name": "Дикий лён",
+"respawn": 90,
+"scale": [
+0.8,
+1.4
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"grass_glow_grass": {
+"blocks": false,
+"catalog": "Травы",
+"category": "Травы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.2,
+"item": "glow_berry",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 2,
+"low": false,
+"model": "cn_grass_glow_grass",
+"name": "Светящаяся трава",
+"respawn": 90,
+"scale": [
+0.8,
+1.4
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"grass_red": {
+"blocks": false,
+"catalog": "Травы",
+"category": "Травы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 2,
+"low": false,
+"model": "cn_grass_red",
+"name": "Красная трава",
+"respawn": 90,
+"scale": [
+0.8,
+1.4
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"grass_reed": {
+"blocks": false,
+"catalog": "Травы",
+"category": "Травы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 3,
+"min": 2,
+"on": "break"
+}
+],
+"hp": 2,
+"low": false,
+"model": "cn_grass_reed",
+"name": "Камыш",
+"respawn": 90,
+"scale": [
+0.8,
+1.4
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"grass_short": {
+"blocks": false,
+"catalog": "Травы",
+"category": "Травы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 2,
+"low": false,
+"model": "cn_grass_short",
+"name": "Низкая трава",
+"respawn": 90,
+"scale": [
+0.8,
+1.4
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"grass_tall": {
+"blocks": false,
+"catalog": "Травы",
+"category": "Травы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 2,
+"low": false,
+"model": "cn_grass_tall",
+"name": "Высокая трава",
+"respawn": 90,
+"scale": [
+0.8,
+1.4
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"grass_wild_rice": {
+"blocks": false,
+"catalog": "Травы",
+"category": "Травы",
+"drops": [
+{
+"chance": 1.0,
+"item": "rice",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 2,
+"low": false,
+"model": "cn_grass_wild_rice",
+"name": "Дикий рис",
+"respawn": 90,
+"scale": [
+0.8,
+1.4
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"grass_wild_wheat": {
+"blocks": false,
+"catalog": "Травы",
+"category": "Травы",
+"drops": [
+{
+"chance": 1.0,
+"item": "wheat",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "wheat_seeds",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 2,
+"low": false,
+"model": "cn_grass_wild_wheat",
+"name": "Дикая пшеница",
+"respawn": 90,
+"scale": [
+0.8,
+1.4
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"ice_spire": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "water_flask",
+"max": 4,
+"min": 2,
+"on": "break"
+}
+],
+"hp": 60,
+"low": false,
+"model": "cn_ice_spire",
+"name": "Ледяной шпиль",
+"respawn": 0,
+"scale": [
+0.7,
+1.4
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"lily_pink": {
+"blocks": false,
+"catalog": "Водные растения",
+"category": "Водные растения",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": true,
+"model": "cn_lily_pink",
+"name": "Кувшинка розовая",
+"respawn": 200,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"lily_white": {
+"blocks": false,
+"catalog": "Водные растения",
+"category": "Водные растения",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": true,
+"model": "cn_lily_white",
+"name": "Кувшинка белая",
+"respawn": 200,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"lily_yellow": {
+"blocks": false,
+"catalog": "Водные растения",
+"category": "Водные растения",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": true,
+"model": "cn_lily_yellow",
+"name": "Кубышка",
+"respawn": 200,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"mush_blue_glow": {
+"blocks": false,
+"catalog": "Грибы",
+"category": "Грибы",
+"drops": [
+{
+"chance": 1.0,
+"item": "mushroom",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 4,
+"low": false,
+"model": "cn_mush_blue_glow",
+"name": "Синие светогрибы",
+"respawn": 240,
+"scale": [
+0.8,
+1.5
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"mush_chanterelle": {
+"blocks": false,
+"catalog": "Грибы",
+"category": "Грибы",
+"drops": [
+{
+"chance": 1.0,
+"item": "chanterelle",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 4,
+"low": false,
+"model": "cn_mush_chanterelle",
+"name": "Лисички",
+"respawn": 240,
+"scale": [
+0.8,
+1.5
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"mush_fly_agaric": {
+"blocks": false,
+"catalog": "Грибы",
+"category": "Грибы",
+"drops": [
+{
+"chance": 1.0,
+"item": "fly_agaric",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 4,
+"low": false,
+"model": "cn_mush_fly_agaric",
+"name": "Мухоморы",
+"respawn": 240,
+"scale": [
+0.8,
+1.5
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"mush_giant_brown": {
+"blocks": true,
+"catalog": "Грибы",
+"category": "Грибы",
+"drops": [
+{
+"chance": 1.0,
+"item": "mushroom",
+"max": 6,
+"min": 3,
+"on": "break"
+}
+],
+"hp": 30,
+"low": false,
+"model": "cn_mush_giant_brown",
+"name": "Огромный боровик",
+"respawn": 600,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "axe",
+"xp": 1
+},
+"mush_giant_red": {
+"blocks": true,
+"catalog": "Грибы",
+"category": "Грибы",
+"drops": [
+{
+"chance": 1.0,
+"item": "mushroom",
+"max": 6,
+"min": 3,
+"on": "break"
+}
+],
+"hp": 30,
+"low": false,
+"model": "cn_mush_giant_red",
+"name": "Огромный мухомор",
+"respawn": 600,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "axe",
+"xp": 1
+},
+"mush_green_glow": {
+"blocks": false,
+"catalog": "Грибы",
+"category": "Грибы",
+"drops": [
+{
+"chance": 1.0,
+"item": "glow_berry",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 4,
+"low": false,
+"model": "cn_mush_green_glow",
+"name": "Зелёные светогрибы",
+"respawn": 240,
+"scale": [
+0.8,
+1.5
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"mush_honey": {
+"blocks": false,
+"catalog": "Грибы",
+"category": "Грибы",
+"drops": [
+{
+"chance": 1.0,
+"item": "mushroom",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 4,
+"low": false,
+"model": "cn_mush_honey",
+"name": "Опята",
+"respawn": 240,
+"scale": [
+0.8,
+1.5
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"mush_morel": {
+"blocks": false,
+"catalog": "Грибы",
+"category": "Грибы",
+"drops": [
+{
+"chance": 1.0,
+"item": "mushroom",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 4,
+"low": false,
+"model": "cn_mush_morel",
+"name": "Сморчки",
+"respawn": 240,
+"scale": [
+0.8,
+1.5
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"mush_pink_glow": {
+"blocks": false,
+"catalog": "Грибы",
+"category": "Грибы",
+"drops": [
+{
+"chance": 1.0,
+"item": "alien_fruit",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 4,
+"low": false,
+"model": "cn_mush_pink_glow",
+"name": "Розовые светогрибы",
+"respawn": 240,
+"scale": [
+0.8,
+1.5
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"mush_porcini": {
+"blocks": false,
+"catalog": "Грибы",
+"category": "Грибы",
+"drops": [
+{
+"chance": 1.0,
+"item": "porcini",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 4,
+"low": false,
+"model": "cn_mush_porcini",
+"name": "Белые грибы",
+"respawn": 240,
+"scale": [
+0.8,
+1.5
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"mush_puffball": {
+"blocks": false,
+"catalog": "Грибы",
+"category": "Грибы",
+"drops": [
+{
+"chance": 1.0,
+"item": "mushroom",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 4,
+"low": false,
+"model": "cn_mush_puffball",
+"name": "Дождевики",
+"respawn": 240,
+"scale": [
+0.8,
+1.5
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"mush_russula": {
+"blocks": false,
+"catalog": "Грибы",
+"category": "Грибы",
+"drops": [
+{
+"chance": 1.0,
+"item": "mushroom",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 4,
+"low": false,
+"model": "cn_mush_russula",
+"name": "Сыроежки",
+"respawn": 240,
+"scale": [
+0.8,
+1.5
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"ore_aluminum": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 0.6,
+"item": "aluminum_ore",
+"max": 1,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "aluminum_ore",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "aluminum_nugget",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 60,
+"low": true,
+"model": "cn_ore_aluminum",
+"name": "Боксит",
+"respawn": 300,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 2
+},
+"ore_chromium": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 0.6,
+"item": "chromium_ore",
+"max": 1,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "chromium_ore",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "chromium_nugget",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 60,
+"low": true,
+"model": "cn_ore_chromium",
+"name": "Хромит",
+"respawn": 300,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 2
+},
+"ore_clay": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "clay",
+"max": 4,
+"min": 2,
+"on": "break"
+}
+],
+"hp": 25,
+"low": true,
+"model": "cn_ore_clay",
+"name": "Глиняная залежь",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"ore_cobalt": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 0.6,
+"item": "cobalt_ore",
+"max": 1,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "cobalt_ore",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "cobalt_nugget",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 60,
+"low": true,
+"model": "cn_ore_cobalt",
+"name": "Кобальтовая руда",
+"respawn": 300,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 2
+},
+"ore_gold": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 0.6,
+"item": "gold_ore",
+"max": 1,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "gold_ore",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "gold_nugget",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 60,
+"low": true,
+"model": "cn_ore_gold",
+"name": "Золотая руда",
+"respawn": 300,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 2
+},
+"ore_lead": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 0.6,
+"item": "lead_ore",
+"max": 1,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "lead_ore",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "lead_nugget",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 60,
+"low": true,
+"model": "cn_ore_lead",
+"name": "Свинцовая руда",
+"respawn": 300,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 2
+},
+"ore_lithium": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 0.6,
+"item": "lithium_ore",
+"max": 1,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "lithium_ore",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "lithium_nugget",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 60,
+"low": true,
+"model": "cn_ore_lithium",
+"name": "Литиевая руда",
+"respawn": 300,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 2
+},
+"ore_meteorite": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "titanium_ore",
+"max": 6,
+"min": 3,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "tungsten_ore",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "crystal",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.1,
+"item": "void_essence",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 200,
+"low": false,
+"model": "cn_ore_meteorite",
+"name": "Метеорит",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 10
+},
+"ore_nickel": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 0.6,
+"item": "nickel_ore",
+"max": 1,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "nickel_ore",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "nickel_nugget",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 60,
+"low": true,
+"model": "cn_ore_nickel",
+"name": "Никелевая руда",
+"respawn": 300,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 2
+},
+"ore_platinum": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 0.6,
+"item": "platinum_ore",
+"max": 1,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "platinum_ore",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "platinum_nugget",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 60,
+"low": true,
+"model": "cn_ore_platinum",
+"name": "Платиновая руда",
+"respawn": 300,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 2
+},
+"ore_salt": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 1.0,
+"item": "salt",
+"max": 4,
+"min": 2,
+"on": "break"
+}
+],
+"hp": 40,
+"low": true,
+"model": "cn_ore_salt",
+"name": "Соляная залежь",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"ore_silver": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 0.6,
+"item": "silver_ore",
+"max": 1,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "silver_ore",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "silver_nugget",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 60,
+"low": true,
+"model": "cn_ore_silver",
+"name": "Серебряная руда",
+"respawn": 300,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 2
+},
+"ore_tin": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 0.6,
+"item": "tin_ore",
+"max": 1,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "tin_ore",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "tin_nugget",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 60,
+"low": true,
+"model": "cn_ore_tin",
+"name": "Оловянная руда",
+"respawn": 300,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 2
+},
+"ore_titanium": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 0.6,
+"item": "titanium_ore",
+"max": 1,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "titanium_ore",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "titanium_nugget",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 60,
+"low": true,
+"model": "cn_ore_titanium",
+"name": "Титановая руда",
+"respawn": 300,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 2
+},
+"ore_tungsten": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 0.6,
+"item": "tungsten_ore",
+"max": 1,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "tungsten_ore",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "tungsten_nugget",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 60,
+"low": true,
+"model": "cn_ore_tungsten",
+"name": "Вольфрамит",
+"respawn": 300,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 2
+},
+"ore_uranium": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 0.6,
+"item": "uranium_ore",
+"max": 1,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "uranium_ore",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "uranium_nugget",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 60,
+"low": true,
+"model": "cn_ore_uranium",
+"name": "Урановая руда",
+"respawn": 300,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 2
+},
+"ore_zinc": {
+"blocks": true,
+"catalog": "Руда и самоцветы",
+"category": "Руда и самоцветы",
+"drops": [
+{
+"chance": 0.6,
+"item": "zinc_ore",
+"max": 1,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "zinc_ore",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "zinc_nugget",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 60,
+"low": true,
+"model": "cn_ore_zinc",
+"name": "Цинковая руда",
+"respawn": 300,
+"scale": [
+0.6,
+1.0
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 2
+},
+"pebbles_dark": {
+"blocks": false,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 4,
+"low": false,
+"model": "cn_pebbles_dark",
+"name": "Тёмная галька",
+"respawn": 600,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"pebbles_grey": {
+"blocks": false,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 4,
+"low": false,
+"model": "cn_pebbles_grey",
+"name": "Галька",
+"respawn": 600,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"pebbles_sand": {
+"blocks": false,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 4,
+"low": false,
+"model": "cn_pebbles_sand",
+"name": "Песчаная галька",
+"respawn": 600,
+"scale": [
+0.8,
+1.3
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"plant_agave": {
+"blocks": false,
+"catalog": "Пустыня",
+"category": "Пустыня",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 3,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "sugar",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 8,
+"low": false,
+"model": "cn_plant_agave",
+"name": "Агава",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"plant_aloe": {
+"blocks": false,
+"catalog": "Пустыня",
+"category": "Пустыня",
+"drops": [
+{
+"chance": 1.0,
+"item": "herbs",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 6,
+"low": false,
+"model": "cn_plant_aloe",
+"name": "Алоэ",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"plant_fern": {
+"blocks": false,
+"catalog": "Кусты",
+"category": "Кусты",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 4,
+"low": false,
+"model": "cn_plant_fern",
+"name": "Папоротник",
+"respawn": 200,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"plant_fern_dark": {
+"blocks": false,
+"catalog": "Кусты",
+"category": "Кусты",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 4,
+"low": false,
+"model": "cn_plant_fern_dark",
+"name": "Тёмный папоротник",
+"respawn": 200,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"plant_fern_red": {
+"blocks": false,
+"catalog": "Кусты",
+"category": "Кусты",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "herbs",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 4,
+"low": false,
+"model": "cn_plant_fern_red",
+"name": "Красный папоротник",
+"respawn": 200,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"prop_anthill": {
+"blocks": false,
+"catalog": "Находки и объекты",
+"category": "Находки и объекты",
+"drops": [
+{
+"chance": 1.0,
+"item": "biomass",
+"max": 3,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 20,
+"low": false,
+"model": "cn_prop_anthill",
+"name": "Муравейник",
+"respawn": 400,
+"scale": [
+0.9,
+1.1
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"prop_bird_nest": {
+"blocks": false,
+"catalog": "Находки и объекты",
+"category": "Находки и объекты",
+"drops": [
+{
+"chance": 1.0,
+"item": "egg",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 4,
+"low": false,
+"model": "cn_prop_bird_nest",
+"name": "Гнездо",
+"respawn": 600,
+"scale": [
+0.9,
+1.1
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"prop_bone_pile": {
+"blocks": false,
+"catalog": "Находки и объекты",
+"category": "Находки и объекты",
+"drops": [
+{
+"chance": 1.0,
+"item": "bone",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "monster_claw",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 10,
+"low": false,
+"model": "cn_prop_bone_pile",
+"name": "Груда костей",
+"respawn": 0,
+"scale": [
+0.9,
+1.1
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"prop_crashed_pod": {
+"blocks": true,
+"catalog": "Находки и объекты",
+"category": "Находки и объекты",
+"drops": [
+{
+"chance": 1.0,
+"item": "aluminum_plate",
+"max": 6,
+"min": 3,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "microchip",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "battery_cell",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "blueprint_basic",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 80,
+"low": false,
+"model": "cn_prop_crashed_pod",
+"name": "Разбитая капсула",
+"respawn": 0,
+"scale": [
+0.9,
+1.1
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 2
+},
+"prop_fallen_log": {
+"blocks": true,
+"catalog": "Находки и объекты",
+"category": "Находки и объекты",
+"drops": [
+{
+"chance": 1.0,
+"item": "log",
+"max": 3,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "mushroom",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 30,
+"low": false,
+"model": "cn_prop_fallen_log",
+"name": "Упавшее бревно",
+"respawn": 0,
+"scale": [
+0.9,
+1.1
+],
+"stump": "",
+"tool": "axe",
+"xp": 2
+},
+"prop_geyser": {
+"blocks": true,
+"catalog": "Находки и объекты",
+"category": "Находки и объекты",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 999,
+"low": false,
+"model": "cn_prop_geyser",
+"name": "Гейзер",
+"respawn": 0,
+"scale": [
+0.9,
+1.1
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 2
+},
+"prop_hollow_log": {
+"blocks": true,
+"catalog": "Находки и объекты",
+"category": "Находки и объекты",
+"drops": [
+{
+"chance": 1.0,
+"item": "log",
+"max": 4,
+"min": 3,
+"on": "break"
+},
+{
+"chance": 0.2,
+"item": "honey",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 40,
+"low": false,
+"model": "cn_prop_hollow_log",
+"name": "Полое бревно",
+"respawn": 0,
+"scale": [
+0.9,
+1.1
+],
+"stump": "",
+"tool": "axe",
+"xp": 2
+},
+"prop_monster_egg": {
+"blocks": true,
+"catalog": "Находки и объекты",
+"category": "Находки и объекты",
+"drops": [
+{
+"chance": 1.0,
+"item": "monster_gland",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "alien_tissue",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "goo",
+"max": 3,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 25,
+"low": false,
+"model": "cn_prop_monster_egg",
+"name": "Яйцо монстра",
+"respawn": 0,
+"scale": [
+0.9,
+1.1
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"prop_old_campfire": {
+"blocks": false,
+"catalog": "Находки и объекты",
+"category": "Находки и объекты",
+"drops": [
+{
+"chance": 1.0,
+"item": "coal",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "branch",
+"max": 2,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 5,
+"low": false,
+"model": "cn_prop_old_campfire",
+"name": "Старое кострище",
+"respawn": 0,
+"scale": [
+0.9,
+1.1
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"prop_old_car": {
+"blocks": true,
+"catalog": "Находки и объекты",
+"category": "Находки и объекты",
+"drops": [
+{
+"chance": 1.0,
+"item": "iron_plate",
+"max": 6,
+"min": 3,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "rubber",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "iron_gear",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "battery",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 120,
+"low": false,
+"model": "cn_prop_old_car",
+"name": "Ржавая машина",
+"respawn": 0,
+"scale": [
+0.9,
+1.1
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 2
+},
+"prop_ruins_arch": {
+"blocks": true,
+"catalog": "Находки и объекты",
+"category": "Находки и объекты",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 8,
+"min": 4,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "old_key",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "gold_coin",
+"max": 2,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 150,
+"low": false,
+"model": "cn_prop_ruins_arch",
+"name": "Руины: арка",
+"respawn": 0,
+"scale": [
+0.9,
+1.1
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 2
+},
+"prop_ruins_pillar": {
+"blocks": true,
+"catalog": "Находки и объекты",
+"category": "Находки и объекты",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 8,
+"min": 4,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "old_key",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "gold_coin",
+"max": 2,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 150,
+"low": false,
+"model": "cn_prop_ruins_pillar",
+"name": "Руины: колонна",
+"respawn": 0,
+"scale": [
+0.9,
+1.1
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 2
+},
+"prop_ruins_wall": {
+"blocks": true,
+"catalog": "Находки и объекты",
+"category": "Находки и объекты",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 8,
+"min": 4,
+"on": "break"
+},
+{
+"chance": 0.05,
+"item": "old_key",
+"max": 1,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "gold_coin",
+"max": 2,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 150,
+"low": false,
+"model": "cn_prop_ruins_wall",
+"name": "Руины: стена",
+"respawn": 0,
+"scale": [
+0.9,
+1.1
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 2
+},
+"prop_skeleton_big": {
+"blocks": true,
+"catalog": "Находки и объекты",
+"category": "Находки и объекты",
+"drops": [
+{
+"chance": 1.0,
+"item": "bone",
+"max": 9,
+"min": 5,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "horn",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.2,
+"item": "trophy_skull",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 40,
+"low": false,
+"model": "cn_prop_skeleton_big",
+"name": "Скелет гиганта",
+"respawn": 0,
+"scale": [
+0.9,
+1.1
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 2
+},
+"prop_supply_drop": {
+"blocks": true,
+"catalog": "Находки и объекты",
+"category": "Находки и объекты",
+"drops": [
+{
+"chance": 1.0,
+"item": "ration",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "ammo",
+"max": 40,
+"min": 20,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "medkit",
+"max": 1,
+"min": 0,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "supply_crate",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 30,
+"low": false,
+"model": "cn_prop_supply_drop",
+"name": "Сброшенный груз",
+"respawn": 0,
+"scale": [
+0.9,
+1.1
+],
+"stump": "",
+"tool": "",
+"xp": 2
+},
+"prop_termite_mound": {
+"blocks": true,
+"catalog": "Находки и объекты",
+"category": "Находки и объекты",
+"drops": [
+{
+"chance": 1.0,
+"item": "clay",
+"max": 6,
+"min": 3,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "biomass",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 80,
+"low": false,
+"model": "cn_prop_termite_mound",
+"name": "Термитник",
+"respawn": 0,
+"scale": [
+0.9,
+1.1
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 2
+},
+"prop_wild_beehive": {
+"blocks": true,
+"catalog": "Находки и объекты",
+"category": "Находки и объекты",
+"drops": [
+{
+"chance": 1.0,
+"item": "honey",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "wax",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 3,
+"min": 2,
+"on": "break"
+}
+],
+"hp": 60,
+"low": false,
+"model": "cn_prop_wild_beehive",
+"name": "Дикий улей на ели",
+"respawn": 0,
+"scale": [
+0.9,
+1.1
+],
+"stump": "",
+"tool": "axe",
+"xp": 2
+},
+"rock_basalt": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "stone",
+"max": 1,
+"min": 0,
+"on": "hit"
+},
+{
+"chance": 0.02,
+"item": "geode",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 45,
+"low": true,
+"model": "cn_rock_basalt",
+"name": "Базальт",
+"respawn": 0,
+"scale": [
+0.7,
+1.4
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"rock_chalk": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "lime",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "stone",
+"max": 1,
+"min": 0,
+"on": "hit"
+},
+{
+"chance": 0.02,
+"item": "geode",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 45,
+"low": true,
+"model": "cn_rock_chalk",
+"name": "Мел",
+"respawn": 0,
+"scale": [
+0.7,
+1.4
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"rock_clay_rock": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "clay",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "stone",
+"max": 1,
+"min": 0,
+"on": "hit"
+},
+{
+"chance": 0.02,
+"item": "geode",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 45,
+"low": true,
+"model": "cn_rock_clay_rock",
+"name": "Глиняный холм",
+"respawn": 0,
+"scale": [
+0.7,
+1.4
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"rock_granite": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "stone",
+"max": 1,
+"min": 0,
+"on": "hit"
+},
+{
+"chance": 0.02,
+"item": "geode",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 45,
+"low": true,
+"model": "cn_rock_granite",
+"name": "Гранит",
+"respawn": 0,
+"scale": [
+0.7,
+1.4
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"rock_limestone": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "lime",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "stone",
+"max": 1,
+"min": 0,
+"on": "hit"
+},
+{
+"chance": 0.02,
+"item": "geode",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 45,
+"low": true,
+"model": "cn_rock_limestone",
+"name": "Известняк",
+"respawn": 0,
+"scale": [
+0.7,
+1.4
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"rock_marble": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "stone",
+"max": 1,
+"min": 0,
+"on": "hit"
+},
+{
+"chance": 0.02,
+"item": "geode",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 45,
+"low": true,
+"model": "cn_rock_marble",
+"name": "Мрамор",
+"respawn": 0,
+"scale": [
+0.7,
+1.4
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"rock_mossy": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "stone",
+"max": 1,
+"min": 0,
+"on": "hit"
+},
+{
+"chance": 0.02,
+"item": "geode",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 45,
+"low": true,
+"model": "cn_rock_mossy",
+"name": "Камень во мху",
+"respawn": 0,
+"scale": [
+0.7,
+1.4
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"rock_obsidian": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "stone",
+"max": 1,
+"min": 0,
+"on": "hit"
+},
+{
+"chance": 0.02,
+"item": "geode",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 45,
+"low": true,
+"model": "cn_rock_obsidian",
+"name": "Обсидиан",
+"respawn": 0,
+"scale": [
+0.7,
+1.4
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"rock_red_rock": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "stone",
+"max": 1,
+"min": 0,
+"on": "hit"
+},
+{
+"chance": 0.02,
+"item": "geode",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 45,
+"low": true,
+"model": "cn_rock_red_rock",
+"name": "Красная скала",
+"respawn": 0,
+"scale": [
+0.7,
+1.4
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"rock_sandstone": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "stone",
+"max": 1,
+"min": 0,
+"on": "hit"
+},
+{
+"chance": 0.02,
+"item": "geode",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 45,
+"low": true,
+"model": "cn_rock_sandstone",
+"name": "Песчаник",
+"respawn": 0,
+"scale": [
+0.7,
+1.4
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"rock_slate": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "stone",
+"max": 1,
+"min": 0,
+"on": "hit"
+},
+{
+"chance": 0.02,
+"item": "geode",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 45,
+"low": true,
+"model": "cn_rock_slate",
+"name": "Сланец",
+"respawn": 0,
+"scale": [
+0.7,
+1.4
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"rock_snowy": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "stone",
+"max": 1,
+"min": 0,
+"on": "hit"
+},
+{
+"chance": 0.02,
+"item": "geode",
+"max": 1,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 45,
+"low": true,
+"model": "cn_rock_snowy",
+"name": "Камень в снегу",
+"respawn": 0,
+"scale": [
+0.7,
+1.4
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"seaweed_brown": {
+"blocks": false,
+"catalog": "Водные растения",
+"category": "Водные растения",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "biomass",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_seaweed_brown",
+"name": "Ламинария",
+"respawn": 200,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"seaweed_green": {
+"blocks": false,
+"catalog": "Водные растения",
+"category": "Водные растения",
+"drops": [
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "biomass",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_seaweed_green",
+"name": "Водоросли",
+"respawn": 200,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"stalagmite": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 4,
+"min": 2,
+"on": "break"
+}
+],
+"hp": 60,
+"low": false,
+"model": "cn_stalagmite",
+"name": "Сталагмит",
+"respawn": 0,
+"scale": [
+0.7,
+1.4
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"stalagmite_dark": {
+"blocks": true,
+"catalog": "Камни",
+"category": "Камни",
+"drops": [
+{
+"chance": 1.0,
+"item": "stone",
+"max": 4,
+"min": 2,
+"on": "break"
+}
+],
+"hp": 60,
+"low": false,
+"model": "cn_stalagmite_dark",
+"name": "Тёмный сталагмит",
+"respawn": 0,
+"scale": [
+0.7,
+1.4
+],
+"stump": "",
+"tool": "pickaxe",
+"xp": 1
+},
+"tree_apple_green": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 0.35,
+"item": "apple",
+"max": 1,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "apple",
+"max": 4,
+"min": 2,
+"on": "break"
+}
+],
+"hp": 70,
+"low": false,
+"model": "cn_tree_apple_green",
+"name": "Яблоня (зелёные)",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_apple_red": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 0.35,
+"item": "apple_red",
+"max": 1,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "apple_red",
+"max": 4,
+"min": 2,
+"on": "break"
+}
+],
+"hp": 70,
+"low": false,
+"model": "cn_tree_apple_red",
+"name": "Яблоня (красные)",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_ash": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 6,
+"min": 3,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 92,
+"low": false,
+"model": "cn_tree_ash",
+"name": "Ясень",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_baobab": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 12,
+"min": 8,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 220,
+"low": false,
+"model": "cn_tree_baobab",
+"name": "Баобаб",
+"respawn": 0,
+"scale": [
+0.9,
+1.2
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_birch_tall": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 78,
+"low": false,
+"model": "cn_tree_birch_tall",
+"name": "Высокая берёза",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_birch_young": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 42,
+"low": false,
+"model": "cn_tree_birch_young",
+"name": "Молодая берёзка",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_cedar": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 5,
+"min": 3,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 95,
+"low": false,
+"model": "cn_tree_cedar",
+"name": "Кедр",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_cherry": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 0.35,
+"item": "berry",
+"max": 1,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "berry",
+"max": 4,
+"min": 2,
+"on": "break"
+}
+],
+"hp": 70,
+"low": false,
+"model": "cn_tree_cherry",
+"name": "Вишня",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_chestnut": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 6,
+"min": 3,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 80,
+"low": false,
+"model": "cn_tree_chestnut",
+"name": "Каштан",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_cypress": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 70,
+"low": false,
+"model": "cn_tree_cypress",
+"name": "Кипарис",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_dead_burnt": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 1.0,
+"item": "branch",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "coal",
+"max": 2,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 40,
+"low": false,
+"model": "cn_tree_dead_burnt",
+"name": "Обгоревшее дерево",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "axe",
+"xp": 1
+},
+"tree_dead_grey": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 1.0,
+"item": "branch",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 2,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "branch",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 40,
+"low": false,
+"model": "cn_tree_dead_grey",
+"name": "Мёртвое дерево (серое)",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "axe",
+"xp": 1
+},
+"tree_elm": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 6,
+"min": 3,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 96,
+"low": false,
+"model": "cn_tree_elm",
+"name": "Вяз",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_fir_dark": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 5,
+"min": 3,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 92,
+"low": false,
+"model": "cn_tree_fir_dark",
+"name": "Тёмная пихта",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_jacaranda": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 6,
+"min": 3,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 80,
+"low": false,
+"model": "cn_tree_jacaranda",
+"name": "Жакаранда",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_larch": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 5,
+"min": 3,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 89,
+"low": false,
+"model": "cn_tree_larch",
+"name": "Лиственница",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_lemon": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 0.35,
+"item": "lemon",
+"max": 1,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "lemon",
+"max": 4,
+"min": 2,
+"on": "break"
+}
+],
+"hp": 70,
+"low": false,
+"model": "cn_tree_lemon",
+"name": "Лимонное дерево",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_linden": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 6,
+"min": 3,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 88,
+"low": false,
+"model": "cn_tree_linden",
+"name": "Липа",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_maple_orange": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 6,
+"min": 3,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 80,
+"low": false,
+"model": "cn_tree_maple_orange",
+"name": "Оранжевый клён",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_maple_red": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 6,
+"min": 3,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 80,
+"low": false,
+"model": "cn_tree_maple_red",
+"name": "Красный клён",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_maple_yellow": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 6,
+"min": 3,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 80,
+"low": false,
+"model": "cn_tree_maple_yellow",
+"name": "Жёлтый клён",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_oak_dark": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 6,
+"min": 3,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 88,
+"low": false,
+"model": "cn_tree_oak_dark",
+"name": "Тёмный дуб",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_orange": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 0.35,
+"item": "orange",
+"max": 1,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "orange",
+"max": 4,
+"min": 2,
+"on": "break"
+}
+],
+"hp": 70,
+"low": false,
+"model": "cn_tree_orange",
+"name": "Апельсиновое дерево",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_palm": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 3,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 4,
+"min": 2,
+"on": "break"
+}
+],
+"hp": 60,
+"low": false,
+"model": "cn_tree_palm",
+"name": "Пальма",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_palm_date": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 3,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 4,
+"min": 2,
+"on": "break"
+}
+],
+"hp": 60,
+"low": false,
+"model": "cn_tree_palm_date",
+"name": "Финиковая пальма",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_palm_tall": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 3,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 4,
+"min": 2,
+"on": "break"
+}
+],
+"hp": 60,
+"low": false,
+"model": "cn_tree_palm_tall",
+"name": "Высокая пальма",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_peach": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 0.35,
+"item": "peach",
+"max": 1,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "peach",
+"max": 4,
+"min": 2,
+"on": "break"
+}
+],
+"hp": 70,
+"low": false,
+"model": "cn_tree_peach",
+"name": "Персиковое дерево",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_pear": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 0.35,
+"item": "pear",
+"max": 1,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "pear",
+"max": 4,
+"min": 2,
+"on": "break"
+}
+],
+"hp": 70,
+"low": false,
+"model": "cn_tree_pear",
+"name": "Груша",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_pine_autumn": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 5,
+"min": 3,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 86,
+"low": false,
+"model": "cn_tree_pine_autumn",
+"name": "Рыжая лиственница",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_pine_snow": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 5,
+"min": 3,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 86,
+"low": false,
+"model": "cn_tree_pine_snow",
+"name": "Заснеженная ель",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_pine_tall": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 5,
+"min": 3,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 101,
+"low": false,
+"model": "cn_tree_pine_tall",
+"name": "Высокая сосна",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_pine_young": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 5,
+"min": 3,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 56,
+"low": false,
+"model": "cn_tree_pine_young",
+"name": "Молодая сосенка",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_plum": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 4,
+"min": 2,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 0.35,
+"item": "plum",
+"max": 1,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "plum",
+"max": 4,
+"min": 2,
+"on": "break"
+}
+],
+"hp": 70,
+"low": false,
+"model": "cn_tree_plum",
+"name": "Слива",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_sakura": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 6,
+"min": 3,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 72,
+"low": false,
+"model": "cn_tree_sakura",
+"name": "Сакура",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_sakura_white": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 6,
+"min": 3,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 72,
+"low": false,
+"model": "cn_tree_sakura_white",
+"name": "Белая сакура",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_spruce_blue": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 5,
+"min": 3,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 80,
+"low": false,
+"model": "cn_tree_spruce_blue",
+"name": "Голубая ель",
+"respawn": 0,
+"scale": [
+0.8,
+1.3
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_thuja": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 50,
+"low": false,
+"model": "cn_tree_thuja",
+"name": "Туя",
+"respawn": 0,
+"scale": [
+0.6,
+0.9
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_willow": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 6,
+"min": 4,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 3,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 100,
+"low": false,
+"model": "cn_tree_willow",
+"name": "Ива",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tree_willow_gold": {
+"blocks": true,
+"catalog": "Деревья",
+"category": "Деревья",
+"drops": [
+{
+"chance": 0.6,
+"item": "branch",
+"max": 2,
+"min": 1,
+"on": "hit"
+},
+{
+"chance": 1.0,
+"item": "log",
+"max": 6,
+"min": 4,
+"on": "break"
+},
+{
+"chance": 0.3,
+"item": "leaves",
+"max": 2,
+"min": 1,
+"on": "hit"
+}
+],
+"hp": 100,
+"low": false,
+"model": "cn_tree_willow_gold",
+"name": "Золотая ива",
+"respawn": 0,
+"scale": [
+0.8,
+1.2
+],
+"stump": "stump",
+"tool": "axe",
+"xp": 1
+},
+"tumbleweed": {
+"blocks": false,
+"catalog": "Пустыня",
+"category": "Пустыня",
+"drops": [
+{
+"chance": 1.0,
+"item": "branch",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 1.0,
+"item": "fiber",
+"max": 2,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 3,
+"low": false,
+"model": "cn_tumbleweed",
+"name": "Перекати-поле",
+"respawn": 200,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"wild_beet": {
+"blocks": false,
+"catalog": "Дикие овощи",
+"category": "Дикие овощи",
+"drops": [
+{
+"chance": 1.0,
+"item": "beet",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "beet_seeds",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 6,
+"low": false,
+"model": "cn_wild_beet",
+"name": "Дикая свёкла",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"wild_cabbage": {
+"blocks": false,
+"catalog": "Дикие овощи",
+"category": "Дикие овощи",
+"drops": [
+{
+"chance": 1.0,
+"item": "cabbage",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "cabbage_seeds",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 6,
+"low": false,
+"model": "cn_wild_cabbage",
+"name": "Дикая капуста",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"wild_carrot": {
+"blocks": false,
+"catalog": "Дикие овощи",
+"category": "Дикие овощи",
+"drops": [
+{
+"chance": 1.0,
+"item": "carrot",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "carrot_seeds",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 6,
+"low": false,
+"model": "cn_wild_carrot",
+"name": "Дикая морковь",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"wild_coffee_beans": {
+"blocks": false,
+"catalog": "Дикие овощи",
+"category": "Дикие овощи",
+"drops": [
+{
+"chance": 1.0,
+"item": "coffee_beans",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "coffee_beans_seeds",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 6,
+"low": false,
+"model": "cn_wild_coffee_beans",
+"name": "Кофейный куст",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"wild_corn": {
+"blocks": false,
+"catalog": "Дикие овощи",
+"category": "Дикие овощи",
+"drops": [
+{
+"chance": 1.0,
+"item": "corn",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "corn_seeds",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 6,
+"low": false,
+"model": "cn_wild_corn",
+"name": "Дикая кукуруза",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"wild_cucumber": {
+"blocks": false,
+"catalog": "Дикие овощи",
+"category": "Дикие овощи",
+"drops": [
+{
+"chance": 1.0,
+"item": "cucumber",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "cucumber_seeds",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 6,
+"low": false,
+"model": "cn_wild_cucumber",
+"name": "Дикие огурцы",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"wild_eggplant": {
+"blocks": false,
+"catalog": "Дикие овощи",
+"category": "Дикие овощи",
+"drops": [
+{
+"chance": 1.0,
+"item": "eggplant",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "eggplant_seeds",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 6,
+"low": false,
+"model": "cn_wild_eggplant",
+"name": "Дикий баклажан",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"wild_herbs": {
+"blocks": false,
+"catalog": "Дикие овощи",
+"category": "Дикие овощи",
+"drops": [
+{
+"chance": 1.0,
+"item": "herbs",
+"max": 3,
+"min": 1,
+"on": "break"
+}
+],
+"hp": 6,
+"low": false,
+"model": "cn_wild_herbs",
+"name": "Лечебные травы",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"wild_lettuce": {
+"blocks": false,
+"catalog": "Дикие овощи",
+"category": "Дикие овощи",
+"drops": [
+{
+"chance": 1.0,
+"item": "lettuce",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "lettuce_seeds",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 6,
+"low": false,
+"model": "cn_wild_lettuce",
+"name": "Дикий салат",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"wild_melon": {
+"blocks": false,
+"catalog": "Дикие овощи",
+"category": "Дикие овощи",
+"drops": [
+{
+"chance": 1.0,
+"item": "melon",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "melon_seeds",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 6,
+"low": false,
+"model": "cn_wild_melon",
+"name": "Дикая дыня",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"wild_onion": {
+"blocks": false,
+"catalog": "Дикие овощи",
+"category": "Дикие овощи",
+"drops": [
+{
+"chance": 1.0,
+"item": "onion",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "onion_seeds",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 6,
+"low": false,
+"model": "cn_wild_onion",
+"name": "Дикий лук",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"wild_pepper": {
+"blocks": false,
+"catalog": "Дикие овощи",
+"category": "Дикие овощи",
+"drops": [
+{
+"chance": 1.0,
+"item": "pepper",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "pepper_seeds",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 6,
+"low": false,
+"model": "cn_wild_pepper",
+"name": "Дикий перец",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"wild_potato": {
+"blocks": false,
+"catalog": "Дикие овощи",
+"category": "Дикие овощи",
+"drops": [
+{
+"chance": 1.0,
+"item": "potato",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "potato_seeds",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 6,
+"low": false,
+"model": "cn_wild_potato",
+"name": "Дикий картофель",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"wild_pumpkin": {
+"blocks": false,
+"catalog": "Дикие овощи",
+"category": "Дикие овощи",
+"drops": [
+{
+"chance": 1.0,
+"item": "pumpkin",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "pumpkin_seeds",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 6,
+"low": false,
+"model": "cn_wild_pumpkin",
+"name": "Дикая тыква",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"wild_tomato": {
+"blocks": false,
+"catalog": "Дикие овощи",
+"category": "Дикие овощи",
+"drops": [
+{
+"chance": 1.0,
+"item": "tomato",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "tomato_seeds",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 6,
+"low": false,
+"model": "cn_wild_tomato",
+"name": "Дикие помидоры",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+},
+"wild_watermelon": {
+"blocks": false,
+"catalog": "Дикие овощи",
+"category": "Дикие овощи",
+"drops": [
+{
+"chance": 1.0,
+"item": "watermelon",
+"max": 3,
+"min": 1,
+"on": "break"
+},
+{
+"chance": 0.5,
+"item": "watermelon_seeds",
+"max": 1,
+"min": 0,
+"on": "break"
+}
+],
+"hp": 6,
+"low": false,
+"model": "cn_wild_watermelon",
+"name": "Дикий арбуз",
+"respawn": 300,
+"scale": [
+0.8,
+1.2
+],
+"stump": "",
+"tool": "",
+"xp": 1
+}
+}

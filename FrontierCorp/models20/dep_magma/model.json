@@ -1,0 +1,477 @@
+{
+ "extra": {
+  "emitters": [
+   {
+    "kind": "puff",
+    "pos": [
+     0.08,
+     0.16,
+     -0.08
+    ],
+    "rate": 0.4,
+    "size": 0.5
+   },
+   {
+    "kind": "puff",
+    "pos": [
+     0.167,
+     0.51,
+     -0.133
+    ],
+    "rate": 0.4,
+    "size": 0.5
+   },
+   {
+    "kind": "puff",
+    "pos": [
+     0.312,
+     0.946,
+     -0.205
+    ],
+    "rate": 0.4,
+    "size": 0.5
+   }
+  ]
+ },
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/dep_magma/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.8,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/dep_magma/tex0.png"
+  },
+  {
+   "color": "#6d0d00",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/dep_magma/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.9,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ff4b01",
+   "emission": 2.1,
+   "mat": "glow",
+   "mesh": "res://models20/dep_magma/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "bob",
+   "color": "#ff730d",
+   "emission": 3,
+   "mat": "glow",
+   "mesh": "res://models20/dep_magma/3.res",
+   "metallic": 0,
+   "pos": [
+    0.1887,
+    0.032,
+    -0.0196
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.05,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "bob",
+   "color": "#ff730d",
+   "emission": 3,
+   "mat": "glow",
+   "mesh": "res://models20/dep_magma/4.res",
+   "metallic": 0,
+   "pos": [
+    -0.002,
+    0.032,
+    -0.0317
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.05,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "bob",
+   "color": "#ff730d",
+   "emission": 3,
+   "mat": "glow",
+   "mesh": "res://models20/dep_magma/5.res",
+   "metallic": 0,
+   "pos": [
+    -0.0386,
+    0.032,
+    -0.1795
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.05,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "bob",
+   "color": "#ff730d",
+   "emission": 3,
+   "mat": "glow",
+   "mesh": "res://models20/dep_magma/6.res",
+   "metallic": 0,
+   "pos": [
+    -0.0945,
+    0.032,
+    0.1346
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.05,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "hover",
+   "color": "#ff8013",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_magma/7.res",
+   "metallic": 0,
+   "pos": [
+    -0.0201,
+    0.1752,
+    -0.1719
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "hover",
+   "color": "#ff8013",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_magma/8.res",
+   "metallic": 0,
+   "pos": [
+    0.3925,
+    0.2837,
+    -0.2666
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "hover",
+   "color": "#ff8013",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_magma/9.res",
+   "metallic": 0,
+   "pos": [
+    0.1848,
+    0.4335,
+    0.2267
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "hover",
+   "color": "#ff8013",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_magma/10.res",
+   "metallic": 0,
+   "pos": [
+    0.0848,
+    0.5556,
+    -0.2463
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "hover",
+   "color": "#ff8013",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_magma/11.res",
+   "metallic": 0,
+   "pos": [
+    -0.3312,
+    0.682,
+    0.1889
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "hover",
+   "color": "#ff8013",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_magma/12.res",
+   "metallic": 0,
+   "pos": [
+    -0.2339,
+    0.785,
+    0.2894
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "hover",
+   "color": "#ff8013",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_magma/13.res",
+   "metallic": 0,
+   "pos": [
+    -0.18,
+    0.9245,
+    0.0939
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "hover",
+   "color": "#ff8013",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_magma/14.res",
+   "metallic": 0,
+   "pos": [
+    -0.1157,
+    1.0537,
+    -0.1864
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "hover",
+   "color": "#ff8013",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_magma/15.res",
+   "metallic": 0,
+   "pos": [
+    0.2171,
+    1.1399,
+    0.3495
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "hover",
+   "color": "#ff8013",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_magma/16.res",
+   "metallic": 0,
+   "pos": [
+    -0.238,
+    1.2944,
+    -0.0851
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

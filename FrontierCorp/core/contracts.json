@@ -1,0 +1,151 @@
+{
+ "c_planks": {
+  "order": 0,
+  "name": "Доски для жилого модуля",
+  "text": "Станции нужны доски для ремонта жилого модуля. Сдайте 30 досок.",
+  "goal": "deliver",
+  "n": 30,
+  "reward": 120,
+  "requires": [],
+  "research": 5,
+  "item": "plank"
+ },
+ "c_iron": {
+  "order": 1,
+  "name": "Железо на обшивку",
+  "text": "Сдайте 50 железных слитков: станция латает обшивку после метеоритов.",
+  "goal": "deliver",
+  "n": 50,
+  "reward": 300,
+  "requires": [
+   "t_mining"
+  ],
+  "research": 10,
+  "item": "iron_ingot"
+ },
+ "c_miners": {
+  "order": 2,
+  "name": "Покажите завод",
+  "text": "Постройте 4 бура — станции нужна уверенность, что база будет добывать руду.",
+  "goal": "build",
+  "n": 4,
+  "reward": 200,
+  "requires": [
+   "t_mining"
+  ],
+  "research": 5,
+  "buildings": [
+   "miner",
+   "miner_mk2",
+   "miner_mk3",
+   "miner_mk4",
+   "miner_mk5"
+  ]
+ },
+ "c_hold": {
+  "order": 3,
+  "name": "Продержитесь",
+  "text": "Отбейте 3 волны монстров после получения задания.",
+  "goal": "survive",
+  "n": 3,
+  "reward": 400,
+  "requires": [
+   "t_defense"
+  ],
+  "research": 10
+ },
+ "c_steel": {
+  "order": 4,
+  "name": "Сталь для орбиты",
+  "text": "Сдайте 40 стали — после этого станция разрешит бурить нефть.",
+  "goal": "deliver",
+  "n": 40,
+  "reward": 600,
+  "requires": [
+   "t_coal"
+  ],
+  "research": 20,
+  "item": "steel"
+ },
+ "c_circuits": {
+  "order": 5,
+  "name": "Электроника",
+  "text": "Сдайте 30 микросхем для навигации челноков.",
+  "goal": "deliver",
+  "n": 30,
+  "reward": 800,
+  "requires": [
+   "t_power"
+  ],
+  "research": 20,
+  "item": "circuit"
+ },
+ "c_plastic": {
+  "order": 7,
+  "name": "Пластик для модулей",
+  "text": "Сдайте 100 пластика: станция строит новый жилой модуль.",
+  "goal": "deliver",
+  "n": 100,
+  "reward": 1500,
+  "requires": [
+   "t_oil"
+  ],
+  "research": 40,
+  "item": "plastic"
+ },
+ "c_hold2": {
+  "order": 8,
+  "name": "Оборона рубежа",
+  "text": "Отбейте 5 волн монстров после получения задания.",
+  "goal": "survive",
+  "n": 5,
+  "reward": 1500,
+  "requires": [
+   "t_mk3"
+  ],
+  "research": 40
+ },
+ "c_heavy": {
+  "order": 9,
+  "name": "Тяжёлая добыча",
+  "text": "Постройте 6 буров Mk3 или лучше.",
+  "goal": "build",
+  "n": 6,
+  "reward": 2000,
+  "requires": [
+   "t_mk3"
+  ],
+  "research": 50,
+  "buildings": [
+   "miner_mk3",
+   "miner_mk4",
+   "miner_mk5"
+  ]
+ },
+ "c_cores": {
+  "order": 10,
+  "name": "Ядра монстров",
+  "text": "Сдайте 10 ядер монстров — учёные станции изучают их энергию.",
+  "goal": "deliver",
+  "n": 10,
+  "reward": 3000,
+  "requires": [
+   "t_mk4"
+  ],
+  "research": 80,
+  "item": "monster_core"
+ },
+ "c_fuel": {
+  "order": 6,
+  "name": "Топливо для челноков",
+  "text": "Сдайте 20 канистр топлива.",
+  "goal": "deliver",
+  "n": 20,
+  "reward": 1200,
+  "requires": [
+   "t_oil"
+  ],
+  "research": 30,
+  "item": "canister_fuel"
+ }
+}

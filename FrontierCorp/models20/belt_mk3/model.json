@@ -1,0 +1,508 @@
+{
+ "parts": [
+  {
+   "color": "#59daff",
+   "emission": 4.2,
+   "mat": "glow",
+   "mesh": "res://models20/belt_mk3/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.375,
+    0.68
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#59daff",
+   "emission": 4.2,
+   "mat": "glow",
+   "mesh": "res://models20/belt_mk3/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.375,
+    -0.68
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.3,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/belt_mk3/2.res",
+   "metallic": 0,
+   "pos": [
+    -0.6,
+    0,
+    0.6
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/belt_mk3/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/belt_mk3/3.res",
+   "metallic": 0,
+   "pos": [
+    -0.6,
+    0,
+    0.6
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/belt_mk3/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/belt_mk3/4.res",
+   "metallic": 0,
+   "pos": [
+    -0.6,
+    0,
+    -0.6
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/belt_mk3/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/belt_mk3/5.res",
+   "metallic": 0,
+   "pos": [
+    -0.6,
+    0,
+    -0.6
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/belt_mk3/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/belt_mk3/6.res",
+   "metallic": 0,
+   "pos": [
+    0.6,
+    0,
+    0.6
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/belt_mk3/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/belt_mk3/7.res",
+   "metallic": 0,
+   "pos": [
+    0.6,
+    0,
+    0.6
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/belt_mk3/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/belt_mk3/8.res",
+   "metallic": 0,
+   "pos": [
+    0.6,
+    0,
+    -0.6
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/belt_mk3/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/belt_mk3/9.res",
+   "metallic": 0,
+   "pos": [
+    0.6,
+    0,
+    -0.6
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/belt_mk3/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/belt_mk3/10.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.245,
+    0.68
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    2,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/belt_mk3/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/belt_mk3/11.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.245,
+    0.68
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    2,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/belt_mk3/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/belt_mk3/12.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.245,
+    0.68
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    2,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/belt_mk3/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/belt_mk3/13.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.245,
+    -0.68
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    2,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/belt_mk3/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/belt_mk3/14.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.245,
+    -0.68
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    2,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/belt_mk3/tex0.png"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/belt_mk3/15.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0.245,
+    -0.68
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    2,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/belt_mk3/tex0.png"
+  },
+  {
+   "anim": "spin_fast",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/belt_mk3/16.res",
+   "metallic": 0,
+   "pos": [
+    -0.94,
+    0.13,
+    0
+   ],
+   "rot": [
+    -90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/belt_mk3/tex0.png"
+  },
+  {
+   "anim": "spin_fast",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/belt_mk3/17.res",
+   "metallic": 0,
+   "pos": [
+    -0.94,
+    0.13,
+    0
+   ],
+   "rot": [
+    -90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/belt_mk3/tex0.png"
+  },
+  {
+   "anim": "spin_fast_001",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/belt_mk3/18.res",
+   "metallic": 0,
+   "pos": [
+    0.94,
+    0.13,
+    0
+   ],
+   "rot": [
+    -90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/belt_mk3/tex0.png"
+  },
+  {
+   "anim": "spin_fast_001",
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/belt_mk3/19.res",
+   "metallic": 0,
+   "pos": [
+    0.94,
+    0.13,
+    0
+   ],
+   "rot": [
+    -90,
+    0,
+    0
+   ],
+   "roughness": 0.6,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/belt_mk3/tex0.png"
+  }
+ ]
+}

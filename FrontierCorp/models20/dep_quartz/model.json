@@ -1,0 +1,261 @@
+{
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/dep_quartz/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.8,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/dep_quartz/tex0.png"
+  },
+  {
+   "color": "#98a1ae",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/dep_quartz/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.05,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#484b58",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/dep_quartz/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.05,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#e6f3ff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_quartz/3.res",
+   "metallic": 0,
+   "pos": [
+    -0.0987,
+    1.0882,
+    -0.086
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#e6f3ff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_quartz/4.res",
+   "metallic": 0,
+   "pos": [
+    0.4426,
+    0.4031,
+    -0.3049
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#e6f3ff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_quartz/5.res",
+   "metallic": 0,
+   "pos": [
+    -0.2905,
+    0.5758,
+    -0.0817
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#e6f3ff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_quartz/6.res",
+   "metallic": 0,
+   "pos": [
+    0.3808,
+    0.5319,
+    -0.174
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#e6f3ff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_quartz/7.res",
+   "metallic": 0,
+   "pos": [
+    0.003,
+    0.5885,
+    0.1453
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#e6f3ff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_quartz/8.res",
+   "metallic": 0,
+   "pos": [
+    -0.3079,
+    0.4574,
+    0.3903
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#e6f3ff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_quartz/9.res",
+   "metallic": 0,
+   "pos": [
+    -0.0325,
+    0.3601,
+    -0.0764
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

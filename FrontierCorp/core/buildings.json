@@ -1,0 +1,4017 @@
+{
+ "hq": {
+  "name": "Штаб корпорации",
+  "desc": "Сердце базы. Склад для всего, что приезжает по лентам. Отстреливается от монстров.",
+  "category": "",
+  "behavior": "hq",
+  "cost": {},
+  "model": "hq",
+  "hp": 4000,
+  "size": 4,
+  "params": {
+   "slots": 60,
+   "gun_damage": 12,
+   "gun_range": 26,
+   "gun_rate": 0.45,
+   "power": 20,
+   "buildable": false,
+   "transfer": 40,
+   "station_radius": 5
+  },
+  "sounds": {
+   "work": "work_lab"
+  },
+  "size0": 3
+ },
+ "workbench": {
+  "name": "Верстак",
+  "desc": "Ручной крафт: доски, инструменты, аптечки. Подойди и нажми E.",
+  "category": "stations",
+  "behavior": "station",
+  "cost": {
+   "log": 4,
+   "stone": 4
+  },
+  "model": "workbench",
+  "hp": 150,
+  "size": 1,
+  "params": {
+   "station": "workbench"
+  },
+  "sounds": {
+   "work": "work_assembly"
+  }
+ },
+ "workshop": {
+  "name": "Мастерская",
+  "desc": "Ручной крафт деталей: шестерни, провода, патроны. Подойди и нажми E.",
+  "category": "stations",
+  "behavior": "station",
+  "cost": {
+   "plank": 10,
+   "stone": 10,
+   "iron_ingot": 5
+  },
+  "model": "workshop",
+  "hp": 250,
+  "size": 2,
+  "params": {
+   "station": "workshop"
+  },
+  "sounds": {
+   "work": "work_assembly"
+  },
+  "size0": 1
+ },
+ "furnace": {
+  "name": "Каменная печь",
+  "desc": "Сама плавит руду, если в ней есть топливо (ветки, брёвна, уголь). Работает без электричества. Два входа: в любой можно подавать и руду, и топливо — печь разберёт сама.",
+  "category": "production",
+  "behavior": "crafter",
+  "cost": {
+   "stone": 20
+  },
+  "model": "furnace",
+  "hp": 300,
+  "size": 2,
+  "params": {
+   "station": "furnace",
+   "speed": 0.5,
+   "power": 0,
+   "fuel": true,
+   "heat": 12,
+   "heat_radius": 3,
+   "tune": "heat",
+   "inputs": 1
+  },
+  "sounds": {
+   "work": "work_smelt"
+  },
+  "size0": 1
+ },
+ "smelter": {
+  "name": "Плавильня",
+  "desc": "Электрическая печь: быстрее, плавит сталь. Нужна энергия.",
+  "category": "production",
+  "behavior": "crafter",
+  "cost": {
+   "iron_ingot": 10,
+   "concrete": 10,
+   "gear": 2
+  },
+  "model": "smelter",
+  "hp": 350,
+  "size": 2,
+  "params": {
+   "station": "smelter",
+   "speed": 1.0,
+   "power": 4,
+   "tier": 1,
+   "heat": 12,
+   "heat_radius": 3,
+   "tune": "heat"
+  },
+  "sounds": {
+   "work": "work_smelt"
+  },
+  "size0": 1
+ },
+ "assembler": {
+  "name": "Сборщик",
+  "desc": "Сам собирает детали по выбранному рецепту. Нужна энергия.",
+  "category": "production",
+  "behavior": "crafter",
+  "cost": {
+   "iron_ingot": 10,
+   "gear": 4,
+   "wire": 6
+  },
+  "model": "assembler",
+  "hp": 350,
+  "size": 2,
+  "params": {
+   "station": "assembler",
+   "speed": 1.0,
+   "power": 15,
+   "tier": 1,
+   "tune": "calib"
+  },
+  "sounds": {
+   "work": "work_assembly"
+  },
+  "size0": 1
+ },
+ "smelter_mk2": {
+  "name": "Плавильня Mk2",
+  "desc": "Плавит вдвое быстрее обычной плавильни, но и энергии берёт больше.",
+  "category": "production",
+  "behavior": "crafter",
+  "cost": {
+   "steel": 10,
+   "circuit": 4,
+   "motor": 2
+  },
+  "model": "smelter_mk2",
+  "hp": 450,
+  "size": 2,
+  "params": {
+   "station": "smelter",
+   "speed": 2.0,
+   "power": 10,
+   "tier": 2,
+   "tune": "heat"
+  },
+  "sounds": {
+   "work": "work_smelt"
+  },
+  "size0": 1
+ },
+ "assembler_mk2": {
+  "name": "Сборщик Mk2",
+  "desc": "Собирает вдвое быстрее, принимает до 6 видов сырья с любых сторон.",
+  "category": "production",
+  "behavior": "crafter",
+  "cost": {
+   "steel": 10,
+   "circuit": 6,
+   "motor": 2
+  },
+  "model": "assembler_mk2",
+  "hp": 450,
+  "size": 2,
+  "params": {
+   "station": "assembler",
+   "speed": 2.0,
+   "power": 38,
+   "tier": 2,
+   "in_slots": 6,
+   "tune": "calib"
+  },
+  "sounds": {
+   "work": "work_assembly"
+  },
+  "size0": 1
+ },
+ "miner": {
+  "name": "Бур",
+  "desc": "Ставится на месторождение. Выдаёт 30 / 60 / 120 / 240 руды в минуту (бедная / нормальная / богатая / легендарная). Нужна энергия.",
+  "category": "extraction",
+  "behavior": "miner",
+  "cost": {
+   "iron_ingot": 8,
+   "gear": 4,
+   "plank": 4
+  },
+  "model": "miner",
+  "hp": 300,
+  "size": 2,
+  "params": {
+   "period": 2.0,
+   "power": 5,
+   "tier": 1,
+   "any_ground": true,
+   "rate_mult": 1.0,
+   "tune": "rpm"
+  },
+  "sounds": {
+   "work": "work_drill"
+  },
+  "size0": 1
+ },
+ "miner_mk2": {
+  "name": "Бур Mk2",
+  "desc": "Ставится на месторождение. Выдаёт 60 / 120 / 240 / 480 руды в минуту (бедная / нормальная / богатая / легендарная). Нужна энергия.",
+  "category": "extraction",
+  "behavior": "miner",
+  "cost": {
+   "steel": 6,
+   "motor": 2,
+   "circuit": 2
+  },
+  "model": "miner_mk2",
+  "hp": 450,
+  "size": 2,
+  "params": {
+   "period": 1.0,
+   "power": 12,
+   "tier": 2,
+   "any_ground": true,
+   "rate_mult": 2.0,
+   "tune": "rpm"
+  },
+  "sounds": {
+   "work": "work_drill"
+  },
+  "size0": 1
+ },
+ "belt": {
+  "name": "Конвейер",
+  "desc": "Везёт 60 предметов в минуту. Тяни мышью, чтобы проложить линию; ставится поверх старой ленты.",
+  "category": "logistics",
+  "behavior": "belt",
+  "cost": {
+   "iron_ingot": 1
+  },
+  "model": "belt",
+  "hp": 80,
+  "size": 1,
+  "params": {
+   "per_min": 60,
+   "tier": 1,
+   "any_ground": true
+  },
+  "sounds": {}
+ },
+ "belt_mk2": {
+  "name": "Конвейер Mk2",
+  "desc": "120 предметов в минуту. Тяни мышью, чтобы проложить линию; ставится поверх старой ленты.",
+  "category": "logistics",
+  "behavior": "belt",
+  "cost": {
+   "iron_plate": 1,
+   "gear": 1
+  },
+  "model": "belt_mk2",
+  "hp": 100,
+  "size": 1,
+  "params": {
+   "per_min": 120,
+   "tier": 2,
+   "any_ground": true
+  },
+  "sounds": {}
+ },
+ "belt_mk3": {
+  "name": "Конвейер Mk3",
+  "desc": "270 предметов в минуту. Тяни мышью, чтобы проложить линию; ставится поверх старой ленты.",
+  "category": "logistics",
+  "behavior": "belt",
+  "cost": {
+   "steel": 1,
+   "motor": 1
+  },
+  "model": "belt_mk3",
+  "hp": 120,
+  "size": 1,
+  "params": {
+   "per_min": 270,
+   "tier": 3,
+   "any_ground": true
+  },
+  "sounds": {}
+ },
+ "splitter": {
+  "name": "Разделитель",
+  "desc": "Делит поток по очереди вперёд, влево и вправо.",
+  "category": "logistics",
+  "behavior": "splitter",
+  "cost": {
+   "iron_ingot": 3,
+   "gear": 1
+  },
+  "model": "splitter",
+  "hp": 150,
+  "size": 1,
+  "params": {
+   "per_min": 1360
+  },
+  "sounds": {},
+  "explain": "Лента входит сзади, а предметы выходят по очереди вперёд, влево и вправо — туда, где есть лента или здание. Так одну линию руды можно раздать на несколько печей. Занятый выход пропускается, поток не встаёт."
+ },
+ "merger": {
+  "name": "Соединитель",
+  "desc": "Собирает ленты сзади, слева и справа в одну — вперёд. Входы по очереди.",
+  "category": "logistics",
+  "behavior": "merger",
+  "cost": {
+   "iron_ingot": 3,
+   "gear": 1
+  },
+  "model": "merger",
+  "hp": 150,
+  "size": 1,
+  "params": {
+   "per_min": 1360
+  },
+  "sounds": {},
+  "explain": "Обратное разделителю: ленты подходят сзади, слева и справа, а всё выходит одной лентой вперёд. Входы пропускаются по очереди."
+ },
+ "smart_splitter": {
+  "name": "Умный разделитель",
+  "desc": "Сортирует ленту: откройте (E) и нажмите стрелку у предмета — он поедет только в этот выход (например, руда прямо, уголь вправо). Остальное идёт в свободные выходы.",
+  "category": "logistics",
+  "behavior": "splitter",
+  "cost": {
+   "iron_ingot": 4,
+   "gear": 2,
+   "circuit": 1
+  },
+  "model": "smart_splitter",
+  "hp": 200,
+  "size": 1,
+  "params": {
+   "smart": true,
+   "per_min": 1360
+  },
+  "sounds": {},
+  "explain": "Сортировщик. Откройте его (E) и стрелкой у предмета выберите выход: например, руда прямо, уголь вправо. Что не назначено — идёт в любой свободный выход."
+ },
+ "smart_merger": {
+  "name": "Умный соединитель",
+  "desc": "Соединитель с главным входом: он пропускается первым. Настройка — E.",
+  "category": "logistics",
+  "behavior": "merger",
+  "cost": {
+   "iron_ingot": 4,
+   "gear": 2,
+   "circuit": 1
+  },
+  "model": "smart_merger",
+  "hp": 200,
+  "size": 1,
+  "params": {
+   "smart": true,
+   "per_min": 1360
+  },
+  "sounds": {},
+  "explain": "Соединитель с главным входом: откройте (E) и выберите вход, который пропускается первым. Остальные — когда главный пуст."
+ },
+ "chest": {
+  "name": "Ящик",
+  "desc": "Хранит 2 строки по 10 ячеек (20 стаков). Принимает предметы с лент. Больше места — «Укреплённый ящик», «Контейнер», «Склад».",
+  "category": "storage",
+  "behavior": "storage",
+  "cost": {
+   "plank": 6
+  },
+  "model": "chest",
+  "hp": 150,
+  "size": 1,
+  "params": {
+   "slots": 20
+  },
+  "sounds": {}
+ },
+ "container": {
+  "name": "Контейнер",
+  "desc": "Большое хранилище: 4 строки по 10 ячеек (40 стаков).",
+  "category": "storage",
+  "behavior": "storage",
+  "cost": {
+   "iron_plate": 10,
+   "steel": 2
+  },
+  "model": "container",
+  "hp": 500,
+  "size": 2,
+  "params": {
+   "slots": 40
+  },
+  "sounds": {},
+  "size0": 1,
+  "explain": "Большое хранилище. Ленты могут и привозить, и забирать из него."
+ },
+ "generator": {
+  "name": "Генератор",
+  "desc": "Сжигает топливо (ветки, брёвна, уголь) и даёт энергию всем машинам рядом с опорами.",
+  "category": "energy",
+  "behavior": "generator",
+  "cost": {
+   "iron_ingot": 10,
+   "stone": 10,
+   "gear": 2
+  },
+  "model": "generator",
+  "hp": 300,
+  "size": 2,
+  "params": {
+   "power": 40,
+   "radius": 10,
+   "tune": "mix"
+  },
+  "sounds": {
+   "work": "work_engine"
+  },
+  "size0": 1
+ },
+ "solar": {
+  "name": "Солнечная панель",
+  "desc": "Даёт энергию днём, без топлива.",
+  "category": "energy",
+  "behavior": "generator",
+  "cost": {
+   "glass": 4,
+   "iron_plate": 4,
+   "wire": 4
+  },
+  "model": "solar",
+  "hp": 150,
+  "size": 1,
+  "params": {
+   "power": 12,
+   "solar": true,
+   "radius": 6,
+   "tune": "tilt"
+  },
+  "sounds": {
+   "work": "work_electric"
+  }
+ },
+ "pole": {
+  "name": "Станция энергии Mk1",
+  "desc": "Передаёт до 20 энергии зданиям в радиусе 3 клеток: ближние к станции получают первыми, кому не хватило — стоят. Сама связывается с генераторами и станциями в радиусе 8 клеток. Покрытие видно в режиме энергии (V). Поставьте станцию выше уровнем прямо на старую — она обновится.",
+  "category": "energy",
+  "behavior": "pole",
+  "cost": {
+   "plank": 2,
+   "wire": 2
+  },
+  "model": "pole",
+  "hp": 100,
+  "size": 1,
+  "params": {
+   "radius": 3,
+   "any_ground": true,
+   "link": 8,
+   "transfer": 20,
+   "tier": 1,
+   "wire_height": 3.6
+  },
+  "sounds": {},
+  "explain": "Станция раздаёт энергию зданиям в своём круге и сама связывается с генераторами и другими станциями неподалёку. Нажмите V — увидите круги и связи. Если здание вне круга или станции не хватает мощности, оно стоит."
+ },
+ "wind_turbine": {
+  "name": "Ветряк",
+  "desc": "Даёт энергию от ветра: чем сильнее ветер, тем больше. Топливо не нужно, но ветер то стихает, то крепчает — ставьте аккумуляторы.",
+  "category": "energy",
+  "behavior": "generator",
+  "cost": {
+   "iron_plate": 6,
+   "gear": 4,
+   "wire": 6
+  },
+  "model": "wind_turbine",
+  "hp": 250,
+  "size": 2,
+  "params": {
+   "power": 25,
+   "wind": true,
+   "radius": 6,
+   "wire_height": 12.8,
+   "tune": "pitch"
+  },
+  "sounds": {
+   "work": "work_wind"
+  },
+  "size0": 1
+ },
+ "coal_generator": {
+  "name": "Угольный генератор",
+  "desc": "Жжёт уголь (15 в минуту) и пьёт воду (30 в минуту по трубе от водяного насоса), даёт 75 энергии. Без воды стоит. Один насос поит два генератора.",
+  "category": "energy",
+  "behavior": "generator",
+  "cost": {
+   "steel": 8,
+   "gear": 6,
+   "wire": 8
+  },
+  "model": "coal_generator",
+  "hp": 450,
+  "size": 2,
+  "params": {
+   "power": 75,
+   "fuels": [
+    "coal",
+    "charcoal",
+    "coke"
+   ],
+   "burn_mult": 0.1333,
+   "radius": 10,
+   "fuel_slots": 2,
+   "tune": "mix",
+   "pipes": true,
+   "water_per_min": 30
+  },
+  "sounds": {
+   "work": "work_engine"
+  },
+  "size0": 1
+ },
+ "battery_block": {
+  "name": "Аккумулятор",
+  "desc": "Запасает лишнюю энергию на ночь.",
+  "category": "energy",
+  "behavior": "battery",
+  "cost": {
+   "battery": 4,
+   "iron_plate": 4
+  },
+  "model": "battery",
+  "hp": 250,
+  "size": 2,
+  "params": {
+   "capacity": 2000,
+   "radius": 4
+  },
+  "sounds": {
+   "work": "work_electric"
+  },
+  "size0": 1
+ },
+ "turret": {
+  "name": "Турель",
+  "desc": "Стреляет по монстрам. Нужны энергия и патроны: лентой, через канал штаба или руками в турель.",
+  "category": "defense",
+  "behavior": "turret",
+  "cost": {
+   "iron_ingot": 8,
+   "gear": 3
+  },
+  "model": "turret",
+  "hp": 600,
+  "size": 1,
+  "params": {
+   "range": 30,
+   "damage": 14,
+   "rate": 0.22,
+   "ammo": "ammo",
+   "power": 3,
+   "power_old114": 0,
+   "ammo_slots": 2
+  },
+  "sounds": {}
+ },
+ "laser_turret": {
+  "name": "Лазерная турель",
+  "desc": "Бьёт мощнее, патроны не нужны, нужна энергия.",
+  "category": "defense",
+  "behavior": "turret",
+  "cost": {
+   "steel": 6,
+   "circuit": 4,
+   "glass": 4
+  },
+  "model": "laser_turret",
+  "hp": 800,
+  "size": 1,
+  "params": {
+   "range": 36,
+   "damage": 32,
+   "rate": 0.35,
+   "ammo": "",
+   "power": 15
+  },
+  "sounds": {}
+ },
+ "wall_wood": {
+  "name": "Деревянная стена",
+  "desc": "Дешёвая преграда.",
+  "category": "defense",
+  "behavior": "wall",
+  "cost": {
+   "log": 2
+  },
+  "model": "wall_wood",
+  "hp": 500,
+  "size": 1,
+  "params": {},
+  "sounds": {}
+ },
+ "wall": {
+  "name": "Бетонная стена",
+  "desc": "Прочная преграда для монстров.",
+  "category": "defense",
+  "behavior": "wall",
+  "cost": {
+   "concrete": 3
+  },
+  "model": "wall",
+  "hp": 1600,
+  "size": 1,
+  "params": {},
+  "sounds": {}
+ },
+ "lamp": {
+  "name": "Фонарь",
+  "desc": "Освещает базу ночью.",
+  "category": "decor",
+  "behavior": "light",
+  "cost": {
+   "iron_ingot": 1,
+   "glass": 1
+  },
+  "model": "lamp",
+  "hp": 80,
+  "size": 1,
+  "params": {
+   "light_color": "#ffe0a0",
+   "light_range": 12
+  },
+  "sounds": {}
+ },
+ "found_1": {
+  "name": "Фундамент 1×1",
+  "desc": "Ровная площадка на холме или на воде. На нём можно строить, сверху можно ставить ещё ярусы.",
+  "category": "structure",
+  "behavior": "foundation",
+  "cost": {
+   "stone": 3
+  },
+  "model": "found_1x1",
+  "hp": 1200,
+  "size": 1,
+  "params": {
+   "height": 1.0
+  },
+  "sounds": {}
+ },
+ "found_2": {
+  "name": "Фундамент 2×2",
+  "desc": "Большая площадка 2×2 клетки. Ставится на землю, на воду или на другие фундаменты.",
+  "category": "structure",
+  "behavior": "foundation",
+  "cost": {
+   "stone": 10
+  },
+  "model": "found_2x2",
+  "hp": 3000,
+  "size": 2,
+  "params": {
+   "height": 1.0
+  },
+  "sounds": {}
+ },
+ "found_tall": {
+  "name": "Фундамент 2 м",
+  "desc": "Высокий ярус: поднимает площадку сразу на 2 метра.",
+  "category": "structure",
+  "behavior": "foundation",
+  "cost": {
+   "stone": 5
+  },
+  "model": "found_tall",
+  "hp": 1600,
+  "size": 1,
+  "params": {
+   "height": 2.0
+  },
+  "sounds": {}
+ },
+ "found_ramp": {
+  "name": "Рампа",
+  "desc": "Подъём на ярус выше: стрелка смотрит в сторону подъёма. На рампу нельзя ставить здания.",
+  "category": "structure",
+  "behavior": "foundation",
+  "cost": {
+   "stone": 3
+  },
+  "model": "found_ramp",
+  "hp": 1000,
+  "size": 1,
+  "params": {
+   "height": 1.0,
+   "ramp": true
+  },
+  "sounds": {},
+  "explain": "Подъём на ярус выше для героя: стрелка смотрит вверх по склону. Для предметов между ярусами ставьте лифт."
+ },
+ "found_ramp2": {
+  "name": "Пологая рампа 2×2",
+  "desc": "Плавный подъём на ярус по двум клеткам.",
+  "category": "structure",
+  "behavior": "foundation",
+  "cost": {
+   "stone": 10
+  },
+  "model": "found_ramp2",
+  "hp": 2400,
+  "size": 2,
+  "params": {
+   "height": 1.0,
+   "ramp": true
+  },
+  "sounds": {}
+ },
+ "found_wall": {
+  "name": "Стена фундамента",
+  "desc": "Бетонная стена с окошком. Ставится на фундамент или на ровную землю, закрывает проход.",
+  "category": "structure",
+  "behavior": "wall",
+  "cost": {
+   "stone": 4
+  },
+  "model": "found_wall",
+  "hp": 1400,
+  "size": 1,
+  "params": {},
+  "sounds": {}
+ },
+ "floor": {
+  "name": "Плитка",
+  "desc": "Красивый пол. По нему можно ходить.",
+  "category": "decor",
+  "behavior": "floor",
+  "cost": {
+   "stone": 2
+  },
+  "model": "floor",
+  "hp": 100,
+  "size": 1,
+  "params": {},
+  "sounds": {}
+ },
+ "fence": {
+  "name": "Забор",
+  "desc": "Декоративный забор. Низкий: его можно перепрыгнуть.",
+  "category": "decor",
+  "behavior": "wall",
+  "cost": {
+   "plank": 2
+  },
+  "model": "fence",
+  "hp": 150,
+  "size": 1,
+  "params": {
+   "low": true
+  },
+  "sounds": {}
+ },
+ "gate": {
+  "name": "Ворота",
+  "desc": "Герой проходит сквозь них, а монстры — нет: им придётся ломать.",
+  "category": "defense",
+  "behavior": "wall",
+  "cost": {
+   "iron_ingot": 6,
+   "plank": 4
+  },
+  "model": "gate",
+  "hp": 900,
+  "size": 1,
+  "params": {
+   "gate": true
+  },
+  "sounds": {}
+ },
+ "campfire": {
+  "name": "Костёр",
+  "desc": "Греет (зимой спасает от холода) и светит ночью без электричества.",
+  "category": "decor",
+  "behavior": "light",
+  "cost": {
+   "log": 3,
+   "stone": 4
+  },
+  "model": "lp_campfire",
+  "hp": 80,
+  "size": 1,
+  "params": {
+   "light_color": "#ffa040",
+   "light_range": 10,
+   "power": 0,
+   "heat": 25,
+   "heat_radius": 5
+  },
+  "sounds": {}
+ },
+ "crates": {
+  "name": "Ящики штабелем",
+  "desc": "Декор для базы.",
+  "category": "decor",
+  "behavior": "decor",
+  "cost": {
+   "plank": 3
+  },
+  "model": "lp_crate",
+  "hp": 80,
+  "size": 1,
+  "params": {},
+  "sounds": {}
+ },
+ "barrel": {
+  "name": "Бочка",
+  "desc": "Декор для базы. Низкая: можно перепрыгнуть.",
+  "category": "decor",
+  "behavior": "decor",
+  "cost": {
+   "iron_plate": 1
+  },
+  "model": "lp_barrel",
+  "hp": 80,
+  "size": 1,
+  "params": {
+   "low": true
+  },
+  "sounds": {}
+ },
+ "sign": {
+  "name": "Табличка",
+  "desc": "Указатель для базы.",
+  "category": "decor",
+  "behavior": "decor",
+  "cost": {
+   "plank": 1
+  },
+  "model": "lp_sign",
+  "hp": 60,
+  "size": 1,
+  "params": {
+   "low": true
+  },
+  "sounds": {}
+ },
+ "flag": {
+  "name": "Флаг",
+  "desc": "Флаг корпорации.",
+  "category": "decor",
+  "behavior": "decor",
+  "cost": {
+   "plank": 1,
+   "fiber": 4
+  },
+  "model": "flag",
+  "hp": 80,
+  "size": 1,
+  "params": {},
+  "sounds": {}
+ },
+ "medbay": {
+  "name": "Медпункт",
+  "desc": "Лечит героя и чинит здания рядом. Нужна энергия. (Собран из блоков — откройте в редакторе как пример.)",
+  "category": "special",
+  "behavior": "decor",
+  "cost": {
+   "iron_plate": 4,
+   "glass": 2,
+   "medkit": 1
+  },
+  "model": "medbay",
+  "hp": 300,
+  "size": 2,
+  "params": {
+   "power": 6
+  },
+  "blocks": [
+   {
+    "type": "heal_area",
+    "radius": 6,
+    "heal": 6,
+    "repair": 10,
+    "needs_power": true
+   }
+  ],
+  "sounds": {
+   "work": "work_lab"
+  },
+  "size0": 1
+ },
+ "boost_beacon": {
+  "name": "Маяк ускорения",
+  "desc": "Рядом с ним герой бегает и добывает быстрее.",
+  "category": "special",
+  "behavior": "decor",
+  "cost": {
+   "steel": 2,
+   "crystal": 1,
+   "wire": 4
+  },
+  "model": "boost_beacon",
+  "hp": 200,
+  "size": 1,
+  "params": {
+   "power": 4
+  },
+  "blocks": [
+   {
+    "type": "buff_area",
+    "radius": 10,
+    "stat": "move",
+    "value": 0.25,
+    "needs_power": true
+   },
+   {
+    "type": "buff_area",
+    "radius": 10,
+    "stat": "gather",
+    "value": 0.3,
+    "needs_power": true
+   }
+  ],
+  "sounds": {
+   "work": "work_electric"
+  }
+ },
+ "market": {
+  "name": "Торговый терминал",
+  "desc": "Продаёт всё, что в него привезут лентой или положат руками (80% цены).",
+  "category": "special",
+  "behavior": "decor",
+  "cost": {
+   "iron_plate": 6,
+   "circuit": 2
+  },
+  "model": "market",
+  "hp": 300,
+  "size": 2,
+  "params": {
+   "buildable": false
+  },
+  "blocks": [
+   {
+    "type": "sell",
+    "items": [],
+    "k": 0.8
+   },
+   {
+    "type": "trigger",
+    "event": "working",
+    "cooldown": 1.0,
+    "actions": [
+     {
+      "do": "sound",
+      "key": "coin",
+      "x": "$x",
+      "z": "$z"
+     }
+    ]
+   }
+  ],
+  "sounds": {},
+  "size0": 1
+ },
+ "monster_portal": {
+  "name": "Тёмный портал",
+  "desc": "Ночью призывает ползунов — опыт и трофеи прямо у базы. Разрушьте, и из него выпадет кристалл.",
+  "category": "special",
+  "behavior": "decor",
+  "cost": {
+   "crystal": 2,
+   "monster_core": 1
+  },
+  "model": "monster_portal",
+  "hp": 400,
+  "size": 1,
+  "params": {},
+  "blocks": [
+   {
+    "type": "spawn",
+    "enemy": "crawler",
+    "n": 2,
+    "every": 40,
+    "only_night": true
+   },
+   {
+    "type": "trigger",
+    "event": "night",
+    "actions": [
+     {
+      "do": "notify",
+      "text": "Тёмный портал пробудился!"
+     }
+    ]
+   },
+   {
+    "type": "trigger",
+    "event": "destroyed",
+    "actions": [
+     {
+      "do": "drop",
+      "item": "crystal",
+      "n": "2",
+      "x": "$x",
+      "z": "$z"
+     }
+    ]
+   }
+  ],
+  "sounds": {
+   "work": "work_reactor"
+  }
+ },
+ "siren": {
+  "name": "Сирена",
+  "desc": "Предупреждает, когда монстры подходят к ней или начинается волна.",
+  "category": "special",
+  "behavior": "decor",
+  "cost": {
+   "iron_ingot": 2,
+   "wire": 2
+  },
+  "model": "siren",
+  "hp": 150,
+  "size": 1,
+  "params": {},
+  "blocks": [
+   {
+    "type": "trigger",
+    "event": "enemy_near",
+    "radius": 12,
+    "cooldown": 20,
+    "actions": [
+     {
+      "do": "notify",
+      "text": "Сирена: монстры рядом!"
+     },
+     {
+      "do": "sound",
+      "key": "alarm",
+      "x": "$x",
+      "z": "$z"
+     }
+    ]
+   },
+   {
+    "type": "trigger",
+    "event": "wave_start",
+    "actions": [
+     {
+      "do": "sound",
+      "key": "alarm",
+      "x": "$x",
+      "z": "$z"
+     }
+    ]
+   }
+  ],
+  "sounds": {}
+ },
+ "wood_boiler": {
+  "name": "Дровяной котёл",
+  "desc": "Маленький генератор на дровах: принимает топливо с ленты.",
+  "category": "special",
+  "behavior": "decor",
+  "cost": {
+   "stone": 10,
+   "iron_ingot": 4
+  },
+  "model": "wood_boiler",
+  "hp": 250,
+  "size": 2,
+  "params": {},
+  "blocks": [
+   {
+    "type": "power_gen",
+    "power": 15,
+    "radius": 6,
+    "fuel": true
+   }
+  ],
+  "sounds": {
+   "work": "work_burner"
+  },
+  "size0": 1
+ },
+ "garden_bed": {
+  "name": "Грядка",
+  "desc": "Сама выращивает ягоды. Поставьте ленту по стрелке — урожай поедет на склад.",
+  "category": "special",
+  "behavior": "decor",
+  "cost": {
+   "plank": 4,
+   "berry": 3
+  },
+  "model": "garden_bed",
+  "hp": 100,
+  "size": 1,
+  "params": {},
+  "blocks": [
+   {
+    "type": "produce",
+    "item": "berry",
+    "n": 1,
+    "every": 20,
+    "needs_power": false
+   }
+  ],
+  "sounds": {}
+ },
+ "tesla": {
+  "name": "Тесла-башня",
+  "desc": "Бьёт молнией ближайшего монстра. Нужна энергия.",
+  "category": "special",
+  "behavior": "decor",
+  "cost": {
+   "copper_ingot": 8,
+   "circuit": 2,
+   "steel": 2
+  },
+  "model": "tesla",
+  "hp": 500,
+  "size": 1,
+  "params": {
+   "power": 10
+  },
+  "blocks": [
+   {
+    "type": "shoot",
+    "damage": 22,
+    "range": 18,
+    "rate": 1.2,
+    "color": "#80c0ff",
+    "needs_power": true
+   }
+  ],
+  "sounds": {
+   "work": "work_electric"
+  }
+ },
+ "trap_mine": {
+  "name": "Мина-ловушка",
+  "desc": "Взрывается, когда монстр наступает рядом. Перезаряжается 30 секунд. Низкая — можно перепрыгнуть.",
+  "category": "special",
+  "behavior": "decor",
+  "cost": {
+   "iron_plate": 1,
+   "sulfur": 2
+  },
+  "model": "trap_mine",
+  "hp": 60,
+  "size": 1,
+  "params": {
+   "low": true
+  },
+  "blocks": [
+   {
+    "type": "trigger",
+    "event": "enemy_near",
+    "radius": 1.5,
+    "cooldown": 30,
+    "actions": [
+     {
+      "do": "explode",
+      "x": "$x",
+      "z": "$z",
+      "v": "120",
+      "dist": "3"
+     }
+    ]
+   }
+  ],
+  "sounds": {}
+ },
+ "recycler": {
+  "name": "Утилизатор",
+  "desc": "Перерабатывает трофеи с монстров в патроны: 2 хитина + 1 слизь → 5 патронов.",
+  "category": "special",
+  "behavior": "decor",
+  "cost": {
+   "iron_ingot": 6,
+   "gear": 2
+  },
+  "model": "recycler",
+  "hp": 300,
+  "size": 2,
+  "params": {
+   "power": 5
+  },
+  "blocks": [
+   {
+    "type": "convert",
+    "in": {
+     "chitin": 2,
+     "goo": 1
+    },
+    "out": {
+     "ammo": 5
+    },
+    "time": 3,
+    "needs_power": true
+   }
+  ],
+  "sounds": {
+   "work": "work_crush"
+  },
+  "size0": 1
+ },
+ "biomass_burner": {
+  "name": "Сжигатель биомассы",
+  "desc": "Простая электростанция начала игры. Жжёт листья, траву, ветки, брёвна и биомассу (с ленты — и ягоды, грибы, гниль); чем лучше топливо, тем дольше горит (время у каждого предмета — поле «Топливо, сек»). Топливо кладут руками (E) или подают лентой.",
+  "category": "energy",
+  "behavior": "generator",
+  "cost": {
+   "stone": 12,
+   "log": 6,
+   "branch": 6
+  },
+  "model": "biomass_burner",
+  "hp": 220,
+  "size": 2,
+  "params": {
+   "power": 30,
+   "radius": 8,
+   "fuels": [
+    "leaves",
+    "fiber",
+    "branch",
+    "log",
+    "plank",
+    "biomass",
+    "berry",
+    "apple",
+    "mushroom",
+    "rotten"
+   ],
+   "burn_mult": 0.28,
+   "tune": "mix"
+  },
+  "sounds": {
+   "work": "work_burner"
+  },
+  "size0": 1
+ },
+ "water_pump": {
+  "name": "Водяной насос",
+  "desc": "Ставится на воду (озеро или реку) и качает 60 единиц воды в минуту в трубы рядом.",
+  "category": "fluids",
+  "behavior": "miner",
+  "cost": {
+   "iron_plate": 6,
+   "gear": 4,
+   "wire": 2
+  },
+  "model": "water_pump",
+  "hp": 300,
+  "size": 2,
+  "params": {
+   "period": 1.0,
+   "power": 20,
+   "any_ground": true,
+   "on_water": true,
+   "water_item": "water",
+   "extracts": "fluid",
+   "pipes": true,
+   "tune": "pressure"
+  },
+  "sounds": {
+   "work": "work_pump"
+  },
+  "size0": 1
+ },
+ "oil_pump": {
+  "name": "Нефтяной насос",
+  "desc": "Качалка: ставится на нефтяное пятно (чёрное на земле и на карте) и качает 60 единиц нефти в минуту в трубы рядом.",
+  "category": "fluids",
+  "behavior": "miner",
+  "cost": {
+   "steel": 6,
+   "motor": 2,
+   "iron_plate": 6
+  },
+  "model": "oil_pump",
+  "hp": 450,
+  "size": 3,
+  "params": {
+   "period": 1.0,
+   "power": 40,
+   "any_ground": true,
+   "extracts": "fluid",
+   "pipes": true,
+   "tune": "pressure"
+  },
+  "sounds": {
+   "work": "work_pump"
+  },
+  "size0": 2
+ },
+ "pipe": {
+  "name": "Труба",
+  "desc": "Ведёт жидкость: до 300 единиц в минуту. Тяни мышью, чтобы проложить линию. Трубы сами соединяются друг с другом, с насосами, баками и машинами рядом. В одной сети труб — только одна жидкость.",
+  "category": "fluids",
+  "behavior": "pipe",
+  "cost": {
+   "iron_plate": 1
+  },
+  "model": "pipe",
+  "hp": 80,
+  "size": 1,
+  "params": {
+   "pipe_per_min": 300,
+   "pipe_capacity": 5,
+   "tier": 1,
+   "any_ground": true,
+   "arm_model": "pipe_arm"
+  },
+  "sounds": {}
+ },
+ "pipe_mk2": {
+  "name": "Труба Mk2",
+  "desc": "Толстая труба: до 600 единиц в минуту. Ставится прямо поверх старой.",
+  "category": "fluids",
+  "behavior": "pipe",
+  "cost": {
+   "steel": 1,
+   "rubber": 1
+  },
+  "model": "pipe_mk2",
+  "hp": 100,
+  "size": 1,
+  "params": {
+   "pipe_per_min": 600,
+   "pipe_capacity": 10,
+   "tier": 2,
+   "any_ground": true,
+   "arm_model": "pipe_arm_mk2"
+  },
+  "sounds": {}
+ },
+ "tank": {
+  "name": "Бак",
+  "desc": "Запасает до 400 единиц жидкости. Подключите его трубой: он сам наполняется и отдаёт жидкость в сеть.",
+  "category": "fluids",
+  "behavior": "tank",
+  "cost": {
+   "iron_plate": 10,
+   "steel": 4
+  },
+  "model": "tank",
+  "hp": 500,
+  "size": 2,
+  "params": {
+   "pipe_capacity": 400
+  },
+  "sounds": {}
+ },
+ "refinery": {
+  "name": "Нефтезавод",
+  "desc": "Перерабатывает нефть в топливо, пластик и резину. Жидкости подаются и забираются трубами, пластик и резина выходят на ленту.",
+  "category": "fluids",
+  "behavior": "crafter",
+  "cost": {
+   "steel": 10,
+   "motor": 2,
+   "circuit": 4
+  },
+  "model": "refinery",
+  "hp": 500,
+  "size": 3,
+  "params": {
+   "station": "refinery",
+   "speed": 1.0,
+   "power": 30,
+   "pipes": true,
+   "in_slots": 3,
+   "out_slots": 2,
+   "tune": "ph"
+  },
+  "sounds": {
+   "work": "work_bubble"
+  },
+  "size0": 2
+ },
+ "packager": {
+  "name": "Упаковщик",
+  "desc": "Наливает жидкость из труб в канистры и выливает канистры обратно в трубы. Канистры едут по лентам как обычные предметы.",
+  "category": "fluids",
+  "behavior": "crafter",
+  "cost": {
+   "iron_plate": 8,
+   "gear": 4,
+   "circuit": 2
+  },
+  "model": "packager",
+  "hp": 350,
+  "size": 2,
+  "params": {
+   "station": "packager",
+   "speed": 1.0,
+   "power": 10,
+   "pipes": true,
+   "tune": "calib"
+  },
+  "sounds": {
+   "work": "work_assembly"
+  },
+  "size0": 1,
+  "explain": "Наливает жидкость из труб в канистры и выливает обратно. Канистры едут по лентам как обычные предметы."
+ },
+ "fuel_generator": {
+  "name": "Топливный генератор",
+  "desc": "Жжёт топливо или природный газ из труб (или канистры с ленты) и даёт 250 энергии.",
+  "category": "energy",
+  "behavior": "generator",
+  "cost": {
+   "steel": 10,
+   "motor": 2,
+   "rubber": 4
+  },
+  "model": "fuel_generator",
+  "hp": 500,
+  "size": 3,
+  "params": {
+   "power": 250,
+   "fuels": [
+    "fuel",
+    "canister_fuel",
+    "natural_gas",
+    "canister_gas"
+   ],
+   "burn_mult": 0.15,
+   "radius": 10,
+   "fuel_slots": 2,
+   "pipes": true,
+   "tune": "mix"
+  },
+  "sounds": {
+   "work": "work_engine"
+  },
+  "size0": 2
+ },
+ "tech_terminal": {
+  "name": "Академия инженерных чертежей",
+  "desc": "Открывает строительные чертежи. Выберите проект и доставьте указанные компоненты. Лаборатория отвечает за технологии и улучшения.",
+  "category": "stations",
+  "behavior": "terminal",
+  "cost": {
+   "plank": 6,
+   "stone": 6
+  },
+  "model": "blueprint_academy",
+  "hp": 300,
+  "size": 2,
+  "params": {},
+  "sounds": {
+   "work": "work_lab"
+  },
+  "size0": 1,
+  "explain": "Сюда можно подать ленту с ресурсами для открытия, отмеченного звёздочкой ★ в дереве (J). Кредиты за открытие списываются со счёта, когда ресурсы сданы."
+ },
+ "miner_mk3": {
+  "name": "Бур Mk3",
+  "desc": "Ставится на месторождение. Выдаёт 120 / 240 / 480 / 960 руды в минуту (бедная / нормальная / богатая / легендарная). Нужна энергия.",
+  "category": "extraction",
+  "behavior": "miner",
+  "cost": {
+   "steel": 12,
+   "motor": 4,
+   "circuit": 4,
+   "concrete": 6
+  },
+  "model": "miner_mk3",
+  "hp": 600,
+  "size": 2,
+  "params": {
+   "period": 0.6,
+   "power": 30,
+   "tier": 3,
+   "any_ground": true,
+   "rate_mult": 4.0,
+   "tune": "rpm"
+  },
+  "sounds": {
+   "work": "work_drill"
+  },
+  "size0": 1
+ },
+ "miner_mk4": {
+  "name": "Бур Mk4",
+  "desc": "Ставится на месторождение. Выдаёт 180 / 360 / 720 / 1440 руды в минуту (бедная / нормальная / богатая / легендарная). Нужна энергия.",
+  "category": "extraction",
+  "behavior": "miner",
+  "cost": {
+   "steel": 20,
+   "motor": 6,
+   "circuit": 8,
+   "battery": 4,
+   "plastic": 10
+  },
+  "model": "miner_mk4",
+  "hp": 750,
+  "size": 2,
+  "params": {
+   "period": 0.4,
+   "power": 45,
+   "tier": 4,
+   "any_ground": true,
+   "rate_mult": 6.0,
+   "tune": "rpm"
+  },
+  "sounds": {
+   "work": "work_drill"
+  },
+  "size0": 1
+ },
+ "miner_mk5": {
+  "name": "Бур Mk5",
+  "desc": "Ставится на месторождение. Выдаёт 240 / 480 / 960 / 1920 руды в минуту (бедная / нормальная / богатая / легендарная). Нужна энергия.",
+  "category": "extraction",
+  "behavior": "miner",
+  "cost": {
+   "steel": 30,
+   "circuit": 12,
+   "battery": 8,
+   "crystal": 10,
+   "monster_core": 2
+  },
+  "model": "miner_mk5",
+  "hp": 900,
+  "size": 2,
+  "params": {
+   "period": 0.25,
+   "power": 60,
+   "tier": 5,
+   "any_ground": true,
+   "rate_mult": 8.0,
+   "tune": "rpm"
+  },
+  "sounds": {
+   "work": "work_drill"
+  },
+  "size0": 1
+ },
+ "belt_mk4": {
+  "name": "Конвейер Mk4",
+  "desc": "480 предметов в минуту. Тяни мышью, чтобы проложить линию; ставится поверх старой ленты.",
+  "category": "logistics",
+  "behavior": "belt",
+  "cost": {
+   "steel": 1,
+   "plastic": 1
+  },
+  "model": "belt_mk4",
+  "hp": 140,
+  "size": 1,
+  "params": {
+   "per_min": 480,
+   "tier": 4,
+   "any_ground": true
+  },
+  "sounds": {}
+ },
+ "belt_mk5": {
+  "name": "Конвейер Mk5",
+  "desc": "780 предметов в минуту. Тяни мышью, чтобы проложить линию; ставится поверх старой ленты.",
+  "category": "logistics",
+  "behavior": "belt",
+  "cost": {
+   "steel": 1,
+   "plastic": 1,
+   "circuit": 1
+  },
+  "model": "belt_mk5",
+  "hp": 160,
+  "size": 1,
+  "params": {
+   "per_min": 780,
+   "tier": 5,
+   "any_ground": true
+  },
+  "sounds": {}
+ },
+ "pipe_mk3": {
+  "name": "Труба Mk3",
+  "desc": "Усиленная труба: до 900 единиц в минуту. Ставится прямо поверх старой.",
+  "category": "fluids",
+  "behavior": "pipe",
+  "cost": {
+   "steel": 2,
+   "rubber": 1
+  },
+  "model": "pipe_mk3",
+  "hp": 120,
+  "size": 1,
+  "params": {
+   "pipe_per_min": 900,
+   "pipe_capacity": 15,
+   "tier": 3,
+   "any_ground": true,
+   "arm_model": "pipe_arm_mk3"
+  },
+  "sounds": {}
+ },
+ "pipe_mk4": {
+  "name": "Труба Mk4",
+  "desc": "Магистральная труба: до 1200 единиц в минуту. Кислотостойкая.",
+  "category": "fluids",
+  "behavior": "pipe",
+  "cost": {
+   "steel": 2,
+   "plastic": 1,
+   "rubber": 1
+  },
+  "model": "pipe_mk4",
+  "hp": 140,
+  "size": 1,
+  "params": {
+   "pipe_per_min": 1200,
+   "pipe_capacity": 20,
+   "tier": 4,
+   "any_ground": true,
+   "arm_model": "pipe_arm_mk4",
+   "acid_proof": true
+  },
+  "sounds": {}
+ },
+ "pipe_mk5": {
+  "name": "Труба Mk5",
+  "desc": "Труба с силовым полем: до 1800 единиц в минуту.",
+  "category": "fluids",
+  "behavior": "pipe",
+  "cost": {
+   "steel": 3,
+   "plastic": 2,
+   "crystal": 1
+  },
+  "model": "pipe_mk5",
+  "hp": 160,
+  "size": 1,
+  "params": {
+   "pipe_per_min": 1800,
+   "pipe_capacity": 30,
+   "tier": 5,
+   "any_ground": true,
+   "arm_model": "pipe_arm_mk5"
+  },
+  "sounds": {}
+ },
+ "research_lab": {
+  "name": "Лаборатория",
+  "desc": "Изучает образцы с монстров и даёт очки исследований для дерева открытий. Слизь и хитин — понемногу, ядро монстра — много. Нужна энергия.",
+  "category": "special",
+  "behavior": "decor",
+  "cost": {
+   "iron_plate": 6,
+   "wire": 8,
+   "stone": 14
+  },
+  "model": "research_lab",
+  "hp": 300,
+  "size": 2,
+  "params": {
+   "power": 8,
+   "pollution": 0
+  },
+  "blocks": [
+   {
+    "type": "research",
+    "in": {
+     "goo": 2,
+     "chitin": 1
+    },
+    "points": 4,
+    "time": 20.0,
+    "needs_power": true
+   },
+   {
+    "type": "research",
+    "in": {
+     "monster_core": 1
+    },
+    "points": 25,
+    "time": 40.0,
+    "needs_power": true
+   }
+  ],
+  "sounds": {
+   "work": "work_lab"
+  },
+  "size0": 1,
+  "explain": "Подвозите трофеи с монстров: лаборатория превращает их в очки исследований для дерева открытий."
+ },
+ "rover": {
+  "name": "Вездеход",
+  "desc": "Машина: подойдите и нажмите E — сесть, E ещё раз — выйти. Едет в 2,5 раза быстрее бега.",
+  "category": "special",
+  "behavior": "vehicle",
+  "cost": {
+   "iron_plate": 20,
+   "motor": 4,
+   "rubber": 4
+  },
+  "model": "rover",
+  "hp": 400,
+  "size": 1,
+  "params": {
+   "speed": 2.5,
+   "pollution": 0
+  },
+  "sounds": {
+   "work": "work_engine"
+  }
+ },
+ "drone_port": {
+  "name": "Площадка дронов: отправка",
+  "desc": "Два входа принимают груз с лент. Назначенные дроны перевозят его на разгрузочную станцию своего канала.",
+  "category": "special",
+  "behavior": "decor",
+  "cost": {
+   "iron_plate": 10,
+   "circuit": 4,
+   "motor": 2
+  },
+  "model": "drone_port",
+  "hp": 250,
+  "size": 2,
+  "params": {
+   "power": 6,
+   "pollution": 0,
+   "inputs": 2,
+   "outputs": 0
+  },
+  "blocks": [
+   {
+    "type": "carrier",
+    "mode": "send",
+    "channel": "A",
+    "n": 10,
+    "every": 8.0,
+    "range": 80.0,
+    "speed": 14.0,
+    "model": "drone_carrier",
+    "ground": false,
+    "needs_power": true
+   }
+  ],
+  "sounds": {
+   "work": "work_electric"
+  },
+  "explain": "Первый L1 входит в комплект. Дополнительные дроны собираются в мастерской. Вместимость рейса задаётся составом парка."
+ },
+ "drone_dock": {
+  "name": "Площадка дронов: приём",
+  "desc": "Принимает отправки своего канала и выдаёт груз через два соседних порта.",
+  "category": "special",
+  "behavior": "decor",
+  "cost": {
+   "iron_plate": 10,
+   "circuit": 2
+  },
+  "model": "drone_dock",
+  "hp": 250,
+  "size": 2,
+  "params": {
+   "pollution": 0,
+   "inputs": 0,
+   "outputs": 2
+  },
+  "blocks": [
+   {
+    "type": "carrier",
+    "mode": "receive",
+    "channel": "A",
+    "n": 10,
+    "every": 8.0,
+    "range": 80.0,
+    "speed": 14.0,
+    "model": "drone_carrier",
+    "ground": false,
+    "needs_power": true
+   }
+  ],
+  "sounds": {
+   "work": "work_electric"
+  },
+  "explain": "Приём: сюда прилетают дроны с площадки отправки того же канала, груз выходит на ленту."
+ },
+ "truck_station": {
+  "name": "Грузовая станция: отправка",
+  "desc": "Копит предметы с ленты и раз в 20 секунд отправляет грузовик (по 30) на станцию приёма того же канала.",
+  "category": "special",
+  "behavior": "decor",
+  "cost": {
+   "iron_plate": 16,
+   "motor": 2,
+   "gear": 6
+  },
+  "model": "truck_station",
+  "hp": 300,
+  "size": 2,
+  "params": {
+   "pollution": 1
+  },
+  "blocks": [
+   {
+    "type": "carrier",
+    "mode": "send",
+    "channel": "A",
+    "n": 30,
+    "every": 20.0,
+    "range": 160.0,
+    "speed": 8.0,
+    "model": "truck_carrier",
+    "ground": true,
+    "needs_power": false
+   }
+  ],
+  "sounds": {
+   "work": "work_engine"
+  },
+  "size0": 1,
+  "explain": "Отправка: копит предметы с ленты и раз в 20 секунд отправляет грузовик на станцию приёма того же канала."
+ },
+ "truck_depot": {
+  "name": "Грузовая станция: приём",
+  "desc": "Сюда приезжают грузовики; груз выходит на ленту.",
+  "category": "special",
+  "behavior": "decor",
+  "cost": {
+   "iron_plate": 12,
+   "gear": 4
+  },
+  "model": "truck_depot",
+  "hp": 300,
+  "size": 2,
+  "params": {
+   "pollution": 0
+  },
+  "blocks": [
+   {
+    "type": "carrier",
+    "mode": "receive",
+    "channel": "A",
+    "n": 30,
+    "every": 20.0,
+    "range": 160.0,
+    "speed": 8.0,
+    "model": "truck_carrier",
+    "ground": true,
+    "needs_power": false
+   }
+  ],
+  "sounds": {
+   "work": "work_engine"
+  },
+  "size0": 1,
+  "explain": "Приём: сюда приезжают грузовики, груз выходит на ленту."
+ },
+ "drone_hub": {
+  "name": "Станция дронов: маршруты",
+  "desc": "Дроны возят груз по шагам маршрута: «со склада с меткой А на склад с меткой Б». Метка ставится в окне склада или машины. Шаги правятся в редакторе (блок «Дроны по маршруту»). Нужна энергия.",
+  "category": "special",
+  "behavior": "decor",
+  "cost": {
+   "iron_plate": 14,
+   "circuit": 6,
+   "motor": 3
+  },
+  "model": "drone_hub",
+  "hp": 260,
+  "size": 2,
+  "params": {
+   "power": 8,
+   "pollution": 0
+  },
+  "blocks": [
+   {
+    "type": "route",
+    "steps": [
+     {
+      "item": "",
+      "n": 10,
+      "from_tag": "A",
+      "to_tag": "B",
+      "keep": 0
+     }
+    ],
+    "every": 6.0,
+    "range": 120.0,
+    "speed": 16.0,
+    "model": "drone_carrier",
+    "ground": false,
+    "needs_power": true
+   }
+  ],
+  "sounds": {
+   "work": "work_electric"
+  },
+  "size0": 1,
+  "explain": "Дроны по шагам маршрута возят груз со склада с одной меткой на склад с другой. Метку ставят в окне склада."
+ },
+ "bunker": {
+  "name": "Бункер",
+  "desc": "Укрытие от солнечного выброса и других бед: герой рядом с бункером (в радиусе укрытия) в безопасности. Энергия не нужна.",
+  "category": "defense",
+  "behavior": "decor",
+  "cost": {
+   "concrete": 25,
+   "iron_plate": 10
+  },
+  "model": "bunker",
+  "hp": 3000,
+  "size": 3,
+  "params": {
+   "shelter_radius": 4.0
+  },
+  "sounds": {}
+ },
+ "shield_dome": {
+  "name": "Щит-купол",
+  "desc": "Энергощит: всё под куполом — герой, здания и машины — защищено от солнечного выброса и работает дальше. Нужна энергия.",
+  "category": "defense",
+  "behavior": "decor",
+  "cost": {
+   "steel": 15,
+   "circuit": 8,
+   "crystal": 4,
+   "wire": 10
+  },
+  "model": "shield_dome",
+  "hp": 1200,
+  "size": 3,
+  "params": {
+   "power": 30,
+   "shield_radius": 12.0,
+   "shield_color": "#5fd0ff"
+  },
+  "sounds": {},
+  "size0": 2
+ },
+ "radar_tower": {
+  "name": "Радарная вышка",
+  "desc": "Открывает карту вокруг (туман войны) и показывает гнёзда и монстров в округе. Нужна энергия.",
+  "category": "defense",
+  "behavior": "decor",
+  "cost": {
+   "steel": 10,
+   "circuit": 6,
+   "wire": 8
+  },
+  "model": "radar_tower",
+  "hp": 900,
+  "size": 3,
+  "params": {
+   "power": 15,
+   "radar_radius": 70.0
+  },
+  "sounds": {
+   "work": "work_electric"
+  },
+  "size0": 2
+ },
+ "spike_trap": {
+  "name": "Шипы",
+  "desc": "Ловушка: монстры, которые идут по шипам, получают урон. Шипы изнашиваются. Ставьте в проходах лабиринта.",
+  "category": "defense",
+  "behavior": "floor",
+  "cost": {
+   "iron_plate": 4,
+   "stone": 4
+  },
+  "model": "spike_trap",
+  "hp": 300,
+  "size": 1,
+  "params": {
+   "trap_dps": 30.0,
+   "trap_wear": 1.5
+  },
+  "sounds": {}
+ },
+ "tesla_coil": {
+  "name": "Катушка Теслы",
+  "desc": "Турель на проводах: без патронов, нужна энергия. Молния перескакивает на 4 соседних монстров.",
+  "category": "defense",
+  "behavior": "turret",
+  "cost": {
+   "steel": 8,
+   "wire": 16,
+   "circuit": 4
+  },
+  "model": "tesla_coil",
+  "hp": 1100,
+  "size": 1,
+  "params": {
+   "range": 20,
+   "damage": 28,
+   "rate": 1.1,
+   "ammo": "",
+   "power": 25,
+   "chain": 4,
+   "chain_range": 7.0
+  },
+  "sounds": {}
+ },
+ "steel_wall": {
+  "name": "Стальная стена",
+  "desc": "Крепче бетонной. Из стен можно строить лабиринт: монстры обходят стены и ломают их, только если пути нет.",
+  "category": "defense",
+  "behavior": "wall",
+  "cost": {
+   "steel": 3,
+   "concrete": 2
+  },
+  "model": "steel_wall",
+  "hp": 4500,
+  "size": 1,
+  "sounds": {}
+ },
+ "ruin_wall": {
+  "name": "Стена руин",
+  "desc": "Часть подземелья.",
+  "category": "",
+  "behavior": "wall",
+  "cost": {},
+  "model": "ruin_wall",
+  "hp": 2500,
+  "size": 1,
+  "params": {
+   "wild": true
+  },
+  "sounds": {}
+ },
+ "ruin_arch": {
+  "name": "Вход в подземелье",
+  "desc": "Экспедиция в отдельную пещеру. Исследуйте породу и отберите образцы. Для кристаллических жил нужна Геология II.",
+  "category": "",
+  "behavior": "decor",
+  "cost": {},
+  "model": "ruin_arch",
+  "hp": 4000,
+  "size": 1,
+  "walkable": true,
+  "params": {
+   "wild": true,
+   "buildable": false,
+   "landmark": true
+  },
+  "sounds": {}
+ },
+ "dungeon_spikes": {
+  "name": "Ловушка подземелья",
+  "desc": "Шипы ранят героя. Перепрыгните (пробел)!",
+  "category": "",
+  "behavior": "floor",
+  "cost": {},
+  "model": "dungeon_spikes",
+  "hp": 800,
+  "size": 1,
+  "params": {
+   "wild": true,
+   "trap_dps_player": 22.0
+  },
+  "sounds": {}
+ },
+ "dungeon_chest": {
+  "name": "Сундук подземелья",
+  "desc": "Добыча подземелья. Заберите всё — подземелье будет пройдено.",
+  "category": "",
+  "behavior": "storage",
+  "cost": {},
+  "model": "chest",
+  "hp": 3000,
+  "size": 1,
+  "params": {
+   "slots": 12,
+   "wild": true
+  },
+  "sounds": {}
+ },
+ "plasma_turret": {
+  "name": "Плазменная турель",
+  "desc": "Редкое: исследование в дереве открытий (или чертёж из подземелья, если они включены). Очень сильная турель на энергии, молния бьёт ещё двоих.",
+  "category": "defense",
+  "behavior": "turret",
+  "cost": {
+   "steel": 20,
+   "circuit": 12,
+   "crystal": 6
+  },
+  "model": "laser_turret",
+  "hp": 2500,
+  "size": 1,
+  "params": {
+   "range": 42,
+   "damage": 95,
+   "rate": 0.7,
+   "ammo": "",
+   "power": 40,
+   "chain": 2,
+   "chain_range": 8.0
+  },
+  "rare": true,
+  "sounds": {}
+ },
+ "teleporter": {
+  "name": "Телепорт",
+  "desc": "Редкое: исследование в дереве открытий (или чертёж из подземелья, если они включены). Поставьте два и больше: в окне телепорта — «Перенестись» к другому.",
+  "category": "special",
+  "behavior": "decor",
+  "cost": {
+   "steel": 12,
+   "circuit": 8,
+   "crystal": 4
+  },
+  "model": "teleporter",
+  "hp": 1200,
+  "size": 3,
+  "walkable": true,
+  "rare": true,
+  "params": {
+   "teleport": true
+  },
+  "sounds": {
+   "work": "work_reactor"
+  },
+  "size0": 2,
+  "explain": "Поставьте два и больше. Откройте один (E) и выберите, куда перенестись."
+ },
+ "antimatter_gen": {
+  "name": "Генератор антиматерии",
+  "desc": "Редкое: исследование в дереве открытий (или чертёж из подземелья, если они включены). 400 энергии без топлива.",
+  "category": "energy",
+  "behavior": "decor",
+  "cost": {
+   "steel": 40,
+   "circuit": 20,
+   "crystal": 12
+  },
+  "model": "antimatter_gen",
+  "hp": 3000,
+  "size": 4,
+  "rare": true,
+  "blocks": [
+   {
+    "type": "power_gen",
+    "power": 400.0,
+    "radius": 10.0,
+    "fuel": false,
+    "solar": false
+   }
+  ],
+  "sounds": {}
+ },
+ "kitchen": {
+  "name": "Кухня",
+  "desc": "Готовит горячую еду: жаркое греет зимой, салат освежает летом. Подойдите и нажмите E.",
+  "category": "stations",
+  "behavior": "station",
+  "cost": {
+   "log": 4,
+   "stone": 8,
+   "iron_plate": 2
+  },
+  "model": "kitchen",
+  "hp": 200,
+  "size": 2,
+  "params": {
+   "station": "kitchen",
+   "heat": 10,
+   "heat_radius": 3
+  },
+  "sounds": {
+   "work": "work_smelt"
+  },
+  "size0": 1
+ },
+ "heater": {
+  "name": "Обогреватель",
+  "desc": "Греет героя рядом (на энергии). Зимой ставьте у рабочих мест.",
+  "category": "special",
+  "behavior": "decor",
+  "cost": {
+   "iron_plate": 6,
+   "wire": 6,
+   "circuit": 1
+  },
+  "model": "heater",
+  "hp": 200,
+  "size": 1,
+  "params": {
+   "power": 12,
+   "heat": 30,
+   "heat_radius": 7
+  },
+  "sounds": {}
+ },
+ "cooler": {
+  "name": "Охладитель",
+  "desc": "Охлаждает воздух рядом (на энергии). Спасает от летней жары.",
+  "category": "special",
+  "behavior": "decor",
+  "cost": {
+   "iron_plate": 6,
+   "wire": 6,
+   "motor": 1
+  },
+  "model": "cooler",
+  "hp": 200,
+  "size": 1,
+  "params": {
+   "power": 12,
+   "heat": -18,
+   "heat_radius": 7
+  },
+  "sounds": {}
+ },
+ "supply_capsule": {
+  "name": "Упавшая капсула",
+  "desc": "Упала со станции. Внутри добыча — заберите всё.",
+  "category": "",
+  "behavior": "storage",
+  "cost": {},
+  "model": "supply_capsule",
+  "hp": 1500,
+  "size": 1,
+  "params": {
+   "slots": 12,
+   "wild": true
+  },
+  "sounds": {}
+ },
+ "gatling_turret": {
+  "name": "Пулемётная турель",
+  "desc": "Очень быстрая стрельба мелкими пулями. Нужны энергия и патроны: лентой, через канал штаба или руками в турель.",
+  "category": "defense",
+  "behavior": "turret",
+  "cost": {
+   "iron_plate": 10,
+   "gear": 6,
+   "motor": 1
+  },
+  "model": "gatling_turret",
+  "hp": 700,
+  "size": 1,
+  "params": {
+   "range": 26,
+   "damage": 6,
+   "rate": 0.07,
+   "ammo": "ammo",
+   "power": 6,
+   "beam_color": "#ffd060",
+   "power_old114": 0,
+   "ammo_slots": 2
+  },
+  "sounds": {}
+ },
+ "cannon_turret": {
+  "name": "Пушка",
+  "desc": "Медленный мощный выстрел со взрывом: ранит всех рядом с целью. Берёт патроны. Нужны энергия и патроны: лентой, через канал штаба или руками в турель.",
+  "category": "defense",
+  "behavior": "turret",
+  "cost": {
+   "steel": 12,
+   "gear": 8,
+   "iron_plate": 10
+  },
+  "model": "cannon_turret",
+  "hp": 1100,
+  "size": 1,
+  "params": {
+   "range": 40,
+   "damage": 70,
+   "rate": 1.8,
+   "ammo": "ammo",
+   "power": 8,
+   "splash": 3.5,
+   "splash_k": 0.6,
+   "beam_color": "#ffb040",
+   "power_old114": 0,
+   "ammo_slots": 2
+  },
+  "sounds": {}
+ },
+ "missile_turret": {
+  "name": "Ракетная установка",
+  "desc": "Бьёт очень далеко ракетами с большим взрывом. Нужны энергия и патроны: лентой, через канал штаба или руками в турель.",
+  "category": "defense",
+  "behavior": "turret",
+  "cost": {
+   "steel": 20,
+   "circuit": 8,
+   "motor": 4
+  },
+  "model": "missile_turret",
+  "hp": 1300,
+  "size": 1,
+  "params": {
+   "range": 60,
+   "damage": 140,
+   "rate": 3.0,
+   "ammo": "ammo",
+   "power": 10,
+   "splash": 5.0,
+   "splash_k": 0.7,
+   "beam_color": "#ff6a30",
+   "power_old114": 10,
+   "ammo_slots": 2
+  },
+  "sounds": {}
+ },
+ "flame_turret": {
+  "name": "Плазменный огнемёт",
+  "desc": "Близко, но жжёт всех перед собой. Патроны не нужны, нужна энергия.",
+  "category": "defense",
+  "behavior": "turret",
+  "cost": {
+   "steel": 10,
+   "circuit": 6,
+   "crystal": 2
+  },
+  "model": "flame_turret",
+  "hp": 900,
+  "size": 1,
+  "params": {
+   "range": 11,
+   "damage": 9,
+   "rate": 0.12,
+   "ammo": "",
+   "power": 20,
+   "splash": 2.2,
+   "splash_k": 0.8,
+   "beam_color": "#ff7a20"
+  },
+  "sounds": {}
+ },
+ "sniper_tower": {
+  "name": "Снайперская башня",
+  "desc": "Самая дальняя стрельба: выбивает опасных роботов издалека. Берёт патроны. Нужны энергия и патроны: лентой, через канал штаба или руками в турель.",
+  "category": "defense",
+  "behavior": "turret",
+  "cost": {
+   "steel": 15,
+   "glass": 6,
+   "circuit": 4
+  },
+  "model": "sniper_tower",
+  "hp": 900,
+  "size": 1,
+  "params": {
+   "range": 75,
+   "damage": 180,
+   "rate": 3.5,
+   "ammo": "ammo",
+   "power": 5,
+   "beam_color": "#ff4a1c",
+   "power_old114": 0,
+   "ammo_slots": 2
+  },
+  "sounds": {}
+ },
+ "barrier_small": {
+  "name": "Энергощит",
+  "desc": "Купол принимает на себя урон: герой и здания внутри целы, пока у щита есть запас. Восстанавливается сам. Нужна энергия.",
+  "category": "defense",
+  "behavior": "decor",
+  "cost": {
+   "steel": 10,
+   "circuit": 6,
+   "wire": 12
+  },
+  "model": "barrier_small",
+  "hp": 900,
+  "size": 2,
+  "params": {
+   "defense": "barrier",
+   "barrier_radius": 9.0,
+   "barrier_hp": 600.0,
+   "barrier_regen": 15.0,
+   "barrier_delay": 8.0,
+   "barrier_color": "#5fd0ff",
+   "power": 25
+  },
+  "sounds": {}
+ },
+ "barrier_large": {
+  "name": "Большой энергощит",
+  "desc": "Огромный купол с большим запасом. Нужна энергия.",
+  "category": "defense",
+  "behavior": "decor",
+  "cost": {
+   "steel": 30,
+   "circuit": 20,
+   "crystal": 6,
+   "battery": 4
+  },
+  "model": "barrier_large",
+  "hp": 2500,
+  "size": 3,
+  "params": {
+   "defense": "barrier",
+   "barrier_radius": 18.0,
+   "barrier_hp": 2500.0,
+   "barrier_regen": 40.0,
+   "barrier_delay": 12.0,
+   "barrier_color": "#7ab8ff",
+   "power": 70
+  },
+  "sounds": {}
+ },
+ "stasis_field": {
+  "name": "Стазис-поле",
+  "desc": "Роботы рядом идут вдвое медленнее — турели успевают их добить. Нужна энергия.",
+  "category": "defense",
+  "behavior": "decor",
+  "cost": {
+   "circuit": 6,
+   "wire": 10,
+   "crystal": 2
+  },
+  "model": "stasis_field",
+  "hp": 600,
+  "size": 1,
+  "params": {
+   "defense": "slow",
+   "slow_radius": 12.0,
+   "slow_k": 0.45,
+   "power": 20
+  },
+  "sounds": {}
+ },
+ "repair_tower": {
+  "name": "Ремонтная башня",
+  "desc": "Сама чинит здания вокруг. Нужна энергия.",
+  "category": "defense",
+  "behavior": "decor",
+  "cost": {
+   "steel": 8,
+   "circuit": 4,
+   "motor": 2
+  },
+  "model": "repair_tower",
+  "hp": 700,
+  "size": 2,
+  "params": {
+   "defense": "repair",
+   "repair_radius": 14.0,
+   "repair_rate": 25.0,
+   "power": 15
+  },
+  "sounds": {},
+  "size0": 1
+ },
+ "shock_floor": {
+  "name": "Электропол",
+  "desc": "Ловушка: роботы, которые идут по полу, получают сильный удар током. Изнашивается медленно.",
+  "category": "defense",
+  "behavior": "floor",
+  "cost": {
+   "copper_ingot": 6,
+   "wire": 8
+  },
+  "model": "shock_floor",
+  "hp": 400,
+  "size": 1,
+  "params": {
+   "trap_dps": 70.0,
+   "trap_wear": 0.5
+  },
+  "sounds": {}
+ },
+ "drone_station": {
+  "name": "Станция дронов",
+  "category": "special",
+  "behavior": "decor",
+  "model": "drone_station",
+  "hp": 400,
+  "size": 1,
+  "desc": "Дом для дронов-грузчиков. Откройте станцию (E) → «Добавить маршрут» → укажите на карте, откуда брать и куда везти. Дроны летают сами, заряжаются на станции и чинятся. Объедините две станции: «Объединение 2» — 2 дрона, 3 — 4, 4 — 8, 5 — 15. Нужна энергия.",
+  "cost": {
+   "iron_plate": 12,
+   "circuit": 4,
+   "motor": 2
+  },
+  "params": {
+   "power": 6,
+   "pollution": 0,
+   "drone_station": true,
+   "drones_k": 1
+  },
+  "sounds": {},
+  "explain": "Откройте (E) → «Добавить маршрут» → укажите, откуда брать и куда везти. Дроны летают сами и заряжаются на станции. Нужна энергия."
+ },
+ "chem_plant": {
+  "name": "Химзавод",
+  "desc": "Кислоты, растворы, порох, жёлтый кек. Жидкости — по трубам (кислоте нужны кислотостойкие трубы). Нужна энергия.",
+  "category": "production",
+  "behavior": "crafter",
+  "cost": {
+   "steel": 12,
+   "glass": 6,
+   "motor": 2,
+   "iron_plate": 10
+  },
+  "model": "chem_plant",
+  "hp": 500,
+  "size": 3,
+  "params": {
+   "station": "chem_plant",
+   "speed": 1.0,
+   "power": 75,
+   "pipes": true,
+   "in_slots": 4,
+   "out_slots": 3,
+   "acid_proof": true,
+   "tune": "ph"
+  },
+  "sounds": {},
+  "size0": 2
+ },
+ "centrifuge": {
+  "name": "Центрифуга",
+  "desc": "Обогащает уран и перерабатывает отработанные ТВЭЛы. Много энергии.",
+  "category": "production",
+  "behavior": "crafter",
+  "cost": {
+   "aluminum_casing": 4,
+   "motor": 4,
+   "circuit": 6,
+   "steel": 8
+  },
+  "model": "centrifuge",
+  "hp": 400,
+  "size": 2,
+  "params": {
+   "station": "centrifuge",
+   "speed": 1.0,
+   "power": 40,
+   "in_slots": 3,
+   "out_slots": 2,
+   "tune": "spin"
+  },
+  "sounds": {},
+  "size0": 1
+ },
+ "nuclear_reactor": {
+  "name": "АЭС (ядерный реактор)",
+  "desc": "До 2500 энергии. 4 ТВЭЛа в зоне: при полной мощности уходит один ТВЭЛ за 5 минут. Нужна вода по трубам (охлаждение). В окне: стержни управления, загрузка ТВЭЛов, насосы, АЗ-5. Перегрев — авария.",
+  "category": "energy",
+  "behavior": "generator",
+  "cost": {
+   "steel": 80,
+   "concrete": 60,
+   "aluminum_casing": 20,
+   "circuit": 30,
+   "motor": 10
+  },
+  "model": "nuclear_reactor",
+  "hp": 3000,
+  "size": 4,
+  "params": {
+   "power": 2500,
+   "reactor": true,
+   "fuels": [
+    "fuel_rod"
+   ],
+   "fuel_slots": 4,
+   "pipes": true,
+   "radius": 14,
+   "no_fusion": true,
+   "tune": "plasma"
+  },
+  "sounds": {},
+  "size0": 3
+ },
+ "waste_storage": {
+  "name": "Хранилище отходов",
+  "desc": "Свинцовые стенки: радиоактивное внутри не фонит наружу. Для отработанных ТВЭЛов и урана.",
+  "category": "storage",
+  "behavior": "storage",
+  "cost": {
+   "concrete": 20,
+   "steel": 10,
+   "aluminum_sheet": 6
+  },
+  "model": "waste_storage",
+  "hp": 800,
+  "size": 1,
+  "params": {
+   "slots": 12,
+   "rad_shield": true
+  },
+  "sounds": {}
+ },
+ "decon_station": {
+  "name": "Станция дезактивации",
+  "desc": "Очищает заражённую радиацией землю вокруг себя, расходуя дезактивирующий раствор (подавайте лентой или кладите руками). Нужна энергия.",
+  "category": "special",
+  "behavior": "storage",
+  "cost": {
+   "steel": 10,
+   "aluminum_sheet": 6,
+   "motor": 2,
+   "circuit": 4
+  },
+  "model": "decon_station",
+  "hp": 400,
+  "size": 2,
+  "params": {
+   "slots": 4,
+   "power": 10,
+   "decon_radius": 16.0,
+   "decon_rate": 1.5,
+   "decon_per_item": 200.0,
+   "decon_item": "decon_solution"
+  },
+  "sounds": {},
+  "size0": 1
+ },
+ "pipe_acid": {
+  "name": "Кислотостойкая труба",
+  "desc": "Пластиковая футеровка: кислота её не разъедает. 600 в минуту.",
+  "category": "fluids",
+  "behavior": "pipe",
+  "cost": {
+   "plastic": 1,
+   "steel": 1
+  },
+  "model": "pipe_acid",
+  "hp": 120,
+  "size": 1,
+  "params": {
+   "pipe_per_min": 600,
+   "pipe_capacity": 10,
+   "tier": 2,
+   "any_ground": true,
+   "arm_model": "pipe_arm_acid",
+   "acid_proof": true
+  },
+  "sounds": {}
+ },
+ "acid_tank": {
+  "name": "Кислотостойкий бак",
+  "desc": "Бак на 400 единиц, которому не страшна кислота.",
+  "category": "fluids",
+  "behavior": "tank",
+  "cost": {
+   "plastic": 8,
+   "steel": 6
+  },
+  "model": "acid_tank",
+  "hp": 600,
+  "size": 2,
+  "params": {
+   "pipe_capacity": 400,
+   "acid_proof": true
+  },
+  "sounds": {}
+ },
+ "ufo_pad": {
+  "name": "Посадочная площадка НЛО",
+  "desc": "Сюда прилетает НЛО торговцев. Сложите товары (руками, лентой, дронами), выберите в окне, что хотите взамен. НЛО заберёт, сколько унесёт, и через время привезёт заказ. Цены меняются каждый день.",
+  "category": "special",
+  "behavior": "storage",
+  "cost": {
+   "steel": 60,
+   "aluminum_sheet": 30,
+   "circuit": 40,
+   "concrete": 40
+  },
+  "model": "ufo_pad",
+  "hp": 1500,
+  "size": 3,
+  "params": {
+   "slots": 24,
+   "ufo_pad": true,
+   "no_fusion": true
+  },
+  "sounds": {},
+  "explain": "Сложите товары, выберите в окне, что хотите взамен. НЛО прилетит, заберёт и позже привезёт заказ."
+ },
+ "eng_table": {
+  "name": "Инженерный стол",
+  "desc": "Сетка 4×4: разложите предметы узором. Подсказка показывает, сколько клеток совпало. Верный узор навсегда открывает улучшенный рецепт.",
+  "category": "production",
+  "behavior": "decor",
+  "cost": {
+   "iron_plate": 20,
+   "circuit": 10,
+   "glass": 10
+  },
+  "model": "eng_table",
+  "hp": 300,
+  "size": 1,
+  "params": {
+   "eng_table": true,
+   "no_fusion": true
+  },
+  "sounds": {},
+  "explain": "Разложите предметы на сетке 4×4. Подсказка говорит, сколько клеток совпало. Верный узор навсегда открывает улучшенный рецепт."
+ },
+ "exotic_forge": {
+  "name": "Экзотическая кузня",
+  "desc": "Работает с экзотикой: звёздный сплав, ловушки, квантовые ядра, линзы. Много энергии.",
+  "category": "production",
+  "behavior": "crafter",
+  "cost": {
+   "steel": 60,
+   "superconductor": 10,
+   "circuit": 30,
+   "aluminum_casing": 20
+  },
+  "model": "exotic_forge",
+  "hp": 900,
+  "size": 3,
+  "params": {
+   "station": "exotic_forge",
+   "speed": 1.0,
+   "power": 250,
+   "in_slots": 8,
+   "out_slots": 2,
+   "tune": "spin"
+  },
+  "sounds": {},
+  "size0": 2
+ },
+ "fusion_reactor": {
+  "name": "Термоядерный реактор",
+  "desc": "5000 энергии на термоядерных ячейках. Безопаснее АЭС: без ячеек просто гаснет. Настройка поля даёт до +40%.",
+  "category": "energy",
+  "behavior": "generator",
+  "cost": {
+   "stellar_alloy": 40,
+   "superconductor": 60,
+   "magnetic_trap": 6,
+   "concrete": 200,
+   "circuit": 80
+  },
+  "model": "fusion_reactor",
+  "hp": 5000,
+  "size": 5,
+  "params": {
+   "power": 5000,
+   "fuels": [
+    "fusion_cell"
+   ],
+   "fuel_slots": 2,
+   "burn_mult": 1.0,
+   "radius": 18,
+   "no_fusion": true,
+   "tune": "plasma"
+  },
+  "sounds": {}
+ },
+ "quantum_assembler": {
+  "name": "Квантовый сборщик",
+  "desc": "Сборщик в 4 раза быстрее Mk1. Делает и сверхпроводники, и ячейки.",
+  "category": "production",
+  "behavior": "crafter",
+  "cost": {
+   "quantum_core": 2,
+   "stellar_alloy": 10,
+   "circuit": 40,
+   "motor": 10
+  },
+  "model": "quantum_assembler",
+  "hp": 800,
+  "size": 3,
+  "params": {
+   "station": "assembler",
+   "speed": 4.0,
+   "power": 200,
+   "in_slots": 5,
+   "out_slots": 3,
+   "tune": "calib"
+  },
+  "sounds": {},
+  "size0": 2
+ },
+ "star_gate": {
+  "name": "Звёздные врата",
+  "desc": "Мегапроект: 5 этапов, каждый просит много редких деталей. Подавайте лентами, дронами или руками. Открыть врата — главная цель для идеального завода.",
+  "category": "special",
+  "behavior": "storage",
+  "cost": {
+   "concrete": 500,
+   "steel": 400,
+   "stellar_alloy": 50,
+   "superconductor": 100
+  },
+  "model": "star_gate",
+  "hp": 20000,
+  "size": 5,
+  "params": {
+   "slots": 30,
+   "megaproject": true,
+   "no_fusion": true
+  },
+  "sounds": {}
+ },
+ "player_market": {
+  "name": "Рынок игрока",
+  "desc": "Ваша лавка для других игроков: привезите товар лентами (входы с любой стороны) или положите руками, назначьте цены — другие купят за свои кредиты, деньги придут вам. Можно и скупать: «Куплю» с ценой.",
+  "category": "logistics",
+  "behavior": "storage",
+  "cost": {
+   "plank": 20,
+   "iron_ingot": 10
+  },
+  "model": "player_market",
+  "hp": 400,
+  "size": 3,
+  "params": {
+   "slots": 48,
+   "player_market": true
+  },
+  "tags": [
+   "coop"
+  ],
+  "explain": "Лавка для других игроков в сетевой игре: привезите товар и назначьте цены. Деньги за покупки придут вам."
+ },
+ "outpost": {
+  "name": "Аванпост",
+  "desc": "Склад вашей базы в сетевой игре со своими базами: стройка берёт материалы отсюда и из рюкзака. Принимает предметы с лент.",
+  "category": "storage",
+  "behavior": "storage",
+  "cost": {
+   "plank": 20,
+   "stone": 20
+  },
+  "model": "outpost",
+  "hp": 1200,
+  "size": 3,
+  "params": {
+   "slots": 40,
+   "outpost": true
+  },
+  "tags": [
+   "coop"
+  ],
+  "size0": 2,
+  "explain": "Склад вашей базы в сетевой игре со своими базами: стройка рядом берёт материалы отсюда."
+ },
+ "power_sell": {
+  "name": "Продажа энергии",
+  "desc": "Подключите к своей сети: отсюда другие игроки покупают энергию (кВт) по вашей цене.",
+  "category": "energy",
+  "behavior": "pole",
+  "cost": {
+   "iron_ingot": 6,
+   "wire": 6
+  },
+  "model": "power_sell",
+  "hp": 200,
+  "size": 1,
+  "params": {
+   "radius": 8,
+   "power_trade": "sell"
+  },
+  "tags": [
+   "coop"
+  ],
+  "explain": "Подключите к своей сети: другие игроки смогут покупать у вас энергию по вашей цене."
+ },
+ "power_buy": {
+  "name": "Покупка энергии",
+  "desc": "Подключите к своей сети и выберите продавца: энергия от его «Продажи энергии» придёт в вашу сеть, кредиты уйдут ему.",
+  "category": "energy",
+  "behavior": "pole",
+  "cost": {
+   "iron_ingot": 6,
+   "wire": 6
+  },
+  "model": "power_buy",
+  "hp": 200,
+  "size": 1,
+  "params": {
+   "radius": 8,
+   "power_trade": "buy"
+  },
+  "tags": [
+   "coop"
+  ],
+  "explain": "Подключите к своей сети и выберите продавца: его энергия придёт к вам, кредиты уйдут ему."
+ },
+ "gnome": {
+  "name": "Садовый гном",
+  "desc": "Подкиньте на чужую базу — хозяин увидит, кто это был.",
+  "category": "decor",
+  "behavior": "decor",
+  "cost": {
+   "stone": 2,
+   "plank": 1
+  },
+  "model": "gnome",
+  "hp": 40,
+  "size": 1,
+  "params": {
+   "low": true
+  },
+  "tags": [
+   "coop"
+  ]
+ },
+ "foundry": {
+  "name": "Литейный цех",
+  "desc": "Сплавы из двух входов: бронза, сталь из руды и кокса, нержавейка, алюминий, карбид. Нужна энергия.",
+  "category": "production",
+  "behavior": "crafter",
+  "cost": {
+   "iron_plate": 10,
+   "brick": 20,
+   "gear": 4
+  },
+  "model": "cb_foundry",
+  "hp": 420,
+  "size": 2,
+  "params": {
+   "station": "foundry",
+   "speed": 1.0,
+   "power": 16,
+   "tier": 1,
+   "in_slots": 3,
+   "heat": 10,
+   "heat_radius": 3,
+   "tune": "calib"
+  },
+  "sounds": {
+   "work": "work_smelt"
+  },
+  "size0": 1
+ },
+ "constructor": {
+  "name": "Конструктор",
+  "desc": "1 вход → 1 выход: прутья, винты, балки, трубы, листы, пружины. Нужна энергия.",
+  "category": "production",
+  "behavior": "crafter",
+  "cost": {
+   "iron_plate": 6,
+   "iron_rod": 6,
+   "wire": 6
+  },
+  "model": "cb_press_mk2",
+  "hp": 350,
+  "size": 2,
+  "params": {
+   "station": "constructor",
+   "speed": 1.0,
+   "power": 4,
+   "tier": 1,
+   "tune": "calib"
+  },
+  "sounds": {
+   "work": "work_press"
+  },
+  "size0": 1
+ },
+ "manufacturer": {
+  "name": "Производитель",
+  "desc": "4 входа → 1 выход: тяжёлые рамы, компьютеры, турбины, ИИ-модули. Нужна энергия.",
+  "category": "production",
+  "behavior": "crafter",
+  "cost": {
+   "modular_frame": 4,
+   "motor": 4,
+   "steel_beam": 10,
+   "cable": 20
+  },
+  "model": "cb_printer3d_mk3",
+  "hp": 600,
+  "size": 3,
+  "params": {
+   "station": "manufacturer",
+   "speed": 1.0,
+   "power": 55,
+   "tier": 2,
+   "in_slots": 5,
+   "tune": "calib"
+  },
+  "sounds": {
+   "work": "work_assembly"
+  },
+  "size0": 2
+ },
+ "coke_oven": {
+  "name": "Коксовая печь",
+  "desc": "Уголь → кокс и брёвна → древесный уголь. Работает на топливе, без электричества.",
+  "category": "production",
+  "behavior": "crafter",
+  "cost": {
+   "brick": 30,
+   "iron_plate": 4
+  },
+  "model": "cb_kiln_mk2",
+  "hp": 400,
+  "size": 2,
+  "params": {
+   "station": "coke_oven",
+   "speed": 1.0,
+   "power": 0,
+   "fuel": true,
+   "heat": 14,
+   "heat_radius": 3,
+   "tune": "calib"
+  },
+  "sounds": {
+   "work": "work_smelt"
+  },
+  "size0": 1
+ },
+ "crusher": {
+  "name": "Дробилка",
+  "desc": "Руда → 2 дроблёной руды. При плавке дроблёная руда даёт на 50% больше металла. Нужна энергия.",
+  "category": "production",
+  "behavior": "crafter",
+  "cost": {
+   "steel": 8,
+   "gear": 6,
+   "motor": 1
+  },
+  "model": "cb_crusher",
+  "hp": 420,
+  "size": 2,
+  "params": {
+   "station": "crusher",
+   "speed": 1.0,
+   "power": 12,
+   "tier": 2,
+   "tune": "calib"
+  },
+  "sounds": {
+   "work": "work_crush"
+  },
+  "size0": 1
+ },
+ "mixer": {
+  "name": "Смеситель",
+  "desc": "Твёрдое + жидкость: бетон из известняка, камня и воды (вода по трубам). Нужна энергия.",
+  "category": "production",
+  "behavior": "crafter",
+  "cost": {
+   "iron_plate": 8,
+   "gear": 4,
+   "motor": 1
+  },
+  "model": "cb_mixer",
+  "hp": 400,
+  "size": 2,
+  "params": {
+   "station": "mixer",
+   "speed": 1.0,
+   "power": 16,
+   "pipes": true,
+   "in_slots": 3,
+   "tune": "calib"
+  },
+  "sounds": {
+   "work": "work_bubble"
+  },
+  "size0": 1
+ },
+ "arc_furnace": {
+  "name": "Дуговая печь",
+  "desc": "Кремний из кварца и угля. Много энергии.",
+  "category": "production",
+  "behavior": "crafter",
+  "cost": {
+   "steel_sheet": 10,
+   "cable": 10,
+   "brick": 20
+  },
+  "model": "cb_kiln_mk4",
+  "hp": 500,
+  "size": 2,
+  "params": {
+   "station": "arc_furnace",
+   "speed": 1.0,
+   "power": 40,
+   "tier": 3,
+   "heat": 16,
+   "heat_radius": 4,
+   "tune": "calib"
+  },
+  "sounds": {
+   "work": "work_electric"
+  },
+  "size0": 1
+ },
+ "clean_room": {
+  "name": "Чистый цех",
+  "desc": "Микросхемы из кремния и золотой проволоки — вдвое выгоднее старого рецепта.",
+  "category": "production",
+  "behavior": "crafter",
+  "cost": {
+   "steel_sheet": 10,
+   "glass": 20,
+   "motor": 2
+  },
+  "model": "cb_chip_fab",
+  "hp": 500,
+  "size": 2,
+  "params": {
+   "station": "clean_room",
+   "speed": 1.0,
+   "power": 30,
+   "tier": 3,
+   "tune": "calib"
+  },
+  "sounds": {
+   "work": "work_assembly"
+  },
+  "size0": 1
+ },
+ "blast_furnace": {
+  "name": "Доменная печь",
+  "desc": "Вольфрам из руды и кокса. С магмой по трубам (магматический отвод) — вдвое выгоднее и без кокса. Нужна энергия и топливо.",
+  "category": "production",
+  "behavior": "crafter",
+  "cost": {
+   "brick": 60,
+   "steel_beam": 10,
+   "stainless_steel": 10
+  },
+  "model": "cb_foundry_mk4",
+  "hp": 900,
+  "size": 3,
+  "params": {
+   "station": "blast_furnace",
+   "speed": 1.0,
+   "power": 75,
+   "fuel": true,
+   "tier": 4,
+   "heat": 24,
+   "heat_radius": 5,
+   "pipes": true,
+   "tune": "calib"
+  },
+  "sounds": {
+   "work": "work_smelt"
+  },
+  "size0": 2
+ },
+ "crystal_cutter": {
+  "name": "Кристаллорез",
+  "desc": "Гранит резонит. Нужна энергия.",
+  "category": "production",
+  "behavior": "crafter",
+  "cost": {
+   "titanium_ingot": 10,
+   "tungsten_carbide": 6,
+   "computer": 2
+  },
+  "model": "cb_crystal_grower",
+  "hp": 600,
+  "size": 2,
+  "params": {
+   "station": "crystal_cutter",
+   "speed": 1.0,
+   "power": 100,
+   "tier": 5,
+   "tune": "calib"
+  },
+  "sounds": {
+   "work": "work_electric"
+  },
+  "size0": 1
+ },
+ "synthesizer": {
+  "name": "Синтезатор",
+  "desc": "Финальные компоненты: стабилизатор аномалии, ядро разгона облаков, модуль терраформинга.",
+  "category": "production",
+  "behavior": "crafter",
+  "cost": {
+   "titanium_frame": 4,
+   "ai_module": 2,
+   "superconductor": 10
+  },
+  "model": "cb_crystal_grower_mk5",
+  "hp": 1200,
+  "size": 3,
+  "params": {
+   "station": "synthesizer",
+   "speed": 1.0,
+   "power": 250,
+   "tier": 5,
+   "in_slots": 6,
+   "tune": "calib"
+  },
+  "sounds": {
+   "work": "work_electric"
+  },
+  "size0": 2
+ },
+ "sawmill": {
+  "name": "Лесопилка",
+  "desc": "Бревно → 5 досок (на верстаке — 3). Нужна энергия.",
+  "category": "production",
+  "behavior": "crafter",
+  "cost": {
+   "plank": 10,
+   "iron_ingot": 6,
+   "gear": 2
+  },
+  "model": "cb_sawmill",
+  "hp": 300,
+  "size": 2,
+  "params": {
+   "station": "sawmill",
+   "speed": 1.0,
+   "power": 4,
+   "tune": "calib"
+  },
+  "sounds": {
+   "work": "work_saw"
+  },
+  "size0": 1
+ },
+ "stone_cutter": {
+  "name": "Камнерез",
+  "desc": "Каменные блоки и обсидиановые плиты. Нужна энергия.",
+  "category": "production",
+  "behavior": "crafter",
+  "cost": {
+   "stone_block": 10,
+   "iron_plate": 4,
+   "gear": 2
+  },
+  "model": "cb_lathe",
+  "hp": 300,
+  "size": 2,
+  "params": {
+   "station": "stone_cutter",
+   "speed": 1.0,
+   "power": 4,
+   "tune": "calib"
+  },
+  "sounds": {
+   "work": "work_saw"
+  },
+  "size0": 1
+ },
+ "gas_extractor": {
+  "name": "Газовый экстрактор",
+  "desc": "Ставится на газовый карман (бирюзовое пятно) и качает природный газ в трубы.",
+  "category": "fluids",
+  "behavior": "miner",
+  "cost": {
+   "steel": 8,
+   "valve": 4,
+   "motor": 2
+  },
+  "model": "cb_electrolyzer",
+  "hp": 450,
+  "size": 3,
+  "params": {
+   "period": 1.0,
+   "power": 40,
+   "any_ground": true,
+   "extracts": "fluid",
+   "pipes": true,
+   "tune": "rpm"
+  },
+  "sounds": {
+   "work": "work_pump"
+  },
+  "size0": 2
+ },
+ "geothermal": {
+  "name": "Геотермальная станция",
+  "desc": "Ставится только на выход магмы (оранжевое пятно, видно после «Геология III»). Даёт 200 энергии без топлива.",
+  "category": "energy",
+  "behavior": "generator",
+  "cost": {
+   "heat_exchanger": 4,
+   "steel_beam": 10,
+   "heatproof_block": 10
+  },
+  "model": "cb_geothermal",
+  "hp": 900,
+  "size": 3,
+  "params": {
+   "power": 200,
+   "radius": 10,
+   "on_deposit": "magma",
+   "any_ground": true,
+   "tune": "plasma"
+  },
+  "sounds": {
+   "work": "work_bubble"
+  },
+  "size0": 2
+ },
+ "resonance_reactor": {
+  "name": "Резонансный реактор",
+  "desc": "Финальная энергия: 1500 от огранённого резонита.",
+  "category": "energy",
+  "behavior": "generator",
+  "cost": {
+   "titanium_frame": 4,
+   "resonant_capacitor": 6,
+   "cooling_module": 6
+  },
+  "model": "cb_crystal_grower_mk5",
+  "hp": 2000,
+  "size": 3,
+  "params": {
+   "power": 1500,
+   "radius": 16,
+   "fuels": [
+    "cut_resonite"
+   ],
+   "burn_mult": 1.0,
+   "fuel_slots": 2,
+   "tune": "plasma"
+  },
+  "sounds": {
+   "work": "work_electric"
+  },
+  "size0": 2
+ },
+ "fridge": {
+  "name": "Ледник",
+  "desc": "Хранит еду: 20 стаков. Принимает предметы с лент.",
+  "category": "storage",
+  "behavior": "storage",
+  "cost": {
+   "tinplate": 6,
+   "coolant": 2,
+   "motor": 1
+  },
+  "model": "cb_fridge",
+  "hp": 270,
+  "size": 1,
+  "params": {
+   "slots": 20
+  },
+  "sounds": {}
+ },
+ "medicine_cabinet": {
+  "name": "Аптечный шкаф",
+  "desc": "Хранит лекарства и снаряжение: 12 стаков.",
+  "category": "storage",
+  "behavior": "storage",
+  "cost": {
+   "glass": 2,
+   "iron_plate": 3
+  },
+  "model": "cb_medicine_cabinet",
+  "hp": 220,
+  "size": 1,
+  "params": {
+   "slots": 12
+  },
+  "sounds": {}
+ },
+ "searchlight": {
+  "name": "Прожектор",
+  "desc": "Светит далеко: ночная оборона базы.",
+  "category": "defense",
+  "behavior": "decor",
+  "cost": {
+   "steel": 4,
+   "lamp_bulb": 2,
+   "cable": 2
+  },
+  "model": "cb_searchlight",
+  "hp": 300,
+  "size": 1,
+  "params": {
+   "power": 3,
+   "light": 1
+  },
+  "sounds": {}
+ },
+ "sink": {
+  "name": "Утилизатор очков",
+  "desc": "Принимает с ленты ЛЮБОЙ предмет, уничтожает его и начисляет очки по его ценности (поле «Цена» предмета). За каждые 100 очков — купон утилизации на выход. Чем выше тир, тем выгоднее сжигать.",
+  "category": "special",
+  "behavior": "decor",
+  "cost": {
+   "iron_plate": 20,
+   "motor": 2,
+   "wire": 20
+  },
+  "model": "sink",
+  "hp": 500,
+  "size": 1,
+  "params": {
+   "power": 30
+  },
+  "blocks": [
+   {
+    "type": "sink",
+    "k": 1.0,
+    "coupon": 100,
+    "items": [],
+    "needs_power": true
+   }
+  ],
+  "sounds": {
+   "work": "work_crush"
+  },
+  "explain": "Сжигает всё, что приходит по ленте, и копит очки по цене предметов. За каждые 100 очков выдаёт купон утилизации: купоны тратятся в «Магазине утилизации». Кредитов не даёт — для кредитов есть Чёрный рынок."
+ },
+ "sink_shop": {
+  "name": "Магазин утилизации",
+  "desc": "Купоны → чертежи, расходники, редкое сырьё. Подойдите и нажмите E.",
+  "category": "stations",
+  "behavior": "station",
+  "cost": {
+   "plank": 10,
+   "iron_plate": 6
+  },
+  "model": "cb_trade_post",
+  "hp": 300,
+  "size": 1,
+  "params": {
+   "station": "sink_shop"
+  },
+  "sounds": {},
+  "explain": "Обменивает купоны утилизации на чертежи, расходники и редкое сырьё. Подойдите и нажмите E."
+ },
+ "cloud_breaker": {
+  "name": "Разгонитель облаков",
+  "desc": "Сам расширяет зону: подвозите лентой то, что просит следующее расширение (видно в окне здания), — когда всё набрано, буря отступает на шаг. Нужна энергия.",
+  "category": "special",
+  "behavior": "decor",
+  "cost": {
+   "steel": 10,
+   "motor": 2,
+   "circuit": 4
+  },
+  "model": "cloud_breaker",
+  "hp": 600,
+  "size": 1,
+  "params": {
+   "power": 20
+  },
+  "blocks": [
+   {
+    "type": "zone_push",
+    "needs_power": true
+   }
+  ],
+  "sounds": {
+   "work": "work_electric"
+  },
+  "explain": "Сам расширяет зону. В окне видно, что просит следующее расширение: подвозите это лентой. Набралось — буря отступает на шаг. Нужна энергия."
+ },
+ "magma_tap": {
+  "name": "Магматический отвод",
+  "desc": "Ставится на выход магмы (оранжевое пятно, видно после «Геология III») и качает 60 магмы в минуту в трубы. Магма по трубам — в доменную печь.",
+  "category": "fluids",
+  "behavior": "miner",
+  "cost": {
+   "heatproof_block": 8,
+   "steel_pipe": 10,
+   "motor": 2
+  },
+  "model": "magma_tap",
+  "hp": 700,
+  "size": 3,
+  "params": {
+   "period": 1.0,
+   "power": 30,
+   "any_ground": true,
+   "extracts": "fluid",
+   "pipes": true,
+   "tier": 1,
+   "tune": "rpm"
+  },
+  "sounds": {
+   "work": "work_pump"
+  },
+  "size0": 2
+ },
+ "builder_bay": {
+  "category": "defense",
+  "behavior": "decor",
+  "size": 2,
+  "sounds": {},
+  "name": "Мастерская роботов-строителей",
+  "model": "builder_bay",
+  "hp": 300,
+  "desc": "Живёт один робот-строитель. Когда монстры ломают здания, стены и ленты рядом, робот берёт ресурсы из штаба и отстраивает всё заново (как было: поворот, рецепт, настройки), а заодно подлатывает повреждённое. Работает только в своём небольшом радиусе — для большой базы ставьте больше мастерских. Тратит энергию. Робот не воюет и хрупкий: монстры его ломают, мастерская собирает нового за ресурсы.",
+  "cost": {
+   "iron_plate": 20,
+   "circuit": 6,
+   "motor": 3
+  },
+  "params": {
+   "power": 30,
+   "builder_bay": true,
+   "build_radius": 10,
+   "bot_speed": 4.0,
+   "build_time": 4.0,
+   "bot_hp": 40,
+   "bot_repair": 15.0,
+   "pollution": 0
+  },
+  "size0": 1,
+  "explain": "Робот-строитель сам отстраивает сломанное монстрами рядом с мастерской, беря ресурсы из штаба. Радиус небольшой."
+ },
+ "builder_bay_mk2": {
+  "category": "defense",
+  "behavior": "decor",
+  "size": 2,
+  "sounds": {},
+  "name": "Мастерская роботов-строителей Mk2",
+  "model": "builder_bay_mk2",
+  "hp": 500,
+  "desc": "Улучшенная мастерская: робот быстрее, крепче, строит быстрее и дальше (радиус 15 клеток). Тратит больше энергии. Один робот на мастерскую — большой базе нужно несколько.",
+  "cost": {
+   "steel": 20,
+   "circuit": 12,
+   "motor": 6
+  },
+  "params": {
+   "power": 70,
+   "builder_bay": true,
+   "build_radius": 15,
+   "bot_speed": 6.0,
+   "build_time": 2.0,
+   "bot_hp": 90,
+   "bot_repair": 35.0,
+   "pollution": 0
+  },
+  "size0": 1
+ },
+ "chest_iron": {
+  "name": "Укреплённый ящик",
+  "desc": "Железный ящик: 3 строки по 10 ячеек (30 стаков). Принимает предметы с лент.",
+  "category": "storage",
+  "behavior": "storage",
+  "cost": {
+   "plank": 8,
+   "iron_plate": 6
+  },
+  "model": "chest_iron",
+  "hp": 300,
+  "size": 1,
+  "params": {
+   "slots": 30
+  },
+  "sounds": {}
+ },
+ "warehouse": {
+  "name": "Склад",
+  "desc": "Склад: 6 строк по 10 ячеек (60 стаков). Принимает предметы с лент.",
+  "category": "storage",
+  "behavior": "storage",
+  "cost": {
+   "steel": 20,
+   "concrete": 15,
+   "iron_plate": 10
+  },
+  "model": "warehouse",
+  "hp": 900,
+  "size": 2,
+  "params": {
+   "slots": 60
+  },
+  "sounds": {},
+  "size0": 1,
+  "explain": "Большое хранилище. Ленты могут и привозить, и забирать из него."
+ },
+ "pole_mk2": {
+  "name": "Станция энергии Mk2",
+  "desc": "Передаёт до 80 энергии зданиям в радиусе 4 клеток: ближние к станции получают первыми, кому не хватило — стоят. Сама связывается с генераторами и станциями в радиусе 10 клеток. Покрытие видно в режиме энергии (V). Поставьте станцию выше уровнем прямо на старую — она обновится.",
+  "category": "energy",
+  "behavior": "pole",
+  "cost": {
+   "steel": 4,
+   "wire": 6,
+   "circuit": 2
+  },
+  "model": "pole_mk2",
+  "hp": 160,
+  "size": 1,
+  "params": {
+   "radius": 4,
+   "any_ground": true,
+   "link": 10,
+   "transfer": 80,
+   "tier": 2,
+   "wire_height": 3.6
+  },
+  "sounds": {}
+ },
+ "pole_mk3": {
+  "name": "Станция энергии Mk3",
+  "desc": "Передаёт до 250 энергии зданиям в радиусе 5 клеток: ближние к станции получают первыми, кому не хватило — стоят. Сама связывается с генераторами и станциями в радиусе 12 клеток. Покрытие видно в режиме энергии (V). Поставьте станцию выше уровнем прямо на старую — она обновится.",
+  "category": "energy",
+  "behavior": "pole",
+  "cost": {
+   "steel": 8,
+   "wire": 10,
+   "circuit": 4,
+   "plastic": 4
+  },
+  "model": "pole_mk3",
+  "hp": 220,
+  "size": 1,
+  "params": {
+   "radius": 5,
+   "any_ground": true,
+   "link": 12,
+   "transfer": 250,
+   "tier": 3,
+   "wire_height": 3.6
+  },
+  "sounds": {}
+ },
+ "pole_mk4": {
+  "name": "Станция энергии Mk4",
+  "desc": "Передаёт до 800 энергии зданиям в радиусе 6 клеток: ближние к станции получают первыми, кому не хватило — стоят. Сама связывается с генераторами и станциями в радиусе 15 клеток. Покрытие видно в режиме энергии (V). Поставьте станцию выше уровнем прямо на старую — она обновится.",
+  "category": "energy",
+  "behavior": "pole",
+  "cost": {
+   "steel": 12,
+   "circuit": 8,
+   "battery": 2,
+   "plastic": 6
+  },
+  "model": "pole_mk4",
+  "hp": 280,
+  "size": 1,
+  "params": {
+   "radius": 6,
+   "any_ground": true,
+   "link": 15,
+   "transfer": 800,
+   "tier": 4,
+   "wire_height": 3.6
+  },
+  "sounds": {}
+ },
+ "pole_mk5": {
+  "name": "Станция энергии Mk5",
+  "desc": "Передаёт до 2500 энергии зданиям в радиусе 8 клеток: ближние к станции получают первыми, кому не хватило — стоят. Сама связывается с генераторами и станциями в радиусе 20 клеток. Покрытие видно в режиме энергии (V). Поставьте станцию выше уровнем прямо на старую — она обновится.",
+  "category": "energy",
+  "behavior": "pole",
+  "cost": {
+   "steel": 20,
+   "circuit": 12,
+   "crystal": 6,
+   "monster_core": 1
+  },
+  "model": "pole_mk5",
+  "hp": 340,
+  "size": 1,
+  "params": {
+   "radius": 8,
+   "any_ground": true,
+   "link": 20,
+   "transfer": 2500,
+   "tier": 5,
+   "wire_height": 3.6
+  },
+  "sounds": {}
+ },
+ "mole_junction": {
+  "name": "Кротовина",
+  "category": "logistics",
+  "behavior": "junction",
+  "model": "mole_junction",
+  "hp": 150,
+  "size": 1,
+  "desc": "Лента через ленту: предметы ныряют в нору и выходят с противоположной стороны. Две ленты крест-накрест не мешают друг другу. Поставьте на место пересечения.",
+  "cost": {
+   "iron_ingot": 4,
+   "gear": 2
+  },
+  "params": {
+   "per_min": 1360,
+   "any_ground": true
+  },
+  "sounds": {},
+  "explain": "Нужна, когда две ленты должны пересечься. Поставьте кротовину на клетку пересечения: предмет, пришедший с одной стороны, ныряет под землю и выходит строго с противоположной. Поэтому две ленты крест-накрест идут сквозь неё и не смешиваются. Поворачивать не нужно. Кротовины можно ставить подряд. Если тянуть ленту поперёк прямой ленты, кротовина встанет сама."
+ },
+ "belt_rails": {
+  "name": "Бортики",
+  "category": "logistics",
+  "behavior": "rails",
+  "model": "belt_rails",
+  "hp": 60,
+  "size": 1,
+  "desc": "Ставятся на готовую ленту: на повороте предметы с неё больше не слетают. Нужны лентам Mk1 и Mk2.",
+  "cost": {
+   "iron_plate": 1
+  },
+  "params": {
+   "any_ground": true,
+   "buildable": false
+  },
+  "sounds": {}
+ },
+ "quantum_portal": {
+  "name": "Квантовый портал",
+  "category": "special",
+  "behavior": "decor",
+  "model": "quantum_portal",
+  "hp": 2500,
+  "size": 3,
+  "desc": "Открывает квантовое измерение (нужна энергия): вокруг появляются квантовые жилы — пока на жилу не смотрят, она в суперпозиции; посмотрите вблизи — схлопнется в редкое сырьё. Приходят квантовые тени: двигаются, только пока на них не смотрят. Из теней — квантовые осколки для запутанных построек.",
+  "cost": {
+   "steel": 120,
+   "circuit": 80,
+   "superconductor": 20,
+   "enriched_uranium": 10,
+   "crystal": 20
+  },
+  "params": {
+   "quantum_portal": true,
+   "power": 300
+  },
+  "sounds": {
+   "work": "work_reactor"
+  },
+  "explain": "Открывает квантовое измерение: вокруг появляются жилы в суперпозиции. Подойдите и посмотрите на жилу — она станет редким сырьём. Квантовые тени двигаются, только когда на них не смотрят."
+ },
+ "entangled_chest": {
+  "name": "Запутанный ящик",
+  "category": "storage",
+  "behavior": "storage",
+  "model": "entangled_chest",
+  "hp": 400,
+  "size": 1,
+  "desc": "Ставятся парой: два запутанных ящика делят одно содержимое, как бы далеко ни стояли. Положили в один — сразу можно взять из другого (и с ленты, и на ленту).",
+  "cost": {
+   "steel": 6,
+   "quantum_shard": 2,
+   "circuit": 10
+  },
+  "params": {
+   "slots": 30,
+   "entangled": true
+  },
+  "sounds": {},
+  "explain": "Ставятся парой. Что положили в один — сразу можно взять из другого, как бы далеко они ни стояли. Работают с лентами."
+ },
+ "entangled_pole": {
+  "name": "Запутанная станция энергии",
+  "desc": "Ставятся парой: две запутанные станции — одна сеть через всю карту, без цепочки станций между ними. Каждая отдаёт до 250 энергии зданиям в радиусе 5 клеток.",
+  "category": "energy",
+  "behavior": "pole",
+  "cost": {
+   "steel": 10,
+   "circuit": 8,
+   "quantum_shard": 2
+  },
+  "model": "entangled_pole",
+  "hp": 400,
+  "size": 1,
+  "params": {
+   "radius": 5,
+   "any_ground": true,
+   "link": 12,
+   "transfer": 250,
+   "tier": 3,
+   "wire_height": 3.6,
+   "entangled": true,
+   "upgrade_of": "entangled_pole"
+  },
+  "sounds": {},
+  "explain": "Ставятся парой: две станции становятся одной сетью через всю карту, без цепочки станций между ними."
+ },
+ "black_market": {
+  "name": "Чёрный рынок",
+  "category": "logistics",
+  "behavior": "decor",
+  "model": "black_market",
+  "hp": 300,
+  "size": 1,
+  "desc": "Продаёт всё, что привезут лентой или положат руками, — кредиты сразу на ваш счёт. Сырьё стоит гроши, готовые детали — намного больше.",
+  "cost": {
+   "plank": 10,
+   "stone": 10,
+   "iron_ingot": 5
+  },
+  "params": {},
+  "blocks": [
+   {
+    "type": "bmarket",
+    "items": [],
+    "needs_power": false
+   }
+  ],
+  "sounds": {},
+  "explain": "Подведите к нему ленты (входы с любой стороны) или положите предметы руками. Рынок забирает до 30 предметов в минуту и платит кредиты прямо вам на счёт. Платит за всё, но по-разному: сырьё почти ничего не стоит (железная руда — 0,001 кр), а чем дороже и сложнее предмет, тем большую долю цены дают. Поэтому выгодно продавать то, что сделали на заводе, а не руду. Кредиты нужны для открытий в дереве исследований. Одного рынка мало — ставьте несколько и кормите каждый своей лентой. Сколько продано и сколько ещё копится до целого кредита — в окне рынка (E)."
+ },
+ "lift_mk1": {
+  "name": "Лифт Mk1",
+  "category": "logistics",
+  "behavior": "belt",
+  "model": "item_lift_mk1",
+  "hp": 120,
+  "size": 1,
+  "desc": "Поднимает или опускает предметы между землёй и фундаментом: 60 предметов в минуту, как конвейер Mk1.",
+  "cost": {
+   "iron_ingot": 4,
+   "gear": 2
+  },
+  "params": {
+   "per_min": 60,
+   "tier": 1,
+   "any_ground": true,
+   "lift": true
+  },
+  "sounds": {},
+  "explain": "Соединяет ленту на земле с лентой или зданием на фундаменте (и обратно). Поставьте лифт на клетку между ними стрелкой туда, куда должны ехать предметы: он поднимет или опустит их на нужную высоту сам. Скорость как у конвейера той же марки. Можно поставить прямо поверх куска ленты."
+ },
+ "lift_mk2": {
+  "name": "Лифт Mk2",
+  "category": "logistics",
+  "behavior": "belt",
+  "model": "item_lift_mk2",
+  "hp": 120,
+  "size": 1,
+  "desc": "Поднимает или опускает предметы между землёй и фундаментом: 120 предметов в минуту, как конвейер Mk2.",
+  "cost": {
+   "iron_plate": 4,
+   "gear": 4
+  },
+  "params": {
+   "per_min": 120,
+   "tier": 2,
+   "any_ground": true,
+   "lift": true
+  },
+  "sounds": {},
+  "explain": "Соединяет ленту на земле с лентой или зданием на фундаменте (и обратно). Поставьте лифт на клетку между ними стрелкой туда, куда должны ехать предметы: он поднимет или опустит их на нужную высоту сам. Скорость как у конвейера той же марки. Можно поставить прямо поверх куска ленты."
+ },
+ "lift_mk3": {
+  "name": "Лифт Mk3",
+  "category": "logistics",
+  "behavior": "belt",
+  "model": "item_lift_mk3",
+  "hp": 120,
+  "size": 1,
+  "desc": "Поднимает или опускает предметы между землёй и фундаментом: 270 предметов в минуту, как конвейер Mk3.",
+  "cost": {
+   "steel": 4,
+   "motor": 1
+  },
+  "params": {
+   "per_min": 270,
+   "tier": 3,
+   "any_ground": true,
+   "lift": true
+  },
+  "sounds": {},
+  "explain": "Соединяет ленту на земле с лентой или зданием на фундаменте (и обратно). Поставьте лифт на клетку между ними стрелкой туда, куда должны ехать предметы: он поднимет или опустит их на нужную высоту сам. Скорость как у конвейера той же марки. Можно поставить прямо поверх куска ленты."
+ },
+ "lift_mk4": {
+  "name": "Лифт Mk4",
+  "category": "logistics",
+  "behavior": "belt",
+  "model": "item_lift_mk4",
+  "hp": 120,
+  "size": 1,
+  "desc": "Поднимает или опускает предметы между землёй и фундаментом: 480 предметов в минуту, как конвейер Mk4.",
+  "cost": {
+   "steel": 4,
+   "plastic": 4,
+   "motor": 1
+  },
+  "params": {
+   "per_min": 480,
+   "tier": 4,
+   "any_ground": true,
+   "lift": true
+  },
+  "sounds": {},
+  "explain": "Соединяет ленту на земле с лентой или зданием на фундаменте (и обратно). Поставьте лифт на клетку между ними стрелкой туда, куда должны ехать предметы: он поднимет или опустит их на нужную высоту сам. Скорость как у конвейера той же марки. Можно поставить прямо поверх куска ленты."
+ },
+ "lift_mk5": {
+  "name": "Лифт Mk5",
+  "category": "logistics",
+  "behavior": "belt",
+  "model": "item_lift_mk5",
+  "hp": 120,
+  "size": 1,
+  "desc": "Поднимает или опускает предметы между землёй и фундаментом: 780 предметов в минуту, как конвейер Mk5.",
+  "cost": {
+   "steel": 4,
+   "plastic": 4,
+   "circuit": 4,
+   "motor": 1
+  },
+  "params": {
+   "per_min": 780,
+   "tier": 5,
+   "any_ground": true,
+   "lift": true
+  },
+  "sounds": {},
+  "explain": "Соединяет ленту на земле с лентой или зданием на фундаменте (и обратно). Поставьте лифт на клетку между ними стрелкой туда, куда должны ехать предметы: он поднимет или опустит их на нужную высоту сам. Скорость как у конвейера той же марки. Можно поставить прямо поверх куска ленты."
+ },
+ "hq_link": {
+  "name": "Канал штаба",
+  "desc": "Связь со штабом без лент. «В штаб»: всё, что пришло на вход, сразу появляется в штабе. «Из штаба»: выбранные предметы выходят на ленту. Каждый второй предмет теряется в пути. Энергия: 20.",
+  "category": "logistics",
+  "behavior": "hq_link",
+  "cost": {
+   "crystal": 1,
+   "gear": 4,
+   "iron_ingot": 6,
+   "stone": 10
+  },
+  "model": "drop_beacon",
+  "hp": 250,
+  "size": 1,
+  "params": {
+   "power": 3
+  },
+  "sounds": {}
+ },
+ "powder_mill": {
+  "name": "Пороховой цех",
+  "desc": "Мешает порох из серы, селитры и угля. Патроны из пороха и пластин делает сборщик. Нужна энергия.",
+  "category": "production",
+  "behavior": "crafter",
+  "cost": {
+   "iron_plate": 8,
+   "gear": 4,
+   "stone": 10
+  },
+  "model": "cb_mixer",
+  "hp": 350,
+  "size": 2,
+  "size0": 1,
+  "params": {
+   "station": "powder_mill",
+   "speed": 1.0,
+   "power": 8,
+   "in_slots": 3,
+   "tune": "calib"
+  },
+  "sounds": {
+   "work": "work_bubble"
+  }
+ },
+ "heart": {
+  "name": "Сердце",
+  "desc": "Каждое сердце даёт место ещё под 25 зданий (штаб — под 50), само места не занимает. Ленты, стены, полы, опоры, трубы и украшения не считаются. Если сердце разрушат, рухнут 10 ближайших к нему зданий — и если среди них другое сердце, оно тоже рухнет и потянет свои 10. Ставится не ближе 2 клеток к другому сердцу.",
+  "category": "special",
+  "behavior": "heart",
+  "cost": {
+   "stone": 20,
+   "log": 10,
+   "fiber": 5
+  },
+  "model": "heart",
+  "hp": 260,
+  "size": 1,
+  "params": {
+   "slots": 10
+  },
+  "sounds": {}
+ },
+ "drone_workshop": {
+  "name": "Мастерская грузовых дронов",
+  "desc": "Собирает транспортные дроны для погрузочных станций. Готовые машины можно забрать или вывезти лентой.",
+  "model": "drone_workshop",
+  "size": 3,
+  "category": "production",
+  "behavior": "crafter",
+  "hp": 840,
+  "cost": {
+   "iron_plate": 16,
+   "motor": 3,
+   "circuit": 8
+  },
+  "params": {
+   "station": "drone_workshop",
+   "power": 12,
+   "speed": 1,
+   "tune": "calib"
+  }
+ },
+ "orbital_elevator": {
+  "name": "Орбитальный лифт",
+  "category": "special",
+  "behavior": "storage",
+  "model": "orbital_elevator",
+  "size": 5,
+  "hp": 5000,
+  "cost": {},
+  "desc": "Заброшенный грузовой терминал. Проведите энергию и доставьте ремонтные материалы через входные порты. Исправный подъёмник принимает орбитальные контракты.",
+  "params": {
+   "power": 24,
+   "slots": 36,
+   "inputs": 2,
+   "outputs": 0,
+   "buildable": false,
+   "landmark": true,
+   "megaproject": true
+  }
+ }
+}

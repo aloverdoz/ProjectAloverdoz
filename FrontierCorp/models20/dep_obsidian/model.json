@@ -1,0 +1,208 @@
+{
+ "parts": [
+  {
+   "color": "#0d0713",
+   "mat": "paint",
+   "mesh": "res://models20/dep_obsidian/0.res",
+   "metallic": 0.2,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.03,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#772bd6",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/dep_obsidian/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.05,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/dep_obsidian/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.8,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/dep_obsidian/tex0.png"
+  },
+  {
+   "anim": "blink",
+   "color": "#dab4ff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_obsidian/3.res",
+   "metallic": 0,
+   "pos": [
+    0.238,
+    0.3579,
+    -0.1171
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#dab4ff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_obsidian/4.res",
+   "metallic": 0,
+   "pos": [
+    -0.1462,
+    0.4196,
+    -0.1127
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#dab4ff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_obsidian/5.res",
+   "metallic": 0,
+   "pos": [
+    0.0022,
+    0.6696,
+    0.1272
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#dab4ff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_obsidian/6.res",
+   "metallic": 0,
+   "pos": [
+    0.0874,
+    0.3865,
+    -0.1445
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#dab4ff",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_obsidian/7.res",
+   "metallic": 0,
+   "pos": [
+    -0.2789,
+    0.3719,
+    -0.0871
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

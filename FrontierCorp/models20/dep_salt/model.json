@@ -1,0 +1,235 @@
+{
+ "parts": [
+  {
+   "color": "#ffffff",
+   "mat": "paint",
+   "mesh": "res://models20/dep_salt/0.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.8,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none",
+   "texture": "res://models20/dep_salt/tex0.png"
+  },
+  {
+   "color": "#857578",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/dep_salt/1.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.15,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "color": "#757578",
+   "emission": 1,
+   "mat": "glow",
+   "mesh": "res://models20/dep_salt/2.res",
+   "metallic": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.15,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#fff3f8",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_salt/3.res",
+   "metallic": 0,
+   "pos": [
+    0.0239,
+    0.4513,
+    -0.1858
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#fff3f8",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_salt/4.res",
+   "metallic": 0,
+   "pos": [
+    -0.023,
+    0.3058,
+    -0.0784
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#fff3f8",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_salt/5.res",
+   "metallic": 0,
+   "pos": [
+    -0.108,
+    0.3597,
+    -0.2603
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#fff3f8",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_salt/6.res",
+   "metallic": 0,
+   "pos": [
+    0.3785,
+    0.2695,
+    0.3344
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#fff3f8",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_salt/7.res",
+   "metallic": 0,
+   "pos": [
+    0.277,
+    0.2724,
+    0.2315
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  },
+  {
+   "anim": "blink",
+   "color": "#fff3f8",
+   "emission": 6,
+   "mat": "glow",
+   "mesh": "res://models20/dep_salt/8.res",
+   "metallic": 0,
+   "pos": [
+    -0.3722,
+    0.2111,
+    0.1368
+   ],
+   "rot": [
+    0,
+    0,
+    0
+   ],
+   "roughness": 0.5,
+   "shape": "mesh",
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "surface": "none"
+  }
+ ]
+}

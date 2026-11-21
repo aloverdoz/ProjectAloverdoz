@@ -1,0 +1,520 @@
+{
+ "help": {
+  "desc": "Список команд",
+  "usage": "help",
+  "actions": [
+   {
+    "do": "help"
+   }
+  ],
+  "cheat": false
+ },
+ "clear": {
+  "desc": "Очистить консоль",
+  "usage": "clear",
+  "actions": [
+   {
+    "do": "clear"
+   }
+  ],
+  "cheat": false
+ },
+ "give": {
+  "desc": "Выдать предмет",
+  "usage": "give <предмет> [кол-во]",
+  "actions": [
+   {
+    "do": "give",
+    "item": "$1",
+    "n": "$2|1"
+   }
+  ],
+  "cheat": true
+ },
+ "giveall": {
+  "desc": "По 50 штук всех предметов в штаб",
+  "usage": "giveall",
+  "actions": [
+   {
+    "do": "give_all",
+    "n": "$1|50"
+   }
+  ],
+  "cheat": true
+ },
+ "money": {
+  "desc": "Добавить кредиты",
+  "usage": "money <сумма>",
+  "actions": [
+   {
+    "do": "credits",
+    "n": "$1|1000"
+   }
+  ],
+  "cheat": true
+ },
+ "xp": {
+  "desc": "Добавить опыт",
+  "usage": "xp <кол-во>",
+  "actions": [
+   {
+    "do": "xp",
+    "n": "$1|100"
+   }
+  ],
+  "cheat": true
+ },
+ "god": {
+  "desc": "Бессмертие вкл/выкл",
+  "usage": "god",
+  "actions": [
+   {
+    "do": "toggle",
+    "flag": "god"
+   }
+  ],
+  "cheat": true
+ },
+ "freebuild": {
+  "desc": "Бесплатная стройка вкл/выкл",
+  "usage": "freebuild",
+  "actions": [
+   {
+    "do": "toggle",
+    "flag": "free_build"
+   }
+  ],
+  "cheat": true
+ },
+ "heal": {
+  "desc": "Вылечить героя",
+  "usage": "heal",
+  "actions": [
+   {
+    "do": "heal"
+   }
+  ],
+  "cheat": true
+ },
+ "tp": {
+  "desc": "Телепорт в клетку",
+  "usage": "tp <x> <z>",
+  "actions": [
+   {
+    "do": "tp",
+    "x": "$1",
+    "z": "$2"
+   }
+  ],
+  "cheat": true
+ },
+ "home": {
+  "desc": "Телепорт к штабу",
+  "usage": "home",
+  "actions": [
+   {
+    "do": "tp_hq"
+   }
+  ],
+  "cheat": false
+ },
+ "time": {
+  "desc": "Время суток (0..1, 0.5 — полдень)",
+  "usage": "time <0..1>",
+  "actions": [
+   {
+    "do": "time",
+    "t": "$1|0.5"
+   }
+  ],
+  "cheat": true
+ },
+ "timescale": {
+  "desc": "Скорость игры",
+  "usage": "timescale <x>",
+  "actions": [
+   {
+    "do": "timescale",
+    "x": "$1|1"
+   }
+  ],
+  "cheat": true
+ },
+ "wave": {
+  "desc": "Начать волну сейчас",
+  "usage": "wave",
+  "actions": [
+   {
+    "do": "wave"
+   }
+  ],
+  "cheat": true
+ },
+ "nowaves": {
+  "desc": "Волны вкл/выкл",
+  "usage": "nowaves",
+  "actions": [
+   {
+    "do": "toggle",
+    "flag": "no_waves"
+   }
+  ],
+  "cheat": true
+ },
+ "spawn": {
+  "desc": "Призвать монстров рядом",
+  "usage": "spawn <монстр> [кол-во]",
+  "actions": [
+   {
+    "do": "spawn",
+    "enemy": "$1|crawler",
+    "n": "$2|1"
+   }
+  ],
+  "cheat": true
+ },
+ "killall": {
+  "desc": "Убить всех монстров",
+  "usage": "killall",
+  "actions": [
+   {
+    "do": "kill_all"
+   }
+  ],
+  "cheat": true
+ },
+ "zone": {
+  "desc": "Зона за бурей: zone — расширить на 1 блок даром, zone 20 — сделать 20×20",
+  "usage": "zone [блоков]",
+  "actions": [
+   {
+    "do": "zone",
+    "n": "$1|0"
+   }
+  ],
+  "cheat": true
+ },
+ "window": {
+  "desc": "Открыть окно интерфейса: build, craft, tech, scan, trade, inventory…",
+  "usage": "window <окно>",
+  "actions": [
+   {
+    "do": "open",
+    "window": "$1|scan"
+   }
+  ],
+  "cheat": false
+ },
+ "reveal": {
+  "desc": "Открыть карту (туман войны)",
+  "usage": "reveal [радиус, пусто — вся карта]",
+  "actions": [
+   {
+    "do": "reveal",
+    "dist": "$1|"
+   }
+  ],
+  "cheat": true
+ },
+ "cam_pitch": {
+  "desc": "Наклон камеры в градусах (пусто — авто)",
+  "usage": "cam_pitch <градусы>",
+  "actions": [
+   {
+    "do": "cam",
+    "what": "pitch",
+    "v": "$1|0"
+   }
+  ],
+  "cheat": false
+ },
+ "cam_dist": {
+  "desc": "Дальность камеры",
+  "usage": "cam_dist <метры>",
+  "actions": [
+   {
+    "do": "cam",
+    "what": "dist",
+    "v": "$1|34"
+   }
+  ],
+  "cheat": false
+ },
+ "cam_fov": {
+  "desc": "Угол обзора камеры",
+  "usage": "cam_fov <градусы>",
+  "actions": [
+   {
+    "do": "cam",
+    "what": "fov",
+    "v": "$1|42"
+   }
+  ],
+  "cheat": false
+ },
+ "cam_max": {
+  "desc": "Максимальное отдаление камеры",
+  "usage": "cam_max <метры>",
+  "actions": [
+   {
+    "do": "cam",
+    "what": "max",
+    "v": "$1|90"
+   }
+  ],
+  "cheat": false
+ },
+ "set": {
+  "desc": "Изменить любую настройку игрока",
+  "usage": "set <ключ> <значение>",
+  "actions": [
+   {
+    "do": "pref",
+    "key": "$1",
+    "value": "$2"
+   }
+  ],
+  "cheat": false
+ },
+ "rule": {
+  "desc": "Изменить правило игры (settings.json) до перезапуска",
+  "usage": "rule <ключ> <значение>",
+  "actions": [
+   {
+    "do": "setting",
+    "key": "$1",
+    "value": "$2"
+   }
+  ],
+  "cheat": true
+ },
+ "quality": {
+  "desc": "Пресет графики",
+  "usage": "quality low|medium|high|ultra|cinema",
+  "actions": [
+   {
+    "do": "pref",
+    "key": "quality",
+    "value": "$1|high"
+   }
+  ],
+  "cheat": false
+ },
+ "fps": {
+  "desc": "Показать FPS",
+  "usage": "fps",
+  "actions": [
+   {
+    "do": "toggle",
+    "flag": "show_fps"
+   }
+  ],
+  "cheat": false
+ },
+ "skillpoints": {
+  "desc": "Добавить очки навыков",
+  "usage": "skillpoints <n>",
+  "actions": [
+   {
+    "do": "skill_points",
+    "n": "$1|5"
+   }
+  ],
+  "cheat": true
+ },
+ "day": {
+  "desc": "Сделать полдень",
+  "usage": "day",
+  "actions": [
+   {
+    "do": "time",
+    "t": "0.5"
+   }
+  ],
+  "cheat": true
+ },
+ "night": {
+  "desc": "Сделать полночь",
+  "usage": "night",
+  "actions": [
+   {
+    "do": "time",
+    "t": "0.0"
+   }
+  ],
+  "cheat": true
+ },
+ "starter": {
+  "desc": "Набор для быстрой проверки: инструменты, материалы, кредиты",
+  "usage": "starter",
+  "actions": [
+   {
+    "do": "give",
+    "item": "iron_axe",
+    "n": "1"
+   },
+   {
+    "do": "give",
+    "item": "iron_pickaxe",
+    "n": "1"
+   },
+   {
+    "do": "give_all",
+    "n": "30"
+   },
+   {
+    "do": "credits",
+    "n": "500"
+   },
+   {
+    "do": "echo",
+    "text": "Стартовый набор выдан"
+   }
+  ],
+  "cheat": true
+ },
+ "save": {
+  "desc": "Сохранить игру",
+  "usage": "save",
+  "actions": [
+   {
+    "do": "save"
+   }
+  ],
+  "cheat": false
+ },
+ "attrpoints": {
+  "desc": "Добавить очки характеристик",
+  "usage": "attrpoints [n]",
+  "actions": [
+   {
+    "do": "attr_points",
+    "n": "$1|5"
+   }
+  ],
+  "cheat": true
+ },
+ "kill": {
+  "desc": "Герой погибает (вещи останутся в сундуке)",
+  "usage": "kill",
+  "actions": [
+   {
+    "do": "die"
+   }
+  ],
+  "cheat": true
+ },
+ "pack": {
+  "desc": "Призвать бродячую стаю рядом",
+  "usage": "pack [расстояние]",
+  "actions": [
+   {
+    "do": "spawn_pack",
+    "dist": "$1|30"
+   }
+  ],
+  "cheat": true
+ },
+ "echo": {
+  "desc": "Вывести текст",
+  "usage": "echo <текст>",
+  "actions": [
+   {
+    "do": "echo",
+    "text": "$*"
+   }
+  ],
+  "cheat": false
+ },
+ "event": {
+  "desc": "Начать событие мира",
+  "usage": "event <id>",
+  "actions": [
+   {
+    "do": "event",
+    "key": "$1"
+   }
+  ],
+  "cheat": true
+ },
+ "npc": {
+  "desc": "Привести НПС к базе",
+  "usage": "npc <вид> [сколько]",
+  "actions": [
+   {
+    "do": "npc",
+    "enemy": "$1|trader",
+    "n": "$2|1"
+   }
+  ],
+  "cheat": true
+ },
+ "order": {
+  "desc": "Выставить заказ",
+  "usage": "order <sell|buy> <предмет> <кол-во> <цена>",
+  "actions": [
+   {
+    "do": "order",
+    "key": "$1|sell",
+    "item": "$2",
+    "n": "$3|10",
+    "v": "$4|100"
+   }
+  ],
+  "cheat": true
+ },
+ "season": {
+  "desc": "Перейти к сезону",
+  "usage": "season <Зима|4>",
+  "actions": [
+   {
+    "do": "season",
+    "key": "$1|1"
+   }
+  ],
+  "cheat": true
+ },
+ "scout": {
+  "desc": "Запустить дрона-разведчика туда, куда смотрит камера",
+  "usage": "scout [метров]",
+  "actions": [
+   {
+    "do": "scout",
+    "dist": "$1|0"
+   }
+  ],
+  "cheat": true
+ },
+ "unlock_rare": {
+  "desc": "Изучить редкий чертёж",
+  "usage": "unlock_rare <здание>",
+  "actions": [
+   {
+    "do": "unlock_rare",
+    "key": "$1"
+   }
+  ],
+  "cheat": true
+ },
+ "research": {
+  "desc": "Добавить очки исследований",
+  "usage": "research <кол-во>",
+  "actions": [
+   {
+    "do": "research",
+    "n": "$1|50"
+   }
+  ],
+  "cheat": true
+ },
+ "camera": {
+  "desc": "Свободная камера для съёмки: WASD, Пробел/Ctrl, ПКМ — повернуть, колесо — FOV, F12 — снимок; ещё раз camera — выйти",
+  "usage": "camera",
+  "actions": [
+   {
+    "do": "camera"
+   }
+  ],
+  "cheat": false
+ }
+}

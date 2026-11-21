@@ -1,0 +1,203 @@
+{
+ "first_delay": 1200,
+ "interval": 900,
+ "interval_min": 600,
+ "interval_step": 20,
+ "base_count": 4,
+ "growth": 2.5,
+ "night_mult": 1.4,
+ "hp_growth": 0.06,
+ "spawn_dist": 70,
+ "groups": [
+  {
+   "enemy": "crawler",
+   "weight": 10,
+   "from_wave": 1
+  },
+  {
+   "enemy": "runner",
+   "weight": 4,
+   "from_wave": 2
+  },
+  {
+   "enemy": "spitter",
+   "weight": 3,
+   "from_wave": 3
+  },
+  {
+   "enemy": "brute",
+   "weight": 2,
+   "from_wave": 3
+  }
+ ],
+ "guards": {
+  "enemy": "guard",
+  "count": 6,
+  "boss": "brute"
+ },
+ "roaming": {
+  "enabled": true,
+  "first_delay": 90,
+  "interval": 70,
+  "max_packs": 6,
+  "max_monsters": 40,
+  "pack_min": 3,
+  "pack_max": 6,
+  "spawn_min_dist": 55,
+  "spawn_max_dist": 110,
+  "base_safe_radius": 35,
+  "aggro_radius": 18,
+  "lose_radius": 40,
+  "wander_speed": 0.45,
+  "wander_radius": 14,
+  "night_mult": 1.5,
+  "groups": [
+   {
+    "enemy": "crawler",
+    "weight": 10,
+    "from_day": 1
+   },
+   {
+    "enemy": "runner",
+    "weight": 5,
+    "from_day": 1
+   },
+   {
+    "enemy": "spitter",
+    "weight": 3,
+    "from_day": 2
+   },
+   {
+    "enemy": "brute",
+    "weight": 1,
+    "from_day": 3,
+    "leader": true
+   }
+  ]
+ },
+ "sieges": {
+  "enabled": true,
+  "first_day": 5,
+  "every_days": 5,
+  "spawn_dist": 90.0,
+  "escort": 10,
+  "escort_growth": 3,
+  "hp_growth": 0.25,
+  "reward": 1500,
+  "bosses": [
+   {
+    "enemy": "boss_titan",
+    "weight": 1.0,
+    "from_day": 5
+   },
+   {
+    "enemy": "boss_hive",
+    "weight": 1.0,
+    "from_day": 5
+   },
+   {
+    "enemy": "boss_worm",
+    "weight": 1.0,
+    "from_day": 10
+   },
+   {
+    "enemy": "boss_dragon",
+    "weight": 1.0,
+    "from_day": 15
+   },
+   {
+    "enemy": "boss_lich",
+    "weight": 1.0,
+    "from_day": 20
+   }
+  ]
+ },
+ "omen": "Холод пробегает по спине... Из туч выходят роботы!",
+ "omen_color": "#ff4a3a",
+ "omen_lead": 8.0,
+ "omen_time": 5.0,
+ "omen_sound": "omen",
+ "boss_omen": "Вы чувствуете на себе взгляд чего-то огромного...",
+ "rush": {
+  "enabled": false,
+  "start_min": 30.0,
+  "every_min": 1.0,
+  "base_count": 5,
+  "count_growth": 2.0,
+  "hp_growth": 0.08,
+  "dmg_growth": 0.04,
+  "max_count": 120,
+  "max_alive": 300
+ },
+ "pace": {
+  "enabled": true,
+  "levels": [
+   {
+    "at": 0,
+    "k_first": 1.5,
+    "k_interval": 2.0,
+    "k_count": 0.35,
+    "k_hp": 0.5,
+    "k_dmg": 0.5,
+    "max_wave": 2,
+    "bosses": false,
+    "k_roam": 0.5
+   },
+   {
+    "at": 1,
+    "k_first": 1.5,
+    "k_interval": 1.6,
+    "k_count": 0.55,
+    "k_hp": 0.7,
+    "k_dmg": 0.7,
+    "max_wave": 4,
+    "bosses": false,
+    "k_roam": 0.7
+   },
+   {
+    "at": 2,
+    "k_first": 1.0,
+    "k_interval": 1.3,
+    "k_count": 0.8,
+    "k_hp": 0.85,
+    "k_dmg": 0.85,
+    "max_wave": 7,
+    "bosses": true,
+    "k_roam": 0.85
+   },
+   {
+    "at": 3,
+    "k_first": 1.0,
+    "k_interval": 1.0,
+    "k_count": 1.0,
+    "k_hp": 1.0,
+    "k_dmg": 1.0,
+    "max_wave": 12,
+    "bosses": true,
+    "k_roam": 1.0
+   },
+   {
+    "at": 5,
+    "k_first": 1.0,
+    "k_interval": 0.8,
+    "k_count": 1.2,
+    "k_hp": 1.15,
+    "k_dmg": 1.1,
+    "max_wave": 20,
+    "bosses": true,
+    "k_roam": 1.1
+   },
+   {
+    "at": 7,
+    "k_first": 1.0,
+    "k_interval": 0.67,
+    "k_count": 1.4,
+    "k_hp": 1.3,
+    "k_dmg": 1.2,
+    "max_wave": 999,
+    "bosses": true,
+    "k_roam": 1.2
+   }
+  ]
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "base_xp": 60,
+ "growth": 1.35,
+ "points_per_level": 1,
+ "max_level": 50,
+ "xp": {
+  "gather_hit": 1,
+  "build": 4,
+  "craft": 2,
+  "kill": 2,
+  "deliver": 0.1,
+  "sell": 0.05
+ },
+ "attr_points_per_level": 2
+}

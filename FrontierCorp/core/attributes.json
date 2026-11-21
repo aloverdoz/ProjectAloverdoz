@@ -1,0 +1,57 @@
+{
+ "strength": {
+  "name": "Сила",
+  "desc": "+5% урона, +4% скорости добычи",
+  "color": "#ff7a5a",
+  "max": 20,
+  "order": 1,
+  "bonus": {
+   "damage": 0.05,
+   "gather": 0.04
+  }
+ },
+ "agility": {
+  "name": "Ловкость",
+  "desc": "+3% скорости бега, +4% скорости атаки, прыжок выше",
+  "color": "#66e0ff",
+  "max": 20,
+  "order": 2,
+  "bonus": {
+   "move": 0.03,
+   "attack_speed": 0.04,
+   "jump": 0.05
+  }
+ },
+ "endurance": {
+  "name": "Выносливость",
+  "desc": "Медленнее голод и жажда (−4%), +5% к восстановлению",
+  "color": "#ffd36b",
+  "max": 20,
+  "order": 3,
+  "bonus": {
+   "hunger": -0.04,
+   "regen": 0.05
+  }
+ },
+ "vitality": {
+  "name": "Живучесть",
+  "desc": "+15 к здоровью",
+  "color": "#7dff9a",
+  "max": 20,
+  "order": 4,
+  "bonus": {
+   "max_hp": 15
+  }
+ },
+ "intellect": {
+  "name": "Интеллект",
+  "desc": "+4% скорости крафта, +3% опыта",
+  "color": "#c18cff",
+  "max": 20,
+  "order": 5,
+  "bonus": {
+   "craft_speed": 0.04,
+   "xp": 0.03
+  }
+ }
+}
