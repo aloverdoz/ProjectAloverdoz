@@ -1,5 +1,5 @@
 {
- "size": 384,
+ "size": 1152,
  "seed": 0,
  "day_length": 480,
  "start_inventory": {
@@ -510,7 +510,7 @@
    "hand_hp": 25.0,
    "hand_tool": "pickaxe",
    "rocks_around": 0,
-   "marker": "dep_magma",
+   "marker": "dep_quantum_field",
    "miner_tier": 4
   }
  ],
@@ -756,45 +756,45 @@
  "map_sizes": [
   {
    "name": "Маленькая",
-   "size": 256
-  },
-  {
-   "name": "Средняя",
    "size": 384
   },
   {
+   "name": "Средняя",
+   "size": 1152
+  },
+  {
    "name": "Большая",
-   "size": 512
-  },
-  {
-   "name": "Огромная",
-   "size": 768
-  },
-  {
-   "name": "Огромная ×2",
-   "size": 1088
-  },
-  {
-   "name": "Огромная ×4",
    "size": 1536
   },
   {
-   "name": "Огромная ×8",
+   "name": "Огромная",
+   "size": 1856
+  },
+  {
+   "name": "Огромная ×2",
    "size": 2176
   },
   {
-   "name": "Огромная ×16",
+   "name": "Огромная ×4",
+   "size": 2560
+  },
+  {
+   "name": "Огромная ×8",
    "size": 3072
+  },
+  {
+   "name": "Огромная ×16",
+   "size": 3840
   },
   {
    "name": "Огромная ×32",
    "size": 4352
   }
  ],
- "relief": 11,
- "relief_scale": 1.0,
+ "relief": 33,
+ "relief_scale": 3,
  "hills": 0.4,
- "start_flat_radius": 22,
+ "start_flat_radius": 66,
  "shore_flat": 6,
  "rocky_slopes": true,
  "map_mode": "procedural",
@@ -1612,5 +1612,5 @@
  ],
  "start_ring": 2,
  "orbital_fields": true,
- "landing_canyon": 1
+ "landing_canyon": 3
 }

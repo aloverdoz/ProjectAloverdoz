@@ -207,6 +207,8 @@ func from_dict(a: Array) -> void:
 		list.append(dd)
 
 func place_caves() -> void:
+	if not DB.setting("cave_expeditions_enabled", false):
+		return
 	var w = game.world
 	var rng := RandomNumberGenerator.new()
 	rng.seed = int(w.used_seed) ^ 0x219af

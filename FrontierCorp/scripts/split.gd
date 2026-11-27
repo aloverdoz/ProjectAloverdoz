@@ -17,7 +17,7 @@ var layer: CanvasLayer
 var p2_start_inv: Array = []     # вещи второго героя из сохранения
 var p2_start_extra: Dictionary = {}   # A-8 r7: одежда, уровень рюкзака, здоровье, еда и вода второго
 
-const SEAT_VARS := ["player", "hud", "camera", "cam_yaw", "cam_yaw_target", "cam_dist", "cam_dist_target", "cam_focus",
+const SEAT_VARS := ["player", "hud", "camera", "cam_yaw", "cam_yaw_target", "cam_dist", "cam_dist_target", "strategy_zoom", "explorer_zoom", "cam_focus",
 	"cam_pitch_override", "zoom_home", "edge_off", "build_type", "build_dir", "demolish", "wiring", "zone_pick", "wire_from",
 	"wire_line", "ghost", "hover_cell", "hover_point", "lmb", "rmb", "drag_last", "drag_placed", "trauma", "_cam_lead",
 	"_ghost_cell", "target", "target_ring", "top_view", "wire_hl", "wire_flash", "wire_flash_b", "_hl_pool", "_spoil_acc"]

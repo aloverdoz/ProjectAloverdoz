@@ -46,7 +46,7 @@ float fbm3(vec3 p) { return n3(p) * 0.5 + n3(p * 2.1) * 0.3 + n3(p * 4.3) * 0.2;
 void vertex() {
 	v_lp = (MODEL_MATRIX * vec4(VERTEX, 1.0)).xyz - MODEL_MATRIX[3].xyz;
 	v_wn = normalize((MODEL_MATRIX * vec4(NORMAL, 0.0)).xyz);
-	v_wy = (MODEL_MATRIX * vec4(VERTEX, 1.0)).y;
+	v_wy = clamp(VERTEX.y, 0.0, 4.0);
 	v_org = MODEL_MATRIX[3].xyz;
 	float act = always ? 1.0 : INSTANCE_CUSTOM.x;
 	float ph = INSTANCE_CUSTOM.y * 6.2831 + MODEL_MATRIX[3].x * 0.13 + MODEL_MATRIX[3].z * 0.07;
@@ -63,7 +63,7 @@ void vertex() {
 		float f = 0.6 + 0.25 * sin(t + ph) + 0.15 * sin(t * 2.7 + ph * 3.0);
 		v_glow = mix(1.0, f, amount);
 	} else if (anim == 4) {
-		float wy = (MODEL_MATRIX * vec4(VERTEX, 1.0)).y;
+		float wy = clamp(VERTEX.y, 0.0, 4.0);
 		VERTEX.x += sin(t + ph) * amount * wy * 0.25;
 		VERTEX.z += cos(t * 0.8 + ph) * amount * wy * 0.12;
 	} else if (anim == 5) {

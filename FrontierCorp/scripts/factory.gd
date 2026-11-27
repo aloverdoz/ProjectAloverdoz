@@ -492,8 +492,9 @@ func _update_ports(b: B) -> void:
 			2: fd = cb.x - box.end.x
 			_: fd = cb.z - box.end.z
 		var edge := C * 0.5
-		fd = clampf(fd, edge - 0.05, C * 1.5)
-		var length := fd - edge + 0.12
+		var wall := _socket_wall(nb,(s+2)%4,cb,cb+dv*fd)
+		var local_end := Basis(Vector3.UP,_dir_angle((s+2)%4)).inverse() * World.delta(wall,cb+dv*(edge-.12))
+		var bridge := _bridge_to(local_end)
 		var model: String = str(bd.get("port_model", ""))
 		if model == "" or not DB.data.models.has(model):
 			model = "belt_port"
@@ -501,12 +502,12 @@ func _update_ports(b: B) -> void:
 			return
 		var r := _port_r(model)
 		var key := [b, s]
-		r.add(key, Transform3D(Basis(Vector3.UP, _dir_angle((s + 2) % 4)), cb + dv * fd))
+		r.add(key, Transform3D(Basis(Vector3.UP, _dir_angle((s + 2) % 4)), wall))
 		var col := DB.color(DB.setting("port_in_color" if into else "port_out_color", "#f2a81f" if into else "#5cff8c"))
 		for i in r.parts.size():
 			var pr: Dictionary = r.parts[i]
 			if pr.role == "stretch":
-				r.set_part_xform(key, i, Transform3D(Basis.from_scale(Vector3(length, 1, 1)), Vector3.ZERO) * pr.local)
+				r.set_part_xform(key,i,Transform3D(bridge,Vector3.ZERO)*pr.local)
 			elif pr.role == "port_color":
 				r.set_part_color(key, i, col)
 		keys.append(key)
@@ -616,6 +617,7 @@ func _update_sockets(b: B) -> void:
 			1: cp.z = box.end.z
 			2: cp.x = box.position.x
 			_: cp.z = box.position.z
+		cp = _socket_wall(b,b.dir,World.cell_to_world(fc),cp)
 		var key := [b, "sock", i]
 		r.add(key, Transform3D(Basis(Vector3.UP, _dir_angle(b.dir)), cp + dv * 0.02))
 		for k in r.parts.size():
@@ -665,18 +667,22 @@ func _port_sockets(b: B) -> void:
 			cp.x = face
 		else:
 			cp.z = face
+		cp = _socket_wall(b,side,w,cp)
 		# до края клетки порта (там начинается лента)
 		var edge: float = (w.x - dv.x * C * 0.5 - cp.x) * dv.x + (w.z - dv.z * C * 0.5 - cp.z) * dv.z
 		var t = grid.get(pc)
 		var linked: bool = t != null and not t.dead and t.beh in ["belt", "splitter", "merger", "junction"]
-		var length := clampf(edge + 0.1, 0.25, C * 1.5) if linked else 0.3
+		var target := w - dv * (C*.5-.12)
+		target.y = float(t.y) if linked else cp.y
+		var local_end := Basis(Vector3.UP,_dir_angle(side)).inverse() * World.delta(cp,target)
+		var bridge := _bridge_to(local_end) if linked else Basis.from_scale(Vector3(.30,1,1))
 		var r := _port_r(model)
 		var key := [b, "port", k]
 		r.add(key, Transform3D(Basis(Vector3.UP, _dir_angle(side)), cp + dv * 0.01))
 		for j in r.parts.size():
 			var pr: Dictionary = r.parts[j]
 			if pr.role == "stretch":
-				r.set_part_xform(key, j, Transform3D(Basis.from_scale(Vector3(length, 1, 1)), Vector3.ZERO) * pr.local)
+				r.set_part_xform(key,j,Transform3D(bridge,Vector3.ZERO)*pr.local)
 		keys.append(key)
 	if not keys.is_empty():
 		socket_keys[b] = keys
@@ -694,12 +700,68 @@ func footprint(type: String, cell: Vector2i) -> Array:
 
 
 var _collider_shapes := {}
+static var _profiles := {}
+
+func _bridge_to(end: Vector3) -> Basis:
+	end.x = maxf(.12,end.x)
+	var side := end.cross(Vector3.UP).normalized()
+	return Basis(end,side.cross(end).normalized(),side)
+
+func _profile(b: B) -> Array:
+	if _profiles.is_empty():
+		_profiles = JSON.parse_string(FileAccess.get_file_as_string("res://catalog/footprints.json"))
+	return _profiles.get(b.type, [])
+
+func _profile_scale(b: B, shape: Array) -> float:
+	return maxf(.001, float(ModelLib.model(DB.building(b.type).get("model", b.type)).get("scale", 1.0)) / float(shape[3]))
+
+# Find the wall on the actual belt lane, sliding to the nearest supported lane on a recessed facade.
+func _socket_wall(b: B, side: int, lane: Vector3, fallback: Vector3) -> Vector3:
+	var shape := _profile(b)
+	if shape.is_empty():
+		return fallback
+	var xf := _xform(b)
+	var factor := _profile_scale(b,shape)
+	var v := xf.basis.inverse() * World.delta(xf.origin,lane) / factor
+	var d := xf.basis.inverse() * Vector3(DIRS[side].x,0,DIRS[side].y)
+	var along_x := absf(d.x) > absf(d.z)
+	var rows: Array = shape[5]
+	var cell := float(shape[2])
+	var nx := str(rows[0]).length()
+	var nz := rows.size()
+	var count := nz if along_x else nx
+	var depth := nx if along_x else nz
+	var lane_i := clampi(floori(((v.z - float(shape[1])) if along_x else (v.x - float(shape[0]))) / cell), 0, count-1)
+	var positive := (d.x if along_x else d.z) > 0
+	for offset in count:
+		for sign_i in ([1] if offset == 0 else [1,-1]):
+			var cross_i: int = lane_i + offset * sign_i
+			if cross_i < 0 or cross_i >= count:
+				continue
+			for j in depth:
+				var dep := depth-1-j if positive else j
+				var ix := dep if along_x else cross_i
+				var iz := cross_i if along_x else dep
+				if rows[iz][ix] == "1":
+					var hit := Vector3(float(shape[0])+(ix+.5)*cell,0,float(shape[1])+(iz+.5)*cell)
+					var result := xf * (hit*factor)
+					result.y = b.y
+					return result
+	return fallback
 
 
 func body_at(point: Vector3):
 	var b = grid.get(World.world_to_cell(point))
 	if b == null:
 		return null
+	var shape := _profile(b)
+	if not shape.is_empty():
+		var pose := _xform(b)
+		var pos := pose.basis.inverse() * World.delta(pose.origin,point) / _profile_scale(b,shape)
+		var ix := floori((pos.x - float(shape[0])) / float(shape[2]))
+		var iz := floori((pos.z - float(shape[1])) / float(shape[2]))
+		var rows: Array = shape[4]
+		return b if iz >= 0 and iz < rows.size() and ix >= 0 and ix < str(rows[iz]).length() and rows[iz][ix] == "1" else null
 	var mid := str(DB.building(b.type).get("model", b.type))
 	var model := ModelLib.model(mid)
 	if not model.has("collision_outline"):
@@ -3227,6 +3289,7 @@ func _power(dt: float) -> void:
 		n.demand = 0.0
 		n.cap = 0.0
 		n.gen_max = 0.0
+	var constant_load := power_constant()
 	# спрос: машины, которым есть что делать (список потребителей строится при перестройке сети)
 	for b in consumers:
 		if b.net < 0 or b.dead:
@@ -3235,7 +3298,7 @@ func _power(dt: float) -> void:
 		if not b.subs.is_empty():
 			nets[b.net].demand += b.grid_need
 			continue
-		if need > 0.0 and (b.want or (power_constant() and b.beh in ["miner", "crafter"]) or b.beh == "turret" or (b.beh == "hq_link" and link_busy(b)) or (not b.blk and b.beh in ["decor", "storage"]) or float(b.p("shield_radius", 0)) > 0.0 or float(b.p("heat", 0)) != 0.0 or b.p("defense", "") != ""):
+		if need > 0.0 and (b.want or (constant_load and b.beh in ["miner", "crafter"]) or b.beh == "turret" or (b.beh == "hq_link" and link_busy(b)) or (not b.blk and b.beh in ["decor", "storage"]) or float(b.p("shield_radius", 0)) > 0.0 or float(b.p("heat", 0)) != 0.0 or b.p("defense", "") != ""):
 			nets[b.net].demand += need
 	var day: float = game.sun_power() if game.has_method("sun_power") else game.daylight()
 	var wind: float = game.wind() if game.has_method("wind") else 0.6
@@ -3397,7 +3460,7 @@ func net_info(b: B) -> Dictionary:
 # ---------------------------------------------------------------- бой
 
 func _turrets(dt: float) -> void:
-	var dmg_mult: float = 1.0 + game.bonus("damage")
+	var base_damage: float = 1.0 + game.bonus("damage")
 	no_ammo_warned -= dt
 	for b in turrets:
 		if b.dead:
@@ -3405,7 +3468,6 @@ func _turrets(dt: float) -> void:
 		b.cd -= dt
 		var rng: float = float(b.p("range", 30)) * (1.0 + 0.1 * (b.lvl - 1))
 		var pos: Vector3 = b.center() + Vector3(0, 1.45, 0)
-		dmg_mult = (1.0 + game.bonus("damage")) * b.mult * Tuning.k(b, "damage")
 		if b.target == null or not game.enemies.is_alive(b.target) or World.dist(game.enemies.pos_of(b.target), pos) > rng:
 			b.target = game.enemies.nearest(pos, rng)
 		if b.target == null or b.cd > 0.0:
@@ -3415,6 +3477,7 @@ func _turrets(dt: float) -> void:
 		if s < 0.3:
 			b.active = false
 			continue
+		var dmg_mult: float = base_damage * b.mult * Tuning.k(b, "damage")
 		if ammo != "":
 			var mag: Inventory = b.inv if b.inv != null else (hq.inv if hq != null else null)
 			if mag == null or mag.count(ammo) <= 0:
@@ -3480,7 +3543,6 @@ func _turrets(dt: float) -> void:
 				game.enemies.hit(nx, dmg, false, b)
 				hit_list.append(nx)
 				from_e = nx
-	dmg_mult = 1.0 + game.bonus("damage")
 	if hq != null and hq.hp > 0:
 		hq.cd -= dt
 		if hq.cd <= 0.0:
@@ -3489,7 +3551,7 @@ func _turrets(dt: float) -> void:
 			if e != null:
 				hq.cd = float(hq.p("gun_rate", 0.45))
 				game.fx.tracer(hp, hp + World.delta(hp, game.enemies.pos_of(e)) + Vector3(0, 0.5 - 5.0, 0), Color(0.4, 0.85, 1.0))
-				game.enemies.hit(e, float(hq.p("gun_damage", 12)) * dmg_mult, false, hq)
+				game.enemies.hit(e, float(hq.p("gun_damage", 12)) * base_damage, false, hq)
 
 
 func _update_tool(b: B) -> void:

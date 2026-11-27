@@ -86,6 +86,7 @@ var lazy := false
 var flora_cfg := {}      # всё, что нужно, чтобы вырастить флору в новом куске (сохраняется в карту)
 var chunks_done := {}    # кусок -> флора выращена
 var decor_done := {}     # кусок -> украшения расставлены
+var _stream_settled := false
 var _grow_queue: Array = []
 var _flora_noise: FastNoiseLite
 var _gen_f := 1.0        # клеток полной карты на клетку сетки генерации
@@ -417,6 +418,7 @@ func _rock_ok(c: Vector2i, gap: int) -> bool:
 ## Большая карта: флора и украшения появляются кусками вокруг героя (или камеры редактора).
 func _grow_around(focus: Vector3, now := false) -> void:
 	var fc := Vector2i(floori(focus.x / C / CHUNK), floori(focus.z / C / CHUNK))
+	_stream_settled = false
 	var R := 3
 	for dx in range(-R, R + 1):
 		for dz in range(-R, R + 1):
@@ -441,6 +443,7 @@ func _grow_around(focus: Vector3, now := false) -> void:
 					_decor_chunk(cc)
 					if not now:
 						return
+	_stream_settled = _grow_queue.is_empty()
 
 
 func _chunk_ok(cc: Vector2i) -> bool:
@@ -528,6 +531,8 @@ func _make_relief(wd: Dictionary, sm: Image, G: int) -> void:
 			if wrap_w <= 0:
 				h *= smoothstep(edge * 0.2, edge, float(mini(mini(x, z), mini(G - 1 - x, G - 1 - z))))
 			hs.set_pixel(x, z, Color(snappedf(h, 0.01), 0, 0))
+	if int(wd.get("landing_canyon",0)) >= 3:
+		_weather_ridges(hs,G,f,amp)
 	if rocky:
 		for x in range(1, G - 1):
 			for z in range(1, G - 1):
@@ -541,6 +546,49 @@ func _make_relief(wd: Dictionary, sm: Image, G: int) -> void:
 		hs.resize(W, W, Image.INTERPOLATE_BILINEAR)
 		height = hs
 
+
+# Keep rolling ridgelines wide. Two directional sweeps constrain unsupported
+# escarpments around rivers and narrow islands before the landing canyon is cut.
+func _weather_ridges(hs: Image, side: int, spacing: float, relief: float) -> void:
+	var broad := hs.duplicate() as Image
+	var radius := maxi(3,roundi(14.0/spacing))
+	broad.resize(maxi(2,side/radius),maxi(2,side/radius),Image.INTERPOLATE_TRILINEAR)
+	broad.resize(side,side,Image.INTERPOLATE_BILINEAR)
+	var surface := PackedFloat32Array()
+	surface.resize(side*side)
+	var span := maxf(1.0,relief*1.25)
+	var step_h := C*spacing*.94
+	var diag := step_h*sqrt(2.0)
+	for z in side:
+		for x in side:
+			var i := z*side+x
+			var smooth_h := broad.get_pixel(x,z).r
+			var raw := hs.get_pixel(x,z).r
+			var h := minf(raw, smooth_h + 1.4)
+			h = minf(raw,span*tanh(h/span))
+			if x > 0:
+				h = minf(h,surface[i-1]+step_h)
+			if z > 0:
+				h = minf(h,surface[i-side]+step_h)
+				if x > 0:
+					h = minf(h,surface[i-side-1]+diag)
+				if x+1 < side:
+					h = minf(h,surface[i-side+1]+diag)
+			surface[i]=h
+	for z in range(side-1,-1,-1):
+		for x in range(side-1,-1,-1):
+			var i := z*side+x
+			var h := surface[i]
+			if x+1 < side:
+				h = minf(h,surface[i+1]+step_h)
+			if z+1 < side:
+				h = minf(h,surface[i+side]+step_h)
+				if x > 0:
+					h = minf(h,surface[i+side-1]+diag)
+				if x+1 < side:
+					h = minf(h,surface[i+side+1]+diag)
+			surface[i]=h
+			hs.set_pixel(x,z,Color(h,0,0))
 
 ## Высота земли в клетке (её центре).
 func h_cell(c: Vector2i) -> float:
@@ -563,7 +611,9 @@ func height_at(p: Vector3) -> float:
 	var b := h_cell(Vector2i(x0 + 1, z0))
 	var c := h_cell(Vector2i(x0, z0 + 1))
 	var d := h_cell(Vector2i(x0 + 1, z0 + 1))
-	return lerpf(lerpf(a, b, tx), lerpf(c, d, tx), tz)
+	if tx + tz <= 1.0:
+		return a + (b-a)*tx + (c-a)*tz
+	return d + (c-d)*(1.0-tx) + (b-d)*(1.0-tz)
 
 
 ## Самая низкая и самая высокая точка земли под клетками (углы и центры).
@@ -620,7 +670,9 @@ func reheight(c: Vector2i, ri: int) -> void:
 			var p := wc(c + Vector2i(dx, dz))
 			var n: Node_ = nodes.get(p)
 			if n != null:
-				n.xf.origin.y = height_at(n.xf.origin)
+				if not seat_resource(n):
+					remove_node(p)
+					continue
 				var r: PartRenderer = renderers.get("%s|%s" % [n.res, n.chunk])
 				if r:
 					r.set_xform(n, n.xf)
@@ -995,11 +1047,11 @@ func _dep_mark(p: Vector2i) -> void:
 	var gy := height_at(cpos)
 	var hr := fp * C * 0.45
 	for o in [Vector3(hr, 0, hr), Vector3(-hr, 0, hr), Vector3(hr, 0, -hr), Vector3(-hr, 0, -hr)]:
-		gy = maxf(gy, height_at(cpos + o))
+		gy = minf(gy, height_at(cpos + o))
 	n.position = cpos + Vector3(0, gy + float(DB.setting("dep_mark_lift", 0.05)), 0)
 	# 1.3: знак твёрдый, как камень, — не выше, чем герой может запрыгнуть
 	var h := _mark_height(mid)
-	var mineral_lights := {"dep_iron_ore":Color("#4789ff"),"dep_quartz":Color("#ae65ff"),"dep_copper_ore":Color("#ff9439"),"dep_uranium_ore":Color("#4cff96")}
+	var mineral_lights := {"dep_quartz":Color("#ffeedd"),"dep_copper_ore":Color("#ff9439"),"dep_uranium_ore":Color("#4cff96")}
 	if mineral_lights.has(mid):
 		var glow := OmniLight3D.new()
 		glow.light_color = mineral_lights[mid]
@@ -1209,6 +1261,28 @@ func _nest_node() -> Node3D:
 
 # ---------------------------------------------------------------- ресурсы на карте
 
+func ground_normal(pos: Vector3, radius: float) -> Vector3:
+	var dx := height_at(pos + Vector3.RIGHT * radius) - height_at(pos - Vector3.RIGHT * radius)
+	var dz := height_at(pos + Vector3.BACK * radius) - height_at(pos - Vector3.BACK * radius)
+	return Vector3(-dx, 2.0 * radius, -dz).normalized()
+
+func seat_resource(n: Node_) -> bool:
+	var radius := clampf(n.xf.basis.get_scale().x * .72, .28, 1.8)
+	var pos := n.xf.origin
+	var normal := ground_normal(pos, radius)
+	var low := height_at(pos)
+	var high := low
+	for direction in [Vector3.RIGHT,Vector3.BACK,Vector3.LEFT,Vector3.FORWARD]:
+		var sample := height_at(pos + direction * radius)
+		low = minf(low,sample)
+		high = maxf(high,sample)
+	if normal.y < .77 or high-low > radius*1.3:
+		return false
+	var axis := n.xf.basis.y.normalized()
+	n.xf.basis = Basis(Quaternion(axis,normal)) * n.xf.basis
+	n.xf.origin.y = lerpf(height_at(pos), low, .25)
+	return true
+
 func add_node(res: String, c: Vector2i, xf_override = null) -> Node_:
 	c = wc(c)
 	if res == "" or not DB.data.resources.has(res) or nodes.has(c):
@@ -1226,7 +1300,8 @@ func add_node(res: String, c: Vector2i, xf_override = null) -> Node_:
 		var s := rng.randf_range(float(sc[0]), float(sc[1]))
 		n.xf = Transform3D(Basis(Vector3.UP, rng.randf() * TAU).scaled(Vector3(s, s * rng.randf_range(0.9, 1.15), s)),
 			cell_to_world(c) + Vector3(rng.randf_range(-0.4, 0.4), 0, rng.randf_range(-0.4, 0.4)))
-	n.xf.origin.y = height_at(n.xf.origin)
+	if not seat_resource(n):
+		return null
 	n.chunk = Vector2i(c.x / CHUNK, c.y / CHUNK)
 	nodes[c] = n
 	if rd.get("blocks", true):
@@ -1259,6 +1334,8 @@ func _renderer_for(n: Node_) -> PartRenderer:
 	var model: String = DB.data.resources[n.res].get("model", n.res)
 	var r := ModelLib.make_renderer(model, true, false, true)
 	r.set_meta("chunk", n.chunk)
+	if not r.detailed.is_empty():
+		r.chunk = 24.0
 	for p in r.parts:
 		p.mmi.visibility_range_end = 230.0
 		p.mmi.visibility_range_end_margin = 20.0
@@ -1277,8 +1354,6 @@ func _build_visuals() -> void:
 	if W >= 64:
 		_landing_spring()
 	_make_grass()
-	if not wrap:
-		_make_mountains()
 	_make_decor()
 	apply_look()
 
@@ -1510,11 +1585,16 @@ func _ground_mesh(step: float) -> PlaneMesh:
 
 ## Земля — две сетки, которые следуют за камерой: подробная рядом и крупная вдали.
 ## Высоту холмов берёт видеокарта из карты высот, поэтому сетки можно двигать.
+func _height_levels() -> Image:
+	var levels := height.duplicate() as Image
+	levels.generate_mipmaps()
+	return levels
+
 func _make_ground() -> void:
 	splat_tex = ImageTexture.create_from_image(splat)
 	water_tex = ImageTexture.create_from_image(water)
 	ore_tex = ImageTexture.create_from_image(ore_img)
-	height_tex = ImageTexture.create_from_image(height)
+	height_tex = ImageTexture.create_from_image(_height_levels())
 	ground_mat = ShaderMaterial.new()
 	ground_mat.shader = preload("res://shaders/ground.gdshader")
 	yard_tex = ImageTexture.create_from_image(yard_img)
@@ -1540,6 +1620,7 @@ func _make_ground() -> void:
 	for i in 2:
 		var mi := MeshInstance3D.new()
 		mi.mesh = _ground_mesh(C if i == 0 else far_step)
+		mi.set_instance_shader_parameter("height_lod",0.0 if i == 0 else log(far_step/C)/log(2.0))
 		mi.set_meta("no_mirror", true)
 		mi.material_override = ground_mat
 		mi.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_ON if i == 0 else GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
@@ -1634,37 +1715,6 @@ func _make_water() -> void:
 	mi.material_override = water_mat
 	mi.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 	add_child(mi)
-
-
-var mountain_mat: ShaderMaterial
-
-func _make_mountains() -> void:
-	mountain_mat = ShaderMaterial.new()
-	mountain_mat.shader = preload("res://shaders/mountain.gdshader")
-	mountain_mat.set_shader_parameter("basalt",load("res://textures/frontier/basalt.jpg"))
-	var size := W * C
-	for i in 70:
-		var a := float(i) / 70.0 * TAU + rng.randf() * 0.08
-		var r := size * 0.5 + rng.randf_range(60, 160)
-		var h := rng.randf_range(60, 150)
-		var top := rng.randf_range(0.05, 0.2)
-		var cm := CylinderMesh.new()
-		cm.top_radius = 0.5 * top
-		cm.bottom_radius = 0.5
-		cm.height = 1.0
-		cm.radial_segments = 22
-		cm.rings = 10
-		var mi := MeshInstance3D.new()
-		mi.mesh = cm
-		var bw := rng.randf_range(120, 220)
-		mi.scale = Vector3(bw, h, bw)
-		mi.material_override = mountain_mat
-		mi.set_instance_shader_parameter("height", h)
-		mi.set_instance_shader_parameter("seed", rng.randf() * 100.0)
-		mi.position = Vector3(size * 0.5 + cos(a) * r, h * 0.5 - 2.0, size * 0.5 + sin(a) * r)
-		mi.rotation.y = rng.randf() * TAU
-		mi.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
-		add_child(mi)
 
 
 ## 17.10: пересоздать траву (настройка «Густая трава»).
@@ -1861,25 +1911,14 @@ func _flora_shadows(focus: Vector3) -> void:
 		var on := true
 		if lim > 0.0 and r.has_meta("chunk"):
 			var ch: Vector2i = r.get_meta("chunk")
-			var dx := clampf(focus.x, ch.x * size, (ch.x + 1) * size) - focus.x
-			var dz := clampf(focus.z, ch.y * size, (ch.y + 1) * size) - focus.z
-			var d := Vector2(dx, dz).length()
-			if wrap:
-				# мир по кругу: кусок может быть ближе «через край»
-				for ox in [-full, 0.0, full]:
-					for oz in [-full, 0.0, full]:
-						var fx: float = focus.x + ox
-						var fz: float = focus.z + oz
-						var ex := clampf(fx, ch.x * size, (ch.x + 1) * size) - fx
-						var ez := clampf(fz, ch.y * size, (ch.y + 1) * size) - fz
-						d = minf(d, Vector2(ex, ez).length())
-			on = d < lim
+			var mid := Vector3((ch.x+.5)*size,0,(ch.y+.5)*size)
+			var offset := World.delta(mid,focus).abs()
+			var dx := maxf(0,offset.x-size*.5)
+			var dz := maxf(0,offset.z-size*.5)
+			on = dx*dx+dz*dz < lim*lim
 		if r.get_meta("shadow_on", true) != on:
 			r.set_meta("shadow_on", on)
-			for p in r.parts:
-				if not p.mmi.has_meta("cs0"):
-					p.mmi.set_meta("cs0", p.mmi.cast_shadow)
-				p.mmi.cast_shadow = p.mmi.get_meta("cs0") if on else GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+			r.set_shadows(on)
 
 
 func update_visuals(focus: Vector3) -> void:
@@ -1890,7 +1929,7 @@ func update_visuals(focus: Vector3) -> void:
 		if not _grow_queue.is_empty():
 			grow_chunk(_grow_queue.pop_front())
 		var fc := Vector2i(floori(focus.x / C / CHUNK), floori(focus.z / C / CHUNK))
-		if fc != _last_chunk or _grow_queue.is_empty():
+		if fc != _last_chunk or (not _stream_settled and _grow_queue.is_empty()):
 			_last_chunk = fc
 			_grow_around(focus)
 	_flora_shadows(focus)
@@ -1901,7 +1940,8 @@ func update_visuals(focus: Vector3) -> void:
 		var fs: float = grass_far.get_meta("spacing")
 		grass_far.global_position = Vector3(snappedf(focus.x, fs), 0, snappedf(focus.z, fs))
 		grass_far.material_override.set_shader_parameter("center", focus)
-	_update_pushers(focus)
+	if grass.visible:
+		_update_pushers(focus)
 	if dirty.has("yard"):
 		yard_tex.update(yard_img)
 	if dirty.has("occ"):
@@ -1913,7 +1953,7 @@ func update_visuals(focus: Vector3) -> void:
 	if dirty.has("ore"):
 		ore_tex.update(ore_img)
 	if dirty.has("height"):
-		height_tex.update(height)
+		height_tex.update(_height_levels())
 	dirty.clear()
 
 
@@ -2176,16 +2216,20 @@ func nest_alive_count() -> int:
 # ---------------------------------------------------------------- собираемое у старта
 
 ## Немного веток, кустов и лопухов вокруг штаба, чтобы было что собрать в первую минуту.
+func _landing_scale() -> int:
+	return 3 if int(gen_args.get("wd", {}).get("landing_canyon", 0)) >= 2 else 1
+
 func _landing_spring() -> void:
+	var stretch := _landing_scale()
 	for z in [-4,-5,-6,-3]:
-		for x in range(-17,-6):
-			var shore: Vector2i = center + Vector2i(x,z)
+		for x in range(-17 * stretch,-6 * stretch):
+			var shore: Vector2i = center + Vector2i(x,z*stretch)
 			if not water_at(shore) or water_at(shore+Vector2i.LEFT):
 				continue
 			var foot := cell_to_world(shore)
 			foot.y = .18
 			for step_back in [2,3,4]:
-				var lip := cell_to_world(shore+Vector2i.LEFT*step_back)
+				var lip := cell_to_world(shore+Vector2i.LEFT*step_back*stretch)
 				lip.y = height_at(lip)+.13
 				if lip.y < 2.0:
 					continue
@@ -2195,9 +2239,12 @@ func _landing_spring() -> void:
 
 func _cut_landing_canyon() -> void:
 	# Walkable eastern plateau, spring-fed western gully and a stepped northern ridge.
-	for z in range(-26, 18):
-		for x in range(-26, 20):
-			var cell := center + Vector2i(x,z)
+	var stretch := _landing_scale()
+	for iz in range(-26 * stretch, 18 * stretch):
+		for ix in range(-26 * stretch, 20 * stretch):
+			var x := float(ix)/stretch
+			var z := float(iz)/stretch
+			var cell := wc(center + Vector2i(ix,iz))
 			if not in_bounds(cell):
 				continue
 			var phase := float(used_seed % 13)*.08
@@ -2215,7 +2262,7 @@ func _cut_landing_canyon() -> void:
 			var fade := 1.0 - smoothstep(17.,25.,Vector2(x,z+3).length())
 			var h := maxf(ledge * (6.0+2.9*sin(z*.48)+1.2*cos(x*.88)),ridge*(5.+2.*cos(x*.53))) * fade
 			if h > .24:
-				h = lerpf(h, snappedf(h,.84),.63)
+				h = lerpf(h, snappedf(h,.84),.63) * stretch
 				height.set_pixelv(cell,Color(maxf(h_cell(cell),h),0,0))
 				var tint := splat.get_pixelv(cell)
 				tint.b = maxf(tint.b,smoothstep(.24,1.5,h)*.94)
@@ -2228,7 +2275,7 @@ func _landing_groves() -> void:
 	local_rng.seed = used_seed ^ 0x62c8a
 	var pockets := [Vector2i(-6,-3), Vector2i(-3,7), Vector2i(7,-4), Vector2i(-6,-9),Vector2i(3,-9),Vector2i(-9,6)]
 	for off in [Vector2i(-12,-8),Vector2i(-13,-5),Vector2i(-14,-2),Vector2i(-6,-12),Vector2i(-3,-13),Vector2i(6,-11),Vector2i(10,-10)]:
-		var c: Vector2i = center + off
+		var c: Vector2i = center + off * _landing_scale()
 		if in_bounds(c) and not water_at(c) and not deposit.has(c) and not nest_cells.has(c):
 			var b := Basis(Vector3.UP,local_rng.randf()*TAU).scaled(Vector3.ONE*local_rng.randf_range(1.7,2.35))
 			add_node("basalt_buttress",c,Transform3D(b,cell_to_world(c)))
@@ -2269,8 +2316,8 @@ func _start_gatherables(list: Dictionary, clear_r: int) -> void:
 			var c := center + Vector2i(roundi(cos(a) * r), roundi(sin(a) * r))
 			if c.distance_to(center) < 5.0 or water_at(c) or nodes.has(c) or deposit.has(c):
 				continue
-			add_node(res, c)
-			placed += 1
+			if add_node(res, c) != null:
+				placed += 1
 
 
 # ---------------------------------------------------------------- украшения земли
@@ -2466,8 +2513,11 @@ func _decor_chunk(cc: Vector2i) -> void:
 				var sc: Array = d.get("scale", [0.8, 1.2])
 				var s := r.randf_range(float(sc[0]), float(sc[1]))
 				var pos := cell_to_world(c) + Vector3(r.randf_range(-0.8, 0.8), 0, r.randf_range(-0.8, 0.8))
-				pos.y = height_at(pos)
-				var xf := Transform3D(Basis(Vector3.UP, r.randf() * TAU).scaled(Vector3.ONE * s), pos)
+				var normal := ground_normal(pos, .4)
+				if normal.y < .75:
+					continue
+				pos.y = height_at(pos) - .025
+				var xf := Transform3D(Basis(Quaternion(Vector3.UP, normal)) * Basis(Vector3.UP, r.randf() * TAU).scaled(Vector3.ONE * s), pos)
 				# куски по 16 клеток: дальность видимости считается от середины куска, мелочь у края не пропадает раньше времени
 				var key := "%s|%d|%d" % [model, floori(x / 16.0), floori(z / 16.0)]
 				if not per.has(key):
@@ -2591,7 +2641,3 @@ func apply_look() -> void:
 		water_mat.set_shader_parameter("c_deep", col.call("water_deep", "#0f4a6e"))
 		water_mat.set_shader_parameter("c_shallow", col.call("water_shallow", "#2f9cb0"))
 		water_mat.set_shader_parameter("c_foam", col.call("foam", "#e8f6ff"))
-	if mountain_mat:
-		mountain_mat.set_shader_parameter("c_rock", col.call("mountain", "#857a6c"))
-		mountain_mat.set_shader_parameter("c_grass", col.call("mountain_grass", "#55762f"))
-		mountain_mat.set_shader_parameter("c_snow", col.call("snow", "#eef3f8"))

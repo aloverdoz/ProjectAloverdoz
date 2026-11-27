@@ -79,6 +79,10 @@ var build_cat := ""
 var build_search := ""
 var station := "hand"
 var station_b = null      # станция, у которой открыт крафт (окно закроется, если отойти)
+var cargo_count: Label
+var cargo_meter: ProgressBar
+var selected_recipe := ""
+var broadcast
 var settings_sec := "graphics"
 
 
@@ -267,6 +271,9 @@ func build() -> void:
 	root.add_child(hurt_rect)
 	_build_panels()
 	_build_windows()
+	broadcast = preload("res://scripts/ui/dispatch_tv.gd").new()
+	broadcast.hud = self
+	root.add_child(broadcast)
 	apply_layout()
 
 
@@ -718,10 +725,10 @@ func _win(id: String, title: String, w: float, refresher := Callable()) -> Win:
 
 
 func _build_windows() -> void:
-	_win("inventory", "ИНВЕНТАРЬ", 560, _refresh_inventory)
+	_win("inventory", "ЛИЧНЫЙ ИНВЕНТАРЬ", 630, _refresh_inventory)
 	_win("build", "СТРОИТЕЛЬСТВО", 720, _refresh_build)
 	_win("building", "ЗДАНИЕ", 520, _refresh_building)
-	_win("craft", "КРАФТ", 640, _refresh_craft)
+	_win("craft", "ПРОИЗВОДСТВО", 760, _refresh_craft)
 	_win("skills", "НАВЫКИ", 520, _refresh_skills)
 	_win("trade", "ТОРГОВАЯ СТАНЦИЯ «ОРБИТА-7»", 720, _refresh_trade)
 	_win("tech", "ДЕРЕВО ОТКРЫТИЙ", 1000, _refresh_tech)
@@ -753,8 +760,18 @@ func _build_windows() -> void:
 	tip.mouse_filter = Control.MOUSE_FILTER_PASS
 	tip.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	tip.custom_minimum_size = Vector2(520, 0)
+	var cargo := UI.hbox(16)
+	var readout := UI.vbox(6)
+	readout.add_child(UI.section("Занято ячеек"))
+	cargo_count = UI.label("",24,UI.TEXT)
+	readout.add_child(cargo_count)
+	cargo_meter = UI.bar(null,UI.ACCENT,5)
+	readout.add_child(cargo_meter)
+	cargo.add_child(readout)
+	cargo.add_child(VSeparator.new())
+	cargo.add_child(inv_grid)
+	inv_w.body.add_child(cargo)
 	inv_w.body.add_child(tip)
-	inv_w.body.add_child(inv_grid)
 	# 13.10: расширение рюкзака за ресурсы
 	bag_row = UI.hbox(10)
 	inv_w.body.add_child(bag_row)
@@ -1668,9 +1685,13 @@ func _refresh_inventory() -> void:
 	var iw: Win = windows.get("inventory")
 	if iw != null and iw.scroll != null:
 		var sep := float(inv_grid.get_theme_constant("h_separation"))
-		var cols := clampi(int((iw.scroll.size.x - 12.0 + sep) / (54.0 + sep)), 9, 24) if iw.user_size.x > 0.0 else 9
+		var cols := clampi(int((iw.scroll.size.x - 156.0 + sep) / (54.0 + sep)), 5, 24) if iw.user_size.x > 0.0 else 8
 		if cols != inv_grid.columns:
 			inv_grid.columns = cols
+	var occupied: int = game.player.inv.slots.filter(func(slot): return slot != null).size()
+	cargo_count.text = "%d / %d" % [occupied, game.player.inv.size()]
+	cargo_meter.max_value = game.player.inv.size()
+	cargo_meter.value = occupied
 	_refresh_bag()
 	var sel: int = inv_pick if inv_pick >= 0 and inv_pick < inv_slots.size() else game.player.hot_slot(game.player.selected)
 	for s in inv_slots:
@@ -2258,7 +2279,7 @@ func _build_building_body(w: Win) -> void:
 	_tuning_panel(w)
 	_ufo_panel(w)
 	_pattern_panel(w)
-	if bld.type == "ruin_arch":
+	if bld.type == "ruin_arch" and bld.bstate.has("cave_type") and DB.setting("cave_expeditions_enabled", false):
 		w.body.add_child(UI.button("Войти в пещеру", func(): game.enter_cave(bld)))
 	if bld.type == "research_lab":
 		w.body.add_child(UI.button("Открыть исследования", func():
@@ -2798,7 +2819,7 @@ func _refresh_craft() -> void:
 		station_b = null
 		close("craft")
 		return
-	var key := "%s|%d|%d|%d" % [station, DB.revision, DB.locked.size(), Tech.lock_rev]   # 1.1.15: новые рецепты после изучения — сразу
+	var key := "%s|%s|%d|%d|%d" % [station, selected_recipe, DB.revision, DB.locked.size(), Tech.lock_rev]   # 1.1.15: новые рецепты после изучения — сразу
 	if w.get_meta("key", "") == key and w.body.get_child_count() > 0:
 		for b in w.body.find_children("*", "Button", true, false):
 			if b.has_meta("rid"):
@@ -2815,7 +2836,7 @@ func _refresh_craft() -> void:
 	var names := {"hand": "в руках", "workbench": "верстак", "workshop": "мастерская"}
 	var st_nm := func(s0: String) -> String:   # A-9 r4: имя станции из базы (кухня, магазин утилизации), с переводом
 		return Lang.t(str(names[s0]) if names.has(s0) else game.station_name(s0))
-	w.title_lbl.text = (Lang.t("КРАФТ") + ": " + st_nm.call(station)).to_upper()
+	w.title_lbl.text = (Lang.t("Производство") + "  /  " + st_nm.call(station)).to_upper()
 	var tabs := UI.hbox()
 	var near_st: Array = game.near_stations()
 	for s in ["hand"] + near_st:
@@ -2837,14 +2858,22 @@ func _refresh_craft() -> void:
 			+ ("\n" + Lang.t("Там делают:") + " " + ", ".join(some.map(func(x): return Lang.t(x))) + "…" if not some.is_empty() else "")
 		tabs.add_child(gb)
 	w.body.add_child(tabs)
+	var bench := UI.hbox(16)
+	w.body.add_child(bench)
 	var scroll := ScrollContainer.new()
-	scroll.custom_minimum_size = Vector2(0, 380)
+	scroll.custom_minimum_size = Vector2(230, 320)
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
-	w.body.add_child(scroll)
+	bench.add_child(scroll)
 	var list := UI.vbox(6)
 	list.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	scroll.add_child(list)
+	bench.add_child(VSeparator.new())
+	var detail := UI.vbox(12)
+	detail.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	bench.add_child(detail)
 	var rlist := DB.recipes_for(station)
+	if selected_recipe not in rlist:
+		selected_recipe = "" if rlist.is_empty() else str(rlist[0])
 	# 18: сколько рецептов скрыто и что изучить, чтобы они появились (друзья путались: «почему у меня список меньше?»)
 	var hid: Dictionary = DB.hidden_by_scan(station)
 	if int(hid.n) > 0:
@@ -2865,13 +2894,18 @@ func _refresh_craft() -> void:
 		list.add_child(em)
 	for rid in rlist:
 		var r: Dictionary = DB.data.recipes[rid]
-		var card := TipCard.new()
-		var row := UI.hbox(10)
-		row.mouse_filter = Control.MOUSE_FILTER_PASS
-		card.add_child(row)
+		var choose := UI.button(str(r.get("name",rid)),func(): selected_recipe = rid; _refresh_craft())
+		choose.alignment = HORIZONTAL_ALIGNMENT_LEFT
+		choose.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
+		list.add_child(choose)
+		if rid != selected_recipe:
+			continue
+		choose.add_theme_color_override("font_color",UI.ACCENT)
 		var out_id: String = r.get("out", {}).keys()[0] if not r.get("out", {}).is_empty() else ""
-		card.tip_item = out_id
-		row.add_child(UI.item_icon(out_id, 44))
+		detail.add_child(UI.item_icon(out_id,68))
+		detail.add_child(UI.section("Рецептура"))
+		var row := UI.vbox(10)
+		detail.add_child(row)
 		var v := UI.vbox(1)
 		v.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		v.add_child(UI.label("%s ×%d" % [r.get("name", rid), int(r.get("out", {}).get(out_id, 1))], 15))
@@ -2879,8 +2913,10 @@ func _refresh_craft() -> void:
 		c.set_meta("rin", r.get("in", {}))
 		c.add_child(UI.label("⏱ %.1f с" % float(r.get("time", 1)), 13, UI.DIM))
 		v.add_child(c)
-		card.tooltip_text = UI.item_tip(out_id)
+		detail.tooltip_text = UI.item_tip(out_id)
 		row.add_child(v)
+		var quantities := HFlowContainer.new()
+		row.add_child(quantities)
 		var qmax := int(DB.setting("craft_queue_max", 50))
 		for n in [1, 5, 20, qmax]:
 			# 1.0.8: последняя кнопка «Макс» — ставит в очередь сколько хватит ресурсов (до размера очереди)
@@ -2891,8 +2927,7 @@ func _refresh_craft() -> void:
 			b.disabled = not game.can_craft(rid, 1 if all else n)
 			b.size_flags_vertical = Control.SIZE_SHRINK_CENTER
 			b.tooltip_text = ("Поставить в очередь сколько хватит ресурсов, до %d шт." % qmax) if all else "Сделать %d шт.\nВремя: %.1f с" % [n * int(r.get("out", {}).get(out_id, 1)), float(r.get("time", 1)) * n]
-			row.add_child(b)
-		list.add_child(card)
+			quantities.add_child(b)
 	w.body.add_child(UI.small("Нужные предметы берутся из инвентаря героя. Станции (верстак, мастерская) работают, когда вы рядом."))
 
 
@@ -3099,9 +3134,16 @@ func _tech_tree_ui(body: VBoxContainer) -> void:
 	if tech_tier != -1 and not tiers.has(tech_tier):
 		tech_tier = -1
 	var names: Array = tu.get("tier_names", [])
-	var tabs := HFlowContainer.new()
-	tabs.add_theme_constant_override("h_separation", 6)
-	tabs.add_theme_constant_override("v_separation", 6)
+	var columns := UI.hbox(14)
+	body.add_child(columns)
+	var rail := ScrollContainer.new()
+	rail.custom_minimum_size = Vector2(215,390)
+	rail.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	columns.add_child(rail)
+	var tabs := UI.vbox(4)
+	tabs.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	rail.add_child(tabs)
+	tabs.add_child(UI.section("Этапы"))
 	var avail: Array = domain_ids.filter(func(i): return T.state(i) == "open")
 	var tabs_def: Array = [[-1, "Доступно сейчас (%d)" % avail.size()]]
 	for t in keys:
@@ -3119,21 +3161,24 @@ func _tech_tree_ui(body: VBoxContainer) -> void:
 			b.add_theme_stylebox_override("normal", UI.theme().get_stylebox("pressed", "Button"))
 			b.add_theme_stylebox_override("hover", UI.theme().get_stylebox("pressed", "Button"))
 			b.add_theme_color_override("font_color", UI.theme().get_color("font_pressed_color", "Button"))
+		b.alignment = HORIZONTAL_ALIGNMENT_LEFT
+		b.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
 		tabs.add_child(b)
-	body.add_child(tabs)
+	columns.add_child(VSeparator.new())
 	var sc := ScrollContainer.new()
-	sc.custom_minimum_size = Vector2(950, 470)
+	sc.custom_minimum_size = Vector2(0,390)
+	sc.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	sc.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
-	body.add_child(sc)
+	columns.add_child(sc)
 	var grid := HFlowContainer.new()
 	grid.add_theme_constant_override("h_separation", 10)
 	grid.add_theme_constant_override("v_separation", 10)
-	grid.custom_minimum_size = Vector2(930, 0)
+	grid.custom_minimum_size = Vector2(300, 0)
 	grid.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	sc.add_child(grid)
 	var ids: Array = avail if tech_tier == -1 else tiers[tech_tier]
 	if ids.is_empty():
-		grid.add_child(UI.small("Здесь пока пусто: всё доступное уже открыто." if tech_tier == -1 else "На этом этапе узлов нет."))
+		grid.add_child(UI.small("Выберите этап слева, чтобы увидеть чертежи и условия исследования." if tech_tier == -1 else "На этом этапе узлов нет."))
 	for id in ids:
 		var card := _tech_card(id)
 		card.custom_minimum_size = Vector2(300, 0)
@@ -3147,7 +3192,9 @@ func _tech_card(id: String) -> Control:
 	var p := UI.panel(0.95)
 	var sb: StyleBoxFlat = UI.theme().get_stylebox("panel", "PanelContainer").duplicate()
 	sb.border_color = UI.GOOD if st == "done" else (UI.ACCENT if st == "open" else Color(0.3, 0.33, 0.38))
-	sb.set_border_width_all(2)
+	sb.set_border_width_all(0)
+	sb.border_width_left = 3
+	sb.bg_color = Color("#1c3139")
 	p.add_theme_stylebox_override("panel", sb)
 	var v := UI.vbox(4)
 	p.add_child(v)

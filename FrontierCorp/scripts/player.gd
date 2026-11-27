@@ -564,7 +564,7 @@ func _glb_update(delta: float) -> void:
 		return
 	var yaw := deg_to_rad(90.0 + float(glb_md.get("glb_yaw", 0.0)))
 	var k := float(glb_md.get("scale", 1.0)) / maxf(0.0001, scale.x)
-	glb_node.transform = Transform3D(Basis(Vector3.UP, hips.rotation.y + yaw).scaled(Vector3.ONE * k), Vector3.ZERO) * ModelLib.glb_offset(glb_md)
+	glb_node.transform = Transform3D(Basis(Vector3.UP, hips.rotation.y - _pel + yaw).scaled(Vector3.ONE * k), Vector3.ZERO) * ModelLib.glb_offset(glb_md)
 	if glb_hand and is_instance_valid(hand_r):
 		# кость в файле может быть в сантиметрах — держим инструмент в размере героя
 		var gs := glb_hand.global_transform.basis.get_scale().x
@@ -648,6 +648,7 @@ func hot_slot(index: int) -> int:
 		for i in inv.size():
 			if inv.slots[i] != null and inv.slots[i].id == id:
 				return i
+		hot_items.erase(index)
 	return -1
 
 
@@ -1388,7 +1389,7 @@ func _blocked(p: Vector3) -> bool:
 	# забраться можно на ступеньку не выше «Высоты шага» (в прыжке — выше)
 	var climb := float(DB.setting("climb_height", 0.7))
 	var base_y := position.y + (float(DB.setting("wade_depth", 0.85)) if in_water() else 0.0)
-	for off in [Vector3(0.45, 0, 0), Vector3(-0.45, 0, 0), Vector3(0, 0, 0.45), Vector3(0, 0, -0.45)]:
+	for off in [Vector3.ZERO,Vector3.RIGHT*.28,Vector3.LEFT*.28,Vector3.BACK*.28,Vector3.FORWARD*.28]:
 		var probe: Vector3 = p + off
 		var c := World.world_to_cell(probe)
 		# 21: крыша невысокого здания — как ступенька; в прыжке герой подтягивается и залезает

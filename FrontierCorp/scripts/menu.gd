@@ -55,7 +55,9 @@ func _ready() -> void:
 	mscroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	mscroll.visible = not "--menu_bg_only" in OS.get_cmdline_user_args()   # снимки живого фона без кнопок
 	add_child(mscroll)
-	var center := CenterContainer.new()
+	var center := MarginContainer.new()
+	center.add_theme_constant_override("margin_left",32)
+	center.add_theme_constant_override("margin_top",32)
 	center.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	center.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	mscroll.add_child(center)
@@ -76,13 +78,13 @@ func _ready() -> void:
 			v.add_child(tr)
 	var tt := DB.t(DB.menu("title", ""))
 	var title := UI.label((tt if tt != "" else DB.display_name()).to_upper(), 64, UI.ACCENT)
-	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
 	title.add_theme_color_override("font_outline_color", Color(0, 0, 0, 0.6))
 	title.add_theme_constant_override("outline_size", 12)
 	v.add_child(title)
 	var st := DB.t(DB.menu("subtitle", ""))
 	var sub := UI.label(st if st != "" else "%s %s" % [DB.tx("version", "версия"), DB.game_version()], 15, UI.DIM)
-	sub.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	sub.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
 	v.add_child(sub)
 	if Tech.demo_max() >= 0:
 		var dl := UI.label("ДЕМО-ВЕРСИЯ · %s" % Tech.demo_text(), 20, Color(1.0, 0.8, 0.35))
@@ -92,7 +94,9 @@ func _ready() -> void:
 	v.add_child(h)
 	box = UI.vbox(10)
 	box.custom_minimum_size = Vector2(300, 0)
-	h.add_child(box)
+	var nav := UI.panel(.96)
+	h.add_child(nav)
+	nav.add_child(box)
 	page = UI.panel()
 	page.custom_minimum_size = Vector2(620, 460)
 	page.visible = false
@@ -545,7 +549,8 @@ func _menu_command(cmd: String) -> void:
 
 func _btn(t: String, cb: Callable) -> void:
 	var b := UI.button(t, cb)
-	b.custom_minimum_size = Vector2(300, 52)
+	b.custom_minimum_size = Vector2(270, 40)
+	b.alignment = HORIZONTAL_ALIGNMENT_LEFT
 	b.add_theme_font_size_override("font_size", 20)
 	box.add_child(b)
 

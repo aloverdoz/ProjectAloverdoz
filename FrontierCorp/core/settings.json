@@ -595,7 +595,7 @@
  "zone": {
   "enabled": true,
   "block_m": 8.0,
-  "start_blocks": 15,
+  "start_blocks": 45,
   "max_blocks": 90,
   "growth": 1.18,
   "steps": [
@@ -2252,5 +2252,6 @@
     "xp": 1600
    }
   ]
- }
+ },
+ "cave_expeditions_enabled": false
 }

@@ -26,19 +26,19 @@ func setup(p_inv: Inventory, i: int, p_hud, size := 54.0) -> void:
 	hud = p_hud
 	custom_minimum_size = Vector2(size, size)
 	_style = StyleBoxFlat.new()
-	_style.bg_color = Color(0.085, 0.1, 0.135, 0.92)
+	_style.bg_color = Color("#182f36")
 	_style.border_color = Color(1, 1, 1, 0.09)
 	_style.set_border_width_all(1)
 	_style.border_width_top = 2          # тень сверху — ячейка выглядит «утопленной»
-	_style.border_color = Color(0, 0, 0, 0.45)
-	_style.set_corner_radius_all(8)
+	_style.border_color = Color("#38535b")
+	_style.set_corner_radius_all(3)
 	_style.shadow_color = Color(1, 1, 1, 0.04)
 	_style.shadow_size = 1
 	_style.shadow_offset = Vector2(0, 1)
 	_style_sel = _style.duplicate()
 	_style_sel.border_color = UI.ACCENT
 	_style_sel.set_border_width_all(2)
-	_style_sel.bg_color = Color(0.2, 0.15, 0.08, 0.95)
+	_style_sel.bg_color = Color("#25524f")
 	_style_b = _style.duplicate()
 	_style_b.bg_color = Color(0.08, 0.14, 0.2, 0.92)
 	_style_b.border_color = Color(0.35, 0.65, 0.95, 0.6)
@@ -78,8 +78,6 @@ func hot_build() -> String:
 func refresh() -> void:
 	var slot_index: int = hud.game.player.hot_slot(index) if shortcut else index
 	var s = inv.slots[slot_index] if slot_index >= 0 and slot_index < inv.size() else null
-	if shortcut and s == null and hud.game.player.hot_items.has(index):
-		s = {"id": hud.game.player.hot_items[index], "n": 0}
 	var hb := hot_build() if s == null else ""
 	var key := ("b:" + hb if hb != "" else "") if s == null else "%s|%d|%s|%s" % [s.id, s.n, s.get("dur", -1), DB.is_known(s.id)]
 	add_theme_stylebox_override("panel", _style_sel if selected else (_style_b if hb != "" else _style))
@@ -118,7 +116,7 @@ func refresh() -> void:
 
 
 func _get_drag_data(_pos: Vector2):
-	if shortcut and hud.game.player.hot_items.has(index):
+	if shortcut and hud.game.player.hot_slot(index) >= 0:
 		var id: String = hud.game.player.hot_items[index]
 		set_drag_preview(UI.item_icon(id, 44))
 		return {"shortcut_item": id, "from": index}
@@ -207,8 +205,6 @@ func _make_custom_tooltip(for_text: String) -> Object:
 		return null
 	var slot_index: int = hud.game.player.hot_slot(index) if shortcut else index
 	var s = inv.slots[slot_index] if slot_index >= 0 and slot_index < inv.size() else null
-	if shortcut and s == null and hud.game.player.hot_items.has(index):
-		s = {"id": hud.game.player.hot_items[index], "n": 0}
 	var ic: Control = null
 	if s != null:
 		ic = UI.item_icon(s.id, 48)

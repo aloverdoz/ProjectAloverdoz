@@ -124,15 +124,15 @@ static func theme() -> Theme:
 	bn.content_margin_right = 14
 	bn.border_color = Color(1, 1, 1, 0.1)
 	bn.set_border_width_all(1)
-	bn.border_width_bottom = 3            # нижняя грань темнее — кнопка выглядит объёмной
+	bn.border_width_bottom = 1            # нижняя грань темнее — кнопка выглядит объёмной
 	bn.shadow_color = Color(0, 0, 0, 0.3)
-	bn.shadow_size = 3
+	bn.shadow_size = 0
 	bn.shadow_offset = Vector2(0, 2)
 	var bh := bn.duplicate()
 	bh.bg_color = bc.lightened(0.14)
 	bh.border_color = ACCENT
 	bh.set_border_width_all(2)
-	bh.border_width_bottom = 3
+	bh.border_width_bottom = 1
 	var bp := bn.duplicate()
 	bp.bg_color = ACCENT
 	bp.border_color = ACCENT.darkened(0.35)

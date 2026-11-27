@@ -42,7 +42,7 @@ func check() -> void:
 	for folder in DirAccess.get_directories_at(path):
 		DirAccess.remove_absolute(path.path_join(folder))
 	DirAccess.remove_absolute(path)
-	DB.set_meta("new_game", {"seed": 72810, "ov":{"settings/strategy":true}})
+	DB.set_meta("new_game", {"seed": 72810, "size": 192, "ov":{"settings/strategy":true}})
 	var game = load("res://scenes/main.tscn").instantiate()
 	add_child(game)
 	await get_tree().process_frame
@@ -60,6 +60,9 @@ func check() -> void:
 	game.player.position.x += 10
 	game._input(f6)
 	verify("explorer returns to saved position", game.player.position.is_equal_approx(origin))
+	verify("default world has no cave entrances",game.factory.all.all(func(b):return not b.bstate.has("cave_type")))
+	DB.data.settings["cave_expeditions_enabled"] = true
+	game.dungeons.place_caves()
 	var entrances: Array = game.factory.all.filter(func(b): return b.bstate.has("cave_type"))
 	verify("four entrances", entrances.size() == 4)
 	for b in entrances:
@@ -117,6 +120,7 @@ func check() -> void:
 	add_child(restored)
 	await get_tree().process_frame
 	verify("cold load personal camera", not restored.strategy and not restored.first_person and restored.player.visible)
+	print("RESTORE POSITION ", stored_at," => ",restored.player.position)
 	verify("cold load explorer position", restored.player.position.distance_to(stored_at) < .1)
 	verify("cold load expedition research", restored.tech.research == research and restored.tech.done.has("t_geo2"))
 	var claimed: Array = restored.factory.all.filter(func(b): return b.bstate.has("cave_samples"))

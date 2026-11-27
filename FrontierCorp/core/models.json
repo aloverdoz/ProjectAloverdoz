@@ -8387,7 +8387,8 @@
    }
   ],
   "scale0": 1.0,
-  "scale": 2.16
+  "scale": 2.54545,
+  "layout1_scale": 2.16
  },
  "battery": {
   "name": "Аккумулятор",
@@ -22720,7 +22721,8 @@
    }
   ],
   "scale0": 1.0,
-  "scale": 2.16
+  "scale": 2.68085,
+  "layout1_scale": 2.16
  },
  "assembler_mk2": {
   "name": "Сборщик Mk2",
@@ -23638,7 +23640,8 @@
    }
   ],
   "scale0": 1.0,
-  "scale": 2.16
+  "scale": 2.58942,
+  "layout1_scale": 2.16
  },
  "grave_chest": {
   "name": "Сундук героя",
@@ -34689,7 +34692,7 @@
     0
    ]
   },
-  "scale": 1.4
+  "scale": 0.782207
  },
  "prof_engineer": {
   "name": "Значок: инженер",
@@ -39045,7 +39048,8 @@
    }
   ],
   "scale0": 1.0,
-  "scale": 1.5
+  "scale": 1.75916,
+  "layout1_scale": 1.5
  },
  "packager": {
   "name": "Упаковщик",
@@ -45356,7 +45360,7 @@
   "name": "Лаборатория",
   "category": "Особые",
   "glb": "res://art/colony/tech_lab.glb",
-  "scale": 3.9,
+  "scale": 6.86776,
   "parts": [],
   "scale0": 1.95,
   "collision_outline": [
@@ -45408,7 +45412,8 @@
     0.3555,
     -0.3552
    ]
-  ]
+  ],
+  "layout1_scale": 3.9
  },
  "rover": {
   "name": "Вездеход",
@@ -47155,7 +47160,8 @@
    }
   ],
   "scale0": 1.0,
-  "scale": 2.16
+  "scale": 2.58462,
+  "layout1_scale": 2.16
  },
  "truck_depot": {
   "name": "Грузовая станция (приём)",
@@ -47518,7 +47524,8 @@
    }
   ],
   "scale0": 1.0,
-  "scale": 2.16
+  "scale": 2.58462,
+  "layout1_scale": 2.16
  },
  "drone_hub": {
   "name": "Станция дронов (маршруты)",
@@ -58919,7 +58926,7 @@
     0
    ]
   },
-  "scale": 1.4
+  "scale": 0.8
  },
  "mech_bomber": {
   "name": "Робот-камикадзе",
@@ -67404,7 +67411,10 @@
     ],
     "surface": "none"
    }
-  ]
+  ],
+  "layout1_scale": 1,
+  "scale0": 1,
+  "scale": 1.72308
  },
  "m_fuel_rod": {
   "name": "ТВЭЛ",
@@ -69107,7 +69117,8 @@
    }
   ],
   "scale0": 1.0,
-  "scale": 2.16
+  "scale": 2.72359,
+  "layout1_scale": 2.16
  },
  "nuclear_reactor": {
   "name": "АЭС",
@@ -76587,7 +76598,8 @@
    }
   ],
   "scale0": 1.0,
-  "scale": 1.5
+  "scale": 1.87465,
+  "layout1_scale": 1.5
  },
  "star_gate": {
   "name": "Звёздные врата",
@@ -83449,7 +83461,8 @@
    }
   ],
   "scale0": 1.0,
-  "scale": 2.16
+  "scale": 2.688,
+  "layout1_scale": 2.16
  },
  "cb_crusher": {
   "name": "Дробилка",
@@ -87543,7 +87556,8 @@
    }
   ],
   "scale0": 1.0,
-  "scale": 2.16
+  "scale": 2.61405,
+  "layout1_scale": 2.16
  },
  "cb_printer3d_mk3": {
   "name": "3D-принтер Mk3",
@@ -88341,7 +88355,8 @@
    }
   ],
   "scale0": 1.0,
-  "scale": 1.5
+  "scale": 1.80645,
+  "layout1_scale": 1.5
  },
  "cb_foundry_mk4": {
   "name": "Литейная Mk4",
@@ -88953,7 +88968,8 @@
    }
   ],
   "scale0": 1.0,
-  "scale": 1.5
+  "scale": 1.73643,
+  "layout1_scale": 1.5
  },
  "cb_crystal_grower": {
   "name": "Кристаллизатор",
@@ -92468,7 +92484,8 @@
    }
   ],
   "scale0": 1.0,
-  "scale": 2.16
+  "scale": 2.70968,
+  "layout1_scale": 2.16
  },
  "cb_medicine_cabinet": {
   "name": "Аптечный шкаф",
@@ -99673,7 +99690,8 @@
    }
   ],
   "scale0": 1.0,
-  "scale": 2.16
+  "scale": 2.46455,
+  "layout1_scale": 2.16
  },
  "pole_mk2": {
   "name": "Опора ЛЭП",
@@ -104207,7 +104225,7 @@
   "gun_pitch": 0,
   "look_order": 16,
   "prof_tint": 0,
-  "scale": 1.4,
+  "scale": 0.983784,
   "skin": {
    "bones": [
     "hips",
@@ -104357,7 +104375,7 @@
   "gun_pitch": 0,
   "look_order": 1,
   "prof_tint": 0,
-  "scale": 1.4,
+  "scale": 1.05814,
   "skin": {
    "bones": [
     "hips",
@@ -104507,7 +104525,7 @@
   "gun_pitch": 0,
   "look_order": 17,
   "prof_tint": 0,
-  "scale": 1.4,
+  "scale": 1.05814,
   "skin": {
    "bones": [
     "hips",
@@ -105130,7 +105148,7 @@
   "gun_pitch": 0,
   "look_order": 11,
   "prof_tint": 0,
-  "scale": 1.4,
+  "scale": 1.045977,
   "skin": {
    "bones": [
     "hips",
@@ -106326,7 +106344,7 @@
   "gun_pitch": 0,
   "look_order": 7,
   "prof_tint": 0,
-  "scale": 1.4,
+  "scale": 0.957895,
   "skin": {
    "bones": [
     "hips",
@@ -106476,7 +106494,7 @@
   "gun_pitch": 0,
   "look_order": 14,
   "prof_tint": 0,
-  "scale": 1.4,
+  "scale": 0.91,
   "skin": {
    "bones": [
     "hips",
@@ -106626,7 +106644,7 @@
   "gun_pitch": 0,
   "look_order": 5,
   "prof_tint": 0,
-  "scale": 1.4,
+  "scale": 0.983784,
   "skin": {
    "bones": [
     "hips",
@@ -106776,7 +106794,7 @@
   "gun_pitch": 0,
   "look_order": 12,
   "prof_tint": 0,
-  "scale": 1.4,
+  "scale": 1.070588,
   "skin": {
    "bones": [
     "hips",
@@ -106926,7 +106944,7 @@
   "gun_pitch": 0,
   "look_order": 4,
   "prof_tint": 0,
-  "scale": 1.4,
+  "scale": 1.070588,
   "skin": {
    "bones": [
     "hips",
@@ -107470,7 +107488,7 @@
   "gun_pitch": 0,
   "look_order": 18,
   "prof_tint": 0,
-  "scale": 1.4,
+  "scale": 1.022472,
   "skin": {
    "bones": [
     "hips",
@@ -107620,7 +107638,7 @@
   "gun_pitch": 0,
   "look_order": 3,
   "prof_tint": 0,
-  "scale": 1.4,
+  "scale": 1.070588,
   "skin": {
    "bones": [
     "hips",
@@ -107770,7 +107788,7 @@
   "gun_pitch": 0,
   "look_order": 15,
   "prof_tint": 0,
-  "scale": 1.4,
+  "scale": 1.05814,
   "skin": {
    "bones": [
     "hips",
@@ -107818,9 +107836,10 @@
   "name": "Медсестра",
   "category": "Герои",
   "glb": "res://art/colony/nurse.glb",
-  "scale": 1.86,
+  "scale": 2.04707,
   "parts": [],
-  "look_order": 0
+  "look_order": 0,
+  "glb_yaw": 0
  },
  "hero_prapor": {
   "name": "Прапор",
@@ -107928,7 +107947,7 @@
   "gun_pitch": 0,
   "look_order": 8,
   "prof_tint": 0,
-  "scale": 1.4,
+  "scale": 0.983784,
   "skin": {
    "bones": [
     "hips",
@@ -108552,7 +108571,7 @@
   "gun_pitch": 0,
   "look_order": 2,
   "prof_tint": 0,
-  "scale": 1.4,
+  "scale": 1.05814,
   "skin": {
    "bones": [
     "hips",
@@ -109570,7 +109589,7 @@
   "gun_pitch": 0,
   "look_order": 19,
   "prof_tint": 0,
-  "scale": 1.4,
+  "scale": 1.070588,
   "skin": {
    "bones": [
     "hips",
@@ -110114,7 +110133,7 @@
   "gun_pitch": 0,
   "look_order": 9,
   "prof_tint": 0,
-  "scale": 1.4,
+  "scale": 1.096385,
   "skin": {
    "bones": [
     "hips",
@@ -110264,7 +110283,7 @@
   "gun_pitch": 0,
   "look_order": 10,
   "prof_tint": 0,
-  "scale": 1.4,
+  "scale": 1.045977,
   "skin": {
    "bones": [
     "hips",
@@ -110414,7 +110433,7 @@
   "gun_pitch": 0,
   "look_order": 13,
   "prof_tint": 0,
-  "scale": 1.4,
+  "scale": 1.011111,
   "skin": {
    "bones": [
     "hips",
@@ -110564,7 +110583,7 @@
   "gun_pitch": 0,
   "look_order": 6,
   "prof_tint": 0,
-  "scale": 1.4,
+  "scale": 1.05814,
   "skin": {
    "bones": [
     "hips",
@@ -115513,7 +115532,7 @@
   "name": "blueprint_academy",
   "category": "Сооружения",
   "glb": "res://art/colony/blueprint_lab.glb",
-  "scale": 5.7,
+  "scale": 6.85088,
   "parts": [],
   "collision_outline": [
    [
@@ -115564,13 +115583,15 @@
     0.3672,
     0.2584
    ]
-  ]
+  ],
+  "layout1_scale": 5.7,
+  "scale0": 5.7
  },
  "drone_workshop": {
   "name": "drone_workshop",
   "category": "Сооружения",
   "glb": "res://art/colony/drone_works.glb",
-  "scale": 5.7,
+  "scale": 6.87076,
   "parts": [],
   "emitters": [
    {
@@ -115634,23 +115655,27 @@
     -0.482,
     0.2035
    ]
-  ]
+  ],
+  "layout1_scale": 5.7,
+  "scale0": 5.7
  },
  "hero_robot_colonist": {
   "name": "Странник",
   "category": "Герои",
   "glb": "res://art/colony/robot.glb",
-  "scale": 1.97,
+  "scale": 1.85932,
   "parts": [],
-  "look_order": 0
+  "look_order": 0,
+  "glb_yaw": -90
  },
  "hero_robert": {
   "name": "Роберт",
   "category": "Герои",
   "glb": "res://art/colony/robert.glb",
-  "scale": 2.14,
+  "scale": 2.29408,
   "parts": [],
-  "look_order": 0
+  "look_order": 0,
+  "glb_yaw": -90
  },
  "alien_demon_creature": {
   "name": "alien_demon_creature",
@@ -115743,5 +115768,482 @@
   "category": "Флора",
   "glb": "res://art/designed/coral_fern.glb",
   "parts": []
+ },
+ "dep_quantum_field": {
+  "name": "Выход магмы",
+  "category": "Месторождения",
+  "parts": [
+   {
+    "color": "#ba89ed",
+    "mat": "paint",
+    "mesh": "res://models20/dep_magma/0.res",
+    "metallic": 0,
+    "pos": [
+     0,
+     0,
+     0
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ],
+    "roughness": 0.8,
+    "shape": "mesh",
+    "size": [
+     1,
+     1,
+     1
+    ],
+    "surface": "none",
+    "texture": "res://models20/dep_magma/tex0.png"
+   },
+   {
+    "color": "#ba89ed",
+    "emission": 1,
+    "mat": "glow",
+    "mesh": "res://models20/dep_magma/1.res",
+    "metallic": 0,
+    "pos": [
+     0,
+     0,
+     0
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ],
+    "roughness": 0.9,
+    "shape": "mesh",
+    "size": [
+     1,
+     1,
+     1
+    ],
+    "surface": "none"
+   },
+   {
+    "color": "#ba89ed",
+    "emission": 2.1,
+    "mat": "glow",
+    "mesh": "res://models20/dep_magma/2.res",
+    "metallic": 0,
+    "pos": [
+     0,
+     0,
+     0
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ],
+    "roughness": 0.6,
+    "shape": "mesh",
+    "size": [
+     1,
+     1,
+     1
+    ],
+    "surface": "none"
+   },
+   {
+    "anim": "bob",
+    "color": "#ba89ed",
+    "emission": 3,
+    "mat": "glow",
+    "mesh": "res://models20/dep_magma/3.res",
+    "metallic": 0,
+    "pos": [
+     0.1887,
+     0.032,
+     -0.0196
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ],
+    "roughness": 0.05,
+    "shape": "mesh",
+    "size": [
+     1,
+     1,
+     1
+    ],
+    "surface": "none"
+   },
+   {
+    "anim": "bob",
+    "color": "#ba89ed",
+    "emission": 3,
+    "mat": "glow",
+    "mesh": "res://models20/dep_magma/4.res",
+    "metallic": 0,
+    "pos": [
+     -0.002,
+     0.032,
+     -0.0317
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ],
+    "roughness": 0.05,
+    "shape": "mesh",
+    "size": [
+     1,
+     1,
+     1
+    ],
+    "surface": "none"
+   },
+   {
+    "anim": "bob",
+    "color": "#ba89ed",
+    "emission": 3,
+    "mat": "glow",
+    "mesh": "res://models20/dep_magma/5.res",
+    "metallic": 0,
+    "pos": [
+     -0.0386,
+     0.032,
+     -0.1795
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ],
+    "roughness": 0.05,
+    "shape": "mesh",
+    "size": [
+     1,
+     1,
+     1
+    ],
+    "surface": "none"
+   },
+   {
+    "anim": "bob",
+    "color": "#ba89ed",
+    "emission": 3,
+    "mat": "glow",
+    "mesh": "res://models20/dep_magma/6.res",
+    "metallic": 0,
+    "pos": [
+     -0.0945,
+     0.032,
+     0.1346
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ],
+    "roughness": 0.05,
+    "shape": "mesh",
+    "size": [
+     1,
+     1,
+     1
+    ],
+    "surface": "none"
+   },
+   {
+    "anim": "hover",
+    "color": "#ba89ed",
+    "emission": 6,
+    "mat": "glow",
+    "mesh": "res://models20/dep_magma/7.res",
+    "metallic": 0,
+    "pos": [
+     -0.0201,
+     0.1752,
+     -0.1719
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ],
+    "roughness": 0.5,
+    "shape": "mesh",
+    "size": [
+     1,
+     1,
+     1
+    ],
+    "surface": "none"
+   },
+   {
+    "anim": "hover",
+    "color": "#ba89ed",
+    "emission": 6,
+    "mat": "glow",
+    "mesh": "res://models20/dep_magma/8.res",
+    "metallic": 0,
+    "pos": [
+     0.3925,
+     0.2837,
+     -0.2666
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ],
+    "roughness": 0.5,
+    "shape": "mesh",
+    "size": [
+     1,
+     1,
+     1
+    ],
+    "surface": "none"
+   },
+   {
+    "anim": "hover",
+    "color": "#ba89ed",
+    "emission": 6,
+    "mat": "glow",
+    "mesh": "res://models20/dep_magma/9.res",
+    "metallic": 0,
+    "pos": [
+     0.1848,
+     0.4335,
+     0.2267
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ],
+    "roughness": 0.5,
+    "shape": "mesh",
+    "size": [
+     1,
+     1,
+     1
+    ],
+    "surface": "none"
+   },
+   {
+    "anim": "hover",
+    "color": "#ba89ed",
+    "emission": 6,
+    "mat": "glow",
+    "mesh": "res://models20/dep_magma/10.res",
+    "metallic": 0,
+    "pos": [
+     0.0848,
+     0.5556,
+     -0.2463
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ],
+    "roughness": 0.5,
+    "shape": "mesh",
+    "size": [
+     1,
+     1,
+     1
+    ],
+    "surface": "none"
+   },
+   {
+    "anim": "hover",
+    "color": "#ba89ed",
+    "emission": 6,
+    "mat": "glow",
+    "mesh": "res://models20/dep_magma/11.res",
+    "metallic": 0,
+    "pos": [
+     -0.3312,
+     0.682,
+     0.1889
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ],
+    "roughness": 0.5,
+    "shape": "mesh",
+    "size": [
+     1,
+     1,
+     1
+    ],
+    "surface": "none"
+   },
+   {
+    "anim": "hover",
+    "color": "#ba89ed",
+    "emission": 6,
+    "mat": "glow",
+    "mesh": "res://models20/dep_magma/12.res",
+    "metallic": 0,
+    "pos": [
+     -0.2339,
+     0.785,
+     0.2894
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ],
+    "roughness": 0.5,
+    "shape": "mesh",
+    "size": [
+     1,
+     1,
+     1
+    ],
+    "surface": "none"
+   },
+   {
+    "anim": "hover",
+    "color": "#ba89ed",
+    "emission": 6,
+    "mat": "glow",
+    "mesh": "res://models20/dep_magma/13.res",
+    "metallic": 0,
+    "pos": [
+     -0.18,
+     0.9245,
+     0.0939
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ],
+    "roughness": 0.5,
+    "shape": "mesh",
+    "size": [
+     1,
+     1,
+     1
+    ],
+    "surface": "none"
+   },
+   {
+    "anim": "hover",
+    "color": "#ba89ed",
+    "emission": 6,
+    "mat": "glow",
+    "mesh": "res://models20/dep_magma/14.res",
+    "metallic": 0,
+    "pos": [
+     -0.1157,
+     1.0537,
+     -0.1864
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ],
+    "roughness": 0.5,
+    "shape": "mesh",
+    "size": [
+     1,
+     1,
+     1
+    ],
+    "surface": "none"
+   },
+   {
+    "anim": "hover",
+    "color": "#ba89ed",
+    "emission": 6,
+    "mat": "glow",
+    "mesh": "res://models20/dep_magma/15.res",
+    "metallic": 0,
+    "pos": [
+     0.2171,
+     1.1399,
+     0.3495
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ],
+    "roughness": 0.5,
+    "shape": "mesh",
+    "size": [
+     1,
+     1,
+     1
+    ],
+    "surface": "none"
+   },
+   {
+    "anim": "hover",
+    "color": "#ba89ed",
+    "emission": 6,
+    "mat": "glow",
+    "mesh": "res://models20/dep_magma/16.res",
+    "metallic": 0,
+    "pos": [
+     -0.238,
+     1.2944,
+     -0.0851
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ],
+    "roughness": 0.5,
+    "shape": "mesh",
+    "size": [
+     1,
+     1,
+     1
+    ],
+    "surface": "none"
+   }
+  ],
+  "emitters": [
+   {
+    "kind": "puff",
+    "pos": [
+     0.08,
+     0.16,
+     -0.08
+    ],
+    "rate": 0.4,
+    "size": 0.5
+   },
+   {
+    "kind": "puff",
+    "pos": [
+     0.167,
+     0.51,
+     -0.133
+    ],
+    "rate": 0.4,
+    "size": 0.5
+   },
+   {
+    "kind": "puff",
+    "pos": [
+     0.312,
+     0.946,
+     -0.205
+    ],
+    "rate": 0.4,
+    "size": 0.5
+   }
+  ]
  }
 }

@@ -153,7 +153,7 @@
   },
   "model": "smelter_mk2",
   "hp": 450,
-  "size": 2,
+  "size": 3,
   "params": {
    "station": "smelter",
    "speed": 2.0,
@@ -164,7 +164,8 @@
   "sounds": {
    "work": "work_smelt"
   },
-  "size0": 1
+  "size0": 1,
+  "layout1": 2
  },
  "assembler_mk2": {
   "name": "Сборщик Mk2",
@@ -178,7 +179,7 @@
   },
   "model": "assembler_mk2",
   "hp": 450,
-  "size": 2,
+  "size": 3,
   "params": {
    "station": "assembler",
    "speed": 2.0,
@@ -190,7 +191,8 @@
   "sounds": {
    "work": "work_assembly"
   },
-  "size0": 1
+  "size0": 1,
+  "layout1": 2
  },
  "miner": {
   "name": "Бур",
@@ -517,7 +519,7 @@
   },
   "model": "coal_generator",
   "hp": 450,
-  "size": 2,
+  "size": 3,
   "params": {
    "power": 75,
    "fuels": [
@@ -535,7 +537,8 @@
   "sounds": {
    "work": "work_engine"
   },
-  "size0": 1
+  "size0": 1,
+  "layout1": 2
  },
  "battery_block": {
   "name": "Аккумулятор",
@@ -1383,7 +1386,7 @@
   },
   "model": "refinery",
   "hp": 500,
-  "size": 3,
+  "size": 4,
   "params": {
    "station": "refinery",
    "speed": 1.0,
@@ -1396,7 +1399,8 @@
   "sounds": {
    "work": "work_bubble"
   },
-  "size0": 2
+  "size0": 2,
+  "layout1": 3
  },
  "packager": {
   "name": "Упаковщик",
@@ -1467,13 +1471,14 @@
   },
   "model": "blueprint_academy",
   "hp": 300,
-  "size": 2,
+  "size": 4,
   "params": {},
   "sounds": {
    "work": "work_lab"
   },
   "size0": 1,
-  "explain": "Сюда можно подать ленту с ресурсами для открытия, отмеченного звёздочкой ★ в дереве (J). Кредиты за открытие списываются со счёта, когда ресурсы сданы."
+  "explain": "Сюда можно подать ленту с ресурсами для открытия, отмеченного звёздочкой ★ в дереве (J). Кредиты за открытие списываются со счёта, когда ресурсы сданы.",
+  "layout1": 2
  },
  "miner_mk3": {
   "name": "Бур Mk3",
@@ -1675,7 +1680,7 @@
   },
   "model": "research_lab",
   "hp": 300,
-  "size": 2,
+  "size": 4,
   "params": {
    "power": 8,
    "pollution": 0
@@ -1705,7 +1710,8 @@
    "work": "work_lab"
   },
   "size0": 1,
-  "explain": "Подвозите трофеи с монстров: лаборатория превращает их в очки исследований для дерева открытий."
+  "explain": "Подвозите трофеи с монстров: лаборатория превращает их в очки исследований для дерева открытий.",
+  "layout1": 2
  },
  "rover": {
   "name": "Вездеход",
@@ -1814,7 +1820,7 @@
   },
   "model": "truck_station",
   "hp": 300,
-  "size": 2,
+  "size": 3,
   "params": {
    "pollution": 1
   },
@@ -1836,7 +1842,8 @@
    "work": "work_engine"
   },
   "size0": 1,
-  "explain": "Отправка: копит предметы с ленты и раз в 20 секунд отправляет грузовик на станцию приёма того же канала."
+  "explain": "Отправка: копит предметы с ленты и раз в 20 секунд отправляет грузовик на станцию приёма того же канала.",
+  "layout1": 2
  },
  "truck_depot": {
   "name": "Грузовая станция: приём",
@@ -1849,7 +1856,7 @@
   },
   "model": "truck_depot",
   "hp": 300,
-  "size": 2,
+  "size": 3,
   "params": {
    "pollution": 0
   },
@@ -1871,7 +1878,8 @@
    "work": "work_engine"
   },
   "size0": 1,
-  "explain": "Приём: сюда приезжают грузовики, груз выходит на ленту."
+  "explain": "Приём: сюда приезжают грузовики, груз выходит на ленту.",
+  "layout1": 2
  },
  "drone_hub": {
   "name": "Станция дронов: маршруты",
@@ -2491,7 +2499,7 @@
   "behavior": "decor",
   "model": "drone_station",
   "hp": 400,
-  "size": 1,
+  "size": 2,
   "desc": "Дом для дронов-грузчиков. Откройте станцию (E) → «Добавить маршрут» → укажите на карте, откуда брать и куда везти. Дроны летают сами, заряжаются на станции и чинятся. Объедините две станции: «Объединение 2» — 2 дрона, 3 — 4, 4 — 8, 5 — 15. Нужна энергия.",
   "cost": {
    "iron_plate": 12,
@@ -2505,7 +2513,9 @@
    "drones_k": 1
   },
   "sounds": {},
-  "explain": "Откройте (E) → «Добавить маршрут» → укажите, откуда брать и куда везти. Дроны летают сами и заряжаются на станции. Нужна энергия."
+  "explain": "Откройте (E) → «Добавить маршрут» → укажите, откуда брать и куда везти. Дроны летают сами и заряжаются на станции. Нужна энергия.",
+  "layout1": 1,
+  "size0": 1
  },
  "chem_plant": {
   "name": "Химзавод",
@@ -2547,7 +2557,7 @@
   },
   "model": "centrifuge",
   "hp": 400,
-  "size": 2,
+  "size": 3,
   "params": {
    "station": "centrifuge",
    "speed": 1.0,
@@ -2557,7 +2567,8 @@
    "tune": "spin"
   },
   "sounds": {},
-  "size0": 1
+  "size0": 1,
+  "layout1": 2
  },
  "nuclear_reactor": {
   "name": "АЭС (ядерный реактор)",
@@ -2781,7 +2792,7 @@
   },
   "model": "quantum_assembler",
   "hp": 800,
-  "size": 3,
+  "size": 4,
   "params": {
    "station": "assembler",
    "speed": 4.0,
@@ -2791,7 +2802,8 @@
    "tune": "calib"
   },
   "sounds": {},
-  "size0": 2
+  "size0": 2,
+  "layout1": 3
  },
  "star_gate": {
   "name": "Звёздные врата",
@@ -2930,7 +2942,7 @@
   },
   "model": "cb_foundry",
   "hp": 420,
-  "size": 2,
+  "size": 3,
   "params": {
    "station": "foundry",
    "speed": 1.0,
@@ -2944,7 +2956,8 @@
   "sounds": {
    "work": "work_smelt"
   },
-  "size0": 1
+  "size0": 1,
+  "layout1": 2
  },
  "constructor": {
   "name": "Конструктор",
@@ -2984,7 +2997,7 @@
   },
   "model": "cb_printer3d_mk3",
   "hp": 600,
-  "size": 3,
+  "size": 4,
   "params": {
    "station": "manufacturer",
    "speed": 1.0,
@@ -2996,7 +3009,8 @@
   "sounds": {
    "work": "work_assembly"
   },
-  "size0": 2
+  "size0": 2,
+  "layout1": 3
  },
  "coke_oven": {
   "name": "Коксовая печь",
@@ -3087,7 +3101,7 @@
   },
   "model": "cb_kiln_mk4",
   "hp": 500,
-  "size": 2,
+  "size": 3,
   "params": {
    "station": "arc_furnace",
    "speed": 1.0,
@@ -3100,7 +3114,8 @@
   "sounds": {
    "work": "work_electric"
   },
-  "size0": 1
+  "size0": 1,
+  "layout1": 2
  },
  "clean_room": {
   "name": "Чистый цех",
@@ -3114,7 +3129,7 @@
   },
   "model": "cb_chip_fab",
   "hp": 500,
-  "size": 2,
+  "size": 3,
   "params": {
    "station": "clean_room",
    "speed": 1.0,
@@ -3125,7 +3140,8 @@
   "sounds": {
    "work": "work_assembly"
   },
-  "size0": 1
+  "size0": 1,
+  "layout1": 2
  },
  "blast_furnace": {
   "name": "Доменная печь",
@@ -3139,7 +3155,7 @@
   },
   "model": "cb_foundry_mk4",
   "hp": 900,
-  "size": 3,
+  "size": 4,
   "params": {
    "station": "blast_furnace",
    "speed": 1.0,
@@ -3154,7 +3170,8 @@
   "sounds": {
    "work": "work_smelt"
   },
-  "size0": 2
+  "size0": 2,
+  "layout1": 3
  },
  "crystal_cutter": {
   "name": "Кристаллорез",
@@ -3572,13 +3589,14 @@
   },
   "model": "warehouse",
   "hp": 900,
-  "size": 2,
+  "size": 3,
   "params": {
    "slots": 60
   },
   "sounds": {},
   "size0": 1,
-  "explain": "Большое хранилище. Ленты могут и привозить, и забирать из него."
+  "explain": "Большое хранилище. Ленты могут и привозить, и забирать из него.",
+  "layout1": 2
  },
  "pole_mk2": {
   "name": "Станция энергии Mk2",
@@ -3979,7 +3997,7 @@
   "name": "Мастерская грузовых дронов",
   "desc": "Собирает транспортные дроны для погрузочных станций. Готовые машины можно забрать или вывезти лентой.",
   "model": "drone_workshop",
-  "size": 3,
+  "size": 4,
   "category": "production",
   "behavior": "crafter",
   "hp": 840,
@@ -3993,7 +4011,9 @@
    "power": 12,
    "speed": 1,
    "tune": "calib"
-  }
+  },
+  "layout1": 3,
+  "size0": 3
  },
  "orbital_elevator": {
   "name": "Орбитальный лифт",

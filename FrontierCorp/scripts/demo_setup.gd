@@ -5913,14 +5913,15 @@ static func _test(game, name: String, tree: SceneTree) -> void:
 			for r in rows.slice(0, 30):
 				print("TRIS ", r[1], " tris=", r[0], " nodes=", r[2], " shadow_tris=", r[3])
 			print("TEST tris OK")
-		"perf":
+		"perf", "perf_landing":
 			for arg in OS.get_cmdline_user_args():
 				if arg.begins_with("--perf_profile=") and arg.substr(15) in ["low","medium","high"]:
 					Prefs.values["quality"] = arg.substr(15)
 					Prefs._apply_quality(str(Prefs.values["quality"]))
 			# замер скорости на большой базе: сколько миллисекунд занимает каждая часть кадра
 			game.flags["god"] = true
-			big_base(game, 2400, 220, 90)
+			if not "--test=perf_landing" in OS.get_cmdline_user_args():
+				big_base(game, 2400, 220, 90)
 			var fr := 300
 			for ua in OS.get_cmdline_user_args():
 				if ua.begins_with("--perf_frames="):

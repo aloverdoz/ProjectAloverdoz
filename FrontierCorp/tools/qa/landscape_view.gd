@@ -38,6 +38,15 @@ func capture() -> void:
 	game.camera.look_at(focus)
 	w.update_visuals(focus)
 	await photograph("landing")
+	var ridge := World.cell_to_world(base+Vector2i(0,-42))
+	ridge.y = w.height_at(ridge)
+	game.camera.position = ridge+Vector3(34,28,48)
+	game.camera.look_at(ridge+Vector3(0,-2,0))
+	w.update_visuals(ridge)
+	await photograph("ridge")
+	game.camera.position = ridge+Vector3(10,8,17)
+	game.camera.look_at(ridge)
+	await photograph("ridge-detail")
 	for cell in w.dep_marks:
 		if w.deposits[w.deposit[cell]].item != "copper_ore":
 			continue

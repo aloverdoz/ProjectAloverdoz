@@ -96,9 +96,9 @@ def outcrop(name,tone,glint,form):
             h*=.80;radius=h*rng.uniform(.29,.51);profile=[(0,.7),(.26,1),(.65,.85),(.84,.77),(1,.40)]
         s.pillar(x,y,.09,radius,radius*.8,h,profile,rng.randint(5,7),lambda j,i: bright if (j==len(profile)-2 and i%3) or (i==1 and j==1) else deep if i%3==0 else flank,lean=(x*h*.40,y*h*.40),twist=.1)
     s.export(name)
-outcrop("cobalt_iron","264cbb","4fc7ff","crystal")
-outcrop("native_copper","a8470a","ffb03b","nodule")
-outcrop("quartz_vein","674cbe","b690ff","crystal")
+outcrop("cobalt_iron","373739","a45f41","crystal")
+outcrop("native_copper","783b29","d98e60","nodule")
+outcrop("quartz_vein","a6a29a","fff4e5","crystal")
 outcrop("ferrous_shale","67566b","b4916f","plate")
 s=Sculpture()
 for i in range(27):

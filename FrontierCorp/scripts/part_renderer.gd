@@ -102,8 +102,11 @@ func _sub_at(p: Vector3) -> PartRenderer:
 		r = PartRenderer.new()
 		r.model_id = model_id
 		r.name = "c%d_%d" % [k.x, k.y]
-		for d in _defs:
+		for i in _defs.size():
+			var d: Array = _defs[i]
 			r.add_part(d[0], d[1], d[2], d[3], d[4], d[5], d[6])
+			r.parts[i].mmi.visibility_range_end = parts[i].mmi.visibility_range_end
+			r.parts[i].mmi.visibility_range_end_margin = parts[i].mmi.visibility_range_end_margin
 		if not _shadows_on:
 			r.set_shadows(false)
 		add_child(r)

@@ -683,7 +683,7 @@ static func _glb_parts(path: String, raw := false) -> Array:
 	return res
 
 static func _frontier_minerals(asset: String, surfaces: Array) -> void:
-	var hues := {"cobalt_iron":["#154296","#6edfff"],"native_copper":["#914321","#ffcb60"],"quartz_vein":["#532a85","#e29dff"],"ferrous_shale":["#484051","#bd9476"]}
+	var hues := {"cobalt_iron":["#373739","#a45f41"],"native_copper":["#783b29","#d98e60"],"quartz_vein":["#a6a29a","#fff4e5"],"ferrous_shale":["#484051","#bd9476"]}
 	if not hues.has(asset) and asset != "amethyst_garden":
 		return
 	for part in surfaces:
@@ -740,7 +740,11 @@ static func _collect_glb(n: Node, xf: Transform3D, out: Array) -> void:
 				var am := ArrayMesh.new()
 				var sa := mi.mesh.surface_get_arrays(si)
 				_drop_custom(sa)
-				am.add_surface_from_arrays(mi.mesh.surface_get_primitive_type(si), sa)
+				var levels: Array = mi.mesh.get_meta("colony_lods",[])
+				var lods: Dictionary = levels[si] if si < levels.size() else {}
+				am.add_surface_from_arrays(mi.mesh.surface_get_primitive_type(si),sa,[],lods)
+				if not lods.is_empty():
+					am.set_meta("colony_lods",[lods])
 				out.append([am, mi.get_active_material(si), t, part_role])
 	for c in n.get_children():
 		_collect_glb(c, t, out)
@@ -845,6 +849,8 @@ static func _bake_skinned(mi: MeshInstance3D) -> Array:
 		var levels: Array = mi.mesh.get_meta("colony_lods", [])
 		var lods: Dictionary = levels[si] if si < levels.size() else {}
 		am.add_surface_from_arrays(mi.mesh.surface_get_primitive_type(si), arr, [], lods)
+		if not lods.is_empty():
+			am.set_meta("colony_lods",[lods])
 		out.append([am, mi.get_active_material(si), Transform3D.IDENTITY])
 	return out
 

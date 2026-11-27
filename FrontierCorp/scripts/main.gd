@@ -85,6 +85,10 @@ var day_length := 480.0
 # камера
 var cam_yaw := 0.6
 var cam_yaw_target := 0.6
+var dormant_caves := []
+var strategy_zoom := 34.0
+var explorer_zoom := 9.0
+var layout_version := 2
 var cam_dist := 42.0
 var cam_dist_target := 42.0
 var cam_focus := Vector3.ZERO
@@ -160,10 +164,14 @@ func _apply_sizes(big := bool(DB.setting("big_buildings", true)), v13 := true) -
 			bd["size_big"] = bd["size"]
 		bd["size"] = (bd["size12"] if bd.has("size12") and not v13 else bd["size_big"]) if big else bd["size0"]
 		var md: Dictionary = DB.data.models.get(bd.get("model", bid), {})
+		if layout_version < 2 and big and bd.has("layout1"):
+			bd["size"] = bd.layout1
 		if md.has("scale0"):
 			if not md.has("scale_big"):
 				md["scale_big"] = md["scale"]
 			md["scale"] = (md["scale12"] if md.has("scale12") and not v13 else md["scale_big"]) if big else md["scale0"]
+			if layout_version < 2 and big and md.has("layout1_scale"):
+				md["scale"] = md.layout1_scale
 			for em in md.get("emitters", []):
 				if em.has("pos0"):
 					if not em.has("pos_big"):
@@ -187,6 +195,7 @@ func _ready() -> void:
 	rules_ov = (ng0.get("ov", {}) if ng0.get("ov") is Dictionary else (ng0.save.get("rules_ov", {}) if ng0.has("save") else {})).duplicate()
 	# старые сохранения (до 1.2) построены с прежними размерами зданий — так и загружаем
 	var has_save: bool = ng0.has("save") and ng0.save is Dictionary
+	layout_version = int(ng0.save.get("layout_version",1)) if has_save else 2
 	_apply_sizes(bool(ng0.save.get("big", false)) if has_save else bool(DB.setting("big_buildings", true)), bool(ng0.save.get("big13", false)) if has_save else true)
 	World.dep_fit = bool(ng0.save.get("dep_fit", false)) if ng0.has("save") and ng0.save is Dictionary else true
 	# 1.1.9: порты зданий — в новых мирах; миры до 1.1.9 загружаются с прежними подключениями (ленты с любой стороны),
@@ -243,6 +252,8 @@ func _ready() -> void:
 	npcs = preload("res://scripts/npcs.gd").new(self)
 	orders = preload("res://scripts/orders.gd").new(self)
 	for a in OS.get_cmdline_user_args():
+		if a == "--test=perf_landing":
+			continue
 		# проверки старых частей игры идут с открытым деревом (свою проверку дерево делает само)
 		if a.begins_with("--test=") and a != "--test=tech":
 			tech.unlock_all()
@@ -933,6 +944,8 @@ func wear(slot: int) -> void:
 	s["dur"] = float(s.get("dur", maxd)) - 1.0
 	if s.dur <= 0.0:
 		player.inv.slots[slot] = null
+		for i in player.hot_items.keys():
+			player.hot_slot(i)
 		player.inv.changed.emit()
 		notify("Сломалось: " + DB.item_name(s.id), Color(1, 0.5, 0.4))
 		sfx.play("hit", player.position)
@@ -2262,6 +2275,7 @@ func cycle_camera() -> void:
 	if Net.active() or photo_mode or not player.alive:
 		return
 	if strategy:
+		strategy_zoom = cam_dist_target
 		strategy = false
 		first_person = false
 		player.visible = true
@@ -2275,8 +2289,12 @@ func cycle_camera() -> void:
 			if explorer_anchor.has(key):
 				player.set(key, explorer_anchor[key])
 		cam_focus = player.position
-		cam_dist_target = CAM_CLOSE
+		cam_dist_target = explorer_zoom
+		cam_dist = explorer_zoom
+		edge_off = Vector3.ZERO
+		_cam_lead = Vector3.ZERO
 	elif not first_person:
+		explorer_zoom = clampf(cam_dist_target, 6.0, 24.0)
 		first_person = true
 		player.visible = false
 		look_pitch = -0.18
@@ -2287,7 +2305,8 @@ func cycle_camera() -> void:
 		if strat.layer == null:
 			strat.make_overlay()
 		player.visible = false
-		cam_dist_target = 34
+		cam_dist_target = strategy_zoom
+		cam_dist = strategy_zoom
 	player.move_dir = Vector3.ZERO
 	Inventory.no_personal = strategy
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED if first_person else Input.MOUSE_MODE_VISIBLE
@@ -3200,7 +3219,7 @@ func _interact(from_click := false) -> void:
 			vehicles.enter(b)
 		return
 	if b != null and World.dist(player.position, b.center()) < reach + b.size * C:
-		if b.type == "ruin_arch":
+		if b.type == "ruin_arch" and b.bstate.has("cave_type") and DB.setting("cave_expeditions_enabled", false):
 			enter_cave(b)
 		elif b.beh == "station":
 			hud.station = b.p("station", "hand")
@@ -3223,6 +3242,8 @@ func _interact(from_click := false) -> void:
 
 ## Название станции крафта по её коду (берётся из здания, у которого этот код).
 func enter_cave(b) -> void:
+	if not DB.setting("cave_expeditions_enabled", false) or not b.bstate.has("cave_type"):
+		return
 	if Net.active() or has_node("Expedition"):
 		return
 	hud.close_all()
@@ -4871,7 +4892,7 @@ func save_game(slot := "save1", quiet := false) -> void:
 func save_dict() -> Dictionary:
 	if split != null and split.active and split.cur != 0:
 		return split.with_seat(0, save_dict)   # сохраняется первый герой; вещи второго — отдельно
-	var blds := []
+	var blds := dormant_caves.duplicate(true)
 	factory.sync_fluids()
 	for b in factory.all:
 		var e := {"t": b.type, "c": [b.cell.x, b.cell.y], "d": b.dir, "hp": b.hp, "r": b.recipe, "it": b.item}
@@ -4911,9 +4932,9 @@ func save_dict() -> Dictionary:
 		var n = world.nodes[c]
 		if n.hp < n.maxhp:
 			node_hp.append([c.x, c.y, n.hp])
-	var data := {"version": DB.game_version(), "game": DB.game_name(), "map": world.to_map(), "buildings": blds, "carriers": carriers.save_flights(), "camera_mode": "strategy" if strategy else ("first" if first_person else "third"), "explorer_anchor": explorer_anchor,
+	var data := {"version": DB.game_version(), "game": DB.game_name(), "map": world.to_map(), "buildings": blds, "carriers": carriers.save_flights(), "camera_mode": "strategy" if strategy else ("first" if first_person else "third"), "explorer_anchor": explorer_anchor, "layout_version":layout_version, "broadcast_cursor":hud.broadcast.cursor if hud and hud.broadcast else -1, "camera_zoom":[strategy_zoom if not strategy else cam_dist_target, explorer_zoom if strategy or first_person else cam_dist_target],
 		"saved_at": Time.get_datetime_string_from_system(false, true), "play_time": play_time,
-		"player": {"pos": [player.saved_state().pos.x, player.saved_state().pos.z], "hp": player.saved_state().hp, "food": player.saved_state().food, "water": player.saved_state().water, "clothes": player.clothes, "inv": player.inv.to_array(),
+		"player": {"pos": [player.saved_state().pos.x, player.saved_state().pos.z], "elevation": player.saved_state().pos.y, "hp": player.saved_state().hp, "food": player.saved_state().food, "water": player.saved_state().water, "clothes": player.clothes, "inv": player.inv.to_array(),
 			"hot_items": player.hot_items.keys().map(func(k): return [k, player.hot_items[k]]), "hot_builds": player.hot_builds.keys().map(func(k): return [k, player.hot_builds[k]]), "selected": player.selected, "bag": player.bag_level},
 		"credits": credits, "sink_points_total": sink_points_total, "level": level, "xp": xp, "skill_points": skill_points, "skills": skills, "profession": profession, "difficulty": difficulty,
 		"attrs": attrs, "attr_points": attr_points, "graves": graves.map(func(g): return {"pos": [g.pos.x, g.pos.z], "inv": g.inv.to_array()}),
@@ -4943,6 +4964,15 @@ func load_game(data: Dictionary) -> void:
 		if strategy and strat.layer == null and not Net.dedicated:
 			strat.make_overlay()
 	explorer_anchor = data.get("explorer_anchor", {})
+	var zoom: Array = data.get("camera_zoom", [34.0, 9.0])
+	if zoom.size() == 2:
+		strategy_zoom = clampf(float(zoom[0]), 12.0, cam_max)
+		explorer_zoom = clampf(float(zoom[1]), 6.0, 24.0)
+		cam_dist_target = strategy_zoom if strategy else explorer_zoom
+		cam_dist = cam_dist_target
+	if hud and hud.broadcast:
+		hud.broadcast.cursor = clampi(int(data.get("broadcast_cursor",-1)),-1,4999)
+	dormant_caves.clear()
 	# сначала то, от чего зависят здания (бонусы навыков и профессии к прочности)
 	if DB.data.professions.has(str(data.get("profession", ""))):
 		profession = str(data.profession)
@@ -4968,10 +4998,14 @@ func load_game(data: Dictionary) -> void:
 		tech.unlock_all()   # старое сохранение — всё уже открыто
 	world.reveal_deposits()
 	if data.has("big") and factory.all.size() <= 1:
+		layout_version = int(data.get("layout_version",1))
 		_apply_sizes(bool(data.big), bool(data.get("big13", false)))   # 21: размеры зданий как у того, кто сохранил мир (хозяин сетевой игры)
 	factory.loading = true
 	for b in data.get("buildings", []):
 		var t: String = b.t
+		if t == "ruin_arch" and b.get("bstate", {}).has("cave_type") and not DB.setting("cave_expeditions_enabled", false):
+			dormant_caves.append(b.duplicate(true))
+			continue
 		if DB.building(t).is_empty():
 			continue
 		var cell := Vector2i(int(b.c[0]), int(b.c[1]))
@@ -5034,6 +5068,7 @@ func load_game(data: Dictionary) -> void:
 	var p: Dictionary = data.get("player", {})
 	var pp: Array = p.get("pos", [0, 0])
 	player.position = Vector3(float(pp[0]), 0, float(pp[1]))
+	player.position.y = float(p.get("elevation",player.support(player.position)))
 	player.hp = float(p.get("hp", player.maxhp))
 	if player.hp <= 0.0:
 		player.hp = player.maxhp   # A-3 r8: старое сохранение погибшего героя
@@ -5050,7 +5085,7 @@ func load_game(data: Dictionary) -> void:
 	player.hot_items.clear()
 	if p.has("hot_items"):
 		for pair in p.hot_items:
-			if pair is Array and pair.size() == 2 and DB.data.items.has(str(pair[1])):
+			if pair is Array and pair.size() == 2 and player.inv.count(str(pair[1])) > 0:
 				player.pin_item(int(pair[0]), str(pair[1]))
 	else:
 		player.seed_hotbar()

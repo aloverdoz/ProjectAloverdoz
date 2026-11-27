@@ -11,7 +11,8 @@ uniform sampler2D yard : repeat_enable, filter_linear;
 uniform sampler2D splat : filter_linear, repeat_enable;
 uniform sampler2D water : filter_linear, repeat_enable;
 uniform sampler2D ore_map : filter_linear, repeat_enable;
-uniform sampler2D height_map : filter_linear, repeat_enable;
+uniform sampler2D height_map : filter_linear_mipmap, repeat_enable;
+instance uniform float height_lod = 0.0;
 instance uniform vec4 hole = vec4(0.0);   // дальняя сетка не рисует там, где есть ближняя
 uniform float world_size = 768.0;
 uniform vec3 cursor = vec3(0.0);
@@ -36,7 +37,9 @@ float fbm(vec2 p) {
 float hgt(vec2 p) {
 	vec2 uv = p / world_size;
 	if (!wrap && (uv.x < 0.0 || uv.y < 0.0 || uv.x > 1.0 || uv.y > 1.0)) return 0.0;
-	return textureLod(height_map, uv, 0.0).r;
+	float border = max(abs(p.x-hole.x),abs(p.y-hole.y)) - hole.z;
+	float lod = height_lod * smoothstep(0.0,cell*exp2(height_lod)*3.0,border);
+	return textureLod(height_map, uv, lod).r;
 }
 
 void vertex() {
@@ -90,39 +93,16 @@ void fragment() {
 	float n3 = noise(p * 1.7);
 	float dist_cam = length(VERTEX);
 	float near = (1.0 - smoothstep(30.0, 90.0, dist_cam)) * detail;
-	// трава: крупные пятна двух оттенков, сухие проплешины, клевер и мелкие «штрихи» травинок
-	vec3 col = mix(c_grass_a, c_grass_b, smoothstep(0.28, 0.72, n1));
-	col = mix(col, c_grass_dry, smoothstep(0.64, 0.82, n2) * 0.55);
-	float clover = smoothstep(0.55, 0.75, fbm(p * 0.35 + 13.0));
-	col = mix(col, c_clover, clover * 0.45);
-	float streak = noise(vec2(p.x * 9.0 + p.y * 2.0, p.y * 9.0 - p.x * 2.0));
-	col *= mix(1.0, 0.82 + 0.3 * streak, near);
-	col *= 0.9 + 0.2 * n3;
 	vec4 sp = inside ? texture(splat, uv) : vec4(0.0);
-	// грунт: тёплый, с камешками
-	vec3 dirt = c_dirt * (0.8 + 0.35 * n2);
-	dirt = mix(dirt, c_dirt * 1.35, pebbles(p * 3.0, 0.35) * near);
-	dirt = mix(dirt, c_dirt * 0.6, pebbles(p * 5.0 + 2.0, 0.25) * near * 0.7);
 	// песок: рябь от ветра
 	float rip = 0.5 + 0.5 * sin(p.x * 2.4 + p.y * 0.8 + noise(p * 0.4) * 6.0);
 	vec3 sand = c_sand * (0.9 + 0.12 * n3) * mix(1.0, 0.94 + 0.08 * rip, near);
-	// камень: слои и трещины
-	float strata = 0.5 + 0.5 * sin(p.y * 0.9 + fbm(p * 0.3) * 6.0);
-	float crack = 1.0 - smoothstep(0.0, 0.035, abs(noise(p * 0.9) - 0.5));
-	vec3 rock = c_rock * (0.72 + 0.4 * fbm(p * 0.4)) * (0.9 + 0.12 * strata) * (1.0 - crack * 0.35 * near);
 	vec3 snow = c_snow * (0.93 + 0.08 * n3) + vec3(step(0.995, hash(floor(p * 12.0)))) * 0.25 * near;
-	float edge = (n2 - 0.5) * 0.3;
-	col = mix(col, dirt, smoothstep(0.1, 0.6, sp.r + edge));
-	col = mix(col, sand, smoothstep(0.1, 0.6, sp.g + edge));
-	col = mix(col, rock, smoothstep(0.1, 0.6, sp.b + edge));
-	col = mix(col, snow, smoothstep(0.1, 0.6, sp.a + edge));
 	// у воды — влажная грязь, под водой — тёмное дно
 	float wet = inside ? texture(water, uv).r : 0.0;
 	float o = 2.0 / world_size;
 	float wet_near = inside ? (texture(water, uv + vec2(o, 0)).r + texture(water, uv - vec2(o, 0)).r + texture(water, uv + vec2(0, o)).r + texture(water, uv - vec2(0, o)).r) * 0.25 : 0.0;
 	float mud = clamp(max(wet, wet_near) * 2.2, 0.0, 1.0) * (1.0 - sp.g * 0.7);
-	col = mix(col, c_mud * (0.85 + 0.3 * n2), smoothstep(0.15, 0.7, mud + (n3 - 0.5) * 0.2));
-	col = mix(col, c_mud * 0.55, smoothstep(0.2, 0.7, wet));
 	// Terraces follow the colony footprint. World-space projections keep the cliff grain vertical.
 	vec2 grid_uv = p / world_size;
 	float pad = texture(yard, grid_uv).r;
@@ -131,19 +111,26 @@ void fragment() {
 	                    max(texture(yard,grid_uv+vec2(0,fringe)).r,texture(yard,grid_uv-vec2(0,fringe)).r))) * float(inside);
 	float apron = smoothstep(0.12,0.46,pad + (n3-0.5)*0.18) * (1.0-smoothstep(0.1,0.55,wet));
 	vec3 world_n = normalize((INV_VIEW_MATRIX * vec4(NORMAL,0.0)).xyz);
-	vec3 weights = pow(abs(world_n),vec3(4.0));
+	vec3 slope_n = normalize(cross(dFdx(wp),dFdy(wp)));
+	vec3 weights = pow(abs(slope_n),vec3(4.0));
 	weights /= max(0.001,weights.x+weights.y+weights.z);
-	vec3 escarpment = texture(basalt,wp.zy*0.10).rgb*weights.x + texture(basalt,p*0.12).rgb*weights.y + texture(basalt,wp.xy*0.10).rgb*weights.z;
+	float cliff = smoothstep(0.12,0.63,sp.b + (1.0-abs(slope_n.y))*1.55);
+	vec3 escarpment = vec3(0.0);
+	if (cliff > 0.0) {
+		if (weights.x > 0.001) escarpment += texture(basalt,wp.zy*0.10).rgb*weights.x;
+		if (weights.y > 0.001) escarpment += texture(basalt,p*0.12).rgb*weights.y;
+		if (weights.z > 0.001) escarpment += texture(basalt,wp.xy*0.10).rgb*weights.z;
+	}
 	vec3 earth = texture(regolith,p*0.088).rgb;
 	vec3 litter = texture(moss,p*0.115).rgb;
 	float cover = smoothstep(0.34,0.66,n2*0.72+n1*0.28) * (1.0-sp.r) * (1.0-sp.b);
 	vec3 wild = mix(earth,litter,cover*0.91) * (0.91+0.24*n1);
-	wild = mix(wild,escarpment,smoothstep(0.12,0.63,sp.b + (1.0-world_n.y)*1.55));
-	wild = mix(wild,sand*0.65,smoothstep(0.18,0.88,sp.g)*0.74);
+		wild = mix(wild,sand*0.65,smoothstep(0.18,0.88,sp.g)*0.74);
 	wild = mix(wild,snow,smoothstep(0.2,0.78,sp.a));
+	wild = mix(wild,escarpment,cliff);
 	wild = mix(wild,wild*0.35+vec3(0.007,0.013,0.015),mud*0.75);
 	vec3 tile = texture(slate,p*0.12).rgb;
-	col = mix(wild, tile*(1.12+0.23*n2), apron);
+	vec3 col = mix(wild, tile*(1.12+0.23*n2), apron);
 	// сезоны: трава желтеет осенью, зимой ложится снег (кроме воды)
 	col = mix(col, col * season_tint.rgb * 1.15, season_tint.a * (1.0 - sp.b));
 	float ssn = season_snow * smoothstep(0.2, 0.5, n3 * 0.45 + season_snow * 0.55) * (1.0 - smoothstep(0.1, 0.5, wet));
@@ -178,10 +165,12 @@ void fragment() {
 		vec2 st = p*0.12;
 		float se = 0.0014;
 		vec3 lum_weights = vec3(0.23,0.63,0.14);
+		if (apron > 0.001) {
 		float relief_x = dot(texture(slate,st+vec2(se,0)).rgb-texture(slate,st-vec2(se,0)).rgb,lum_weights);
 		float relief_z = dot(texture(slate,st+vec2(0,se)).rgb-texture(slate,st-vec2(0,se)).rgb,lum_weights);
 		gx = mix(gx,relief_x*2.8,apron);
 		gz = mix(gz,relief_z*2.8,apron);
+		}
 		wn = normalize(wn - vec3(gx, 0.0, gz) / (2.0 * e) * 0.22 * near * (1.0 - cov));
 		NORMAL = normalize((VIEW_MATRIX * vec4(wn, 0.0)).xyz);
 	}
