@@ -1,8 +1,7 @@
 Frontier Corp
 
-Готовая игра и редактор для Windows x64 находятся в папке Windows.
-Скачайте все части архива и Install.cmd в одну папку. Запустите Install.cmd.
-В папке FrontierCorp-Windows появятся FrontierCorp.exe и FrontierEditor.exe.
+Windows x64
+https://github.com/aloverdoz/ProjectAloverdoz/releases/download/frontier-ocean-1/FrontierCorp-Windows-x64.zip
 
-Исходный проект открывается через project.godot в Godot 4.6.3.
-Управление, пресеты редактора, сборка и ссылки на рендеры описаны в README.md.
+Распакуйте архив и запустите FrontierCorp.exe. Для редактора запустите FrontierEditor.cmd.
+Исходный проект открывается в Godot 4.6.3 через project.godot. Управление описано в README.md.

@@ -3200,5 +3200,19 @@
    "freighter_5": 1
   },
   "time": 30
+ },
+ "salvage_rod": {
+  "name": "Морская удочка",
+  "stations": [
+   "hand"
+  ],
+  "time": 2,
+  "in": {
+   "branch": 2,
+   "fiber": 2
+  },
+  "out": {
+   "salvage_rod": 1
+  }
  }
 }

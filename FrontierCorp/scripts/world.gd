@@ -8,6 +8,15 @@ const C := 2.0
 const CHUNK := 48   # чанк отрисовки ресурсов (клеток)
 
 var game
+var ocean := false
+var island_cells := {}
+const ISLAND_CHUNK := 32
+var islands_by_chunk := {}
+var ground_chunks := {}
+var changed_chunks := {}
+var chart_tiles := {}
+var island_mesh: BoxMesh
+var chart_origin := Vector2i.ZERO
 var W := 384
 static var wrap_w := 0   # >0: мир зациклен (края склеены), размер в клетках
 var wrap := false
@@ -95,6 +104,134 @@ var _water_small: Image  # вода на сетке генерации (для �
 
 var gen_args := {}       # с какими настройками построена карта (большие карты сохраняются без картинок)
 var edited := false      # карту правили кистями — сохранять целиком
+
+func generate_island(seed_value: int, size: int) -> void:
+	used_seed = seed_value
+	rng.seed = seed_value
+	setup_size(128, false)
+	water.fill(Color.WHITE)
+	height.fill(Color(.76, 0, 0))
+	deposits = DB.data.world.get("deposits", []).duplicate(true)
+	for x in range(-2, 3):
+		for z in range(-2, 3):
+			set_land(center + Vector2i(x, z), true)
+	var oak := center + Vector2i(-2,-1)
+	add_node("tree_oak",oak,Transform3D(Basis(Vector3.UP,.45).scaled(Vector3.ONE*.74),cell_to_world(oak)))
+	add_node("tree_pine", center + Vector2i(1, -1))
+	_build_visuals()
+
+func island_chunk(c: Vector2i) -> Vector2i:
+	return Vector2i(c.x >> 5, c.y >> 5)
+
+func set_land(c: Vector2i, on: bool) -> void:
+	var key := island_chunk(c)
+	if on:
+		if not islands_by_chunk.has(key): islands_by_chunk[key] = {}
+		islands_by_chunk[key][c] = true
+		island_cells[c] = true
+	else:
+		if islands_by_chunk.has(key):
+			islands_by_chunk[key].erase(c)
+			if islands_by_chunk[key].is_empty(): islands_by_chunk.erase(key)
+		island_cells.erase(c)
+	changed_chunks[key] = true
+	var pixel := c - chart_origin
+	if Rect2i(0,0,W,W).has_point(pixel):
+		water.set_pixelv(pixel,Color.BLACK if on else Color.WHITE)
+		dirty["water"] = true
+
+# Meshes and chart stamps are allocated only for occupied 32×32 chunks.
+func rebuild_shore() -> void:
+	for key in changed_chunks:
+		var cells: Dictionary = islands_by_chunk.get(key,{})
+		var node: MultiMeshInstance3D = ground_chunks.get(key)
+		if cells.is_empty():
+			if node: node.queue_free()
+			ground_chunks.erase(key)
+			chart_tiles.erase(key)
+			continue
+		var origin: Vector2i = key * ISLAND_CHUNK
+		if node == null:
+			node = MultiMeshInstance3D.new()
+			node.multimesh = MultiMesh.new()
+			node.multimesh.transform_format = MultiMesh.TRANSFORM_3D
+			node.multimesh.mesh = island_mesh
+			node.position = Vector3(origin.x*C,0,origin.y*C)
+			add_child(node)
+			ground_chunks[key] = node
+		node.multimesh.instance_count = cells.size()
+		var stamp := Image.create(ISLAND_CHUNK,ISLAND_CHUNK,false,Image.FORMAT_RGBA8)
+		var i := 0
+		for c in cells:
+			var local: Vector2i = c-origin
+			node.multimesh.set_instance_transform(i,Transform3D(Basis(),cell_to_world(local)+Vector3.UP*.26))
+			stamp.set_pixelv(local,Color("#748b60"))
+			i += 1
+		chart_tiles[key] = ImageTexture.create_from_image(stamp)
+	changed_chunks.clear()
+
+# The small chart follows the player. It is a rendering cache, never a world boundary.
+func center_chart(focus: Vector3) -> void:
+	var c := world_to_cell(focus)
+	if Rect2i(chart_origin+Vector2i(W/4,W/4),Vector2i(W/2,W/2)).has_point(c): return
+	chart_origin = island_chunk(c)*ISLAND_CHUNK - Vector2i(W/2,W/2)
+	water.fill(Color.WHITE)
+	ore_img.fill(Color.TRANSPARENT)
+	occ_img.fill(Color.BLACK)
+	var area := Rect2i(chart_origin,Vector2i(W,W))
+	var start := island_chunk(area.position)
+	var end := island_chunk(area.end)
+	for x in range(start.x,end.x+1):
+		for z in range(start.y,end.y+1):
+			for land in islands_by_chunk.get(Vector2i(x,z),{}):
+				if area.has_point(land):
+					water.set_pixelv(land-chart_origin,Color.BLACK)
+					_occ(land)
+					if deposit.has(land) and not deposit_hidden(deposit[land]):
+						ore_img.set_pixelv(land-chart_origin,DB.color(deposits[deposit[land]].color))
+	dirty.merge({"water":true,"ore":true,"occ":true},true)
+	water_mat.set_shader_parameter("chart_origin",Vector2(chart_origin)*C)
+
+func paint_ore_pixel(c: Vector2i, color: Color) -> void:
+	var at := c-chart_origin if ocean else wc(c)
+	if not ocean or Rect2i(0,0,W,W).has_point(at): ore_img.set_pixelv(at,color)
+
+# (wave vector X/Z, angular speed, amplitude) drives both the mesh and buoyancy.
+const SWELLS := [Vector4(.48,.24,-1.15,.18),Vector4(-.38,.73,-1.53,.095),Vector4(.98,-.65,1.98,.042)]
+func ocean_surface(p: Vector3,t: float) -> Vector3:
+	var sample := Vector3(.12,0.,0.)
+	for wave in SWELLS:
+		var phase: float = p.x*wave.x+p.z*wave.y+t*wave.z
+		var gradient: float = cos(phase)*wave.w
+		sample += Vector3(sin(phase)*wave.w,gradient*wave.x,gradient*wave.y)
+	return sample
+
+func _island_visuals() -> void:
+	splat_tex = ImageTexture.create_from_image(splat)
+	ore_tex = ImageTexture.create_from_image(ore_img)
+	occ_tex = ImageTexture.create_from_image(occ_img)
+	height_tex = ImageTexture.create_from_image(height)
+	water_tex = ImageTexture.create_from_image(water)
+	_make_water()
+	water_mat.shader = preload("res://shaders/island_ocean.gdshader")
+	water_mat.set_shader_parameter("water", water_tex)
+	water_mat.set_shader_parameter("world_size", W * C)
+	var surface := PlaneMesh.new()
+	surface.size = Vector2(2,2)
+	surface.subdivide_width = 111
+	surface.subdivide_depth = 111
+	water_node.mesh = surface
+	water_node.custom_aabb = AABB(Vector3(-1940,-2,-1940),Vector3(3880,4,3880))
+	for i in SWELLS.size():
+		water_mat.set_shader_parameter(["swell_a","swell_b","swell_c"][i],SWELLS[i])
+	var rock := ShaderMaterial.new()
+	rock.shader = preload("res://shaders/island_rock.gdshader")
+	rock.set_shader_parameter("stone", preload("res://textures/frontier/slate.jpg"))
+	rock.set_shader_parameter("soil", preload("res://textures/frontier/moss.jpg"))
+	island_mesh = BoxMesh.new()
+	island_mesh.size = Vector3(C,1.,C)
+	island_mesh.material = rock
+	rebuild_shore()
 
 func generate(seed_value: int, override := {}, regen := false) -> void:
 	var wd: Dictionary = DB.data.world
@@ -592,6 +729,7 @@ func _weather_ridges(hs: Image, side: int, spacing: float, relief: float) -> voi
 
 ## Высота земли в клетке (её центре).
 func h_cell(c: Vector2i) -> float:
+	if ocean: return .76
 	if not in_bounds(c) or height == null:
 		return 0.0
 	return height.get_pixelv(wc(c)).r
@@ -599,6 +737,7 @@ func h_cell(c: Vector2i) -> float:
 
 ## Высота земли в любой точке (плавно между центрами клеток — так же, как рисует видеокарта).
 func height_at(p: Vector3) -> float:
+	if ocean: return .76
 	if height == null:
 		return 0.0
 	var fx := p.x / C - 0.5
@@ -959,10 +1098,12 @@ func order_field(idx: int, origin: Vector2i) -> bool:
 	orders_placed += 1
 	var point := cell_to_world(origin) + Vector3(span - 1, 0, span - 1)
 	point.y = height_at(point)
+	if ocean and Net.is_host():
+		Net._self().rpc("shore_field",origin,idx,span,quality,order_price,orders_placed)
 	var token := orders_placed
 	pending_strikes[origin] = token
 	for c in field_cells(origin, span):
-		ore_img.set_pixelv(c, Color.TRANSPARENT)
+		paint_ore_pixel(c, Color.TRANSPARENT)
 	if dep_marks.has(origin):
 		dep_marks[origin].hide()
 	game.fx.orbital_strike(point, span * C * 0.65, func(): reveal_strike(origin, token))
@@ -977,7 +1118,7 @@ func reveal_strike(origin: Vector2i, token: int) -> void:
 	var idx := int(record[0])
 	var col := DB.color(deposits[idx].get("color", "#808080"))
 	for c in field_cells(origin, int(record[1])):
-		ore_img.set_pixelv(c, Color(col.r, col.g, col.b, 0.85))
+		paint_ore_pixel(c, Color(col.r, col.g, col.b, 0.85))
 	dirty["ore"] = true
 	if dep_marks.has(origin):
 		dep_marks[origin].show()
@@ -1013,12 +1154,12 @@ func set_deposit(p: Vector2i, idx: int, col := Color.BLACK) -> void:
 	if idx < 0:
 		deposit.erase(p)
 		dep_purity.erase(p)
-		ore_img.set_pixelv(wc(p), Color(0, 0, 0, 0))
+		paint_ore_pixel(p, Color(0, 0, 0, 0))
 	else:
 		deposit[p] = idx
 		if col == Color.BLACK:
 			col = DB.color(deposits[idx].get("color", "#808080"))
-		ore_img.set_pixelv(wc(p), Color(col.r, col.g, col.b, 0.0 if deposit_hidden(idx) else 0.85))
+		paint_ore_pixel(p, Color(col.r, col.g, col.b, 0.0 if deposit_hidden(idx) else 0.85))
 	dirty["ore"] = true
 	_occ(p)
 	_dep_mark(p)
@@ -1285,7 +1426,7 @@ func seat_resource(n: Node_) -> bool:
 
 func add_node(res: String, c: Vector2i, xf_override = null) -> Node_:
 	c = wc(c)
-	if res == "" or not DB.data.resources.has(res) or nodes.has(c):
+	if (ocean and not island_cells.has(c)) or res == "" or not DB.data.resources.has(res) or nodes.has(c):
 		return null
 	var rd: Dictionary = DB.data.resources[res]
 	var n := Node_.new()
@@ -1349,6 +1490,9 @@ func _build_visuals() -> void:
 	for c in nodes:
 		var n: Node_ = nodes[c]
 		_renderer_for(n).add(n, n.xf, 1.0)
+	if ocean:
+		_island_visuals()
+		return
 	_make_ground()
 	_make_water()
 	if W >= 64:
@@ -1517,7 +1661,7 @@ func _fall_anim(model: String, xf: Transform3D) -> void:
 
 ## 1.4: посадить саженец в свободную клетку земли рядом с точкой (сначала сама клетка, потом соседние).
 ## Возвращает клетку или (-1, -1), если места нет.
-func plant_sapling(young: String, tree: String, at: Vector3) -> Vector2i:
+func plant_sapling(young: String, tree: String, at: Vector3):
 	var c0 := world_to_cell(at)
 	for r in 3:
 		for dz in range(-r, r + 1):
@@ -1525,7 +1669,7 @@ func plant_sapling(young: String, tree: String, at: Vector3) -> Vector2i:
 				if maxi(absi(dx), absi(dz)) != r:
 					continue
 				var c := wc(c0 + Vector2i(dx, dz))
-				if not in_bounds(c) or water_at(c) or nodes.has(c) or deposit.has(c) or occ_img.get_pixel(c.x, c.y).r > 0.5:
+				if not in_bounds(c) or water_at(c) or nodes.has(c) or deposit.has(c) or (not ocean and occ_img.get_pixel(c.x, c.y).r > 0.5) or (ocean and game.factory.found.has(c)):
 					continue
 				if game.factory.building_at(c) != null:
 					continue
@@ -1533,7 +1677,7 @@ func plant_sapling(young: String, tree: String, at: Vector3) -> Vector2i:
 					continue
 				Net._self().node_plant(c, young, tree)
 				return c
-	return Vector2i(-1, -1)
+	return null
 
 
 ## Саженец в эту клетку (у посадившего и, по сети, у остальных игроков).
@@ -1719,6 +1863,8 @@ func _make_water() -> void:
 
 ## 17.10: пересоздать траву (настройка «Густая трава»).
 func remake_grass() -> void:
+	if ocean:
+		return
 	if grass:
 		grass.queue_free()
 		grass = null
@@ -1922,6 +2068,14 @@ func _flora_shadows(focus: Vector3) -> void:
 
 
 func update_visuals(focus: Vector3) -> void:
+	if ocean:
+		center_chart(focus)
+		water_node.position = Vector3(snappedf(focus.x,2.),.12,snappedf(focus.z,2.))
+		if dirty.has("water"): water_tex.update(water)
+		if dirty.has("ore"): ore_tex.update(ore_img)
+		if dirty.has("occ"): occ_tex.update(occ_img)
+		dirty.clear()
+		return
 	_place_ground(focus)
 	_last_focus = focus
 	if lazy:
@@ -1961,7 +2115,9 @@ func _occ(c: Vector2i) -> void:
 	if not in_bounds(c):
 		return
 	var on: bool = blocks(c) or deposit.has(c) or (game != null and game.factory != null and (game.factory.grid.has(c) or c in game.factory.canopy_cells))
-	occ_img.set_pixelv(wc(c), Color(1, 0, 0) if on else Color(0, 0, 0))
+	var at := c-chart_origin if ocean else wc(c)
+	if not ocean or Rect2i(0,0,W,W).has_point(at):
+		occ_img.set_pixelv(at,Color.WHITE if on else Color.BLACK)
 	dirty["occ"] = true
 
 
@@ -1970,7 +2126,7 @@ func set_occupied(c: Vector2i, on: bool) -> void:
 	if not in_bounds(c):
 		return
 	var built: bool = game.factory.grid.has(c) or game.factory.found.has(c) or c in game.factory.canopy_cells
-	yard_img.set_pixelv(c, Color.WHITE if built else Color.BLACK)
+	if not ocean: yard_img.set_pixelv(c, Color.WHITE if built else Color.BLACK)
 	dirty["yard"] = true
 	_occ(c)
 	if on:
@@ -2042,6 +2198,17 @@ func to_map() -> Dictionary:
 	var ns := []
 	for n in nests:
 		ns.append([n.cell.x, n.cell.y])
+	if ocean:
+		var chunks := []
+		for key in islands_by_chunk:
+			var mask := PackedByteArray()
+			mask.resize(ISLAND_CHUNK*ISLAND_CHUNK/8)
+			for c in islands_by_chunk[key]:
+				var local: Vector2i = c-key*ISLAND_CHUNK
+				var bit := local.y*ISLAND_CHUNK+local.x
+				mask[bit>>3] |= 1<<(bit%8)
+			chunks.append([key.x,key.y,Marshalls.raw_to_base64(mask)])
+		return {"size":W,"wrap":false,"start":[center.x,center.y],"island_chunks":chunks,"seed":used_seed,"deposits":deposits,"deposit_cells":dep,"ordered_fields":_field_records(),"order_price":order_price,"orders_placed":orders_placed,"objects":objs}
 	return {"order_price": order_price, "orders_placed": orders_placed, "ordered_fields": _field_records(), "size": W, "wrap": wrap, "start": [center.x, center.y], "splat": _img64(splat), "water": _img64(water), "height": _img64(height), "deposits": deposits,
 		"deposit_cells": dep, "objects": objs, "nests": ns, "seed": used_seed, "lazy": lazy, "flora_cfg": flora_cfg,
 		"chunks": chunks_done.keys().map(func(k): return [k.x, k.y])}
@@ -2063,15 +2230,30 @@ func load_map(m: Dictionary) -> void:
 	if m.has("regen"):
 		generate(int(m.regen.get("seed", 1)), m.regen.get("wd", {}), true)
 	else:
-		setup_size(int(m.get("size", 384)), m.get("wrap", null))
-	if m.has("splat"):
+		setup_size(128 if ocean else int(m.get("size",384)),m.get("wrap",null))
+	if not ocean and m.has("splat"):
 		splat = _img_from64(m.splat, Image.FORMAT_RGBA8)
-	if m.has("water"):
+	if not ocean and m.has("water"):
 		water = _img_from64(m.water, Image.FORMAT_R8)
-	if m.has("height"):
+	if not ocean and m.has("height"):
 		height = _img_from64(m.height, Image.FORMAT_RH)
 	if m.has("start"):
 		center = Vector2i(int(m.start[0]), int(m.start[1]))
+	if ocean:
+		water.fill(Color.WHITE)
+		height.fill(Color(.76,0,0))
+		for pair in m.get("island_tiles", []):
+			set_land(Vector2i(int(pair[0]),int(pair[1])),true)
+		for row in m.get("island_chunks",[]):
+			var anchor := Vector2i(int(row[0]),int(row[1]))*ISLAND_CHUNK
+			var mask := Marshalls.base64_to_raw(row[2])
+			if mask.size()!=ISLAND_CHUNK*ISLAND_CHUNK/8: continue
+			for j in mask.size():
+				if mask[j]==0: continue
+				for bit in 8:
+					if mask[j] & (1<<bit):
+						var index := j*8+bit
+						set_land(anchor+Vector2i(index%ISLAND_CHUNK,index/ISLAND_CHUNK),true)
 	if m.has("deposits"):
 		deposits = m.get("deposits", [])
 	used_seed = int(m.get("seed", used_seed))
@@ -2110,12 +2292,14 @@ func load_map(m: Dictionary) -> void:
 # ---------------------------------------------------------------- запросы
 
 func in_bounds(c: Vector2i) -> bool:
+	if ocean: return true
 	if wrap_w > 0:
 		return true
 	return c.x >= 0 and c.y >= 0 and c.x < W and c.y < W
 
 
 func water_at(c: Vector2i) -> bool:
+	if ocean: return not island_cells.has(c)
 	return in_bounds(c) and water.get_pixelv(wc(c)).r > 0.5
 
 
@@ -2330,6 +2514,7 @@ static var _decor_meshes := {}
 ## Где лежит клетка: луг, лес, опушка, сухая земля, песок, снег или берег.
 ## Считается по уже готовой карте, поэтому работает и для нарисованных в редакторе карт.
 func zone_at(c: Vector2i) -> String:
+	if ocean: return "shore"
 	var sp := splat.get_pixelv(wc(c))
 	for d in [Vector2i(1, 0), Vector2i(-1, 0), Vector2i(0, 1), Vector2i(0, -1), Vector2i(2, 0), Vector2i(0, 2), Vector2i(-2, 0), Vector2i(0, -2)]:
 		if water_at(c + d):
@@ -2437,6 +2622,7 @@ static func decor_list() -> Array:
 
 ## Расставить украшения по карте (список «Украшения земли» в данных мира). Большая карта — кусками.
 func _make_decor() -> void:
+	if ocean: return
 	clear_decor()
 	decor_done.clear()
 	var list: Array = decor_list()

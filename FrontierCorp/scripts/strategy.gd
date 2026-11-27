@@ -108,7 +108,7 @@ func move(pl, delta: float, cam_yaw: float) -> void:
 	pl.position += Vector3(pl.move_dir.x, 0, pl.move_dir.z) * delta
 	if game.world.wrap:
 		pl.position = World.wrap_pos(pl.position)
-	else:
+	elif not game.world.ocean:
 		var lim: float = game.world.W * World.C - 1.0
 		pl.position.x = clampf(pl.position.x, 1.0, lim)
 		pl.position.z = clampf(pl.position.z, 1.0, lim)

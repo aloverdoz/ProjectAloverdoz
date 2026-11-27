@@ -23,7 +23,7 @@ func cfg() -> Dictionary:
 
 
 func on() -> bool:
-	return game.module("zone") and bool(cfg().get("enabled", true))
+	return game.island == null and game.module("zone") and bool(cfg().get("enabled", true))
 
 
 func block_m() -> float:

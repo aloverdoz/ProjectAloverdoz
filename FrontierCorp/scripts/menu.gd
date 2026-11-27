@@ -8,7 +8,7 @@ var bg_t := 0.0
 var sel_prof := "engineer"
 var difficulty := 1.0
 var seed_edit: LineEdit
-var mode := "procedural"
+var mode := "ocean"
 var map_size := 0
 var res_amount := "normal"   # 1.0.8: сколько ресурсов на карте
 const MODULE_NAMES := {"survival": "Голод и жажда", "durability": "Прочность вещей", "finite_ammo": "Конечные патроны",
@@ -120,7 +120,7 @@ func _ready() -> void:
 		elif a.begins_with("--frames="):
 			_shot_frame = int(a.substr(9))
 		if a.begins_with("--") and not menu_test:
-			_start({"profession": "engineer"})
+			_start({"profession": "engineer", "map_mode":"procedural"} if Array(args).any(func(x): return str(x) == "--classic" or str(x).begins_with("--test=") and x != "--test=ocean") else {"profession":"engineer"})
 			return
 		if a == "--menu-new":
 			_page_new.call_deferred()
@@ -614,12 +614,13 @@ func _page_new() -> void:
 	row.add_child(UI.label(DB.tx("map", "Карта") + ":", 15))
 	var ob := OptionButton.new()
 	ob.focus_mode = Control.FOCUS_NONE
-	ob.add_item(DB.tx("map_random", "Случайная (процедурная)"))
+	ob.add_item("Океан · остров 5×5")
 	ob.add_item(DB.tx("map_fixed", "Готовая карта игры"))
+	ob.add_item("Материк · процедурная карта")
 	ob.set_item_disabled(1, str(wd.get("map_file", "")) == "")
 	mode = "fixed" if wd.get("map_mode", "procedural") == "fixed" and str(wd.get("map_file", "")) != "" else mode
-	ob.select(1 if mode == "fixed" else 0)
-	ob.item_selected.connect(func(i): mode = "fixed" if i == 1 else "procedural")
+	ob.select(1 if mode == "fixed" else (2 if mode == "procedural" else 0))
+	ob.item_selected.connect(func(i): mode = ["ocean", "fixed", "procedural"][i])
 	row.add_child(ob)
 	row.add_child(UI.label(DB.tx("seed", "Зерно") + ":", 15))
 	seed_edit = LineEdit.new()

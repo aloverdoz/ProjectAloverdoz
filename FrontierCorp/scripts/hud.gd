@@ -1844,7 +1844,7 @@ func _refresh_build() -> void:
 			b.add_theme_stylebox_override("hover", UI.theme().get_stylebox("pressed", "Button"))
 		top.add_child(b)
 	w.body.add_child(top)
-	if not Net.active():
+	if not Net.active() or game.island != null:
 		var order := HBoxContainer.new()
 		var ores := OptionButton.new()
 		for i in game.world.deposits.size():
@@ -1876,7 +1876,7 @@ func _refresh_build() -> void:
 	var ids: Array = []
 	for id in DB.data.buildings:
 		var d: Dictionary = DB.data.buildings[id]
-		if not d.get("params", {}).get("buildable", true):
+		if not d.get("params", {}).get("buildable", true) and not (id == "orbital_elevator" and game.island != null):
 			continue
 		if game.strategy and id in DB.PERSONAL_BUILDINGS:
 			continue   # 1.1.16: медпункт и грядка — для героя
@@ -2097,6 +2097,10 @@ func _refresh_building() -> void:
 		st.text += ("\n" if st.text != "" else "") + game.builders.info(bld)
 	if bld.type == "drone_port":
 		st.text += "\nГрузоподъёмность: %d ед. · %s" % [game.carriers.fleet_capacity(bld), "рейс выполняется" if game.carriers.airborne(bld) else "на площадке"]
+	if game.island != null and bld.type == "tide_slab":
+		st.text = game.island.description()
+	elif bld.type == "campfire" and game.island != null:
+		st.text += "\n" + ("Костёр погас" if bld.bstate.get("extinguished",false) else "Огонь горит") + (" · под крышей" if game.island.sheltered(bld.center()) else " · под открытым небом")
 	_steady(st)
 	if w.has_meta("tune_ui") and Tuning.kind_of(bld) != "":
 		(w.get_meta("tune_ui") as RichTextLabel).text = Tuning.info(bld)
@@ -2271,6 +2275,13 @@ func _build_building_body(w: Win) -> void:
 	w.set_meta("status", st)
 	top.add_child(tv)
 	w.body.add_child(top)
+	if game.island != null and bld.type == "tide_slab":
+		var actions := UI.hbox(8)
+		actions.add_child(UI.button("Передать припасы",func(): game.cmd("shore_offer",{})))
+		actions.add_child(UI.button("Расширить остров",func(): close_all(); game.ui_action("zone_pick")))
+		w.body.add_child(actions)
+	elif game.island != null and bld.type == "campfire":
+		w.body.add_child(UI.button("Разжечь · 1 ветка",func(): game.cmd("shore_relight",{"b":bld})))
 	_cargo_controls(w)
 	_clock_panel(w)
 	_fusion_panel(w)
@@ -4122,7 +4133,7 @@ func _refresh_help() -> void:
 	var w: Win = windows.help
 	if w.body.get_child_count() > 0:
 		return
-	var r := UI.rich(help_text(), 15)
+	var r := UI.rich(help_text(game.island != null), 15)
 	r.custom_minimum_size = Vector2(580, 0)
 	w.body.add_child(r)
 	var hr := UI.hbox(10)
@@ -4133,14 +4144,17 @@ func _refresh_help() -> void:
 
 
 ## Текст «Как играть»: дополнение из редактора (Главное меню и экраны) + клавиши игрока.
-static func help_text() -> String:
+static func help_text(ocean := true) -> String:
 	var k := func(a: String) -> String: return str(Prefs.get_value("key_" + a, "?"))
 	var t := ""
 	var extra := DB.t(DB.menu("help_extra", ""))
 	if extra.strip_edges() != "":
 		t += extra + "\n\n"
 	t += "[b]Цель:[/b] %s\n\n" % _goal_text()
-	t += "[b]Начало.[/b] Рубите деревья и бейте камни (ЛКМ рядом с ними) — выпадут ветки, брёвна, камни. Предметы светятся и сами подбираются, когда проходите рядом.\n"
+	if ocean:
+		t += "[b]Остров.[/b] Выберите удочку (1), щёлкните по бочке или ящику и щёлкните ещё раз, чтобы подтянуть его. При забросе в свободную воду дождитесь поклёвки. Рыбу можно съесть из рюкзака. E у плиты открывает сдачу даров и расширение суши.\n"
+	else:
+		t += "[b]Начало.[/b] Рубите деревья и бейте камни (ЛКМ рядом с ними) — выпадут ветки, брёвна, камни. Предметы светятся и сами подбираются, когда проходите рядом.\n"
 	t += "Сделайте каменный топор и кирку ([b]%s[/b] — крафт), затем верстак и печь. Плавьте руду, стройте бур, генератор и ленты.\n\n" % k.call("craft")
 	t += "[b]%s %s %s %s[/b] — ходить, [b]%s[/b] — бег · [b]%s / %s[/b] — повернуть камеру · колесо — приблизить\n" % [k.call("move_up"), k.call("move_left"), k.call("move_down"), k.call("move_right"), k.call("sprint"), k.call("cam_left"), k.call("cam_right")]
 	t += "[b]ЛКМ[/b] — добывать (рядом с деревом или камнем) или стрелять · [b]ПКМ[/b] (держать) — чинить здание\n"

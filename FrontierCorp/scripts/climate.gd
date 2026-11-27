@@ -69,7 +69,7 @@ func heat_at(p: Vector3) -> float:
 				continue
 			seen[b] = true
 			var h := float(b.p("heat", 0.0))
-			if h == 0.0 or b.dead:
+			if h == 0.0 or b.dead or b.bstate.get("extinguished", false):
 				continue
 			sum += _heat_of(f, b, p, h)
 	return sum + magma_heat_at(p)
@@ -188,6 +188,8 @@ func _step_one(dt: float) -> void:
 	# 1.1.15: под навесом штаба, в бункере или под щитом — ни мороза, ни зноя (как от кислотного дождя)
 	if game.events != null and game.events.protected(pl.position):
 		f = clampf(f, cmin, cmax)
+	if game.island != null and game.island.sheltered(pl.position):
+		f = minf(f, cmax)
 	feel = f
 	var rec := float(c.get("recover", 4.0)) * dt
 	if feel < cmin:

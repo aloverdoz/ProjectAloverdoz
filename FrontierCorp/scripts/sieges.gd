@@ -112,6 +112,8 @@ func start() -> void:
 	# 13.10: при зоне за тучами босс выходит прямо из туч на краю зоны
 	if game.zone and game.zone.on():
 		origin = game.zone.edge_point(dir, 2.0)
+	if game.island != null:
+		origin = game.island.wave_origin()
 	var wdo: Dictionary = DB.data.waves
 	if str(wdo.get("boss_omen", "")) != "":
 		game.hud.omen(str(wdo.boss_omen), DB.color(wdo.get("omen_color", "#ff4a3a")), float(wdo.get("omen_time", 5.0)), str(wdo.get("omen_sound", "omen")))
@@ -128,7 +130,7 @@ func start() -> void:
 		var t: String = en._pick_type(groups)
 		if t == "":
 			continue
-		var e = en.spawn(t, origin + Vector3(randf_range(-10, 10), 0, randf_range(-10, 10)))
+		var e = en.spawn(t, origin if game.island != null else origin + Vector3(randf_range(-10, 10), 0, randf_range(-10, 10)))
 		if e:
 			e.target = game.factory.hq
 	for k in 6:

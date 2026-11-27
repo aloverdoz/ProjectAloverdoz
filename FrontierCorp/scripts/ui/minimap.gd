@@ -29,6 +29,7 @@ func setup(p_game, p_big: bool) -> void:
 	land.material = mat
 	add_child(land)
 	view_m = float(DB.setting("bigmap_range" if big else "minimap_range", 900.0 if big else 220.0))
+	if game.world.ocean and not big: view_m = 64.
 	_bind_world()
 
 
@@ -70,6 +71,10 @@ func _process(delta: float) -> void:
 	if not has_meta("bound"):
 		_bind_world()
 	var c := _center()
+	if game.world.ocean:
+		mat.set_shader_parameter("ocean",true)
+		mat.set_shader_parameter("chart_only",big)
+		mat.set_shader_parameter("chart_origin",Vector2(game.world.chart_origin)*World.C)
 	mat.set_shader_parameter("center", Vector2(c.x, c.z))
 	mat.set_shader_parameter("view_m", view_m)
 	mat.set_shader_parameter("rot", _rot())
@@ -118,6 +123,14 @@ func _draw() -> void:
 	if game == null or game.factory == null:
 		return
 	var px := size.x / view_m    # пикселей на метр
+	if big and game.world.ocean:
+		var footprint: float = World.ISLAND_CHUNK*World.C*px
+		for key in game.world.chart_tiles:
+			var at := to_screen(World.cell_to_world(key*game.world.ISLAND_CHUNK)-Vector3(World.C/2.,0,World.C/2.))
+			if not Rect2(Vector2.ZERO,size).grow(footprint*1.5).has_point(at): continue
+			draw_set_transform(at,_rot(),Vector2.ONE*px*World.C)
+			draw_texture(game.world.chart_tiles[key],Vector2.ZERO)
+		draw_set_transform(Vector2.ZERO,0.,Vector2.ONE)
 	# здания цветом своего раздела меню
 	for b in game.factory.all:
 		var sp := to_screen(b.center())
@@ -226,7 +239,7 @@ func _gui_input(ev: InputEvent) -> void:
 		if mb.pressed and mb.button_index == MOUSE_BUTTON_WHEEL_UP:
 			view_m = maxf(60.0, view_m * 0.85)
 		elif mb.pressed and mb.button_index == MOUSE_BUTTON_WHEEL_DOWN:
-			view_m = minf(game.world.W * World.C * 1.2, view_m * 1.18)
+			view_m = view_m*1.18 if game.world.ocean else minf(game.world.W * World.C * 1.2, view_m * 1.18)
 		elif mb.button_index == MOUSE_BUTTON_LEFT:
 			if mb.pressed:
 				_drag = true

@@ -4033,5 +4033,37 @@
    "landmark": true,
    "megaproject": true
   }
+ },
+ "tide_slab": {
+  "name": "Древняя плита",
+  "desc": "Хранилище острова. Передайте припасы до указанного дня, чтобы сохранить берег.",
+  "behavior": "hq",
+  "category": "",
+  "model": "tide_slab",
+  "size": 1,
+  "hp": 4000,
+  "cost": {},
+  "params": {
+   "slots": 60,
+   "buildable": false,
+   "transfer": 40,
+   "station_radius": 5,
+   "power": 20
+  }
+ },
+ "shore_canopy": {
+  "name": "Береговой навес",
+  "desc": "Полотно над соседней клеткой даёт тень и укрывает костёр от дождя. Поверните навес перед постройкой.",
+  "behavior": "decor",
+  "category": "decor",
+  "model": "shore_canopy",
+  "size": 1,
+  "hp": 100,
+  "cost": {
+   "branch": 4,
+   "leaves": 6,
+   "fiber": 2
+  },
+  "params": {}
  }
 }

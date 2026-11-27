@@ -162,6 +162,8 @@ func host_act(name: String, d: Dictionary, sid: int) -> String:
 	if online() and n.server != null:
 		n.server.log_line("Админ %s: %s %s" % [_nick_of(sid), name, d])
 	match name:
+		"shore_price":
+			return game.island.set_price(int(d.get("ring",0)),d.get("cost")) if game.island != null else "В этом мире нет острова"
 		"players":
 			return ""
 		"give":
@@ -728,6 +730,45 @@ func _focus(se: LineEdit) -> void:
 
 
 func _tab_world(body: Control) -> void:
+	if game.island != null:
+		body.add_child(UI.section("Остров · стоимость одной клетки"))
+		body.add_child(UI.small("Ряды 1–8 по умолчанию стоят один базовый материал из запасов. Здесь можно задать свой состав цены. Ноль убирает предмет."))
+		var row := UI.hbox(8)
+		var ring := SpinBox.new()
+		ring.min_value = 1
+		ring.max_value = 10000000
+		ring.allow_greater = true
+		ring.prefix = "Ряд"
+		var item := OptionButton.new()
+		var ids: Array = DB.data.items.keys()
+		ids.sort_custom(func(a,b): return DB.item_name(a)<DB.item_name(b))
+		for id in ids: item.add_item(DB.item_name(id))
+		var qty := SpinBox.new()
+		qty.max_value = 100000
+		var price: Dictionary = game.island.cost(1).duplicate()
+		var summary := UI.small("")
+		var redraw := func():
+			var parts := PackedStringArray()
+			for k in price: parts.append("%s ×%d" % [DB.item_name(k),price[k]])
+			summary.text = "Бесплатно" if parts.is_empty() else ", ".join(parts)
+			qty.value = price.get(ids[item.selected],0)
+		item.item_selected.connect(func(_i): redraw.call())
+		ring.value_changed.connect(func(v):
+			price.clear()
+			price.merge(game.island.cost(int(v)))
+			redraw.call())
+		row.add_child(ring)
+		row.add_child(item)
+		row.add_child(qty)
+		row.add_child(UI.button("Внести",func():
+			var id = ids[item.selected]
+			if qty.value == 0: price.erase(id)
+			else: price[id] = int(qty.value)
+			redraw.call()))
+		row.add_child(UI.button("Сохранить ряд",func(): act("shore_price",{"ring":int(ring.value),"cost":price.duplicate()})))
+		body.add_child(row)
+		body.add_child(summary)
+		redraw.call()
 	body.add_child(UI.section("Время суток"))
 	var g1 := _grid(body)
 	for t in [["Утро", 0.27], ["День", 0.45], ["Вечер", 0.7], ["Ночь", 0.92]]:

@@ -1,9 +1,9 @@
 @echo off
 setlocal
 pushd "%~dp0" || exit /b 1
-set "app=FrontierCorp-Windows\FrontierCorp.exe"
+set "app=FrontierCorp.exe"
 if not exist "%app%" (
- echo Run Install.cmd first.
+ echo Extract the Windows release into this folder first.
  pause
  exit /b 1
 )

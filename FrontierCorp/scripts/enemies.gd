@@ -175,6 +175,8 @@ func _update_rush(delta: float) -> void:
 	var zn = game.zone
 	var at_edge: bool = zn != null and zn.on()
 	var origin: Vector3 = zn.edge_point(dir, 1.5) if at_edge else hqp + dir * float(DB.data.waves.get("spawn_dist", 70))
+	if game.island != null:
+		origin = game.island.wave_origin()
 	var groups: Array = DB.data.waves.get("groups", [{"enemy": "crawler", "weight": 1}])
 	var w_real := wave
 	wave = maxi(wave, rush_n)   # состав — как у волны с тем же номером
@@ -186,7 +188,7 @@ func _update_rush(delta: float) -> void:
 		if at_edge:
 			var ang := a + randf_range(-0.22, 0.22)
 			at = zn.edge_point(Vector3(cos(ang), 0, sin(ang)), randf_range(0.5, 3.0))
-		spawn(t, at)
+		spawn(t, origin if game.island != null else at)
 	wave = w_real
 	_spawn_hp_k = 1.0
 	_spawn_dmg_k = 1.0
@@ -790,6 +792,8 @@ func start_wave(mult := 1.0) -> void:
 	var at_edge: bool = zn != null and zn.on()
 	if at_edge:
 		origin = zn.edge_point(wave_dir, 1.5)
+	if game.island != null:
+		origin = game.island.wave_origin()
 	var pc := pace()
 	var count := int(float(wd.get("base_count", 4)) + float(wd.get("growth", 2.5)) * (eff_wave() - 1))
 	count = maxi(1, int(round(count * float(pc.get("k_count", 1.0)))))
@@ -803,7 +807,9 @@ func start_wave(mult := 1.0) -> void:
 	for i in count:
 		var t := _pick_type(groups)
 		if t != "":
-			if at_edge:
+			if game.island != null:
+				spawn(t,origin)
+			elif at_edge:
 				# вдоль края, веером в сторону волны
 				var ang := atan2(wave_dir.z, wave_dir.x) + randf_range(-0.22, 0.22)
 				spawn(t, zn.edge_point(Vector3(cos(ang), 0, sin(ang)), randf_range(0.5, 3.0)))
@@ -959,6 +965,7 @@ func building_near(pos: Vector3):
 
 
 func _update_packs(delta: float) -> void:
+	if game.island != null: return
 	var cfg := _roam_cfg()
 	if not bool(cfg.get("enabled", true)) or not game.module("monsters"):
 		return
@@ -1304,7 +1311,7 @@ func update(delta: float) -> void:
 			e.pos = before
 		if game.world.wrap:
 			e.pos = World.wrap_pos(e.pos)
-		else:
+		elif not game.world.ocean:
 			e.pos.x = clampf(e.pos.x, 1.0, game.world.W * C - 1.0)
 			e.pos.z = clampf(e.pos.z, 1.0, game.world.W * C - 1.0)
 		e.pos.y = fac.support_at(e.pos)

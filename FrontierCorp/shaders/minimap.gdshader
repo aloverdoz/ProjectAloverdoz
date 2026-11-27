@@ -10,6 +10,9 @@ uniform float view_m = 200.0;
 uniform float rot = 0.0;
 uniform float world_size = 768.0;
 uniform float cell = 2.0;
+uniform vec2 chart_origin;
+uniform bool ocean=false;
+uniform bool chart_only=false;
 uniform bool wrap = false;
 uniform bool round_mask = true;
 uniform float aspect = 1.0;
@@ -36,9 +39,10 @@ void fragment() {
 	float s = sin(rot);
 	vec2 d = vec2(c * u.x + s * u.y, -s * u.x + c * u.y) * view_m;
 	vec2 p = center + d;
-	vec2 wuv = p / world_size;
-	if (!wrap && (wuv.x < 0.0 || wuv.y < 0.0 || wuv.x > 1.0 || wuv.y > 1.0)) {
-		COLOR = vec4(0.06, 0.07, 0.09, 1.0);
+	vec2 wuv = (p-chart_origin) / world_size;
+	if (chart_only) {COLOR=vec4(c_water,1.0);}
+	else if (!wrap && (wuv.x < 0.0 || wuv.y < 0.0 || wuv.x > 1.0 || wuv.y > 1.0)) {
+		COLOR = ocean ? vec4(c_water,1.) : vec4(0.06,0.07,0.09,1.);
 	} else {
 		wuv = fract(wuv);
 		vec4 sp = texture(splat, wuv);
@@ -57,7 +61,7 @@ void fragment() {
 		col *= clamp(1.0 + (-hx - hz) * 0.35, 0.6, 1.35) * (0.92 + h * 0.025);
 		float w = texture(water, wuv).r;
 		col = mix(col, c_water, smoothstep(0.35, 0.6, w));
-		if (fog_on) {
+		if (fog_on && !ocean) {
 			// туман войны: неоткрытое тёмное, с лёгкой рябью облаков
 			float f = texture(fog_tex, wuv).r;
 			float n = fract(sin(dot(floor(p / 6.0), vec2(12.9898, 78.233))) * 43758.5453);

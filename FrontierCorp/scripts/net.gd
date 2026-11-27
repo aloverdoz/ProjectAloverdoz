@@ -21,7 +21,7 @@ const REPLICATED := ["place", "fuse", "detach", "demolish", "wire", "unwire", "r
 ## 1.7: эти рассылаются остальным, только если у хозяина получилось (иначе у всех всплывает «нельзя»).
 const MUST_SUCCEED := ["place", "fuse", "detach", "junction_at", "repair", "zone_expand", "zone_patch"]   # 1.1.15: зона — тоже
 ## Команды с рюкзаком игрока: хозяин выполняет от его лица и возвращает рюкзак.
-const ACTOR := ["use_item", "take", "take_ready", "put", "put_all", "mv", "xmv", "take_slots", "btrash", "bag_up", "store_hq", "stash", "donate", "c_deliver", "sell", "buy", "pattern", "mbuy", "msell", "pay", "gift", "order_deal", "npc_trade"]
+const ACTOR := ["shore_salvage","shore_expand","shore_offer","shore_relight","shore_field","use_item", "take", "take_ready", "put", "put_all", "mv", "xmv", "take_slots", "btrash", "bag_up", "store_hq", "stash", "donate", "c_deliver", "sell", "buy", "pattern", "mbuy", "msell", "pay", "gift", "order_deal", "npc_trade"]
 ## 16: что нельзя делать с чужим зданием (правило комнаты «Чужие постройки»).
 const OWN_CMDS := ["take", "take_ready", "take_slots", "xmv", "btrash", "drain", "demolish", "rotate", "rotate_to", "junction_at", "bcfg", "bstate", "recipe", "wire", "unwire", "reset_net", "fuse", "detach"]
 const PUT_CMDS := ["put", "put_all"]
@@ -620,18 +620,20 @@ func _player_record(n: String) -> Dictionary:
 		var me: Dictionary = r.get("me", {})
 		var out := {"pos": r.get("pos", me.get("pos", [0, 0])), "hp": r.get("hp", me.get("hp", 200)), "food": me.get("food", 100), "water": me.get("water", 100),
 			"inv": r.get("inv", me.get("inv", [])), "hot_builds": me.get("hot_builds", []), "selected": me.get("selected", 0)}
-		for k in ["clothes", "bag"]:
+		for k in ["clothes", "bag","hot_items"]:
 			if me.has(k):
 				out[k] = me[k]
 		return out
 	var inv := Inventory.new(36)
+	if game.island != null: inv.add("salvage_rod",1)
 	for k in DB.data.world.get("start_inventory", {}):
 		inv.add(k, int(DB.data.world.start_inventory[k]))
 	var hp: Vector3 = game.factory.hq.center() if game.factory.hq else game.player.position
 	var ob = game.coop.outpost_of(n) if separate() else null
 	if ob != null:
 		hp = ob.center()
-	return {"pos": [hp.x + randf_range(-6, 6), hp.z + 8], "hp": 200, "food": 100, "water": 100, "inv": inv.to_array(), "hot_builds": [], "selected": 0}
+	var entry: Vector3 = game.island.landing() if game.island != null else hp+Vector3(randf_range(-6,6),0,8)
+	return {"pos": [entry.x,entry.z], "hp": 200, "food": 100, "water": 100, "inv": inv.to_array(), "hot_builds": [], "selected": 0}
 
 
 @rpc("authority", "call_remote", "reliable")
@@ -1847,16 +1849,18 @@ func inv_report(arr: Array, graves = null, ack := -1) -> void:
 
 func _send_world() -> void:
 	var td: Dictionary = game.tech.to_dict()
+	var ocean_drift: Array = game.island.fishing.records() if game.island != null else []
 	var hq: Array = game.factory.hq.inv.to_array() if game.factory.hq else []
 	for pid in peers:
 		if pid != 1:
-			rpc_id(pid, "world_tick", game.day_t, game.day_n, credits_for(pid), game.price_mult, td, game.events.active, hq, game.enemies.waves_survived, game.factory.hq.hp if game.factory.hq != null else -1.0, game.progress17.daily if game.progress17 != null else {})
+			rpc_id(pid, "world_tick", game.day_t, game.day_n, credits_for(pid), game.price_mult, td, game.events.active, hq, game.enemies.waves_survived, game.factory.hq.hp if game.factory.hq != null else -1.0, game.progress17.daily if game.progress17 != null else {},ocean_drift)
 
 
 @rpc("authority", "call_remote", "reliable")
-func world_tick(day_t: float, day_n: int, credits: int, prices: Dictionary, tech: Dictionary, ev: Dictionary, hq_inv: Array, waves := -1, hq_hp := -1.0, daily := {}) -> void:
+func world_tick(day_t: float, day_n: int, credits: int, prices: Dictionary, tech: Dictionary, ev: Dictionary, hq_inv: Array, waves := -1, hq_hp := -1.0, daily := {}, ocean_drift := []) -> void:
 	if game == null:
 		return
+	if game.island != null: game.island.fishing.apply_snapshot(ocean_drift)
 	if game.progress17 != null and not daily.is_empty():
 		game.progress17.set_daily(daily)   # B-12 r5: заказ дня — хозяйский
 	if waves >= 0:
@@ -2649,6 +2653,12 @@ func deny(name: String, a: Dictionary, who: String) -> String:
 
 ## Своя база нового игрока: точка в стороне от штаба, участок земли и аванпост с набором.
 func _make_base(n: String) -> void:
+	if game.island != null:
+		for c in game.world.island_cells:
+			if game.factory.can_place("outpost",c) == "":
+				game.cmd("coop_base",{"cell":c,"rc":Vector2i.ZERO,"owner":n})
+				return
+		return
 	# B-1 r4: участок — по числу уже созданных баз (а не подключённых), занятый чужим аванпостом пропускаем
 	var k0 := 1
 	for b in game.factory.all:
@@ -3252,3 +3262,32 @@ func _find_test() -> void:
 		join(str(nf.ip), int(nf.get("port", 0)), "123")
 	else:
 		join(addr, 0, "123", false)
+
+
+@rpc("authority","call_remote","reliable")
+func shore_event(data: Dictionary, added: Array, removed: Array) -> void:
+	if game == null or game.island == null: return
+	if not added.is_empty() or not removed.is_empty():
+		game.island.change_land(added,removed)
+	game.island.read_state(data)
+
+@rpc("authority","call_remote","reliable")
+func shore_door(cell: Vector2i) -> void:
+	if game != null and game.island != null: game.island.show_door(cell)
+
+@rpc("authority","call_remote","reliable")
+func shore_fire(cell: Vector2i, lit: bool) -> void:
+	if game == null or game.island == null: return
+	var b = game.factory.grid.get(cell)
+	if b != null and b.type == "campfire": game.island.set_fire(b,lit)
+
+@rpc("authority","call_remote","reliable")
+func shore_field(cell: Vector2i, idx: int, span: int, quality: String, next_price: int, count: int) -> void:
+	if game == null or game.island == null: return
+	var w = game.world
+	for c in w.field_cells(cell,span):
+		w.set_deposit(c,idx)
+		w.set_purity(c,quality)
+	w.ordered_fields[cell] = [idx,span,quality]
+	w.order_price = next_price
+	w.orders_placed = count

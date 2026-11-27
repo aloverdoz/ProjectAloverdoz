@@ -5,6 +5,7 @@ extends Node3D
 
 const C := World.C
 
+var island
 var world: World
 var factory: Factory
 var enemies: Enemies
@@ -252,7 +253,7 @@ func _ready() -> void:
 	npcs = preload("res://scripts/npcs.gd").new(self)
 	orders = preload("res://scripts/orders.gd").new(self)
 	for a in OS.get_cmdline_user_args():
-		if a == "--test=perf_landing":
+		if a in ["--test=perf_landing", "--test=ocean"]:
 			continue
 		# проверки старых частей игры идут с открытым деревом (свою проверку дерево делает само)
 		if a.begins_with("--test=") and a != "--test=tech":
@@ -312,6 +313,10 @@ func _ready() -> void:
 		if a.begins_with("--map="):
 			map_file = a.substr(6)
 			mode = "fixed"
+	var ocean_mode: bool = ng.save.has("ocean_island") if has_save else str(ng.get("map_mode", "ocean")) == "ocean" and mode != "fixed"
+	if ocean_mode:
+		island = preload("res://scripts/ocean_island.gd").new(self)
+		world.ocean = true
 	var loaded := false
 	if ng.has("save") and ng.save.get("map") is Dictionary:
 		world.load_map(ng.save.map)
@@ -336,7 +341,12 @@ func _ready() -> void:
 			if e is Dictionary and str(e.get("id", "")) == rid:
 				ov["res_k"] = float(e.get("k", 1.0))
 		var t0 := Time.get_ticks_msec()
-		world.generate(int(ng.get("seed", randi() % 999999 + 1)), ov)
+		var map_seed := int(ng.get("seed", randi() % 999999 + 1))
+		if map_seed == 0: map_seed = randi_range(1,999999)
+		if island != null:
+			world.generate_island(map_seed, clampi(int(ov.get("size",256)),64,1152))
+		else:
+			world.generate(map_seed, ov)
 		gen_ms = Time.get_ticks_msec() - t0
 	factory = Factory.new()
 	factory.game = self
@@ -418,20 +428,25 @@ func _ready() -> void:
 	if ng.has("save"):
 		load_game(ng.save)
 	else:
-		tutorial.start_new()
+		if island == null: tutorial.start_new()
 		_start_base()
 		zone.setup(factory.hq.center() if factory.hq else World.cell_to_world(world.center))
-		star.place_elevator()
-		dungeons.place_caves()
-		dungeons.generate()
+		if island == null:
+			star.place_elevator()
+			dungeons.place_caves()
+			dungeons.generate()
 		if factory.hq:
 			fog.reveal(factory.hq.center(), float(DB.setting("fog_start_radius", 70.0)))
-	if not Net.dedicated and not Net.active():
+	if island != null:
+		island.setup(ng.get("save", {}).get("ocean_island", {}))
+	if island == null and not Net.dedicated and not Net.active():
 		add_child(preload("res://scripts/hoppers.gd").new())
 	_make_shuttle()
 	_setup_quests()
 	cam_focus = player.position
-	if not ng.has("save") and Prefs.get_value("show_hints", true) and not tutorial.active:
+	if island != null and not ng.has("save"):
+		notify("Океан • выберите удочку в ячейке 1. ЛКМ по воде — заброс. E у плиты — заказ и расширение.", UI.ACCENT)
+	if island == null and not ng.has("save") and Prefs.get_value("show_hints", true) and not tutorial.active:
 		hud.open("help")
 	if str(ng.get("command", "")) != "":
 		console.run.call_deferred(str(ng.command))
@@ -464,7 +479,7 @@ func _warmup() -> void:
 	holder.global_transform = camera.global_transform.translated_local(Vector3(0, 0, -8))
 	var seen := {}
 	var k := 0
-	for mid in DB.data.models:
+	for mid in (["tide_slab","tree_oak","tree_pine","salvage_rod","lp_barrel","drop_log"] if island != null else DB.data.models.keys()):
 		var external := str(ModelLib.model(mid).get("glb", ""))
 		if external != "" and not ModelLib._glb.has(external):
 			continue
@@ -1615,6 +1630,8 @@ func _check_test_args() -> void:
 					player.position = b.center() + Vector3(b.size * World.C * 0.5 + 1.5, 0, 0)
 					hud.open_building(b)
 					break
+		elif a == "--test=ocean":
+			preload("res://scripts/ocean_test.gd").run.call_deferred(self)
 		elif a.begins_with("--test="):
 			DemoSetup.test(self, a.substr(7))
 
@@ -1743,10 +1760,14 @@ func _pose_sheet() -> void:
 func _start_base() -> void:
 	var wd: Dictionary = DB.data.world
 	var c := world.center - Vector2i(1, 1)
-	for dx in range(-2, 5):
-		for dz in range(-2, 5):
-			world.remove_node(c + Vector2i(dx, dz))
-	factory.place("hq", c, 0)
+	if island != null:
+		factory.place("tide_slab", world.center, 0)
+		player.inv.add("salvage_rod", 1)
+	else:
+		for dx in range(-2, 5):
+			for dz in range(-2, 5):
+				world.remove_node(c + Vector2i(dx, dz))
+		factory.place("hq", c, 0)
 	var sh: Dictionary = wd.get("start_hq", {})
 	for k in sh:
 		factory.hq.inv.add(k, int(sh[k]))
@@ -1760,7 +1781,10 @@ func _start_base() -> void:
 			player.inv.add(k, int(pd.start_items[k]))
 		credits += int(pd.get("start_credits", 0))
 	player.seed_hotbar()
-	player.position = factory.hq.center() + (Vector3(-1.6, 0, .8) if strategy else Vector3(6, 0, 6))
+	player.position = island.landing() if island != null else factory.hq.center() + (Vector3(-1.6, 0, .8) if strategy else Vector3(6, 0, 6))
+	if island != null:
+		player.pin_item(0,"salvage_rod")
+		player.selected = 0
 
 
 # ---------------------------------------------------------------- окружение и свет
@@ -2138,6 +2162,7 @@ func _process(delta: float) -> void:
 		var _t_36 := Time.get_ticks_usec() if prof_on else 0
 		_update_day(delta)
 		if prof_on: _prof("_update_day", _t_36)
+	if island != null: island.tick(delta)
 	play_time += delta
 	var _t_40 := Time.get_ticks_usec() if prof_on else 0
 	_autosave(delta)
@@ -2412,7 +2437,7 @@ func _update_hover() -> void:
 			# луч до земли с холмами и фундаментами: несколько уточнений по высоте
 			var hp := o + n * t
 			for i in 6:
-				var h: float = factory.support_at(hp)
+				var h: float = .20 if island != null and world.water_at(World.world_to_cell(hp)) else factory.support_at(hp)
 				t = (h - o.y) / n.y
 				if t <= 0.0:
 					break
@@ -2423,8 +2448,9 @@ func _update_hover() -> void:
 	if snap != null:
 		hover_cell = snap
 	var gmat: ShaderMaterial = world.ground_mat_of(split.cur if split != null and split.active else 0)
-	gmat.set_shader_parameter("cursor", hover_point)
-	gmat.set_shader_parameter("grid_on", 1.0 if (build_type != "" or demolish) else 0.0)
+	if gmat != null:
+		gmat.set_shader_parameter("cursor", hover_point)
+		gmat.set_shader_parameter("grid_on", 1.0 if (build_type != "" or demolish) else 0.0)
 	_update_wire_preview()
 	_update_wire_hl(get_process_delta_time())
 	if ghost:
@@ -2724,7 +2750,7 @@ func ui_action(what: String) -> void:
 		"zone_pick":
 			var onz := not zone_pick
 			cancel_build()
-			zone_pick = onz and zone.on()
+			zone_pick = onz and (island != null or zone.on())
 		"wire":
 			if not factory.wired():
 				# 21: без проводов клавиша показывает карту энергии
@@ -2810,6 +2836,8 @@ func mode_info() -> Dictionary:
 		return {"id": id, "title": title, "hint": hint, "color": DB.color(cols.get(id, def_col)), "edge": float(c.get("edge_" + id, edge))}
 	if field_selection >= 0:
 		return mk.call("field", DB.item_name(world.deposits[field_selection].item), "ЛКМ — орбитальный заказ · ПКМ — отмена", "#74dadd", 0.25)
+	if zone_pick and island != null:
+		return mk.call("zone","РАСШИРЕНИЕ ОСТРОВА","ЛКМ по воде у берега · ПКМ — выйти","#7adbc8",.3)
 	if zone_pick:
 		return mk.call("zone", "ВЫБОР УЧАСТКА", "Наведите рамку на тучи у края открытой земли · ПКМ — выйти", "#b38cff", 0.45)
 	if pview != null and pview.on:
@@ -2828,6 +2856,12 @@ func mode_info() -> Dictionary:
 func mode_text() -> String:
 	if field_selection >= 0:
 		return "Месторождение · %d кредитов · %s" % [world.order_price, world.order_issue(field_selection, hover_cell)]
+	if zone_pick and island != null:
+		var n: int = island.ring(hover_cell)
+		var parts := PackedStringArray()
+		for k in island.cost(n):
+			parts.append("%s ×%d" % [DB.item_name(k),island.cost(n)[k]])
+		return "Ряд %d · %s · %s" % [n,", ".join(parts),island.issue(hover_cell)]
 	if zone_pick:
 		var rc: Vector2i = zone.patch_at(hover_point)
 		var why: String = zone.patch_can(rc)
@@ -2867,6 +2901,8 @@ func mode_text() -> String:
 		lmb_t = "стрелять"
 	elif not target.is_empty() and target.kind in ["node", "deposit"]:
 		lmb_t = "добывать"
+	if island != null and player.selected_item() == "salvage_rod" and not strategy:
+		return "ЛКМ — забросить / подтянуть · E у плиты — берег и дары · B — строить · Tab — рюкзак"
 	return "ЛКМ — %s · ПКМ (держать) — чинить · E — открыть здание · B — строить · Tab — инвентарь · C — крафт" % lmb_t
 
 
@@ -3063,11 +3099,15 @@ func _click_world() -> void:
 		return
 	if field_selection >= 0:
 		lmb = false
-		if world.order_field(field_selection, hover_cell):
+		if (cmd("shore_field", {"idx":field_selection,"cell":hover_cell}) if island != null else world.order_field(field_selection, hover_cell)):
 			cancel_build()
 		return
 	if blueprints.active():
 		blueprints.click(hover_cell)
+		lmb = false
+		return
+	if zone_pick and island != null:
+		cmd("shore_expand", {"cell":hover_cell})
 		lmb = false
 		return
 	if zone_pick:
@@ -3086,6 +3126,10 @@ func _click_world() -> void:
 				notify(DB.tx("w_miss", "Щёлкните по зданию, которому нужна энергия (оно подсветится)"), Color(1, 0.85, 0.5))
 		else:
 			_wire_release()
+		return
+	if island != null and not strategy and player.selected_item() == "salvage_rod" and not demolish and build_type == "":
+		lmb = false
+		island.fishing.click(player,hover_point)
 		return
 	if strategy and not demolish and build_type == "":
 		# 1.1.15: стратегия — щелчок по зданию открывает его окно (по камню и дереву — добыча, в _primary_action)
@@ -3298,6 +3342,16 @@ func cmd(name: String, a: Dictionary):
 
 func _cmd_impl(name: String, a: Dictionary):
 	match name:
+		"shore_salvage":
+			return island != null and island.fishing.collect(int(a.get("id",0)),player)
+		"shore_expand":
+			return island != null and a.get("cell") is Vector2i and island.expand(a.cell)
+		"shore_offer":
+			return island != null and island.deliver()
+		"shore_relight":
+			return island != null and island.relight(a.get("b"))
+		"shore_field":
+			return island != null and a.get("cell") is Vector2i and world.order_field(int(a.get("idx",-1)),a.cell)
 		"scan":
 			return scanner.scan(str(a.id))
 		"bag_up":
@@ -4672,7 +4726,10 @@ func _setup_quests() -> void:
 		var q: Dictionary = DB.data.quests[id]
 		if str(q.get("text", "")).strip_edges() == "":
 			continue
-		quests.append({"id": id, "text": DB.t(str(q.text)), "reward": int(q.get("reward", 0)), "goal": str(q.get("goal", "have")),
+		var title := DB.t(str(q.text))
+		if island != null and q.get("goal","") == "have" and q.get("item","") in ["branch","log","fiber","stone"]:
+			title = "Добудьте %s ×%d из морского груза" % [DB.item_name(q.item),int(q.n)]
+		quests.append({"id": id, "text": title, "reward": int(q.get("reward", 0)), "goal": str(q.get("goal", "have")),
 			"n": max(1, int(q.get("n", 1))), "item": str(q.get("item", "")), "buildings": q.get("buildings", []), "hint": DB.t(str(q.get("hint", "")))})
 
 
@@ -4814,6 +4871,11 @@ func _check_quests() -> void:
 
 
 func quest_text() -> String:
+	if island != null:
+		var text: String = "[color=#ffcc66]ДАР КО ДНЮ %d[/color]" % island.due
+		for id in island.request:
+			text += "\n%s   %d / %d" % [DB.item_name(id),island.paid.get(id,0),island.request[id]]
+		return text+"\n[color=#91c7be]"+("Дар принят" if island.complete() else "E у плиты · передать припасы")+"[/color]"
 	var s := ""
 	for i in quests.size():
 		if i < quest_i - 1 or i > quest_i + 2:
@@ -4836,6 +4898,7 @@ func quest_text() -> String:
 
 ## Подсказка к текущей задаче (при наведении на список задач).
 func quest_hint() -> String:
+	if island != null: return island.description()+"\nE у плиты — передать материалы или насыпать клетку."
 	if quest_i >= quests.size():
 		return ""
 	var q: Dictionary = quests[quest_i]
@@ -4946,6 +5009,8 @@ func save_dict() -> Dictionary:
 		"drops": drops.list.map(func(d): return [d.id, d.n, d.pos.x, d.pos.y, d.pos.z] + ([d.slot] if not d.slot.is_empty() else [])),   # A-12 r5: износ/свежесть
 		"nests_dead": world.nests.filter(func(n): return not n.alive).map(func(n): return world.nests.find(n)),
 		"nest_guards": _nest_guards_save()}
+	if island != null:
+		data["ocean_island"] = island.state().merged({"drift":island.fishing.records()})
 	if Net.is_host():
 		data["net_players"] = Net.players_save()
 	if split != null:
@@ -5052,6 +5117,8 @@ func load_game(data: Dictionary) -> void:
 		if nb.hp < nb.maxhp:
 			factory.damaged[nb] = true   # B-14: после загрузки повреждённые снова чинятся (авторемонт, роботы)
 		factory._tint(nb)
+		if island != null and nb.type == "campfire" and nb.bstate.get("extinguished",false):
+			island.fire_visual(nb,false)
 	factory.loading = false
 	carriers.restore_flights(data.get("carriers", []))
 	# провода: в старых сохранениях их нет — подключаем всё само
@@ -5443,7 +5510,14 @@ func _update_wire_hl(delta: float) -> void:
 			mi.position = World.cell_to_world(cell)
 			mi.position.y = world.height_at(mi.position) + 0.15
 			(mi.material_override as StandardMaterial3D).albedo_color = Color(0.25, 0.9, 0.8, 0.40) if good else Color(1.0, 0.31, 0.23, 0.42)
-	if zone_pick:
+	if zone_pick and island != null:
+		var mark := _hl_box(n)
+		n += 1
+		mark.show()
+		mark.scale = Vector3(1.95,.075,1.95)
+		mark.position = World.cell_to_world(hover_cell)+Vector3.UP*(.82 if world.island_cells.has(hover_cell) else .27)
+		mark.material_override.albedo_color = Color(.2,.85,.65,.62) if island.issue(hover_cell)=="" else Color(.88,.34,.18,.52)
+	elif zone_pick:
 		var zrc: Vector2i = zone.patch_at(hover_point)
 		zone.show_pick(zrc, zone.patch_can(zrc) == "")
 	if wiring and not (hud.any_window_open() and _ui_hovered()):

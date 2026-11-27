@@ -2660,5 +2660,39 @@
   "stack": 100,
   "price": 4500,
   "desc": "Транспорт на 100 единиц груза за рейс."
+ },
+ "salvage_rod": {
+  "name": "Морская удочка",
+  "desc": "Забросьте поплавок щелчком по морю. Щёлкните ещё раз, чтобы подтянуть груз или подсечь рыбу при поклёвке.",
+  "tool": "fishing",
+  "color": "#e5b46f",
+  "category": "Инструменты",
+  "model": "salvage_rod",
+  "price": 8,
+  "stack": 1
+ },
+ "reef_fish": {
+  "name": "Рифовый окунь",
+  "desc": "Свежий улов. Можно съесть из рюкзака.",
+  "category": "Еда",
+  "color": "#6cc8c0",
+  "model": "reef_fish",
+  "price": 4,
+  "food": 24,
+  "stack": 20,
+  "spoil": 900
+ },
+ "tree_seed": {
+  "name": "Семена деревьев",
+  "desc": "Семена островных деревьев. Используйте в рюкзаке у свободной клетки, чтобы посадить дерево.",
+  "category": "Сырьё",
+  "color": "#ccb56f",
+  "model": "tr_sapling",
+  "stack": 50,
+  "price": 2,
+  "plant": "tree_oak",
+  "plant_young": "young_oak",
+  "use_sound": "build",
+  "scan": 0
  }
 }

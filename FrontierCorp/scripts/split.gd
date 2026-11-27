@@ -162,7 +162,10 @@ func start(dev: int) -> void:
 	p.p2 = true
 	game.add_child(p)
 	p.build()
-	p.position = game.player.position + Vector3(2.5, 0, 1.5)
+	p.position = game.island.landing() if game.island != null else game.player.position + Vector3(2.5, 0, 1.5)
+	if game.island != null and p2_start_inv.is_empty() and p2_start_extra.is_empty():
+		p.inv.add("salvage_rod",1)
+		p.pin_item(0,"salvage_rod")
 	if not p2_start_extra.is_empty():
 		p.bag_level = int(p2_start_extra.get("bag", 0))
 		p.apply_bag()

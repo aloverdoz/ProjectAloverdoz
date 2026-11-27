@@ -548,7 +548,7 @@ func canopy_on() -> bool:
 
 func _update_canopy() -> void:
 	_clear_canopy()
-	if hq == null or hq.dead or not bool(DB.setting("hq_canopy", true)) or not DB.data.models.has("hq_canopy"):
+	if game.island != null or hq == null or hq.dead or not bool(DB.setting("hq_canopy", true)) or not DB.data.models.has("hq_canopy"):
 		return
 	var b: B = hq
 	var dv := Vector3(DIRS[b.dir].x, 0, DIRS[b.dir].y)
@@ -792,7 +792,11 @@ func can_place(type: String, cell: Vector2i) -> String:
 		return DB.tx("strat_no_b", "В «Стратегии» это здание не нужно")
 	var player_cells: Array = game.player.occupied_cells() if game.player and not game.strategy else []   # в стратегии героя нет
 	var is_f: bool = d.get("behavior", "") == "foundation"
+	if type == "orbital_elevator" and game.island != null and all.any(func(b): return b.type == type):
+		return "Орбитальный лифт уже построен"
 	for c in footprint(type, cell):
+		if game.world.ocean and not game.world.island_cells.has(c) and not (str(d.get("params",{}).get("water_item","")) != "" and Factory.DIRS.any(func(dir): return game.world.island_cells.has(c+dir))):
+			return "Сначала расширьте остров"
 		var why := _cell_why(c, bool(DB.bparam(type, "on_water", is_f)))
 		if why != "":
 			return why
@@ -3620,7 +3624,7 @@ func _update_lights() -> void:
 	var night: float = 1.0 - game.daylight()
 	for b in lights:
 		b.light.light_energy = night * 2.2
-		b.light.visible = night > 0.05
+		b.light.visible = night > 0.05 and not b.bstate.get("extinguished", false)
 
 
 # ---------------------------------------------------------------- дым, пар, искры
@@ -3664,6 +3668,7 @@ func _update_emitters(delta: float) -> void:
 			for i in station.parts_with_role("scanner"):
 				var xf: Transform3D = station.parts[i].local
 				station.set_part_xform(b, i, xf.rotated_local(Vector3.UP, sin(float(b.bstate.scan_time)*1.6)*0.8))
+		if b.type == "campfire" and b.bstate.get("extinguished",false): continue
 		var em: Array = ModelLib.model(DB.building(b.type).get("model", b.type)).get("emitters", [])
 		var damaged_b: bool = b.hp < b.maxhp * 0.5
 		if em.is_empty() and not damaged_b:

@@ -846,7 +846,7 @@ func update(delta: float, aim_point: Vector3, cam_yaw: float) -> void:
 				bn.rotation = Vector3.ZERO
 			food = max(food, 60.0)
 			water = max(water, 60.0)
-			position = game.factory.hq.center() + Vector3(5, 0, 5) if game.factory.hq else position
+			position = game.island.landing() if game.island != null else (game.factory.hq.center() + Vector3(5, 0, 5) if game.factory.hq else position)
 			game.cam_focus = position
 			game.notify("Герой восстановлен у штаба", Color(0.6, 1, 0.7))
 		return
@@ -883,12 +883,14 @@ func update(delta: float, aim_point: Vector3, cam_yaw: float) -> void:
 		position = np
 	if game.world.wrap:
 		position = World.wrap_pos(position)
-	else:
+	elif not game.world.ocean:
 		var lim: float = game.world.W * World.C - 1.0
 		position.x = clampf(position.x, 1.0, lim)
 		position.z = clampf(position.z, 1.0, lim)
 	# высота: земля, фундамент или крыша; прыжок и падение — с силой тяжести
 	var sup: float = support(position) - (float(DB.setting("wade_depth", 0.85)) if in_water() else 0.0)
+	if game.world.ocean and in_water():
+		sup = game.world.ocean_surface(position,game.island.fishing.clock).x - .48
 	_update_jump(delta, sup)
 	aim = aim_point
 	_animate(delta, running)
@@ -1388,10 +1390,17 @@ func in_water() -> bool:
 func _blocked(p: Vector3) -> bool:
 	# забраться можно на ступеньку не выше «Высоты шага» (в прыжке — выше)
 	var climb := float(DB.setting("climb_height", 0.7))
-	var base_y := position.y + (float(DB.setting("wade_depth", 0.85)) if in_water() else 0.0)
+	var ocean: bool = game.world.ocean
+	var swimming := in_water()
+	if ocean and not swimming and game.world.water_at(World.world_to_cell(p)):
+		return true
+	var base_y := position.y + (float(DB.setting("wade_depth",0.85)) if swimming and not ocean else 0.)
+
 	for off in [Vector3.ZERO,Vector3.RIGHT*.28,Vector3.LEFT*.28,Vector3.BACK*.28,Vector3.FORWARD*.28]:
 		var probe: Vector3 = p + off
 		var c := World.world_to_cell(probe)
+		if ocean and game.world.water_at(c) and game.factory.grid.get(c) == null:
+			continue
 		# 21: крыша невысокого здания — как ступенька; в прыжке герой подтягивается и залезает
 		var rt: float = game.factory.roof_top(game.factory.body_at(probe))
 		if rt >= 0.0:
@@ -1459,7 +1468,7 @@ func _cell_blocked(c: Vector2i, hop := false, point := Vector3.INF) -> bool:
 		var low: bool = DB.data.resources.get(w.nodes[World.wc(c)].res, {}).get("low", false)
 		if not (low and (jump_y > 0.35 or World.world_to_cell(position) == World.wc(c))):
 			return true
-	if w.water_at(c) and not bool(DB.setting("wade", true)) and game.factory.found_top(c) == null:
+	if w.water_at(c) and not w.ocean and not bool(DB.setting("wade", true)) and game.factory.found_top(c) == null:
 		return true
 	if game.world.nest_cells.has(c):
 		var n = game.world.nests[game.world.nest_cells[c]]
@@ -1734,8 +1743,11 @@ func use_item(slot: int) -> bool:
 		# 1.4: саженец — в свободную клетку перед героем, дальше растёт сам
 		var fa: float = hips.rotation.y if hips != null else 0.0
 		var fwd := Vector3(cos(fa), 0, -sin(fa))
-		var pc: Vector2i = game.world.plant_sapling(str(it.get("plant_young", "")), str(it.plant), position + fwd * 1.6)
-		if pc.x < 0:
+		var seedling := it
+		if s.id == "tree_seed":
+			seedling = DB.item(["sapling_oak","sapling_birch","sapling_pine","sapling_fir"].pick_random())
+		var pc = game.world.plant_sapling(str(seedling.get("plant_young","")),str(seedling.plant),position+fwd*1.6)
+		if pc == null:
 			game.notify("Здесь негде посадить — нужна свободная земля", Color(1, 0.8, 0.4))
 			return false
 		msg.append("посажено: вырастет через %d мин" % int(ceil(float(DB.setting("sapling_grow", 300.0)) / 60.0)))
@@ -1771,5 +1783,5 @@ func use_item(slot: int) -> bool:
 func saved_state() -> Dictionary:
 	if alive:
 		return {"pos": position, "hp": hp, "food": food, "water": water}
-	var at: Vector3 = game.factory.hq.center() + Vector3(5, 0, 5) if game.factory.hq else position
+	var at: Vector3 = game.island.landing() if game.island != null else (game.factory.hq.center() + Vector3(5, 0, 5) if game.factory.hq else position)
 	return {"pos": at, "hp": maxhp, "food": maxf(food, 60.0), "water": maxf(water, 60.0)}
