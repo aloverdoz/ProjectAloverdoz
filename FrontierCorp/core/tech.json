@@ -50,6 +50,10 @@
     "power_sell",
     "power_buy",
     "chest_iron"
+   ],
+   "recipes": [
+    "smelt_iron_hq",
+    "smelt_copper_hq"
    ]
   },
   "requires": [],
@@ -72,7 +76,35 @@
    ],
    "recipes": [
     "blaster",
-    "recall"
+    "recall",
+    "iron_axe",
+    "iron_pickaxe",
+    "medkit",
+    "sword",
+    "water_flask",
+    "jerky",
+    "stim_speed",
+    "stim_gather",
+    "wire",
+    "lucky_box",
+    "crack_geode",
+    "smoke_meat",
+    "bandage_goo",
+    "fang_spear",
+    "scout_drone",
+    "warm_jacket",
+    "fur_coat",
+    "light_suit",
+    "ammo_crude",
+    "paint_can",
+    "firework",
+    "boiled_water",
+    "filtered_water",
+    "stimulant",
+    "painkiller",
+    "repair_patch",
+    "fuel_briquette",
+    "grilled_mushrooms"
    ]
   },
   "requires": [],
@@ -143,6 +175,16 @@
     "found_ramp2",
     "found_wall",
     "lift_mk1"
+   ],
+   "recipes": [
+    "smelt_glass",
+    "concrete",
+    "steel_arc",
+    "brick",
+    "rough_glass",
+    "tin_ingot",
+    "d17_glass_sand",
+    "d17_quicklime_concrete"
    ]
   },
   "requires": [],
@@ -165,6 +207,16 @@
     "assembler",
     "solar",
     "battery_block"
+   ],
+   "recipes": [
+    "stim_power",
+    "circuit",
+    "motor",
+    "stim_core",
+    "canister",
+    "circuit_plastic",
+    "climate_suit",
+    "circuit_dense"
    ]
   },
   "requires": [
@@ -1017,7 +1069,7 @@
   "tier": 1,
   "order": 6,
   "icon": "bronze_ingot",
-  "desc": "Литейный цех и конструктор. Олово → бронза; прутья, винты, жесть, укреплённые пластины, рамы, кабель. Медная и бронзовая кирки, бронзовый меч.",
+  "desc": "Литейный цех, конструктор и обработка бронзы. В конструкторе начинайте с прутьев, листов и шестерён. Следующая технология — точная оснастка.",
   "cost": {
    "iron_ingot": 20,
    "copper_ingot": 25
@@ -1031,10 +1083,7 @@
    ],
    "recipes": [
     "bronze_ingot",
-    "cable",
     "iron_rod",
-    "screw",
-    "bronze_gear",
     "tinplate",
     "quicklime",
     "reinforced_plate",
@@ -1386,6 +1435,27 @@
   "unlocks": {
    "recipes": [
     "freighter_5"
+   ]
+  }
+ },
+ "t_tooling": {
+  "name": "Точная оснастка",
+  "tier": 2,
+  "order": 2,
+  "icon": "screw",
+  "desc": "Оснастите конструктор для винтов, бронзовых шестерён и кабеля.",
+  "requires": [
+   "t_metal"
+  ],
+  "cost": {
+   "gear": 6,
+   "iron_rod": 8
+  },
+  "unlocks": {
+   "recipes": [
+    "screw",
+    "cable",
+    "bronze_gear"
    ]
   }
  }

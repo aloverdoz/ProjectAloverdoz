@@ -5,7 +5,9 @@ func _ready() -> void:
 	if directory.is_empty():
 		get_tree().quit(1)
 		return
+	var selected := OS.get_environment("FRONTIER_SURVEY_MODELS").split(",",false)
 	for id in DB.data.buildings:
+		if not selected.is_empty() and id not in selected: continue
 		var model := str(DB.building(id).get("model",id))
 		var file := FileAccess.open(directory.path_join(id+".bin"),FileAccess.WRITE)
 		for part in ModelLib.parts_of(model,false):

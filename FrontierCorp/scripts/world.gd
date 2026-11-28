@@ -112,8 +112,8 @@ func generate_island(seed_value: int, size: int) -> void:
 	water.fill(Color.WHITE)
 	height.fill(Color(.76, 0, 0))
 	deposits = DB.data.world.get("deposits", []).duplicate(true)
-	for x in range(-2, 3):
-		for z in range(-2, 3):
+	for x in range(-4, 4):
+		for z in range(-4, 4):
 			set_land(center + Vector2i(x, z), true)
 	var oak := center + Vector2i(-2,-1)
 	add_node("tree_oak",oak,Transform3D(Basis(Vector3.UP,.45).scaled(Vector3.ONE*.74),cell_to_world(oak)))

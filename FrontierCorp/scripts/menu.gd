@@ -167,13 +167,18 @@ func _ready() -> void:
 	if not mm.is_empty():
 		var p := AudioStreamPlayer.new()
 		p.bus = "Music"
-		p.stream = load(mm[0]) if ResourceLoader.exists(mm[0]) else null
-		if p.stream is AudioStreamWAV:
-			p.stream.loop_mode = AudioStreamWAV.LOOP_FORWARD
-			p.stream.loop_end = p.stream.data.size() / 2
-		p.volume_db = float(md.get("volume", -8))
+		var queue := mm.duplicate()
+		queue.shuffle()
+		var next_track := func():
+			var path: String = queue.pop_front()
+			queue.push_back(path)
+			if ResourceLoader.exists(path):
+				p.stream = load(path)
+				p.play()
+		p.volume_db = float(md.get("volume", -13))
 		add_child(p)
-		p.play()
+		p.finished.connect(next_track)
+		next_track.call()
 
 
 ## Фон: картинка из редактора или рисованный «дым» двух цветов.
@@ -614,7 +619,7 @@ func _page_new() -> void:
 	row.add_child(UI.label(DB.tx("map", "Карта") + ":", 15))
 	var ob := OptionButton.new()
 	ob.focus_mode = Control.FOCUS_NONE
-	ob.add_item("Океан · остров 5×5")
+	ob.add_item("Океан · остров 8×8")
 	ob.add_item(DB.tx("map_fixed", "Готовая карта игры"))
 	ob.add_item("Материк · процедурная карта")
 	ob.set_item_disabled(1, str(wd.get("map_file", "")) == "")

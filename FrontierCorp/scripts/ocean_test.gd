@@ -68,7 +68,58 @@ static func run(g) -> void:
 		print("OCEAN RESULT failures=",failures)
 		g.get_tree().quit(0 if failures.is_empty() else 1)
 		return
-	check("new island and two harvestable trees",w.island_cells.size()==25 and w.nodes.size()==2 and w.nests.is_empty() and w.ground_chunks.size()<=4 and w.islands_by_chunk.size()==w.ground_chunks.size())
+	check("new 8x8 island",w.island_cells.size()==64 and island.start_span==8 and island.ring(c+Vector2i(-5,0))==1 and island.ring(c+Vector2i(4,0))==1)
+	check("three initial furnace processes",DB.recipes_for("furnace").size()==3 and DB.recipes_for("furnace").has("charcoal"))
+	check("island tutorial launches with shore-specific steps",g.tutorial.active and g.tutorial.cur().title=="Первая смена")
+	var paths: Array = DB.data.music.day
+	check("seven decodable MP3 tracks",paths.size()==7 and paths.all(func(path): var stream=g.sfx.stream(path); return stream is AudioStreamMP3 and stream.get_length()>20.))
+	g.tech.done["t_workshop"]=true
+	g.tech.done["t_metal"]=true
+	g.tech.refresh_locks()
+	check("first constructor has exactly three recipes",DB.recipes_for("constructor").size()==3 and ["iron_rod","gear","iron_plate"].all(func(id): return DB.recipes_for("constructor").has(id)))
+	g.tech.done["t_tooling"]=true
+	g.tech.refresh_locks()
+	check("tooling unlocks screw recipe",not Tech.recipe_locked("screw"))
+	for tech in ["t_tooling","t_metal","t_workshop"]: g.tech.done.erase(tech)
+	g.tech.refresh_locks()
+	var marker:=c+Vector2i(2,-2)
+	w.set_deposit(marker,0)
+	w.ordered_fields[marker]=[0,1,"normal"]
+	g.hud.confirm_field(marker)
+	g.hud.field_dialog.confirmed.emit()
+	check("confirmed deletion removes selected deposit only",not w.ordered_fields.has(marker) and not w.deposit.has(marker))
+	await g.get_tree().process_frame
+	var monument = f.hq
+	var moved := c + Vector2i(2,2)
+	monument.inv.add("stone",1)
+	check("monument relocates with its storage and identity",g.cmd("shore_move",{"cell":moved})==true and f.grid[moved]==monument and not f.grid.has(c) and monument.inv.count("stone")>0)
+	g.cmd("shore_move",{"cell":c})
+	monument.inv.remove("stone",1)
+	var drift = island.fishing
+	for cargo in drift.drift.duplicate(): drift.discard(cargo)
+	drift.spawn_timer=0.
+	drift.arrivals(0.)
+	check("batch outside camera with inbound velocity",drift.drift.size()>=2 and drift.drift.size()<=5 and drift.drift.all(func(d): return not g.camera.is_position_in_frustum(d.node.position) and d.velocity.length()>.5))
+	for cargo in drift.drift.duplicate(): drift.discard(cargo)
+	drift.arrivals(299.)
+	check("no cargo before five minutes",drift.drift.is_empty())
+	drift.arrivals(1.)
+	check("next cargo batch at five minutes",drift.drift.size()>=2 and drift.drift.size()<=5)
+	f.hq.inv.add("leaves",336)
+	var bought:=0
+	for radius in range(1,7):
+		for corners in [false,true]:
+			for x in range(-4-radius,4+radius):
+				for y in range(-4-radius,4+radius):
+					var at:=c+Vector2i(x,y)
+					var xedge:=x==-4-radius or x==3+radius
+					var yedge:=y==-4-radius or y==3+radius
+					if (xedge or yedge) and (xedge and yedge)==corners and g.cmd("shore_expand",{"cell":at})==true: bought+=1
+	check("8x8 to 20x20 costs 336 basic materials",bought==336 and w.island_cells.size()==400)
+	# Continue from the land mask and price convention of the previous release.
+	island.change_land([],w.island_cells.keys().filter(func(at): return abs(at.x-c.x)>2 or abs(at.y-c.y)>2))
+	island.start_span=5
+	check("legacy island and two harvestable trees",w.island_cells.size()==25 and w.nodes.size()==2 and w.nests.is_empty() and w.ground_chunks.size()<=4 and w.islands_by_chunk.size()==w.ground_chunks.size())
 	check("occupied centre and dry player spawn",f.hq.type=="tide_slab" and f.hq.size==1 and w.island_cells.has(World.world_to_cell(g.player.position)) and g.player.selected_item()=="salvage_rod")
 	check("no diagonal expansion",island.issue(c+Vector2i(3,3))!="")
 	g.admin.host_act("shore_price",{"ring":1,"cost":{"log":2}},1)
@@ -76,6 +127,8 @@ static func run(g) -> void:
 	var edge := c+Vector2i(3,1)
 	g.ui_action("zone_pick")
 	g.hover_cell = edge
+	g.hud._update_mode_hud(.2)
+	check("placement HUD quotes configured cell price",g.hud.mode_title.text.contains(island.price_text(edge)))
 	g._click_world()
 	g.cancel_build()
 	check("world click charges configured price once",w.island_cells.has(edge) and g.player.inv.count("log")==0 and not island.expand(edge) and island.ring(c+Vector2i(4,0))==2)
@@ -101,7 +154,7 @@ static func run(g) -> void:
 	for id in fish.GOODS:
 		var gain: int = g.player.inv.count(id)-int(before.get(id,0))
 		if gain>0: received[id]=gain
-	check("crate reeled in and credited once",fish.by_id(crate.id).is_empty() and received.size()>=3 and received.size()<=5 and received.values().all(func(v): return v>=5 and v<=15))
+	check("crate reeled in and credited once",fish.by_id(crate.id).is_empty() and received.size()>=1 and received.size()<=3 and received.values().all(func(v): return v>=1 and v<=3))
 	for id in received: g.player.inv.remove(id,received[id])
 	g._click_world()
 	fish.tick(1.)
@@ -120,12 +173,19 @@ static func run(g) -> void:
 	for kind in fish.TYPES:
 		for i in 150:
 			var roll: Dictionary = fish.loot(kind)
-			limits_ok = limits_ok and roll.size()>=3 and roll.size()<=5 and roll.values().all(func(v): return v>=5 and v<=15)
+			limits_ok = limits_ok and roll.size()>=1 and roll.size()<=3 and roll.values().all(func(v): return v>=1 and v<=3)
 			for k in roll: kinds[k]=true
-	check("300 crate/barrel rolls: 3–5 unique kinds, 5–15 each, all nine eligible",limits_ok and kinds.size()==9 and not kinds.has("plank"))
+	check("300 crate/barrel rolls: 1–3 unique kinds, 1–3 each, all nine eligible",limits_ok and kinds.size()==9 and not kinds.has("plank"))
 	var dry: Vector3 = World.cell_to_world(c+Vector2i(2,0))
 	dry.y = .76
 	var wet := dry+Vector3.RIGHT*2.
+	var probe: Dictionary = fish.add("barrel",wet,0.)
+	probe.velocity=Vector3.LEFT*2.
+	fish.tick(1.5)
+	var beach: Vector3=probe.node.position
+	fish.tick(.5)
+	check("cargo stops against shore while bobbing",probe.stopped and w.water_at(World.world_to_cell(beach)) and is_equal_approx(beach.x,probe.node.position.x))
+	fish.discard(probe)
 	var original: Vector3 = g.player.position
 	g.player.position = dry
 	check("walking and jumping off the edge are blocked",g.player._blocked(wet))
@@ -168,6 +228,11 @@ static func run(g) -> void:
 	f.remove(roof)
 	check("shoreline order crosses water rejected",w.order_issue(iron,c+Vector2i(-2,2))!="")
 	check("paid iron deposit",g.cmd("shore_field",{"idx":iron,"cell":origin})==true and w.deposit.has(origin) and g.credits<1200)
+	g.hud.confirm_field(origin)
+	check("field stays intact while confirmation is open",w.ordered_fields.has(origin) and is_instance_valid(g.hud.field_dialog))
+	g.hud.field_dialog.canceled.emit()
+	await g.get_tree().process_frame
+	check("cancel keeps deposit",w.ordered_fields.has(origin))
 	f.place("furnace",c+Vector2i(1,1),0)
 	DB.researched["iron_ore"]=true
 	var reachable: Dictionary = island.reachable()
@@ -183,6 +248,16 @@ static func run(g) -> void:
 	g.day_n=11
 	island.deadline()
 	check("fulfilled quest protects island and rolls new deadline",w.island_cells.size()==25 and island.due==21)
+	g.hud.open("inventory")
+	for i in 4: await g.get_tree().process_frame
+	var window=g.hud.windows.inventory
+	var grid_size: Vector2=g.hud.inv_grid.size
+	window.place(Vector2(4,4))
+	window.resize_by(Vector2(160,90),3)
+	for i in 6: await g.get_tree().process_frame
+	check("inventory contents grow with dragged window",g.hud.inv_grid.size.x>grid_size.x+20.)
+	g.hud.close("inventory")
+	window.reset_user_size()
 	var spots := {}
 	for i in 24:
 		var pos: Vector3 = island.wave_origin()
@@ -195,6 +270,7 @@ static func run(g) -> void:
 	g.player.inv.add("branch",1)
 	g.cmd("shore_offer",{})
 	var serialized = JSON.parse_string(JSON.stringify(g.save_dict()))
+	serialized.ocean_island.erase("start_span")
 	DB.set_meta("new_game",{"save":serialized})
 	DB.set_meta("shore_test_reload",true)
 	g.get_tree().reload_current_scene.call_deferred()

@@ -1,17 +1,37 @@
 {
- "volume": -8.0,
+ "volume": -13.0,
  "crossfade": 3.0,
  "menu": [
-  "res://sounds/music_night.wav"
+  "res://sounds/shore/radarnyy-impuls-2-46e38b.mp3",
+  "res://sounds/shore/strelki-chasov-1-357b73.mp3",
+  "res://sounds/shore/polyot-nad-oblakami-45-e1bffe.mp3",
+  "res://sounds/shore/zastyvshaya-simmetriya-1-13032d.mp3",
+  "res://sounds/shore/eternal-echoes_94728.mp3",
+  "res://sounds/shore/dyuny-bezmolviya-1-cc36d3.mp3",
+  "res://sounds/shore/dykhanie-minimalizma-2-c8380a.mp3"
  ],
  "day": [
-  "res://sounds/music_day.wav"
+  "res://sounds/shore/radarnyy-impuls-2-46e38b.mp3",
+  "res://sounds/shore/strelki-chasov-1-357b73.mp3",
+  "res://sounds/shore/polyot-nad-oblakami-45-e1bffe.mp3",
+  "res://sounds/shore/zastyvshaya-simmetriya-1-13032d.mp3",
+  "res://sounds/shore/eternal-echoes_94728.mp3",
+  "res://sounds/shore/dyuny-bezmolviya-1-cc36d3.mp3",
+  "res://sounds/shore/dykhanie-minimalizma-2-c8380a.mp3"
  ],
  "night": [
-  "res://sounds/music_night.wav"
+  "res://sounds/shore/radarnyy-impuls-2-46e38b.mp3",
+  "res://sounds/shore/strelki-chasov-1-357b73.mp3",
+  "res://sounds/shore/polyot-nad-oblakami-45-e1bffe.mp3",
+  "res://sounds/shore/zastyvshaya-simmetriya-1-13032d.mp3",
+  "res://sounds/shore/eternal-echoes_94728.mp3",
+  "res://sounds/shore/dyuny-bezmolviya-1-cc36d3.mp3",
+  "res://sounds/shore/dykhanie-minimalizma-2-c8380a.mp3"
  ],
  "wave": [
-  "res://sounds/music_wave.wav"
+  "res://sounds/shore/eternal-echoes_94728.mp3",
+  "res://sounds/shore/dyuny-bezmolviya-1-cc36d3.mp3",
+  "res://sounds/shore/polyot-nad-oblakami-45-e1bffe.mp3"
  ],
  "ambient_day": "wind",
  "ambient_night": "wind"

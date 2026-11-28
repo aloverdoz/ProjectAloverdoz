@@ -233,7 +233,8 @@
   "stations": [
    "furnace",
    "smelter"
-  ]
+  ],
+  "basic_process": true
  },
  "smelt_copper": {
   "name": "Медный слиток",
@@ -247,7 +248,8 @@
   "stations": [
    "furnace",
    "smelter"
-  ]
+  ],
+  "basic_process": true
  },
  "smelt_glass": {
   "name": "Стекло",
@@ -302,8 +304,10 @@
   "time": 4.0,
   "stations": [
    "workshop",
-   "assembler"
-  ]
+   "assembler",
+   "constructor"
+  ],
+  "basic_process": true
  },
  "iron_plate": {
   "name": "Железная пластина",
@@ -316,8 +320,10 @@
   "time": 6.0,
   "stations": [
    "workshop",
-   "assembler"
-  ]
+   "assembler",
+   "constructor"
+  ],
+  "basic_process": true
  },
  "wire": {
   "name": "Провод",
@@ -1508,7 +1514,8 @@
   "stations": [
    "furnace",
    "coke_oven"
-  ]
+  ],
+  "basic_process": true
  },
  "rough_glass": {
   "name": "Грубое стекло",
@@ -1578,7 +1585,8 @@
   "stations": [
    "constructor",
    "workshop"
-  ]
+  ],
+  "basic_process": true
  },
  "screw": {
   "name": "Винты",

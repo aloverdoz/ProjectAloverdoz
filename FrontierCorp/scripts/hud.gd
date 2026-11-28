@@ -83,6 +83,7 @@ var cargo_count: Label
 var cargo_meter: ProgressBar
 var selected_recipe := ""
 var broadcast
+var field_dialog: ConfirmationDialog
 var settings_sec := "graphics"
 
 
@@ -595,12 +596,12 @@ func _update_mode_hud(delta: float) -> void:
 		if str(mi.id) != _mode_id:
 			_mode_id = str(mi.id)
 			var col: Color = mi.color
-			mode_title.text = str(mi.title)
 			mode_title.add_theme_color_override("font_color", col.lightened(0.35))
 			(mode_box.get_theme_stylebox("panel") as StyleBoxFlat).border_color = col
 			(mode_edge.material as ShaderMaterial).set_shader_parameter("tint", col)
 			(mode_edge.material as ShaderMaterial).set_shader_parameter("strength", float(mi.get("edge", 0.5)))
 			(mode_edge.material as ShaderMaterial).set_shader_parameter("width", float(mode_cfg().get("edge_width", 0.11)))
+		mode_title.text = str(mi.title)
 		mode_sub.text = str(mi.get("hint", ""))
 	_mode_a = move_toward(_mode_a, 1.0 if on else 0.0, delta * 6.0)
 	mode_box.visible = _mode_a > 0.01 and mode_title.text != ""
@@ -682,6 +683,12 @@ func _win(id: String, title: String, w: float, refresher := Callable()) -> Win:
 	var v := UI.vbox(10)
 	win.add_child(v)
 	var hb := UI.header_box()
+	var inks := {"inventory":"#dfb969","craft":"#eb996c","tech":"#afc082","building":"#d9a36d","build":"#d9a36d","trade":"#cbacbf"}
+	if hb.get_meta("fill",false) and inks.has(id):
+		var ink := hb.get_theme_stylebox("panel").duplicate() as StyleBoxFlat
+		ink.bg_color = Color(inks[id])
+		ink.border_color = ink.bg_color.darkened(.32)
+		hb.add_theme_stylebox_override("panel",ink)
 	var head := UI.hbox(10)
 	hb.add_child(head)
 	var mark := ColorRect.new()
@@ -708,8 +715,10 @@ func _win(id: String, title: String, w: float, refresher := Callable()) -> Win:
 	v.add_child(hb)
 	win.body = UI.vbox(6)
 	win.body.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	win.body.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	win.scroll = ScrollContainer.new()
 	win.scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	win.scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	win.scroll.add_child(win.body)
 	v.add_child(win.scroll)
 	var grip := WinGrip.new()
@@ -769,7 +778,9 @@ func _build_windows() -> void:
 	readout.add_child(cargo_meter)
 	cargo.add_child(readout)
 	cargo.add_child(VSeparator.new())
+	inv_grid.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	cargo.add_child(inv_grid)
+	cargo.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	inv_w.body.add_child(cargo)
 	inv_w.body.add_child(tip)
 	# 13.10: расширение рюкзака за ресурсы
@@ -778,7 +789,7 @@ func _build_windows() -> void:
 	# сведения о предмете, по которому щёлкнули
 	info_box = PanelContainer.new()
 	var ist := StyleBoxFlat.new()
-	ist.bg_color = Color(0.06, 0.08, 0.11, 0.9)
+	ist.bg_color = Color(0.19, 0.14, 0.11, 0.9)
 	ist.set_corner_radius_all(6)
 	ist.set_content_margin_all(10)
 	info_box.add_theme_stylebox_override("panel", ist)
@@ -1624,6 +1635,8 @@ func _build_inv_grid() -> void:
 	for i in game.player.inv.size():
 		var s := Slot.new()
 		s.setup(game.player.inv, i, self, 54)
+		s.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		s.size_flags_vertical = Control.SIZE_EXPAND_FILL
 		inv_grid.add_child(s)
 		inv_slots.append(s)
 
@@ -1866,9 +1879,11 @@ func _refresh_build() -> void:
 	var scroll := ScrollContainer.new()
 	scroll.custom_minimum_size = Vector2(0, 420)
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	w.body.add_child(scroll)
 	var grid := GridContainer.new()
 	grid.columns = 2
+	scroll.resized.connect(func(): grid.columns = maxi(1,int(scroll.size.x / 290.)))
 	grid.add_theme_constant_override("h_separation", 8)
 	grid.add_theme_constant_override("v_separation", 8)
 	grid.size_flags_horizontal = Control.SIZE_EXPAND_FILL
@@ -2086,7 +2101,8 @@ func _refresh_building() -> void:
 		return
 	var d := DB.building(bld.type)
 	w.title_lbl.text = Lang.t(game.factory.fz.title(bld)).to_upper()   # A-6 r4
-	if not w.has_meta("built_for") or w.get_meta("built_for") != bld:
+	if not w.has_meta("built_for") or w.get_meta("built_for") != bld or w.get_meta("recipe_rev",-1) != Tech.lock_rev:
+		w.set_meta("recipe_rev",Tech.lock_rev)
 		w.set_meta("built_for", bld)
 		_build_building_body(w)
 	var st: RichTextLabel = w.get_meta("status")
@@ -2098,7 +2114,7 @@ func _refresh_building() -> void:
 	if bld.type == "drone_port":
 		st.text += "\nГрузоподъёмность: %d ед. · %s" % [game.carriers.fleet_capacity(bld), "рейс выполняется" if game.carriers.airborne(bld) else "на площадке"]
 	if game.island != null and bld.type == "tide_slab":
-		st.text = game.island.description()
+		st.text = game.island.description()+"\nСдавайте по частям из рюкзака и хранилища монумента."
 	elif bld.type == "campfire" and game.island != null:
 		st.text += "\n" + ("Костёр погас" if bld.bstate.get("extinguished",false) else "Огонь горит") + (" · под крышей" if game.island.sheltered(bld.center()) else " · под открытым небом")
 	_steady(st)
@@ -2276,9 +2292,12 @@ func _build_building_body(w: Win) -> void:
 	top.add_child(tv)
 	w.body.add_child(top)
 	if game.island != null and bld.type == "tide_slab":
-		var actions := UI.hbox(8)
+		var actions := HFlowContainer.new()
 		actions.add_child(UI.button("Передать припасы",func(): game.cmd("shore_offer",{})))
 		actions.add_child(UI.button("Расширить остров",func(): close_all(); game.ui_action("zone_pick")))
+		actions.add_child(UI.button("Перенести монумент",func(): close_all(); game.ui_action("move_monument"),"Выберите свободную клетку острова. Запасы и текущая доставка переедут вместе с монументом."))
+		var quote := UI.small("Цена клетки у ближайшего берега · "+game.island.price_text(game.island.nearest_edge(game.player.position)))
+		w.body.add_child(quote)
 		w.body.add_child(actions)
 	elif game.island != null and bld.type == "campfire":
 		w.body.add_child(UI.button("Разжечь · 1 ветка",func(): game.cmd("shore_relight",{"b":bld})))
@@ -2311,6 +2330,7 @@ func _build_building_body(w: Win) -> void:
 		ob.focus_mode = Control.FOCUS_NONE
 		ob.add_item("Авто (по входящему сырью)")
 		ob.set_item_metadata(0, "")
+		w.body.add_child(UI.small("Новые рецепты открываются в дереве исследований [J]. Сырьё кладите на вход, готовый продукт забирайте с выхода."))
 		var ids := DB.recipes_for(bld.p("station", ""))
 		for i in ids.size():
 			ob.add_item(_recipe_line(ids[i]))
@@ -2874,6 +2894,9 @@ func _refresh_craft() -> void:
 	var scroll := ScrollContainer.new()
 	scroll.custom_minimum_size = Vector2(230, 320)
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	bench.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	scroll.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	scroll.size_flags_stretch_ratio = .65
 	bench.add_child(scroll)
 	var list := UI.vbox(6)
 	list.size_flags_horizontal = Control.SIZE_EXPAND_FILL
@@ -3180,6 +3203,7 @@ func _tech_tree_ui(body: VBoxContainer) -> void:
 	sc.custom_minimum_size = Vector2(0,390)
 	sc.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	sc.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	columns.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	columns.add_child(sc)
 	var grid := HFlowContainer.new()
 	grid.add_theme_constant_override("h_separation", 10)
@@ -3205,7 +3229,7 @@ func _tech_card(id: String) -> Control:
 	sb.border_color = UI.GOOD if st == "done" else (UI.ACCENT if st == "open" else Color(0.3, 0.33, 0.38))
 	sb.set_border_width_all(0)
 	sb.border_width_left = 3
-	sb.bg_color = Color("#1c3139")
+	sb.bg_color = Color("#40352a")
 	p.add_theme_stylebox_override("panel", sb)
 	var v := UI.vbox(4)
 	p.add_child(v)
@@ -4138,7 +4162,7 @@ func _refresh_help() -> void:
 	w.body.add_child(r)
 	var hr := UI.hbox(10)
 	hr.add_child(UI.button("Играть!", func(): close("help")))
-	if not Tutorial.steps().is_empty():
+	if not Tutorial.steps(game.island != null).is_empty():
 		hr.add_child(UI.button("Пройти обучение", func(): close("help"); game.tutorial.restart(), "Пошаговое обучение: ходьба, добыча, крафт, бур, конвейер, энергия, защита, зона"))
 	w.body.add_child(hr)
 
@@ -4152,7 +4176,7 @@ static func help_text(ocean := true) -> String:
 		t += extra + "\n\n"
 	t += "[b]Цель:[/b] %s\n\n" % _goal_text()
 	if ocean:
-		t += "[b]Остров.[/b] Выберите удочку (1), щёлкните по бочке или ящику и щёлкните ещё раз, чтобы подтянуть его. При забросе в свободную воду дождитесь поклёвки. Рыбу можно съесть из рюкзака. E у плиты открывает сдачу даров и расширение суши.\n"
+		t += "[b]Остров.[/b] Выберите удочку (1), щёлкните по бочке или ящику и щёлкните ещё раз, чтобы подтянуть его. При забросе в свободную воду дождитесь поклёвки. Рыбу можно съесть из рюкзака. Каждые пять минут течение приносит до пяти контейнеров. E у монумента открывает доставку и расширение. Цену видно до покупки. Для первой печи закажите руду в меню B, а новые рецепты ищите в исследованиях J.\n"
 	else:
 		t += "[b]Начало.[/b] Рубите деревья и бейте камни (ЛКМ рядом с ними) — выпадут ветки, брёвна, камни. Предметы светятся и сами подбираются, когда проходите рядом.\n"
 	t += "Сделайте каменный топор и кирку ([b]%s[/b] — крафт), затем верстак и печь. Плавьте руду, стройте бур, генератор и ленты.\n\n" % k.call("craft")
@@ -5328,3 +5352,26 @@ static func _wrap(l: Label) -> Label:
 	l.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	l.custom_minimum_size = Vector2(UI.ws(460), 0)
 	return l
+
+func confirm_field(cell: Vector2i) -> void:
+	if is_instance_valid(field_dialog): return
+	var origin: Vector2i = game.world.dep_corner(cell)
+	var data: Array = game.world.ordered_fields.get(origin,[])
+	if data.is_empty(): return
+	var dialog := ConfirmationDialog.new()
+	field_dialog = dialog
+	dialog.title = "Удалить месторождение?"
+	var name := DB.item_name(str(game.world.deposits[int(data[0])].item))
+	dialog.dialog_text = "Удалить месторождение «%s»? Кредиты за него не вернутся.\nСледующая заявка стоит %d кр. У вас %d кр.\nПосле удаления на новую залежь может не хватить кредитов." % [name,game.world.order_price,game.credits]
+	dialog.ok_button_text = "Удалить месторождение"
+	dialog.cancel_button_text = "Оставить"
+	dialog.exclusive = true
+	dialog.theme = UI.theme()
+	root.add_child(dialog)
+	dialog.confirmed.connect(func():
+		if game.world.ordered_fields.get(origin,[]) == data: game.cmd("field_remove",{"cell":origin})
+		dialog.queue_free())
+	dialog.canceled.connect(dialog.queue_free)
+	dialog.close_requested.connect(dialog.queue_free)
+	dialog.popup_centered()
+	dialog.get_cancel_button().grab_focus()

@@ -8,8 +8,15 @@ func go() -> void:
 	var game = load("res://scenes/main.tscn").instantiate()
 	add_child(game)
 	await get_tree().process_frame
+	game.tutorial.active=false
+	game.tutorial.card.hide()
 	if game.strategy:
 		game.cycle_camera()
+	for item in ["log","stone","branch","fiber","iron_ore","copper_ore","iron_ingot","plank"]:
+		game.player.inv.add(item,8)
+		DB.known[item]=true
+		DB.researched[item]=true
+	for i in 36: await RenderingServer.frame_post_draw
 	for key in ["inventory","craft","tech","tv"]:
 		game.hud.close_all()
 		if key == "tv":

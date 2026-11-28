@@ -209,8 +209,11 @@ func _looped(s: AudioStream) -> AudioStream:
 
 
 ## Состояние музыки: menu, day, night, wave. Смена — плавная.
+var music_queue := []
+var music_list := []
+
 func set_music(state: String) -> void:
-	if state == music_state:
+	if state == music_state and music_a.playing:
 		return
 	music_state = state
 	var md: Dictionary = DB.data.get("music", {})
@@ -218,11 +221,17 @@ func set_music(state: String) -> void:
 	if list.is_empty():
 		_crossfade(null)
 		return
-	var path: String = list[randi() % list.size()]
-	if path == music_track:
-		return
-	music_track = path
-	_crossfade(_looped(stream(path)))
+	if list == music_list and music_a.playing: return
+	if music_list != list:
+		music_list = list.duplicate()
+		music_queue.clear()
+	if music_queue.is_empty():
+		music_queue = list.duplicate()
+		music_queue.shuffle()
+		if music_queue.size() > 1 and music_queue.back() == music_track:
+			music_queue.push_front(music_queue.pop_back())
+	music_track = music_queue.pop_back()
+	_crossfade(stream(music_track))
 
 
 func _crossfade(s: AudioStream) -> void:

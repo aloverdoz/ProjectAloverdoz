@@ -109,6 +109,8 @@ var physics                    # 21: обломки, взрывы, отлёт т
 var rules_ov := {}             # 21: правила мира, заданные при создании одиночной игры (хранятся в сохранении)
 var split                      # 1.3: сплитскрин — второй игрок на половине экрана этой же игры (split.gd)
 var quantum                    # 21: квантовое измерение — портал, жилы, запутанные пары, тени (quantum21.gd)
+var moving_monument := false
+var quoted_cell := Vector2i.ZERO
 var zone_pick := false         # 15.5: выбор участка 5×5 блоков, который откроется из-под бури
 var wire_from = null
 var wire_line: MeshInstance3D
@@ -428,7 +430,7 @@ func _ready() -> void:
 	if ng.has("save"):
 		load_game(ng.save)
 	else:
-		if island == null: tutorial.start_new()
+		tutorial.start_new()
 		_start_base()
 		zone.setup(factory.hq.center() if factory.hq else World.cell_to_world(world.center))
 		if island == null:
@@ -445,7 +447,7 @@ func _ready() -> void:
 	_setup_quests()
 	cam_focus = player.position
 	if island != null and not ng.has("save"):
-		notify("Океан • выберите удочку в ячейке 1. ЛКМ по воде — заброс. E у плиты — заказ и расширение.", UI.ACCENT)
+		notify("Первая смена · Возьмите удочку [1] и забросьте в воду. При поклёвке нажмите ЛКМ ещё раз. Подсказки — H.", UI.ACCENT)
 	if island == null and not ng.has("save") and Prefs.get_value("show_hints", true) and not tutorial.active:
 		hud.open("help")
 	if str(ng.get("command", "")) != "":
@@ -2751,6 +2753,13 @@ func ui_action(what: String) -> void:
 			var onz := not zone_pick
 			cancel_build()
 			zone_pick = onz and (island != null or zone.on())
+			if zone_pick and island != null:
+				quoted_cell = island.nearest_edge(player.position)
+				notify("Цена клетки у ближайшего берега · "+island.price_text(quoted_cell),UI.ACCENT)
+		"move_monument":
+			cancel_build()
+			moving_monument = island != null
+			zone_pick = moving_monument
 		"wire":
 			if not factory.wired():
 				# 21: без проводов клавиша показывает карту энергии
@@ -2803,6 +2812,7 @@ func select_build(t: String) -> void:
 
 
 func cancel_build() -> void:
+	moving_monument = false
 	field_selection = -1
 	build_type = ""
 	demolish = false
@@ -2837,7 +2847,9 @@ func mode_info() -> Dictionary:
 	if field_selection >= 0:
 		return mk.call("field", DB.item_name(world.deposits[field_selection].item), "ЛКМ — орбитальный заказ · ПКМ — отмена", "#74dadd", 0.25)
 	if zone_pick and island != null:
-		return mk.call("zone","РАСШИРЕНИЕ ОСТРОВА","ЛКМ по воде у берега · ПКМ — выйти","#7adbc8",.3)
+		if moving_monument: return mk.call("zone","ПЕРЕНОС МОНУМЕНТА","ЛКМ по свободной суше · ПКМ — отмена","#eab76d",.3)
+		if not world.island_cells.has(hover_cell) and Factory.DIRS.any(func(d): return world.island_cells.has(hover_cell+d)): quoted_cell=hover_cell
+		return mk.call("zone","ЦЕНА КЛЕТКИ · "+island.price_text(quoted_cell),"ЛКМ по воде у берега · ПКМ — выйти","#edb968",.3)
 	if zone_pick:
 		return mk.call("zone", "ВЫБОР УЧАСТКА", "Наведите рамку на тучи у края открытой земли · ПКМ — выйти", "#b38cff", 0.45)
 	if pview != null and pview.on:
@@ -2857,7 +2869,8 @@ func mode_text() -> String:
 	if field_selection >= 0:
 		return "Месторождение · %d кредитов · %s" % [world.order_price, world.order_issue(field_selection, hover_cell)]
 	if zone_pick and island != null:
-		var n: int = island.ring(hover_cell)
+		if moving_monument: return "Перенос · "+island.move_issue(hover_cell)
+		var n: int = island.ring(quoted_cell)
 		var parts := PackedStringArray()
 		for k in island.cost(n):
 			parts.append("%s ×%d" % [DB.item_name(k),island.cost(n)[k]])
@@ -2902,7 +2915,7 @@ func mode_text() -> String:
 	elif not target.is_empty() and target.kind in ["node", "deposit"]:
 		lmb_t = "добывать"
 	if island != null and player.selected_item() == "salvage_rod" and not strategy:
-		return "ЛКМ — забросить / подтянуть · E у плиты — берег и дары · B — строить · Tab — рюкзак"
+		return "ЛКМ — забросить / подтянуть · E у монумента — берег и доставка · B — строить · Tab — рюкзак"
 	return "ЛКМ — %s · ПКМ (держать) — чинить · E — открыть здание · B — строить · Tab — инвентарь · C — крафт" % lmb_t
 
 
@@ -3107,7 +3120,12 @@ func _click_world() -> void:
 		lmb = false
 		return
 	if zone_pick and island != null:
-		cmd("shore_expand", {"cell":hover_cell})
+		if moving_monument:
+			if island.move_issue(hover_cell)=="":
+				cmd("shore_move",{"cell":hover_cell})
+				cancel_build()
+			else: notify(island.move_issue(hover_cell),Color.ORANGE)
+		else: cmd("shore_expand", {"cell":hover_cell})
 		lmb = false
 		return
 	if zone_pick:
@@ -3143,7 +3161,7 @@ func _click_world() -> void:
 		# (раньше здание исчезало, а следующий кадр того же нажатия сносил фундамент под ним)
 		if _demo_layer_at(hover_cell) == "" and world.ordered_fields.has(world.dep_corner(hover_cell)):
 			lmb = false
-			world.remove_field(hover_cell)
+			hud.confirm_field(hover_cell)
 			return
 		demo_layer = _demo_layer_at(hover_cell)   # 1.1.20: на пустой клетке слой выберет первая клетка с постройкой
 		cmd("demolish", {"cell": hover_cell})
@@ -3342,6 +3360,10 @@ func cmd(name: String, a: Dictionary):
 
 func _cmd_impl(name: String, a: Dictionary):
 	match name:
+		"field_remove":
+			return a.get("cell") is Vector2i and world.remove_field(a.cell)
+		"shore_move":
+			return island != null and a.get("cell") is Vector2i and island.relocate(a.cell)
 		"shore_salvage":
 			return island != null and island.fishing.collect(int(a.get("id",0)),player)
 		"shore_expand":
@@ -3853,6 +3875,7 @@ func can_craft(rid: String, n := 1) -> bool:
 
 
 func queue_craft(rid: String, n: int, station: String) -> void:
+	if not DB.station_recipe_open(rid,station): return
 	var r: Dictionary = DB.data.recipes.get(rid, {})
 	if r.is_empty():
 		return
@@ -4872,10 +4895,10 @@ func _check_quests() -> void:
 
 func quest_text() -> String:
 	if island != null:
-		var text: String = "[color=#ffcc66]ДАР КО ДНЮ %d[/color]" % island.due
+		var text: String = "[color=#ffcc66]Доставьте ресурсы до - День %d[/color]" % island.due
 		for id in island.request:
 			text += "\n%s   %d / %d" % [DB.item_name(id),island.paid.get(id,0),island.request[id]]
-		return text+"\n[color=#91c7be]"+("Дар принят" if island.complete() else "E у плиты · передать припасы")+"[/color]"
+		return text+"\n[color=#91c7be]"+("Ресурсы доставлены" if island.complete() else "E у монумента · сдать из рюкзака и хранилища")+"[/color]"
 	var s := ""
 	for i in quests.size():
 		if i < quest_i - 1 or i > quest_i + 2:
@@ -4898,7 +4921,7 @@ func quest_text() -> String:
 
 ## Подсказка к текущей задаче (при наведении на список задач).
 func quest_hint() -> String:
-	if island != null: return island.description()+"\nE у плиты — передать материалы или насыпать клетку."
+	if island != null: return island.description()+"\nE у монумента — передать материалы или насыпать клетку."
 	if quest_i >= quests.size():
 		return ""
 	var q: Dictionary = quests[quest_i]
@@ -5010,7 +5033,7 @@ func save_dict() -> Dictionary:
 		"nests_dead": world.nests.filter(func(n): return not n.alive).map(func(n): return world.nests.find(n)),
 		"nest_guards": _nest_guards_save()}
 	if island != null:
-		data["ocean_island"] = island.state().merged({"drift":island.fishing.records()})
+		data["ocean_island"] = island.state().merged({"drift":island.fishing.records(),"next_drift":island.fishing.spawn_timer})
 	if Net.is_host():
 		data["net_players"] = Net.players_save()
 	if split != null:
@@ -5516,7 +5539,7 @@ func _update_wire_hl(delta: float) -> void:
 		mark.show()
 		mark.scale = Vector3(1.95,.075,1.95)
 		mark.position = World.cell_to_world(hover_cell)+Vector3.UP*(.82 if world.island_cells.has(hover_cell) else .27)
-		mark.material_override.albedo_color = Color(.2,.85,.65,.62) if island.issue(hover_cell)=="" else Color(.88,.34,.18,.52)
+		mark.material_override.albedo_color = Color(.2,.85,.65,.62) if (island.move_issue(hover_cell) if moving_monument else island.issue(hover_cell))=="" else Color(.88,.34,.18,.52)
 	elif zone_pick:
 		var zrc: Vector2i = zone.patch_at(hover_point)
 		zone.show_pick(zrc, zone.patch_can(zrc) == "")

@@ -365,11 +365,14 @@ func menu(key: String, def = null):
 var locked := {}
 
 
+func station_recipe_open(id: String, station: String) -> bool:
+	return station in data.recipes.get(id,{}).get("stations",[]) and not locked.has("r:"+id) and recipe_known(id)
+
 func recipes_for(station: String) -> Array:
 	var out := []
 	var strat := bool(setting("strategy", false))
 	for id in data.recipes:
-		if station in data.recipes[id].get("stations", []) and not locked.has("r:" + id) and recipe_known(id):
+		if station_recipe_open(id,station):
 			if strat and personal_recipe(id):
 				continue
 			out.append(id)
@@ -444,6 +447,7 @@ func is_researched(id: String) -> bool:
 
 ## Рецепт виден, когда все его входы изучены.
 func recipe_known(rid: String) -> bool:
+	if data.recipes.get(rid, {}).get("basic_process", false): return true
 	if not discovery:
 		return true
 	for k in data.recipes.get(rid, {}).get("in", {}):

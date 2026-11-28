@@ -10,7 +10,7 @@ func _ready() -> void:
 	run.call_deferred()
 
 func run() -> void:
-	DB.set_meta("new_game",{"seed":72810,"size":192,"ov":{"settings/strategy":true}})
+	DB.set_meta("new_game",{"seed":72810,"size":192,"map_mode":"procedural","ov":{"settings/strategy":true}})
 	var game = load("res://scenes/main.tscn").instantiate()
 	add_child(game)
 	await get_tree().process_frame
@@ -77,14 +77,16 @@ func run() -> void:
 	h.close_all()
 	var tv = h.broadcast
 	tv.transmit()
-	verify("5000 messages, non-interactive TV",tv.messages.size()==5000 and tv.mouse_filter==Control.MOUSE_FILTER_IGNORE and tv.remaining==15.0)
+	verify("5032 messages, non-interactive TV",tv.messages.size()==5032 and tv.mouse_filter==Control.MOUSE_FILTER_IGNORE and tv.remaining==30.0)
 	var seen := {}
-	for i in 5000:
+	for i in 5032:
 		tv.transmit()
 		seen[tv.line.text]=true
-	verify("all 5000 used before first repeat",seen.size()==5000)
+	verify("all 5032 used before first repeat",seen.size()==5032)
+	tv._process(15.0)
+	verify("TV still visible halfway",tv.visible)
 	tv._process(15.01)
-	verify("TV disappears after 15 seconds",not tv.visible)
+	verify("TV disappears after 30 seconds",not tv.visible)
 	var prev: int = DB.building("tech_terminal").size
 	game.layout_version=1
 	game._apply_sizes(true,true)

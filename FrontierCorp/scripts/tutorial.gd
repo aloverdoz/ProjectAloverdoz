@@ -27,8 +27,8 @@ static func cfg() -> Dictionary:
 	return c if c is Dictionary else {}
 
 
-static func steps() -> Array:
-	var s = cfg().get("steps", [])
+static func steps(island_mode := false) -> Array:
+	var s = cfg().get("island_steps" if island_mode else "steps", [])
 	return s if s is Array else []
 
 
@@ -46,7 +46,7 @@ func setup(g) -> void:
 func start_new() -> void:
 	step = 0
 	walked = 0.0
-	done = not bool(cfg().get("enabled", true)) or steps().is_empty()
+	done = not bool(cfg().get("enabled", true)) or steps(game != null and game.island != null).is_empty()
 	if game != null and bool(game.get("strategy")):
 		done = true   # A16-5: обучение — для героя; в «Стратегии» героя нет
 	active = not done
@@ -55,7 +55,7 @@ func start_new() -> void:
 
 func restart() -> void:
 	done = false
-	active = not steps().is_empty()
+	active = not steps(game != null and game.island != null).is_empty()
 	step = 0
 	walked = 0.0
 	_enter()
@@ -81,7 +81,7 @@ func load_dict(d) -> void:
 		card.visible = false
 		return
 	step = int(d.get("step", 0))
-	done = bool(d.get("done", false)) or step >= steps().size()
+	done = bool(d.get("done", false)) or step >= steps(game != null and game.island != null).size()
 	active = not done
 	_enter()
 	walked = float(d.get("walked", 0.0))   # A-6 r10: после _enter (он обнуляет пройденное на новом шаге)
@@ -92,7 +92,7 @@ func _enter() -> void:
 	_done_t = -1.0
 	_sig = ""
 	demolished = 0
-	if active and step >= steps().size():
+	if active and step >= steps(game != null and game.island != null).size():
 		active = false
 		done = true
 	card.visible = active
@@ -105,7 +105,7 @@ func _enter() -> void:
 
 
 func cur() -> Dictionary:
-	var s := steps()
+	var s := steps(game != null and game.island != null)
 	return s[step] if step < s.size() and s[step] is Dictionary else {}
 
 
@@ -137,6 +137,8 @@ func progress() -> Array:
 			if not DB.discovery or DB.is_researched(it):
 				return [n, n]
 			cnt = game.scanner.progress(it)
+		"island_expand":
+			cnt = 1 if game.island != null and game.world.island_cells.size()>game.island.start_span*game.island.start_span else 0
 		"zone":
 			if not game.zone.on():
 				return [n, n]
@@ -191,6 +193,8 @@ func goal_text() -> String:
 			return "Изучено: %d / %d" % p
 		"scan_item":
 			return "Изучить в сканере: %s %d / %d" % [DB.item_name(it), p[0], p[1]]
+		"island_expand":
+			return "Куплено клеток: %d / %d" % p
 		"zone":
 			return "Расширений зоны: %d / %d" % p
 		"bag":
@@ -222,7 +226,7 @@ func _build_card() -> void:
 	var v := UI.vbox(8)
 	card.add_child(v)
 	var top := UI.hbox(8)
-	var tag := UI.label("ОБУЧЕНИЕ · ШАГ %d ИЗ %d" % [step + 1, steps().size()], 12, UI.ACCENT)
+	var tag := UI.label("ОБУЧЕНИЕ · ШАГ %d ИЗ %d" % [step + 1, steps(game != null and game.island != null).size()], 12, UI.ACCENT)
 	tag.add_theme_font_override("font", UI.bold())
 	top.add_child(tag)
 	top.add_child(UI.spacer())

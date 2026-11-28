@@ -17,9 +17,9 @@ const VERSION := 3            # 1.5: перенос вещей через хоз
 const DISCOVERY_PORT := 24681    # 16: объявления комнат в локальной сети (UDP broadcast)
 const CODE_ABC := "23456789ABCDEFGHJKLMNPQRSTUVWXYZ"
 ## Команды, которые меняют общий мир: хозяин выполняет и рассылает всем.
-const REPLICATED := ["place", "fuse", "detach", "demolish", "wire", "unwire", "reset_net", "rotate", "rotate_to", "junction_at", "bcfg", "bstate", "recipe", "drain", "tech_target", "zone_expand", "zone_patch", "coop_base", "paint", "repair", "ruin_extra"]
+const REPLICATED := ["field_remove","shore_move","place", "fuse", "detach", "demolish", "wire", "unwire", "reset_net", "rotate", "rotate_to", "junction_at", "bcfg", "bstate", "recipe", "drain", "tech_target", "zone_expand", "zone_patch", "coop_base", "paint", "repair", "ruin_extra"]
 ## 1.7: эти рассылаются остальным, только если у хозяина получилось (иначе у всех всплывает «нельзя»).
-const MUST_SUCCEED := ["place", "fuse", "detach", "junction_at", "repair", "zone_expand", "zone_patch"]   # 1.1.15: зона — тоже
+const MUST_SUCCEED := ["field_remove","shore_move","place", "fuse", "detach", "junction_at", "repair", "zone_expand", "zone_patch"]   # 1.1.15: зона — тоже
 ## Команды с рюкзаком игрока: хозяин выполняет от его лица и возвращает рюкзак.
 const ACTOR := ["shore_salvage","shore_expand","shore_offer","shore_relight","shore_field","use_item", "take", "take_ready", "put", "put_all", "mv", "xmv", "take_slots", "btrash", "bag_up", "store_hq", "stash", "donate", "c_deliver", "sell", "buy", "pattern", "mbuy", "msell", "pay", "gift", "order_deal", "npc_trade"]
 ## 16: что нельзя делать с чужим зданием (правило комнаты «Чужие постройки»).

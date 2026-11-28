@@ -2634,8 +2634,13 @@ func _crafter(b: B, dt: float) -> void:
 		b.prog = 0.0
 
 
+func machine_recipes(b: B) -> Array:
+	var station: String = b.p("station","")
+	if b.recipe == "": return DB.recipes_for(station)
+	return [b.recipe] if DB.station_recipe_open(b.recipe,station) else []
+
 func _pick_recipe(b: B) -> String:
-	var ids: Array = [b.recipe] if b.recipe != "" else DB.recipes_for(b.p("station", ""))
+	var ids: Array = machine_recipes(b)
 	var tot: Dictionary = b.inv.totals()
 	for rid in ids:
 		var r: Dictionary = DB.data.recipes.get(rid, {})
@@ -2661,7 +2666,7 @@ func _pick_recipe(b: B) -> String:
 ## В режиме «авто» машина не смешивает сырьё разных рецептов: новый предмет берётся, только если
 ## есть рецепт, которому подходит и он, и всё, что уже лежит внутри (иначе машина забивается).
 func _is_input(b: B, item: String) -> bool:
-	var ids: Array = [b.recipe] if b.recipe != "" else DB.recipes_for(b.p("station", ""))
+	var ids: Array = machine_recipes(b)
 	var inside: Array = b.inv.totals().keys() if b.inv != null else []
 	if b.fuel != null and b.recipe == "":
 		# 1.1.11: топливо, случайно попавшее в сырьё (старые сохранения), не мешает другим рецептам
@@ -2713,7 +2718,7 @@ func _any_input(b: B, item: String) -> bool:
 ## 18: сколько машина держит про запас этого сырья с ленты: 2 крафта, но не меньше 20.
 ## Раньше было ровно 20 — и рецепт на 50 штук (ТВЭЛ) с ленты не запускался никогда.
 func in_cap(b: B, item: String) -> int:
-	var ids: Array = [b.recipe] if b.recipe != "" else DB.recipes_for(b.p("station", ""))
+	var ids: Array = machine_recipes(b)
 	var need := 0
 	for rid in ids:
 		need = maxi(need, int(DB.data.recipes.get(rid, {}).get("in", {}).get(item, 0)))
@@ -3020,7 +3025,7 @@ func would_accept(t: B, item: String) -> bool:
 
 
 func set_recipe(b: B, rid: String) -> void:
-	if b.recipe == rid:
+	if b.recipe == rid or (rid != "" and not DB.station_recipe_open(rid,b.p("station",""))):
 		return
 	var back: Dictionary = b.inv.totals()
 	for k in back:
@@ -4167,7 +4172,7 @@ func wants_fluid(e: B, id: String) -> int:
 		return maxi(0, DB.stack_of(id) * e.fuel.size() - e.fuel.count(id)) if e.fuel.can_add(id, 1) else 0
 	if e.beh == "crafter" and e.inv != null and _is_input(e, id):
 		var need := 1
-		var ids: Array = [e.recipe] if e.recipe != "" else DB.recipes_for(e.p("station", ""))
+		var ids: Array = machine_recipes(e)
 		for rid in ids:
 			need = maxi(need, int(DB.data.recipes.get(rid, {}).get("in", {}).get(id, 0)))
 		var target := mini(DB.stack_of(id), ceili(need * float(DB.setting("pipe_fill_buffer", 2.0))) + need)

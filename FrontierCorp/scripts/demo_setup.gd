@@ -4518,7 +4518,7 @@ static func _test(game, name: String, tree: SceneTree) -> void:
 					opened[id] = true
 			var built := {"hand": true}
 			var bad: Array = []
-			for st in game.tutorial.steps():
+			for st in Tutorial.steps():
 				var g := str(st.get("goal", ""))
 				if g == "tech":
 					var t := str(st.get("tech", ""))
@@ -4558,7 +4558,7 @@ static func _test(game, name: String, tree: SceneTree) -> void:
 			for k in DB.data.quests:
 				orders[int(DB.data.quests[k].get("order", 0))] = orders.get(int(DB.data.quests[k].get("order", 0)), 0) + 1
 			var dup: Array = orders.keys().filter(func(o): return orders[o] > 1 and o < 30)
-			print("TEST tut15 steps=", game.tutorial.steps().size(), " bad=", bad, " quest_tech=", qok, " dup_order=", dup, " ", "OK" if bad.is_empty() and qok and dup.is_empty() else "FAIL")
+			print("TEST tut15 steps=", Tutorial.steps().size(), " bad=", bad, " quest_tech=", qok, " dup_order=", dup, " ", "OK" if bad.is_empty() and qok and dup.is_empty() else "FAIL")
 		"pace15":
 			# 1.5: темп угрозы по прогрессу, мирная сложность, цена участков тумана, стартовые залежи
 			var en = game.enemies
@@ -8335,7 +8335,7 @@ static func _test(game, name: String, tree: SceneTree) -> void:
 			game.toggle_stumps()
 			# ж) обучение: шаги «Станция энергии», «Энергия», «Снос»; снос засчитывается
 			var titles := []
-			for st in game.tutorial.steps():
+			for st in Tutorial.steps():
 				titles.append(str(st.get("title", "")))
 			var tut_steps: bool = "Станция энергии" in titles and "Энергия" in titles and "Снос" in titles and not "Провод" in titles
 			game.tutorial.active = true
@@ -8487,7 +8487,7 @@ static func _test(game, name: String, tree: SceneTree) -> void:
 			var over_ok: bool = bt != null and f.upgrade_target("lift_mk2", bt.cell) != null and f.upgrade_target("belt", lf.cell) == null
 			# з) обучение и задание про рынок
 			var tut_ok := false
-			for stp in game.tutorial.steps():
+			for stp in Tutorial.steps():
 				if str(stp.get("title", "")) == "Чёрный рынок" and str(stp.get("building", "")) == "black_market":
 					tut_ok = true
 			var q_ok: bool = int(DB.data.quests.get("q_trade", {}).get("n", 0)) == 5

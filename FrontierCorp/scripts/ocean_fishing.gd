@@ -4,7 +4,9 @@ const TYPES := ["crate", "barrel"]
 const MODELS := ["floating_crate", "floating_drum"]
 const GOODS := ["log","branch","fiber","leaves","coal","stone","iron_ore","copper_ore","tree_seed"]
 const REACH := 21.
-const LIMIT := 12
+const LIMIT := 5
+const INTERVAL := 300.0
+var last_tick := -1
 var game
 var drift: Array = []
 var next_id := 1
@@ -22,18 +24,24 @@ func _init(g) -> void:
 	float_material.emission_enabled = true
 	float_material.emission = Color("#c53a17")
 
-func setup(records: Array) -> void:
-	for row in records:
-		if row.size() >= 4 and row[0] in TYPES and drift.size() < LIMIT:
-			add(str(row[0]), Vector3(float(row[1]),.18,float(row[2])), float(row[3]),int(row[4]) if row.size()>4 else 0)
-	if records.is_empty() and not Net.is_client():
-		for i in 7:
-			spawn(TYPES[i%TYPES.size()])
+func setup(rows: Array, delay: float) -> void:
+	spawn_timer = clampf(delay, 0., INTERVAL)
+	last_tick = Time.get_ticks_msec()
+	for row in rows:
+		if row.size() < 4 or row[0] not in TYPES or drift.size() >= LIMIT: continue
+		var d := add(str(row[0]),Vector3(float(row[1]),.18,float(row[2])),float(row[3]),int(row[4]) if row.size()>4 else 0)
+		restore_motion(d,row)
+
+func restore_motion(d: Dictionary,row: Array) -> void:
+	if row.size() >= 9:
+		d.velocity = Vector3(float(row[5]),0,float(row[6]))
+		d.stopped = bool(row[7])
+		d.travel = float(row[8])
 
 func records() -> Array:
 	var out := []
 	for d in drift:
-		out.append([d.kind,d.node.position.x,d.node.position.z,d.phase,d.id])
+		out.append([d.kind,d.node.position.x,d.node.position.z,d.phase,d.id,d.velocity.x,d.velocity.z,d.stopped,d.travel])
 	return out
 
 func add(kind: String,p: Vector3,phase: float, id := 0) -> Dictionary:
@@ -44,7 +52,7 @@ func add(kind: String,p: Vector3,phase: float, id := 0) -> Dictionary:
 	game.add_child(node)
 	id = next_id if id == 0 else id
 	next_id = maxi(next_id,id+1)
-	var d := {"id":id,"kind":kind, "node":node, "phase":phase, "held":false}
+	var d := {"id":id,"kind":kind, "node":node, "phase":phase, "held":false,"velocity":Vector3(.92,0,.17),"stopped":false,"travel":0.}
 	drift.append(d)
 	return d
 
@@ -56,9 +64,10 @@ func apply_snapshot(rows: Array) -> void:
 		var pos := Vector3(float(row[1]),.19,float(row[2]))
 		var d := by_id(id)
 		if d.is_empty():
-			add(row[0],pos,float(row[3]),id)
+			d = add(row[0],pos,float(row[3]),id)
 		elif not d.held:
 			d.node.position = pos
+		restore_motion(d,row)
 	for d in drift.duplicate():
 		if not seen.has(d.id):
 			discard(d)
@@ -84,22 +93,45 @@ func collect(id: int, pl) -> bool:
 	return true
 
 func spawn(kind: String) -> void:
-	if drift.size() >= LIMIT or game.island.shore.is_empty():
-		return
+	if drift.size() >= LIMIT or game.island.shore.is_empty(): return
 	var anchor: Vector3 = game.player.position
-	var near := []
-	for i in 12:
-		var c: Vector2i = game.island.shore.pick_random()
-		near.append(c)
-	near.sort_custom(func(a,b): return World.cell_to_world(a).distance_squared_to(anchor) < World.cell_to_world(b).distance_squared_to(anchor))
-	var p := World.cell_to_world(near[0])
-	for attempt in 12:
+	var closest: Vector2i = World.world_to_cell(anchor)
+	if not game.island.shore_indices.has(closest):
+		var best := INF
+		for c in game.island.shore:
+			var distance := World.cell_to_world(c).distance_squared_to(anchor)
+			if distance < best:
+				closest = c
+				best = distance
+	var edge := World.cell_to_world(closest)
+	for attempt in 20:
 		var angle := randf()*TAU
-		var dest := p+Vector3(cos(angle),0,sin(angle))*randf_range(4.,15.)
-		if game.world.water_at(World.world_to_cell(dest)):
-			dest.y = .17
-			add(kind,dest,angle)
-			break
+		var direction := Vector3(cos(angle),0,sin(angle))
+		var side := Vector3(-direction.z,0,direction.x)
+		var target := edge + side * randf_range(-9.,9.)
+		var distance := 20.
+		var pos := target-direction*distance
+		pos.y=.2
+		while game.camera.is_position_in_frustum(pos) or not game.world.water_at(World.world_to_cell(pos)):
+			distance *= 1.5
+			pos = target-direction*distance
+			pos.y=.2
+			if distance > 1200.: break
+		if distance > 1200.: continue
+		pos -= direction*3.
+		var d := add(kind,pos,angle)
+		d.velocity = direction*maxf(.95,distance/28.)
+		return
+
+func arrivals(elapsed: float) -> void:
+	if Net.is_client(): return
+	spawn_timer -= elapsed
+	if spawn_timer > 0.: return
+	spawn_timer = INTERVAL
+	for d in drift.duplicate():
+		if not d.held: discard(d)
+	for i in mini(LIMIT-drift.size(),randi_range(2,LIMIT)):
+		spawn(TYPES.pick_random())
 
 func _mesh(mesh: Mesh, mat: Material) -> MeshInstance3D:
 	var mi := MeshInstance3D.new()
@@ -159,8 +191,8 @@ func loot(kind: String) -> Dictionary:
 	var result := {}
 	var pool := GOODS.duplicate()
 	pool.shuffle()
-	for i in randi_range(3,5):
-		result[pool[i]] = randi_range(5,15)
+	for i in randi_range(1,3):
+		result[pool[i]] = randi_range(1,3)
 	return result
 
 func _land(pl,line: Dictionary) -> void:
@@ -198,19 +230,25 @@ func float_cargo(d: Dictionary,p: Vector3) -> void:
 func tick(dt: float) -> void:
 	clock += dt
 	game.world.water_mat.set_shader_parameter("wave_time",clock)
-	spawn_timer -= dt
-	if spawn_timer <= 0. and not Net.is_client():
-		spawn_timer = 3.5
-		spawn(TYPES.pick_random())
+	var now := Time.get_ticks_msec()
+	arrivals(maxf(0.,float(now-last_tick)*.001) if last_tick >= 0 else 0.)
+	last_tick = now
 	for d in drift.duplicate():
-		if d.held and not game.world.water_at(World.world_to_cell(d.node.position)): continue
-		var p: Vector3 = d.node.position
-		var next := p + Vector3(.22,0.,.085)*dt
-		if not d.held and game.world.water_at(World.world_to_cell(next)): p = next
-		float_cargo(d,p)
-		if p.distance_to(game.player.position) > 56. or not game.world.water_at(World.world_to_cell(p)):
-			d.node.queue_free()
-			drift.erase(d)
+		if d.held: continue
+		var pos: Vector3 = d.node.position
+		if not d.stopped:
+			var step: Vector3 = d.velocity * dt
+			var pieces := maxi(1,ceili(step.length()/.6))
+			for i in pieces:
+				var dest := pos + step / pieces
+				if not game.world.water_at(World.world_to_cell(dest)):
+					d.stopped = true
+					break
+				pos = dest
+			d.travel += dt
+		float_cargo(d,pos)
+		if not Net.is_client() and not d.stopped and d.travel > 80. and not game.camera.is_position_in_frustum(pos):
+			discard(d)
 	for pl in lines.keys():
 		var line: Dictionary = lines[pl]
 		if not is_instance_valid(pl) or not pl.alive or pl.selected_item() != "salvage_rod" or game.strategy:

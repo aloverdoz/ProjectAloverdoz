@@ -4,6 +4,7 @@ const DRIFT_GOODS = preload("res://scripts/ocean_fishing.gd").GOODS
 const OFFERINGS := ["iron_ingot", "gear", "iron_plate", "copper_ingot", "wire", "concrete", "reinforced_plate", "steel", "steel_beam", "circuit"]
 const PERIOD := 10
 var game
+var start_span := 8
 var prices := {}
 var due := 11
 var request := {}
@@ -20,6 +21,7 @@ func _init(g) -> void:
 	fishing = preload("res://scripts/ocean_fishing.gd").new(g)
 
 func read_state(data: Dictionary) -> void:
+	start_span = int(data.get("start_span",8 if data.is_empty() else 5))
 	prices = data.get("prices", {}).duplicate(true)
 	for n in prices:
 		for item in prices[n]:
@@ -29,14 +31,14 @@ func read_state(data: Dictionary) -> void:
 	due = int(data.get("due", 11))
 
 func state() -> Dictionary:
-	return {"prices":prices, "request":request, "paid":paid, "due":due}
+	return {"start_span":start_span,"prices":prices, "request":request, "paid":paid, "due":due}
 
 func setup(data: Dictionary) -> void:
 	read_state(data)
 	refresh_coast()
 	if request.is_empty() and not Net.is_client():
 		new_request()
-	fishing.setup(data.get("drift", []))
+	fishing.setup(data.get("drift", []),float(data.get("next_drift",300. if data.has("drift") else 0.)))
 
 func refresh_coast() -> void:
 	shore.clear()
@@ -58,8 +60,28 @@ func update_edge(c: Vector2i) -> void:
 		shore_indices.erase(c)
 
 func ring(c: Vector2i) -> int:
-	var d: Vector2i = (c - game.world.center).abs()
-	return maxi(1, maxi(d.x, d.y) - 2)
+	var offset: Vector2i = c-game.world.center
+	var left := floori(start_span*.5)
+	var right := start_span-left-1
+	return maxi(1,maxi(maxi(-left-offset.x,offset.x-right),maxi(-left-offset.y,offset.y-right)))
+
+func price_text(cell: Vector2i) -> String:
+	var price := cost(ring(cell))
+	var parts := PackedStringArray()
+	for k in price: parts.append("%s ×%d" % [DB.item_name(k),price[k]])
+	return "бесплатно" if parts.is_empty() else ", ".join(parts)
+
+func nearest_edge(p: Vector3) -> Vector2i:
+	var best := INF
+	var cell: Vector2i = game.world.center
+	for c in shore:
+		var d := World.cell_to_world(c).distance_squared_to(p)
+		if d < best:
+			best = d
+			cell = c
+	for dir in Factory.DIRS:
+		if not game.world.island_cells.has(cell+dir): return cell+dir
+	return cell
 
 func cost(n: int) -> Dictionary:
 	if prices.has(str(n)):
@@ -169,7 +191,7 @@ func deliver() -> bool:
 			sent[k] = n
 			paid[k] = int(paid.get(k,0))+n
 	game.factory.pay(sent)
-	game.notify("Дар принят. Берег защищён до смены задания." if complete() else ("Часть дара принята" if not sent.is_empty() else "Подходящих припасов пока нет"), UI.ACCENT)
+	game.notify("Ресурсы доставлены. Берег защищён до смены задания." if complete() else ("Часть ресурсов доставлена" if not sent.is_empty() else "Подходящих припасов пока нет"), UI.ACCENT)
 	sync()
 	return not sent.is_empty()
 
@@ -177,7 +199,7 @@ func description() -> String:
 	var lines := PackedStringArray()
 	for k in request:
 		lines.append("%s  %d / %d" % [DB.item_name(k), paid.get(k,0),request[k]])
-	return "Прилив в начале дня %d · осталось %d дн.\n%s\n%s" % [due,maxi(0,due-game.day_n),"  ·  ".join(lines),"Берег защищён." if complete() else "Невыполнение смоет берег вместе с постройками."]
+	return "Доставьте ресурсы до - День %d · осталось %d дн.\n%s\n%s" % [due,maxi(0,due-game.day_n),"  ·  ".join(lines),"Берег защищён." if complete() else "Невыполнение смоет берег вместе с постройками."]
 
 func deadline() -> void:
 	while game.day_n >= due and not game.game_over:
@@ -189,7 +211,7 @@ func deadline() -> void:
 		due += PERIOD
 		if not game.game_over:
 			new_request()
-			game.notify("Древняя плита открыла новый заказ", UI.ACCENT)
+			game.notify("У монумента новый заказ", UI.ACCENT)
 		sync([], lost)
 
 func change_land(added: Array, removed: Array) -> void:
@@ -339,3 +361,42 @@ func tick(dt: float) -> void:
 		if weather_clock >= 1.:
 			fire_weather(weather_clock,game.events.rain)
 			weather_clock = 0.
+
+func move_issue(cell: Vector2i) -> String:
+	var f = game.factory
+	if not game.world.island_cells.has(cell): return "Выберите сушу"
+	if f.grid.has(cell) or game.world.nodes.has(cell) or game.world.deposit.has(cell): return "Нужна свободная клетка без залежи"
+	if game.player and not game.strategy and cell in game.player.occupied_cells(): return "Здесь стоит персонаж"
+	return ""
+
+func relocate(cell: Vector2i) -> bool:
+	var f = game.factory
+	var b = f.hq
+	if b == null or b.type != "tide_slab": return false
+	if not Net.is_client():
+		var why := move_issue(cell)
+		if why != "":
+			game.notify(why,Color.ORANGE)
+			return false
+	var old: Vector2i = b.cell
+	f.grid.erase(old)
+	game.world.set_occupied(old,false)
+	game.world.dep_cover(old)
+	f._clear_sockets(b)
+	for dir in Factory.DIRS:
+		var neighbour = f.grid.get(old+dir)
+		if neighbour != null: f._relink_around(neighbour)
+	b.cell = cell
+	f.grid[cell] = b
+	game.world.set_occupied(cell,true)
+	game.world.dep_cover(cell)
+	var base: Array = f.base_for(b.type,cell)
+	b.y = base[0]
+	b.top = base[2]
+	f.set_ports(b)
+	f.renderer(b.type).set_xform(b,f._xform(b))
+	f._relink_around(b)
+	f._update_sockets(b)
+	f.power_dirty = true
+	f.rev += 1
+	return true

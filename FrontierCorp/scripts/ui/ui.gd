@@ -3,8 +3,8 @@ extends RefCounted
 ## Общие детали интерфейса: тема, панели, окна, ячейки предметов, полоски.
 
 static var ACCENT := Color(1.0, 0.62, 0.15)   # меняется в редакторе интерфейса (ui.json → accent)
-const TEXT := Color(0.92, 0.94, 0.97)
-const DIM := Color(0.62, 0.67, 0.75)
+const TEXT := Color(0.99, 0.94, 0.83)
+const DIM := Color(0.82, 0.75, 0.63)
 const BAD := Color(1.0, 0.42, 0.35)
 const GOOD := Color(0.5, 1.0, 0.6)
 
@@ -177,7 +177,7 @@ static func theme() -> Theme:
 		t.set_icon(str(ic[0]), "CheckBox", check_icon(bool(ic[1]), bool(ic[2]), isz, dis))
 	for ic2 in [["checked", true], ["unchecked", false], ["checked_disabled", true], ["unchecked_disabled", false]]:
 		t.set_icon(str(ic2[0]), "CheckButton", switch_icon(bool(ic2[1]), isz, str(ic2[0]).ends_with("disabled")))
-	var le := box(Color(0.03, 0.04, 0.06, 0.96), maxi(0, int(st("radius")) - 4))
+	var le := box(Color(0.11, 0.085, 0.07, 0.96), maxi(0, int(st("radius")) - 4))
 	le.content_margin_left = 10
 	le.content_margin_right = 10
 	le.content_margin_top = 6
@@ -209,11 +209,11 @@ static func theme() -> Theme:
 		t.set_color("font_hovered_color", cls, Color.WHITE)
 		t.set_font_size("font_size", cls, fs(15))
 	var pan := panel.duplicate()
-	pan.bg_color = Color(0.05, 0.06, 0.09, 0.6)
+	pan.bg_color = Color(0.14, 0.11, 0.09, 0.6)
 	pan.shadow_size = 0
 	t.set_stylebox("panel", "TabContainer", pan)
 	# подсказки: тёмная плашка с цветной чертой сверху
-	var tip := box(Color(0.03, 0.04, 0.06, 0.97))
+	var tip := box(Color(0.11, 0.085, 0.07, 0.97))
 	tip.border_color = Color(ACCENT, 0.8)
 	tip.set_border_width_all(1)
 	tip.border_width_top = 3
@@ -230,7 +230,7 @@ static func theme() -> Theme:
 	t.set_font_size("font_size", "PopupMenu", fs(15))
 	t.set_font_size("font_size", "ItemList", fs(15))
 	t.set_font_size("font_size", "Tree", fs(15))
-	var pm := box(Color(0.05, 0.06, 0.09, 0.98))
+	var pm := box(Color(0.14, 0.11, 0.09, 0.98))
 	pm.border_color = Color(ACCENT, 0.5)
 	pm.set_border_width_all(1)
 	pm.set_content_margin_all(6)
@@ -366,7 +366,7 @@ static func check_icon(on: bool, radio: bool, sz: int, disabled := false) -> Ima
 	var r := sz * 0.5 - 1.0
 	var bw := maxf(2.0, sz * 0.11)
 	var frame := Color(0.85, 0.88, 0.95) if not disabled else Color(0.45, 0.47, 0.52)
-	var fill := Color(0.05, 0.06, 0.09, 0.95)
+	var fill := Color(0.14, 0.11, 0.09, 0.95)
 	if on:
 		fill = ACCENT if not disabled else Color(0.4, 0.4, 0.42)
 		frame = ACCENT.lightened(0.25) if not disabled else Color(0.5, 0.5, 0.52)
@@ -412,7 +412,7 @@ static func switch_icon(on: bool, sz: int, disabled := false) -> ImageTexture:
 	img.fill(Color(0, 0, 0, 0))
 	var r := sz * 0.5 - 1.0
 	var frame := Color(0.85, 0.88, 0.95) if not disabled else Color(0.45, 0.47, 0.52)
-	var track := ACCENT if on and not disabled else Color(0.05, 0.06, 0.09, 0.95)
+	var track := ACCENT if on and not disabled else Color(0.14, 0.11, 0.09, 0.95)
 	var knob_x := (w - sz * 0.5) if on else sz * 0.5
 	for y in sz:
 		for x in w:

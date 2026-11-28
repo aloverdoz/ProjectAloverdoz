@@ -26,11 +26,11 @@ func setup(p_inv: Inventory, i: int, p_hud, size := 54.0) -> void:
 	hud = p_hud
 	custom_minimum_size = Vector2(size, size)
 	_style = StyleBoxFlat.new()
-	_style.bg_color = Color("#182f36")
+	_style.bg_color = Color("#332923")
 	_style.border_color = Color(1, 1, 1, 0.09)
 	_style.set_border_width_all(1)
 	_style.border_width_top = 2          # тень сверху — ячейка выглядит «утопленной»
-	_style.border_color = Color("#38535b")
+	_style.border_color = Color("#775d47")
 	_style.set_corner_radius_all(3)
 	_style.shadow_color = Color(1, 1, 1, 0.04)
 	_style.shadow_size = 1
@@ -38,10 +38,10 @@ func setup(p_inv: Inventory, i: int, p_hud, size := 54.0) -> void:
 	_style_sel = _style.duplicate()
 	_style_sel.border_color = UI.ACCENT
 	_style_sel.set_border_width_all(2)
-	_style_sel.bg_color = Color("#25524f")
+	_style_sel.bg_color = Color("#76512e")
 	_style_b = _style.duplicate()
-	_style_b.bg_color = Color(0.08, 0.14, 0.2, 0.92)
-	_style_b.border_color = Color(0.35, 0.65, 0.95, 0.6)
+	_style_b.bg_color = Color(0.22, 0.18, 0.12, 0.92)
+	_style_b.border_color = Color(0.70, 0.78, 0.40, 0.6)
 	add_theme_stylebox_override("panel", _style)
 	_count = UI.label("", 13)
 	_count.add_theme_color_override("font_outline_color", Color.BLACK)
@@ -75,6 +75,16 @@ func hot_build() -> String:
 	return str(hud.game.player.hot_builds.get(index, ""))
 
 
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_RESIZED and is_instance_valid(_icon):
+		_fit_icon()
+
+func _fit_icon() -> void:
+	var room := maxf(8.,minf(size.x,size.y)-8.)
+	var factor := room / maxf(1.,_icon.custom_minimum_size.x)
+	_icon.scale = Vector2.ONE * factor
+	_icon.position = (size-_icon.custom_minimum_size*factor)*.5
+
 func refresh() -> void:
 	var slot_index: int = hud.game.player.hot_slot(index) if shortcut else index
 	var s = inv.slots[slot_index] if slot_index >= 0 and slot_index < inv.size() else null
@@ -99,6 +109,7 @@ func refresh() -> void:
 			_icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
 			add_child(_icon)
 			move_child(_icon, 0)
+			_fit_icon()
 			_count.text = ""
 			tooltip_text = "Постройка: %s\nКлавиша или клик — строить. ПКМ — убрать из панели." % DB.building(hb).get("name", hb)
 		return
@@ -106,6 +117,7 @@ func refresh() -> void:
 	_icon.position = Vector2(4, 4)
 	add_child(_icon)
 	move_child(_icon, 0)
+	_fit_icon()
 	_count.text = str(s.n) if s.n != 1 else ""
 	var maxd := float(DB.item(s.id).get("durability", 0))
 	_dur.visible = s.has("dur") and maxd > 0
