@@ -1,0 +1,22 @@
+name: Publish tested Frontier Corp Windows archive
+on:
+  push:
+    branches: [frontier-ocean-2-windows]
+    paths: [.github/workflows/frontier-release.yml]
+permissions:
+  contents: write
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verify and attach the tested archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          cat parts/payload.* > FrontierCorp-Windows-x64.zip
+          echo "612a5fcf4a82ea9fdae30e23241393fb8516986665d1e833cd983ed61783659e  FrontierCorp-Windows-x64.zip" | sha256sum --check
+          gh release upload frontier-ocean-2 FrontierCorp-Windows-x64.zip
